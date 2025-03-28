@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Basic Electronics Quiz</title>
+<style>
+body { font-family: sans-serif; }
+.question { margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 5px; }
+.options { list-style-type: none; padding: 0; }
+.option-item { margin-bottom: 10px; }
+.result { margin-top: 20px; font-weight: bold; }
+.correct { color: green; }
+.incorrect { color: red; }
+.error-message { color: red; font-weight: bold; } /* Style for error message */
+</style>
+</head>
+<body>
+
+<h1>Basic Electronics Quiz</h1>
+
+<div id="quiz-container">
+    <!-- Questions will be loaded here -->
+</div>
+
+<button id="submit-button">Submit Answers</button>
+
+<div id="results-container" style="display:none;">
+    <h2>Results</h2>
+    <div id="score-display"></div>
+    <ul id="question-results"></ul>
+</div>
+
+<div id="error-container" class="error-message" style="display:none;">
+    <!-- Error message will be displayed here -->
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const quizContainer = document.getElementById('quiz-container');
+    const submitButton = document.getElementById('submit-button');
+    const resultsContainer = document.getElementById('results-container');
+    const scoreDisplay = document.getElementById('score-display');
+    const questionResultsList = document.getElementById('question-results');
+    const errorContainer = document.getElementById('error-container'); // Get error container
+
+    function loadQuestions(quizData) {
+        quizData.questions.forEach((question, index) => {
+            const questionDiv = document.createElement('div');
+            questionDiv.classList.add('question');
+
+            const questionText = document.createElement('p');
+            questionText.textContent = `${question.question_number}. ${question.question_text}`;
+            questionDiv.appendChild(questionText);
+
+            const optionsList = document.createElement('ul');
+            optionsList.classList.add('options');
+
+            question.options.forEach(option => {
+                const optionItem = document.createElement('li');
+                optionItem.classList.add('option-item');
+
+                const radioInput = document.createElement('input');
+                radioInput.type = 'radio';
+                radioInput.name = `question-${question.question_number}`;
+                radioInput.value = option;
+                radioInput.id = `option-${question.question_number}-${option.replace(/[^a-zA-Z0-9]/g, '')}`; // Sanitize ID for spaces and special chars
+                // Consider using data-option attribute instead of encoding option in ID if option strings can be complex
+
+                const label = document.createElement('label');
+                label.textContent = option;
+                label.setAttribute('for', `option-${question.question_number}-${option.replace(/[^a-zA-Z0-9]/g, '')}`); // Sanitize 'for' attribute as well
+
+                optionItem.appendChild(radioInput);
+                optionItem.appendChild(label);
+                optionsList.appendChild(optionItem);
+            });
+            questionDiv.appendChild(optionsList);
+            quizContainer.appendChild(questionDiv);
+        });
+    }
+
+    function checkAnswers(quizData) {
+        let score = 0;
+        questionResultsList.innerHTML = ''; // Clear previous results
+
+        quizData.questions.forEach((question) => {
+            const selectedOption = document.querySelector(`input[name="question-${question.question_number}"]:checked`);
+            const correctAnswer = question.correct_answer;
+            const resultItem = document.createElement('li');
+
+            if (selectedOption) {
+                const userAnswer = selectedOption.value;
+                if (userAnswer === correctAnswer) {
+                    score++;
+                    resultItem.textContent = `Question ${question.question_number}: Correct`;
+                    resultItem.classList.add('correct');
+                } else {
+                    resultItem.textContent = `Question ${question.question_number}: Incorrect. Your answer: ${userAnswer}. Correct answer: ${correctAnswer}`;
+                    resultItem.classList.add('incorrect');
+                }
+            } else {
+                resultItem.textContent = `Question ${question.question_number}: Unanswered. Correct answer: ${correctAnswer}`;
+                resultItem.classList.add('incorrect');
+            }
+            questionResultsList.appendChild(resultItem);
+        });
+
+        scoreDisplay.textContent = `Your Score: ${score} out of ${quizData.questions.length}`;
+        resultsContainer.style.display = 'block';
+    }
+
+    // Fetch the JSON data
+    fetch('subject1.json')
+        .then(response => {
+            if (!response.ok) { // Check if response status is ok (200-299)
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(data => {
+            document.querySelector('h1').textContent = data.exam_title; // Set title from JSON
+            loadQuestions(data);
+            submitButton.addEventListener('click', () => checkAnswers(data));
+        })
+        .catch(error => {
+            console.error('Error loading quiz data:', error);
+            errorContainer.textContent = 'Failed to load quiz data. Please check if subject1.json is available and valid.'; // Display error message
+            errorContainer.style.display = 'block'; // Show error container
+        });
+});
+</script>
+
+</body>
+</html>
