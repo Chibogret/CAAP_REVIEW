@@ -1,133 +1,742 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Basic Electronics Quiz</title>
-<style>
-body { font-family: sans-serif; }
-.question { margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 5px; }
-.options { list-style-type: none; padding: 0; }
-.option-item { margin-bottom: 10px; }
-.result { margin-top: 20px; font-weight: bold; }
-.correct { color: green; }
-.incorrect { color: red; }
-.error-message { color: red; font-weight: bold; } /* Style for error message */
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAAP Mock by Chippo</title>
+    <style>
+        :root {
+            --primary-bg: #f0f4f8; /* Lighter background */
+            --secondary-bg: #ffffff;
+            --tertiary-bg: #e9eef2; /* Slightly darker than primary for areas */
+            --border-color: #d8e1e8;
+            --text-color: #2c3e50; /* Softer black */
+            --primary-accent: #3498db; /* Brighter blue */
+            --secondary-accent: #5dade2; /* Lighter blue */
+            --correct-color: #2ecc71; /* Green */
+            --incorrect-color: #e74c3c; /* Red */
+            --skip-color: #f39c12; /* Orange */
+            --disabled-color: #bdc3c7; /* Gray */
+            --font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            --border-radius: 8px;
+        }
+
+        /* Basic Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Google Font Import */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex; /* Use flex for centering app container */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Splash Screen */
+        #splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #3498db;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.5s ease-out;
+        }
+
+        #splash-screen img {
+            max-width: 150px; /* Adjust as needed */
+            margin-bottom: 20px;
+        }
+
+        .loader {
+            border: 4px solid var(--tertiary-bg); /* Light grey */
+            border-top: 4px solid var(--primary-accent); /* Blue */
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Main App Container */
+        .app-container {
+            max-width: 650px; /* Slightly narrower for single question */
+            width: 100%;
+            background-color: var(--secondary-bg);
+            padding: 30px 35px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            opacity: 0; /* Start hidden */
+            transition: opacity 0.5s ease-in;
+        }
+
+        header {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            text-align: center; /* Center header content */
+        }
+
+        h1.quiz-title {
+            color: var(--primary-accent);
+            margin: 0 0 10px 0;
+            font-size: 1.9em;
+            font-weight: 600;
+        }
+
+        .quiz-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--tertiary-bg);
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+
+        .quiz-info span {
+             font-weight: 600;
+        }
+
+        #score-display { color: var(--primary-accent); }
+        #skips-display { color: var(--skip-color); }
+        #progress-display { color: var(--text-color); }
+
+
+        /* Subject Selector (Optional - keep if needed later) */
+        .selector-container {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .selector-container label {
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        #subject-selector {
+            padding: 10px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            min-width: 250px;
+            font-size: 1em;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        #error-container {
+            color: var(--incorrect-color);
+            font-weight: 600;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 12px;
+            background-color: #fdd; /* Lighter red */
+            border: 1px solid var(--incorrect-color);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* Question Area */
+        #question-area {
+            margin-bottom: 25px;
+            padding: 25px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            background-color: #fdfdfd;
+        }
+
+        #question-text {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--primary-accent);
+        }
+
+        .options {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+
+        .option-item {
+            margin-bottom: 12px;
+            padding: 12px 15px; /* More padding */
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .option-item:hover {
+             background-color: var(--tertiary-bg);
+        }
+
+         /* Style for selected option */
+         .option-item input[type="radio"]:checked + label {
+             font-weight: 600;
+             color: var(--primary-accent);
+         }
+         .option-item input[type="radio"]:checked + label::before {
+             /* Optional: enhance visual cue for selection if hiding radio */
+         }
+
+
+        .option-item input[type="radio"] {
+            margin-right: 12px;
+            transform: scale(1.1);
+            accent-color: var(--primary-accent);
+             /* Optional: Hide default radio if using custom styling */
+            /* appearance: none;
+            width: 18px; height: 18px; border: 2px solid var(--primary-accent);
+            border-radius: 50%; margin-right: 12px; cursor: pointer;
+            position: relative; */
+        }
+
+        /* Optional: Custom radio button checkmark */
+         /* .option-item input[type="radio"]:checked::after {
+             content: ''; position: absolute; top: 3px; left: 3px;
+             width: 10px; height: 10px; background-color: var(--primary-accent);
+             border-radius: 50%;
+         } */
+
+
+        .option-item label {
+            cursor: pointer;
+            flex-grow: 1;
+         }
+
+        /* Feedback Area */
+        #feedback-area {
+            margin-top: 15px;
+            padding: 12px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-align: center;
+            font-size: 1.1em;
+        }
+        .feedback-correct { background-color: #d4edda; border: 1px solid #c3e6cb; color: #155724; }
+        .feedback-incorrect { background-color: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; }
+        .feedback-skipped { background-color: #fff3cd; border: 1px solid #ffeeba; color: #856404; }
+
+
+        /* Control Buttons */
+        .button-container {
+            display: flex;
+            justify-content: space-between; /* Space out buttons */
+            gap: 15px; /* Add space between buttons */
+            margin-top: 25px;
+        }
+
+        .quiz-button {
+            flex-grow: 1; /* Make buttons share space */
+            padding: 12px 20px;
+            font-size: 1.05em;
+            font-weight: 600; /* Bolder */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease, opacity 0.2s ease;
+            text-align: center;
+        }
+
+        #submit-answer-btn { background-color: var(--primary-accent); }
+        #submit-answer-btn:hover { background-color: var(--secondary-accent); }
+
+        #skip-question-btn { background-color: var(--skip-color); }
+        #skip-question-btn:hover { background-color: #f1c40f; } /* Lighter orange */
+
+        #next-question-btn { background-color: var(--correct-color); } /* Green for next */
+        #next-question-btn:hover { background-color: #25a244; }
+
+        .quiz-button:disabled {
+             background-color: var(--disabled-color);
+             cursor: not-allowed;
+             opacity: 0.7;
+        }
+
+
+        /* Results Area */
+        #results-container {
+            margin-top: 30px;
+            padding: 25px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            background-color: var(--secondary-bg);
+            text-align: center;
+        }
+
+        #results-container h2 {
+             margin-top: 0;
+             color: var(--primary-accent);
+             border-bottom: 1px solid var(--border-color);
+             padding-bottom: 10px;
+             margin-bottom: 20px;
+             font-size: 1.5em;
+        }
+
+        #final-score-display {
+             font-weight: 700; /* Extra bold */
+             font-size: 1.8em; /* Larger */
+             margin-bottom: 15px;
+             color: var(--primary-accent);
+        }
+        #results-summary {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+        }
+
+        #restart-button {
+            padding: 12px 30px;
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #fff;
+            background-color: var(--primary-accent);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            margin-top: 15px;
+        }
+        #restart-button:hover { background-color: var(--secondary-accent); }
+
+        /* Visibility Control */
+        .hidden { display: none !important; } /* Use !important carefully */
+
+    </style>
 </head>
 <body>
 
-<h1>Basic Electronics Quiz</h1>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <img src="logo.png" alt="Logo"> <!-- Make sure you have logo.png -->
+        <div class="loader"></div>
+    </div>
 
-<div id="quiz-container">
-    <!-- Questions will be loaded here -->
-</div>
+    <!-- Main Application -->
+    <div class="app-container hidden">
+        <header>
+            <h1 class="quiz-title">CAAP Mock by Chippo</h1>
+             <!-- Subject Selector -->
+             <div class="selector-container">
+                <label for="subject-selector">Select Subject:</label>
+                <select id="subject-selector">
+                    <option value="">-- Select a Subject --</option>
+                    <!-- Options populated by JS -->
+                </select>
+            </div>
+            <!-- Dynamic Info Display -->
+            <div id="quiz-info-area" class="quiz-info hidden">
+                <span id="progress-display">Q: 1 / 10</span>
+                <span id="score-display">Score: 100%</span>
+                <span id="skips-display">Skips Left: 3</span>
+            </div>
+        </header>
 
-<button id="submit-button">Submit Answers</button>
+        <div id="error-container" class="error-message hidden"></div>
 
-<div id="results-container" style="display:none;">
-    <h2>Results</h2>
-    <div id="score-display"></div>
-    <ul id="question-results"></ul>
-</div>
+        <!-- Single Question Display Area -->
+        <div id="quiz-content" class="hidden">
+            <div id="question-area">
+                <div id="question-text">Question text will load here...</div>
+                <ul id="options-list" class="options">
+                    <!-- Options will be loaded here -->
+                </ul>
+            </div>
 
-<div id="error-container" class="error-message" style="display:none;">
-    <!-- Error message will be displayed here -->
-</div>
+            <div id="feedback-area" class="hidden"></div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const quizContainer = document.getElementById('quiz-container');
-    const submitButton = document.getElementById('submit-button');
-    const resultsContainer = document.getElementById('results-container');
-    const scoreDisplay = document.getElementById('score-display');
-    const questionResultsList = document.getElementById('question-results');
-    const errorContainer = document.getElementById('error-container'); // Get error container
+            <!-- Control Buttons -->
+            <div class="button-container">
+                <button id="submit-answer-btn" class="quiz-button">Submit Answer</button>
+                <button id="skip-question-btn" class="quiz-button">Skip Question</button>
+                <button id="next-question-btn" class="quiz-button hidden">Next Question</button>
+            </div>
+        </div>
 
-    function loadQuestions(quizData) {
-        quizData.questions.forEach((question, index) => {
-            const questionDiv = document.createElement('div');
-            questionDiv.classList.add('question');
+        <!-- Final Results Area -->
+        <div id="results-container" class="hidden">
+            <h2>Quiz Completed!</h2>
+            <div id="final-score-display">Score: 90%</div>
+            <div id="results-summary">You answered X out of Y questions correctly.</div>
+            <button id="restart-button" class="quiz-button">Choose Another Subject</button>
+        </div>
+    </div>
 
-            const questionText = document.createElement('p');
-            questionText.textContent = `${question.question_number}. ${question.question_text}`;
-            questionDiv.appendChild(questionText);
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- DOM Elements ---
+            const splashScreen = document.getElementById('splash-screen');
+            const appContainer = document.querySelector('.app-container');
+            const subjectSelector = document.getElementById('subject-selector');
+            const errorContainer = document.getElementById('error-container');
+            const quizInfoArea = document.getElementById('quiz-info-area');
+            const progressDisplay = document.getElementById('progress-display');
+            const scoreDisplay = document.getElementById('score-display');
+            const skipsDisplay = document.getElementById('skips-display');
+            const quizContent = document.getElementById('quiz-content');
+            const questionTextElement = document.getElementById('question-text');
+            const optionsList = document.getElementById('options-list');
+            const feedbackArea = document.getElementById('feedback-area');
+            const submitBtn = document.getElementById('submit-answer-btn');
+            const skipBtn = document.getElementById('skip-question-btn');
+            const nextBtn = document.getElementById('next-question-btn');
+            const resultsContainer = document.getElementById('results-container');
+            const finalScoreDisplay = document.getElementById('final-score-display');
+            const resultsSummary = document.getElementById('results-summary');
+            const restartBtn = document.getElementById('restart-button');
+            const quizTitleElement = document.querySelector('.quiz-title');
 
-            const optionsList = document.createElement('ul');
-            optionsList.classList.add('options');
+            // --- State Variables ---
+            let currentQuizData = null;
+            let allQuestions = [];
+            let questionsToAsk = [];
+            let skippedQuestions = [];
+            let currentQuestionIndex = 0; // Index within questionsToAsk
+            let totalQuestionsInQuiz = 0;
+            let correctAnswersCount = 0;
+            let incorrectAnswersCount = 0; // Tracks wrong attempts
+            let remainingSkips = 3;
+            let questionsAnsweredInSession = 0; // Tracks questions presented (excluding skips initially)
 
-            question.options.forEach(option => {
-                const optionItem = document.createElement('li');
-                optionItem.classList.add('option-item');
+            const TOTAL_SUBJECTS = 9; // Updated to 9 subjects
+            const subjectNames = [ // Array of subject names and filenames
+                { name: "Air Law", filename: "Air Law.json" },
+                { name: "Principles of Flight", filename: "Principles of Flight.json" },
+                { name: "Navigation", filename: "Navigation.json" },
+                { name: "Aircraft General Knowledge", filename: "Aircraft General Knowledge.json" },
+                { name: "Human Performance and Limitations", filename: "Human Performance and Limitations.json" },
+                { name: "Meteorology", filename: "Meteorology.json" },
+                { name: "Operational Procedures", filename: "Operational Procedures.json" },
+                { name: "Flight Performance and Planning", filename: "Flight Performance and Planning.json" },
+                { name: "Radiotelephony", filename: "Radiotelephony.json" }
+            ];
 
-                const radioInput = document.createElement('input');
-                radioInput.type = 'radio';
-                radioInput.name = `question-${question.question_number}`;
-                radioInput.value = option;
-                radioInput.id = `option-${question.question_number}-${option.replace(/[^a-zA-Z0-9]/g, '')}`; // Sanitize ID for spaces and special chars
-                // Consider using data-option attribute instead of encoding option in ID if option strings can be complex
+            // --- Initialization ---
+            function initializeApp() {
+                hideElement(splashScreen);
+                showElement(appContainer);
+                appContainer.style.opacity = 1; // Fade in
+                populateSubjectSelector();
+                resetUI(); // Ensure clean state
+            }
 
-                const label = document.createElement('label');
-                label.textContent = option;
-                label.setAttribute('for', `option-${question.question_number}-${option.replace(/[^a-zA-Z0-9]/g, '')}`); // Sanitize 'for' attribute as well
-
-                optionItem.appendChild(radioInput);
-                optionItem.appendChild(label);
-                optionsList.appendChild(optionItem);
-            });
-            questionDiv.appendChild(optionsList);
-            quizContainer.appendChild(questionDiv);
-        });
-    }
-
-    function checkAnswers(quizData) {
-        let score = 0;
-        questionResultsList.innerHTML = ''; // Clear previous results
-
-        quizData.questions.forEach((question) => {
-            const selectedOption = document.querySelector(`input[name="question-${question.question_number}"]:checked`);
-            const correctAnswer = question.correct_answer;
-            const resultItem = document.createElement('li');
-
-            if (selectedOption) {
-                const userAnswer = selectedOption.value;
-                if (userAnswer === correctAnswer) {
-                    score++;
-                    resultItem.textContent = `Question ${question.question_number}: Correct`;
-                    resultItem.classList.add('correct');
-                } else {
-                    resultItem.textContent = `Question ${question.question_number}: Incorrect. Your answer: ${userAnswer}. Correct answer: ${correctAnswer}`;
-                    resultItem.classList.add('incorrect');
+            function populateSubjectSelector() {
+                // Clear existing options except the placeholder
+                subjectSelector.innerHTML = '<option value="">-- Select a Subject --</option>';
+                for (let i = 0; i < TOTAL_SUBJECTS; i++) { // Iterate through subjectNames array
+                    const option = document.createElement('option');
+                    option.value = subjectNames[i].filename; // Use filename from array
+                    option.textContent = subjectNames[i].name; // Use subject name from array
+                    subjectSelector.appendChild(option);
                 }
-            } else {
-                resultItem.textContent = `Question ${question.question_number}: Unanswered. Correct answer: ${correctAnswer}`;
-                resultItem.classList.add('incorrect');
             }
-            questionResultsList.appendChild(resultItem);
-        });
 
-        scoreDisplay.textContent = `Your Score: ${score} out of ${quizData.questions.length}`;
-        resultsContainer.style.display = 'block';
-    }
+            // --- UI Helper Functions ---
+            function showElement(el) { el?.classList.remove('hidden'); }
+            function hideElement(el) { el?.classList.add('hidden'); }
+            function disableButton(btn) { btn.disabled = true; }
+            function enableButton(btn) { btn.disabled = false; }
 
-    // Fetch the JSON data
-    fetch('subject1.json')
-        .then(response => {
-            if (!response.ok) { // Check if response status is ok (200-299)
-                throw new Error(`HTTP error! status: ${response.status}`);
+            function displayError(message) {
+                errorContainer.textContent = message;
+                showElement(errorContainer);
+                hideElement(quizContent);
+                hideElement(quizInfoArea);
+                hideElement(resultsContainer);
             }
-            return response.json();
-        })
-        .then(data => {
-            document.querySelector('h1').textContent = data.exam_title; // Set title from JSON
-            loadQuestions(data);
-            submitButton.addEventListener('click', () => checkAnswers(data));
-        })
-        .catch(error => {
-            console.error('Error loading quiz data:', error);
-            errorContainer.textContent = 'Failed to load quiz data. Please check if subject1.json is available and valid.'; // Display error message
-            errorContainer.style.display = 'block'; // Show error container
+
+            function clearError() {
+                hideElement(errorContainer);
+            }
+
+            function updateQuizInfo() {
+                progressDisplay.textContent = `Q: ${questionsAnsweredInSession + 1} / ${totalQuestionsInQuiz}`;
+                // Score: (Correct Answers) / (Correct + Incorrect Attempts)
+                const totalAttempts = correctAnswersCount + incorrectAnswersCount;
+                const currentScore = totalAttempts === 0 ? 100 : Math.round((correctAnswersCount / totalAttempts) * 100);
+                scoreDisplay.textContent = `Score: ${currentScore}%`;
+                skipsDisplay.textContent = `Skips Left: ${remainingSkips}`;
+                showElement(quizInfoArea);
+            }
+
+            function resetUI() {
+                clearError();
+                hideElement(quizContent);
+                hideElement(quizInfoArea);
+                hideElement(resultsContainer);
+                hideElement(feedbackArea);
+                hideElement(nextBtn);
+                showElement(submitBtn);
+                showElement(skipBtn);
+                enableButton(submitBtn);
+                enableButton(skipBtn);
+                enableButton(subjectSelector); // Re-enable subject selection
+                subjectSelector.value = ""; // Reset dropdown
+                quizTitleElement.textContent = 'CAAP Mock by Chippo'; // Reset title
+            }
+
+            // --- Quiz Logic ---
+
+            function loadQuiz(filename) {
+                resetUI(); // Clear previous state
+                disableButton(subjectSelector); // Prevent changing during load
+                feedbackArea.textContent = 'Loading Quiz...';
+                feedbackArea.className = 'feedback-skipped'; // Use a neutral style
+                showElement(feedbackArea);
+
+                fetch(filename)
+                    .then(response => {
+                        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+                        return response.json();
+                    })
+                    .then(data => {
+                        if (!data || !Array.isArray(data.questions) || data.questions.length === 0) {
+                             throw new Error(`Invalid or empty quiz data in ${filename}`);
+                        }
+                        currentQuizData = data;
+                        allQuestions = data.questions; // Keep original list
+                        // Ensure question_number exists or assign one
+                        allQuestions.forEach((q, index) => {
+                            if (q.question_number === undefined) q.question_number = index + 1;
+                        });
+                        startQuiz();
+                    })
+                    .catch(error => {
+                        console.error('Error loading quiz:', error);
+                        displayError(`Failed to load quiz: ${error.message}`);
+                        hideElement(feedbackArea);
+                        enableButton(subjectSelector); // Re-enable on error
+                    });
+            }
+
+            function startQuiz() {
+                questionsToAsk = [...allQuestions]; // Start with all questions
+                skippedQuestions = [];
+                currentQuestionIndex = 0;
+                totalQuestionsInQuiz = allQuestions.length;
+                correctAnswersCount = 0;
+                incorrectAnswersCount = 0;
+                remainingSkips = 3;
+                questionsAnsweredInSession = 0;
+
+                quizTitleElement.textContent = currentQuizData.exam_title || `Subject Quiz`;
+                hideElement(feedbackArea);
+                clearError();
+                showElement(quizContent);
+                disableButton(subjectSelector); // Keep disabled during quiz
+
+                if (questionsToAsk.length > 0) {
+                    displayQuestion();
+                    updateQuizInfo();
+                } else {
+                    displayError("Quiz loaded but contains no questions.");
+                }
+            }
+
+            function displayQuestion() {
+                // Check if we ran out of questions to ask but have skipped ones
+                if (currentQuestionIndex >= questionsToAsk.length) {
+                    if (skippedQuestions.length > 0) {
+                        // Move skipped back to main list and reset index
+                        questionsToAsk = [...skippedQuestions];
+                        skippedQuestions = [];
+                        currentQuestionIndex = 0;
+                         // Don't increment questionsAnsweredInSession here, these are repeats
+                    } else {
+                        // Should not happen if nextBtn logic is correct, but handle defensively
+                        console.error("Reached end of questions unexpectedly.");
+                        endQuiz();
+                        return;
+                    }
+                }
+
+                 // Reset UI for the new question
+                hideElement(feedbackArea);
+                hideElement(nextBtn);
+                showElement(submitBtn);
+                showElement(skipBtn);
+                enableButton(submitBtn);
+                enableButton(skipBtn);
+                 if (remainingSkips <= 0) {
+                    disableButton(skipBtn);
+                }
+
+
+                const question = questionsToAsk[currentQuestionIndex];
+                questionTextElement.textContent = question.question_text;
+                optionsList.innerHTML = ''; // Clear previous options
+
+                question.options.forEach((option, index) => {
+                    const optionItem = document.createElement('li');
+                    optionItem.classList.add('option-item');
+
+                    const radioInput = document.createElement('input');
+                    radioInput.type = 'radio';
+                    radioInput.name = `question-${question.question_number}`; // Use unique name per question
+                    radioInput.value = option;
+                    const optionId = `option-${question.question_number}-${index}`;
+                    radioInput.id = optionId;
+
+                    const label = document.createElement('label');
+                    label.textContent = option;
+                    label.setAttribute('for', optionId);
+
+                    optionItem.appendChild(radioInput);
+                    optionItem.appendChild(label);
+                    optionsList.appendChild(optionItem);
+                });
+
+                updateQuizInfo(); // Update progress counter etc.
+            }
+
+            function handleSubmit() {
+                const selectedOptionInput = optionsList.querySelector(`input[name^="question-"]:checked`);
+
+                if (!selectedOptionInput) {
+                    feedbackArea.textContent = "Please select an answer.";
+                    feedbackArea.className = 'feedback-incorrect'; // Use error styling
+                    showElement(feedbackArea);
+                    return; // Don't proceed
+                }
+
+                // Disable buttons after submission
+                disableButton(submitBtn);
+                disableButton(skipBtn);
+                hideElement(feedbackArea); // Clear previous feedback
+
+                const userAnswer = selectedOptionInput.value;
+                const currentQuestion = questionsToAsk[currentQuestionIndex];
+                const correctAnswer = currentQuestion.correct_answer;
+
+                let wasCorrect = false;
+                if (userAnswer === correctAnswer) {
+                    feedbackArea.textContent = "Correct!";
+                    feedbackArea.className = 'feedback-correct';
+                    correctAnswersCount++;
+                    wasCorrect = true;
+                    // Remove correct question from the list to ask
+                    questionsToAsk.splice(currentQuestionIndex, 1);
+                    // Don't increment currentQuestionIndex, next item shifts into place
+                } else {
+                    feedbackArea.textContent = `Incorrect. The correct answer was: "${correctAnswer}"`;
+                    feedbackArea.className = 'feedback-incorrect';
+                    incorrectAnswersCount++;
+                    // Keep incorrect question in the list, move to next index for next round
+                    currentQuestionIndex++;
+                }
+
+                showElement(feedbackArea);
+                questionsAnsweredInSession++; // Increment *after* answering
+                updateQuizInfo(); // Update score immediately
+
+                // Check if quiz is over OR prepare for next question button
+                if (questionsToAsk.length === 0 && skippedQuestions.length === 0) {
+                    // Truly finished
+                    setTimeout(endQuiz, 1000); // Show feedback briefly before ending
+                } else {
+                    showElement(nextBtn); // Show button to proceed
+                    enableButton(nextBtn);
+                }
+            }
+
+            function handleSkip() {
+                if (remainingSkips <= 0) return; // Should be disabled, but double-check
+
+                const currentQuestion = questionsToAsk[currentQuestionIndex];
+
+                // Move question from questionsToAsk to skippedQuestions
+                skippedQuestions.push(currentQuestion);
+                questionsToAsk.splice(currentQuestionIndex, 1);
+                // Don't increment currentQuestionIndex
+
+                remainingSkips--;
+                // Don't count this as an "attempt" for score calculation yet
+                // questionsAnsweredInSession is NOT incremented here
+
+                feedbackArea.textContent = "Question Skipped";
+                feedbackArea.className = 'feedback-skipped';
+                showElement(feedbackArea);
+                updateQuizInfo(); // Update skip count display
+
+                disableButton(submitBtn);
+                disableButton(skipBtn);
+
+                 // Check if quiz is over OR prepare for next question button
+                if (questionsToAsk.length === 0 && skippedQuestions.length === 0) {
+                     // This case should only happen if they skip the very last question
+                     setTimeout(endQuiz, 1000);
+                } else {
+                    showElement(nextBtn); // Show button to proceed
+                    enableButton(nextBtn);
+                }
+            }
+
+            function handleNext() {
+                 // Move to the next question logically
+                 // The actual index update/reset happens *within* displayQuestion
+                 displayQuestion();
+            }
+
+            function endQuiz() {
+                hideElement(quizContent);
+                hideElement(quizInfoArea);
+                hideElement(feedbackArea);
+
+                const finalScore = totalQuestionsInQuiz === 0 ? 0 : Math.round((correctAnswersCount / totalQuestionsInQuiz) * 100);
+                 // Use allQuestions.length (totalQuestionsInQuiz) for the final denominator
+                 // Or potentially use (correctAnswersCount + incorrectAnswersCount) if you want score based only on attempts? Let's stick to total Qs.
+
+                finalScoreDisplay.textContent = `Final Score: ${finalScore}%`;
+                resultsSummary.textContent = `You answered ${correctAnswersCount} out of ${totalQuestionsInQuiz} questions correctly.`; // Modify as needed based on how you count 'answered'
+
+                showElement(resultsContainer);
+                enableButton(subjectSelector); // Allow selecting a new quiz
+            }
+
+
+            // --- Event Listeners ---
+            subjectSelector.addEventListener('change', () => {
+                const selectedFile = subjectSelector.value;
+                if (selectedFile) {
+                    loadQuiz(selectedFile);
+                } else {
+                    resetUI(); // Clear if "-- Select --" is chosen
+                }
+            });
+
+            submitBtn.addEventListener('click', handleSubmit);
+            skipBtn.addEventListener('click', handleSkip);
+            nextBtn.addEventListener('click', handleNext);
+            restartBtn.addEventListener('click', resetUI); // Allow choosing subject again
+
+            // --- Initial Execution ---
+            // Show splash screen for 3 seconds, then initialize
+            setTimeout(initializeApp, 1000);
+
         });
-});
-</script>
+    </script>
 
 </body>
 </html>

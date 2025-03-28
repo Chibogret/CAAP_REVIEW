@@ -1,0 +1,1105 @@
+{
+    "exam_title": "CAAP PPL Airman Knowledge - Aircraft General Knowledge (AGK)",
+    "questions": [
+      {
+        "question_number": 1,
+        "question_text": "According to the provided text, what type of fuel is commonly used in Cessna 152-172 aircraft?",
+        "options": [
+          "Jet A",
+          "Avgas 80/87 (Red)",
+          "Avgas 100LL (Blue) or 100 (Green)",
+          "Diesel Fuel"
+        ],
+        "correct_answer": "Avgas 100LL (Blue) or 100 (Green)"
+      },
+      {
+        "question_number": 2,
+        "question_text": "Which type of fuel system relies solely on gravity to deliver fuel to the engine?",
+        "options": [
+          "Fuel Pump System",
+          "Gravity Feed System",
+          "Fuel Injection System",
+          "Pressure Carburetor System"
+        ],
+        "correct_answer": "Gravity Feed System"
+      },
+      {
+        "question_number": 3,
+        "question_text": "What is the primary purpose of the primer in a fuel system?",
+        "options": [
+          "To filter the fuel before it enters the engine",
+          "To measure the fuel quantity in the tanks",
+          "To inject a small amount of fuel directly into the cylinders for easier starting",
+          "To switch between different fuel tanks"
+        ],
+        "correct_answer": "To inject a small amount of fuel directly into the cylinders for easier starting"
+      },
+      {
+        "question_number": 4,
+        "question_text": "What is the purpose of the fuel sump drain ports?",
+        "options": [
+          "To add fuel to the tanks",
+          "To vent the fuel tanks",
+          "To allow testing of fuel for contaminants like water or sediment",
+          "To measure fuel pressure"
+        ],
+        "correct_answer": "To allow testing of fuel for contaminants like water or sediment"
+      },
+      {
+        "question_number": 5,
+        "question_text": "Why is there always some unusable fuel in aircraft fuel tanks?",
+        "options": [
+          "It serves as a reserve for emergencies",
+          "It is below the level of the fuel line pickup point",
+          "It is required for weight and balance",
+          "It is used to cool the fuel pumps"
+        ],
+        "correct_answer": "It is below the level of the fuel line pickup point"
+      },
+      {
+        "question_number": 6,
+        "question_text": "Which of the following is NOT listed as a primary function of the engine oil system?",
+        "options": [
+          "Lubrication of moving parts",
+          "Cooling the engine by reducing friction",
+          "Carrying away contaminants",
+          "Providing fuel pressure to the carburetor"
+        ],
+        "correct_answer": "Providing fuel pressure to the carburetor"
+      },
+      {
+        "question_number": 7,
+        "question_text": "What type of oil system is typically used in the aircraft discussed to reduce weight?",
+        "options": [
+          "Dry Sump System",
+          "Wet Sump System",
+          "Pressurized Oil System",
+          "Gravity Oil System"
+        ],
+        "correct_answer": "Wet Sump System"
+      },
+      {
+        "question_number": 8,
+        "question_text": "What type of oil is recommended for the first 50 hours of engine operation (break-in period)?",
+        "options": [
+          "Ashless Dispersant Oil",
+          "Synthetic Oil",
+          "Aviation Straight Grade Oil",
+          "Multi-grade Automotive Oil"
+        ],
+        "correct_answer": "Aviation Straight Grade Oil"
+      },
+      {
+        "question_number": 9,
+        "question_text": "A rapid drop in oil pressure to zero most likely indicates:",
+        "options": [
+          "A blockage in the oil system",
+          "The engine is overheating",
+          "A blown oil line or oil pump failure",
+          "The oil quantity is slightly low"
+        ],
+        "correct_answer": "A blown oil line or oil pump failure"
+      },
+      {
+        "question_number": 10,
+        "question_text": "What does an abnormally high oil temperature reading typically indicate?",
+        "options": [
+          "The oil pump is not functional",
+          "There is a blockage in the oil system",
+          "The oil quantity is too high",
+          "The engine is overheating"
+        ],
+        "correct_answer": "The engine is overheating"
+      },
+      {
+        "question_number": 11,
+        "question_text": "Which component is used to manually check the engine oil quantity?",
+        "options": [
+          "Oil Pressure Gauge",
+          "Oil Temperature Gauge",
+          "Dipstick",
+          "Sight Glass"
+        ],
+        "correct_answer": "Dipstick"
+      },
+      {
+        "question_number": 12,
+        "question_text": "What is a major consequence of operating an engine at higher than its designed temperature?",
+        "options": [
+          "Increased fuel efficiency",
+          "Reduced oil consumption",
+          "Loss of power and potential engine damage",
+          "Improved engine starting"
+        ],
+        "correct_answer": "Loss of power and potential engine damage"
+      },
+      {
+        "question_number": 13,
+        "question_text": "Which components on the engine cylinders help dissipate heat into the surrounding air?",
+        "options": [
+          "Spark Plugs",
+          "Cooling Fins",
+          "Pistons",
+          "Valves"
+        ],
+        "correct_answer": "Cooling Fins"
+      },
+      {
+        "question_number": 14,
+        "question_text": "What is the function of cowl flaps?",
+        "options": [
+          "To increase aerodynamic drag during landing",
+          "To control the amount of cooling air flowing over the engine",
+          "To direct exhaust gases away from the cabin",
+          "To improve propeller efficiency"
+        ],
+        "correct_answer": "To control the amount of cooling air flowing over the engine"
+      },
+      {
+        "question_number": 15,
+        "question_text": "How is cabin heating typically provided in many light aircraft?",
+        "options": [
+          "Using an electric heater powered by the battery",
+          "Using residual heat from the avionics",
+          "Using fresh air heated by the exhaust system muffler",
+          "Using a dedicated fuel-burning heater"
+        ],
+        "correct_answer": "Using fresh air heated by the exhaust system muffler"
+      },
+      {
+        "question_number": 16,
+        "question_text": "What does the Exhaust Gas Temperature (EGT) gauge measure?",
+        "options": [
+          "The temperature of the engine oil",
+          "The temperature inside the cabin",
+          "The temperature of the gases at the exhaust manifold",
+          "The temperature of the cylinder heads"
+        ],
+        "correct_answer": "The temperature of the gases at the exhaust manifold"
+      },
+      {
+        "question_number": 17,
+        "question_text": "What are the typical DC voltages found in aircraft electrical systems mentioned in the text?",
+        "options": [
+          "6 or 12 volts",
+          "12 or 24 volts",
+          "14 or 28 volts",
+          "110 or 220 volts"
+        ],
+        "correct_answer": "14 or 28 volts"
+      },
+      {
+        "question_number": 18,
+        "question_text": "What is the primary function of the aircraft battery when the engine is not running?",
+        "options": [
+          "To power the alternator",
+          "To provide primary power for all systems",
+          "To provide power for starting the engine and emergency power",
+          "To regulate the voltage output of the alternator"
+        ],
+        "correct_answer": "To provide power for starting the engine and emergency power"
+      },
+      {
+        "question_number": 19,
+        "question_text": "Which component supplies electrical power to the system and recharges the battery once the engine is running?",
+        "options": [
+          "Battery",
+          "Starter Motor",
+          "Alternator or Generator",
+          "Voltage Regulator"
+        ],
+        "correct_answer": "Alternator or Generator"
+      },
+      {
+        "question_number": 20,
+        "question_text": "What is a key advantage of an alternator over a generator, according to the text?",
+        "options": [
+          "Alternators produce Direct Current (DC) directly",
+          "Alternators are lighter and require less maintenance",
+          "Alternators produce more constant electrical output across a wider range of engine speeds",
+          "Generators are more reliable at low RPM"
+        ],
+        "correct_answer": "Alternators produce more constant electrical output across a wider range of engine speeds"
+      },
+      {
+        "question_number": 21,
+        "question_text": "What is the purpose of circuit breakers or fuses in an aircraft electrical system?",
+        "options": [
+          "To generate electricity",
+          "To store electrical energy",
+          "To protect circuits and equipment from electrical overload",
+          "To convert AC to DC"
+        ],
+        "correct_answer": "To protect circuits and equipment from electrical overload"
+      },
+      {
+        "question_number": 22,
+        "question_text": "What does the illumination of the beacon light typically indicate?",
+        "options": [
+          "The aircraft is ready for takeoff",
+          "The landing gear is down and locked",
+          "The engine is about to start or is running",
+          "The aircraft is in distress"
+        ],
+        "correct_answer": "The engine is about to start or is running"
+      },
+      {
+        "question_number": 23,
+        "question_text": "What are the standard colors and positions for aircraft navigation lights?",
+        "options": [
+          "Left Wing: Green, Right Wing: Red, Tail: White",
+          "Left Wing: Red, Right Wing: Green, Tail: White",
+          "Left Wing: White, Right Wing: White, Tail: Red",
+          "Left Wing: Red, Right Wing: Red, Tail: Green"
+        ],
+        "correct_answer": "Left Wing: Red, Right Wing: Green, Tail: White"
+      },
+      {
+        "question_number": 24,
+        "question_text": "What is the function of a Bus Bar in an aircraft electrical system?",
+        "options": [
+          "To generate electrical power",
+          "To provide a common connection point for distributing voltage",
+          "To protect circuits from overload",
+          "To store electrical charge"
+        ],
+        "correct_answer": "To provide a common connection point for distributing voltage"
+      },
+      {
+        "question_number": 25,
+        "question_text": "What does an Ammeter typically measure in an aircraft electrical system?",
+        "options": [
+          "The voltage output of the alternator",
+          "The total electrical load on the system",
+          "The electrical current flowing into or out of the battery",
+          "The resistance in the electrical circuits"
+        ],
+        "correct_answer": "The electrical current flowing into or out of the battery"
+      },
+      {
+        "question_number": 26,
+        "question_text": "What does a Loadmeter typically indicate?",
+        "options": [
+          "The amount of charge remaining in the battery",
+          "The rate of current flow to the battery",
+          "The total percentage load being placed on the alternator/generator",
+          "The voltage level of the electrical system"
+        ],
+        "correct_answer": "The total percentage load being placed on the alternator/generator"
+      },
+      {
+        "question_number": 27,
+        "question_text": "What system powers some gyroscopic flight instruments in many light aircraft?",
+        "options": [
+          "Hydraulic System",
+          "Electrical System",
+          "Vacuum System",
+          "Pneumatic System"
+        ],
+        "correct_answer": "Vacuum System"
+      },
+      {
+        "question_number": 28,
+        "question_text": "The pitot tube is used to measure which type of pressure?",
+        "options": [
+          "Static Pressure only",
+          "Dynamic Pressure only",
+          "Total Pressure (Dynamic + Static)",
+          "Vacuum Pressure"
+        ],
+        "correct_answer": "Total Pressure (Dynamic + Static)"
+      },
+      {
+        "question_number": 29,
+        "question_text": "Which flight instrument is connected ONLY to the pitot pressure source (directly)?",
+        "options": [
+          "Altimeter",
+          "Vertical Speed Indicator (VSI)",
+          "Airspeed Indicator (ASI)",
+          "Attitude Indicator"
+        ],
+        "correct_answer": "Airspeed Indicator (ASI)"
+      },
+      {
+        "question_number": 30,
+        "question_text": "What pressure does the static port measure?",
+        "options": [
+          "Total Pressure",
+          "Dynamic Pressure",
+          "Static (Ambient Atmospheric) Pressure",
+          "Impact Pressure"
+        ],
+        "correct_answer": "Static (Ambient Atmospheric) Pressure"
+      },
+      {
+        "question_number": 31,
+        "question_text": "Which flight instrument operates using BOTH pitot and static pressure?",
+        "options": [
+          "Altimeter",
+          "Vertical Speed Indicator (VSI)",
+          "Airspeed Indicator (ASI)",
+          "Heading Indicator"
+        ],
+        "correct_answer": "Airspeed Indicator (ASI)"
+      },
+      {
+        "question_number": 32,
+        "question_text": "What does the Airspeed Indicator (ASI) actually measure?",
+        "options": [
+          "The static air pressure",
+          "The total air pressure",
+          "The difference between total pressure and static pressure",
+          "The dynamic pressure only"
+        ],
+        "correct_answer": "The difference between total pressure and static pressure"
+      },
+      {
+        "question_number": 33,
+        "question_text": "What is Indicated Airspeed (IAS)?",
+        "options": [
+          "Airspeed corrected for instrument errors",
+          "Airspeed corrected for altitude and temperature",
+          "The uncorrected reading obtained directly from the Airspeed Indicator",
+          "The actual speed of the aircraft over the ground"
+        ],
+        "correct_answer": "The uncorrected reading obtained directly from the Airspeed Indicator"
+      },
+      {
+        "question_number": 34,
+        "question_text": "True Airspeed (TAS) is Calibrated Airspeed (CAS) corrected for:",
+        "options": [
+          "Installation and instrument errors",
+          "Wind conditions",
+          "Altitude and non-standard temperature",
+          "Flap setting"
+        ],
+        "correct_answer": "Altitude and non-standard temperature"
+      },
+      {
+        "question_number": 35,
+        "question_text": "What does the white arc on the Airspeed Indicator represent?",
+        "options": [
+          "Normal operating range",
+          "Caution range",
+          "Never exceed speed",
+          "Flap operating range"
+        ],
+        "correct_answer": "Flap operating range"
+      },
+      {
+        "question_number": 36,
+        "question_text": "What is Vso?",
+        "options": [
+          "Maximum structural cruising speed",
+          "Stalling speed in the landing configuration (lower limit of white arc)",
+          "Never exceed speed",
+          "Maximum speed with flaps extended (upper limit of white arc)"
+        ],
+        "correct_answer": "Stalling speed in the landing configuration (lower limit of white arc)"
+      },
+      {
+        "question_number": 37,
+        "question_text": "What does the green arc on the Airspeed Indicator represent?",
+        "options": [
+          "Flap operating range",
+          "Normal operating range",
+          "Caution range",
+          "Maneuvering speed range"
+        ],
+        "correct_answer": "Normal operating range"
+      },
+      {
+        "question_number": 38,
+        "question_text": "What speed is indicated by the red radial line on the Airspeed Indicator (Vne)?",
+        "options": [
+          "Maximum flap extension speed",
+          "Maximum structural cruising speed",
+          "Never exceed speed",
+          "Design maneuvering speed"
+        ],
+        "correct_answer": "Never exceed speed"
+      },
+      {
+        "question_number": 39,
+        "question_text": "Which V-speed represents the best angle-of-climb speed?",
+        "options": [
+          "Va",
+          "Vy",
+          "Vx",
+          "Vno"
+        ],
+        "correct_answer": "Vx"
+      },
+      {
+        "question_number": 40,
+        "question_text": "Which V-speed represents the best rate-of-climb speed?",
+        "options": [
+          "Va",
+          "Vy",
+          "Vx",
+          "Vfe"
+        ],
+        "correct_answer": "Vy"
+      },
+      {
+        "question_number": 41,
+        "question_text": "The Altimeter measures the height of an aircraft above:",
+        "options": [
+          "The ground directly below (AGL)",
+          "Mean Sea Level (MSL)",
+          "A given pressure level",
+          "The departure airport elevation"
+        ],
+        "correct_answer": "A given pressure level"
+      },
+      {
+        "question_number": 42,
+        "question_text": "What type of altitude is read directly from the altimeter when set to the local altimeter setting (QNH)?",
+        "options": [
+          "Pressure Altitude",
+          "Density Altitude",
+          "True Altitude",
+          "Indicated Altitude"
+        ],
+        "correct_answer": "Indicated Altitude"
+      },
+      {
+        "question_number": 43,
+        "question_text": "What is Pressure Altitude?",
+        "options": [
+          "Altitude corrected for non-standard temperature",
+          "Actual height above Mean Sea Level (MSL)",
+          "Altitude shown when the altimeter is set to 29.92 in Hg (ISA standard pressure)",
+          "Actual height above Ground Level (AGL)"
+        ],
+        "correct_answer": "Altitude shown when the altimeter is set to 29.92 in Hg (ISA standard pressure)"
+      },
+      {
+        "question_number": 44,
+        "question_text": "Density Altitude is Pressure Altitude corrected for:",
+        "options": [
+          "Wind",
+          "Non-standard temperature",
+          "Instrument error",
+          "Local altimeter setting"
+        ],
+        "correct_answer": "Non-standard temperature"
+      },
+      {
+        "question_number": 45,
+        "question_text": "Which altimeter setting would a pilot use to have the altimeter read the field elevation upon landing?",
+        "options": [
+          "QNH",
+          "QNE",
+          "QFE",
+          "Standard Pressure (29.92 in Hg)"
+        ],
+        "correct_answer": "QFE"
+      },
+      {
+        "question_number": 46,
+        "question_text": "The Vertical Speed Indicator (VSI) operates using pressure from which source?",
+        "options": [
+          "Pitot tube only",
+          "Static port only",
+          "Both Pitot tube and Static port",
+          "Vacuum system"
+        ],
+        "correct_answer": "Static port only"
+      },
+      {
+        "question_number": 47,
+        "question_text": "What is the 'Trend' indication on a VSI?",
+        "options": [
+          "The stabilized rate of climb or descent after 6-9 seconds",
+          "The aircraft's current altitude",
+          "The immediate indication of a change in vertical direction",
+          "The rate of airspeed change"
+        ],
+        "correct_answer": "The immediate indication of a change in vertical direction"
+      },
+      {
+        "question_number": 48,
+        "question_text": "If the pitot tube becomes blocked but the drain hole remains open, what will the Airspeed Indicator show?",
+        "options": [
+          "Airspeed increases during climb",
+          "Airspeed freezes at the value when blockage occurred",
+          "Airspeed decreases to zero",
+          "Airspeed indication becomes erratic"
+        ],
+        "correct_answer": "Airspeed decreases to zero"
+      },
+      {
+        "question_number": 49,
+        "question_text": "If both the pitot tube opening and its drain hole become clogged, how will the Airspeed Indicator react?",
+        "options": [
+          "It will read zero",
+          "It will freeze at the last correct indication",
+          "It will act like an altimeter (increase in climb, decrease in descent)",
+          "It will read lower than actual airspeed"
+        ],
+        "correct_answer": "It will act like an altimeter (increase in climb, decrease in descent)"
+      },
+      {
+        "question_number": 50,
+        "question_text": "If the static port becomes blocked, which instruments will provide inaccurate readings?",
+        "options": [
+          "Airspeed Indicator only",
+          "Altimeter and VSI only",
+          "Airspeed Indicator, Altimeter, and VSI",
+          "Attitude Indicator and Heading Indicator"
+        ],
+        "correct_answer": "Airspeed Indicator, Altimeter, and VSI"
+      },
+      {
+        "question_number": 51,
+        "question_text": "What gyroscopic principle allows a gyro to remain fixed in its plane of rotation?",
+        "options": [
+          "Precession",
+          "Rigidity in space",
+          "Newton's Third Law",
+          "Bernoulli's Principle"
+        ],
+        "correct_answer": "Rigidity in space"
+      },
+      {
+        "question_number": 52,
+        "question_text": "Which gyroscopic instrument provides pitch and roll information?",
+        "options": [
+          "Heading Indicator",
+          "Turn Coordinator",
+          "Attitude Indicator",
+          "Vertical Speed Indicator"
+        ],
+        "correct_answer": "Attitude Indicator"
+      },
+      {
+        "question_number": 53,
+        "question_text": "Due to precession, the Heading Indicator must be periodically realigned with which instrument?",
+        "options": [
+          "Attitude Indicator",
+          "Airspeed Indicator",
+          "Magnetic Compass",
+          "Turn Coordinator"
+        ],
+        "correct_answer": "Magnetic Compass"
+      },
+      {
+        "question_number": 54,
+        "question_text": "How often should the Heading Indicator typically be checked and realigned during straight-and-level flight?",
+        "options": [
+          "Every 3 minutes",
+          "Every 5 minutes",
+          "Every 15 minutes",
+          "Every 30 minutes"
+        ],
+        "correct_answer": "Every 15 minutes"
+      },
+      {
+        "question_number": 55,
+        "question_text": "What information does the Turn Coordinator provide?",
+        "options": [
+          "Pitch and roll",
+          "Yaw and roll",
+          "Pitch and yaw",
+          "Only rate of turn"
+        ],
+        "correct_answer": "Yaw and roll"
+      },
+      {
+        "question_number": 56,
+        "question_text": "What is the standard rate of turn indicated by the Turn Coordinator?",
+        "options": [
+          "1 degree per second",
+          "3 degrees per second",
+          "5 degrees per second",
+          "10 degrees per second"
+        ],
+        "correct_answer": "3 degrees per second"
+      },
+      {
+        "question_number": 57,
+        "question_text": "What is Magnetic Variation?",
+        "options": [
+          "Error caused by the aircraft's magnetic fields",
+          "The tendency of the compass to dip towards the poles",
+          "The angular difference between True North and Magnetic North",
+          "The error caused by accelerating or decelerating"
+        ],
+        "correct_answer": "The angular difference between True North and Magnetic North"
+      },
+      {
+        "question_number": 58,
+        "question_text": "What causes Magnetic Deviation?",
+        "options": [
+          "The difference between True North and Magnetic North",
+          "Disturbances from magnetic fields produced by metals and electrical accessories within the airplane",
+          "The rotation of the Earth",
+          "Turbulence"
+        ],
+        "correct_answer": "Disturbances from magnetic fields produced by metals and electrical accessories within the airplane"
+      },
+      {
+        "question_number": 59,
+        "question_text": "In the Northern Hemisphere, when accelerating on an East or West heading, the magnetic compass tends to indicate a turn towards:",
+        "options": [
+          "South",
+          "North",
+          "East",
+          "West"
+        ],
+        "correct_answer": "North"
+      },
+      {
+        "question_number": 60,
+        "question_text": "In the Northern Hemisphere, when initiating a turn from a Northerly heading, the magnetic compass indication will initially:",
+        "options": [
+          "Lag behind the actual heading (Undershoot)",
+          "Lead the actual heading (Overshoot)",
+          "Remain accurate",
+          "Swing randomly"
+        ],
+        "correct_answer": "Lag behind the actual heading (Undershoot)"
+      },
+      {
+        "question_number": 61,
+        "question_text": "According to PCAR Part 1, what defines an aircraft as 'Airworthy'?",
+        "options": [
+          "It has passed its last inspection",
+          "It has a valid Certificate of Registration",
+          "It conforms to its approved design and is in a condition for safe operation",
+          "It has flown less than 100 hours since the last overhaul"
+        ],
+        "correct_answer": "It conforms to its approved design and is in a condition for safe operation"
+      },
+      {
+        "question_number": 62,
+        "question_text": "What is the typical validity period for a Certificate of Airworthiness in the Philippines before renewal is required?",
+        "options": [
+          "6 months",
+          "1 year",
+          "2 years",
+          "Until the next major inspection"
+        ],
+        "correct_answer": "1 year"
+      },
+      {
+        "question_number": 63,
+        "question_text": "Which document, signed by an authorized representative of an AMO, certifies that maintenance work has been completed satisfactorily?",
+        "options": [
+          "Certificate of Registration",
+          "Supplemental Type Certificate (STC)",
+          "Return to Service (RTS) / Maintenance Release",
+          "Pilot Operating Handbook (POH)"
+        ],
+        "correct_answer": "Return to Service (RTS) / Maintenance Release"
+      },
+      {
+        "question_number": 64,
+        "question_text": "Who holds the primary responsibility for maintaining an aircraft in an airworthy condition?",
+        "options": [
+          "The pilot flying the aircraft",
+          "The Approved Maintenance Organization (AMO)",
+          "The Civil Aviation Authority of the Philippines (CAAP)",
+          "The owner or lessee of the aircraft"
+        ],
+        "correct_answer": "The owner or lessee of the aircraft"
+      },
+      {
+        "question_number": 65,
+        "question_text": "Which instrument is required for VFR flight at night, but not necessarily during the day, according to the provided list?",
+        "options": [
+          "Airspeed indicator",
+          "Magnetic compass",
+          "Attitude indicator",
+          "OAT gauge"
+        ],
+        "correct_answer": "Attitude indicator"
+      },
+      {
+        "question_number": 66,
+        "question_text": "What is a Supplemental Type Certificate (STC)?",
+        "options": [
+          "The original approval for an aircraft design",
+          "An approval for a major change in type design of an already approved product",
+          "A certificate required for experimental aircraft",
+          "The annual airworthiness certification"
+        ],
+        "correct_answer": "An approval for a major change in type design of an already approved product"
+      },
+      {
+        "question_number": 67,
+        "question_text": "Which aircraft category permits limited acrobatics with bank angles between 60° and 90°?",
+        "options": [
+          "Normal",
+          "Transport",
+          "Utility",
+          "Aerobatic"
+        ],
+        "correct_answer": "Utility"
+      },
+      {
+        "question_number": 68,
+        "question_text": "An aircraft used for agricultural purposes like crop dusting would typically fall under which category?",
+        "options": [
+          "Normal",
+          "Utility",
+          "Restricted",
+          "Experimental"
+        ],
+        "correct_answer": "Restricted"
+      },
+      {
+        "question_number": 69,
+        "question_text": "What type of fuselage construction uses a substructure riveted to the skin to maintain shape and strength, common in modern light aircraft?",
+        "options": [
+          "Truss Type",
+          "Monocoque",
+          "Semi-monocoque",
+          "Geodetic"
+        ],
+        "correct_answer": "Semi-monocoque"
+      },
+      {
+        "question_number": 70,
+        "question_text": "Which wing planform is described as ideal for subsonic speeds but difficult to manufacture?",
+        "options": [
+          "Straight Wing",
+          "Sweptback Wing",
+          "Delta Wing",
+          "Elliptical Wing"
+        ],
+        "correct_answer": "Elliptical Wing"
+      },
+      {
+        "question_number": 71,
+        "question_text": "Which flight control surfaces move in opposite directions to cause the airplane to roll?",
+        "options": [
+          "Flaps",
+          "Elevators",
+          "Ailerons",
+          "Rudder"
+        ],
+        "correct_answer": "Ailerons"
+      },
+      {
+        "question_number": 72,
+        "question_text": "What is the primary function of flaps?",
+        "options": [
+          "To control roll",
+          "To control yaw",
+          "To increase lift and drag, allowing for steeper approaches and slower landing speeds",
+          "To trim the aircraft for level flight"
+        ],
+        "correct_answer": "To increase lift and drag, allowing for steeper approaches and slower landing speeds"
+      },
+      {
+        "question_number": 73,
+        "question_text": "What part of the empennage controls the airplane's yaw (movement of the nose left and right)?",
+        "options": [
+          "Horizontal Stabilizer",
+          "Elevator",
+          "Vertical Stabilizer (Fin)",
+          "Rudder"
+        ],
+        "correct_answer": "Rudder"
+      },
+      {
+        "question_number": 74,
+        "question_text": "What part of the empennage controls the airplane's pitch (movement of the nose up and down)?",
+        "options": [
+          "Rudder",
+          "Vertical Stabilizer",
+          "Elevator or Stabilator",
+          "Aileron"
+        ],
+        "correct_answer": "Elevator or Stabilator"
+      },
+      {
+        "question_number": 75,
+        "question_text": "What is the purpose of an elevator trim tab?",
+        "options": [
+          "To increase the structural integrity of the elevator",
+          "To help the pilot hold the elevator in a desired position, reducing control pressure",
+          "To act as a secondary elevator in case of primary control failure",
+          "To increase the effectiveness of the elevator at high speeds"
+        ],
+        "correct_answer": "To help the pilot hold the elevator in a desired position, reducing control pressure"
+      },
+      {
+        "question_number": 76,
+        "question_text": "What type of landing gear configuration has a single nose wheel and two main wheels?",
+        "options": [
+          "Conventional / Tail Dragger",
+          "Tricycle",
+          "Tandem",
+          "Bicycle"
+        ],
+        "correct_answer": "Tricycle"
+      },
+      {
+        "question_number": 77,
+        "question_text": "What type of shock absorber, using air and oil, is commonly found on nose landing gear?",
+        "options": [
+          "Spring Steel",
+          "Rubber Bungee Cord",
+          "Oleo Strut",
+          "Rigid Mount"
+        ],
+        "correct_answer": "Oleo Strut"
+      },
+      {
+        "question_number": 78,
+        "question_text": "What is the primary function of the propeller?",
+        "options": [
+          "To cool the engine",
+          "To generate electricity",
+          "To translate engine power into thrust",
+          "To stabilize the aircraft"
+        ],
+        "correct_answer": "To translate engine power into thrust"
+      },
+      {
+        "question_number": 79,
+        "question_text": "What is a characteristic of a 'Climb Propeller'?",
+        "options": [
+          "Less twist, designed for high cruise speeds",
+          "Variable pitch controlled by the pilot",
+          "More twist (bigger bite), optimized for climb performance",
+          "Only adjustable on the ground"
+        ],
+        "correct_answer": "More twist (bigger bite), optimized for climb performance"
+      },
+      {
+        "question_number": 80,
+        "question_text": "What is the advantage of a Constant Speed Propeller?",
+        "options": [
+          "It is simpler and lighter than fixed-pitch propellers",
+          "It allows the pilot to maintain a constant airspeed",
+          "It automatically adjusts pitch to maintain a selected RPM for better efficiency",
+          "It requires less maintenance"
+        ],
+        "correct_answer": "It automatically adjusts pitch to maintain a selected RPM for better efficiency"
+      },
+      {
+        "question_number": 81,
+        "question_text": "What type of engine uses the back-and-forth movement of pistons to convert pressure into rotating motion?",
+        "options": [
+          "Turboprop Engine",
+          "Turbojet Engine",
+          "Reciprocating Engine",
+          "Ramjet Engine"
+        ],
+        "correct_answer": "Reciprocating Engine"
+      },
+      {
+        "question_number": 82,
+        "question_text": "Which cylinder arrangement is noted for having a good power-to-weight ratio and good cooling but potentially large frontal area?",
+        "options": [
+          "In-line",
+          "V-Type",
+          "Opposed",
+          "Radial"
+        ],
+        "correct_answer": "Radial"
+      },
+      {
+        "question_number": 83,
+        "question_text": "Which cylinder arrangement is common in light general aviation aircraft due to good cooling, less vibration, and small frontal area?",
+        "options": [
+          "In-line",
+          "V-Type",
+          "Opposed",
+          "Radial"
+        ],
+        "correct_answer": "Opposed"
+      },
+      {
+        "question_number": 84,
+        "question_text": "Which engine component connects the piston to the crankshaft?",
+        "options": [
+          "Camshaft",
+          "Connecting Rod",
+          "Valve Spring",
+          "Spark Plug"
+        ],
+        "correct_answer": "Connecting Rod"
+      },
+      {
+        "question_number": 85,
+        "question_text": "What are the four strokes of a typical reciprocating engine cycle?",
+        "options": [
+          "Suck, Squeeze, Spark, Spin",
+          "Intake, Power, Compression, Exhaust",
+          "Intake, Compression, Power, Exhaust",
+          "Start, Warm-up, Cruise, Shutdown"
+        ],
+        "correct_answer": "Intake, Compression, Power, Exhaust"
+      },
+      {
+        "question_number": 86,
+        "question_text": "What event occurs between the compression and power strokes?",
+        "options": [
+          "Intake",
+          "Exhaust",
+          "Ignition",
+          "Valve overlap"
+        ],
+        "correct_answer": "Ignition"
+      },
+      {
+        "question_number": 87,
+        "question_text": "What is detonation in an engine cylinder?",
+        "options": [
+          "Normal, smooth burning of the fuel-air mixture",
+          "Ignition of the fuel-air mixture before the spark plug fires",
+          "Uncontrolled, explosive ignition of the fuel-air mixture",
+          "Incomplete combustion resulting in black smoke"
+        ],
+        "correct_answer": "Uncontrolled, explosive ignition of the fuel-air mixture"
+      },
+      {
+        "question_number": 88,
+        "question_text": "What is pre-ignition?",
+        "options": [
+          "The spark plug firing at the correct time",
+          "Ignition of the fuel-air mixture before the spark plug fires, often caused by a hot spot",
+          "Explosive burning of the fuel-air mixture",
+          "The process of priming the engine before start"
+        ],
+        "correct_answer": "Ignition of the fuel-air mixture before the spark plug fires, often caused by a hot spot"
+      },
+      {
+        "question_number": 89,
+        "question_text": "What does the Tachometer indicate?",
+        "options": [
+          "Engine oil pressure",
+          "Engine temperature",
+          "Engine crankshaft speed in RPM (Revolutions Per Minute)",
+          "Airspeed"
+        ],
+        "correct_answer": "Engine crankshaft speed in RPM (Revolutions Per Minute)"
+      },
+      {
+        "question_number": 90,
+        "question_text": "Under what conditions is carburetor icing most likely, according to the text?",
+        "options": [
+          "High temperatures and low humidity",
+          "Temperatures below freezing only",
+          "Temperatures around 21°C with 80% humidity",
+          "Only when visible moisture is present"
+        ],
+        "correct_answer": "Temperatures around 21°C with 80% humidity"
+      },
+      {
+        "question_number": 91,
+        "question_text": "What component generates the high voltage required for the spark plugs in the ignition system?",
+        "options": [
+          "Battery",
+          "Alternator",
+          "Magneto",
+          "Starter"
+        ],
+        "correct_answer": "Magneto"
+      },
+      {
+        "question_number": 92,
+        "question_text": "During a magneto check, what is the typical maximum allowable RPM drop for a single magneto?",
+        "options": [
+          "50 RPM",
+          "75 RPM",
+          "125 RPM",
+          "200 RPM"
+        ],
+        "correct_answer": "125 RPM"
+      },
+      {
+        "question_number": 93,
+        "question_text": "During a magneto check, what is the typical maximum allowable difference in RPM drop between the left and right magnetos?",
+        "options": [
+          "25 RPM",
+          "50 RPM",
+          "75 RPM",
+          "100 RPM"
+        ],
+        "correct_answer": "50 RPM"
+      },
+      {
+        "question_number": 94,
+        "question_text": "Which structural component forms the central body of the airplane, housing the crew and passengers?",
+        "options": [
+          "Wing",
+          "Empennage",
+          "Fuselage",
+          "Landing Gear"
+        ],
+        "correct_answer": "Fuselage"
+      },
+      {
+        "question_number": 95,
+        "question_text": "What is the term for the tail assembly of an aircraft, typically consisting of the vertical and horizontal stabilizers?",
+        "options": [
+          "Fuselage",
+          "Powerplant",
+          "Empennage",
+          "Cockpit"
+        ],
+        "correct_answer": "Empennage"
+      },
+      {
+        "question_number": 96,
+        "question_text": "Which basic flight maneuver is primarily controlled by the ailerons?",
+        "options": [
+          "Pitch",
+          "Yaw",
+          "Roll",
+          "Thrust"
+        ],
+        "correct_answer": "Roll"
+      },
+      {
+        "question_number": 97,
+        "question_text": "Which basic flight maneuver is primarily controlled by the rudder?",
+        "options": [
+          "Pitch",
+          "Yaw",
+          "Roll",
+          "Lift"
+        ],
+        "correct_answer": "Yaw"
+      },
+      {
+        "question_number": 98,
+        "question_text": "Which basic flight maneuver is primarily controlled by the elevator/stabilator?",
+        "options": [
+          "Pitch",
+          "Yaw",
+          "Roll",
+          "Drag"
+        ],
+        "correct_answer": "Pitch"
+      },
+      {
+        "question_number": 99,
+        "question_text": "According to PCAR Part 5, what is 'Continuing Airworthiness'?",
+        "options": [
+          "The initial certification process for a new aircraft",
+          "The set of processes ensuring an aircraft remains compliant and safe throughout its operating life",
+          "A special flight permit for non-airworthy aircraft",
+          "The process of modifying an aircraft design"
+        ],
+        "correct_answer": "The set of processes ensuring an aircraft remains compliant and safe throughout its operating life"
+      },
+      {
+        "question_number": 100,
+        "question_text": "What is Ground Speed (GS)?",
+        "options": [
+          "Indicated airspeed corrected for instrument error",
+          "Calibrated airspeed corrected for altitude and temperature",
+          "The aircraft's actual speed over the ground (TAS adjusted for wind)",
+          "The speed required for takeoff"
+        ],
+        "correct_answer": "The aircraft's actual speed over the ground (TAS adjusted for wind)"
+      }
+    ]
+  }

@@ -1,0 +1,775 @@
+{
+    "exam_title": "CAAP Meteorology Reviewer",
+    "questions": [
+        {
+            "question_number": 1,
+            "question_text": "What causes the sky to appear blue?",
+            "options": [
+                "Absorption of light by atmospheric gases",
+                "Reflection of sunlight off the oceans",
+                "Blue light having a shorter wavelength and scattering more easily",
+                "Presence of ozone in the upper atmosphere"
+            ],
+            "correct_answer": "Blue light having a shorter wavelength and scattering more easily"
+        },
+        {
+            "question_number": 2,
+            "question_text": "What is the standard temperature lapse rate in the International Standard Atmosphere (ISA) below the tropopause?",
+            "options": [
+                "-1°C per 1,000 feet",
+                "-2°C per 1,000 feet",
+                "-3°C per 1,000 feet",
+                "-3.5°C per 1,000 feet"
+            ],
+            "correct_answer": "-2°C per 1,000 feet"
+        },
+        {
+            "question_number": 3,
+            "question_text": "What is the standard atmospheric pressure at Mean Sea Level (MSL) in the ISA?",
+            "options": [
+                "1000.0 hPa / 29.53 inHg",
+                "1013.2 hPa / 29.92 inHg",
+                "1025.0 hPa / 30.27 inHg",
+                "980.0 hPa / 28.94 inHg"
+            ],
+            "correct_answer": "1013.2 hPa / 29.92 inHg"
+        },
+        {
+            "question_number": 4,
+            "question_text": "Air pressure typically decreases by approximately how much per 1,000 feet of altitude gained near sea level?",
+            "options": [
+                "0.5 inHg",
+                "1 inHg",
+                "2 inHg",
+                "1 hPa"
+            ],
+            "correct_answer": "1 inHg"
+        },
+        {
+            "question_number": 5,
+            "question_text": "In the Northern Hemisphere, how does air circulate around a low-pressure system?",
+            "options": [
+                "Clockwise and outward",
+                "Counterclockwise and inward",
+                "Clockwise and inward",
+                "Counterclockwise and outward"
+            ],
+            "correct_answer": "Counterclockwise and inward"
+        },
+        {
+            "question_number": 6,
+            "question_text": "What phenomenon causes the apparent deflection of wind direction due to the Earth's rotation?",
+            "options": [
+                "Pressure Gradient Force",
+                "Centrifugal Force",
+                "Coriolis Force",
+                "Gravitational Force"
+            ],
+            "correct_answer": "Coriolis Force"
+        },
+        {
+            "question_number": 7,
+            "question_text": "Which global circulation cell is found between 0° and 30° latitude?",
+            "options": [
+                "Polar Cell",
+                "Hadley Cell",
+                "Ferrel Cell",
+                "Equatorial Cell"
+            ],
+            "correct_answer": "Hadley Cell"
+        },
+        {
+            "question_number": 8,
+            "question_text": "On a weather map, what do closely spaced isobars indicate?",
+            "options": [
+                "High temperatures",
+                "Calm conditions",
+                "Low humidity",
+                "Strong winds"
+            ],
+            "correct_answer": "Strong winds"
+        },
+        {
+            "question_number": 9,
+            "question_text": "High-pressure areas (H) are generally associated with which type of weather?",
+            "options": [
+                "Storms and strong winds",
+                "Heavy precipitation",
+                "Clear skies and stable weather",
+                "Low ceilings and poor visibility"
+            ],
+            "correct_answer": "Clear skies and stable weather"
+        },
+        {
+            "question_number": 10,
+            "question_text": "What does QFE represent in altimetry?",
+            "options": [
+                "Atmospheric pressure at Mean Sea Level (Local)",
+                "Standard pressure setting (1013.2 hPa)",
+                "Atmospheric pressure at field elevation",
+                "Height above ground level"
+            ],
+            "correct_answer": "Atmospheric pressure at field elevation"
+        },
+        {
+            "question_number": 11,
+            "question_text": "Which altimeter setting provides the height above mean sea level (True Altitude) at an airport?",
+            "options": [
+                "QNE",
+                "QFE",
+                "QNH",
+                "Standard (29.92 inHg)"
+            ],
+            "correct_answer": "QNH"
+        },
+        {
+            "question_number": 12,
+            "question_text": "What is Pressure Altitude?",
+            "options": [
+                "Height above ground level",
+                "Height above mean sea level",
+                "Height above the standard datum plane (1013.2 hPa / 29.92 inHg)",
+                "The altitude indicated when QFE is set"
+            ],
+            "correct_answer": "Height above the standard datum plane (1013.2 hPa / 29.92 inHg)"
+        },
+        {
+            "question_number": 13,
+            "question_text": "In which atmospheric layer does temperature generally increase with altitude due to ozone absorption?",
+            "options": [
+                "Troposphere",
+                "Mesosphere",
+                "Thermosphere",
+                "Stratosphere"
+            ],
+            "correct_answer": "Stratosphere"
+        },
+        {
+            "question_number": 14,
+            "question_text": "What is an atmospheric inversion?",
+            "options": [
+                "A layer where temperature decreases rapidly with altitude",
+                "A layer where pressure increases with altitude",
+                "A layer where temperature increases with altitude",
+                "A layer of constant humidity"
+            ],
+            "correct_answer": "A layer where temperature increases with altitude"
+        },
+        {
+            "question_number": 15,
+            "question_text": "How does increased air density generally affect aircraft performance?",
+            "options": [
+                "Decreased lift, decreased thrust",
+                "Increased lift, increased thrust",
+                "Increased lift, decreased thrust",
+                "Decreased lift, increased thrust"
+            ],
+            "correct_answer": "Increased lift, increased thrust"
+        },
+        {
+            "question_number": 16,
+            "question_text": "What is the term for horizontal (lateral) air movement?",
+            "options": [
+                "Conduction",
+                "Convection",
+                "Advection",
+                "Radiation"
+            ],
+            "correct_answer": "Advection"
+        },
+        {
+            "question_number": 17,
+            "question_text": "A wind blowing from the sea towards the land during the day is called a:",
+            "options": [
+                "Land Breeze",
+                "Mountain Breeze",
+                "Sea Breeze",
+                "Valley Breeze"
+            ],
+            "correct_answer": "Sea Breeze"
+        },
+        {
+            "question_number": 18,
+            "question_text": "A dry, warm descending wind on the leeward side of a mountain range is known as a:",
+            "options": [
+                "Katabatic Wind",
+                "Sea Breeze",
+                "Foehn Wind (or Chinook)",
+                "Anabatic Wind"
+            ],
+            "correct_answer": "Foehn Wind (or Chinook)"
+        },
+        {
+            "question_number": 19,
+            "question_text": "Low-level wind shear typically occurs within what altitude range above ground level?",
+            "options": [
+                "Below 500 ft AGL",
+                "Below 1000 ft AGL",
+                "Within 2000 ft AGL",
+                "Within 5000 ft AGL"
+            ],
+            "correct_answer": "Within 2000 ft AGL"
+        },
+        {
+            "question_number": 20,
+            "question_text": "What is dew point?",
+            "options": [
+                "The temperature at which ice forms",
+                "The temperature at which air becomes fully saturated",
+                "The amount of moisture the air currently holds",
+                "The pressure exerted by water vapor"
+            ],
+            "correct_answer": "The temperature at which air becomes fully saturated"
+        },
+        {
+            "question_number": 21,
+            "question_text": "Which low cloud type is characterized by layered, gray sheets covering large areas, often associated with stable air and poor visibility?",
+            "options": [
+                "Stratocumulus",
+                "Cumulus",
+                "Nimbostratus",
+                "Stratus"
+            ],
+            "correct_answer": "Stratus"
+        },
+        {
+            "question_number": 22,
+            "question_text": "Which cloud type is associated with widespread, continuous rain or snow and poses a severe icing hazard if temperatures are near freezing?",
+            "options": [
+                "Cirrostratus",
+                "Altostratus",
+                "Nimbostratus",
+                "Stratocumulus"
+            ],
+            "correct_answer": "Nimbostratus"
+        },
+        {
+            "question_number": 23,
+            "question_text": "Altostratus and Altocumulus clouds are classified as:",
+            "options": [
+                "Low Clouds",
+                "High Clouds",
+                "Middle Clouds",
+                "Clouds with Vertical Development"
+            ],
+            "correct_answer": "Middle Clouds"
+        },
+        {
+            "question_number": 24,
+            "question_text": "Which high cloud type often appears as thin, wispy streaks and can be an early indicator of approaching bad weather?",
+            "options": [
+                "Cirrocumulus",
+                "Cirrus",
+                "Altostratus",
+                "Cirrostratus"
+            ],
+            "correct_answer": "Cirrus"
+        },
+        {
+            "question_number": 25,
+            "question_text": "What is fog defined as in the notes?",
+            "options": [
+                "Any cloud touching the ground",
+                "Clouds below 1,000 ft",
+                "Clouds 50ft under (near the surface)",
+                "Mist with visibility less than 1 km"
+            ],
+            "correct_answer": "Clouds 50ft under (near the surface)"
+        },
+        {
+            "question_number": 26,
+            "question_text": "Which type of fog forms over low-lying flat surfaces on clear, calm, humid nights due to ground cooling?",
+            "options": [
+                "Advection Fog",
+                "Upslope Fog",
+                "Steam Fog",
+                "Radiation Fog"
+            ],
+            "correct_answer": "Radiation Fog"
+        },
+        {
+            "question_number": 27,
+            "question_text": "Which type of fog occurs when warm, moist air moves over a cooler surface, common along coastlines?",
+            "options": [
+                "Steam Fog",
+                "Radiation Fog",
+                "Advection Fog",
+                "Precipitation Fog"
+            ],
+            "correct_answer": "Advection Fog"
+        },
+        {
+            "question_number": 28,
+            "question_text": "Which of the following is NOT listed as a primary hazard associated with thunderstorms?",
+            "options": [
+                "Lightning",
+                "Low Density Altitude",
+                "Tornadoes",
+                "Hail"
+            ],
+            "correct_answer": "Low Density Altitude"
+        },
+        {
+            "question_number": 29,
+            "question_text": "What is the boundary between two different air masses called?",
+            "options": [
+                "Isobar",
+                "Front",
+                "Trough",
+                "Ridge"
+            ],
+            "correct_answer": "Front"
+        },
+        {
+            "question_number": 30,
+            "question_text": "Which type of front occurs when a warm air mass displaces a cold air mass, typically moving slowly with a gentle slope?",
+            "options": [
+                "Stationary Front",
+                "Cold Front",
+                "Occluded Front",
+                "Warm Front"
+            ],
+            "correct_answer": "Warm Front"
+        },
+        {
+            "question_number": 31,
+            "question_text": "Which type of front is characterized by a steep slope, fast movement, and is often associated with towering cumulus clouds and showers?",
+            "options": [
+                "Warm Front",
+                "Occluded Front",
+                "Cold Front",
+                "Stationary Front"
+            ],
+            "correct_answer": "Cold Front"
+        },
+        {
+            "question_number": 32,
+            "question_text": "What type of front forms when a cold front catches up to a warm front?",
+            "options": [
+                "Stationary Front",
+                "Occluded Front",
+                "Warm Front",
+                "Secondary Cold Front"
+            ],
+            "correct_answer": "Occluded Front"
+        },
+        {
+            "question_number": 33,
+            "question_text": "What does METAR stand for (in general terms)?",
+            "options": [
+                "Meteorological Terminal Aircraft Report",
+                "Meteorological Aerodrome Report",
+                "Aviation Routine Weather Report",
+                "Meteorological Aviation Regional Report"
+            ],
+            "correct_answer": "Aviation Routine Weather Report"
+        },
+        {
+            "question_number": 34,
+            "question_text": "How often are METAR reports routinely updated?",
+            "options": [
+                "Every 30 minutes",
+                "Every hour",
+                "Every 6 hours",
+                "Only when conditions change significantly"
+            ],
+            "correct_answer": "Every hour"
+        },
+        {
+            "question_number": 35,
+            "question_text": "In a METAR, what does 'BKN080' indicate?",
+            "options": [
+                "Broken clouds at 800 feet",
+                "Few clouds at 8,000 feet",
+                "Broken clouds at 8,000 feet",
+                "Overcast clouds at 8,000 feet"
+            ],
+            "correct_answer": "Broken clouds at 8,000 feet"
+        },
+        {
+            "question_number": 36,
+            "question_text": "What is the primary purpose of ATIS?",
+            "options": [
+                "To provide long-range weather forecasts",
+                "To broadcast pilot reports (PIREPs)",
+                "To provide continuous broadcast of current observed weather and airport information to reduce radio congestion",
+                "To issue thunderstorm warnings"
+            ],
+            "correct_answer": "To provide continuous broadcast of current observed weather and airport information to reduce radio congestion"
+        },
+        {
+            "question_number": 37,
+            "question_text": "What is a PIREP?",
+            "options": [
+                "A forecast for a specific terminal",
+                "A pilot report of observed meteorological conditions in flight",
+                "A summary of expected weather hazards",
+                "A scheduled hourly weather observation"
+            ],
+            "correct_answer": "A pilot report of observed meteorological conditions in flight"
+        },
+        {
+            "question_number": 38,
+            "question_text": "What is a TAF?",
+            "options": [
+                "A report of current weather conditions",
+                "A pilot's observation",
+                "A forecast of weather conditions expected at an airport",
+                "An analysis of upper air data"
+            ],
+            "correct_answer": "A forecast of weather conditions expected at an airport"
+        },
+        {
+            "question_number": 39,
+            "question_text": "What is the typical validity period for a TAF?",
+            "options": [
+                "1 hour",
+                "6 hours",
+                "12 hours",
+                "24-30 hours"
+            ],
+            "correct_answer": "24-30 hours"
+        },
+        {
+            "question_number": 40,
+            "question_text": "A TAF generally forecasts conditions within what radius of the airport?",
+            "options": [
+                "1 SM",
+                "5 SM",
+                "10 SM",
+                "25 SM"
+            ],
+            "correct_answer": "5 SM"
+        },
+        {
+            "question_number": 41,
+            "question_text": "Absolute Altitude refers to the height:",
+            "options": [
+                "Above the standard datum plane",
+                "Above Mean Sea Level (AMSL)",
+                "Indicated on the altimeter with QNH set",
+                "Above Ground Level (AGL)"
+            ],
+            "correct_answer": "Above Ground Level (AGL)"
+        },
+        {
+            "question_number": 42,
+            "question_text": "Which atmospheric layer contains the vast majority of Earth's weather phenomena?",
+            "options": [
+                "Stratosphere",
+                "Mesosphere",
+                "Thermosphere",
+                "Troposphere"
+            ],
+            "correct_answer": "Troposphere"
+        },
+        {
+            "question_number": 43,
+            "question_text": "What condition is necessary for the formation of clouds and fog?",
+            "options": [
+                "High pressure",
+                "Low humidity",
+                "Air reaching its saturation point (dew point)",
+                "Strong upper-level winds"
+            ],
+            "correct_answer": "Air reaching its saturation point (dew point)"
+        },
+        {
+            "question_number": 44,
+            "question_text": "What are condensation nuclei?",
+            "options": [
+                "The center of a low-pressure system",
+                "Ice crystals forming at high altitudes",
+                "Small particles (dust, salt, pollution) on which water vapor condenses",
+                "Large water droplets in a cloud"
+            ],
+            "correct_answer": "Small particles (dust, salt, pollution) on which water vapor condenses"
+        },
+        {
+            "question_number": 45,
+            "question_text": "What type of clouds are often associated with thunderstorms due to strong vertical development?",
+            "options": [
+                "Stratus",
+                "Cirrus",
+                "Cumulonimbus",
+                "Altostratus"
+            ],
+            "correct_answer": "Cumulonimbus"
+        },
+        {
+            "question_number": 46,
+            "question_text": "Which FAA briefing type should be requested if you need to update information from a previous standard briefing?",
+            "options": [
+                "Outlook Briefing",
+                "Standard Briefing",
+                "Abbreviated Briefing",
+                "Continuous Briefing"
+            ],
+            "correct_answer": "Abbreviated Briefing"
+        },
+        {
+            "question_number": 47,
+            "question_text": "Relative humidity depends on both the amount of moisture present and the:",
+            "options": [
+                "Air pressure",
+                "Wind speed",
+                "Air temperature",
+                "Altitude"
+            ],
+            "correct_answer": "Air temperature"
+        },
+        {
+            "question_number": 48,
+            "question_text": "A microburst is a particularly dangerous form of:",
+            "options": [
+                "Fog",
+                "Updraft",
+                "Wind Shear",
+                "Inversion"
+            ],
+            "correct_answer": "Wind Shear"
+        },
+        {
+            "question_number": 49,
+            "question_text": "What term describes the formation or intensification of a front?",
+            "options": [
+                "Frontolysis",
+                "Frontogenesis",
+                "Cyclogenesis",
+                "Occlusion"
+            ],
+            "correct_answer": "Frontogenesis"
+        },
+        {
+            "question_number": 50,
+            "question_text": "On a wind aloft chart or METAR, a short barb represents how many knots of wind speed?",
+            "options": [
+                "2 knots",
+                "5 knots",
+                "10 knots",
+                "50 knots"
+            ],
+            "correct_answer": "5 knots"
+        },  
+        {
+            "question_number": 51,
+            "question_text": "What is the primary government agency responsible for providing weather forecasts, advisories, and warnings for aviation in the Philippines?",
+            "options": [
+                "CAAP (Civil Aviation Authority of the Philippines)",
+                "MIAA (Manila International Airport Authority)",
+                "PAGASA (Philippine Atmospheric, Geophysical and Astronomical Services Administration)",
+                "NDRRMC (National Disaster Risk Reduction and Management Council)"
+            ],
+            "correct_answer": "PAGASA (Philippine Atmospheric, Geophysical and Astronomical Services Administration)"
+        },
+        {
+            "question_number": 52,
+            "question_text": "In the Philippines, intense tropical cyclones equivalent to hurricanes are locally referred to as:",
+            "options": [
+                "Willy-willies",
+                "Cyclones",
+                "Bagyo (Typhoons)",
+                "Monsoons"
+            ],
+            "correct_answer": "Bagyo (Typhoons)"
+        },
+        {
+            "question_number": 53,
+            "question_text": "Which PAGASA warning system provides information on the intensity and expected track of tropical cyclones affecting the Philippines?",
+            "options": [
+                "Gale Warning",
+                "Thunderstorm Advisory",
+                "Tropical Cyclone Warning Signal (TCWS)",
+                "Aviation Weather Advisory"
+            ],
+            "correct_answer": "Tropical Cyclone Warning Signal (TCWS)"
+        },
+        {
+            "question_number": 54,
+            "question_text": "The Southwest Monsoon, locally known as 'Habagat', typically affects the Philippines during which months and is associated with what general weather?",
+            "options": [
+                "November to February; Cool and dry weather, especially in the east",
+                "June to October; Warm, moist winds, frequent heavy rainfall, especially in western sections",
+                "March to May; Hot and dry conditions",
+                "All year round; Variable winds and scattered showers"
+            ],
+            "correct_answer": "June to October; Warm, moist winds, frequent heavy rainfall, especially in western sections"
+        },
+        {
+            "question_number": 55,
+            "question_text": "The Northeast Monsoon, locally known as 'Amihan', typically affects the Philippines during which months and is associated with what general weather?",
+            "options": [
+                "June to October; Heavy rainfall in western areas",
+                "November to February/March; Cool and generally drier conditions, especially in eastern sections",
+                "March to May; Intense heat and humidity",
+                "All year round; Strong westerly winds"
+            ],
+            "correct_answer": "November to February/March; Cool and generally drier conditions, especially in eastern sections"
+        },
+        {
+            "question_number": 56,
+            "question_text": "What significant weather phenomenon, common in the tropics including the Philippines, is characterized by a band of clouds, thunderstorms, and rain encircling the Earth near the Equator?",
+            "options": [
+                "Polar Front",
+                "Subtropical Jet Stream",
+                "Intertropical Convergence Zone (ITCZ)",
+                "Siberian High"
+            ],
+            "correct_answer": "Intertropical Convergence Zone (ITCZ)"
+        },
+        {
+            "question_number": 57,
+            "question_text": "In the Philippines, where can pilots typically obtain official pre-flight weather briefings according to the user's notes?",
+            "options": [
+                "Directly from PAGASA headquarters",
+                "From Air Traffic Control Tower",
+                "Via commercial weather websites only",
+                "From a Flight Service Station (FSS)"
+            ],
+            "correct_answer": "From a Flight Service Station (FSS)"
+        },
+        {
+            "question_number": 58,
+            "question_text": "A METAR from RPLL (Ninoy Aquino International Airport) reads: RPLL 250300Z 27008KT 8000 SCT015 BKN080 31/25 Q1010 NOSIG=. What is the reported wind?",
+            "options": [
+                "080 degrees at 27 knots",
+                "Variable at 8 knots",
+                "270 degrees at 8 knots",
+                "Calm"
+            ],
+            "correct_answer": "270 degrees at 8 knots"
+        },
+        {
+            "question_number": 59,
+            "question_text": "Using the METAR from question 8 (RPLL 250300Z 27008KT 8000 SCT015 BKN080 31/25 Q1010 NOSIG=), what is the reported ceiling?",
+            "options": [
+                "1,500 feet (Scattered)",
+                "8,000 feet (Broken)",
+                "1,500 feet (Broken)",
+                "No ceiling reported"
+            ],
+            "correct_answer": "8,000 feet (Broken)"
+        },
+        {
+            "question_number": 60,
+            "question_text": "The altimeter setting QNH, when set on the aircraft's altimeter on the ground at a Philippine airport, should cause the altimeter to read approximately:",
+            "options": [
+                "Zero feet",
+                "Pressure Altitude",
+                "Density Altitude",
+                "The airport's field elevation above Mean Sea Level (MSL)"
+            ],
+            "correct_answer": "The airport's field elevation above Mean Sea Level (MSL)"
+        },
+        {
+            "question_number": 61,
+            "question_text": "Given the generally high temperatures and humidity in the Philippines, what factor significantly impacts aircraft takeoff and climb performance, especially at higher elevation airports?",
+            "options": [
+                "Low relative humidity",
+                "Strong Amihan winds",
+                "High Density Altitude",
+                "Frequent temperature inversions"
+            ],
+            "correct_answer": "High Density Altitude"
+        },
+        {
+            "question_number": 62,
+            "question_text": "Due to the Philippines being an archipelago, which local wind phenomena are very common along coastlines, influencing low-level winds particularly during day and night transitions?",
+            "options": [
+                "Katabatic and Anabatic Winds",
+                "Foehn Winds",
+                "Land and Sea Breezes",
+                "Mountain Waves"
+            ],
+            "correct_answer": "Land and Sea Breezes"
+        },
+        {
+            "question_number": 63,
+            "question_text": "Thunderstorms are a frequent hazard in the Philippines, especially during the Habagat season and when the ITCZ is active. What is a primary danger associated with flying near thunderstorms?",
+            "options": [
+                "Smooth air and clear skies",
+                "Predictable wind patterns",
+                "Severe turbulence, wind shear, hail, and lightning",
+                "Improved engine performance"
+            ],
+            "correct_answer": "Severe turbulence, wind shear, hail, and lightning"
+        },
+        {
+            "question_number": 64,
+            "question_text": "What unit is typically used for reporting visibility in METARs in the Philippines (e.g., '9999' or '8000')?",
+            "options": [
+                "Statute Miles",
+                "Nautical Miles",
+                "Meters",
+                "Feet"
+            ],
+            "correct_answer": "Meters"
+        },
+        {
+            "question_number": 65,
+            "question_text": "What does the term 'NOSIG' at the end of a Philippine METAR signify?",
+            "options": [
+                "Significant weather is occurring",
+                "No significant change expected in the next 2 hours",
+                "Visibility is zero",
+                "The report is outdated"
+            ],
+            "correct_answer": "No significant change expected in the next 2 hours"
+        },
+        {
+            "question_number": 66,
+            "question_text": "The Transition Altitude in the Philippines is typically 11,000 feet. When climbing through this altitude, what should a pilot do with the altimeter setting?",
+            "options": [
+                "Set the local QNH",
+                "Set the destination QFE",
+                "Set the standard pressure setting (1013.2 hPa / 29.92 inHg)",
+                "Leave the current QNH setting"
+            ],
+            "correct_answer": "Set the standard pressure setting (1013.2 hPa / 29.92 inHg)"
+        },
+        {
+            "question_number": 67,
+            "question_text": "PAGASA often issues Thunderstorm Advisories. What is the primary purpose of these advisories for pilots?",
+            "options": [
+                "To guarantee VFR conditions",
+                "To provide detailed wind forecasts",
+                "To warn of the potential development or presence of thunderstorms in specific areas",
+                "To report past lightning strikes"
+            ],
+            "correct_answer": "To warn of the potential development or presence of thunderstorms in specific areas"
+        },
+        {
+            "question_number": 68,
+            "question_text": "Haze, often reducing visibility, can be common in the Philippines, particularly near urban areas or due to agricultural burning. Haze consists primarily of:",
+            "options": [
+                "Water droplets",
+                "Ice crystals",
+                "Heavy rain showers",
+                "Extremely small dry particles suspended in the air"
+            ],
+            "correct_answer": "Extremely small dry particles suspended in the air"
+        },
+        {
+            "question_number": 69,
+            "question_text": "While TAFs provide forecasts, METARs provide observations. How often are METARs from major Philippine airports like RPLL or RPVM typically issued?",
+            "options": [
+                "Every 6 hours",
+                "Every 3 hours",
+                "Routinely every hour (or half-hour at some locations)",
+                "Only when significant weather occurs"
+            ],
+            "correct_answer": "Routinely every hour (or half-hour at some locations)"
+        },
+        {
+            "question_number": 70,
+            "question_text": "A pilot encountering unexpected hazardous weather in flight over the Philippines should report it to ATC. While the formal system might differ from the US PIREP system, the primary purpose of such a report is:",
+            "options": [
+                "To complain about the forecast",
+                "To fulfill a training requirement",
+                "To enhance the safety of other aircraft by providing real-time weather information",
+                "To request immediate diversion without reason"
+            ],
+            "correct_answer": "To enhance the safety of other aircraft by providing real-time weather information"
+        }
+    ]
+}
