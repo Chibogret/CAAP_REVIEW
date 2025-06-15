@@ -1,1424 +1,2204 @@
 {
-    "exam_title": "NTC Reviewer 1",
-    "questions": [
-        {
-            "question_number": 1,
-            "question_text": "What is normally used for ATIS broadcasts?",
-            "options": [
-                "Discrete VHF frequency and/or VOR",
-                "Commercial telephone lines",
-                "Satellite communication",
-                "HF radio"
-            ],
-            "correct_answer": "Discrete VHF frequency and/or VOR"
-        },
-        {
-            "question_number": 2,
-            "question_text": "When making initial contact with the air control tower, the pilot of the aircraft CESSNA - NBZQ should say this?",
-            "options": [
-                "November bravo sulu quebec",
-                "Cessna NBZQ requesting landing instructions",
-                "NBZQ tower, radio check",
-                "Mayday, mayday, mayday"
-            ],
-            "correct_answer": "November bravo sulu quebec"
-        },
-        {
-            "question_number": 3,
-            "question_text": "If your transmission has ended and a reply is expected from a ground station, the last word of your transmission is?",
-            "options": [
-                "Over",
-                "Out",
-                "Roger",
-                "Wilco"
-            ],
-            "correct_answer": "Over"
-        },
-        {
-            "question_number": 4,
-            "question_text": "What should a licensee do if his original operator certificates are lost?",
-            "options": [
-                "File immediate application for duplicate of NTC.",
-                "Take another examination",
-                "Continue operating without certificate",
-                "Report to the police"
-            ],
-            "correct_answer": "File immediate application for duplicate of NTC."
-        },
-        {
-            "question_number": 5,
-            "question_text": "What controls are allowed to be adjusted by aircraft radio operator?",
-            "options": [
-                "Channel selector switch, volume control, on/off switch.",
-                "Transmitter power output and antenna tuning",
-                "Frequency and modulation type",
-                "All radio equipment parameters"
-            ],
-            "correct_answer": "Channel selector switch, volume control, on/off switch."
-        },
-        {
-            "question_number": 6,
-            "question_text": "Within the period of time after receiving the report of rating in the examination should an application for operator certificate or permit be filed?",
-            "options": [
-                "One (1) year.",
-                "Six (6) months",
-                "Two (2) years",
-                "Immediately"
-            ],
-            "correct_answer": "One (1) year."
-        },
-        {
-            "question_number": 7,
-            "question_text": "Which of the following may be a ground for the revocation of a radio operator certificate?",
-            "options": [
-                "Willful destruction of radio equipment.",
-                "Operating below authorized power",
-                "Minor communication errors",
-                "Forgetting to renew the certificate"
-            ],
-            "correct_answer": "Willful destruction of radio equipment."
-        },
-        {
-            "question_number": 8,
-            "question_text": "Which of the following is not a navigational aid?",
-            "options": [
-                "A volt-ohm meter.",
-                "VOR",
-                "NDB",
-                "ILS"
-            ],
-            "correct_answer": "A volt-ohm meter."
-        },
-        {
-            "question_number": 9,
-            "question_text": "Which of the following gives horizontal information during the approach and landing?",
-            "options": [
-                "An ILS.",
-                "A DME",
-                "A radar altimeter",
-                "A vertical speed indicator"
-            ],
-            "correct_answer": "An ILS."
-        },
-        {
-            "question_number": 10,
-            "question_text": "In a noisy environment, what is the best way to use a microphone?",
-            "options": [
-                "Cup the microphone, and speak in a normal manner.",
-                "Shout loudly into the microphone",
-                "Speak softly and slowly",
-                "Move to a quieter location"
-            ],
-            "correct_answer": "Cup the microphone, and speak in a normal manner."
-        },
-        {
-            "question_number": 11,
-            "question_text": "Application for renewal of operator certificate shall be filed before the expiry date.",
-            "options": [
-                "One (1) month before the expiry date.",
-                "On the expiry date",
-                "One (1) month after expiry date",
-                "Anytime before expiry date"
-            ],
-            "correct_answer": "One (1) month before the expiry date."
-        },
-        {
-            "question_number": 12,
-            "question_text": "What is the provision for the radio control law, which says that the content, or any radio message should be divulged only to the addressee?",
-            "options": [
-                "Secret of communications.",
-                "Freedom of information",
-                "Public record act",
-                "Right to privacy"
-            ],
-            "correct_answer": "Secret of communications."
-        },
-        {
-            "question_number": 13,
-            "question_text": "What is used as a means of station identification?",
-            "options": [
-                "Call-sign.",
-                "Aircraft tail number",
-                "Pilot's name",
-                "Flight number"
-            ],
-            "correct_answer": "Call-sign."
-        },
-        {
-            "question_number": 14,
-            "question_text": "A radio service intended for the transmission of information relating to air navigation, preparation for and safety of flight is called?",
-            "options": [
-                "Aeronautical fixed service.",
-                "Aeronautical mobile service",
-                "Broadcasting service",
-                "Public correspondence service"
-            ],
-            "correct_answer": "Aeronautical fixed service."
-        },
-        {
-            "question_number": 15,
-            "question_text": "Aircraft stations are not allowed to carry?",
-            "options": [
-                "Commercial messages.",
-                "Operational messages",
-                "Safety messages",
-                "Distress messages"
-            ],
-            "correct_answer": "Commercial messages."
-        },
-        {
-            "question_number": 16,
-            "question_text": "Aircraft stations are allowed to contact?",
-            "options": [
-                "Aeronautical ground stations.",
-                "Other aircraft stations directly",
-                "Maritime stations",
-                "Amateur radio stations"
-            ],
-            "correct_answer": "Aeronautical ground stations."
-        },
-        {
-            "question_number": 17,
-            "question_text": "What should be done to the radio transmitter before ditching an aircraft?",
-            "options": [
-                "Set for continuous emission.",
-                "Turn off the transmitter",
-                "Set to lowest power",
-                "Destroy the transmitter to prevent unauthorized use"
-            ],
-            "correct_answer": "Set for continuous emission."
-        },
-        {
-            "question_number": 18,
-            "question_text": "What control should be done to reduce noise while the receiver is at standby?",
-            "options": [
-                "Squelch.",
-                "Volume control",
-                "Gain control",
-                "Frequency tuning"
-            ],
-            "correct_answer": "Squelch."
-        },
-        {
-            "question_number": 19,
-            "question_text": "A 3646, as amended is better known as?",
-            "options": [
-                "Radio control law.",
-                "Telecommunications act",
-                "Philippine aviation regulations",
-                "Air traffic services manual"
-            ],
-            "correct_answer": "Radio control law."
-        },
-        {
-            "question_number": 20,
-            "question_text": "What device converts electrical energy into sound energy?",
-            "options": [
-                "Speaker.",
-                "Microphone",
-                "Antenna",
-                "Transistor"
-            ],
-            "correct_answer": "Speaker."
-        },
-        {
-            "question_number": 21,
-            "question_text": "What certificate that assures the aircraft is maintained and operated?",
-            "options": [
-                "Airworthiness",
-                "Registration certificate",
-                "Pilot license",
-                "Radio station license"
-            ],
-            "correct_answer": "Airworthiness"
-        },
-        {
-            "question_number": 22,
-            "question_text": "Radio equipment capable of giving horizontal preference before and after landing",
-            "options": [
-                "Instrument landing system (ILS).",
-                "Distance measuring equipment (DME)",
-                "Automatic direction finder (ADF)",
-                "Weather radar"
-            ],
-            "correct_answer": "Instrument landing system (ILS)."
-        },
-        {
-            "question_number": 23,
-            "question_text": "ICAO",
-            "options": [
-                "International civil aviation organization.",
-                "International communication aviation organization",
-                "Inter-country aviation operators",
-                "Independent civil aviation overseer"
-            ],
-            "correct_answer": "International civil aviation organization."
-        },
-        {
-            "question_number": 24,
-            "question_text": "Who heads the NTC Commission?",
-            "options": [
-                "Commissioner.",
-                "Director general",
-                "Secretary",
-                "Chairman"
-            ],
-            "correct_answer": "Commissioner."
-        },
-        {
-            "question_number": 25,
-            "question_text": "Calling frequency - An agreed upon frequency where stations attempt to contact to each other, once contact is made, stations move to a",
-            "options": [
-                "Working frequency.",
-                "Standby frequency",
-                "Distress frequency",
-                "Secondary frequency"
-            ],
-            "correct_answer": "Working frequency."
-        },
-        {
-            "question_number": 26,
-            "question_text": "'I have received all of your last transmission'",
-            "options": [
-                "Roger.",
-                "Wilco",
-                "Affirm",
-                "Copied"
-            ],
-            "correct_answer": "Roger."
-        },
-        {
-            "question_number": 27,
-            "question_text": "Frequency for short distance terrestrial communication",
-            "options": [
-                "VHF.",
-                "HF.",
-                "UHF.",
-                "LF."
-            ],
-            "correct_answer": "VHF."
-        },
-        {
-            "question_number": 28,
-            "question_text": "Is the maximum penalty for an individual who violates the provision of the radio laws and regulations.",
-            "options": [
-                "P2,000.00 or one (1) year imprisonment, or both",
-                "P1,000.00 or six (6) months imprisonment, or both",
-                "P5,000.00 or two (2) years imprisonment, or both",
-                "Warning only"
-            ],
-            "correct_answer": "P2,000.00 or one (1) year imprisonment, or both"
-        },
-        {
-            "question_number": 29,
-            "question_text": "Which frequency is not used for aeronautical communication?",
-            "options": [
-                "400MHZ.",
-                "121.5 MHZ.",
-                "126.9 MHZ.",
-                "118.1 MHZ."
-            ],
-            "correct_answer": "400MHZ."
-        },
-        {
-            "question_number": 30,
-            "question_text": "BLIND TRANSMISSION means?",
-            "options": [
-                "A transmission of messages relating to in-route weather information which may affect the safety of aircraft stations that is not addressed to a specific station.",
-                "Transmission without identifying the station",
-                "Emergency transmission in distress",
-                "Transmission during radio silence"
-            ],
-            "correct_answer": "A transmission of messages relating to in-route weather information which may affect the safety of aircraft stations that is not addressed to a specific station."
-        },
-        {
-            "question_number": 31,
-            "question_text": "During a flight, one of the cabin crew becomes seriously ill. In order to land promptly and obtain medical assistance, the aircraft captain should prefix the message with?",
-            "options": [
-                "Pan pan pan",
-                "Mayday mayday mayday",
-                "Securite securite securite",
-                "Urgency urgency urgency"
-            ],
-            "correct_answer": "Pan pan pan"
-        },
-        {
-            "question_number": 32,
-            "question_text": "What is the frequency range for High Frequency (HF)?",
-            "options": [
-                "3-30 MHZ",
-                "30-300 MHZ",
-                "300-3000 MHZ",
-                "3-30 KHZ"
-            ],
-            "correct_answer": "3-30 MHZ"
-        },
-        {
-            "question_number": 33,
-            "question_text": "What is the frequency range for Low Frequency (LF)?",
-            "options": [
-                "30-300 KHZ",
-                "3-30 KHZ",
-                "300-3000 KHZ",
-                "3-30 MHZ"
-            ],
-            "correct_answer": "30-300 KHZ"
-        },
-        {
-            "question_number": 34,
-            "question_text": "What is the frequency range for Ultra High Frequency (UHF)?",
-            "options": [
-                "300-3000 MHZ",
-                "30-300 MHZ",
-                "3-30 MHZ",
-                "300-3000 KHZ"
-            ],
-            "correct_answer": "300-3000 MHZ"
-        },
-        {
-            "question_number": 35,
-            "question_text": "What is the frequency range for Very High Frequency (VHF)?",
-            "options": [
-                "30-300 MHZ",
-                "3-30 MHZ",
-                "300-3000 MHZ",
-                "30-300 KHZ"
-            ],
-            "correct_answer": "30-300 MHZ"
-        },
-        {
-            "question_number": 36,
-            "question_text": "What is the frequency range for Voice Frequency?",
-            "options": [
-                "300-3000 HZ",
-                "3-30 KHZ",
-                "30-300 KHZ",
-                "300-3000 MHZ"
-            ],
-            "correct_answer": "300-3000 HZ"
-        },
-        {
-            "question_number": 37,
-            "question_text": "What is the frequency range for Very Low Frequency (VLF)?",
-            "options": [
-                "3-30 KHZ",
-                "30-300 KHZ",
-                "300-3000 KHZ",
-                "3-30 MHZ"
-            ],
-            "correct_answer": "3-30 KHZ"
-        },
-        {
-            "question_number": 38,
-            "question_text": "How to pronounce 121.5?",
-            "options": [
-                "Wun too wun day-see-mal fife",
-                "One hundred twenty one point five",
-                "One two one decimal five",
-                "Twelve one point five"
-            ],
-            "correct_answer": "Wun too wun day-see-mal fife"
-        },
-        {
-            "question_number": 39,
-            "question_text": "In the condition concerning the safety of the aircraft/vehicle/person onboard but does not require immediate assistance is?",
-            "options": [
-                "Urgency",
-                "Distress",
-                "Safety",
-                "Precaution"
-            ],
-            "correct_answer": "Urgency"
-        },
-        {
-            "question_number": 40,
-            "question_text": "What should be done before transmitting over a radio to avoid interference?",
-            "options": [
-                "Listen before transmitting",
-                "Transmit quickly",
-                "Increase power",
-                "Change frequency"
-            ],
-            "correct_answer": "Listen before transmitting"
-        },
-        {
-            "question_number": 41,
-            "question_text": "Where should the radio operator certificate be placed?",
-            "options": [
-                "Carried along by the radio operator at all times",
-                "At the radio station's office",
-                "In the aircraft's logbook",
-                "At home for safekeeping"
-            ],
-            "correct_answer": "Carried along by the radio operator at all times"
-        },
-        {
-            "question_number": 42,
-            "question_text": "What is the Military Emergency Frequency?",
-            "options": [
-                "243",
-                "121.5",
-                "2182 KHZ",
-                "406.5 MHZ"
-            ],
-            "correct_answer": "243"
-        },
-        {
-            "question_number": 43,
-            "question_text": "What is the Very High Frequency universal simplex channel for emergency and distress communication?",
-            "options": [
-                "121.5 MHZ",
-                "243 MHZ",
-                "2182 KHZ",
-                "156.8 MHZ"
-            ],
-            "correct_answer": "121.5 MHZ"
-        },
-        {
-            "question_number": 44,
-            "question_text": "What is the international expression to indicate that silence has been imposed on the frequency due to a distress situation? The aeronautical phrase means \u201cSTOP TRANSMITTING\u201d.",
-            "options": [
-                "Seelonce",
-                "Mayday",
-                "Quiet",
-                "Silence"
-            ],
-            "correct_answer": "Seelonce"
-        },
-        {
-            "question_number": 45,
-            "question_text": "What is the minimum requirement for one to qualify for Restricted Radio Operator Certificate (RROC) pilot examination?",
-            "options": [
-                "Holder of an aircraft pilot license",
-                "Filipino citizen",
-                "High school graduate",
-                "18 years old"
-            ],
-            "correct_answer": "Holder of an aircraft pilot license"
-        },
-        {
-            "question_number": 46,
-            "question_text": "A system used to determine the speed, altitude range, heading of an aircraft.",
-            "options": [
-                "Radar",
-                "Sonar",
-                "GPS",
-                "INS"
-            ],
-            "correct_answer": "Radar"
-        },
-        {
-            "question_number": 47,
-            "question_text": "Application for renewal of operators certificate shall be filed:",
-            "options": [
-                "One month before the expiry date.",
-                "Two months before the expiry date.",
-                "One month after the expiration date.",
-                "Two month after the expiry date."
-            ],
-            "correct_answer": "One month before the expiry date."
-        },
-        {
-            "question_number": 48,
-            "question_text": "What is the international radiotelephone safety signal?",
-            "options": [
-                "Securite",
-                "Pan",
-                "XXX",
-                "Mayday"
-            ],
-            "correct_answer": "Securite"
-        },
-        {
-            "question_number": 49,
-            "question_text": "What is the international radiotelephone distress call?",
-            "options": [
-                "Pan",
-                "SOS",
-                "Securite",
-                "Mayday"
-            ],
-            "correct_answer": "Mayday"
-        },
-        {
-            "question_number": 50,
-            "question_text": "What is the provision of the radio control law, which says that the content of any radio message should be divulged only to the address?",
-            "options": [
-                "Secrecy of telecommunications.",
-                "Secrecy of radio messages.",
-                "Secrecy of communications.",
-                "Secrecy of information."
-            ],
-            "correct_answer": "Secrecy of communications."
-        },
-        {
-            "question_number": 51,
-            "question_text": "What is used as means of station identification?",
-            "options": [
-                "Logbook",
-                "Call-sign",
-                "Call-code",
-                "Call-name"
-            ],
-            "correct_answer": "Call-sign"
-        },
-        {
-            "question_number": 52,
-            "question_text": "A radio service intended for the transmission of information relating to air navigation, preparation for and safety of flight is called:",
-            "options": [
-                "General radio services",
-                "Mobile radio services",
-                "Broadcast service",
-                "Aeronautical fixed service"
-            ],
-            "correct_answer": "Aeronautical fixed service"
-        },
-        {
-            "question_number": 53,
-            "question_text": "What is the minimum requirement for one to qualify for RROC-PILOT examination?",
-            "options": [
-                "Holder of an aircraft pilot license.",
-                "A Filipino citizen.",
-                "At least 25 years old.",
-                "A graduate of radio training school recognized by NTC."
-            ],
-            "correct_answer": "Holder of an aircraft pilot license."
-        },
-        {
-            "question_number": 54,
-            "question_text": "Aircraft stations are not allowed to carry:",
-            "options": [
-                "A personal messages",
-                "Commercial messages",
-                "Flight data",
-                "Meteorological data,"
-            ],
-            "correct_answer": "Commercial messages"
-        },
-        {
-            "question_number": 55,
-            "question_text": "What is the distress signal used in VHF emergency frequency?",
-            "options": [
-                "Spoken word \"mayday\"",
-                "The signal SOS.",
-                "The spoken word \"pan\"",
-                "The spoken word \"securite\""
-            ],
-            "correct_answer": "Spoken word \"mayday\""
-        },
-        {
-            "question_number": 56,
-            "question_text": "What is the common aircraft VHF emergency frequency?",
-            "options": [
-                "118.1 MHZ",
-                "156,5 MHZ",
-                "114 MHZ",
-                "121.5 MHZ"
-            ],
-            "correct_answer": "121.5 MHZ"
-        },
-        {
-            "question_number": 57,
-            "question_text": "Radio communication between an aircraft and ground station is normally limited to:",
-            "options": [
-                "Commercial messages.",
-                "Operational messages.",
-                "Distress messages.",
-                "Personal messages."
-            ],
-            "correct_answer": "Operational messages."
-        },
-        {
-            "question_number": 58,
-            "question_text": "A radio station, ground or aircraft operated in the aeronautical communications service is called:",
-            "options": [
-                "Aeronautical public service station,",
-                "Fixed service station..",
-                "Fixed station,",
-                "Public service station."
-            ],
-            "correct_answer": "Aeronautical public service station,"
-        },
-        {
-            "question_number": 59,
-            "question_text": "How should an aircraft flying over the sea signal its position?",
-            "options": [
-                "By mention of distance from nearest reference point.",
-                "By latitude and longitude.",
-                "By distance from nearest radio beacon.",
-                "By triangulation."
-            ],
-            "correct_answer": "By latitude and longitude."
-        },
-        {
-            "question_number": 60,
-            "question_text": "R.A 3846, as amended is better known as:",
-            "options": [
-                "Radio regulation law",
-                "Radio registration law",
-                "Radio control law",
-                "Radio monitoring law"
-            ],
-            "correct_answer": "Radio control law"
-        },
-        {
-            "question_number": 61,
-            "question_text": "What is international distress frequency for radiotelephony?",
-            "options": [
-                "500 KHZ",
-                "2182 KHZ",
-                "156.6 MHZ",
-                "121.5 MHZ"
-            ],
-            "correct_answer": "2182 KHZ"
-        },
-        {
-            "question_number": 62,
-            "question_text": "What is the VHF universal complex channel for emergency and distress communication?",
-            "options": [
-                "156.8 MHZ",
-                "126.7 MHZ",
-                "156.6 MHZ",
-                "121,5 MHZ"
-            ],
-            "correct_answer": "121,5 MHZ"
-        },
-        {
-            "question_number": 63,
-            "question_text": "Where should an aircraft station license be posted?",
-            "options": [
-                "At the hangar.",
-                "At the bat",
-                "Anywhere for safekeeping",
-                "Must be carried along by the operator at all times while on duty"
-            ],
-            "correct_answer": "Must be carried along by the operator at all times while on duty"
-        },
-        {
-            "question_number": 64,
-            "question_text": "What is frequency range of very high frequency range(VHF)?",
-            "options": [
-                "3-30 MHZ",
-                "30-300 MHZ",
-                "300-3000 KHZ",
-                "3-20 KHZ"
-            ],
-            "correct_answer": "30-300 MHZ"
-        },
-        {
-            "question_number": 65,
-            "question_text": "What type of information is generally included in the broadcast service known as NOTAM?",
-            "options": [
-                "Notices about personal matters and business messages.",
-                "Information concerning establishment, condition or change in aid to navigation, landing hazards.",
-                "Change in flight schedule and duties of aircraft personnel.",
-                "Latest news of the day and passenger manifest."
-            ],
-            "correct_answer": "Information concerning establishment, condition or change in aid to navigation, landing hazards."
-        },
-        {
-            "question_number": 66,
-            "question_text": "During difficult communications contact conditions, the station call sign maybe transmitted:",
-            "options": [
-                "More than three times but not more than eight times.",
-                "As many as may be needed to make the contact.",
-                "More than tree times but not less than twice.",
-                "Not more than six times."
-            ],
-            "correct_answer": "As many as may be needed to make the contact."
-        },
-        {
-            "question_number": 67,
-            "question_text": "Radio telegrams relative to safe movement and navigation of the aircraft have priority over:",
-            "options": [
-                "Message related to the direction-finding bearing..",
-                "Message preceded by safety signal.",
-                "Messages preceded by urgency signal.",
-                "Distress message."
-            ],
-            "correct_answer": "Distress message."
-        },
-        {
-            "question_number": 68,
-            "question_text": "The procedure signal that separates the body of the message from both the heading and the heading is?",
-            "options": [
-                "Roger",
-                "Longbreak",
-                "Standby",
-                "Out"
-            ],
-            "correct_answer": "Longbreak"
-        },
-        {
-            "question_number": 69,
-            "question_text": "In the event that an aircraft is in distress, how often should the distress message be repeated?",
-            "options": [
-                "At intervals until acknowledged,",
-                "Three times only.",
-                "5 times.",
-                "Should not repeated."
-            ],
-            "correct_answer": "At intervals until acknowledged,"
-        },
-        {
-            "question_number": 70,
-            "question_text": "In what VHF band are mot of aircraft radiotelephone communications made?",
-            "options": [
-                "118-132 MHZ",
-                "121-156 MHZ",
-                "132-156 MHZ",
-                "144-156 MHZ"
-            ],
-            "correct_answer": "118-132 MHZ"
-        },
-        {
-            "question_number": 71,
-            "question_text": "Secrecy of communication must be observed by operators of all radio stations except:",
-            "options": [
-                "Fixed station",
-                "Aircraft station",
-                "Mobile station",
-                "Broadcast station"
-            ],
-            "correct_answer": "Broadcast station"
-        },
-        {
-            "question_number": 72,
-            "question_text": "International expression to indicate that silence has been imposed on the frequency due to a distress situation. 'Stop Transmitting'",
-            "options": [
-                "Seelonce",
-                "Roger",
-                "Go ahead",
-                "Approve"
-            ],
-            "correct_answer": "Seelonce"
-        },
-        {
-            "question_number": 73,
-            "question_text": "The critical link between control tower and aircraft?",
-            "options": [
-                "Radio telecommunication",
-                "Telephone",
-                "Microphone",
-                "Radio broadcast"
-            ],
-            "correct_answer": "Radio telecommunication"
-        },
-        {
-            "question_number": 74,
-            "question_text": "What is the penalty for a corporation who violates the provisions of the 'Radio Control Law' twice?",
-            "options": [
-                "PHP 1000",
-                "PHP 2000",
-                "PHP 5000",
-                "PHP 10000"
-            ],
-            "correct_answer": "PHP 10000"
-        },
-        {
-            "question_number": 75,
-            "question_text": "Where should an aircraft station license be posted?",
-            "options": [
-                "At the hangar",
-                "At the bat",
-                "Anywhere for safekeeping",
-                "Must be carried along by the operator at all times while on duty"
-            ],
-            "correct_answer": "Must be carried along by the operator at all times while on duty"
-        },
-        {
-            "question_number": 76,
-            "question_text": "One of the basic components of a radio station that converts electrical energy to sound energy is",
-            "options": [
-                "Cable",
-                "Microphone",
-                "Speaker",
-                "Antenna"
-            ],
-            "correct_answer": "Speaker"
-        },
-        {
-            "question_number": 77,
-            "question_text": "Which of the following equipment is not aid to navigation?",
-            "options": [
-                "Instrument landing system (ILS)",
-                "Volt ohm meter (VOM)",
-                "VHF omni-directional radio range",
-                "Non-directional radio beacon"
-            ],
-            "correct_answer": "Volt ohm meter (VOM)"
-        },
-        {
-            "question_number": 78,
-            "question_text": "Guides the aircraft horizontal alignment?",
-            "options": [
-                "Horizontal situation indicator",
-                "Horizontal attitude indicator",
-                "Horizontal stabilizer",
-                "Horizontal guidance"
-            ],
-            "correct_answer": "Horizontal situation indicator"
-        },
-        {
-            "question_number": 79,
-            "question_text": "Number and/or letter combination assigned by NTC to provide positive identification to radio station?",
-            "options": [
-                "Call sign",
-                "Code name",
-                "Call name",
-                "Serial number"
-            ],
-            "correct_answer": "Call sign"
-        },
-        {
-            "question_number": 80,
-            "question_text": "Aircraft stations are allowed to contact;",
-            "options": [
-                "Aeronautical ground stations",
-                "Coastal stations",
-                "Amateur station",
-                "CB station"
-            ],
-            "correct_answer": "Aeronautical ground stations"
-        },
-        {
-            "question_number": 81,
-            "question_text": "For every year that a radio operator license had expired and filed for renewal a surcharge equivalent to ______ shal be charged in addition to the regular annual license fee.",
-            "options": [
-                "50%",
-                "70%",
-                "80%",
-                "100%"
-            ],
-            "correct_answer": "100%"
-        },
-        {
-            "question_number": 82,
-            "question_text": "What is the ELT Frequency for aircraft?",
-            "options": [
-                "121.5/243 MHZ",
-                "145 MHZ",
-                "144-146 MHZ",
-                "406.5 MHZ"
-            ],
-            "correct_answer": "121.5/243 MHZ"
-        },
-        {
-            "question_number": 83,
-            "question_text": "Pilot who was born on April 30, 1970 needs to renew his license which will expire in 2006. When should he file license under the provisions of Radio Laws, Rules and Regulation?",
-            "options": [
-                "March 30, 2006",
-                "April 30, 2006",
-                "November 30, 2006",
-                "December 30, 2006"
-            ],
-            "correct_answer": "March 30, 2006"
-        },
-        {
-            "question_number": 84,
-            "question_text": "The call to a station shall be made on a designated",
-            "options": [
-                "Calling frequency",
-                "Working frequency",
-                "Distress frequency",
-                "Standby frequency"
-            ],
-            "correct_answer": "Calling frequency"
-        },
-        {
-            "question_number": 85,
-            "question_text": "What is the international radio telephones urgency signal?",
-            "options": [
-                "Mayday",
-                "Pan",
-                "SOS",
-                "Securite"
-            ],
-            "correct_answer": "Pan"
-        },
-        {
-            "question_number": 86,
-            "question_text": "Your instructions received understood and will be complied with.",
-            "options": [
-                "Wilco",
-                "Standby",
-                "Affirm",
-                "Acknowledge"
-            ],
-            "correct_answer": "Wilco"
-        },
-        {
-            "question_number": 87,
-            "question_text": "In a radiotelephone communications, what word is spoken to denote that an error has been made in transmission?",
-            "options": [
-                "Error",
-                "Repeat",
-                "Attention",
-                "Correction"
-            ],
-            "correct_answer": "Correction"
-        },
-        {
-            "question_number": 88,
-            "question_text": "Within what period of time receiving the report of rating in the examination should an application for certificate or permit be filed?",
-            "options": [
-                "1 year",
-                "2 years",
-                "6 years",
-                "3 years"
-            ],
-            "correct_answer": "1 year"
-        },
-        {
-            "question_number": 89,
-            "question_text": "What type of radio waves is most suitable for aircraft direction finding?",
-            "options": [
-                "Horizontal polarized waves",
-                "Waves of any polarization",
-                "Vertical polarized waves",
-                "Waves of diagonal polarization"
-            ],
-            "correct_answer": "Waves of any polarization"
-        },
-        {
-            "question_number": 90,
-            "question_text": "International Distress frequency for radiotelephone",
-            "options": [
-                "2182 KHZ",
-                "2192 MHZ",
-                "1125 MHZ",
-                "2182 GHZ"
-            ],
-            "correct_answer": "2182 KHZ"
-        },
-        {
-            "question_number": 91,
-            "question_text": "Transmitter wherein the aircraft can be located",
-            "options": [
-                "ELT",
-                "Radome",
-                "Cockpit",
-                "Heading indicator"
-            ],
-            "correct_answer": "ELT"
-        },
-        {
-            "question_number": 92,
-            "question_text": "The application for renewal of a radio operator's permit must be filed at least how many days before the date of expiration?",
-            "options": [
-                "10",
-                "20",
-                "30",
-                "60"
-            ],
-            "correct_answer": "30"
-        },
-        {
-            "question_number": 93,
-            "question_text": "which of the following may be a ground for the revocation of a radio operator certificate?",
-            "options": [
-                "Willful destruction",
-                "Operating at lower power than authorized",
-                "Transmitting in foreign language",
-                "None of the proceeding"
-            ],
-            "correct_answer": "Willful destruction"
-        },
-        {
-            "question_number": 94,
-            "question_text": "Where must an Aircraft Pilot put his/her license?",
-            "options": [
-                "Home",
-                "Must be carried in person or at the aircraft",
-                "At the hangar",
-                "At the bat"
-            ],
-            "correct_answer": "Must be carried in person or at the aircraft"
-        },
-        {
-            "question_number": 95,
-            "question_text": "In the event that an aircraft is in distress, how often should the distress message be repeated?",
-            "options": [
-                "At intervals until acknowledged",
-                "Three times only",
-                "5 times",
-                "Should not be repeated"
-            ],
-            "correct_answer": "At intervals until acknowledged"
-        },
-        {
-            "question_number": 96,
-            "question_text": "How should an aircraft flying over the sea signal it position?",
-            "options": [
-                "By mention of distance from nearest reference point.",
-                "By latitude and longitude",
-                "By distance from nearest radio beacon",
-                "By triangulation"
-            ],
-            "correct_answer": "By latitude and longitude"
-        },
-        {
-            "question_number": 97,
-            "question_text": "before ditching an aircraft, the transmitter must be:",
-            "options": [
-                "Destroyed",
-                "Set for continuous emission",
-                "Shut off",
-                "Turned on for 5 seconds"
-            ],
-            "correct_answer": "Set for continuous emission"
-        },
-        {
-            "question_number": 98,
-            "question_text": "The Radio Certificate should",
-            "options": [
-                "Always be carried by the holder especially on duty",
-                "At the hangar",
-                "Home for safekeeping",
-                "At the office"
-            ],
-            "correct_answer": "Always be carried by the holder especially on duty"
-        },
-        {
-            "question_number": 99,
-            "question_text": "In general, what language should be used in radiotelephone communication between an aircraft and a ground station in the international service?",
-            "options": [
-                "English or language of the ground station",
-                "Language of the calling aircraft",
-                "Spanish",
-                "French"
-            ],
-            "correct_answer": "English or language of the ground station"
-        },
-        {
-            "question_number": 100,
-            "question_text": "What is the minimum age requirement for an applicant for Restricted Aircraft Radio License operator permit?",
-            "options": [
-                "15",
-                "18",
-                "21",
-                "23"
-            ],
-            "correct_answer": "18"
-        },
-        {
-            "question_number": 101,
-            "question_text": "In a noisy environment, how do you call through radio?",
-            "options": [
-                "Cup the microphone and speak normally",
-                "Shout",
-                "Speak softly",
-                "Cut the transmission"
-            ],
-            "correct_answer": "Cup the microphone and speak normally"
-        },
-        {
-            "question_number": 102,
-            "question_text": "International Governing body",
-            "options": [
-                "ICAO",
-                "NTC",
-                "BTU",
-                "CAAP"
-            ],
-            "correct_answer": "ICAO"
-        },
-        {
-            "question_number": 103,
-            "question_text": "What controls are allowed to be adjusted or done by aircraft radio operator",
-            "options": [
-                "Channel selector switch, volume control and on&off switch",
-                "Repair of equipment, increase of power",
-                "Frequency, antenna, length, power output",
-                "Change of equipment"
-            ],
-            "correct_answer": "Channel selector switch, volume control and on&off switch"
-        },
-        {
-            "question_number": 104,
-            "question_text": "What frequency band is not allocated for aeronautical service?",
-            "options": [
-                "108-118 MHZ",
-                "200-216 MHZ",
-                "335-405 MHZ",
-                "430-445 MHZ"
-            ],
-            "correct_answer": "430-445 MHZ"
-        },
-        {
-            "question_number": 105,
-            "question_text": "Super High Frequency (SHF) range",
-            "options": [
-                "3-30 GHZ",
-                "30-300 MHZ",
-                "30-300 GHZ",
-                "3-300 MHZ"
-            ],
-            "correct_answer": "3-30 GHZ"
-        },
-        {
-            "question_number": 106,
-            "question_text": "A radio service between specified fixed points provided primarily for the safety of air navigation and the regular operation",
-            "options": [
-                "Aircraft service",
-                "Mobile service",
-                "Aeronautical service",
-                "Maritime service"
-            ],
-            "correct_answer": "Aeronautical service"
-        },
-        {
-            "question_number": 107,
-            "question_text": "What should a license holder do if his/her original operator certificate is lost?",
-            "options": [
-                "Immediately file an application for duplicate at NTC",
-                "Wait for the expiration date",
-                "Take another examination",
-                "Reconstruct a copy of the original certificate"
-            ],
-            "correct_answer": "Immediately file an application for duplicate at NTC"
-        },
-        {
-            "question_number": 108,
-            "question_text": "What does 'I have received your message NUMBER ______ '",
-            "options": [
-                "Roger number",
-                "OK",
-                "Correct",
-                "Roger"
-            ],
-            "correct_answer": "Roger number"
-        },
-        {
-            "question_number": 109,
-            "question_text": "What is the ICAO prefix for a meteorological message intended for an aircraft in flight or about to take-off?",
-            "options": [
-                "AMT",
-                "ORR",
-                "OPN",
-                "ARL"
-            ],
-            "correct_answer": "AMT"
-        },
-        {
-            "question_number": 110,
-            "question_text": "The frequency range for Audio Frequency signal is:",
-            "options": [
-                "30-300 KHZ",
-                "3-30 MHZ",
-                "30-300 MHZ",
-                "30 HZ - 30 KHZ"
-            ],
-            "correct_answer": "30 HZ - 30 KHZ"
-        },
-        {
-            "question_number": 111,
-            "question_text": "A radio operator who lost his/her license must",
-            "options": [
-                "Take another examination",
-                "Apply for new permit or license",
-                "Apply for a duplicate",
-                "Pay fine of PHP 50.00"
-            ],
-            "correct_answer": "Apply for a duplicate"
-        },
-        {
-            "question_number": 112,
-            "question_text": "The Aircraft pilot's radio operator must be",
-            "options": [
-                "Posted at the hangar",
-                "Posted at the aircraft or carried in his person",
-                "Filed at bat",
-                "Kept at pilot's residence"
-            ],
-            "correct_answer": "Posted at the aircraft or carried in his person"
-        },
-        {
-            "question_number": 113,
-            "question_text": "A radio navigation system that provides aircraft with horizontal guidance before and during landing is",
-            "options": [
-                "Radar",
-                "Sonar",
-                "Radio direction finding",
-                "Instrument landing system"
-            ],
-            "correct_answer": "Instrument landing system"
-        },
-        {
-            "question_number": 114,
-            "question_text": "During difficult communications contact conditions, the station call sign maybe transmitted;",
-            "options": [
-                "More than three times but not more than eight times",
-                "As many as may be needed to make the contact",
-                "More than three times but not less than twice",
-                "Not more than six times"
-            ],
-            "correct_answer": "As many as may be needed to make the contact"
-        },
-        {
-            "question_number": 115,
-            "question_text": "The procedure signal meaning 'MY TRANSMISSION IS ENDED AND NO RESPONSE IS EXPECTED' is?",
-            "options": [
-                "Long break",
-                "Wilco",
-                "Out",
-                "Roger"
-            ],
-            "correct_answer": "Out"
-        },
-        {
-            "question_number": 116,
-            "question_text": "With regards to air-ground communications, what is the order of priority for communications on a channel is used for point to point as well as air-to-ground contact. Priority is for,",
-            "options": [
-                "Point to point ground communication",
-                "Air-to-ground and ground-to-air",
-                "The first user",
-                "Any of the two types of communication."
-            ],
-            "correct_answer": "Air-to-ground and ground-to-air"
-        },
-        {
-            "question_number": 117,
-            "question_text": "Radio Laws amended is better known as",
-            "options": [
-                "RA 3846",
-                "RA 3684",
-                "RA 3688",
-                "RA 3464"
-            ],
-            "correct_answer": "RA 3846"
-        },
-        {
-            "question_number": 118,
-            "question_text": "A radio station, ground or aircraft operated in the aeronautical communication service is called:",
-            "options": [
-                "Aeronautical public service station",
-                "Fixed service station",
-                "Fixed station",
-                "Public service station"
-            ],
-            "correct_answer": "Aeronautical public service station"
-        },
-        {
-            "question_number": 119,
-            "question_text": "The procedure signal that separates the body of the message from both the heading and the heading is?",
-            "options": [
-                "Roger",
-                "Longbreak",
-                "Standby",
-                "Out"
-            ],
-            "correct_answer": "Longbreak"
-        },
-        {
-            "question_number": 120,
-            "question_text": "Radiotelephone equipment not in regular used should be tested;",
-            "options": [
-                "Once each day",
-                "Once every week",
-                "Before use only",
-                "Once a year"
-            ],
-            "correct_answer": "Once each day"
-        },
-        {
-            "question_number": 121,
-            "question_text": "What control should be adjusted to reduce noise while the receiver is at standby?",
-            "options": [
-                "AGC",
-                "AFC",
-                "Squelch",
-                "Noise limiter"
-            ],
-            "correct_answer": "Squelch"
-        },
-        {
-            "question_number": 122,
-            "question_text": "Aircraft stations are not allowed to carry;",
-            "options": [
-                "A personal message",
-                "Commercial message",
-                "Flight data",
-                "Meteorological data"
-            ],
-            "correct_answer": "Commercial message"
-        },
-        {
-            "question_number": 123,
-            "question_text": "Radio Communication between an aircraft and ground station is normally limited to:",
-            "options": [
-                "Commercial messages",
-                "Operational messages",
-                "Distress messages",
-                "Personal messages"
-            ],
-            "correct_answer": "Operational messages"
-        },
-        {
-            "question_number": 124,
-            "question_text": "Extremely High Frequency (EHF) band is",
-            "options": [
-                "30-300 GHZ",
-                "300-3000 KHZ",
-                "3-30 MHZ",
-                "3-30 GHZ"
-            ],
-            "correct_answer": "30-300 GHZ"
-        },
-        {
-            "question_number": 125,
-            "question_text": "What is the international organization that is directly responsible for the Aeronautical Radio Service",
-            "options": [
-                "APEC",
-                "IMO",
-                "ICAO",
-                "ITU"
-            ],
-            "correct_answer": "ITU"
-        },
-        {
-            "question_number": 126,
-            "question_text": "Application for renewal of operators certificate shall be filed",
-            "options": [
-                "One month before the expiry date",
-                "Two months before the expiry date",
-                "One month after the expiry date",
-                "Two months after the expiry date"
-            ],
-            "correct_answer": "One month before the expiry date"
-        },
-        {
-            "question_number": 127,
-            "question_text": "Military Emergency Frequency",
-            "options": [
-                "243 MHZ",
-                "244 MHZ",
-                "143 MHZ",
-                "112 KHZ"
-            ],
-            "correct_answer": "243 MHZ"
-        },
-        {
-            "question_number": 128,
-            "question_text": "To reduce background noise",
-            "options": [
-                "Squelch",
-                "Squench",
-                "Stench",
-                "French"
-            ],
-            "correct_answer": "Squelch"
-        },
-        {
-            "question_number": 129,
-            "question_text": "What is the agency responsible for the regulation of all radio station and radio operator?",
-            "options": [
-                "NTC (National telecommunications commission)",
-                "ICAO (International civil aviation organization)",
-                "FAA (Federal aviation administration)",
-                "DOTC (Department of transportation and communication)"
-            ],
-            "correct_answer": "NTC (National telecommunications commission)"
-        }
-    ]
-}
+"exam title": "Navigation",
+"questions": [
+  {
+    "question_number": 1,
+    "question_text": "Lines of latitude on Earth run east–west and measure angular distance __________.",
+    "options": [
+      "from the Earth's center to the surface",
+      "north or south of the Equator",
+      "between the poles",
+      "east or west of the Prime Meridian"
+    ],
+    "correct_answer": "north or south of the Equator"
+  },
+  {
+    "question_number": 2,
+    "question_text": "Lines of longitude on Earth run north–south and measure angular distance __________.",
+    "options": [
+      "north or south of the Equator",
+      "from the Earth's center to the surface",
+      "east or west of the Prime Meridian",
+      "between the poles"
+    ],
+    "correct_answer": "east or west of the Prime Meridian"
+  },
+  {
+    "question_number": 3,
+    "question_text": "What is the latitude of the Earth's North Pole?",
+    "options": [
+      "90° North",
+      "0° (the Equator)",
+      "90° South",
+      "45° North"
+    ],
+    "correct_answer": "90° North"
+  },
+  {
+    "question_number": 4,
+    "question_text": "The Prime Meridian, the zero degree line of longitude, passes through which location?",
+    "options": [
+      "Paris, France",
+      "New York, USA",
+      "Greenwich, England",
+      "the North Pole"
+    ],
+    "correct_answer": "Greenwich, England"
+  },
+  {
+    "question_number": 5,
+    "question_text": "Which geometrical shape best represents the Earth for navigation purposes?",
+    "options": [
+      "A flat disk",
+      "An oblate spheroid (ellipsoid)",
+      "A perfect sphere",
+      "A cylindrical shape"
+    ],
+    "correct_answer": "An oblate spheroid (ellipsoid)"
+  },
+  {
+    "question_number": 6,
+    "question_text": "The Earth's rotational axis passes through the __________.",
+    "options": [
+      "geographic North Pole and geographic South Pole",
+      "magnetic North Pole and magnetic South Pole",
+      "Equator at 0° latitude",
+      "geographic North Pole and magnetic South Pole"
+    ],
+    "correct_answer": "geographic North Pole and geographic South Pole"
+  },
+  {
+    "question_number": 7,
+    "question_text": "The shortest distance between two points on the Earth’s surface is along __________.",
+    "options": [
+      "a rhumb line",
+      "a line of longitude segment",
+      "a great circle route",
+      "a line of latitude (except the Equator)"
+    ],
+    "correct_answer": "a great circle route"
+  },
+  {
+    "question_number": 8,
+    "question_text": "Which of the following is a great circle on the Earth?",
+    "options": [
+      "60°N parallel",
+      "The Tropic of Cancer",
+      "The Equator",
+      "The Arctic Circle"
+    ],
+    "correct_answer": "The Equator"
+  },
+  {
+    "question_number": 9,
+    "question_text": "A rhumb line is a line on the Earth's surface that __________.",
+    "options": [
+      "represents the shortest path between two points",
+      "is a line of constant latitude",
+      "crosses all meridians at the same angle (constant heading)",
+      "follows a great circle path"
+    ],
+    "correct_answer": "crosses all meridians at the same angle (constant heading)"
+  },
+  {
+    "question_number": 10,
+    "question_text": "The approximate circumference of the Earth at the Equator is __________.",
+    "options": [
+      "40,000 km (about 21,600 NM)",
+      "10,800 NM",
+      "4,000 NM",
+      "18,000 km"
+    ],
+    "correct_answer": "40,000 km (about 21,600 NM)"
+  },
+  {
+    "question_number": 11,
+    "question_text": "One degree of latitude corresponds to roughly what distance on the Earth’s surface?",
+    "options": [
+      "60 nautical miles",
+      "1 nautical mile",
+      "60 statute miles",
+      "1 kilometer"
+    ],
+    "correct_answer": "60 nautical miles"
+  },
+  {
+    "question_number": 12,
+    "question_text": "One minute of latitude (1') is approximately equal to __________.",
+    "options": [
+      "1 statute mile",
+      "1 kilometer",
+      "100 meters",
+      "1 nautical mile"
+    ],
+    "correct_answer": "1 nautical mile"
+  },
+  {
+    "question_number": 13,
+    "question_text": "The Arctic Circle is located at approximately __________.",
+    "options": [
+      "90° North latitude",
+      "66.5° North latitude",
+      "45° North latitude",
+      "23.5° North latitude"
+    ],
+    "correct_answer": "66.5° North latitude"
+  },
+  {
+    "question_number": 14,
+    "question_text": "Magnetic variation is defined as the angle between __________.",
+    "options": [
+      "magnetic north and compass north",
+      "true north and magnetic north at a given location",
+      "magnetic north and geographic south",
+      "an aircraft’s heading and true north"
+    ],
+    "correct_answer": "true north and magnetic north at a given location"
+  },
+  {
+    "question_number": 15,
+    "question_text": "Compass deviation is the angle between __________.",
+    "options": [
+      "true north and magnetic north",
+      "magnetic north and compass north",
+      "the aircraft’s heading and true course",
+      "the aircraft’s heading and magnetic north"
+    ],
+    "correct_answer": "magnetic north and compass north"
+  },
+  {
+    "question_number": 16,
+    "question_text": "An isogonic (isogonal) line on a map connects points of equal __________.",
+    "options": [
+      "latitude",
+      "inclination (dip)",
+      "magnetic variation",
+      "compass deviation"
+    ],
+    "correct_answer": "magnetic variation"
+  },
+  {
+    "question_number": 17,
+    "question_text": "An agonic line is a line on Earth along which __________.",
+    "options": [
+      "heading is 0°",
+      "variation of 0°",
+      "inclination of 0°",
+      "deviation is 0°"
+    ],
+    "correct_answer": "variation of 0°"
+  },
+  {
+    "question_number": 18,
+    "question_text": "One nautical mile is defined as exactly __________.",
+    "options": [
+      "1852 meters",
+      "5280 feet",
+      "1000 meters",
+      "1 degree of latitude"
+    ],
+    "correct_answer": "1852 meters"
+  },
+  {
+    "question_number": 19,
+    "question_text": "A 'knot' is a unit of speed equal to __________.",
+    "options": [
+      "one nautical mile per hour",
+      "one kilometer per hour",
+      "one statute mile per hour",
+      "1000 feet per minute"
+    ],
+    "correct_answer": "one nautical mile per hour"
+  },
+  {
+    "question_number": 20,
+    "question_text": "Which units are officially used for horizontal distances in aviation?",
+    "options": [
+      "Nautical miles (NM) and kilometers (km)",
+      "Land miles (SM) and yards",
+      "Feet and meters",
+      "Kilometers and statute miles"
+    ],
+    "correct_answer": "Nautical miles (NM) and kilometers (km)"
+  },
+  {
+    "question_number": 21,
+    "question_text": "In aviation weather and navigation, a wind direction given as 090° means the wind is coming from the __________.",
+    "options": [
+      "east (blowing toward the west)",
+      "west (blowing toward the east)",
+      "south (blowing north)",
+      "north (blowing south)"
+    ],
+    "correct_answer": "east (blowing toward the west)"
+  },
+  {
+    "question_number": 22,
+    "question_text": "“VOR” is an acronym that stands for __________.",
+    "options": [
+      "Visual Omni Route",
+      "Very High Frequency Omnidirectional Range",
+      "VHF Oscillating Receiver",
+      "Variable Output Radio"
+    ],
+    "correct_answer": "Very High Frequency Omnidirectional Range"
+  },
+  {
+    "question_number": 23,
+    "question_text": "“NDB” in navigation stands for __________.",
+    "options": [
+      "Non-Directional Beacon",
+      "Navigational Distance Beacon",
+      "Northern Domestic Boundary",
+      "Nautical Direction Base"
+    ],
+    "correct_answer": "Non-Directional Beacon"
+  },
+  {
+    "question_number": 24,
+    "question_text": "“DME” is a navigation aid acronym. What does DME stand for?",
+    "options": [
+      "Distance Measuring Equipment",
+      "Dynamic Mode Engine",
+      "Dual Magnetometer Encoder",
+      "Directional Magnetic Emission"
+    ],
+    "correct_answer": "Distance Measuring Equipment"
+  },
+  {
+    "question_number": 25,
+    "question_text": "“GPS” in the context of aviation navigation stands for __________.",
+    "options": [
+      "Global Positioning System",
+      "General Positioning Standard",
+      "Ground Proximity Satellite",
+      "Geodetic Pilotage Service"
+    ],
+    "correct_answer": "Global Positioning System"
+  },
+  {
+    "question_number": 26,
+    "question_text": "“ADF” is the instrument that points to an NDB station. ADF stands for __________.",
+    "options": [
+      "Automatic Direction Finder",
+      "Aircraft Direction Function",
+      "Airfield Distance Finder",
+      "Azimuth Display Facility"
+    ],
+    "correct_answer": "Automatic Direction Finder"
+  },
+  {
+    "question_number": 27,
+    "question_text": "A VOR radial is defined as __________.",
+    "options": [
+      "the magnetic bearing extending outward from the VOR station",
+      "the route directly to the station",
+      "any line of position drawn on a chart",
+      "the true bearing of the station from the aircraft"
+    ],
+    "correct_answer": "the magnetic bearing extending outward from the VOR station"
+  },
+  {
+    "question_number": 28,
+    "question_text": "What information does an ADF indicator provide the pilot?",
+    "options": [
+      "The relative direction (bearing) of the NDB station from the aircraft’s nose",
+      "The distance to the NDB station",
+      "The aircraft’s heading relative to true north",
+      "The magnetic course to fly to the station (without wind)"
+    ],
+    "correct_answer": "The relative direction (bearing) of the NDB station from the aircraft’s nose"
+  },
+  {
+    "question_number": 29,
+    "question_text": "Navigating by visual reference to landmarks (e.g. following roads or rivers) is called __________.",
+    "options": [
+      "pilotage",
+      "satellite navigation",
+      "radio navigation",
+      "dead reckoning"
+    ],
+    "correct_answer": "pilotage"
+  },
+  {
+    "question_number": 30,
+    "question_text": "Navigating by calculating distance and direction from a known point, using time, speed, and heading (with wind), is known as __________.",
+    "options": [
+      "dead reckoning",
+      "inertial navigation",
+      "pilotage",
+      "celestial navigation"
+    ],
+    "correct_answer": "dead reckoning"
+  },
+  {
+    "question_number": 31,
+    "question_text": "Which ground features are most useful for visual (pilotage) navigation under VFR?",
+    "options": [
+      "Prominent features like rivers, highways, and railroad tracks",
+      "Lines of latitude and longitude",
+      "Power lines and small creeks",
+      "Isogonic lines on charts"
+    ],
+    "correct_answer": "Prominent features like rivers, highways, and railroad tracks"
+  },
+  {
+    "question_number": 32,
+    "question_text": "If your true course is 090° and the variation is 10°E, what is the magnetic course?",
+    "options": [
+      "080°",
+      "100°",
+      "090°",
+      "270°"
+    ],
+    "correct_answer": "080°"
+  },
+  {
+    "question_number": 33,
+    "question_text": "Electronic devices and metal components in an aircraft can cause errors in the magnetic compass known as __________.",
+    "options": [
+      "deviation",
+      "magnetic dip",
+      "variation",
+      "inclination"
+    ],
+    "correct_answer": "deviation"
+  },
+  {
+    "question_number": 34,
+    "question_text": "If an altimeter is set to QFE (airfield pressure) and you land back at that airfield, the altimeter will read approximately __________.",
+    "options": [
+      "0 feet (field elevation above that field)",
+      "the pattern altitude",
+      "the field elevation above sea level",
+      "1013 feet"
+    ],
+    "correct_answer": "0 feet (field elevation above that field)"
+  },
+  {
+    "question_number": 35,
+    "question_text": "Flying from a region of high pressure into a region of lower pressure without resetting the altimeter will result in the aircraft being __________ than indicated.",
+    "options": [
+      "lower (at a lower true altitude than the altimeter indicates)",
+      "higher (above the indicated altitude)",
+      "exactly at the indicated altitude",
+      "unaffected in altitude"
+    ],
+    "correct_answer": "lower (at a lower true altitude than the altimeter indicates)"
+  },
+  {
+    "question_number": 36,
+    "question_text": "At a ground speed of 90 knots, how long will it take to fly a distance of 45 NM?",
+    "options": [
+      "30 minutes",
+      "45 minutes",
+      "1 hour",
+      "15 minutes"
+    ],
+    "correct_answer": "30 minutes"
+  },
+  {
+    "question_number": 37,
+    "question_text": "An aircraft travels 100 kilometers in 56 minutes. What is its average ground speed in km/h (approximately)?",
+    "options": [
+      "107 km/h",
+      "198 km/h",
+      "58 km/h",
+      "93 km/h"
+    ],
+    "correct_answer": "107 km/h"
+  },
+  {
+    "question_number": 38,
+    "question_text": "If an aircraft’s magnetic heading is 130° and the compass deviation is 5°W, what compass heading will the pilot see?",
+    "options": [
+      "135°",
+      "125°",
+      "130°",
+      "123°"
+    ],
+    "correct_answer": "135°"
+  },
+  {
+    "question_number": 39,
+    "question_text": "Under Visual Flight Rules (VFR) cruising altitude rules in the Northern Hemisphere, on a magnetic course of 090° (eastbound above 3,000 ft AGL) a pilot should fly at __________.",
+    "options": [
+      "an odd thousand-foot altitude plus 500 feet (e.g., 5,500 ft)",
+      "an odd thousand-foot altitude (e.g., 5,000 ft)",
+      "an even thousand-foot altitude (e.g., 6,000 ft)",
+      "an even thousand-foot altitude plus 500 feet (e.g., 4,500 ft)"
+    ],
+    "correct_answer": "an odd thousand-foot altitude plus 500 feet (e.g., 5,500 ft)"
+  },
+  {
+    "question_number": 40,
+    "question_text": "How many GPS satellites are normally needed to obtain an accurate three-dimensional position fix (latitude, longitude, and altitude)?",
+    "options": [
+      "Four",
+      "Three",
+      "Two",
+      "Five"
+    ],
+    "correct_answer": "Four"
+  },
+  {
+    "question_number": 41,
+    "question_text": "What navigation information does a conventional VOR (without DME) provide?",
+    "options": [
+      "Your bearing to/from the station (direction), but not distance",
+      "Ground speed relative to the station",
+      "Both direction and distance to the station",
+      "The exact distance to the station"
+    ],
+    "correct_answer": "Your bearing to/from the station (direction), but not distance"
+  },
+  {
+    "question_number": 42,
+    "question_text": "What does Distance Measuring Equipment (DME) provide to a pilot?",
+    "options": [
+      "The slant range distance to the DME station (in nautical miles)",
+      "The magnetic bearing to the station",
+      "The altitude above the station",
+      "The wind correction angle to maintain course"
+    ],
+    "correct_answer": "The slant range distance to the DME station (in nautical miles)"
+  },
+  {
+    "question_number": 43,
+    "question_text": "If a pilot keeps the ADF needle centered (pointing to 0°) without correcting for wind, the aircraft will __________.",
+    "options": [
+      "follow a curved path to the station (i.e., homing with drift)",
+      "maintain a straight track to the station even in a crosswind",
+      "fly a great circle route automatically",
+      "remain exactly on the intended course"
+    ],
+    "correct_answer": "follow a curved path to the station (i.e., homing with drift)"
+  },
+  {
+    "question_number": 44,
+    "question_text": "Which is an advantage of VOR (VHF) navigation compared to NDB (LF) navigation?",
+    "options": [
+      "VOR signals are less susceptible to static interference and night effects than NDB signals",
+      "VOR signals follow the curvature of the Earth beyond the horizon",
+      "VOR provides distance information without additional equipment",
+      "VOR receivers do not require line-of-sight to the station"
+    ],
+    "correct_answer": "VOR signals are less susceptible to static interference and night effects than NDB signals"
+  },
+  {
+    "question_number": 45,
+    "question_text": "What should a pilot always do before using a VOR for navigation?",
+    "options": [
+      "Listen to the station’s Morse code identifier to verify the correct station and that it’s functioning",
+      "Ensure the OBS is set to 000°",
+      "Request clearance from ATC to use the VOR",
+      "Turn the aircraft to face the station"
+    ],
+    "correct_answer": "Listen to the station’s Morse code identifier to verify the correct station and that it’s functioning"
+  },
+  {
+    "question_number": 46,
+    "question_text": "What typically happens when you pass directly over a VOR station?",
+    "options": [
+      "The VOR indicator will temporarily fluctuate or show no valid signal (the TO/FROM flag may switch)",
+      "The CDI will remain perfectly centered",
+      "The VOR’s Morse code identifier will speed up",
+      "You will get an immediate DME distance of zero"
+    ],
+    "correct_answer": "The VOR indicator will temporarily fluctuate or show no valid signal (the TO/FROM flag may switch)"
+  },
+  {
+    "question_number": 47,
+    "question_text": "The range at which you can receive a VOR signal depends largely on __________.",
+    "options": [
+      "the aircraft’s altitude (line-of-sight range)",
+      "the time of day",
+      "the aircraft’s compass deviation",
+      "weather conditions"
+    ],
+    "correct_answer": "the aircraft’s altitude (line-of-sight range)"
+  },
+  {
+    "question_number": 48,
+    "question_text": "According to the “1-in-60 rule,” 1° of tracking error will result in about 1 NM off course after _____ NM.",
+    "options": [
+      "60",
+      "1",
+      "15",
+      "30"
+    ],
+    "correct_answer": "60"
+  },
+  {
+    "question_number": 49,
+    "question_text": "If you discover you are 3 NM off course after flying 30 NM, approximately what total heading correction should you make to intercept the original track by 60 NM (destination)?",
+    "options": [
+      "About 12° toward the course (double the 6° error)",
+      "6° toward the course",
+      "3° (equal to the drift)",
+      "18° away from the original course"
+    ],
+    "correct_answer": "About 12° toward the course (double the 6° error)"
+  },
+  {
+    "question_number": 50,
+    "question_text": "In the Northern Hemisphere, when turning right from a heading of north, a magnetic compass will initially __________.",
+    "options": [
+      "lag behind the actual turn (indicate a left turn or turn slower than reality)",
+      "show an accurate turn immediately",
+      "temporarily freeze until the turn is complete",
+      "lead the turn (indicate a faster or greater turn)"
+    ],
+    "correct_answer": "lag behind the actual turn (indicate a left turn or turn slower than reality)"
+  },
+  {
+    "question_number": 51,
+    "question_text": "If your aircraft consumes 8 gallons of fuel per hour, how much fuel is required for a flight of 2 hours 30 minutes, plus a 45-minute reserve?",
+    "options": [
+      "approx. 24 gallons",
+      "20 gallons",
+      "16 gallons",
+      "8 gallons"
+    ],
+    "correct_answer": "approx. 24 gallons"
+  },
+  {
+    "question_number": 52,
+    "question_text": "How does a headwind or tailwind affect your ground speed?",
+    "options": [
+      "A headwind decreases ground speed, and a tailwind increases ground speed.",
+      "Wind has no effect on ground speed, only airspeed.",
+      "A headwind increases ground speed, and a tailwind decreases ground speed.",
+      "Both headwind and tailwind increase ground speed."
+    ],
+    "correct_answer": "A headwind decreases ground speed, and a tailwind increases ground speed."
+  },
+  {
+    "question_number": 53,
+    "question_text": "You land at 17:30 local time (UTC+5). What time (UTC) should you enter in your logbook for the landing?",
+    "options": [
+      "12:30 UTC",
+      "17:30 UTC",
+      "22:30 UTC",
+      "07:30 UTC"
+    ],
+    "correct_answer": "12:30 UTC"
+  },
+  {
+    "question_number": 54,
+    "question_text": "To convert a true course into a compass heading, which sequence of corrections is applied?",
+    "options": [
+      "Add or subtract variation to get magnetic course, then add or subtract deviation to get compass heading.",
+      "Apply deviation first, then variation.",
+      "Subtract deviation from true course directly.",
+      "Correct for wind, then add variation only."
+    ],
+    "correct_answer": "Add or subtract variation to get magnetic course, then add or subtract deviation to get compass heading."
+  },
+  {
+    "question_number": 55,
+    "question_text": "On VFR aeronautical charts, large bold numbers (e.g., 25) in each quadrangle represent __________.",
+    "options": [
+      "the Maximum Elevation Figure (MEF), the highest terrain or obstacle elevation (MSL) in that area",
+      "the distance in nautical miles across that section of the chart",
+      "the local magnetic variation",
+      "the minimum safe altitude for that area in hundreds of feet"
+    ],
+    "correct_answer": "the Maximum Elevation Figure (MEF), the highest terrain or obstacle elevation (MSL) in that area"
+  },
+  {
+    "question_number": 56,
+    "question_text": "Obstacle elevations on sectional charts are often given with two numbers, e.g., “1540 (1450)”. The number in parentheses is the __________.",
+    "options": [
+      "height of the obstacle above ground level (AGL)",
+      "height of the obstacle above mean sea level (MSL)",
+      "distance of the obstacle from a nearby airport",
+      "required circling altitude near that obstacle"
+    ],
+    "correct_answer": "height of the obstacle above ground level (AGL)"
+  },
+  {
+    "question_number": 57,
+    "question_text": "A chart with a scale of 1:250,000 will show __________ compared to a chart of 1:1,000,000.",
+    "options": [
+      "a smaller area with more detail (larger scale map)",
+      "a larger area with less detail",
+      "the same area but with different units",
+      "a larger area with more detail"
+    ],
+    "correct_answer": "a smaller area with more detail (larger scale map)"
+  },
+  {
+    "question_number": 58,
+    "question_text": "On a 1:500,000 scale aeronautical chart, 1 centimeter on the chart corresponds to about __________ on the ground.",
+    "options": [
+      "5 kilometers",
+      "15 kilometers",
+      "0.5 kilometer",
+      "50 kilometers"
+    ],
+    "correct_answer": "5 kilometers"
+  },
+  {
+    "question_number": 59,
+    "question_text": "Which is true regarding a Mercator projection chart used for navigation?",
+    "options": [
+      "Rhumb lines appear as straight lines, while great circles appear as curved lines, and scale increases with latitude.",
+      "Scale is uniform everywhere on the chart.",
+      "Great circle routes are straight lines on a Mercator chart.",
+      "It is an equal-area projection."
+    ],
+    "correct_answer": "Rhumb lines appear as straight lines, while great circles appear as curved lines, and scale increases with latitude."
+  },
+  {
+    "question_number": 60,
+    "question_text": "Which statement is correct about a Lambert Conformal Conic projection chart?",
+    "options": [
+      "It is a conformal map (preserves shape) and is nearly true to scale (minimal distortion).",
+      "It is an equal-area projection (preserves area).",
+      "Meridians are parallel on the chart.",
+      "Great circles appear as large curves and rhumb lines as straight."
+    ],
+    "correct_answer": "It is a conformal map (preserves shape) and is nearly true to scale (minimal distortion)."
+  },
+  {
+    "question_number": 61,
+    "question_text": "“ILS” is a system commonly used for precision approaches. What does ILS stand for?",
+    "options": [
+      "Instrument Landing System",
+      "International Landing Standard",
+      "Integrated Lighting System",
+      "Instrument Latitude System"
+    ],
+    "correct_answer": "Instrument Landing System"
+  },
+  {
+    "question_number": 62,
+    "question_text": "The localizer component of an ILS provides __________ guidance to the runway.",
+    "options": [
+      "horizontal (left/right)",
+      "vertical (glidepath)",
+      "distance",
+      "visual"
+    ],
+    "correct_answer": "horizontal (left/right)"
+  },
+  {
+    "question_number": 63,
+    "question_text": "True Airspeed (TAS) is the aircraft’s speed through the air, while Ground Speed (GS) is the speed __________.",
+    "options": [
+      "over the ground (TAS adjusted for wind)",
+      "through still air with no wind",
+      "relative to the air mass",
+      "indicated on the airspeed indicator"
+    ],
+    "correct_answer": "over the ground (TAS adjusted for wind)"
+  },
+  {
+    "question_number": 64,
+    "question_text": "The difference between an aircraft’s heading and its actual track over the ground is known as the __________.",
+    "options": [
+      "drift angle (caused by wind)",
+      "variation angle",
+      "bank angle",
+      "attack angle"
+    ],
+    "correct_answer": "drift angle (caused by wind)"
+  },
+  {
+    "question_number": 65,
+    "question_text": "If you are flying east and a wind is blowing from the south, the aircraft will drift __________.",
+    "options": [
+      "to the north of the intended track",
+      "to the south of the intended track",
+      "downwind (to the west)",
+      "not at all (no drift)"
+    ],
+    "correct_answer": "to the north of the intended track"
+  },
+  {
+    "question_number": 66,
+    "question_text": "Why must the directional gyro (heading indicator) in an aircraft be periodically realigned with the magnetic compass?",
+    "options": [
+      "Because the gyro will drift over time due to precession, causing heading errors",
+      "To correct for magnetic variation automatically",
+      "Because the compass rotates the card automatically",
+      "It does not need to be realigned once airborne"
+    ],
+    "correct_answer": "Because the gyro will drift over time due to precession, causing heading errors"
+  },
+  {
+    "question_number": 67,
+    "question_text": "How can a pilot find the magnetic variation to use for flight planning along a route?",
+    "options": [
+      "By consulting the isogonic lines (lines of equal variation) printed on the aeronautical chart for that area.",
+      "It is the same everywhere, given in the aircraft manual.",
+      "By checking the compass deviation card.",
+      "Variation is negligible and usually ignored."
+    ],
+    "correct_answer": "By consulting the isogonic lines (lines of equal variation) printed on the aeronautical chart for that area."
+  },
+  {
+    "question_number": 68,
+    "question_text": "On a colder than standard day, how will your altimeter reading compare to your true altitude?",
+    "options": [
+      "The altimeter will read higher than the true altitude (you are lower than indicated).",
+      "The altimeter will read lower than true altitude.",
+      "It will be exact if QNH is set.",
+      "Temperature does not affect altimeter readings."
+    ],
+    "correct_answer": "The altimeter will read higher than the true altitude (you are lower than indicated)."
+  },
+  {
+    "question_number": 69,
+    "question_text": "Pressure altitude is the altitude read on the altimeter when __________.",
+    "options": [
+      "the altimeter is set to the standard pressure setting (29.92\" Hg or 1013 hPa)",
+      "the altimeter is set to the local QNH",
+      "flying at the transition altitude",
+      "the instrument is at sea level under standard conditions"
+    ],
+    "correct_answer": "the altimeter is set to the standard pressure setting (29.92\" Hg or 1013 hPa)"
+  },
+  {
+    "question_number": 70,
+    "question_text": "At the magnetic equator (roughly halfway between the magnetic poles), the inclination (dip) of Earth’s magnetic field is approximately __________.",
+    "options": [
+      "zero (the magnetic field is horizontal)",
+      "maximum (the compass needle dips vertically)",
+      "23.5° upward",
+      "90° downwards"
+    ],
+    "correct_answer": "zero (the magnetic field is horizontal)"
+  },
+  {
+    "question_number": 71,
+    "question_text": "In aviation weather reports (METARs), wind directions are given relative to __________.",
+    "options": [
+      "true north",
+      "grid north",
+      "magnetic north",
+      "runway heading"
+    ],
+    "correct_answer": "true north"
+  },
+  {
+    "question_number": 72,
+    "question_text": "At latitude 60°N, one degree of longitude spans approximately how far on the ground?",
+    "options": [
+      "30 NM",
+      "60 NM",
+      "120 NM",
+      "1 NM"
+    ],
+    "correct_answer": "30 NM"
+  },
+  {
+    "question_number": 73,
+    "question_text": "If you are on the 090° radial of a VOR and you want to fly directly to the station, you should steer a course of approximately __________.",
+    "options": [
+      "270° (i.e., fly west toward the station)",
+      "090° (directly along the radial)",
+      "360° (due north)",
+      "180° (due south)"
+    ],
+    "correct_answer": "270° (i.e., fly west toward the station)"
+  },
+  {
+    "question_number": 74,
+    "question_text": "On a VOR indicator, what does the TO/FROM flag tell you?",
+    "options": [
+      "Whether your selected course would take you to the station or away from it",
+      "How far off course you are in degrees",
+      "The quality of the signal reception",
+      "If you are north or south of the station"
+    ],
+    "correct_answer": "Whether your selected course would take you to the station or away from it"
+  },
+  {
+    "question_number": 75,
+    "question_text": "On a standard VOR CDI (Course Deviation Indicator), each dot of deflection from center represents about __________ off course.",
+    "options": [
+      "2° of angular deviation",
+      "5° of heading error",
+      "1 NM, regardless of distance",
+      "0.5° of bearing change"
+    ],
+    "correct_answer": "2° of angular deviation"
+  },
+  {
+    "question_number": 76,
+    "question_text": "On topographic maps or aeronautical charts, very closely spaced contour lines indicate __________.",
+    "options": [
+      "steep terrain (rapid elevation change)",
+      "flat terrain",
+      "a mountain pass",
+      "a shallow slope"
+    ],
+    "correct_answer": "steep terrain (rapid elevation change)"
+  },
+  {
+    "question_number": 77,
+    "question_text": "On U.S. sectional charts, airports with control towers are depicted in __________, whereas airports without towers are in __________.",
+    "options": [
+      "blue; magenta",
+      "magenta; blue",
+      "yellow; white",
+      "black; blue"
+    ],
+    "correct_answer": "blue; magenta"
+  },
+  {
+    "question_number": 78,
+    "question_text": "A star (*) or asterisk next to an airport’s name on a sectional chart indicates the airport has __________.",
+    "options": [
+      "a rotating beacon (usually from sunset to sunrise)",
+      "a military presence",
+      "no fuel available",
+      "runway lighting but no beacon"
+    ],
+    "correct_answer": "a rotating beacon (usually from sunset to sunrise)"
+  },
+  {
+    "question_number": 79,
+    "question_text": "VFR Sectional charts in the United States are commonly drawn at a scale of __________.",
+    "options": [
+      "1:500,000",
+      "1:1,000,000",
+      "1:250,000",
+      "1:50,000"
+    ],
+    "correct_answer": "1:500,000"
+  },
+  {
+    "question_number": 80,
+    "question_text": "The compass rose depicted around a VOR station on aeronautical charts is aligned to __________.",
+    "options": [
+      "magnetic north (so the radials are magnetic bearings)",
+      "true north",
+      "grid north",
+      "the station’s local time zone"
+    ],
+    "correct_answer": "magnetic north (so the radials are magnetic bearings)"
+  },
+  {
+    "question_number": 81,
+    "question_text": "Around noon in the Northern Hemisphere, if you are facing the sun directly, you are generally facing __________.",
+    "options": [
+      "south",
+      "west",
+      "east",
+      "north"
+    ],
+    "correct_answer": "south"
+  },
+  {
+    "question_number": 82,
+    "question_text": "QNH is the altimeter setting that causes the altimeter to read __________.",
+    "options": [
+      "elevation (height above mean sea level) when on the ground at that location",
+      "zero at field elevation",
+      "pressure altitude",
+      "height above the runway surface"
+    ],
+    "correct_answer": "elevation (height above mean sea level) when on the ground at that location"
+  },
+  {
+    "question_number": 83,
+    "question_text": "QFE is the pressure setting that will make the altimeter read __________ when the aircraft is on that reference datum (e.g., on the runway).",
+    "options": [
+      "zero",
+      "field elevation above MSL",
+      "standard atmosphere altitude",
+      "pressure altitude"
+    ],
+    "correct_answer": "zero"
+  },
+  {
+    "question_number": 84,
+    "question_text": "QNE refers to the standard altimeter setting of 1013 hPa (29.92\" Hg). At and above the transition altitude, pilots set QNE and fly at __________.",
+    "options": [
+      "flight levels",
+      "pressure altitude zero",
+      "true altitudes",
+      "the lowest safe altitude"
+    ],
+    "correct_answer": "flight levels"
+  },
+  {
+    "question_number": 85,
+    "question_text": "“Flight Level 85” (FL085) corresponds to __________ on the altimeter with standard setting.",
+    "options": [
+      "8,500 feet (pressure altitude on 1013 hPa)",
+      "8,500 feet AGL",
+      "850 feet MSL",
+      "85 meters"
+    ],
+    "correct_answer": "8,500 feet (pressure altitude on 1013 hPa)"
+  },
+  {
+    "question_number": 86,
+    "question_text": "To determine your position, you tune and identify two VORs and note you are on the 210° radial of one and the 120° radial of another. You plot those on your chart. Your position is at the __________.",
+    "options": [
+      "intersection of the two radials",
+      "origin of one radial",
+      "210° position from the first station",
+      "midpoint between the two stations"
+    ],
+    "correct_answer": "intersection of the two radials"
+  },
+  {
+    "question_number": 87,
+    "question_text": "If you have a VOR/DME station, what information can you obtain with suitable equipment?",
+    "options": [
+      "Both direction (bearing) to/from the station and distance (slant range)",
+      "Only distance information",
+      "Only bearing (direction) information",
+      "Groundspeed and wind direction directly"
+    ],
+    "correct_answer": "Both direction (bearing) to/from the station and distance (slant range)"
+  },
+  {
+    "question_number": 88,
+    "question_text": "“WCA” in navigation stands for __________.",
+    "options": [
+      "Wind Correction Angle",
+      "World Compass Alignment",
+      "Waypoint Coordinate Altitude",
+      "Weather Correction Algorithm"
+    ],
+    "correct_answer": "Wind Correction Angle"
+  },
+  {
+    "question_number": 89,
+    "question_text": "Absolute altitude is defined as the aircraft’s height __________.",
+    "options": [
+      "above the surface (AGL)",
+      "above sea level (MSL)",
+      "above the standard datum plane",
+      "above the tropopause"
+    ],
+    "correct_answer": "above the surface (AGL)"
+  },
+  {
+    "question_number": 90,
+    "question_text": "True altitude is the aircraft’s height __________.",
+    "options": [
+      "above mean sea level (MSL)",
+      "above ground level (AGL)",
+      "indicated on the altimeter with 1013 set",
+      "above the standard datum plane (pressure altitude)"
+    ],
+    "correct_answer": "above mean sea level (MSL)"
+  },
+  {
+    "question_number": 91,
+    "question_text": "If your magnetic heading is 350° while your true heading is 340°, what is the magnetic variation in that area (assuming negligible wind and deviation)?",
+    "options": [
+      "10° West",
+      "10° East",
+      "10° East deviation",
+      "110°"
+    ],
+    "correct_answer": "10° West"
+  },
+  {
+    "question_number": 92,
+    "question_text": "Compass deviation of 3° East means the compass needle __________.",
+    "options": [
+      "points 3° east of magnetic north",
+      "points 3° west of magnetic north",
+      "has 3° of variation",
+      "needs 3° added to compass heading to get magnetic heading"
+    ],
+    "correct_answer": "points 3° east of magnetic north"
+  },
+  {
+    "question_number": 93,
+    "question_text": "On aeronautical charts, bodies of water such as lakes and rivers are typically colored __________.",
+    "options": [
+      "blue",
+      "brown",
+      "green",
+      "white"
+    ],
+    "correct_answer": "blue"
+  },
+  {
+    "question_number": 94,
+    "question_text": "On a sectional chart, green and brown color tints are used to depict __________.",
+    "options": [
+      "different terrain elevations (green for lower elevations, brown for higher elevations)",
+      "areas of magnetic anomaly",
+      "land cover (green for forests, brown for deserts)",
+      "military training areas"
+    ],
+    "correct_answer": "different terrain elevations (green for lower elevations, brown for higher elevations)"
+  },
+  {
+    "question_number": 95,
+    "question_text": "At night, NDB (ADF) navigation can be adversely affected by the ‘night effect,’ which is caused by __________.",
+    "options": [
+      "ionospheric reflections of the radio waves after sunset, making the ADF needle erratic",
+      "the rotation of the Earth",
+      "interference from VOR stations",
+      "the ADF’s battery cooling down"
+    ],
+    "correct_answer": "ionospheric reflections of the radio waves after sunset, making the ADF needle erratic"
+  },
+  {
+    "question_number": 96,
+    "question_text": "A VORTAC is a navigation aid that combines __________.",
+    "options": [
+      "a VOR and a TACAN station (providing VOR radials and DME distance)",
+      "two VOR stations in one unit",
+      "an onboard GPS with VOR capabilities",
+      "a VOR and an ADF in one facility"
+    ],
+    "correct_answer": "a VOR and a TACAN station (providing VOR radials and DME distance)"
+  },
+  {
+    "question_number": 97,
+    "question_text": "ETA vs ETE: ETA (Estimated Time of Arrival) is the clock time when you expect to arrive, whereas ETE (Estimated Time Enroute) is __________.",
+    "options": [
+      "the expected duration of the flight (how long it will take)",
+      "the distance remaining to destination",
+      "the time you will spend on the ground",
+      "the estimated fuel required"
+    ],
+    "correct_answer": "the expected duration of the flight (how long it will take)"
+  },
+  {
+    "question_number": 98,
+    "question_text": "The mnemonic “East is least, West is best” helps pilots remember how to apply __________.",
+    "options": [
+      "magnetic variation (subtract East variation, add West variation to true course)",
+      "gyro drift corrections",
+      "wind corrections (left for east wind, right for west wind)",
+      "magnetic dip corrections"
+    ],
+    "correct_answer": "magnetic variation (subtract East variation, add West variation to true course)"
+  },
+  {
+    "question_number": 99,
+    "question_text": "What is “RNAV” (Area Navigation)?",
+    "options": [
+      "A method of navigation that allows direct flight on any desired course within coverage of navaids or satellites, by using waypoints",
+      "Navigation solely by reference to ground landmarks",
+      "Navigation only along published airways",
+      "Procedures for instrument landing"
+    ],
+    "correct_answer": "A method of navigation that allows direct flight on any desired course within coverage of navaids or satellites, by using waypoints"
+  },
+  {
+    "question_number": 100,
+    "question_text": "Your aircraft burns 12 gallons of fuel per hour. How much fuel will be used on a 1.5 hour flight, plus a 45-minute reserve?",
+    "options": [
+      "approximately 26 gallons",
+      "12 gallons",
+      "9 gallons",
+      "18 gallons"
+    ],
+    "correct_answer": "approximately 26 gallons"
+  },
+  {
+    "question_number": 101,
+    "question_text": "“Density altitude” is best described as __________.",
+    "options": [
+      "pressure altitude corrected for non-standard temperature (the altitude in ISA that has the same air density as the current conditions)",
+      "height above the ground at a given temperature",
+      "the altitude read on the altimeter when set to 1013 hPa",
+      "the altitude indicated on the altimeter with QNH set"
+    ],
+    "correct_answer": "pressure altitude corrected for non-standard temperature (the altitude in ISA that has the same air density as the current conditions)"
+  },
+  {
+    "question_number": 102,
+    "question_text": "If you become lost or disoriented during flight, one recommended action is to “Climb.” Why is climbing useful when lost?",
+    "options": [
+      "It increases radio and navaid reception range and extends your visual horizon to spot landmarks.",
+      "It makes the compass more accurate.",
+      "ATC requires climbing before declaring an emergency.",
+      "It guarantees you will find your position by reaching a VOR signal."
+    ],
+    "correct_answer": "It increases radio and navaid reception range and extends your visual horizon to spot landmarks."
+  },
+  {
+    "question_number": 103,
+    "question_text": "If you are lost and have a radio, what should you do after trying to locate yourself and if still uncertain?",
+    "options": [
+      "Contact ATC or Flight Service on the radio and request assistance (confess you’re lost and ask for help).",
+      "Descend to try to read road signs or yell for help.",
+      "Turn 180° and go back the way you came without telling anyone.",
+      "Continue flying in a straight line until you recognize something."
+    ],
+    "correct_answer": "Contact ATC or Flight Service on the radio and request assistance (confess you’re lost and ask for help)."
+  },
+  {
+    "question_number": 104,
+    "question_text": "You note that on a compass deviation card: “Magnetic Heading 120° = Compass reads 123°.” To fly a magnetic heading of 120°, you should steer a compass heading of __________.",
+    "options": [
+      "123°",
+      "117°",
+      "127°",
+      "120°"
+    ],
+    "correct_answer": "123°"
+  },
+  {
+    "question_number": 105,
+    "question_text": "Earth’s magnetic north pole is not fixed and not co-located with the geographic North Pole. In fact, the magnetic poles __________.",
+    "options": [
+      "drift over time",
+      "never move",
+      "are exactly 180° apart from true poles",
+      "align with the 0° and 180° meridians"
+    ],
+    "correct_answer": "drift over time"
+  },
+  {
+    "question_number": 106,
+    "question_text": "An E6B (flight computer) is commonly used to __________.",
+    "options": [
+      "perform navigation calculations (e.g., time, speed, distance, fuel, wind correction)",
+      "calibrate the compass in flight",
+      "align the directional gyro automatically",
+      "find the nearest airport in an emergency"
+    ],
+    "correct_answer": "perform navigation calculations (e.g., time, speed, distance, fuel, wind correction)"
+  },
+  {
+    "question_number": 107,
+    "question_text": "A plotter (navigation protractor) is used by pilots to __________.",
+    "options": [
+      "measure course angles and distances on aeronautical charts",
+      "file a flight plan with ATC",
+      "compute fuel burn in flight",
+      "align the compass in flight"
+    ],
+    "correct_answer": "measure course angles and distances on aeronautical charts"
+  },
+  {
+    "question_number": 108,
+    "question_text": "Which is longer: one nautical mile or one statute mile?",
+    "options": [
+      "One nautical mile (1 NM ≈ 1.15 SM)",
+      "They are the same length",
+      "One statute mile (SM is longer than NM)",
+      "Depends on latitude"
+    ],
+    "correct_answer": "One nautical mile (1 NM ≈ 1.15 SM)"
+  },
+  {
+    "question_number": 109,
+    "question_text": "100 miles per hour (statute) is approximately how many knots?",
+    "options": [
+      "about 87 knots",
+      "115 knots",
+      "100 knots",
+      "78 knots"
+    ],
+    "correct_answer": "about 87 knots"
+  },
+  {
+    "question_number": 110,
+    "question_text": "Magnetic variation can change significantly over distance. On a long east–west flight, a pilot should __________.",
+    "options": [
+      "update the variation value for each section of the route as shown on charts (it may not be constant)",
+      "use the departure airport’s variation for the whole flight",
+      "ignore variation changes if under 5° difference",
+      "rely on GPS to account for variation automatically"
+    ],
+    "correct_answer": "update the variation value for each section of the route as shown on charts (it may not be constant)"
+  },
+  {
+    "question_number": 111,
+    "question_text": "“Civil twilight” is defined as the period when the sun is less than _____ below the horizon (in the morning before sunrise, or evening after sunset).",
+    "options": [
+      "6°",
+      "12°",
+      "18°",
+      "2°"
+    ],
+    "correct_answer": "6°"
+  },
+  {
+    "question_number": 112,
+    "question_text": "“True course” (TC) is defined as the angle between __________ and the intended path of the aircraft over the ground.",
+    "options": [
+      "true north and the course line (track) on the map",
+      "magnetic north and the course line",
+      "the aircraft’s longitudinal axis and a meridian",
+      "compass north and true north"
+    ],
+    "correct_answer": "true north and the course line (track) on the map"
+  },
+  {
+    "question_number": 113,
+    "question_text": "“Magnetic course” (MC) is defined as the aircraft’s course relative to __________.",
+    "options": [
+      "magnetic north (i.e., true course corrected for variation)",
+      "compass north (including deviation)",
+      "the 0° longitude line",
+      "the isogonic line"
+    ],
+    "correct_answer": "magnetic north (i.e., true course corrected for variation)"
+  },
+  {
+    "question_number": 114,
+    "question_text": "“UTC” (Coordinated Universal Time) is effectively the same as __________ time.",
+    "options": [
+      "Greenwich Mean Time (GMT), the time at the Prime Meridian (0° longitude)",
+      "local solar noon",
+      "Standard time in your local zone",
+      "daylight saving time"
+    ],
+    "correct_answer": "Greenwich Mean Time (GMT), the time at the Prime Meridian (0° longitude)"
+  },
+  {
+    "question_number": 115,
+    "question_text": "While flying directly toward a VOR station, you note the bearing to the station changes by 10° in 2 minutes. About how many minutes from the station are you?",
+    "options": [
+      "Approximately 12 minutes (time to station ≈ (60 × minutes flown) / degrees change)",
+      "2 minutes",
+      "6 minutes",
+      "20 minutes"
+    ],
+    "correct_answer": "Approximately 12 minutes (time to station ≈ (60 × minutes flown) / degrees change)"
+  },
+  {
+    "question_number": 116,
+    "question_text": "In the Northern Hemisphere, when turning from a south heading, a magnetic compass will __________.",
+    "options": [
+      "lead the turn (indicate a greater or faster turn than is actually occurring)",
+      "lag behind the turn (initially indicate opposite turn)",
+      "oscillate randomly",
+      "show no error"
+    ],
+    "correct_answer": "lead the turn (indicate a greater or faster turn than is actually occurring)"
+  },
+  {
+    "question_number": 117,
+    "question_text": "“Endurance” in flight planning refers to __________.",
+    "options": [
+      "the maximum time an aircraft can stay airborne on the available fuel",
+      "the maximum distance an aircraft can fly on full fuel",
+      "the point of no return",
+      "the cruising speed of the aircraft"
+    ],
+    "correct_answer": "the maximum time an aircraft can stay airborne on the available fuel"
+  },
+  {
+    "question_number": 118,
+    "question_text": "How does a headwind or tailwind component affect an aircraft’s range (distance it can fly on a given amount of fuel)?",
+    "options": [
+      "A headwind decreases range (ground distance) for the same fuel, whereas a tailwind increases range.",
+      "A tailwind decreases range because groundspeed is higher.",
+      "Wind does not affect range, only time aloft.",
+      "A headwind increases range because the aircraft flies slower relative to the ground."
+    ],
+    "correct_answer": "A headwind decreases range (ground distance) for the same fuel, whereas a tailwind increases range."
+  },
+  {
+    "question_number": 119,
+    "question_text": "To find your position using two VORs, you would __________.",
+    "options": [
+      "tune each VOR, identify the radials you’re on from each station, and plot those radials on your chart; where they intersect is your position",
+      "fly directly over one VOR and measure the angle to the second",
+      "use one VOR radial and your DME distance from it",
+      "tune the closer VOR only, since the intersection method works with one station"
+    ],
+    "correct_answer": "tune each VOR, identify the radials you’re on from each station, and plot those radials on your chart; where they intersect is your position"
+  },
+  {
+    "question_number": 120,
+    "question_text": "With a VOR/DME station, a pilot can obtain __________.",
+    "options": [
+      "both direction (bearing) to/from the station and distance (slant range)",
+      "groundspeed and wind direction directly",
+      "only distance information",
+      "only bearing information"
+    ],
+    "correct_answer": "both direction (bearing) to/from the station and distance (slant range)"
+  },
+  {
+    "question_number": 121,
+    "question_text": "“TAS” stands for __________.",
+    "options": [
+      "True Airspeed",
+      "Terrain Altitude System",
+      "Trans-Atlantic Service",
+      "Terminal Approach Segment"
+    ],
+    "correct_answer": "True Airspeed"
+  },
+  {
+    "question_number": 122,
+    "question_text": "“IAS” is an acronym for __________.",
+    "options": [
+      "Indicated Airspeed",
+      "International Airway System",
+      "Installed Altimeter Setting",
+      "Inner marker Approach System"
+    ],
+    "correct_answer": "Indicated Airspeed"
+  },
+  {
+    "question_number": 123,
+    "question_text": "In the Northern Hemisphere, the acronym “UNOS” helps remember compass turn errors: Undershoot North, __________.",
+    "options": [
+      "Overshoot South",
+      "Overhead Station",
+      "Undershoot South",
+      "Overfly Station"
+    ],
+    "correct_answer": "Overshoot South"
+  },
+  {
+    "question_number": 124,
+    "question_text": "In compass terms, “ANDS” (Accelerate North, Decelerate South) describes the tendency of a compass on east or west headings to show a false turn toward __________ when accelerating.",
+    "options": [
+      "the north (when accelerating) and toward the south when decelerating",
+      "the south (when accelerating) and north when decelerating",
+      "the east (regardless of acceleration or deceleration)",
+      "the west (upon acceleration)"
+    ],
+    "correct_answer": "the north (when accelerating) and toward the south when decelerating"
+  },
+  {
+    "question_number": 125,
+    "question_text": "Unlike VOR signals (which are line-of-sight VHF), NDB signals in the LF/MF band can follow the curvature of the Earth (ground wave). At night, however, NDB signals can travel farther via skywaves, causing __________.",
+    "options": [
+      "erratic ADF needle indications (night effect)",
+      "increased accuracy of ADF bearings",
+      "the NDB’s Morse code to change",
+      "no change to ADF usage"
+    ],
+    "correct_answer": "erratic ADF needle indications (night effect)"
+  },
+  {
+    "question_number": 126,
+    "question_text": "On an aeronautical chart, “elevation” of a terrain point or airport means height above __________.",
+    "options": [
+      "mean sea level (MSL)",
+      "ground level (AGL)",
+      "the nearest airport",
+      "standard datum plane"
+    ],
+    "correct_answer": "mean sea level (MSL)"
+  },
+  {
+    "question_number": 127,
+    "question_text": "In which frequency band do DME transmitters operate?",
+    "options": [
+      "UHF (ultra high frequency around 960 MHz)",
+      "VHF (108–118 MHz)",
+      "HF (3–30 MHz)",
+      "LF (190–535 kHz)"
+    ],
+    "correct_answer": "UHF (ultra high frequency around 960 MHz)"
+  },
+  {
+    "question_number": 128,
+    "question_text": "When you cross the International Date Line traveling eastbound (for example, from Asia to America), you should __________.",
+    "options": [
+      "subtract one day from your calendar date",
+      "add one day to the date",
+      "set your clock forward by 12 hours",
+      "set your clock back by 12 hours"
+    ],
+    "correct_answer": "subtract one day from your calendar date"
+  },
+  {
+    "question_number": 129,
+    "question_text": "One meter is approximately equal to __________.",
+    "options": [
+      "3.3 feet",
+      "30 feet",
+      "1 foot",
+      "0.1 foot"
+    ],
+    "correct_answer": "3.3 feet"
+  },
+  {
+    "question_number": 130,
+    "question_text": "“Homing” to a radio beacon (such as an NDB) means __________.",
+    "options": [
+      "flying toward the station by keeping the needle centered, without correcting for wind (resulting in a curved path)",
+      "using two beacons to triangulate position",
+      "flying a wind-corrected path to track directly to the station",
+      "flying an outbound course from the station"
+    ],
+    "correct_answer": "flying toward the station by keeping the needle centered, without correcting for wind (resulting in a curved path)"
+  },
+  {
+    "question_number": 131,
+    "question_text": "“Tracking” to a station means __________.",
+    "options": [
+      "applying wind correction to fly a straight path to or from the station",
+      "following the needle without wind correction",
+      "using GPS rather than ground-based navaids",
+      "flying circles around a station"
+    ],
+    "correct_answer": "applying wind correction to fly a straight path to or from the station"
+  },
+  {
+    "question_number": 132,
+    "question_text": "One characteristic of a great circle route (other than the Equator) is that __________.",
+    "options": [
+      "the direction (true heading) to follow changes gradually as you proceed along the route",
+      "it crosses all meridians at the same angle",
+      "it results in a constant compass heading",
+      "it is longer than a rhumb line between the same points"
+    ],
+    "correct_answer": "the direction (true heading) to follow changes gradually as you proceed along the route"
+  },
+  {
+    "question_number": 133,
+    "question_text": "A rhumb line route is often slightly longer than a great circle route, but it has the advantage that __________.",
+    "options": [
+      "the heading remains constant (crosses each meridian at the same angle)",
+      "it is the absolute shortest distance",
+      "it accounts for wind automatically",
+      "variation is zero along a rhumb line"
+    ],
+    "correct_answer": "the heading remains constant (crosses each meridian at the same angle)"
+  },
+  {
+    "question_number": 134,
+    "question_text": "Runway numbers (e.g., 18 or 36) are determined by the runway’s __________.",
+    "options": [
+      "magnetic heading (approximate, in tens of degrees)",
+      "true heading (exact degrees)",
+      "length and width",
+      "elevation above sea level"
+    ],
+    "correct_answer": "magnetic heading (approximate, in tens of degrees)"
+  },
+  {
+    "question_number": 135,
+    "question_text": "Your aircraft has 10 gallons of fuel remaining. You burn 5 gallons per hour. To preserve a 30-minute reserve, about how many more minutes can you fly?",
+    "options": [
+      "Approximately 90 minutes",
+      "120 minutes",
+      "30 minutes",
+      "75 minutes"
+    ],
+    "correct_answer": "Approximately 90 minutes"
+  },
+  {
+    "question_number": 136,
+    "question_text": "You have 100 liters of fuel onboard and your consumption is 20 L/hour. You plan to hold 30 minutes of reserve. How long (total) can you fly (approximately)?",
+    "options": [
+      "About 4.5 hours",
+      "3 hours",
+      "5.5 hours",
+      "2 hours"
+    ],
+    "correct_answer": "About 4.5 hours"
+  },
+  {
+    "question_number": 137,
+    "question_text": "An aircraft flies 100 NM out and 100 NM back with a headwind one way and an equal tailwind returning. Compared to still-air, the total round-trip time will be __________.",
+    "options": [
+      "longer (headwind/tailwind combinations increase total time compared to no wind)",
+      "shorter",
+      "the same",
+      "unaffected, only groundspeed changes"
+    ],
+    "correct_answer": "longer (headwind/tailwind combinations increase total time compared to no wind)"
+  },
+  {
+    "question_number": 138,
+    "question_text": "If you fly directly over a DME station at 6,000 feet AGL, what will the DME read (approximately)?",
+    "options": [
+      "About 1.0 NM (slant range equals altitude in NM)",
+      "0.0 NM (zero, because you are over the station)",
+      "3.3 NM",
+      "6.0 NM"
+    ],
+    "correct_answer": "About 1.0 NM (slant range equals altitude in NM)"
+  },
+  {
+    "question_number": 139,
+    "question_text": "In the Northern Hemisphere, if you accelerate on an east or west heading, a magnetic compass will initially indicate a turn toward __________.",
+    "options": [
+      "the north (ANDS – Accelerate North, Decelerate South)",
+      "the south",
+      "the west",
+      "the east"
+    ],
+    "correct_answer": "the north (ANDS – Accelerate North, Decelerate South)"
+  },
+  {
+    "question_number": 140,
+    "question_text": "You can also fix your position by using two different types of navigation aids. For example, using a VOR radial from one station and an ADF bearing from an NDB, you can plot lines and find your location at their __________.",
+    "options": [
+      "intersection",
+      "origin",
+      "perpendicular bisector",
+      "midpoint"
+    ],
+    "correct_answer": "intersection"
+  },
+  {
+    "question_number": 141,
+    "question_text": "Determining your position by advancing a previous known position using course, time, and speed (without new references) is called __________.",
+    "options": [
+      "dead reckoning",
+      "pilotage",
+      "GPS navigation",
+      "a position fix"
+    ],
+    "correct_answer": "dead reckoning"
+  },
+  {
+    "question_number": 142,
+    "question_text": "If the magnetic heading is 350° and deviation is 2°E, what compass heading will you steer?",
+    "options": [
+      "348°",
+      "352°",
+      "356°",
+      "350°"
+    ],
+    "correct_answer": "348°"
+  },
+  {
+    "question_number": 143,
+    "question_text": "If the magnetic course is 200° and variation is 10°W, what is the true course?",
+    "options": [
+      "190°",
+      "210°",
+      "200°",
+      "180°"
+    ],
+    "correct_answer": "190°"
+  },
+  {
+    "question_number": 144,
+    "question_text": "Your compass indicates a heading of 100°. The deviation on that heading is 3°W. What is the magnetic heading?",
+    "options": [
+      "97°",
+      "100°",
+      "94°",
+      "103°"
+    ],
+    "correct_answer": "97°"
+  },
+  {
+    "question_number": 145,
+    "question_text": "You wish to fly a true heading of 090°. The variation is 5°E. What magnetic heading should you fly (ignoring wind and deviation)?",
+    "options": [
+      "085°",
+      "090°",
+      "075°",
+      "095°"
+    ],
+    "correct_answer": "085°"
+  },
+  {
+    "question_number": 146,
+    "question_text": "After a 100 NM flight leg, you find you are 10 NM off course. Approximately how many degrees were you off course (using the 1-in-60 rule)?",
+    "options": [
+      "10°",
+      "5°",
+      "6°",
+      "1°"
+    ],
+    "correct_answer": "10°"
+  },
+  {
+    "question_number": 147,
+    "question_text": "If you are significantly off course and only half the distance to go remains, a good rule of thumb to regain your track by the destination is to __________.",
+    "options": [
+      "triple the drift correction (aim back toward the course by about three times the off-course angle)",
+      "double the drift correction angle",
+      "continue without change (you'll rejoin naturally)",
+      "cut the drift correction in half"
+    ],
+    "correct_answer": "triple the drift correction (aim back toward the course by about three times the off-course angle)"
+  },
+  {
+    "question_number": 148,
+    "question_text": "The term “track made good” refers to __________.",
+    "options": [
+      "the actual path the aircraft travels over the ground",
+      "the heading you maintained during the flight",
+      "magnetic bearing to your destination",
+      "a proposed flight plan route"
+    ],
+    "correct_answer": "the actual path the aircraft travels over the ground"
+  },
+  {
+    "question_number": 149,
+    "question_text": "What is the difference between “bearing” and “heading”?",
+    "options": [
+      "Bearing is the direction from the aircraft to an object/station, while heading is the direction the aircraft is pointed.",
+      "Heading is always magnetic; bearing is always true.",
+      "They are the same – both refer to where the nose is pointed.",
+      "Bearing accounts for wind, heading does not."
+    ],
+    "correct_answer": "Bearing is the direction from the aircraft to an object/station, while heading is the direction the aircraft is pointed."
+  },
+  {
+    "question_number": 150,
+    "question_text": "“Relative bearing,” as used with the ADF, means __________.",
+    "options": [
+      "the angle between the aircraft’s nose/heading and the direction of the station (measured clockwise from the nose).",
+      "the compass bearing to the station from true north.",
+      "the difference between magnetic and true bearing.",
+      "the aircraft’s bank angle during a turn."
+    ],
+    "correct_answer": "the angle between the aircraft’s nose/heading and the direction of the station (measured clockwise from the nose)."
+  },
+  {
+    "question_number": 151,
+    "question_text": "The groundspeed readout on a DME is accurate only when __________.",
+    "options": [
+      "the aircraft is flying directly to or from the DME station (i.e., the distance to station is changing directly)",
+      "the aircraft is abeam the station",
+      "within 5 NM of the station",
+      "at any time, since DME computes GS independently of direction"
+    ],
+    "correct_answer": "the aircraft is flying directly to or from the DME station (i.e., the distance to station is changing directly)"
+  },
+  {
+    "question_number": 152,
+    "question_text": "How can you tell when you have passed directly over an NDB station using an ADF?",
+    "options": [
+      "The ADF needle will swing rapidly through 180°, indicating the station is now behind you.",
+      "You cannot tell without a DME.",
+      "The ADF will lose its signal completely.",
+      "The ADF needle will point straight up (0°) continuously."
+    ],
+    "correct_answer": "The ADF needle will swing rapidly through 180°, indicating the station is now behind you."
+  },
+  {
+    "question_number": 153,
+    "question_text": "When passing directly over a VOR station, the TO/FROM indicator will __________.",
+    "options": [
+      "swap indication (e.g., TO changes to FROM) as you go through the station",
+      "begin beeping",
+      "show OFF for several minutes",
+      "continue showing TO steadily"
+    ],
+    "correct_answer": "swap indication (e.g., TO changes to FROM) as you go through the station"
+  },
+  {
+    "question_number": 154,
+    "question_text": "In the standard atmosphere, for each 1,000 feet of altitude, true airspeed is roughly __________ indicated airspeed (assuming the same power setting).",
+    "options": [
+      "2% higher than",
+      "2% lower than",
+      "the same as",
+      "10% higher than"
+    ],
+    "correct_answer": "2% higher than"
+  },
+  {
+    "question_number": 155,
+    "question_text": "How does high humidity affect aircraft performance and density altitude?",
+    "options": [
+      "High humidity decreases performance by effectively increasing density altitude (less dense air).",
+      "High humidity makes air more dense, improving lift.",
+      "High humidity increases engine power output.",
+      "Humidity has no effect on performance."
+    ],
+    "correct_answer": "High humidity decreases performance by effectively increasing density altitude (less dense air)."
+  },
+  {
+    "question_number": 156,
+    "question_text": "When using GPS for navigation under VFR, a prudent pilot should __________.",
+    "options": [
+      "maintain alternative navigation methods (e.g., charts and visual checkpoints) in case of GPS outage or error",
+      "turn off other navaids to avoid interference",
+      "fly solely by the GPS moving map, as it’s always correct",
+      "ignore NOTAMs about satellite outages as they are rare"
+    ],
+    "correct_answer": "maintain alternative navigation methods (e.g., charts and visual checkpoints) in case of GPS outage or error"
+  },
+  {
+    "question_number": 157,
+    "question_text": "“GLONASS” is __________.",
+    "options": [
+      "a satellite-based navigation system operated by Russia (similar to GPS)",
+      "a ground-based radar navigation aid",
+      "an onboard inertial navigation system",
+      "an old term for LORAN signals"
+    ],
+    "correct_answer": "a satellite-based navigation system operated by Russia (similar to GPS)"
+  },
+  {
+    "question_number": 158,
+    "question_text": "“Galileo” in the context of navigation refers to __________.",
+    "options": [
+      "the European Union’s satellite navigation system",
+      "a type of VOR station",
+      "a star-based (celestial) nav method",
+      "an FAA GPS augmentation system"
+    ],
+    "correct_answer": "the European Union’s satellite navigation system"
+  },
+  {
+    "question_number": 159,
+    "question_text": "“GNSS” stands for __________.",
+    "options": [
+      "Global Navigation Satellite System (a general term for satellite nav systems like GPS, GLONASS, etc.)",
+      "General Navigation and Safety System",
+      "Ground Network Surveillance Service",
+      "Gyro Navigation Steering System"
+    ],
+    "correct_answer": "Global Navigation Satellite System (a general term for satellite nav systems like GPS, GLONASS, etc.)"
+  },
+  {
+    "question_number": 160,
+    "question_text": "If it is 12:00 UTC, what is the local time in a zone designated UTC+5:30?",
+    "options": [
+      "5:30 PM (17:30)",
+      "7:30 AM",
+      "2:30 PM",
+      "5:30 AM the next day"
+    ],
+    "correct_answer": "5:30 PM (17:30)"
+  },
+  {
+    "question_number": 161,
+    "question_text": "If a pilot finds that a true heading of 100° results in a magnetic heading of 110° (with no wind), the variation in that area is __________.",
+    "options": [
+      "10° West",
+      "10° East",
+      "110°",
+      "10° East deviation"
+    ],
+    "correct_answer": "10° West"
+  },
+  {
+    "question_number": 162,
+    "question_text": "“QDM” is a term used in radio navigation that signifies __________.",
+    "options": [
+      "the magnetic bearing (course) to fly *to* a station (from the aircraft to the station)",
+      "a predetermined quiz question code",
+      "the magnetic bearing from the station (radial)",
+      "true north heading"
+    ],
+    "correct_answer": "the magnetic bearing (course) to fly *to* a station (from the aircraft to the station)"
+  },
+  {
+    "question_number": 163,
+    "question_text": "“QDR” refers to __________.",
+    "options": [
+      "the magnetic bearing *from* the station to the aircraft (the station’s radial to the aircraft)",
+      "a magnetic course to the destination",
+      "the distance measuring equipment reading",
+      "required descent rate"
+    ],
+    "correct_answer": "the magnetic bearing *from* the station to the aircraft (the station’s radial to the aircraft)"
+  },
+  {
+    "question_number": 164,
+    "question_text": "What is the difference between an NDB and an ADF?",
+    "options": [
+      "The NDB is the ground transmitter beacon; the ADF is the aircraft’s receiver/instrument that points to it.",
+      "There is no difference—both terms describe the cockpit instrument.",
+      "ADF is a type of VOR station, NDB is not.",
+      "An NDB provides distance information, an ADF does not."
+    ],
+    "correct_answer": "The NDB is the ground transmitter beacon; the ADF is the aircraft’s receiver/instrument that points to it."
+  },
+  {
+    "question_number": 165,
+    "question_text": "How many radials does a VOR have?",
+    "options": [
+      "360 radials (one for each degree)",
+      "720 (half-degree increments)",
+      "180 (one for each half-degree)",
+      "1 radial per nautical mile"
+    ],
+    "correct_answer": "360 radials (one for each degree)"
+  },
+  {
+    "question_number": 166,
+    "question_text": "Modern VOR receivers are typically accurate to within about __________.",
+    "options": [
+      "±1–2° of the actual bearing",
+      "±15°",
+      "±10°",
+      "±0.1°"
+    ],
+    "correct_answer": "±1–2° of the actual bearing"
+  },
+  {
+    "question_number": 167,
+    "question_text": "Approximately how far apart are meridians (lines of longitude) at latitude 30°N?",
+    "options": [
+      "52 NM per degree",
+      "30 NM per degree",
+      "60 NM per degree",
+      "15 NM per degree"
+    ],
+    "correct_answer": "52 NM per degree"
+  },
+  {
+    "question_number": 168,
+    "question_text": "If the wind is blowing from your left, will you drift left or right of your intended track (assuming you don’t correct)?",
+    "options": [
+      "You will drift to the right of course (downwind).",
+      "You will drift to the left of course.",
+      "You won’t drift at all if heading is correct.",
+      "It depends on the hemisphere."
+    ],
+    "correct_answer": "You will drift to the right of course (downwind)."
+  },
+  {
+    "question_number": 169,
+    "question_text": "The “five C’s” (Climb, Confess, Communicate, Conserve, and Comply) are commonly taught as steps to take when __________.",
+    "options": [
+      "a pilot becomes lost or disoriented in flight",
+      "checking flight instruments before takeoff",
+      "planning a cross-country flight",
+      "starting the engine"
+    ],
+    "correct_answer": "a pilot becomes lost or disoriented in flight"
+  },
+  {
+    "question_number": 170,
+    "question_text": "The wind triangle is a graphical method used in navigation to determine __________.",
+    "options": [
+      "the effect of wind on heading and groundspeed (relationship between true course, wind, and true heading/groundspeed)",
+      "the center of gravity location",
+      "magnetic variation along a route",
+      "compass deviation"
+    ],
+    "correct_answer": "the effect of wind on heading and groundspeed (relationship between true course, wind, and true heading/groundspeed)"
+  },
+  {
+    "question_number": 171,
+    "question_text": "Standard sea level pressure and temperature in the International Standard Atmosphere (ISA) are __________.",
+    "options": [
+      "1013.25 hPa (29.92\" Hg) and 15°C",
+      "1000 hPa and 0°C",
+      "29.50\" Hg and 59°C",
+      "1013.25 hPa and 0°C"
+    ],
+    "correct_answer": "1013.25 hPa (29.92\" Hg) and 15°C"
+  },
+  {
+    "question_number": 172,
+    "question_text": "If your true course is 100°, the wind correction angle is 5° to the right, and variation is 10°W, what magnetic heading should you fly?",
+    "options": [
+      "095°",
+      "105°",
+      "115°",
+      "100°"
+    ],
+    "correct_answer": "095°"
+  },
+  {
+    "question_number": 173,
+    "question_text": "You plan to fly a true course of 075°. Variation at your location is 5°E, and your compass deviation is 2°E. With no wind, what compass heading should you steer?",
+    "options": [
+      "068°",
+      "072°",
+      "078°",
+      "082°"
+    ],
+    "correct_answer": "068°"
+  },
+  {
+    "question_number": 174,
+    "question_text": "“RAIM” (Receiver Autonomous Integrity Monitoring) is a feature of GPS receivers that __________.",
+    "options": [
+      "checks the consistency/accuracy of satellite signals to ensure reliable navigation",
+      "alerts ATC of your position automatically",
+      "augments GPS with ground signals for better accuracy",
+      "corrects for magnetic variation automatically"
+    ],
+    "correct_answer": "checks the consistency/accuracy of satellite signals to ensure reliable navigation"
+  },
+  {
+    "question_number": 175,
+    "question_text": "If flying eastward and the wind is blowing from the north, to maintain your course you should steer somewhat __________.",
+    "options": [
+      "to the left (north of east, into the wind)",
+      "to the right (south of course)",
+      "faster",
+      "lower"
+    ],
+    "correct_answer": "to the left (north of east, into the wind)"
+  },
+  {
+    "question_number": 176,
+    "question_text": "At 120 knots true airspeed, how much fuel will be consumed to fly 100 NM if your fuel burn is 8 GPH?",
+    "options": [
+      "About 6.7 gallons",
+      "8.0 gallons",
+      "10.0 gallons",
+      "12.5 gallons"
+    ],
+    "correct_answer": "About 6.7 gallons"
+  },
+  {
+    "question_number": 177,
+    "question_text": "At a true airspeed of 120 knots, how far will you travel in 15 minutes?",
+    "options": [
+      "30 NM",
+      "60 NM",
+      "15 NM",
+      "45 NM"
+    ],
+    "correct_answer": "30 NM"
+  },
+  {
+    "question_number": 178,
+    "question_text": "An aircraft travels 240 NM in 2 hours. What is its average ground speed?",
+    "options": [
+      "120 knots",
+      "60 knots",
+      "100 knots",
+      "240 knots"
+    ],
+    "correct_answer": "120 knots"
+  },
+  {
+    "question_number": 179,
+    "question_text": "How long will it take to fly 50 NM at a ground speed of 100 knots?",
+    "options": [
+      "0.5 hour (30 minutes)",
+      "0.75 hour (45 minutes)",
+      "1 hour",
+      "15 minutes"
+    ],
+    "correct_answer": "0.5 hour (30 minutes)"
+  },
+  {
+    "question_number": 180,
+    "question_text": "If it takes 3 hours to fly 360 NM, what is the aircraft’s ground speed?",
+    "options": [
+      "120 knots",
+      "180 knots",
+      "100 knots",
+      "60 knots"
+    ],
+    "correct_answer": "120 knots"
+  },
+  {
+    "question_number": 181,
+    "question_text": "When performing a VOR receiver ground check, the maximum permissible error is __________.",
+    "options": [
+      "±4°",
+      "±8°",
+      "±6°",
+      "±1°"
+    ],
+    "correct_answer": "±4°"
+  },
+  {
+    "question_number": 182,
+    "question_text": "During an airborne VOR check (or dual VOR cross-check), the bearing error must not exceed __________ to be within acceptable limits.",
+    "options": [
+      "±6°",
+      "±2°",
+      "±1°",
+      "±10°"
+    ],
+    "correct_answer": "±6°"
+  },
+  {
+    "question_number": 183,
+    "question_text": "A Terminal VOR (TVOR) typically has a service range of about __________.",
+    "options": [
+      "25 NM radius (at appropriate altitudes)",
+      "75 NM at any altitude",
+      "100 NM regardless of altitude",
+      "10 NM only"
+    ],
+    "correct_answer": "25 NM radius (at appropriate altitudes)"
+  },
+  {
+    "question_number": 184,
+    "question_text": "A VOT (VOR Test Facility) is used to __________.",
+    "options": [
+      "test and calibrate VOR receivers on the ground (typically provides 360° FROM / 180° TO indication)",
+      "provide VOR signals in remote areas",
+      "simulate VOR approaches for training",
+      "broadcast weather information over VOR frequencies"
+    ],
+    "correct_answer": "test and calibrate VOR receivers on the ground (typically provides 360° FROM / 180° TO indication)"
+  },
+  {
+    "question_number": 185,
+    "question_text": "In the United States, the transition altitude (the altitude at or below which pilots set local altimeter, and above which standard pressure is used) is __________.",
+    "options": [
+      "18,000 feet MSL",
+      "14,500 feet MSL",
+      "FL 100 (10,000 ft)",
+      "3,000 feet AGL"
+    ],
+    "correct_answer": "18,000 feet MSL"
+  },
+  {
+    "question_number": 186,
+    "question_text": "What is the standard temperature lapse rate in the lower atmosphere?",
+    "options": [
+      "Approximately 2°C per 1000 ft of altitude gain",
+      "5°C per 1000 ft",
+      "1°C per 1000 m",
+      "3°F per 1000 ft"
+    ],
+    "correct_answer": "Approximately 2°C per 1000 ft of altitude gain"
+  },
+  {
+    "question_number": 187,
+    "question_text": "The ILS glideslope provides a vertical descent path usually of about __________.",
+    "options": [
+      "3° (3 degrees above horizontal)",
+      "0.5°",
+      "10°",
+      "90°"
+    ],
+    "correct_answer": "3° (3 degrees above horizontal)"
+  },
+  {
+    "question_number": 188,
+    "question_text": "The ILS localizer signal is normally adjusted so that its full width is about __________ (full deflection covers this angle).",
+    "options": [
+      "5° (approximately 2.5° on either side of centerline)",
+      "1° total (0.5° each side)",
+      "10° each side",
+      "0.5° total"
+    ],
+    "correct_answer": "5° (approximately 2.5° on either side of centerline)"
+  },
+  {
+    "question_number": 189,
+    "question_text": "Which flight instruments rely on the pitot-static system?",
+    "options": [
+      "Altimeter, airspeed indicator, and vertical speed indicator",
+      "Altimeter, attitude indicator, airspeed",
+      "Attitude indicator and turn coordinator",
+      "Magnetic compass and heading indicator"
+    ],
+    "correct_answer": "Altimeter, airspeed indicator, and vertical speed indicator"
+  },
+  {
+    "question_number": 190,
+    "question_text": "Which instruments are gyroscope-based in a typical light aircraft?",
+    "options": [
+      "Attitude indicator, heading (directional) gyro, and turn coordinator",
+      "Altimeter and VSI",
+      "Airspeed indicator and magnetic compass",
+      "Fuel gauge and inclinometer"
+    ],
+    "correct_answer": "Attitude indicator, heading (directional) gyro, and turn coordinator"
+  },
+  {
+    "question_number": 191,
+    "question_text": "LORAN was a long-range navigation system that has been __________.",
+    "options": [
+      "phased out/obsolete in favor of GPS",
+      "upgraded for modern use",
+      "required as backup in all aircraft",
+      "based on satellite technology"
+    ],
+    "correct_answer": "phased out/obsolete in favor of GPS"
+  },
+  {
+    "question_number": 192,
+    "question_text": "“WAAS” – the Wide Area Augmentation System – is used to __________.",
+    "options": [
+      "improve GPS accuracy and integrity (by using ground reference stations and geostationary satellites)",
+      "augment ADF signals over water",
+      "align INS systems in flight",
+      "provide an alternate to VOR navigation"
+    ],
+    "correct_answer": "improve GPS accuracy and integrity (by using ground reference stations and geostationary satellites)"
+  },
+  {
+    "question_number": 193,
+    "question_text": "121.5 MHz is known as the __________.",
+    "options": [
+      "international aviation emergency/distress frequency",
+      "standard UNICOM frequency",
+      "VHF navigation band edge",
+      "frequency for ATIS broadcasts"
+    ],
+    "correct_answer": "international aviation emergency/distress frequency"
+  },
+  {
+    "question_number": 194,
+    "question_text": "If you become lost and contact ATC for help, some facilities can provide a 'DF steer', which means __________.",
+    "options": [
+      "using Direction-Finding equipment to guide you (by having you transmit and then giving vectors to help you navigate)",
+      "sending a drone for escort",
+      "assigning a temporary transponder code",
+      "negotiating with weather stations for updates"
+    ],
+    "correct_answer": "using Direction-Finding equipment to guide you (by having you transmit and then giving vectors to help you navigate)"
+  },
+  {
+    "question_number": 195,
+    "question_text": "On a VFR cross-country flight, it is wise to select prominent visual checkpoints along your route roughly every 10–15 minutes. The purpose of this is to __________.",
+    "options": [
+      "verify your position regularly and ensure you are on course",
+      "fly lower at those points to check landmarks",
+      "keep passengers interested",
+      "satisfy FAA regulations for pilotage"
+    ],
+    "correct_answer": "verify your position regularly and ensure you are on course"
+  },
+  {
+    "question_number": 196,
+    "question_text": "“BeiDou” is the name of __________.",
+    "options": [
+      "China’s satellite navigation system (similar to GPS)",
+      "an African radio navigation beacon network",
+      "a European ground-based nav system",
+      "an FAA weather radar system"
+    ],
+    "correct_answer": "China’s satellite navigation system (similar to GPS)"
+  },
+  {
+    "question_number": 197,
+    "question_text": "Magnetic dip (inclination) is __________.",
+    "options": [
+      "the vertical angle of Earth’s magnetic field lines relative to the horizontal plane",
+      "the oscillation of the compass card in turbulence",
+      "the difference between true and magnetic north",
+      "compass deviation caused by the cockpit"
+    ],
+    "correct_answer": "the vertical angle of Earth’s magnetic field lines relative to the horizontal plane"
+  },
+  {
+    "question_number": 198,
+    "question_text": "Magnetic dip causes a magnetic compass in the Northern Hemisphere to __________.",
+    "options": [
+      "be sluggish and prone to errors, especially when turning or accelerating",
+      "point toward true north instead of magnetic north",
+      "read accurately only at the equator",
+      "reverse its north and south seeking ends"
+    ],
+    "correct_answer": "be sluggish and prone to errors, especially when turning or accelerating"
+  },
+  {
+    "question_number": 199,
+    "question_text": "For VFR flights in the U.S., it’s required to have enough fuel to reach the destination and then fly for at least _____ minutes (by day) or _____ minutes (by night) at normal cruise speed.",
+    "options": [
+      "30; 45",
+      "45; 45",
+      "60; 30",
+      "20; 30"
+    ],
+    "correct_answer": "30; 45"
+  },
+  {
+    "question_number": 200,
+    "question_text": "One benefit of filing a VFR flight plan is that __________.",
+    "options": [
+      "if you do not close the flight plan, authorities will initiate search and rescue for you shortly after your ETA",
+      "fuel at your destination is reserved",
+      "it guarantees ATC radar service throughout the flight",
+      "you can fly in Class A airspace with a VFR plan on file"
+    ],
+    "correct_answer": "if you do not close the flight plan, authorities will initiate search and rescue for you shortly after your ETA"
+  }
+]}
