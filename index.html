@@ -1064,20 +1064,7 @@ Search Query:`;
                 try {
                     const result = await genAI.models.generateContent({ model: MODEL_NAME, contents: prompt });
                     const searchText = result.text;
-                    if (result && result.response && typeof result.response.text === 'function') {
-                        // Standard successful text extraction
-                        searchText = result.response.text().trim();
-                    } else if (result && result.promptFeedback && result.promptFeedback.blockReason) {
-                        // Content was blocked by safety settings
-                        console.warn('Gemini API blocked search prompt generation:', result.promptFeedback.blockReason);
-                        displayError(`AI search prompt blocked due to safety settings: ${result.promptFeedback.blockReason}`);
-                        return null; // Don't proceed with search
-                    } else {
-                        // Fallback for unexpected empty or malformed result
-                        console.error('Unexpected empty or malformed response for search prompt:', result);
-                        displayError('Failed to generate search prompt from AI.');
-                        return null;
-                    }
+                    
                     return searchText;
                 } catch (e) {
                     console.error("Error generating search prompt:", e);
