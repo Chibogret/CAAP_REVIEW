@@ -383,6 +383,56 @@
         }
         #restart-button:hover { background-color: var(--secondary-accent); }
 
+        /* --- NEW: Styles for the Review Area --- */
+        #review-container {
+            margin-top: 30px;
+            padding: 25px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            background-color: var(--secondary-bg);
+        }
+        #review-container h2 {
+             margin-top: 0;
+             color: var(--primary-accent);
+             border-bottom: 1px solid var(--border-color);
+             padding-bottom: 10px;
+             margin-bottom: 20px;
+             font-size: 1.5em;
+        }
+        .review-item {
+            padding: 20px;
+            margin-bottom: 15px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            background-color: #fdfdfd;
+        }
+        .review-question-text {
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .review-user-answer {
+            color: var(--incorrect-color);
+            margin-bottom: 5px;
+        }
+        .review-correct-answer {
+            color: var(--correct-color);
+            margin-bottom: 15px;
+        }
+        .review-explanation {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed var(--border-color);
+        }
+        .explain-review-btn {
+            background-color: var(--primary-accent);
+            flex-grow: 0; /* Don't let it take full width */
+        }
+        .explain-review-btn:hover {
+            background-color: var(--secondary-accent);
+        }
+        /* --- End of new styles --- */
+
         /* API Key Input */
         .api-key-container {
             margin-top: 20px;
@@ -470,7 +520,6 @@
         <header>
             <h1 class="quiz-title">CAAP Mock by Chippo</h1>
             
-            <!-- NEW: Mode Selector -->
             <div id="mode-selector-container">
                 <h2>Choose Your Mode</h2>
                 <div class="mode-button-container">
@@ -479,7 +528,6 @@
                 </div>
             </div>
 
-            <!-- Subject Selector & API Key (Initially Hidden) -->
             <div id="setup-container" class="hidden">
                  <div class="selector-container">
                     <label for="subject-selector">Select Subject:</label>
@@ -495,7 +543,6 @@
                 </div>
             </div>
 
-            <!-- Dynamic Info Display -->
             <div id="quiz-info-area" class="quiz-info hidden">
                 <span id="progress-display">Q: 1 / 10</span>
                 <span id="score-display">Score: 100%</span>
@@ -505,10 +552,8 @@
 
         <div id="error-container" class="error-message hidden"></div>
 
-        <!-- Quiz Content Area -->
         <div id="quiz-content" class="hidden">
             <div id="quiz-layout">
-                <!-- Main Question Area -->
                 <div id="main-content">
                     <div id="question-area">
                         <div id="question-text">Question text will load here...</div>
@@ -529,23 +574,29 @@
                         <button id="next-question-btn" class="quiz-button hidden">Next Question</button>
                     </div>
                 </div>
-                <!-- NEW: Question Browser (for Study Mode) -->
                 <aside id="question-browser-container" class="hidden">
                     <h3>Questions</h3>
                     <div id="question-browser-list" class="question-browser-list">
-                        <!-- Links populated by JS -->
                     </div>
                 </aside>
             </div>
         </div>
 
-        <!-- Final Results Area -->
         <div id="results-container" class="hidden">
             <h2>Quiz Completed!</h2>
             <div id="final-score-display">Score: 90%</div>
             <div id="results-summary">You answered X out of Y questions correctly.</div>
             <button id="restart-button" class="quiz-button">Choose Another Subject</button>
         </div>
+
+        <!-- --- NEW: Review Area for Incorrect Answers --- -->
+        <div id="review-container" class="hidden">
+            <h2>Review Incorrect Answers</h2>
+            <div id="incorrect-answers-list">
+                <!-- Incorrect items will be populated here by JS -->
+            </div>
+        </div>
+
     </div>
 
     <!-- SDK Imports and Scripts -->
@@ -604,6 +655,10 @@
             const explainBtn = document.getElementById('explain-question-btn');
             const questionBrowserContainer = document.getElementById('question-browser-container');
             const questionBrowserList = document.getElementById('question-browser-list');
+            // --- NEW: Review Area Elements ---
+            const reviewContainer = document.getElementById('review-container');
+            const incorrectAnswersList = document.getElementById('incorrect-answers-list');
+
 
             // --- State Variables ---
             let currentMode = null; // 'caap' or 'study'
@@ -611,7 +666,8 @@
             let allQuestions = [];
             let questionsToAsk = [];
             let skippedQuestions = [];
-            let questionStatus = {}; // NEW: { 0: 'correct', 1: 'incorrect', ... }
+            let questionStatus = {}; 
+            let userAnswers = {}; // --- NEW: To store user's answer for each question
             let currentQuestionIndex = 0;
             let totalQuestionsInQuiz = 0;
             let correctAnswersCount = 0;
@@ -688,6 +744,7 @@
                 hideElement(feedbackArea);
                 hideElement(explanationContainer);
                 hideElement(questionBrowserContainer);
+                hideElement(reviewContainer); // --- NEW: Hide review container on reset
                 showElement(modeSelectorContainer);
                 enableButton(subjectSelector);
                 subjectSelector.value = "";
@@ -699,7 +756,6 @@
                 currentMode = mode;
                 hideElement(modeSelectorContainer);
                 showElement(setupContainer);
-                // In Study Mode, hide the API key input if no key is present, as it's optional
                 if (mode === 'study' && !localStorage.getItem('geminiApiKey')) {
                     hideElement(apiKeyStatus);
                 }
@@ -765,6 +821,8 @@
                 hideElement(explainBtn);
                 hideElement(googleSearchBtn);
                 hideElement(questionBrowserContainer);
+                hideElement(reviewContainer); // --- NEW: Hide review container
+                incorrectAnswersList.innerHTML = ''; // --- NEW: Clear review list
             }
 
             function startQuiz() {
@@ -775,6 +833,7 @@
                 
                 skippedQuestions = [];
                 questionStatus = {};
+                userAnswers = {}; // --- NEW: Reset user answers
                 currentQuestionIndex = 0;
                 totalQuestionsInQuiz = allQuestions.length;
                 correctAnswersCount = 0;
@@ -828,7 +887,6 @@
                 questionTextElement.textContent = question.question_text;
                 optionsList.innerHTML = '';
 
-                // --- MODIFICATION: Create a shuffled copy of the options to randomize their order ---
                 const shuffledOptions = [...question.options];
                 shuffleArray(shuffledOptions);
 
@@ -876,6 +934,7 @@
                 lastAnsweredQuestion = currentQuestion;
                 lastUserAnswer = userAnswer;
                 lastCorrectAnswer = correctAnswer;
+                userAnswers[questionId] = userAnswer; // --- NEW: Store the user's answer
 
                 if (userAnswer === correctAnswer) {
                     feedbackArea.textContent = "Correct!";
@@ -966,6 +1025,41 @@
                 resultsSummary.textContent = `You answered ${correctAnswersCount} out of ${totalQuestionsInQuiz} questions correctly.`;
                 showElement(resultsContainer);
                 enableButton(subjectSelector);
+
+                // --- NEW: Display incorrect answers for review ---
+                displayIncorrectAnswersReview();
+            }
+
+            // --- NEW: Function to display the review section for incorrect answers ---
+            function displayIncorrectAnswersReview() {
+                incorrectAnswersList.innerHTML = ''; // Clear previous review
+                const incorrectQuestions = allQuestions.filter(q => questionStatus[q.originalIndex] === 'incorrect');
+
+                if (incorrectQuestions.length === 0) {
+                    hideElement(reviewContainer);
+                    return;
+                }
+
+                incorrectQuestions.forEach(question => {
+                    const questionId = question.originalIndex;
+                    const userAnswer = userAnswers[questionId] || 'Not answered';
+
+                    const itemDiv = document.createElement('div');
+                    itemDiv.className = 'review-item';
+                    // The loader is placed inside the explanation div and hidden initially
+                    itemDiv.innerHTML = `
+                        <p class="review-question-text">${question.question_text}</p>
+                        <p class="review-user-answer"><strong>Your Answer:</strong> ${userAnswer}</p>
+                        <p class="review-correct-answer"><strong>Correct Answer:</strong> ${question.correct_answer}</p>
+                        <button class="quiz-button explain-review-btn" data-question-id="${questionId}">Get AI Explanation</button>
+                        <div class="review-explanation hidden">
+                            <div class="loader explanation-loader"></div>
+                        </div>
+                    `;
+                    incorrectAnswersList.appendChild(itemDiv);
+                });
+
+                showElement(reviewContainer);
             }
             
             // --- Study Mode Specific Functions ---
@@ -992,7 +1086,6 @@
             }
 
             function jumpToQuestion(index) {
-                // In study mode, questionsToAsk is the same as allQuestions
                 currentQuestionIndex = index;
                 displayQuestion();
             }
@@ -1021,23 +1114,36 @@
                 }
             }
             
+            // --- MODIFICATION: Refactored to call a new helper function ---
             async function handleExplain() {
                 if (!lastAnsweredQuestion) return;
+                
                 disableButton(explainBtn);
-                await generateExplanation(lastAnsweredQuestion, lastUserAnswer, lastCorrectAnswer);
-                enableButton(explainBtn);
-            }
-
-            async function generateExplanation(question, userAnswer, correctAnswer) {
-                if (!genAI || typeof marked === 'undefined') {
-                    explanationError.textContent = 'AI features not ready. Check API key and script imports.';
-                    showElement(explanationError); return;
-                }
                 showElement(explanationContainer);
                 showElement(explanationLoader);
                 hideElement(explanationText);
                 hideElement(explanationError);
                 explanationText.innerHTML = '';
+
+                const explanationHTML = await getAIExplanationHTML(lastAnsweredQuestion, lastUserAnswer, lastCorrectAnswer);
+                
+                hideElement(explanationLoader);
+                if (explanationHTML.includes('error-message')) {
+                    explanationError.innerHTML = explanationHTML;
+                    showElement(explanationError);
+                } else {
+                    explanationText.innerHTML = explanationHTML;
+                    showElement(explanationText);
+                }
+
+                enableButton(explainBtn);
+            }
+
+            // --- MODIFICATION: Abstracted AI call into its own function ---
+            async function getAIExplanationHTML(question, userAnswer, correctAnswer) {
+                if (!genAI || typeof marked === 'undefined') {
+                    return '<p class="error-message" style="color: var(--incorrect-color);">AI features not ready. Check API key and script imports.</p>';
+                }
 
                 const prompt = `Explain the following multiple-choice question and its correct answer in detail, assuming the user is studying for a Philippine pilot license. Where relevant, reference the Philippine Civil Aviation Regulations (PCAR). Use Markdown for formatting.
 
@@ -1052,15 +1158,10 @@ Provide a clear explanation of why the correct answer is right and briefly why o
                 try {
                     const result = await genAI.models.generateContent({ model: MODEL_NAME, tools: ["google_search"], contents: prompt });
                     const generatedText = result.text;
-
-                    explanationText.innerHTML = marked.parse(generatedText);
-                    showElement(explanationText);
+                    return marked.parse(generatedText);
                 } catch (e) {
                     console.error("Error generating explanation:", e);
-                    explanationError.textContent = 'Failed to generate explanation. Check API key/network.';
-                    showElement(explanationError);
-                } finally {
-                    hideElement(explanationLoader);
+                    return '<p class="error-message" style="color: var(--incorrect-color);">Failed to generate explanation. Check API key/network.</p>';
                 }
             }
 
@@ -1069,8 +1170,6 @@ Provide a clear explanation of why the correct answer is right and briefly why o
                 displayError('Gemini AI not initialized. Cannot generate search prompt.');
                 return null;
               }
-
-              // 2. Build a prompt that uses both question and correct answer
               const prompt = `
             Generate a concise and effective Google search query (max 200 characters) that will find authoritative information on this Philippine PPL exam question, using both the question and the known correct answer to guide the query.
 
@@ -1132,16 +1231,13 @@ Provide a clear explanation of why the correct answer is right and briefly why o
                 }
             });
            
-            // --- MODIFICATION: Changed googleSearchBtn listener to use lastAnsweredQuestion ---
             googleSearchBtn.addEventListener('click', async ev => {
               ev.preventDefault();
-              // Use the last answered question, which is the one currently being explained/reviewed.
-              if (!lastAnsweredQuestion) return; // Safety check
+              if (!lastAnsweredQuestion) return;
 
               const { question_text, correct_answer } = lastAnsweredQuestion;
               disableButton(googleSearchBtn);
 
-              // now call the async generator with that snapshot
               const searchPrompt = await generateSearchPrompt(question_text, correct_answer);
 
               enableButton(googleSearchBtn);
@@ -1151,6 +1247,28 @@ Provide a clear explanation of why the correct answer is right and briefly why o
                   '_blank'
                 );
               }
+            });
+
+            // --- NEW: Event listener for review explanation buttons ---
+            incorrectAnswersList.addEventListener('click', async (event) => {
+                if (event.target.classList.contains('explain-review-btn')) {
+                    const button = event.target;
+                    const questionId = parseInt(button.dataset.questionId, 10);
+                    const question = allQuestions.find(q => q.originalIndex === questionId);
+                    const userAnswer = userAnswers[questionId];
+                    const explanationDiv = button.nextElementSibling; // The .review-explanation div
+
+                    if (!question || !explanationDiv) return;
+
+                    button.disabled = true;
+                    button.textContent = 'Generating...';
+                    showElement(explanationDiv); // Show the div which contains the loader
+
+                    const explanationHTML = await getAIExplanationHTML(question, userAnswer, question.correct_answer);
+                    
+                    explanationDiv.innerHTML = explanationHTML; // Replace loader with content
+                    button.classList.add('hidden'); // Hide the button after use
+                }
             });
 
 
