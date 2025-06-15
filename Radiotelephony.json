@@ -1,0 +1,2205 @@
+{
+  "exam_title": "PPL Radiotelephony Course",
+  "questions": [
+    {
+      "question_number": 1,
+      "question_text": "What is the phonetic alphabet word for the letter 'J'?",
+      "options": [
+        "Joker",
+        "Juliet",
+        "Japan",
+        "Jump"
+      ],
+      "correct_answer": "Juliet"
+    },
+    {
+      "question_number": 2,
+      "question_text": "The phrase 'ROGER' means:",
+      "options": [
+        "I will comply with your instruction.",
+        "I have received all of your last transmission.",
+        "Yes, that is correct.",
+        "Please repeat your message."
+      ],
+      "correct_answer": "I have received all of your last transmission."
+    },
+    {
+      "question_number": 3,
+      "question_text": "What does the word 'AFFIRM' mean in radiotelephony?",
+      "options": [
+        "Maybe",
+        "Yes",
+        "I understand",
+        "No"
+      ],
+      "correct_answer": "Yes"
+    },
+    {
+      "question_number": 4,
+      "question_text": "If a pilot is instructed to do something and will comply, the correct response is:",
+      "options": [
+        "ROGER",
+        "AFFIRMATIVE",
+        "WILCO",
+        "OKAY"
+      ],
+      "correct_answer": "WILCO"
+    },
+    {
+      "question_number": 5,
+      "question_text": "How should the altitude 5,000 feet be spoken?",
+      "options": [
+        "FIVE THOUSAND FEET",
+        "FIFTY HUNDRED FEET",
+        "FIFE ZERO ZERO ZERO FEET",
+        "FLIGHT LEVEL FIFTY"
+      ],
+      "correct_answer": "FIVE THOUSAND FEET"
+    },
+    {
+      "question_number": 6,
+      "question_text": "The phrase 'SAY AGAIN' instructs the other party to:",
+      "options": [
+        "Speak louder.",
+        "Wait for a moment.",
+        "Repeat the last transmission.",
+        "Acknowledge the message."
+      ],
+      "correct_answer": "Repeat the last transmission."
+    },
+    {
+      "question_number": 7,
+      "question_text": "What is the correct way to pronounce the number '9' in aviation?",
+      "options": [
+        "NINE",
+        "NINER",
+        "NINETY",
+        "NINTH"
+      ],
+      "correct_answer": "NINER"
+    },
+    {
+      "question_number": 8,
+      "question_text": "The term 'STANDBY' means:",
+      "options": [
+        "The transmission is finished.",
+        "Proceed with your message.",
+        "Wait and I will call you.",
+        "The frequency is busy."
+      ],
+      "correct_answer": "Wait and I will call you."
+    },
+    {
+      "question_number": 9,
+      "question_text": "How is the frequency 122.8 MHz transmitted?",
+      "options": [
+        "ONE TWENTY-TWO EIGHT",
+        "ONE TWO TWO POINT EIGHT",
+        "ONE TWO TWO DECIMAL EIGHT",
+        "ONE DOUBLE TWO EIGHT"
+      ],
+      "correct_answer": "ONE TWO TWO DECIMAL EIGHT"
+    },
+    {
+      "question_number": 10,
+      "question_text": "What does the phrase 'READ BACK' mean?",
+      "options": [
+        "Read the weather report.",
+        "Acknowledge the message.",
+        "Repeat the message back as understood.",
+        "Read the flight instruments."
+      ],
+      "correct_answer": "Repeat the message back as understood."
+    },
+    {
+      "question_number": 11,
+      "question_text": "The word 'NEGATIVE' is used to mean:",
+      "options": [
+        "Only 'No'.",
+        "'No', or 'Permission not granted', or 'That is not correct'.",
+        "I did not receive your message.",
+        "The situation is unfavorable."
+      ],
+      "correct_answer": "'No', or 'Permission not granted', or 'That is not correct'."
+    },
+    {
+      "question_number": 12,
+      "question_text": "How should a heading of 080 degrees be transmitted?",
+      "options": [
+        "HEADING EIGHTY",
+        "HEADING EIGHT ZERO",
+        "HEADING ZERO EIGHT ZERO",
+        "HEADING ZERO EIGHTY"
+      ],
+      "correct_answer": "HEADING ZERO EIGHT ZERO"
+    },
+    {
+      "question_number": 13,
+      "question_text": "What does 'ACKNOWLEDGE' mean?",
+      "options": [
+        "Repeat the message back.",
+        "Let me know that you have received and understood this message.",
+        "Comply with the instruction.",
+        "The transmission is over."
+      ],
+      "correct_answer": "Let me know that you have received and understood this message."
+    },
+    {
+      "question_number": 14,
+      "question_text": "How is the time 0920Z spoken?",
+      "options": [
+        "NINE TWENTY ZULU",
+        "ZERO NINER TWO ZERO ZULU",
+        "OH NINE TWENTY ZULU",
+        "NINER HUNDRED TWENTY ZULU"
+      ],
+      "correct_answer": "ZERO NINER TWO ZERO ZULU"
+    },
+    {
+      "question_number": 15,
+      "question_text": "The phrase 'GO AHEAD' means:",
+      "options": [
+        "Proceed with your message.",
+        "Take off now.",
+        "Continue taxiing.",
+        "The frequency is clear."
+      ],
+      "correct_answer": "Proceed with your message."
+    },
+    {
+      "question_number": 16,
+      "question_text": "What is the first item stated in an initial radio call to a ground station?",
+      "options": [
+        "Your aircraft call sign.",
+        "Your request.",
+        "The name of the station being called.",
+        "Your position on the airport."
+      ],
+      "correct_answer": "The name of the station being called."
+    },
+    {
+      "question_number": 17,
+      "question_text": "How is Flight Level 210 transmitted?",
+      "options": [
+        "FLIGHT LEVEL TWENTY ONE THOUSAND",
+        "FLIGHT LEVEL TWO ONE ZERO",
+        "FLIGHT LEVEL TWO HUNDRED TEN",
+        "FLIGHT LEVEL TWO ONE OH"
+      ],
+      "correct_answer": "FLIGHT LEVEL TWO ONE ZERO"
+    },
+    {
+      "question_number": 18,
+      "question_text": "The phrase 'CORRECTION' is used when:",
+      "options": [
+        "The other person has made a mistake.",
+        "An error has been made in the current transmission.",
+        "You want to change your request.",
+        "ATC has given an incorrect instruction."
+      ],
+      "correct_answer": "An error has been made in the current transmission."
+    },
+    {
+      "question_number": 19,
+      "question_text": "What does 'ATIS' stand for?",
+      "options": [
+        "Aircraft Traffic Information System",
+        "Airport Terminal Information Service",
+        "Automatic Terminal Information Service",
+        "Aeronautical Traffic Information Standard"
+      ],
+      "correct_answer": "Automatic Terminal Information Service"
+    },
+    {
+      "question_number": 20,
+      "question_text": "How is a transponder code of 4212 spoken?",
+      "options": [
+        "FORTY-TWO TWELVE",
+        "FOUR TWO ONE TWO",
+        "FOUR THOUSAND TWO HUNDRED TWELVE",
+        "FOUR-TWO-ONE-TWO"
+      ],
+      "correct_answer": "FOUR TWO ONE TWO"
+    },
+    {
+      "question_number": 21,
+      "question_text": "A readability of '5' on the readability scale means the transmission is:",
+      "options": [
+        "Readable now and then.",
+        "Unreadable.",
+        "Readable but with difficulty.",
+        "Perfectly readable."
+      ],
+      "correct_answer": "Perfectly readable."
+    },
+    {
+      "question_number": 22,
+      "question_text": "What does the phrase 'MONITOR' instruct a pilot to do?",
+      "options": [
+        "Watch the flight instruments closely.",
+        "Listen out on the specified frequency.",
+        "Observe traffic in the vicinity.",
+        "Check the weather."
+      ],
+      "correct_answer": "Listen out on the specified frequency."
+    },
+    {
+      "question_number": 23,
+      "question_text": "How is an altimeter setting of 29.89 transmitted?",
+      "options": [
+        "ALTIMETER TWO NINER EIGHT NINER",
+        "ALTIMETER TWENTY-NINE EIGHTY-NINE",
+        "ALTIMETER TWO NINER DECIMAL EIGHT NINER",
+        "ALTIMETER TWO NINE EIGHT NINE"
+      ],
+      "correct_answer": "ALTIMETER TWO NINER DECIMAL EIGHT NINER"
+    },
+    {
+      "question_number": 24,
+      "question_text": "The phrase 'BREAK BREAK' is used to:",
+      "options": [
+        "Indicate an emergency.",
+        "Separate messages to different aircraft in a busy environment.",
+        "End a transmission.",
+        "Signal a communication failure."
+      ],
+      "correct_answer": "Separate messages to different aircraft in a busy environment."
+    },
+    {
+      "question_number": 25,
+      "question_text": "What is the standard VFR transponder code in the USA?",
+      "options": [
+        "7000",
+        "1200",
+        "2000",
+        "7700"
+      ],
+      "correct_answer": "1200"
+    },
+    {
+      "question_number": 26,
+      "question_text": "A request 'HOW DO YOU READ?' is asking for what?",
+      "options": [
+        "Your opinion on the situation.",
+        "A report on the readability of the transmission.",
+        "You to repeat the message.",
+        "Your current flight parameters."
+      ],
+      "correct_answer": "A report on the readability of the transmission."
+    },
+    {
+      "question_number": 27,
+      "question_text": "How is runway 36L transmitted?",
+      "options": [
+        "RUNWAY THIRTY-SIX LIMA",
+        "RUNWAY THREE SIX LEFT",
+        "RUNWAY THIRTY-SIX LEFT",
+        "RUNWAY THREE-SIX-L"
+      ],
+      "correct_answer": "RUNWAY THREE SIX LEFT"
+    },
+    {
+      "question_number": 28,
+      "question_text": "The phrase 'OUT' at the end of a transmission means:",
+      "options": [
+        "I am leaving the frequency.",
+        "My transmission is ended and I expect a response.",
+        "This exchange is ended and no response is expected.",
+        "I am outside of your airspace."
+      ],
+      "correct_answer": "This exchange is ended and no response is expected."
+    },
+    {
+      "question_number": 29,
+      "question_text": "What is the correct way to state you have received ATIS information 'Charlie'?",
+      "options": [
+        "WITH CHARLIE",
+        "ROGER CHARLIE",
+        "INFORMATION CHARLIE",
+        "I HAVE CHARLIE"
+      ],
+      "correct_answer": "WITH INFORMATION CHARLIE"
+    },
+    {
+      "question_number": 30,
+      "question_text": "How is a wind from 240 degrees at 15 knots, gusting to 25 knots, transmitted?",
+      "options": [
+        "WIND TWO FOUR ZERO AT ONE FIVE GUSTING TWO FIVE",
+        "WIND 240 AT 15 GUSTS 25",
+        "WIND TWO FORTY AT FIFTEEN, GUSTS TWENTY-FIVE",
+        "WIND TWO FOUR ZERO DEGREES AT ONE FIVE KNOTS, GUSTING TWO FIVE KNOTS"
+      ],
+      "correct_answer": "WIND TWO FOUR ZERO AT ONE FIVE GUSTING TWO FIVE"
+    },
+    {
+      "question_number": 31,
+      "question_text": "A readability of '1' on the readability scale means the transmission is:",
+      "options": [
+        "Perfectly readable.",
+        "Readable but with difficulty.",
+        "Unreadable.",
+        "Readable now and then."
+      ],
+      "correct_answer": "Unreadable."
+    },
+    {
+      "question_number": 32,
+      "question_text": "The phrase 'DISREGARD' means:",
+      "options": [
+        "The instruction is cancelled.",
+        "Consider that transmission as not sent.",
+        "Pay no attention to my next words.",
+        "You have made an error."
+      ],
+      "correct_answer": "Consider that transmission as not sent."
+    },
+    {
+      "question_number": 33,
+      "question_text": "What is the transponder code for a hijacking?",
+      "options": [
+        "7700",
+        "7600",
+        "1200",
+        "7500"
+      ],
+      "correct_answer": "7500"
+    },
+    {
+      "question_number": 34,
+      "question_text": "What does the Q-code 'QNH' refer to?",
+      "options": [
+        "The magnetic bearing to the station.",
+        "The atmospheric pressure at mean sea level.",
+        "The height of the aircraft above the airfield.",
+        "The atmospheric pressure at the airfield elevation."
+      ],
+      "correct_answer": "The atmospheric pressure at mean sea level."
+    },
+    {
+      "question_number": 35,
+      "question_text": "When cleared to 'LINE UP AND WAIT', a pilot should:",
+      "options": [
+        "Take off immediately.",
+        "Taxi onto the runway and prepare for takeoff, but do not take off.",
+        "Wait short of the runway.",
+        "Taxi onto the runway and wait for a landing aircraft to pass."
+      ],
+      "correct_answer": "Taxi onto the runway and prepare for takeoff, but do not take off."
+    },
+    {
+      "question_number": 36,
+      "question_text": "What is the transponder code for a lost communications situation?",
+      "options": [
+        "7500",
+        "7700",
+        "7600",
+        "1200"
+      ],
+      "correct_answer": "7600"
+    },
+    {
+      "question_number": 37,
+      "question_text": "The phrase 'REPORT FINAL' is a request to make a radio call when:",
+      "options": [
+        "On the final approach leg of the traffic pattern.",
+        "You have finished your flight.",
+        "You are on the downwind leg.",
+        "You are established on the base leg."
+      ],
+      "correct_answer": "On the final approach leg of the traffic pattern."
+    },
+    {
+      "question_number": 38,
+      "question_text": "What does the Q-code 'QFE' refer to?",
+      "options": [
+        "The magnetic bearing from the station.",
+        "The atmospheric pressure at mean sea level.",
+        "The atmospheric pressure at airfield elevation.",
+        "The true bearing to the station."
+      ],
+      "correct_answer": "The atmospheric pressure at airfield elevation."
+    },
+    {
+      "question_number": 39,
+      "question_text": "The instruction 'SQUAWK IDENT' means the pilot should:",
+      "options": [
+        "Verbally state their call sign.",
+        "Change their transponder code to the one given.",
+        "Activate the 'IDENT' feature on the transponder.",
+        "Turn the transponder to standby."
+      ],
+      "correct_answer": "Activate the 'IDENT' feature on the transponder."
+    },
+    {
+      "question_number": 40,
+      "question_text": "What is the transponder code for a general emergency?",
+      "options": [
+        "7700",
+        "7600",
+        "7500",
+        "1200"
+      ],
+      "correct_answer": "7700"
+    },
+    {
+      "question_number": 41,
+      "question_text": "What is the universal emergency frequency (VHF)?",
+      "options": [
+        "122.8 MHz",
+        "123.45 MHz",
+        "121.5 MHz",
+        "118.1 MHz"
+      ],
+      "correct_answer": "121.5 MHz"
+    },
+    {
+      "question_number": 42,
+      "question_text": "The instruction 'MAINTAIN VFR' means:",
+      "options": [
+        "You are cleared to fly under Visual Flight Rules.",
+        "Remain in weather conditions that meet VFR minimums and continue to see and avoid other aircraft.",
+        "Contact flight service for a weather update.",
+        "The controller cannot provide traffic advisories."
+      ],
+      "correct_answer": "Remain in weather conditions that meet VFR minimums and continue to see and avoid other aircraft."
+    },
+    {
+      "question_number": 43,
+      "question_text": "What does 'CLEARED FOR THE OPTION' mean for a landing aircraft?",
+      "options": [
+        "The pilot is cleared to perform a touch-and-go, stop-and-go, low approach, or full-stop landing.",
+        "The pilot must choose one type of landing and inform the tower.",
+        "The pilot is cleared to land on any runway.",
+        "The pilot may choose to divert to another airport."
+      ],
+      "correct_answer": "The pilot is cleared to perform a touch-and-go, stop-and-go, low approach, or full-stop landing."
+    },
+    {
+      "question_number": 44,
+      "question_text": "What is the correct way to abbreviate a call sign like 'Cessna 172SP' after initial contact has been established?",
+      "options": [
+        "Cessna 2SP",
+        "Cessna 172",
+        "The controller or pilot may abbreviate it to the last three characters (e.g., '2SP').",
+        "It should not be abbreviated."
+      ],
+      "correct_answer": "The controller or pilot may abbreviate it to the last three characters (e.g., '2SP')."
+    },
+    {
+      "question_number": 45,
+      "question_text": "A pilot receiving the instruction 'RADAR CONTACT' should understand that:",
+      "options": [
+        "They are now under positive radar control.",
+        "Their aircraft has been identified on the radar display and flight following will be provided.",
+        "They no longer need to make position reports.",
+        "They must switch to a new frequency."
+      ],
+      "correct_answer": "Their aircraft has been identified on the radar display and flight following will be provided."
+    },
+    {
+      "question_number": 46,
+      "question_text": "The instruction 'RESUME OWN NAVIGATION' means:",
+      "options": [
+        "Radar service is terminated.",
+        "Proceed to your destination using your planned route.",
+        "The controller will no longer provide heading instructions.",
+        "All of the above."
+      ],
+      "correct_answer": "All of the above."
+    },
+    {
+      "question_number": 47,
+      "question_text": "What is the meaning of a clearance 'CLEARED TO LAND'?",
+      "options": [
+        "The runway is clear and the pilot is authorized to land.",
+        "The pilot is authorized to begin the final approach.",
+        "The pilot should expect to land but must wait for final clearance.",
+        "The pilot is cleared to join the traffic pattern."
+      ],
+      "correct_answer": "The runway is clear and the pilot is authorized to land."
+    },
+    {
+      "question_number": 48,
+      "question_text": "The term 'TRAFFIC PATTERN' refers to:",
+      "options": [
+        "The flow of aircraft on the ground.",
+        "The established flight path for aircraft operating around an airport.",
+        "The sequence of aircraft for departure.",
+        "A holding pattern over a VOR."
+      ],
+      "correct_answer": "The established flight path for aircraft operating around an airport."
+    },
+    {
+      "question_number": 49,
+      "question_text": "What is the purpose of a 'position report'?",
+      "options": [
+        "To inform ATC of the aircraft's location, altitude, and other relevant information.",
+        "To request a change in flight plan.",
+        "To get a weather update.",
+        "To declare an emergency."
+      ],
+      "correct_answer": "To inform ATC of the aircraft's location, altitude, and other relevant information."
+    },
+    {
+      "question_number": 50,
+      "question_text": "The phrase 'NEGATIVE CONTACT' in response to a traffic advisory means:",
+      "options": [
+        "The pilot refuses to look for the traffic.",
+        "The pilot does not have the traffic in sight.",
+        "The pilot does not want to be advised of traffic.",
+        "The traffic is no longer a factor."
+      ],
+      "correct_answer": "The pilot does not have the traffic in sight."
+    },
+    {
+      "question_number": 51,
+      "question_text": "What is the difference between 'MAYDAY' and 'PAN-PAN'?",
+      "options": [
+        "MAYDAY is for urgency, PAN-PAN is for distress.",
+        "MAYDAY is for distress (grave and imminent danger), PAN-PAN is for urgency.",
+        "MAYDAY is for medical emergencies, PAN-PAN is for mechanical issues.",
+        "There is no difference."
+      ],
+      "correct_answer": "MAYDAY is for distress (grave and imminent danger), PAN-PAN is for urgency."
+    },
+    {
+      "question_number": 52,
+      "question_text": "When must a pilot read back an instruction?",
+      "options": [
+        "Only when requested by ATC.",
+        "All clearances and instructions involving heading, altitude, and runway assignments.",
+        "Only for takeoff and landing clearances.",
+        "Never, 'ROGER' is sufficient."
+      ],
+      "correct_answer": "All clearances and instructions involving heading, altitude, and runway assignments."
+    },
+    {
+      "question_number": 53,
+      "question_text": "What does 'RADAR SERVICE TERMINATED' imply?",
+      "options": [
+        "The pilot should land immediately.",
+        "The controller will no longer provide radar services, and the pilot should resume own navigation and position reporting as required.",
+        "The aircraft's transponder is no longer working.",
+        "The pilot must switch to the emergency frequency."
+      ],
+      "correct_answer": "The controller will no longer provide radar services, and the pilot should resume own navigation and position reporting as required."
+    },
+    {
+      "question_number": 54,
+      "question_text": "An instruction 'REPORT MIDFIELD DOWNWIND' is a request to call when:",
+      "options": [
+        "The aircraft is abeam the midpoint of the runway on the downwind leg.",
+        "The aircraft is turning from base to final.",
+        "The aircraft is halfway down the final approach.",
+        "The aircraft is entering the downwind leg."
+      ],
+      "correct_answer": "The aircraft is abeam the midpoint of the runway on the downwind leg."
+    },
+    {
+      "question_number": 55,
+      "question_text": "What is the correct initial call for a VFR flight requesting flight following from approach control?",
+      "options": [
+        "Approach, Cessna 123AB, request flight following.",
+        "Boston Approach, Cessna 123AB, 10 miles west of the field at 3,500, request flight following to Providence.",
+        "Boston Approach, Cessna 123AB, over.",
+        "Request flight following, Cessna 123AB."
+      ],
+      "correct_answer": "Boston Approach, Cessna 123AB, 10 miles west of the field at 3,500, request flight following to Providence."
+    },
+    {
+      "question_number": 56,
+      "question_text": "What does 'CLEARED FOR IMMEDIATE TAKEOFF' mean?",
+      "options": [
+        "Take off at your discretion.",
+        "Taxi onto the runway and take off without any delay.",
+        "Line up and wait for another aircraft to land.",
+        "The takeoff clearance is cancelled."
+      ],
+      "correct_answer": "Taxi onto the runway and take off without any delay."
+    },
+    {
+      "question_number": 57,
+      "question_text": "The phrase 'TRAFFIC IN SIGHT' is the correct response when:",
+      "options": [
+        "You see any other aircraft.",
+        "You have visually acquired the specific traffic that ATC advised you of.",
+        "You are on a collision course with another aircraft.",
+        "You want ATC to stop giving you traffic advisories."
+      ],
+      "correct_answer": "You have visually acquired the specific traffic that ATC advised you of."
+    },
+    {
+      "question_number": 58,
+      "question_text": "What does a clearance 'MAINTAIN AT OR BELOW 4,500' mean?",
+      "options": [
+        "Fly at exactly 4,500 feet.",
+        "Fly at any altitude up to and including 4,500 feet.",
+        "Descend to 4,500 feet immediately.",
+        "Climb to 4,500 feet at your discretion."
+      ],
+      "correct_answer": "Fly at any altitude up to and including 4,500 feet."
+    },
+    {
+      "question_number": 59,
+      "question_text": "What is a 'blind transmission'?",
+      "options": [
+        "A transmission made without expecting a reply, often when the receiving station's operational status is unknown.",
+        "A transmission made on the wrong frequency.",
+        "An emergency call.",
+        "A transmission with no audio."
+      ],
+      "correct_answer": "A transmission made without expecting a reply, often when the receiving station's operational status is unknown."
+    },
+    {
+      "question_number": 60,
+      "question_text": "To enter Class C airspace, a VFR pilot must:",
+      "options": [
+        "Squawk 1200 and monitor the frequency.",
+        "Receive a specific clearance to enter.",
+        "Establish two-way radio communication with ATC prior to entry.",
+        "Have a flight plan filed."
+      ],
+      "correct_answer": "Establish two-way radio communication with ATC prior to entry."
+    },
+    {
+      "question_number": 61,
+      "question_text": "The instruction 'MAKE A 360' means:",
+      "options": [
+        "Land on runway 36.",
+        "Fly a complete circle in place.",
+        "Turn right 360 degrees.",
+        "Climb 360 feet."
+      ],
+      "correct_answer": "Fly a complete circle in place."
+    },
+    {
+      "question_number": 62,
+      "question_text": "What is the correct way to request a 'Special VFR' clearance?",
+      "options": [
+        "Requesting VFR on top.",
+        "Requesting special handling.",
+        "Requesting Special VFR clearance out of the control zone.",
+        "Declaring an emergency."
+      ],
+      "correct_answer": "Requesting Special VFR clearance out of the control zone."
+    },
+    {
+      "question_number": 63,
+      "question_text": "The instruction 'HOLD SHORT OF RUNWAY 27' means:",
+      "options": [
+        "Cross runway 27 quickly.",
+        "Stop before reaching the runway 27 holding position marking.",
+        "Line up and wait on runway 27.",
+        "Exit the runway onto taxiway 27."
+      ],
+      "correct_answer": "Stop before reaching the runway 27 holding position marking."
+    },
+    {
+      "question_number": 64,
+      "question_text": "What does 'VFR-ON-TOP' clearance provide?",
+      "options": [
+        "A clearance to fly at any VFR altitude.",
+        "A clearance to fly in VFR conditions while on an IFR flight plan.",
+        "A clearance to fly above a cloud layer in VFR conditions.",
+        "A special VFR clearance."
+      ],
+      "correct_answer": "A clearance to fly above a cloud layer in VFR conditions."
+    },
+    {
+      "question_number": 65,
+      "question_text": "If you are unable to comply with an ATC instruction, you should say:",
+      "options": [
+        "NEGATIVE",
+        "DISREGARD",
+        "UNABLE",
+        "WILCO"
+      ],
+      "correct_answer": "UNABLE"
+    },
+    {
+      "question_number": 66,
+      "question_text": "What is the first thing you should do if you experience radio failure in VMC?",
+      "options": [
+        "Land at the nearest airport.",
+        "Squawk 7700.",
+        "Troubleshoot the radio system (check frequency, volume, squelch, circuit breakers).",
+        "Climb to a higher altitude."
+      ],
+      "correct_answer": "Troubleshoot the radio system (check frequency, volume, squelch, circuit breakers)."
+    },
+    {
+      "question_number": 67,
+      "question_text": "A traffic advisory 'TRAFFIC, 12 O'CLOCK, 5 MILES, OPPOSITE DIRECTION' means the traffic is:",
+      "options": [
+        "Directly behind you, 5 miles away, moving away from you.",
+        "Directly ahead of you, 5 miles away, moving towards you.",
+        "To your right, 5 miles away, moving in the same direction.",
+        "To your left, 5 miles away, crossing your path."
+      ],
+      "correct_answer": "Directly ahead of you, 5 miles away, moving towards you."
+    },
+    {
+      "question_number": 68,
+      "question_text": "To enter Class B airspace, a VFR pilot must:",
+      "options": [
+        "Establish two-way radio communication.",
+        "Have a transponder with Mode C.",
+        "Receive an explicit clearance, such as 'Cleared into the Class Bravo airspace'.",
+        "All of the above."
+      ],
+      "correct_answer": "All of the above."
+    },
+    {
+      "question_number": 69,
+      "question_text": "The instruction 'MAKE SHORT APPROACH' means:",
+      "options": [
+        "Land as soon as possible on the runway.",
+        "Alter your traffic pattern to land with minimal delay.",
+        "Fly a shorter than normal final approach.",
+        "Descend rapidly on final."
+      ],
+      "correct_answer": "Alter your traffic pattern to land with minimal delay."
+    },
+    {
+      "question_number": 70,
+      "question_text": "What is the correct initial call for a MAYDAY message?",
+      "options": [
+        "MAYDAY, MAYDAY, MAYDAY, [Station Name], [Aircraft Call Sign], [Nature of Emergency].",
+        "[Station Name], [Aircraft Call Sign], MAYDAY.",
+        "MAYDAY, [Aircraft Call Sign], we have an emergency.",
+        "MAYDAY, MAYDAY, MAYDAY, this is [Aircraft Call Sign], followed by position, nature of emergency, and intentions."
+      ],
+      "correct_answer": "MAYDAY, MAYDAY, MAYDAY, this is [Aircraft Call Sign], followed by position, nature of emergency, and intentions."
+    },
+    {
+      "question_number": 71,
+      "question_text": "If you hear another station in distress, what is the first thing you should do?",
+      "options": [
+        "Immediately transmit your own position.",
+        "Relay the message if the aircraft in distress is not being answered.",
+        "Change frequency to avoid interference.",
+        "Continue with your own transmission."
+      ],
+      "correct_answer": "Relay the message if the aircraft in distress is not being answered."
+    },
+    {
+      "question_number": 72,
+      "question_text": "The instruction 'TAXI INTO POSITION AND HOLD' is an older phraseology equivalent to:",
+      "options": [
+        "HOLD SHORT",
+        "CLEARED FOR TAKEOFF",
+        "LINE UP AND WAIT",
+        "TAXI TO THE RAMP"
+      ],
+      "correct_answer": "LINE UP AND WAIT"
+    },
+    {
+      "question_number": 73,
+      "question_text": "What does 'MINIMUM FUEL' advisory to ATC indicate?",
+      "options": [
+        "An emergency situation requiring immediate landing.",
+        "The aircraft's fuel supply has reached a state where, upon reaching the destination, it can accept little or no delay.",
+        "The pilot is requesting a priority landing.",
+        "The aircraft has less than 30 minutes of fuel remaining."
+      ],
+      "correct_answer": "The aircraft's fuel supply has reached a state where, upon reaching the destination, it can accept little or no delay."
+    },
+    {
+      "question_number": 74,
+      "question_text": "If you are given a heading to fly for radar vectors, you should:",
+      "options": [
+        "Acknowledge the heading and then fly your planned course.",
+        "Read back the heading and fly it until told otherwise.",
+        "Question the controller's instruction.",
+        "Fly the heading but continue to navigate via GPS."
+      ],
+      "correct_answer": "Read back the heading and fly it until told otherwise."
+    },
+    {
+      "question_number": 75,
+      "question_text": "The phrase 'GO AROUND' is an instruction to:",
+      "options": [
+        "Circle the airport.",
+        "Abandon the approach to land and follow ATC instructions or standard go-around procedures.",
+        "Perform a 360-degree turn on the ground.",
+        "Taxi around the airport back to the ramp."
+      ],
+      "correct_answer": "Abandon the approach to land and follow ATC instructions or standard go-around procedures."
+    },
+    {
+      "question_number": 76,
+      "question_text": "What is the correct response to a traffic advisory if you have the traffic in sight and it is not a factor?",
+      "options": [
+        "ROGER, TRAFFIC NOT A FACTOR",
+        "TRAFFIC IN SIGHT, NO FACTOR",
+        "NEGATIVE CONTACT",
+        "TRAFFIC IN SIGHT"
+      ],
+      "correct_answer": "TRAFFIC IN SIGHT"
+    },
+    {
+      "question_number": 77,
+      "question_text": "A clearance to 'TAXI TO RUNWAY 22 VIA TAXIWAY ALPHA' requires you to:",
+      "options": [
+        "Taxi to runway 22 using any taxiway, but cross Alpha.",
+        "Read back the clearance and then taxi along taxiway Alpha to the holding point for runway 22.",
+        "Proceed directly to runway 22.",
+        "Wait for further instructions before moving."
+      ],
+      "correct_answer": "Read back the clearance and then taxi along taxiway Alpha to the holding point for runway 22."
+    },
+    {
+      "question_number": 78,
+      "question_text": "What does the term 'NORDO' refer to?",
+      "options": [
+        "An aircraft with no radio.",
+        "An aircraft flying north.",
+        "A non-radar environment.",
+        "No reported traffic."
+      ],
+      "correct_answer": "An aircraft with no radio."
+    },
+    {
+      "question_number": 79,
+      "question_text": "If you are approaching a non-towered airport, you should announce your position and intentions on the:",
+      "options": [
+        "Guard frequency (121.5).",
+        "Local tower frequency.",
+        "Common Traffic Advisory Frequency (CTAF).",
+        "Approach control frequency."
+      ],
+      "correct_answer": "Common Traffic Advisory Frequency (CTAF)."
+    },
+    {
+      "question_number": 80,
+      "question_text": "The instruction 'SQUAWK VFR' means to set the transponder to:",
+      "options": [
+        "The code assigned by ATC.",
+        "The standard VFR code for the region (e.g., 1200 in the US).",
+        "Standby mode.",
+        "7700."
+      ],
+      "correct_answer": "The standard VFR code for the region (e.g., 1200 in the US)."
+    },
+    {
+      "question_number": 81,
+      "question_text": "What is the purpose of a 'SELCAL' system?",
+      "options": [
+        "To automatically select the correct frequency.",
+        "To alert a flight crew that a ground station wishes to communicate with them.",
+        "A backup communication system.",
+        "A satellite phone system."
+      ],
+      "correct_answer": "To alert a flight crew that a ground station wishes to communicate with them."
+    },
+    {
+      "question_number": 82,
+      "question_text": "The phrase 'REPORT ESTABLISHED ON THE FINAL' means to call when:",
+      "options": [
+        "You are aligned with the runway centerline on the final approach course.",
+        "You are on the base leg.",
+        "You can see the runway.",
+        "You have been cleared to land."
+      ],
+      "correct_answer": "You are aligned with the runway centerline on the final approach course."
+    },
+    {
+      "question_number": 83,
+      "question_text": "If you are asked 'ARE YOU VFR ON TOP?', what is the controller asking?",
+      "options": [
+        "If you are flying above a cloud layer in VMC.",
+        "If you are at the top of your planned cruising altitude.",
+        "If you are using VFR for navigation.",
+        "If you are in contact with flight service."
+      ],
+      "correct_answer": "If you are flying above a cloud layer in VMC."
+    },
+    {
+      "question_number": 84,
+      "question_text": "What does 'CONTACT TOWER ON 118.7' mean?",
+      "options": [
+        "Monitor 118.7 but do not transmit.",
+        "Switch to and communicate with the Tower on frequency 118.7 MHz.",
+        "Acknowledge the instruction on the current frequency, then switch.",
+        "Both B and C are correct."
+      ],
+      "correct_answer": "Both B and C are correct."
+    },
+    {
+      "question_number": 85,
+      "question_text": "A pilot should state their altitude in an initial call to ATC, except when:",
+      "options": [
+        "Departing from an airport with a functioning control tower.",
+        "Flying in Class E airspace.",
+        "The altitude is obvious.",
+        "The pilot is below 1,000 feet AGL."
+      ],
+      "correct_answer": "Departing from an airport with a functioning control tower."
+    },
+    {
+      "question_number": 86,
+      "question_text": "The phrase 'IDENTIFY' from ATC is a request to:",
+      "options": [
+        "State your call sign.",
+        "Activate the 'IDENT' function on your transponder.",
+        "State your aircraft type.",
+        "Report your position."
+      ],
+      "correct_answer": "Activate the 'IDENT' function on your transponder."
+    },
+    {
+      "question_number": 87,
+      "question_text": "What is the meaning of 'STOP SQUAWK'?",
+      "options": [
+        "Turn the transponder to the 'OFF' or 'STBY' position.",
+        "Change your squawk code to 0000.",
+        "Stop using the 'IDENT' feature.",
+        "The transponder is malfunctioning."
+      ],
+      "correct_answer": "Turn the transponder to the 'OFF' or 'STBY' position."
+    },
+    {
+      "question_number": 88,
+      "question_text": "If you are given a clearance that would compromise safety, you should:",
+      "options": [
+        "Comply immediately as ATC has final authority.",
+        "Refuse the clearance and state your reason (e.g., 'UNABLE, TERRAIN').",
+        "Acknowledge the clearance but fly a safer route.",
+        "Declare an emergency."
+      ],
+      "correct_answer": "Refuse the clearance and state your reason (e.g., 'UNABLE, TERRAIN')."
+    },
+    {
+      "question_number": 89,
+      "question_text": "What does a 'runway incursion' refer to?",
+      "options": [
+        "An aircraft landing without clearance.",
+        "Any occurrence at an aerodrome involving the incorrect presence of an aircraft, vehicle, or person on the protected area of a surface designated for landing and takeoff.",
+        "A bird strike on the runway.",
+        "An aircraft veering off the runway during landing."
+      ],
+      "correct_answer": "Any occurrence at an aerodrome involving the incorrect presence of an aircraft, vehicle, or person on the protected area of a surface designated for landing and takeoff."
+    },
+    {
+      "question_number": 90,
+      "question_text": "The phrase 'EXPEDITE CLIMB' means:",
+      "options": [
+        "Climb at your normal rate.",
+        "Climb at the aircraft's maximum performance.",
+        "Climb as quickly as is safe and practical.",
+        "Climb immediately to avoid traffic."
+      ],
+      "correct_answer": "Climb as quickly as is safe and practical."
+    },
+    {
+      "question_number": 91,
+      "question_text": "What is the purpose of a 'sterile cockpit' rule?",
+      "options": [
+        "To ensure the cockpit is clean before flight.",
+        "To prohibit non-essential conversations and activities during critical phases of flight.",
+        "To prevent unauthorized persons from entering the cockpit.",
+        "To require the use of headsets for all communications."
+      ],
+      "correct_answer": "To prohibit non-essential conversations and activities during critical phases of flight."
+    },
+    {
+      "question_number": 92,
+      "question_text": "If you are unsure of your position, what is the correct phrase to use?",
+      "options": [
+        "MAYDAY, I AM LOST.",
+        "PAN-PAN, UNCERTAIN POSITION.",
+        "Requesting radar vectors.",
+        "Requesting position check."
+      ],
+      "correct_answer": "PAN-PAN, UNCERTAIN POSITION."
+    },
+    {
+      "question_number": 93,
+      "question_text": "The instruction 'CIRCLE THE AIRPORT' means:",
+      "options": [
+        "Fly a standard traffic pattern.",
+        "Make a 360-degree turn over the airport.",
+        "Fly a circular path around the airport in a specified direction.",
+        "Land and taxi back to the ramp."
+      ],
+      "correct_answer": "Fly a circular path around the airport in a specified direction."
+    },
+    {
+      "question_number": 94,
+      "question_text": "What does 'AT-WILL' mean in a clearance, such as 'CLIMB AT-WILL'?",
+      "options": [
+        "The pilot can initiate the climb at their discretion.",
+        "The pilot must climb immediately.",
+        "The pilot can choose the rate of climb.",
+        "Both A and C are correct."
+      ],
+      "correct_answer": "Both A and C are correct."
+    },
+    {
+      "question_number": 95,
+      "question_text": "If you are instructed to 'MAKE RIGHT TRAFFIC FOR RUNWAY 18', you should:",
+      "options": [
+        "Make all turns to the left.",
+        "Make all turns to the right when in the traffic pattern for runway 18.",
+        "Land on the right side of the runway.",
+        "Turn right after takeoff."
+      ],
+      "correct_answer": "Make all turns to the right when in the traffic pattern for runway 18."
+    },
+    {
+      "question_number": 96,
+      "question_text": "What is the meaning of 'REPORT PASSING (fix/altitude)'?",
+      "options": [
+        "Report before you reach the fix.",
+        "Report when you are at the specified fix or altitude.",
+        "Report after you have passed the fix.",
+        "Report your estimate for the fix."
+      ],
+      "correct_answer": "Report when you are at the specified fix or altitude."
+    },
+    {
+      "question_number": 97,
+      "question_text": "The term 'FINAL APPROACH FIX' (FAF) is primarily associated with which type of flying?",
+      "options": [
+        "VFR traffic patterns.",
+        "Instrument approaches.",
+        "Aerobatic flying.",
+        "Helicopter operations."
+      ],
+      "correct_answer": "Instrument approaches."
+    },
+    {
+      "question_number": 98,
+      "question_text": "If you are given a frequency change, what is the correct procedure?",
+      "options": [
+        "Change frequency immediately without acknowledgement.",
+        "Acknowledge the instruction, then change frequency.",
+        "Write down the frequency, then change when ready.",
+        "Wait for the controller to call you on the new frequency."
+      ],
+      "correct_answer": "Acknowledge the instruction, then change frequency."
+    },
+    {
+      "question_number": 99,
+      "question_text": "What does 'LOW LEVEL WIND SHEAR' advisory from a tower imply?",
+      "options": [
+        "A sudden, drastic change in wind speed and/or direction over a small area at low altitude.",
+        "The wind is calm near the surface.",
+        "There is a strong headwind on final approach.",
+        "Turbulence should be expected at cruising altitude."
+      ],
+      "correct_answer": "A sudden, drastic change in wind speed and/or direction over a small area at low altitude."
+    },
+    {
+      "question_number": 100,
+      "question_text": "The phrase 'VERIFY' is used by controllers to:",
+      "options": [
+        "Request a check and confirmation of information (e.g., 'VERIFY ALTITUDE').",
+        "Confirm that your readback was correct.",
+        "Indicate that they are checking your flight plan.",
+        "Ask if you are certain about your request."
+      ],
+      "correct_answer": "Request a check and confirmation of information (e.g., 'VERIFY ALTITUDE')."
+    },
+    {
+      "question_number": 101,
+      "question_text": "What is the correct phraseology to cancel a previously filed flight plan while airborne?",
+      "options": [
+        "Tower, Cessna 123AB, cancel my flight plan.",
+        "Flight Service, Cessna 123AB, request to cancel my VFR flight plan.",
+        "Approach, Cessna 123AB, I am cancelling.",
+        "Center, Cessna 123AB, flight plan cancellation."
+      ],
+      "correct_answer": "Flight Service, Cessna 123AB, request to cancel my VFR flight plan."
+    },
+    {
+      "question_number": 102,
+      "question_text": "The instruction 'EXTEND DOWNWIND' means:",
+      "options": [
+        "Fly a wider traffic pattern.",
+        "Continue flying on the downwind leg past the normal base turn point.",
+        "Climb on the downwind leg.",
+        "Fly the downwind leg at a slower speed."
+      ],
+      "correct_answer": "Continue flying on the downwind leg past the normal base turn point."
+    },
+    {
+      "question_number": 103,
+      "question_text": "What does 'RADAR CONTACT LOST' mean?",
+      "options": [
+        "Your transponder has failed.",
+        "Radar identification with your aircraft has been lost and the controller can no longer see you on radar.",
+        "You have flown out of radar coverage.",
+        "Both B and C are possible."
+      ],
+      "correct_answer": "Both B and C are possible."
+    },
+    {
+      "question_number": 104,
+      "question_text": "If you are cleared to 'MAINTAIN BLOCK ALTITUDE 7,000 THROUGH 9,000', you are authorized to:",
+      "options": [
+        "Fly at 7,000 feet or 9,000 feet only.",
+        "Fly at any altitude between 7,000 and 9,000 feet, inclusive.",
+        "Climb from 7,000 to 9,000 feet.",
+        "Descend from 9,000 to 7,000 feet."
+      ],
+      "correct_answer": "Fly at any altitude between 7,000 and 9,000 feet, inclusive."
+    },
+    {
+      "question_number": 105,
+      "question_text": "What is the purpose of a 'pilot report' or 'PIREP'?",
+      "options": [
+        "To report other aircraft positions.",
+        "To provide real-time weather information observed by pilots in flight.",
+        "To file a complaint against ATC.",
+        "To update your ETA."
+      ],
+      "correct_answer": "To provide real-time weather information observed by pilots in flight."
+    },
+    {
+      "question_number": 106,
+      "question_text": "The instruction 'TURN BASE NOW' is a mandatory instruction to:",
+      "options": [
+        "Turn onto the base leg at the pilot's discretion.",
+        "Immediately begin the turn onto the base leg of the traffic pattern.",
+        "Report when established on the base leg.",
+        "Fly to the start of the base leg."
+      ],
+      "correct_answer": "Immediately begin the turn onto the base leg of the traffic pattern."
+    },
+    {
+      "question_number": 107,
+      "question_text": "What does the term 'UNCONTROLLED AIRSPACE' (Class G) imply for radio communications?",
+      "options": [
+        "Radio communication is prohibited.",
+        "Radio communication is not required, but it is strongly recommended on the appropriate frequency.",
+        "You must be in contact with an ARTCC.",
+        "You must have a transponder."
+      ],
+      "correct_answer": "Radio communication is not required, but it is strongly recommended on the appropriate frequency."
+    },
+    {
+      "question_number": 108,
+      "question_text": "The phrase 'WHEN ABLE' in an ATC instruction means:",
+      "options": [
+        "The instruction is optional.",
+        "The pilot should comply at the earliest opportunity when it is safe and practical to do so.",
+        "The pilot must comply immediately.",
+        "The pilot should report when they are able to comply."
+      ],
+      "correct_answer": "The pilot should comply at the earliest opportunity when it is safe and practical to do so."
+    },
+    {
+      "question_number": 109,
+      "question_text": "If you are asked to 'REPORT THE FIELD IN SIGHT', you should make a call when:",
+      "options": [
+        "You are directly over the airport.",
+        "You have the airport environment (runways, buildings, etc.) visually acquired.",
+        "You see the airport beacon.",
+        "You are on the final approach."
+      ],
+      "correct_answer": "You have the airport environment (runways, buildings, etc.) visually acquired."
+    },
+    {
+      "question_number": 110,
+      "question_text": "What is the primary difference between a 'control zone' and a 'control area'?",
+      "options": [
+        "There is no difference.",
+        "A control zone is controlled airspace extending upwards from the surface of the earth, while a control area is controlled airspace above a specified altitude.",
+        "A control zone is for IFR traffic only.",
+        "A control area is always Class B airspace."
+      ],
+      "correct_answer": "A control zone is controlled airspace extending upwards from the surface of the earth, while a control area is controlled airspace above a specified altitude."
+    },
+    {
+      "question_number": 111,
+      "question_text": "The instruction 'MAINTAIN BEST FORWARD SPEED' means:",
+      "options": [
+        "Fly at the aircraft's maximum speed (Vne).",
+        "Fly at your normal cruise speed.",
+        "Fly as fast as is safe and practical for your aircraft type.",
+        "Fly at the maximum speed allowed in the airspace."
+      ],
+      "correct_answer": "Fly as fast as is safe and practical for your aircraft type."
+    },
+    {
+      "question_number": 112,
+      "question_text": "What does a clearance 'CROSS RUNWAY 27 AT TAXIWAY CHARLIE' mean?",
+      "options": [
+        "You can cross runway 27 anywhere as long as you end up on taxiway Charlie.",
+        "You are cleared to cross runway 27 at the intersection with taxiway Charlie.",
+        "You must hold short of runway 27 at taxiway Charlie.",
+        "You are cleared to taxi on runway 27."
+      ],
+      "correct_answer": "You are cleared to cross runway 27 at the intersection with taxiway Charlie."
+    },
+    {
+      "question_number": 113,
+      "question_text": "The phrase 'SAY INTENTIONS' is a request for the pilot to:",
+      "options": [
+        "State their destination.",
+        "State their planned course of action.",
+        "Repeat their last transmission.",
+        "Declare an emergency."
+      ],
+      "correct_answer": "State their planned course of action."
+    },
+    {
+      "question_number": 114,
+      "question_text": "If you are given a traffic advisory and respond 'LOOKING FOR TRAFFIC', what should you do next?",
+      "options": [
+        "Continue looking and report 'TRAFFIC IN SIGHT' or 'NEGATIVE CONTACT'.",
+        "Assume ATC will keep you separated.",
+        "Immediately change heading.",
+        "End the communication."
+      ],
+      "correct_answer": "Continue looking and report 'TRAFFIC IN SIGHT' or 'NEGATIVE CONTACT'."
+    },
+    {
+      "question_number": 115,
+      "question_text": "What is the meaning of 'CAUTION WAKE TURBULENCE'?",
+      "options": [
+        "A warning that turbulence from a preceding aircraft may be encountered.",
+        "A warning of mechanical turbulence from terrain.",
+        "A warning of clear air turbulence.",
+        "A request to increase separation."
+      ],
+      "correct_answer": "A warning that turbulence from a preceding aircraft may be encountered."
+    },
+    {
+      "question_number": 116,
+      "question_text": "The instruction 'ORBIT RIGHT' means:",
+      "options": [
+        "Make a 360-degree turn to the right.",
+        "Fly a right-hand traffic pattern.",
+        "Turn to a heading of 180 degrees.",
+        "Exit the runway to the right."
+      ],
+      "correct_answer": "Make a 360-degree turn to the right."
+    },
+    {
+      "question_number": 117,
+      "question_text": "What is the correct way to request to transition through a Class D airspace?",
+      "options": [
+        "Tower, Cessna 123AB, request transition.",
+        "Tower, Cessna 123AB, 10 miles south at 2,500, request to transition your airspace from south to north.",
+        "Tower, Cessna 123AB, flying through.",
+        "No call is required if you remain clear of the airport."
+      ],
+      "correct_answer": "Tower, Cessna 123AB, 10 miles south at 2,500, request to transition your airspace from south to north."
+    },
+    {
+      "question_number": 118,
+      "question_text": "The phrase 'STANDBY FOR THE TOWER' from ground control means:",
+      "options": [
+        "The tower is busy, wait for them to call you.",
+        "You are cleared to contact the tower.",
+        "You will be automatically switched to the tower frequency.",
+        "Wait, and ground control will relay instructions from the tower."
+      ],
+      "correct_answer": "You will be automatically switched to the tower frequency."
+    },
+    {
+      "question_number": 119,
+      "question_text": "What does 'REPORT ON THE GROUND' mean?",
+      "options": [
+        "Make a radio call after you have landed and cleared the runway.",
+        "Report your position on the airport diagram.",
+        "Call the tower after shutting down the engine.",
+        "Report any issues with the ground surface."
+      ],
+      "correct_answer": "Make a radio call after you have landed and cleared the runway."
+    },
+    {
+      "question_number": 120,
+      "question_text": "If you are told 'FREQUENCY CHANGE APPROVED', it means:",
+      "options": [
+        "You must change to the new frequency immediately.",
+        "You are approved to leave the current frequency when you no longer require the service.",
+        "The controller has approved your request to change frequency.",
+        "Both B and C are correct."
+      ],
+      "correct_answer": "Both B and C are correct."
+    },
+    {
+      "question_number": 121,
+      "question_text": "What is the significance of a 'hot spot' on an airport diagram?",
+      "options": [
+        "A location with good radio reception.",
+        "A designated area for engine run-ups.",
+        "A location on an aerodrome with a history of potential risk of collision or runway incursion, and where heightened attention by pilots/drivers is necessary.",
+        "A fueling area."
+      ],
+      "correct_answer": "A location on an aerodrome with a history of potential risk of collision or runway incursion, and where heightened attention by pilots/drivers is necessary."
+    },
+    {
+      "question_number": 122,
+      "question_text": "The instruction 'MAINTAIN SLOWEST PRACTICAL SPEED' is often given to:",
+      "options": [
+        "Save fuel.",
+        "Assist with spacing and sequencing of aircraft.",
+        "Practice slow flight.",
+        "Avoid turbulence."
+      ],
+      "correct_answer": "Assist with spacing and sequencing of aircraft."
+    },
+    {
+      "question_number": 123,
+      "question_text": "What is the difference between 'descend and maintain' and 'descend at pilot's discretion'?",
+      "options": [
+        "There is no difference.",
+        "'Descend and maintain' requires an immediate descent, while 'at pilot's discretion' allows the pilot to start the descent when they choose.",
+        "'At pilot's discretion' allows for temporary level-offs during the descent.",
+        "Both B and C are correct."
+      ],
+      "correct_answer": "Both B and C are correct."
+    },
+    {
+      "question_number": 124,
+      "question_text": "The phrase 'CLEARED AS FILED' means:",
+      "options": [
+        "You are cleared to fly the route exactly as submitted in your flight plan.",
+        "Your flight plan has been received.",
+        "You are cleared for takeoff.",
+        "You are cleared to enter controlled airspace."
+      ],
+      "correct_answer": "You are cleared to fly the route exactly as submitted in your flight plan."
+    },
+    {
+      "question_number": 125,
+      "question_text": "What does 'CHECK GEAR DOWN' from a tower controller imply?",
+      "options": [
+        "It is a mandatory order to lower the gear.",
+        "It is a reminder to verify that the landing gear is in the down and locked position.",
+        "The controller suspects a gear malfunction.",
+        "The controller cannot see your landing gear."
+      ],
+      "correct_answer": "It is a reminder to verify that the landing gear is in the down and locked position."
+    },
+    {
+      "question_number": 126,
+      "question_text": "The term 'SIDESTEP' is used to:",
+      "options": [
+        "Instruct a pilot to maneuver to the side to avoid traffic.",
+        "Instruct a pilot to land on a parallel runway after commencing an approach to another.",
+        "Describe a taxiing maneuver.",
+        "Describe a type of crosswind landing."
+      ],
+      "correct_answer": "Instruct a pilot to land on a parallel runway after commencing an approach to another."
+    },
+    {
+      "question_number": 127,
+      "question_text": "If you are given a clearance containing the phrase 'VIA (route or fix)', you must:",
+      "options": [
+        "Fly over the specified route or fix.",
+        "Avoid the specified route or fix.",
+        "Report passing the route or fix.",
+        "Consider the instruction as a suggestion."
+      ],
+      "correct_answer": "Fly over the specified route or fix."
+    },
+    {
+      "question_number": 128,
+      "question_text": "What does the term 'vectors to final' mean?",
+      "options": [
+        "The pilot will navigate to the final approach course.",
+        "ATC will provide headings to intercept the final approach course.",
+        "The final approach is not available.",
+        "The pilot should expect a visual approach."
+      ],
+      "correct_answer": "ATC will provide headings to intercept the final approach course."
+    },
+    {
+      "question_number": 129,
+      "question_text": "The phrase 'REPORT YOUR FLIGHT CONDITIONS' is a request for:",
+      "options": [
+        "A PIREP, specifically whether you are in VMC or IMC.",
+        "Your aircraft's performance data.",
+        "Your fuel status.",
+        "Your emotional state."
+      ],
+      "correct_answer": "A PIREP, specifically whether you are in VMC or IMC."
+    },
+    {
+      "question_number": 130,
+      "question_text": "What is the meaning of a 'visual approach' clearance?",
+      "options": [
+        "It is an IFR clearance that allows the pilot to proceed visually to the airport.",
+        "It is a VFR procedure.",
+        "It requires the pilot to remain clear of clouds.",
+        "Both A and C are correct."
+      ],
+      "correct_answer": "Both A and C are correct."
+    },
+    {
+      "question_number": 131,
+      "question_text": "The instruction 'HOLD POSITION' on the ground means:",
+      "options": [
+        "Stop moving immediately and remain in your current position.",
+        "Hold short of the next taxiway.",
+        "Return to the ramp.",
+        "Wait for further instructions before proceeding."
+      ],
+      "correct_answer": "Stop moving immediately and remain in your current position."
+    },
+    {
+      "question_number": 132,
+      "question_text": "What is a 'short field takeoff' clearance?",
+      "options": [
+        "A clearance to use less than the full runway length.",
+        "A clearance to perform a takeoff using maximum performance techniques.",
+        "A clearance to take off from a short runway.",
+        "There is no such ATC clearance; it is a pilot technique."
+      ],
+      "correct_answer": "There is no such ATC clearance; it is a pilot technique."
+    },
+    {
+      "question_number": 133,
+      "question_text": "The phrase 'REMAIN THIS FREQUENCY' means:",
+      "options": [
+        "Do not change to another frequency until advised.",
+        "The current frequency is the only one available.",
+        "Acknowledge and wait for a new frequency.",
+        "The radio is not working correctly."
+      ],
+      "correct_answer": "Do not change to another frequency until advised."
+    },
+    {
+      "question_number": 134,
+      "question_text": "What is the purpose of a 'UNICOM' station?",
+      "options": [
+        "To provide air traffic control services.",
+        "To provide airport advisory information at non-towered airports.",
+        "To broadcast weather information only.",
+        "To communicate with company aircraft."
+      ],
+      "correct_answer": "To provide airport advisory information at non-towered airports."
+    },
+    {
+      "question_number": 135,
+      "question_text": "If you are told 'TRAFFIC NO LONGER A FACTOR', it means:",
+      "options": [
+        "The traffic has landed.",
+        "The traffic is no longer a threat to your flight path.",
+        "You should stop looking for the traffic.",
+        "Both B and C are correct."
+      ],
+      "correct_answer": "Both B and C are correct."
+    },
+    {
+      "question_number": 136,
+      "question_text": "The instruction 'FLY RUNWAY HEADING' means:",
+      "options": [
+        "Fly a heading that is parallel to the runway.",
+        "Fly a heading that is the magnetic direction of the runway centerline.",
+        "Fly towards the runway.",
+        "Fly a heading of 360 degrees."
+      ],
+      "correct_answer": "Fly a heading that is the magnetic direction of the runway centerline."
+    },
+    {
+      "question_number": 137,
+      "question_text": "What is the difference between 'taxi into position and hold' and 'line up and wait'?",
+      "options": [
+        "There is no difference; 'line up and wait' is the current standard phraseology.",
+        "'Taxi into position and hold' is used for helicopters.",
+        "'Line up and wait' is used only at night.",
+        "'Taxi into position and hold' means to wait on the taxiway."
+      ],
+      "correct_answer": "There is no difference; 'line up and wait' is the current standard phraseology."
+    },
+    {
+      "question_number": 138,
+      "question_text": "The phrase 'SAY ALTITUDE' is a request for the pilot to:",
+      "options": [
+        "Report their current indicated altitude.",
+        "Verify their assigned altitude.",
+        "State their desired cruising altitude.",
+        "Report their altitude in feet above sea level."
+      ],
+      "correct_answer": "Report their current indicated altitude."
+    },
+    {
+      "question_number": 139,
+      "question_text": "What does a 'contact approach' allow a pilot to do?",
+      "options": [
+        "Fly to the airport by visual reference to the ground, clear of clouds, with at least 1 mile flight visibility.",
+        "Contact the tower for landing clearance.",
+        "Approach the airport without an IFR clearance.",
+        "Make contact with another aircraft."
+      ],
+      "correct_answer": "Fly to the airport by visual reference to the ground, clear of clouds, with at least 1 mile flight visibility."
+    },
+    {
+      "question_number": 140,
+      "question_text": "The instruction 'GIVE WAY TO (aircraft type and position)' means:",
+      "options": [
+        "Allow the other aircraft to pass before you proceed.",
+        "Follow the other aircraft.",
+        "Pass behind the other aircraft.",
+        "All of the above could be appropriate actions."
+      ],
+      "correct_answer": "All of the above could be appropriate actions."
+    },
+    {
+      "question_number": 141,
+      "question_text": "What is the correct way to report leaving an altitude?",
+      "options": [
+        "Cessna 123AB, leaving three thousand five hundred.",
+        "Cessna 123AB, out of three thousand five hundred for two thousand five hundred.",
+        "Cessna 123AB, starting descent.",
+        "Cessna 123AB, descending."
+      ],
+      "correct_answer": "Cessna 123AB, out of three thousand five hundred for two thousand five hundred."
+    },
+    {
+      "question_number": 142,
+      "question_text": "The term 'BLOCKED' during a transmission means:",
+      "options": [
+        "The frequency is busy.",
+        "The transmission was unreadable due to simultaneous transmissions.",
+        "The runway is blocked.",
+        "The radio is broken."
+      ],
+      "correct_answer": "The transmission was unreadable due to simultaneous transmissions."
+    },
+    {
+      "question_number": 143,
+      "question_text": "What is the purpose of a 'holding pattern'?",
+      "options": [
+        "To practice turns.",
+        "A predetermined maneuver that keeps an aircraft within a specified airspace while awaiting further clearance.",
+        "A racetrack pattern for landing.",
+        "A sightseeing maneuver."
+      ],
+      "correct_answer": "A predetermined maneuver that keeps an aircraft within a specified airspace while awaiting further clearance."
+    },
+    {
+      "question_number": 144,
+      "question_text": "The instruction 'MAINTAIN VISUAL SEPARATION' from ATC means:",
+      "options": [
+        "The pilot is responsible for maintaining a safe distance from another aircraft that they have in sight.",
+        "ATC will no longer provide traffic advisories.",
+        "The pilot should fly in VMC.",
+        "Both A and C are correct."
+      ],
+      "correct_answer": "The pilot is responsible for maintaining a safe distance from another aircraft that they have in sight."
+    },
+    {
+      "question_number": 145,
+      "question_text": "What is the correct phraseology to request a practice instrument approach?",
+      "options": [
+        "Requesting practice approach.",
+        "Approach, Cessna 123AB, 10 miles north, request practice ILS runway 22 approach.",
+        "Approach, Cessna 123AB, request IFR practice.",
+        "Approach, Cessna 123AB, need to practice."
+      ],
+      "correct_answer": "Approach, Cessna 123AB, 10 miles north, request practice ILS runway 22 approach."
+    },
+    {
+      "question_number": 146,
+      "question_text": "The phrase 'REPORT REACHING' is a request to:",
+      "options": [
+        "Report when you have arrived at a specific altitude or fix.",
+        "Report your estimated time of arrival.",
+        "Report when you are able to reach a certain speed.",
+        "Report when you have reached your destination."
+      ],
+      "correct_answer": "Report when you have arrived at a specific altitude or fix."
+    },
+    {
+      "question_number": 147,
+      "question_text": "What does a 'LAHSO' clearance stand for?",
+      "options": [
+        "Land And Hold Short Operations.",
+        "Low Altitude Helicopter Safety Operations.",
+        "Landing And Heading South Operations.",
+        "Light Aircraft High Speed Operations."
+      ],
+      "correct_answer": "Land And Hold Short Operations."
+    },
+    {
+      "question_number": 148,
+      "question_text": "Is a pilot required to accept a LAHSO clearance?",
+      "options": [
+        "Yes, it is a mandatory instruction.",
+        "No, the pilot in command has the final authority to accept or decline a LAHSO clearance.",
+        "Only if the aircraft is capable of stopping in the available distance.",
+        "Only if the weather is VMC."
+      ],
+      "correct_answer": "No, the pilot in command has the final authority to accept or decline a LAHSO clearance."
+    },
+    {
+      "question_number": 149,
+      "question_text": "The instruction 'TAXI TO THE RAMP' means:",
+      "options": [
+        "Taxi to a specific parking spot.",
+        "Taxi to the general non-movement area for parking.",
+        "Taxi via the ramp.",
+        "Hold short of the ramp."
+      ],
+      "correct_answer": "Taxi to the general non-movement area for parking."
+    },
+    {
+      "question_number": 150,
+      "question_text": "What does 'IF NO CONTACT, (do something)' mean in a clearance?",
+      "options": [
+        "It is a lost communication procedure to be followed if radio contact is lost.",
+        "It is a suggestion for the pilot.",
+        "It is an optional part of the clearance.",
+        "It is a reminder to check the radio."
+      ],
+      "correct_answer": "It is a lost communication procedure to be followed if radio contact is lost."
+    },
+    {
+      "question_number": 151,
+      "question_text": "The phrase 'SAY FUEL REMAINING' is a request for:",
+      "options": [
+        "The amount of fuel on board in gallons or pounds.",
+        "The amount of fuel on board in hours and minutes of flight time.",
+        "The pilot to declare minimum fuel.",
+        "The fuel consumption rate."
+      ],
+      "correct_answer": "The amount of fuel on board in hours and minutes of flight time."
+    },
+    {
+      "question_number": 152,
+      "question_text": "What is the difference between 'holding short' and 'holding in position'?",
+      "options": [
+        "There is no difference.",
+        "'Holding short' refers to stopping before a runway, while 'holding position' refers to stopping anywhere on a taxiway.",
+        "'Holding short' is for aircraft, 'holding position' is for vehicles.",
+        "'Holding in position' is an emergency instruction."
+      ],
+      "correct_answer": "'Holding short' refers to stopping before a runway, while 'holding position' refers to stopping anywhere on a taxiway."
+    },
+    {
+      "question_number": 153,
+      "question_text": "The instruction 'REMAIN CLEAR OF THE CLASS BRAVO' means:",
+      "options": [
+        "Do not enter the Class B airspace.",
+        "You are cleared to enter the Class B airspace.",
+        "Fly over the top of the Class B airspace.",
+        "Fly under the floor of the Class B airspace."
+      ],
+      "correct_answer": "Do not enter the Class B airspace."
+    },
+    {
+      "question_number": 154,
+      "question_text": "What does a 'progressive taxi' instruction mean?",
+      "options": [
+        "The pilot should taxi without stopping.",
+        "The controller will provide step-by-step taxi instructions.",
+        "The pilot should use all available taxiways.",
+        "The pilot should taxi at a high speed."
+      ],
+      "correct_answer": "The controller will provide step-by-step taxi instructions."
+    },
+    {
+      "question_number": 155,
+      "question_text": "The phrase 'CONFIRM' is used to:",
+      "options": [
+        "Verify that a readback was correct.",
+        "Request verification of an instruction or information.",
+        "Acknowledge an instruction.",
+        "Agree with a statement."
+      ],
+      "correct_answer": "Request verification of an instruction or information."
+    },
+    {
+      "question_number": 156,
+      "question_text": "What is the correct response if you do not understand an instruction?",
+      "options": [
+        "ROGER",
+        "SAY AGAIN",
+        "WILCO",
+        "Remain silent."
+      ],
+      "correct_answer": "SAY AGAIN"
+    },
+    {
+      "question_number": 157,
+      "question_text": "The term 'AIRMET' on an ATIS broadcast refers to:",
+      "options": [
+        "Airman's Meteorological Information, concerning weather phenomena that may affect all aircraft.",
+        "A severe weather warning.",
+        "A notice to airmen about airport conditions.",
+        "A military training route."
+      ],
+      "correct_answer": "Airman's Meteorological Information, concerning weather phenomena that may affect all aircraft."
+    },
+    {
+      "question_number": 158,
+      "question_text": "The instruction 'MAINTAIN AT LEAST 5 MILES SEPARATION' is an example of:",
+      "options": [
+        "A visual separation instruction.",
+        "A radar separation instruction.",
+        "A pilot-applied spacing instruction.",
+        "A holding instruction."
+      ],
+      "correct_answer": "A pilot-applied spacing instruction."
+    },
+    {
+      "question_number": 159,
+      "question_text": "What does 'AT YOUR DISCRETION' mean when used in a clearance?",
+      "options": [
+        "The pilot can choose to comply or not.",
+        "The pilot has the choice of when and how to execute the maneuver.",
+        "The instruction is not important.",
+        "The controller is busy."
+      ],
+      "correct_answer": "The pilot has the choice of when and how to execute the maneuver."
+    },
+    {
+      "question_number": 160,
+      "question_text": "The phrase 'REPORT TRAFFIC IN SIGHT' is a request to:",
+      "options": [
+        "Report when you see any traffic.",
+        "Report when you see the specific traffic that was just pointed out.",
+        "Report if the traffic is a threat.",
+        "Report the type of traffic."
+      ],
+      "correct_answer": "Report when you see the specific traffic that was just pointed out."
+    },
+    {
+      "question_number": 161,
+      "question_text": "What is the correct way to report a bird strike to ATC?",
+      "options": [
+        "MAYDAY, BIRD STRIKE.",
+        "Tower, Cessna 123AB, we've experienced a bird strike, remaining in the pattern to assess.",
+        "Tower, Cessna 123AB, bird strike.",
+        "No report is necessary unless there is damage."
+      ],
+      "correct_answer": "Tower, Cessna 123AB, we've experienced a bird strike, remaining in the pattern to assess."
+    },
+    {
+      "question_number": 162,
+      "question_text": "The term 'SIGMET' on an ATIS broadcast refers to:",
+      "options": [
+        "Significant Meteorological Information, concerning weather potentially hazardous to all aircraft.",
+        "A minor weather advisory.",
+        "A notice about airport construction.",
+        "A special instrument approach."
+      ],
+      "correct_answer": "Significant Meteorological Information, concerning weather potentially hazardous to all aircraft."
+    },
+    {
+      "question_number": 163,
+      "question_text": "The instruction 'CLEARED FOR TAKEOFF, NO DELAY' means:",
+      "options": [
+        "Take off when ready.",
+        "You are cleared for takeoff but must do so immediately to avoid delaying other traffic.",
+        "A delay is expected after takeoff.",
+        "The takeoff clearance is about to be cancelled."
+      ],
+      "correct_answer": "You are cleared for takeoff but must do so immediately to avoid delaying other traffic."
+    },
+    {
+      "question_number": 164,
+      "question_text": "What does the phrase 'WORDS TWICE' mean when used as a request?",
+      "options": [
+        "Repeat the last two words.",
+        "Communication is difficult, please say every word or phrase twice.",
+        "Speak twice as loud.",
+        "The message is very important."
+      ],
+      "correct_answer": "Communication is difficult, please say every word or phrase twice."
+    },
+    {
+      "question_number": 165,
+      "question_text": "If you are given a complex taxi instruction and are unsure, you should:",
+      "options": [
+        "Taxi slowly and figure it out.",
+        "Acknowledge the instruction and hope for the best.",
+        "Admit you are unfamiliar and request progressive taxi instructions.",
+        "Refuse to taxi."
+      ],
+      "correct_answer": "Admit you are unfamiliar and request progressive taxi instructions."
+    },
+    {
+      "question_number": 166,
+      "question_text": "The phrase 'STAND BY FOR (message)' means:",
+      "options": [
+        "Wait, a message is coming.",
+        "The frequency is busy.",
+        "Your request is denied.",
+        "Acknowledge and wait."
+      ],
+      "correct_answer": "Wait, a message is coming."
+    },
+    {
+      "question_number": 167,
+      "question_text": "What is the correct way to report your aircraft type if it is not obvious?",
+      "options": [
+        "State the manufacturer and model (e.g., 'Cessna 172').",
+        "State the general category (e.g., 'single-engine piston').",
+        "State the ICAO type designator (e.g., 'C172').",
+        "All of the above are acceptable depending on the context."
+      ],
+      "correct_answer": "All of the above are acceptable depending on the context."
+    },
+    {
+      "question_number": 168,
+      "question_text": "The instruction 'MAINTAIN RUNWAY HEADING UNTIL REACHING 2,000 FEET' is an example of:",
+      "options": [
+        "A noise abatement procedure.",
+        "A standard departure instruction.",
+        "A traffic avoidance maneuver.",
+        "All of the above."
+      ],
+      "correct_answer": "All of the above."
+    },
+    {
+      "question_number": 169,
+      "question_text": "What does 'BREAK' mean when used by a pilot in a transmission?",
+      "options": [
+        "To indicate the separation between parts of a message.",
+        "To signal the end of a transmission.",
+        "To request a pause.",
+        "To indicate an emergency."
+      ],
+      "correct_answer": "To indicate the separation between parts of a message."
+    },
+    {
+      "question_number": 170,
+      "question_text": "The phrase 'THAT IS APPROVED' from ATC means:",
+      "options": [
+        "Your request has been granted.",
+        "Your readback was correct.",
+        "You are cleared to proceed.",
+        "The procedure is standard."
+      ],
+      "correct_answer": "Your request has been granted."
+    },
+    {
+      "question_number": 171,
+      "question_text": "If you are on an IFR flight plan and lose two-way radio communications, you should set your transponder to:",
+      "options": [
+        "7700",
+        "7500",
+        "7600",
+        "1200"
+      ],
+      "correct_answer": "7600"
+    },
+    {
+      "question_number": 172,
+      "question_text": "The phrase 'WHEN READY TO DEPART' means:",
+      "options": [
+        "You are cleared for takeoff.",
+        "You should call the tower when you are number one for departure.",
+        "You should call the tower when you are ready for takeoff at the runway.",
+        "You can depart without a clearance."
+      ],
+      "correct_answer": "You should call the tower when you are ready for takeoff at the runway."
+    },
+    {
+      "question_number": 173,
+      "question_text": "What is the primary purpose of the 'common traffic advisory frequency' (CTAF)?",
+      "options": [
+        "To receive air traffic control.",
+        "For pilots to communicate their positions and intentions to each other at non-towered airports.",
+        "To get weather information.",
+        "To file flight plans."
+      ],
+      "correct_answer": "For pilots to communicate their positions and intentions to each other at non-towered airports."
+    },
+    {
+      "question_number": 174,
+      "question_text": "The instruction 'EXIT RUNWAY AT THE NEXT TAXIWAY' means:",
+      "options": [
+        "Exit the runway at any taxiway you choose.",
+        "Exit the runway at the first available taxiway.",
+        "Exit the runway at the taxiway designated as 'Next'.",
+        "Continue to the end of the runway."
+      ],
+      "correct_answer": "Exit the runway at the first available taxiway."
+    },
+    {
+      "question_number": 175,
+      "question_text": "What does the term 'FSS' stand for in aviation communications?",
+      "options": [
+        "Flight Safety Service",
+        "Flight Service Station",
+        "Federal Sky Service",
+        "Flight Sequencing System"
+      ],
+      "correct_answer": "Flight Service Station"
+    },
+    {
+      "question_number": 176,
+      "question_text": "The instruction 'CHANGE TO ADVISORY FREQUENCY' means:",
+      "options": [
+        "Change to 121.5 MHz.",
+        "Change to the CTAF or UNICOM frequency for the airport.",
+        "Change to the tower frequency.",
+        "The controller will advise you of the new frequency."
+      ],
+      "correct_answer": "Change to the CTAF or UNICOM frequency for the airport."
+    },
+    {
+      "question_number": 177,
+      "question_text": "What is the correct way to report a rough running engine?",
+      "options": [
+        "MAYDAY, MAYDAY, MAYDAY, engine failure.",
+        "PAN-PAN, PAN-PAN, PAN-PAN, experiencing a rough running engine, request to return to the field.",
+        "Tower, we have an engine problem.",
+        "No call is needed unless the engine quits."
+      ],
+      "correct_answer": "PAN-PAN, PAN-PAN, PAN-PAN, experiencing a rough running engine, request to return to the field."
+    },
+    {
+      "question_number": 178,
+      "question_text": "The phrase 'VIA FLIGHT PLAN ROUTE' means:",
+      "options": [
+        "Proceed via the route you filed in your flight plan.",
+        "The controller will give you your route.",
+        "The flight plan is approved.",
+        "Fly direct to your destination."
+      ],
+      "correct_answer": "Proceed via the route you filed in your flight plan."
+    },
+    {
+      "question_number": 179,
+      "question_text": "What does a clearance 'MAINTAIN VFR, AT OR BELOW 2,500' mean?",
+      "options": [
+        "Fly at exactly 2,500 feet.",
+        "Fly at any altitude up to and including 2,500 feet, while remaining in VFR conditions.",
+        "Descend to 2,500 feet immediately.",
+        "This is an IFR clearance."
+      ],
+      "correct_answer": "Fly at any altitude up to and including 2,500 feet, while remaining in VFR conditions."
+    },
+    {
+      "question_number": 180,
+      "question_text": "The phrase 'REPORT ESTABLISHED' means:",
+      "options": [
+        "Report when you have established communication.",
+        "Report when you are established on a specific course, route, or in a holding pattern.",
+        "Report when you have established visual contact.",
+        "Report when you are established at your cruising altitude."
+      ],
+      "correct_answer": "Report when you are established on a specific course, route, or in a holding pattern."
+    },
+    {
+      "question_number": 181,
+      "question_text": "What is the meaning of 'CLEARED THROUGH THE ZONE'?",
+      "options": [
+        "You are cleared to transition through a specific airspace, usually a control zone.",
+        "You are cleared to land.",
+        "You are cleared to take off.",
+        "You are cleared to enter a military operations area."
+      ],
+      "correct_answer": "You are cleared to transition through a specific airspace, usually a control zone."
+    },
+    {
+      "question_number": 182,
+      "question_text": "The instruction 'FOLLOW THE (aircraft type)' means:",
+      "options": [
+        "Maintain a safe distance and visually follow the preceding aircraft.",
+        "Fly in formation with the other aircraft.",
+        "Follow the other aircraft's flight plan.",
+        "Communicate with the other aircraft."
+      ],
+      "correct_answer": "Maintain a safe distance and visually follow the preceding aircraft."
+    },
+    {
+      "question_number": 183,
+      "question_text": "What does 'READBACK CORRECT' from ATC signify?",
+      "options": [
+        "The controller is confirming that your repetition of a clearance was accurate.",
+        "The controller is correcting your readback.",
+        "The controller is asking you to read back the clearance again.",
+        "The controller is giving you a new clearance."
+      ],
+      "correct_answer": "The controller is confirming that your repetition of a clearance was accurate."
+    },
+    {
+      "question_number": 184,
+      "question_text": "The phrase 'SAY TYPE AIRCRAFT' is a request for:",
+      "options": [
+        "Your aircraft's call sign.",
+        "Your aircraft's manufacturer and model.",
+        "Your aircraft's color.",
+        "Your aircraft's speed."
+      ],
+      "correct_answer": "Your aircraft's manufacturer and model."
+    },
+    {
+      "question_number": 185,
+      "question_text": "What is the purpose of a 'NOTAM'?",
+      "options": [
+        "To provide weather forecasts.",
+        "To disseminate information concerning the establishment, condition, or change in any aeronautical facility, service, procedure, or hazard, the timely knowledge of which is essential to personnel concerned with flight operations.",
+        "To issue air traffic control clearances.",
+        "To report aircraft accidents."
+      ],
+      "correct_answer": "To disseminate information concerning the establishment, condition, or change in any aeronautical facility, service, procedure, or hazard, the timely knowledge of which is essential to personnel concerned with flight operations."
+    },
+    {
+      "question_number": 186,
+      "question_text": "The instruction 'TAXI INTO THE PENALTY BOX' is an informal term for:",
+      "options": [
+        "A designated parking area for aircraft that have violated a rule.",
+        "A run-up area or a location away from the main taxiways to wait for clearance.",
+        "The customs and immigration area.",
+        "The maintenance hangar."
+      ],
+      "correct_answer": "A run-up area or a location away from the main taxiways to wait for clearance."
+    },
+    {
+      "question_number": 187,
+      "question_text": "What does 'REPORT YOUR CALL SIGN' mean?",
+      "options": [
+        "The controller has missed your call sign and is asking you to repeat it.",
+        "The controller is testing your radio.",
+        "The controller is asking for your aircraft type.",
+        "The controller is about to give you a new squawk code."
+      ],
+      "correct_answer": "The controller has missed your call sign and is asking you to repeat it."
+    },
+    {
+      "question_number": 188,
+      "question_text": "The phrase 'EXPECT (altitude) IN (time or distance)' is used to:",
+      "options": [
+        "Provide advance notice of a future altitude clearance.",
+        "Issue a mandatory altitude change.",
+        "Ask the pilot if they can reach an altitude.",
+        "Confirm the pilot's requested altitude."
+      ],
+      "correct_answer": "Provide advance notice of a future altitude clearance."
+    },
+    {
+      "question_number": 189,
+      "question_text": "What is the correct way to respond to a conditional clearance like 'BEHIND THE LANDING CESSNA, LINE UP AND WAIT'?",
+      "options": [
+        "WILCO.",
+        "ROGER.",
+        "BEHIND THE LANDING CESSNA, LINE UP AND WAIT, CESSNA 123AB.",
+        "LINE UP AND WAIT, CESSNA 123AB."
+      ],
+      "correct_answer": "BEHIND THE LANDING CESSNA, LINE UP AND WAIT, CESSNA 123AB."
+    },
+    {
+      "question_number": 190,
+      "question_text": "The term 'FLIGHT FOLLOWING' refers to:",
+      "options": [
+        "A mandatory ATC service.",
+        "A radar service provided to VFR aircraft on a workload-permitting basis to provide traffic advisories.",
+        "A service for filing flight plans.",
+        "A service that provides continuous weather updates."
+      ],
+      "correct_answer": "A radar service provided to VFR aircraft on a workload-permitting basis to provide traffic advisories."
+    },
+    {
+      "question_number": 191,
+      "question_text": "If you are told 'RADAR SERVICES ARE NOT AVAILABLE', it means:",
+      "options": [
+        "The controller's radar is out of service, and they cannot provide radar-based services.",
+        "You must turn off your transponder.",
+        "You must proceed VFR.",
+        "You must land at the nearest airport."
+      ],
+      "correct_answer": "The controller's radar is out of service, and they cannot provide radar-based services."
+    },
+    {
+      "question_number": 192,
+      "question_text": "The phrase 'I SAY AGAIN' is used to:",
+      "options": [
+        "Request a repeat of a message.",
+        "Emphasize a message that is being re-transmitted.",
+        "Correct a mistake.",
+        "Acknowledge a message."
+      ],
+      "correct_answer": "Emphasize a message that is being re-transmitted."
+    },
+    {
+      "question_number": 193,
+      "question_text": "What does a clearance 'JOIN THE FINAL' mean?",
+      "options": [
+        "Intercept and fly the final approach course.",
+        "Join the traffic pattern on the final leg.",
+        "Report when on final.",
+        "Both A and B are correct."
+      ],
+      "correct_answer": "Both A and B are correct."
+    },
+    {
+      "question_number": 194,
+      "question_text": "The instruction 'CONTINUE' or 'CONTINUE APPROACH' means:",
+      "options": [
+        "You are cleared to land.",
+        "Continue on your current track or approach, but landing clearance is not yet issued.",
+        "Continue with your request.",
+        "The frequency is clear."
+      ],
+      "correct_answer": "Continue on your current track or approach, but landing clearance is not yet issued."
+    },
+    {
+      "question_number": 195,
+      "question_text": "What is the correct phrase to use when you are ready for departure from the end of the runway?",
+      "options": [
+        "Tower, Cessna 123AB, ready to go.",
+        "Tower, Cessna 123AB, runway 22, ready for departure.",
+        "Tower, Cessna 123AB, taking off now.",
+        "Tower, Cessna 123AB, request takeoff clearance."
+      ],
+      "correct_answer": "Tower, Cessna 123AB, runway 22, ready for departure."
+    },
+    {
+      "question_number": 196,
+      "question_text": "The phrase 'EXPEDITE TAXI' means:",
+      "options": [
+        "Taxi at a normal speed.",
+        "Taxi as quickly as is safe to avoid delaying other traffic.",
+        "Taxi via the most direct route.",
+        "Stop taxiing."
+      ],
+      "correct_answer": "Taxi as quickly as is safe to avoid delaying other traffic."
+    },
+    {
+      "question_number": 197,
+      "question_text": "What does 'REPORT ABORTING TAKEOFF' mean?",
+      "options": [
+        "Inform ATC if you decide to reject the takeoff.",
+        "Report when the takeoff is complete.",
+        "Report any issues during the takeoff roll.",
+        "This is not standard phraseology."
+      ],
+      "correct_answer": "Inform ATC if you decide to reject the takeoff."
+    },
+    {
+      "question_number": 198,
+      "question_text": "The phrase 'SAY SOULS ON BOARD' is a request for:",
+      "options": [
+        "The number of passengers.",
+        "The total number of people (crew and passengers) on the aircraft.",
+        "The weight of the passengers.",
+        "The names of the people on board."
+      ],
+      "correct_answer": "The total number of people (crew and passengers) on the aircraft."
+    },
+    {
+      "question_number": 199,
+      "question_text": "If you are instructed to 'MAKE A LEFT 270-DEGREE TURN FOR SPACING', you should:",
+      "options": [
+        "Make a right turn of 90 degrees.",
+        "Make a left turn of 270 degrees.",
+        "Make a left 360-degree turn.",
+        "Both A and B will result in the correct final heading."
+      ],
+      "correct_answer": "Both A and B will result in the correct final heading."
+    },
+    {
+      "question_number": 200,
+      "question_text": "The phrase 'CLEARED FOR TAKEOFF, TURN RIGHT HEADING 320' requires you to:",
+      "options": [
+        "Turn to a heading of 320 before starting the takeoff roll.",
+        "Read back the clearance, take off, and begin a right turn to a heading of 320 once safely airborne.",
+        "Take off and fly the runway heading first.",
+        "Question the instruction as it is non-standard."
+      ],
+      "correct_answer": "Read back the clearance, take off, and begin a right turn to a heading of 320 once safely airborne."
+    }
+  ]
+}
