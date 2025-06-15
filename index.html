@@ -8,9 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Google Gemini AI SDK - CORRECTED LINK AND PLACEMENT (best practice is at end of body) -->
-    <!-- You can keep it in head IF you defer its loading, but moving it to body end is simpler -->
-    <!-- For simplicity and direct fix to "exports is not defined", I'll keep it in the body end -->
 
     <style>
         :root {
@@ -463,10 +460,31 @@
         </div>
     </div>
 
-    <!-- Google Gemini AI SDK - MOVED TO HERE -->
-    <!-- This script MUST be loaded before your main application script attempts to use GoogleGenerativeAI -->
-    <script src="https://cdn.jsdelivr.net/npm/@google/generative-ai@latest/dist/gemini.min.js"></script>
+    <!-- NEW SDK Import: This MUST be an ES Module and placed BEFORE your main script
+         so that window.GoogleGenAI and window.geminiSdkInstance are available. -->
+    <script type="module">
+      import { GoogleGenAI } from 'https://esm.run/@google/genai';
+      
+      // Expose the new SDK class globally for the non-module script to use for instantiation.
+      window.GoogleGenAI = GoogleGenAI;
 
+      // Initialize a global instance of the SDK if an API key exists in localStorage.
+      // Your main script will pick this up on DOMContentLoaded.
+      const initialApiKey = localStorage.getItem('geminiApiKey');
+      if (initialApiKey) {
+        try {
+          window.geminiSdkInstance = new GoogleGenAI({ apiKey: initialApiKey });
+          console.log("Gemini AI SDK (new version) pre-initialized globally from localStorage.");
+        } catch (e) {
+          console.error("Error pre-initializing Gemini SDK from localStorage:", e);
+          window.geminiSdkInstance = null; // Ensure null if pre-init fails
+        }
+      } else {
+        window.geminiSdkInstance = null;
+      }
+    </script>
+
+    <!-- Your main application script -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // --- DOM Elements ---
@@ -513,12 +531,10 @@
             let remainingSkips = 3;
             let questionsAnsweredInSession = 0; // Tracks questions presented (excluding skips initially)
 
-            // NEW: Gemini AI State
-            let geminiApiKey = localStorage.getItem('geminiApiKey') || '';
-            let genAI = null; // Will be initialized when API key is set
-            // Note: gemini-1.5-flash is the currently available and recommended "flash" model for the SDK.
-            // The curl example's "gemini-2.0-flash" is not a standard public SDK model name.
-            const MODEL_NAME = "gemini-1.5-flash"; 
+            // NEW: Gemini AI State - Initialize from the global instance set by the module script
+            let genAI = window.geminiSdkInstance;
+            // Update MODEL_NAME for the new SDK (common, stable version)
+            const MODEL_NAME = "gemini-1.5-flash-001"; 
 
             const TOTAL_SUBJECTS = 11; // Updated to 9 subjects
             const subjectNames = [ // Array of subject names and filenames
@@ -543,51 +559,56 @@
                 populateSubjectSelector();
                 resetUI(); // Ensure clean state
 
-                // NEW: Load and initialize Gemini API key if present
-                if (geminiApiKey) {
-                    geminiApiKeyInput.value = geminiApiKey;
-                    initializeGemini(geminiApiKey);
-                } else {
-                    // If no key stored, ensure status message is hidden
-                    hideElement(apiKeyStatus);
-                }
+                // Re-check and update local genAI reference
+                genAI = window.geminiSdkInstance;
 
-                // IMPORTANT: Add an explicit check here in case the SDK script failed to load.
-                // This is crucial for avoiding 'GoogleGenerativeAI is undefined' errors.
-                if (typeof GoogleGenerativeAI === 'undefined') {
+                // Check if the new SDK class is available globally (set by module script)
+                if (typeof window.GoogleGenAI === 'undefined') {
                     apiKeyStatus.textContent = 'ERROR: Google Gemini SDK not loaded. AI features will not work.';
                     apiKeyStatus.className = 'api-key-status-error';
                     showElement(apiKeyStatus);
-                    console.error("Critical: GoogleGenerativeAI is undefined. SDK script might be blocked or failed to load correctly.");
-                    genAI = null; // Ensure genAI is null if SDK is genuinely missing
+                    console.error("Critical: window.GoogleGenAI is undefined. New SDK script might be blocked or failed to load correctly.");
+                    genAI = null; // Ensure local genAI is null
+                    window.geminiSdkInstance = null; // Ensure global instance is null
+                } else if (genAI) { // If window.geminiSdkInstance was successfully created by the module script
+                    geminiApiKeyInput.value = localStorage.getItem('geminiApiKey'); // Set input value
+                    apiKeyStatus.textContent = 'API key loaded. Gemini AI ready!';
+                    apiKeyStatus.className = 'api-key-status-success';
+                    showElement(apiKeyStatus);
+                } else { // No API key initially, or initialization failed in module script
+                    hideElement(apiKeyStatus); // Hide status until key is entered
                 }
             }
 
             // NEW: Gemini API Key Handling
             function initializeGemini(key) {
-                // Defensive check, though initializeApp should catch most SDK loading issues
-                if (typeof GoogleGenerativeAI === 'undefined') {
-                    apiKeyStatus.textContent = 'Google Gemini SDK not found. AI features disabled.';
+                // Check for the GoogleGenAI class exposed by the module script
+                if (typeof window.GoogleGenAI === 'undefined') {
+                    apiKeyStatus.textContent = 'Google Gemini SDK (new) not loaded. AI features disabled.';
                     apiKeyStatus.className = 'api-key-status-error';
                     showElement(apiKeyStatus);
-                    console.error("GoogleGenerativeAI is undefined within initializeGemini. SDK not available.");
-                    genAI = null; // Important to ensure genAI is null if SDK is missing
+                    console.error("window.GoogleGenAI is undefined within initializeGemini. New SDK not available.");
+                    genAI = null; // Ensure local genAI is null
+                    window.geminiSdkInstance = null; // Ensure global is null
                     return;
                 }
                 try {
-                    genAI = new GoogleGenerativeAI.GoogleGenerativeAI(key);
+                    // Re-instantiate the global SDK instance
+                    window.geminiSdkInstance = new window.GoogleGenAI({ apiKey: key });
+                    genAI = window.geminiSdkInstance; // Update local reference to the new instance
                     apiKeyStatus.textContent = 'API key loaded. Gemini AI ready!';
                     apiKeyStatus.className = 'api-key-status-success';
                     showElement(apiKeyStatus);
                     console.log("Gemini AI SDK initialized.");
                 } catch (e) {
-                    geminiApiKey = ''; // Clear invalid key
                     localStorage.removeItem('geminiApiKey');
+                    geminiApiKeyInput.value = ''; // Clear input on error
                     apiKeyStatus.textContent = 'Invalid API key. Please check and re-enter.';
                     apiKeyStatus.className = 'api-key-status-error';
                     showElement(apiKeyStatus);
                     console.error("Error initializing Gemini SDK:", e);
-                    genAI = null; // Ensure genAI is null if initialization fails
+                    genAI = null; // Ensure local genAI is null
+                    window.geminiSdkInstance = null; // Ensure global is null
                 }
             }
 
@@ -646,9 +667,13 @@
                 subjectSelector.value = ""; // Reset dropdown
                 quizTitleElement.textContent = 'CAAP Mock by Chippo'; // Reset title
                 hideElement(explanationContainer); // NEW: Hide explanation area
-                // Ensure API key status is hidden only if no key is present or it failed
-                if (!geminiApiKey || genAI === null) {
-                     hideElement(apiKeyStatus);
+
+                // Adjust visibility of API key status based on current state
+                if (window.geminiSdkInstance && localStorage.getItem('geminiApiKey')) {
+                    // Only show status if an instance exists AND a key is stored
+                    showElement(apiKeyStatus);
+                } else {
+                    hideElement(apiKeyStatus);
                 }
             }
 
@@ -881,6 +906,7 @@
 
             // NEW: AI Explanation Function
             async function generateExplanation(question, userAnswer, correctAnswer) {
+                // Use the local 'genAI' variable, which points to window.geminiSdkInstance
                 if (!genAI) {
                     explanationError.textContent = 'Gemini AI not initialized. Please provide an API key.';
                     showElement(explanationError);
@@ -925,6 +951,7 @@ Provide a concise and informative explanation focusing on why the correct answer
 
             // NEW: AI-powered Google Search Prompt Function
             async function generateSearchPrompt(questionText) {
+                // Use the local 'genAI' variable, which points to window.geminiSdkInstance
                 if (!genAI) {
                     displayError('Gemini AI not initialized. Cannot generate search prompt.');
                     return null;
@@ -973,12 +1000,13 @@ Search Query:`;
                 const key = geminiApiKeyInput.value.trim();
                 if (key) {
                     localStorage.setItem('geminiApiKey', key);
-                    geminiApiKey = key;
+                    // Call initializeGemini to instantiate and set global/local genAI
                     initializeGemini(key);
                 } else {
                     localStorage.removeItem('geminiApiKey');
-                    geminiApiKey = '';
-                    genAI = null; // Ensure genAI is null if key is cleared
+                    // Explicitly nullify both global and local instances
+                    window.geminiSdkInstance = null;
+                    genAI = null;
                     apiKeyStatus.textContent = 'API key cleared.';
                     apiKeyStatus.className = 'api-key-status-error';
                     showElement(apiKeyStatus);
