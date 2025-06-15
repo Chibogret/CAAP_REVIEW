@@ -1127,24 +1127,24 @@ Search Query:`;
                     showElement(apiKeyStatus);
                 }
             });
-            googleSearchBtn.addEventListener('click', async () => {
-  const currentQuestion = questionsToAsk[currentQuestionIndex];
-  if (!currentQuestion) return;
-
+           googleSearchBtn.addEventListener('click', async ev => {
+  ev.preventDefault();
+  // snapshot your current question immediately:
+  const { question_text, correct_answer } = questionsToAsk[currentQuestionIndex];
   disableButton(googleSearchBtn);
 
-  // Pass both the question text and the correct answer
-  const searchPrompt = await generateSearchPrompt(
-    currentQuestion.question_text,
-    currentQuestion.correct_answer
-  );
+  // now call the async generator with that snapshot
+  const searchPrompt = await generateSearchPrompt(question_text, correct_answer);
 
   enableButton(googleSearchBtn);
-
   if (searchPrompt) {
-    window.open(`https://www.google.com/search?q=${encodeURIComponent(searchPrompt)}`, '_blank');
+    window.open(
+      `https://www.google.com/search?q=${encodeURIComponent(searchPrompt)}`,
+      '_blank'
+    );
   }
 });
+
 
             // --- Initial Execution ---
             setTimeout(initializeApp, 1000);
