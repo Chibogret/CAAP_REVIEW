@@ -1046,9 +1046,9 @@ Correct Answer: "${correctAnswer}"
 Provide a clear explanation of why the correct answer is right and briefly why other options are wrong.`;
 
                 try {
-                    const result = await genAI.getGenerativeModel({ model: MODEL_NAME }).generateContent(prompt);
-                    const response = await result.response;
-                    const generatedText = response.text;
+                    const result = await genAI.models.generateContent({ model: MODEL_NAME, contents: prompt });
+                    const generatedText = result.text;
+
                     explanationText.innerHTML = marked.parse(generatedText);
                     showElement(explanationText);
                 } catch (e) {
@@ -1071,9 +1071,9 @@ Question: "${questionText}"
 
 Search Query:`;
                 try {
-                    const result = await genAI.getGenerativeModel({ model: MODEL_NAME }).generateContent(prompt);
-                    const response = await result.response;
-                    return response.text;
+                    const result = await genAI.models.generateContent({ model: MODEL_NAME, contents: prompt });
+                    const generatedText = result.text;
+                    return generatedText;
                 } catch (e) {
                     console.error("Error generating search prompt:", e);
                     displayError('Failed to generate search prompt.');
