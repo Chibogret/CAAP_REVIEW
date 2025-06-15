@@ -534,7 +534,7 @@
             // NEW: Gemini AI State - Initialize from the global instance set by the module script
             let genAI = window.geminiSdkInstance;
             // Update MODEL_NAME for the new SDK (common, stable version)
-            const MODEL_NAME = "gemini-1.5-flash-001"; 
+            const MODEL_NAME = "gemini-2.5-flash-preview-05-20"; 
 
             const TOTAL_SUBJECTS = 11; // Updated to 9 subjects
             const subjectNames = [ // Array of subject names and filenames
@@ -921,8 +921,6 @@
                 hideElement(explanationError);
                 explanationText.textContent = ''; // Clear previous explanation
 
-                const model = genAI.getGenerativeModel({ model: MODEL_NAME });
-
                 const prompt = `Explain the following multiple-choice question and its correct answer in detail.
 
 Question: "${question.question_text}"
@@ -935,7 +933,11 @@ Correct Answer: "${correctAnswer}"
 Provide a concise and informative explanation focusing on why the correct answer is correct and briefly why other options might be incorrect, without directly confirming if the user's answer was right or wrong. Structure it clearly.`;
 
                 try {
-                    const result = await model.generateContent(prompt);
+                    // *** FIX: Use genAI.models.generateContent and pass model in request body ***
+                    const result = await genAI.models.generateContent({
+                        model: MODEL_NAME, // Model name moved into the request body
+                        contents: [{ parts: [{ text: prompt }] }], // Contents format for new SDK
+                    });
                     const response = await result.response;
                     const text = response.text();
                     explanationText.textContent = text;
@@ -957,8 +959,6 @@ Provide a concise and informative explanation focusing on why the correct answer
                     return null;
                 }
 
-                const model = genAI.getGenerativeModel({ model: MODEL_NAME });
-
                 const prompt = `Generate a concise and effective Google search query (1-2 sentences, max 100 characters) for the following question to find more information related to the topic. Do not include the answer in the search query.
 
 Question: "${questionText}"
@@ -968,7 +968,11 @@ Example Output: "explain the principles of flight lift and drag" or "what is the
 Search Query:`;
 
                 try {
-                    const result = await model.generateContent(prompt);
+                    // *** FIX: Use genAI.models.generateContent and pass model in request body ***
+                    const result = await genAI.models.generateContent({
+                        model: MODEL_NAME, // Model name moved into the request body
+                        contents: [{ parts: [{ text: prompt }] }], // Contents format for new SDK
+                    });
                     const response = await result.response;
                     const text = response.text().trim();
                     return text;
