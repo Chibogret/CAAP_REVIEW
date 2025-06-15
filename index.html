@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Google Gemini AI SDK -->
+    <!-- Google Gemini AI SDK - CORRECTED LINK AND PLACEMENT (best practice is at end of body) -->
+    <!-- You can keep it in head IF you defer its loading, but moving it to body end is simpler -->
+    <!-- For simplicity and direct fix to "exports is not defined", I'll keep it in the body end -->
 
     <style>
         :root {
@@ -460,6 +462,8 @@
             <button id="restart-button" class="quiz-button">Choose Another Subject</button>
         </div>
     </div>
+
+    <!-- Google Gemini AI SDK - MOVED TO HERE -->
     <script src="https://cdn.jsdelivr.net/npm/@google/generative-ai@latest/dist/gemini.min.js"></script>
 
     <script>
@@ -545,10 +549,12 @@
 
             // NEW: Gemini API Key Handling
             function initializeGemini(key) {
-                if (!window.GoogleGenerativeAI) {
+                // Ensure GoogleGenerativeAI is defined before trying to use it
+                if (typeof GoogleGenerativeAI === 'undefined') {
                     apiKeyStatus.textContent = 'Google Gemini SDK not loaded. Check internet connection or script tag.';
                     apiKeyStatus.className = 'api-key-status-error';
                     showElement(apiKeyStatus);
+                    console.error("GoogleGenerativeAI is undefined. SDK might not have loaded.");
                     return;
                 }
                 try {
@@ -623,7 +629,10 @@
                 subjectSelector.value = ""; // Reset dropdown
                 quizTitleElement.textContent = 'CAAP Mock by Chippo'; // Reset title
                 hideElement(explanationContainer); // NEW: Hide explanation area
-                hideElement(apiKeyStatus); // NEW: Hide API status message
+                // Keep API key status visible if it was set, or hide if it wasn't there
+                if (!geminiApiKey) { // Only hide if no key was ever loaded/set
+                     hideElement(apiKeyStatus);
+                }
             }
 
             // --- Quiz Logic ---
@@ -962,7 +971,11 @@ Search Query:`;
                     displayError("No question currently displayed to search.");
                     return;
                 }
+                // Temporarily disable the button while search prompt is being generated
+                disableButton(googleSearchBtn);
                 const searchPrompt = await generateSearchPrompt(currentQuestion.question_text);
+                enableButton(googleSearchBtn); // Re-enable button
+
                 if (searchPrompt) {
                     window.open(`https://www.google.com/search?q=${encodeURIComponent(searchPrompt)}`, '_blank');
                 }
