@@ -828,7 +828,11 @@
                 questionTextElement.textContent = question.question_text;
                 optionsList.innerHTML = '';
 
-                question.options.forEach((option, index) => {
+                // --- MODIFICATION: Create a shuffled copy of the options to randomize their order ---
+                const shuffledOptions = [...question.options];
+                shuffleArray(shuffledOptions);
+
+                shuffledOptions.forEach((option, index) => {
                     const optionItem = document.createElement('li');
                     optionItem.classList.add('option-item');
                     const radioInput = document.createElement('input');
@@ -1061,32 +1065,32 @@ Provide a clear explanation of why the correct answer is right and briefly why o
             }
 
             async function generateSearchPrompt(questionText, correctAnswer) {
-  if (!genAI) {
-    displayError('Gemini AI not initialized. Cannot generate search prompt.');
-    return null;
-  }
+              if (!genAI) {
+                displayError('Gemini AI not initialized. Cannot generate search prompt.');
+                return null;
+              }
 
-  // 2. Build a prompt that uses both question and correct answer
-  const prompt = `
-Generate a concise and effective Google search query (max 200 characters) that will find authoritative information on this Philippine PPL exam question, using both the question and the known correct answer to guide the query.
+              // 2. Build a prompt that uses both question and correct answer
+              const prompt = `
+            Generate a concise and effective Google search query (max 200 characters) that will find authoritative information on this Philippine PPL exam question, using both the question and the known correct answer to guide the query.
 
-Question: "${questionText}"
-Correct Answer: "${correctAnswer}"
+            Question: "${questionText}"
+            Correct Answer: "${correctAnswer}"
 
-Search Query:`;
+            Search Query:`;
 
-  try {
-    const result = await genAI.models.generateContent({
-      model: MODEL_NAME,
-      contents: prompt
-    });
-    return result.text.trim();
-  } catch (e) {
-    console.error("Error generating search prompt:", e);
-    displayError('Failed to generate search prompt.');
-    return null;
-  }
-}
+              try {
+                const result = await genAI.models.generateContent({
+                  model: MODEL_NAME,
+                  contents: prompt
+                });
+                return result.text.trim();
+              } catch (e) {
+                console.error("Error generating search prompt:", e);
+                displayError('Failed to generate search prompt.');
+                return null;
+              }
+            }
 
             function updateQuizInfo() {
                 const progressText = currentMode === 'study' 
@@ -1127,23 +1131,27 @@ Search Query:`;
                     showElement(apiKeyStatus);
                 }
             });
-           googleSearchBtn.addEventListener('click', async ev => {
-  ev.preventDefault();
-  // snapshot your current question immediately:
-  const { question_text, correct_answer } = questionsToAsk[currentQuestionIndex];
-  disableButton(googleSearchBtn);
+           
+            // --- MODIFICATION: Changed googleSearchBtn listener to use lastAnsweredQuestion ---
+            googleSearchBtn.addEventListener('click', async ev => {
+              ev.preventDefault();
+              // Use the last answered question, which is the one currently being explained/reviewed.
+              if (!lastAnsweredQuestion) return; // Safety check
 
-  // now call the async generator with that snapshot
-  const searchPrompt = await generateSearchPrompt(question_text, correct_answer);
+              const { question_text, correct_answer } = lastAnsweredQuestion;
+              disableButton(googleSearchBtn);
 
-  enableButton(googleSearchBtn);
-  if (searchPrompt) {
-    window.open(
-      `https://www.google.com/search?q=${encodeURIComponent(searchPrompt)}`,
-      '_blank'
-    );
-  }
-});
+              // now call the async generator with that snapshot
+              const searchPrompt = await generateSearchPrompt(question_text, correct_answer);
+
+              enableButton(googleSearchBtn);
+              if (searchPrompt) {
+                window.open(
+                  `https://www.google.com/search?q=${encodeURIComponent(searchPrompt)}`,
+                  '_blank'
+                );
+              }
+            });
 
 
             // --- Initial Execution ---
