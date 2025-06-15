@@ -960,7 +960,7 @@
         },
         {
             "question_number": 88,
-            "question_text": "What is the purpose of the 'Pilot's Operating Handbook' (POH) or 'Aircraft Flight Manual' (AFM)?"
+            "question_text": "What is the purpose of the 'Pilot's Operating Handbook' (POH) or 'Aircraft Flight Manual' (AFM)?",
             "options": [
                 "To provide detailed maintenance instructions for the aircraft systems.",
                 "To provide the pilot with all the information necessary to operate the aircraft safely and efficiently.",
