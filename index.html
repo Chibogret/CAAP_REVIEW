@@ -256,6 +256,11 @@
         #next-question-btn { background-color: var(--correct-color); } /* Green for next */
         #next-question-btn:hover { background-color: #25a244; }
 
+        /* New Explain button */
+        #explain-question-btn { background-color: var(--primary-accent); }
+        #explain-question-btn:hover { background-color: var(--secondary-accent); }
+
+
         .quiz-button:disabled {
              background-color: var(--disabled-color);
              cursor: not-allowed;
@@ -447,6 +452,7 @@
                 <button id="submit-answer-btn" class="quiz-button">Submit Answer</button>
                 <button id="skip-question-btn" class="quiz-button">Skip Question</button>
                 <button id="google-search-btn" class="quiz-button">Search Question</button>
+                <button id="explain-question-btn" class="quiz-button hidden">Explain Answer</button> <!-- NEW BUTTON -->
                 <button id="next-question-btn" class="quiz-button hidden">Next Question</button>
             </div>
         </div>
@@ -518,6 +524,7 @@
             const explanationLoader = document.querySelector('.explanation-loader');
             const explanationError = document.getElementById('explanation-error');
             const googleSearchBtn = document.getElementById('google-search-btn');
+            const explainBtn = document.getElementById('explain-question-btn'); // NEW: Explain button
 
             // --- State Variables ---
             let currentQuizData = null;
@@ -535,6 +542,11 @@
             let genAI = window.geminiSdkInstance;
             // Update MODEL_NAME for the new SDK (common, stable version)
             const MODEL_NAME = "gemini-2.5-flash-preview-05-20"; 
+
+            // NEW: Variables to store last answered question for explanation
+            let lastAnsweredQuestion = null;
+            let lastUserAnswer = null;
+            let lastCorrectAnswer = null;
 
             const TOTAL_SUBJECTS = 11; // Updated to 9 subjects
             const subjectNames = [ // Array of subject names and filenames
@@ -667,6 +679,7 @@
                 subjectSelector.value = ""; // Reset dropdown
                 quizTitleElement.textContent = 'CAAP Mock by Chippo'; // Reset title
                 hideElement(explanationContainer); // NEW: Hide explanation area
+                hideElement(explainBtn); // NEW: Hide explain button on full reset
 
                 // Adjust visibility of API key status based on current state
                 if (window.geminiSdkInstance && localStorage.getItem('geminiApiKey')) {
@@ -768,6 +781,7 @@
                     disableButton(skipBtn);
                 }
                 hideElement(explanationContainer); // NEW: Hide previous explanation for new question
+                hideElement(explainBtn); // NEW: Hide explain button for new question
 
 
                 const question = questionsToAsk[currentQuestionIndex];
@@ -813,8 +827,15 @@
                 hideElement(feedbackArea); // Clear previous feedback
 
                 const userAnswer = selectedOptionInput.value;
-                const currentQuestion = questionsToAsk[currentQuestionIndex];
+                const currentQuestion = questionsToAsk[currentQuestionIndex]; // Reference to the question being answered
                 const correctAnswer = currentQuestion.correct_answer;
+
+                // NEW: Store for on-demand explanation
+                lastAnsweredQuestion = currentQuestion;
+                lastUserAnswer = userAnswer;
+                lastCorrectAnswer = correctAnswer;
+                showElement(explainBtn); // Show explain button
+                enableButton(explainBtn);
 
                 let wasCorrect = false;
                 if (userAnswer === correctAnswer) {
@@ -837,8 +858,7 @@
                 questionsAnsweredInSession++; // Increment *after* answering
                 updateQuizInfo(); // Update score immediately
 
-                // NEW: Generate AI Explanation after answer submission
-                generateExplanation(currentQuestion, userAnswer, correctAnswer);
+                // generateExplanation(currentQuestion, userAnswer, correctAnswer); // REMOVED: Now called by explainBtn
 
                 // Check if quiz is over OR prepare for next question button
                 if (questionsToAsk.length === 0 && skippedQuestions.length === 0) {
@@ -871,6 +891,8 @@
 
                 disableButton(submitBtn);
                 disableButton(skipBtn);
+                hideElement(explainBtn); // No explanation for skipped question initially
+                hideElement(explanationContainer); // Hide previous explanation
 
                  // Check if quiz is over OR prepare for next question button
                 if (questionsToAsk.length === 0 && skippedQuestions.length === 0) {
@@ -888,11 +910,25 @@
                  displayQuestion();
             }
 
+            // NEW: Handle Explain button click
+            async function handleExplain() {
+                if (!lastAnsweredQuestion) {
+                    explanationError.textContent = 'No question available for explanation.';
+                    showElement(explanationError);
+                    return;
+                }
+                disableButton(explainBtn); // Disable during generation
+                await generateExplanation(lastAnsweredQuestion, lastUserAnswer, lastCorrectAnswer);
+                enableButton(explainBtn); // Re-enable after explanation is attempted
+            }
+
+
             function endQuiz() {
                 hideElement(quizContent);
                 hideElement(quizInfoArea);
                 hideElement(feedbackArea);
                 hideElement(explanationContainer); // NEW: Hide explanation at end
+                hideElement(explainBtn); // NEW: Hide explain button at end
 
                 const finalScore = totalQuestionsInQuiz === 0 ? 0 : Math.round((correctAnswersCount / totalQuestionsInQuiz) * 100);
                  // Use allQuestions.length (totalQuestionsInQuiz) for the final denominator
@@ -933,14 +969,26 @@ Correct Answer: "${correctAnswer}"
 Provide a concise and informative explanation focusing on why the correct answer is correct and briefly why other options might be incorrect, without directly confirming if the user's answer was right or wrong. Structure it clearly.`;
 
                 try {
-                    // *** FIX: Use genAI.models.generateContent and pass model in request body ***
                     const result = await genAI.models.generateContent({
                         model: MODEL_NAME, // Model name moved into the request body
                         contents: [{ parts: [{ text: prompt }] }], // Contents format for new SDK
                     });
-                    const response = await result.response;
-                    const text = response.text();
-                    explanationText.textContent = text;
+
+                    let generatedText = '';
+                    if (result && result.response && typeof result.response.text === 'function') {
+                        // Standard successful text extraction
+                        generatedText = result.response.text();
+                    } else if (result && result.promptFeedback && result.promptFeedback.blockReason) {
+                        // Content was blocked by safety settings
+                        console.warn('Gemini API blocked content:', result.promptFeedback.blockReason);
+                        generatedText = `AI explanation blocked due to safety settings: ${result.promptFeedback.blockReason}`;
+                    } else {
+                        // Fallback for unexpected empty or malformed result
+                        console.error('Unexpected empty or malformed response from Gemini API:', result);
+                        generatedText = 'Failed to get a valid explanation from AI.';
+                    }
+
+                    explanationText.textContent = generatedText;
                     showElement(explanationText);
                 } catch (e) {
                     console.error("Error generating explanation:", e);
@@ -968,14 +1016,27 @@ Example Output: "explain the principles of flight lift and drag" or "what is the
 Search Query:`;
 
                 try {
-                    // *** FIX: Use genAI.models.generateContent and pass model in request body ***
                     const result = await genAI.models.generateContent({
                         model: MODEL_NAME, // Model name moved into the request body
                         contents: [{ parts: [{ text: prompt }] }], // Contents format for new SDK
                     });
-                    const response = await result.response;
-                    const text = response.text().trim();
-                    return text;
+                    
+                    let searchText = '';
+                    if (result && result.response && typeof result.response.text === 'function') {
+                        // Standard successful text extraction
+                        searchText = result.response.text().trim();
+                    } else if (result && result.promptFeedback && result.promptFeedback.blockReason) {
+                        // Content was blocked by safety settings
+                        console.warn('Gemini API blocked search prompt generation:', result.promptFeedback.blockReason);
+                        displayError(`AI search prompt blocked due to safety settings: ${result.promptFeedback.blockReason}`);
+                        return null; // Don't proceed with search
+                    } else {
+                        // Fallback for unexpected empty or malformed result
+                        console.error('Unexpected empty or malformed response for search prompt:', result);
+                        displayError('Failed to generate search prompt from AI.');
+                        return null;
+                    }
+                    return searchText;
                 } catch (e) {
                     console.error("Error generating search prompt:", e);
                     displayError('Failed to generate search prompt. Please try again.');
@@ -998,6 +1059,7 @@ Search Query:`;
             skipBtn.addEventListener('click', handleSkip);
             nextBtn.addEventListener('click', handleNext);
             restartBtn.addEventListener('click', resetUI); // Allow choosing subject again
+            explainBtn.addEventListener('click', handleExplain); // NEW: Explain button listener
 
             // NEW: API Key Save Button Listener
             saveApiKeyBtn.addEventListener('click', () => {
