@@ -369,10 +369,59 @@
             padding-bottom: 8px;
         }
         #explanation-text {
-            white-space: pre-wrap; /* Preserve formatting from AI */
+            /* white-space: pre-wrap; /* Preserve formatting from AI - this might interfere with markdown rendering */
             font-size: 0.95em;
             color: var(--text-color);
         }
+
+        /* Add basic markdown styling for rendered content */
+        #explanation-text h1, #explanation-text h2, #explanation-text h3, #explanation-text h4, #explanation-text h5, #explanation-text h6 {
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+            font-weight: 600;
+            line-height: 1.2;
+            color: var(--primary-accent);
+        }
+        #explanation-text p {
+            margin-bottom: 1em;
+        }
+        #explanation-text ul, #explanation-text ol {
+            margin-left: 20px;
+            margin-bottom: 1em;
+        }
+        #explanation-text li {
+            margin-bottom: 0.5em;
+        }
+        #explanation-text strong {
+            font-weight: 700;
+        }
+        #explanation-text em {
+            font-style: italic;
+        }
+        #explanation-text pre {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-left: 3px solid var(--primary-accent);
+            padding: 10px;
+            overflow-x: auto;
+            border-radius: 4px;
+            margin-bottom: 1em;
+        }
+        #explanation-text code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        #explanation-text blockquote {
+            border-left: 4px solid var(--border-color);
+            padding-left: 15px;
+            margin-left: 0;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 1em;
+        }
+
         .explanation-loader {
             margin: 20px auto;
         }
@@ -489,6 +538,9 @@
         window.geminiSdkInstance = null;
       }
     </script>
+
+    <!-- Marked.js for Markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
     <!-- Your main application script -->
     <script>
@@ -950,14 +1002,24 @@
                     hideElement(explanationText);
                     return;
                 }
+                // Check if marked.js is loaded
+                if (typeof marked === 'undefined') {
+                    explanationError.textContent = 'Markdown renderer not loaded. Please check script imports.';
+                    showElement(explanationError);
+                    hideElement(explanationLoader);
+                    hideElement(explanationText);
+                    console.error("Marked.js is not loaded.");
+                    return;
+                }
+
 
                 showElement(explanationContainer);
                 showElement(explanationLoader);
                 hideElement(explanationText);
                 hideElement(explanationError);
-                explanationText.textContent = ''; // Clear previous explanation
+                explanationText.textContent = ''; // Clear previous explanation (use textContent initially to avoid flickering with old markdown)
 
-                const prompt = `Explain the following multiple-choice question and its correct answer in detail.
+                const prompt = `Explain the following multiple-choice question and its correct answer in detail. Please use Markdown for formatting (e.g., **bold**, *italic*, lists, headings).
 
 Question: "${question.question_text}"
 Options:
@@ -971,12 +1033,13 @@ Provide a concise and informative explanation focusing on why the correct answer
                 try {
                     const result = await genAI.models.generateContent({
                       model: MODEL_NAME,
-                      contents: prompt          // a plain string or array is fine
+                      contents: [{ text: prompt }] // New SDK requires {text: prompt} inside contents array
                     });
                     
-                    const generatedText = result.text;    // ← this is all you need
+                    const generatedText = result.response.text(); // Access text via result.response.text() in new SDK
 
-                    explanationText.textContent = generatedText;
+                    // Use marked.js to convert markdown to HTML
+                    explanationText.innerHTML = marked.parse(generatedText);
                     showElement(explanationText);
                 } catch (e) {
                     console.error("Error generating explanation:", e);
@@ -995,7 +1058,7 @@ Provide a concise and informative explanation focusing on why the correct answer
                     return null;
                 }
 
-                const prompt = `Generate a concise and effective Google search query (1-2 sentences, max 100 characters) for the following question to find more information related to the topic. Do not include the answer in the search query.
+                const prompt = `Generate a concise and effective Google search query (1-2 sentences, max 100 characters) for the following question to find more information related to the topic. The output should be plain text, suitable for a URL. Do not include the answer in the search query.
 
 Question: "${questionText}"
 
@@ -1005,12 +1068,25 @@ Search Query:`;
 
                 try {
                     const result = await genAI.models.generateContent({
-                      model: MODEL_NAME,
-                      contents: prompt          // a plain string or array is fine
+                        model: MODEL_NAME,
+                        contents: [{ parts: [{ text: prompt }] }],
                     });
                     
-                    const searchText = result.text;    // ← this is all you need
-
+                    let searchText = '';
+                    if (result && result.response && typeof result.response.text === 'function') {
+                        // Standard successful text extraction
+                        searchText = result.response.text().trim();
+                    } else if (result && result.promptFeedback && result.promptFeedback.blockReason) {
+                        // Content was blocked by safety settings
+                        console.warn('Gemini API blocked search prompt generation:', result.promptFeedback.blockReason);
+                        displayError(`AI search prompt blocked due to safety settings: ${result.promptFeedback.blockReason}`);
+                        return null; // Don't proceed with search
+                    } else {
+                        // Fallback for unexpected empty or malformed result
+                        console.error('Unexpected empty or malformed response for search prompt:', result);
+                        displayError('Failed to generate search prompt from AI.');
+                        return null;
+                    }
                     return searchText;
                 } catch (e) {
                     console.error("Error generating search prompt:", e);
