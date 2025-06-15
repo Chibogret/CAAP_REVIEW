@@ -1031,13 +1031,8 @@ Correct Answer: "${correctAnswer}"
 Provide a concise and informative explanation focusing on why the correct answer is correct and briefly why other options might be incorrect, without directly confirming if the user's answer was right or wrong. Structure it clearly.`;
 
                 try {
-                    const result = await genAI.models.generateContent({
-                      model: MODEL_NAME,
-                      contents: [{ text: prompt }] // New SDK requires {text: prompt} inside contents array
-                    });
-                    
-                    const generatedText = result.response.text(); // Access text via result.response.text() in new SDK
-
+                    const result = await genAI.models.generateContent({ model: MODEL_NAME, contents: prompt });
+                    const generatedText = result.text;
                     // Use marked.js to convert markdown to HTML
                     explanationText.innerHTML = marked.parse(generatedText);
                     showElement(explanationText);
@@ -1067,12 +1062,8 @@ Example Output: "explain the principles of flight lift and drag" or "what is the
 Search Query:`;
 
                 try {
-                    const result = await genAI.models.generateContent({
-                        model: MODEL_NAME,
-                        contents: [{ parts: [{ text: prompt }] }],
-                    });
-                    
-                    let searchText = '';
+                    const result = await genAI.models.generateContent({ model: MODEL_NAME, contents: prompt });
+                    const searchText = result.text;
                     if (result && result.response && typeof result.response.text === 'function') {
                         // Standard successful text extraction
                         searchText = result.response.text().trim();
