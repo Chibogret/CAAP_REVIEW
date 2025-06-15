@@ -1,0 +1,2205 @@
+{
+  "exam_title": "EQC for Cessna 172",
+  "questions": [
+    {
+      "question_number": 1,
+      "question_text": "What is the engine model number for the Cessna 172M?",
+      "options": [
+        "Lycoming O-320-H2AD",
+        "Lycoming O-320-E2D",
+        "Continental O-300-D",
+        "Lycoming IO-360-L2A"
+      ],
+      "correct_answer": "Lycoming O-320-E2D"
+    },
+    {
+      "question_number": 2,
+      "question_text": "What is the engine horsepower rating for a Cessna 172N? [1]",
+      "options": [
+        "150 BHP at 2700 RPM",
+        "180 BHP at 2800 RPM",
+        "160 BHP at 2700 RPM",
+        "145 BHP at 2600 RPM"
+      ],
+      "correct_answer": "160 BHP at 2700 RPM"
+    },
+    {
+      "question_number": 3,
+      "question_text": "In a Cessna 172M with standard tanks, what is the total USABLE fuel capacity? [3]",
+      "options": [
+        "42 gallons",
+        "40 gallons",
+        "38 gallons",
+        "50 gallons"
+      ],
+      "correct_answer": "38 gallons"
+    },
+    {
+      "question_number": 4,
+      "question_text": "What is the total USABLE fuel capacity of a Cessna 172N equipped with long-range tanks? [1]",
+      "options": [
+        "54 gallons",
+        "50 gallons",
+        "48 gallons",
+        "40 gallons"
+      ],
+      "correct_answer": "50 gallons"
+    },
+    {
+      "question_number": 5,
+      "question_text": "What is the maximum certificated takeoff weight for a Cessna 172M/N in the Normal Category? [4, 7]",
+      "options": [
+        "2000 lbs",
+        "2450 lbs",
+        "2300 lbs",
+        "2550 lbs"
+      ],
+      "correct_answer": "2300 lbs"
+    },
+    {
+      "question_number": 6,
+      "question_text": "What is the maximum certificated takeoff weight for a Cessna 172M/N in the Utility Category? [4, 7]",
+      "options": [
+        "2300 lbs",
+        "2000 lbs",
+        "1950 lbs",
+        "2100 lbs"
+      ],
+      "correct_answer": "2000 lbs"
+    },
+    {
+      "question_number": 7,
+      "question_text": "What is the oil sump capacity of the Lycoming O-320-E2D engine in the Cessna 172M? [7]",
+      "options": [
+        "6 Quarts",
+        "9 Quarts",
+        "8 Quarts",
+        "7 Quarts"
+      ],
+      "correct_answer": "8 Quarts"
+    },
+    {
+      "question_number": 8,
+      "question_text": "What is the Never Exceed Speed (Vne) for the Cessna 172M/N? [3, 25]",
+      "options": [
+        "128 KIAS",
+        "160 KIAS",
+        "85 KIAS",
+        "158 KIAS"
+      ],
+      "correct_answer": "160 KIAS"
+    },
+    {
+      "question_number": 9,
+      "question_text": "What is the Maximum Structural Cruising Speed (Vno) for the Cessna 172M/N? [3, 25]",
+      "options": [
+        "160 KIAS",
+        "110 KIAS",
+        "128 KIAS",
+        "140 KIAS"
+      ],
+      "correct_answer": "128 KIAS"
+    },
+    {
+      "question_number": 10,
+      "question_text": "What is the Maximum Flap Extended Speed (Vfe) for the Cessna 172M? [3]",
+      "options": [
+        "110 KIAS",
+        "100 KIAS",
+        "95 KIAS",
+        "85 KIAS"
+      ],
+      "correct_answer": "85 KIAS"
+    },
+    {
+      "question_number": 11,
+      "question_text": "What does the upper limit of the white arc on the airspeed indicator signify? [3]",
+      "options": [
+        "Maximum structural cruising speed",
+        "Never exceed speed",
+        "Maximum flap extended speed",
+        "Normal stall speed"
+      ],
+      "correct_answer": "Maximum flap extended speed"
+    },
+    {
+      "question_number": 12,
+      "question_text": "What does the lower limit of the white arc on the airspeed indicator signify? [3]",
+      "options": [
+        "Stalling speed in the clean configuration (Vs1)",
+        "Stalling speed in the landing configuration (Vso)",
+        "Best angle of climb speed (Vx)",
+        "Rotation speed (Vr)"
+      ],
+      "correct_answer": "Stalling speed in the landing configuration (Vso)"
+    },
+    {
+      "question_number": 13,
+      "question_text": "The green arc on the airspeed indicator represents the normal operating range. What is its upper limit? [3]",
+      "options": [
+        "Vne (Never Exceed Speed)",
+        "Vfe (Maximum Flap Extended Speed)",
+        "Va (Maneuvering Speed)",
+        "Vno (Maximum Structural Cruising Speed)"
+      ],
+      "correct_answer": "Vno (Maximum Structural Cruising Speed)"
+    },
+    {
+      "question_number": 14,
+      "question_text": "What is the maximum window open speed for the Cessna 172M/N? [3, 25]",
+      "options": [
+        "128 KIAS",
+        "85 KIAS",
+        "160 KIAS",
+        "110 KIAS"
+      ],
+      "correct_answer": "160 KIAS"
+    },
+    {
+      "question_number": 15,
+      "question_text": "What is the maximum baggage allowance for a Cessna 172N operating in the Normal Category? [4]",
+      "options": [
+        "100 lbs",
+        "150 lbs",
+        "80 lbs",
+        "120 lbs"
+      ],
+      "correct_answer": "120 lbs"
+    },
+    {
+      "question_number": 16,
+      "question_text": "When operating a Cessna 172N in the Utility Category, what is the limitation regarding baggage and rear seat occupants? [4]",
+      "options": [
+        "Rear seat must be empty, baggage is allowed up to 50 lbs",
+        "Baggage compartment and rear seat must not be occupied",
+        "Only one rear seat occupant is allowed",
+        "Baggage is limited to 120 lbs, rear seat can be occupied"
+      ],
+      "correct_answer": "Baggage compartment and rear seat must not be occupied"
+    },
+    {
+      "question_number": 17,
+      "question_text": "What is the approved fuel grade for the Cessna 172N? [1]",
+      "options": [
+        "80/87 Octane (Red)",
+        "100LL Grade Aviation Fuel (Blue)",
+        "Jet A",
+        "Automotive Gasoline (Mogas)"
+      ],
+      "correct_answer": "100LL Grade Aviation Fuel (Blue)"
+    },
+    {
+      "question_number": 18,
+      "question_text": "What is the horsepower rating of the Lycoming O-320-E2D engine in a Cessna 172M? [2]",
+      "options": [
+        "160 BHP at 2700 RPM",
+        "150 BHP at 2700 RPM",
+        "180 BHP at 2700 RPM",
+        "145 BHP at 2600 RPM"
+      ],
+      "correct_answer": "150 BHP at 2700 RPM"
+    },
+    {
+      "question_number": 19,
+      "question_text": "What is the maximum engine speed for the Cessna 172N? [1]",
+      "options": [
+        "2500 RPM",
+        "2800 RPM",
+        "2700 RPM",
+        "2650 RPM"
+      ],
+      "correct_answer": "2700 RPM"
+    },
+    {
+      "question_number": 20,
+      "question_text": "What is the normal operating range (green arc) for the oil temperature gauge in a Cessna 172N? [6]",
+      "options": [
+        "100°F to 220°F",
+        "100°F to 245°F",
+        "120°F to 250°F",
+        "90°F to 230°F"
+      ],
+      "correct_answer": "100°F to 245°F"
+    },
+    {
+      "question_number": 21,
+      "question_text": "What is the maximum allowable oil pressure in a Cessna 172N? [1]",
+      "options": [
+        "90 psi",
+        "115 psi",
+        "110 psi",
+        "100 psi"
+      ],
+      "correct_answer": "100 psi"
+    },
+    {
+      "question_number": 22,
+      "question_text": "What is the minimum allowable oil pressure in a Cessna 172N? [1]",
+      "options": [
+        "25 psi",
+        "20 psi",
+        "30 psi",
+        "35 psi"
+      ],
+      "correct_answer": "25 psi"
+    },
+    {
+      "question_number": 23,
+      "question_text": "What is the maneuvering speed (Va) for a Cessna 172M at 2300 lbs? [3]",
+      "options": [
+        "85 KIAS",
+        "105 KIAS",
+        "97 KIAS",
+        "112 KIAS"
+      ],
+      "correct_answer": "97 KIAS"
+    },
+    {
+      "question_number": 24,
+      "question_text": "What is the best glide speed for a Cessna 172N at gross weight with flaps up?",
+      "options": [
+        "60 KIAS",
+        "75 KIAS",
+        "65 KIAS",
+        "70 KIAS"
+      ],
+      "correct_answer": "65 KIAS"
+    },
+    {
+      "question_number": 25,
+      "question_text": "During a pre-flight check, where are the fuel tank sumps located for draining?",
+      "options": [
+        "Under the engine cowling only",
+        "At the wing tips",
+        "Under each wing, near the fuselage",
+        "Inside the cabin, under the seats"
+      ],
+      "correct_answer": "Under each wing, near the fuselage"
+    },
+    {
+      "question_number": 26,
+      "question_text": "What is the recommended action regarding the fuel selector valve position when refueling a Cessna 172 to ensure maximum capacity? [18]",
+      "options": [
+        "Place the selector on BOTH",
+        "Place the selector on OFF",
+        "Place the selector in either LEFT or RIGHT position",
+        "The selector position does not affect refueling"
+      ],
+      "correct_answer": "Place the selector in either LEFT or RIGHT position"
+    },
+    {
+      "question_number": 27,
+      "question_text": "What is the maximum demonstrated crosswind component for the Cessna 172? [15]",
+      "options": [
+        "12 knots",
+        "20 knots",
+        "17 knots",
+        "15 knots"
+      ],
+      "correct_answer": "15 knots"
+    },
+    {
+      "question_number": 28,
+      "question_text": "The electrical system in a 1978 Cessna 172N is a:",
+      "options": [
+        "14-volt system",
+        "12-volt system",
+        "28-volt system",
+        "24-volt system"
+      ],
+      "correct_answer": "28-volt system"
+    },
+    {
+      "question_number": 29,
+      "question_text": "What is the amperage of the alternator in a standard Cessna 172N? [20]",
+      "options": [
+        "50-amp",
+        "70-amp",
+        "60-amp",
+        "40-amp"
+      ],
+      "correct_answer": "60-amp"
+    },
+    {
+      "question_number": 30,
+      "question_text": "In a Cessna 172, what is the primary purpose of the fuel selector valve's 'BOTH' position? [18]",
+      "options": [
+        "Reserved for cruising flight only",
+        "For takeoff, climb, landing, and maneuvers",
+        "Used only for refueling",
+        "Used to balance fuel load in cruise"
+      ],
+      "correct_answer": "For takeoff, climb, landing, and maneuvers"
+    },
+    {
+      "question_number": 31,
+      "question_text": "What is the first step in the POH checklist for an engine fire during start on the ground?",
+      "options": [
+        "Mixture to Idle Cut-Off",
+        "Continue Cranking",
+        "Throttle to Full Open",
+        "Master Switch OFF"
+      ],
+      "correct_answer": "Continue Cranking"
+    },
+    {
+      "question_number": 32,
+      "question_text": "In the event of an engine failure in flight, what is the first recommended action in the POH?",
+      "options": [
+        "Establish best glide speed (65 KIAS)",
+        "Turn on carburetor heat",
+        "Switch fuel tanks",
+        "Check magnetos"
+      ],
+      "correct_answer": "Establish best glide speed (65 KIAS)"
+    },
+    {
+      "question_number": 33,
+      "question_text": "What is the recommended flap setting for a short-field takeoff?",
+      "options": [
+        "0 degrees",
+        "10 degrees",
+        "20 degrees",
+        "30 degrees"
+      ],
+      "correct_answer": "10 degrees"
+    },
+    {
+      "question_number": 34,
+      "question_text": "For a normal landing in a Cessna 172, what is the typical final approach speed with full flaps? [24]",
+      "options": [
+        "70-80 KIAS",
+        "55-65 KIAS",
+        "80-90 KIAS",
+        "65-75 KIAS"
+      ],
+      "correct_answer": "55-65 KIAS"
+    },
+    {
+      "question_number": 35,
+      "question_text": "What does a continuous discharge shown on the ammeter during flight indicate?",
+      "options": [
+        "Normal engine operation",
+        "The battery is charging correctly",
+        "Alternator malfunction",
+        "The pitot heat is on"
+      ],
+      "correct_answer": "Alternator malfunction"
+    },
+    {
+      "question_number": 36,
+      "question_text": "What is the normal operating range for the suction gauge in a Cessna 172N? [14]",
+      "options": [
+        "3.0 to 4.5 inches of mercury",
+        "4.5 to 5.4 inches of mercury",
+        "5.5 to 6.5 inches of mercury",
+        "2.5 to 4.0 inches of mercury"
+      ],
+      "correct_answer": "4.5 to 5.4 inches of mercury"
+    },
+    {
+      "question_number": 37,
+      "question_text": "If you experience a vacuum system failure in IMC, which two instruments will become unreliable? [2]",
+      "options": [
+        "Airspeed Indicator and Altimeter",
+        "Turn Coordinator and Vertical Speed Indicator",
+        "Attitude Indicator and Directional Gyro",
+        "Tachometer and Manifold Pressure Gauge"
+      ],
+      "correct_answer": "Attitude Indicator and Directional Gyro"
+    },
+    {
+      "question_number": 38,
+      "question_text": "What is the purpose of the carburetor heat control?",
+      "options": [
+        "To increase engine power during takeoff",
+        "To prevent or melt carburetor ice",
+        "To lean the fuel-air mixture at high altitudes",
+        "To cool the engine during prolonged climbs"
+      ],
+      "correct_answer": "To prevent or melt carburetor ice"
+    },
+    {
+      "question_number": 39,
+      "question_text": "When applying carburetor heat, what effect should be observed on the engine's RPM?",
+      "options": [
+        "A slight increase in RPM",
+        "No change in RPM",
+        "A slight decrease in RPM",
+        "A rapid increase in RPM"
+      ],
+      "correct_answer": "A slight decrease in RPM"
+    },
+    {
+      "question_number": 40,
+      "question_text": "What is the maximum RPM drop allowed during a magneto check at 1700 RPM? [24]",
+      "options": [
+        "100 RPM",
+        "175 RPM",
+        "150 RPM",
+        "125 RPM"
+      ],
+      "correct_answer": "125 RPM"
+    },
+    {
+      "question_number": 41,
+      "question_text": "What is the maximum allowable RPM differential between the left and right magnetos during a run-up check? [24]",
+      "options": [
+        "75 RPM",
+        "50 RPM",
+        "100 RPM",
+        "25 RPM"
+      ],
+      "correct_answer": "50 RPM"
+    },
+    {
+      "question_number": 42,
+      "question_text": "How is venting for the fuel system primarily accomplished in a Cessna 172M? [18]",
+      "options": [
+        "Both fuel caps are vented",
+        "A vent line from the left tank and a vented right fuel cap",
+        "A single vent tube under the fuselage",
+        "Through the fuel selector valve"
+      ],
+      "correct_answer": "A vent line from the left tank and a vented right fuel cap"
+    },
+    {
+      "question_number": 43,
+      "question_text": "What type of propeller is standard on a Cessna 172M/N? [1, 2]",
+      "options": [
+        "Constant-speed, 3-blade",
+        "Fixed-pitch, 2-blade",
+        "Variable-pitch, 2-blade",
+        "Ground-adjustable, 3-blade"
+      ],
+      "correct_answer": "Fixed-pitch, 2-blade"
+    },
+    {
+      "question_number": 44,
+      "question_text": "What is the wing area of a Cessna 172M/N? [2, 4]",
+      "options": [
+        "160 square feet",
+        "174 square feet",
+        "180 square feet",
+        "152 square feet"
+      ],
+      "correct_answer": "174 square feet"
+    },
+    {
+      "question_number": 45,
+      "question_text": "In the event of an electrical fire in flight (smoke in cabin), what is the POH-recommended first action after shutting off the master switch?",
+      "options": [
+        "Open cabin vents",
+        "Use the fire extinguisher",
+        "Close all vents and cabin heat",
+        "Descend immediately"
+      ],
+      "correct_answer": "Close all vents and cabin heat"
+    },
+    {
+      "question_number": 46,
+      "question_text": "What is the recommended entry speed for a steep turn?",
+      "options": [
+        "110 KIAS",
+        "85 KIAS",
+        "95 KIAS",
+        "100 KIAS"
+      ],
+      "correct_answer": "95 KIAS"
+    },
+    {
+      "question_number": 47,
+      "question_text": "What is the flap setting for a balked landing (go-around)? [32]",
+      "options": [
+        "Retract to 10°",
+        "Retract to 20°",
+        "Retract to 0° immediately",
+        "Maintain full flaps"
+      ],
+      "correct_answer": "Retract to 20°"
+    },
+    {
+      "question_number": 48,
+      "question_text": "The stall warning horn is designed to activate at what speed range above the actual stall?",
+      "options": [
+        "1-3 knots",
+        "10-15 knots",
+        "5-10 knots",
+        "2-4 knots"
+      ],
+      "correct_answer": "5-10 knots"
+    },
+    {
+      "question_number": 49,
+      "question_text": "What is the definition of 'Reference Datum' in the context of weight and balance? [13]",
+      "options": [
+        "The center of the main landing gear",
+        "The tip of the propeller spinner",
+        "An imaginary vertical plane from which all horizontal distances are measured",
+        "The rearmost point of the aircraft fuselage"
+      ],
+      "correct_answer": "An imaginary vertical plane from which all horizontal distances are measured"
+    },
+    {
+      "question_number": 50,
+      "question_text": "What is the maximum load factor (flaps up) for a Cessna 172N in the Normal Category? [27]",
+      "options": [
+        "+4.4g, -1.76g",
+        "+3.8g, -1.52g",
+        "+3.0g, 0g",
+        "+2.5g, -1.0g"
+      ],
+      "correct_answer": "+3.8g, -1.52g"
+    },
+    {
+      "question_number": 51,
+      "question_text": "What is the maximum load factor (flaps up) for a Cessna 172N in the Utility Category? [27]",
+      "options": [
+        "+3.8g, -1.52g",
+        "+3.0g, -1.52g",
+        "+4.4g, -1.76g",
+        "+5.0g, -2.0g"
+      ],
+      "correct_answer": "+4.4g, -1.76g"
+    },
+    {
+      "question_number": 52,
+      "question_text": "What is the maximum load factor with flaps fully extended in both Normal and Utility categories? [27]",
+      "options": [
+        "+3.8g",
+        "+4.4g",
+        "+2.5g",
+        "+3.0g"
+      ],
+      "correct_answer": "+3.0g"
+    },
+    {
+      "question_number": 53,
+      "question_text": "According to the POH, what action should be taken if the oil temperature exceeds the maximum (red line) during flight?",
+      "options": [
+        "Increase airspeed and reduce power",
+        "Land as soon as possible to investigate",
+        "Lean the mixture to cool the engine",
+        "Climb to a higher altitude"
+      ],
+      "correct_answer": "Land as soon as possible to investigate"
+    },
+    {
+      "question_number": 54,
+      "question_text": "What is the purpose of the fuel strainer drain?",
+      "options": [
+        "To check for proper fuel octane",
+        "To remove any water and sediment from the fuel system",
+        "To measure fuel quantity",
+        "To vent the fuel tanks"
+      ],
+      "correct_answer": "To remove any water and sediment from the fuel system"
+    },
+    {
+      "question_number": 55,
+      "question_text": "How many fuel sumps are there to be drained during a preflight on a standard Cessna 172M/N?",
+      "options": [
+        "One, at the lowest point of the fuselage",
+        "Two, one under each wing root",
+        "Three, one under each wing tank and one for the fuel strainer",
+        "Five, two under each wing and one for the fuel strainer"
+      ],
+      "correct_answer": "Five, two under each wing and one for the fuel strainer"
+    },
+    {
+      "question_number": 56,
+      "question_text": "What type of landing gear does the Cessna 172 have? [7]",
+      "options": [
+        "Conventional gear with a tailwheel",
+        "Tandem landing gear",
+        "Retractable tricycle gear",
+        "Fixed tricycle gear"
+      ],
+      "correct_answer": "Fixed tricycle gear"
+    },
+    {
+      "question_number": 57,
+      "question_text": "How are the brakes actuated on a Cessna 172? [18]",
+      "options": [
+        "Electrically via a switch on the yoke",
+        "Pneumatically via rudder pedal pressure",
+        "Hydraulically via master cylinders connected to the pilot's rudder pedals",
+        "Mechanically via cables connected to a hand lever"
+      ],
+      "correct_answer": "Hydraulically via master cylinders connected to the pilot's rudder pedals"
+    },
+    {
+      "question_number": 58,
+      "question_text": "What is the function of the mixture control?",
+      "options": [
+        "To control the amount of air entering the carburetor",
+        "To control the fuel-to-air ratio entering the cylinders",
+        "To select which fuel tank is being used",
+        "To prime the engine before starting"
+      ],
+      "correct_answer": "To control the fuel-to-air ratio entering the cylinders"
+    },
+    {
+      "question_number": 59,
+      "question_text": "Leaning the mixture during cruise flight at altitude results in:",
+      "options": [
+        "Increased fuel consumption and lower engine temperatures",
+        "Decreased fuel consumption and higher engine temperatures",
+        "Better engine cooling and increased power",
+        "Lower fuel consumption and optimal engine performance"
+      ],
+      "correct_answer": "Lower fuel consumption and optimal engine performance"
+    },
+    {
+      "question_number": 60,
+      "question_text": "What is the static RPM range for a Cessna 172N during a full-throttle run-up? [1]",
+      "options": [
+        "2000 to 2150 RPM",
+        "2280 to 2400 RPM",
+        "2500 to 2600 RPM",
+        "1800 to 1950 RPM"
+      ],
+      "correct_answer": "2280 to 2400 RPM"
+    },
+    {
+      "question_number": 61,
+      "question_text": "What is the procedure for executing a 180° turn in clouds after an inadvertent entry, assuming a vacuum system failure? [6]",
+      "options": [
+        "Make a steep, 45-degree bank turn using the turn coordinator",
+        "Make a standard rate turn using the turn coordinator for 60 seconds",
+        "Make a shallow, 10-degree bank turn using the attitude indicator",
+        "Climb rapidly while turning"
+      ],
+      "correct_answer": "Make a standard rate turn using the turn coordinator for 60 seconds"
+    },
+    {
+      "question_number": 62,
+      "question_text": "If the alternate static source is used, what effect does this have on the airspeed indicator and altimeter readings?",
+      "options": [
+        "Both will read lower than actual",
+        "Both will read higher than actual",
+        "Airspeed will read higher, altimeter will read lower",
+        "Airspeed and altimeter will be unaffected"
+      ],
+      "correct_answer": "Both will read higher than actual"
+    },
+    {
+      "question_number": 63,
+      "question_text": "What is the purpose of the manual primer? [18]",
+      "options": [
+        "To inject fuel directly into the fuel strainer for cleaning",
+        "To inject fuel directly into the cylinder intake ports for starting",
+        "To add oil to the fuel for lubrication",
+        "To remove air from the fuel lines"
+      ],
+      "correct_answer": "To inject fuel directly into the cylinder intake ports for starting"
+    },
+    {
+      "question_number": 64,
+      "question_text": "What is the recommended action if a landing must be made with a flat main tire?",
+      "options": [
+        "Land on the side of the runway corresponding to the good tire",
+        "Land at a higher than normal speed",
+        "Land with full flaps and hold the nose wheel off as long as possible",
+        "Land with no flaps to minimize wing loading"
+      ],
+      "correct_answer": "Land on the side of the runway corresponding to the good tire"
+    },
+    {
+      "question_number": 65,
+      "question_text": "What is the recommended procedure for a soft-field takeoff?",
+      "options": [
+        "Use 20 degrees of flaps and keep the nose wheel on the ground as long as possible",
+        "Use 10 degrees of flaps, hold full back pressure, and lift off at the lowest possible airspeed",
+        "Use no flaps and perform a high-speed taxi before rotation",
+        "Use full flaps and climb at Vx"
+      ],
+      "correct_answer": "Use 10 degrees of flaps, hold full back pressure, and lift off at the lowest possible airspeed"
+    },
+    {
+      "question_number": 66,
+      "question_text": "What is the recommended procedure for a soft-field landing?",
+      "options": [
+        "Land at a higher speed to ensure positive control",
+        "Use minimal flaps and land flat",
+        "Use full flaps, land at the slowest possible airspeed, and keep the nose wheel off the ground as long as possible",
+        "Apply brakes immediately upon touchdown to minimize rollout"
+      ],
+      "correct_answer": "Use full flaps, land at the slowest possible airspeed, and keep the nose wheel off the ground as long as possible"
+    },
+    {
+      "question_number": 67,
+      "question_text": "What is the significance of the yellow arc on the airspeed indicator? [3]",
+      "options": [
+        "Normal operating range",
+        "Flap operating range",
+        "Maneuvering speed range",
+        "Structural caution range, for smooth air only"
+      ],
+      "correct_answer": "Structural caution range, for smooth air only"
+    },
+    {
+      "question_number": 68,
+      "question_text": "What is the total fuel capacity (not usable) of a Cessna 172N with standard tanks? [1]",
+      "options": [
+        "40 gallons",
+        "43 gallons",
+        "42 gallons",
+        "45 gallons"
+      ],
+      "correct_answer": "43 gallons"
+    },
+    {
+      "question_number": 69,
+      "question_text": "What is the total fuel capacity (not usable) of a Cessna 172M with long-range tanks? [3]",
+      "options": [
+        "48 gallons",
+        "50 gallons",
+        "52 gallons",
+        "54 gallons"
+      ],
+      "correct_answer": "52 gallons"
+    },
+    {
+      "question_number": 70,
+      "question_text": "What is the first action in the 'Securing Aircraft' checklist after landing? [32]",
+      "options": [
+        "Turn off radios",
+        "Set the parking brake",
+        "Install control lock",
+        "Mixture to idle cut-off"
+      ],
+      "correct_answer": "Set the parking brake"
+    },
+    {
+      "question_number": 71,
+      "question_text": "In a Cessna 172N, if the ammeter shows a continuous charge of more than two needle widths while in flight, what is the likely problem?",
+      "options": [
+        "The battery is low and charging normally",
+        "An over-voltage condition",
+        "The alternator has failed",
+        "Normal operation with electrical equipment on"
+      ],
+      "correct_answer": "An over-voltage condition"
+    },
+    {
+      "question_number": 72,
+      "question_text": "What is the procedure for an emergency descent as recommended by the POH?",
+      "options": [
+        "Throttle idle, mixture rich, flaps as required, and a steep bank up to 45 degrees",
+        "Throttle full, mixture full rich, flaps up, and a shallow dive",
+        "Throttle idle, mixture idle cut-off, flaps full, and a straight-ahead descent",
+        "Throttle idle, flaps up, and maintain Vne in a steep descent"
+      ],
+      "correct_answer": "Throttle idle, mixture rich, flaps as required, and a steep bank up to 45 degrees"
+    },
+    {
+      "question_number": 73,
+      "question_text": "What is the primary flight control surface for initiating a turn?",
+      "options": [
+        "Rudder",
+        "Elevator",
+        "Ailerons",
+        "Flaps"
+      ],
+      "correct_answer": "Ailerons"
+    },
+    {
+      "question_number": 74,
+      "question_text": "What is the purpose of the rudder during a turn?",
+      "options": [
+        "To increase the rate of turn",
+        "To decrease the bank angle",
+        "To counteract adverse yaw and coordinate the turn",
+        "To control the aircraft's pitch"
+      ],
+      "correct_answer": "To counteract adverse yaw and coordinate the turn"
+    },
+    {
+      "question_number": 75,
+      "question_text": "What is the maximum combined weight capacity for baggage area 1 (station 82-108) and area 2 (station 108-142) in a Cessna 172N? [4]",
+      "options": [
+        "150 lbs",
+        "120 lbs",
+        "170 lbs",
+        "100 lbs"
+      ],
+      "correct_answer": "120 lbs"
+    },
+    {
+      "question_number": 76,
+      "question_text": "What is the maximum weight allowed in baggage area 2 (the extended rear area) alone? [4]",
+      "options": [
+        "120 lbs",
+        "70 lbs",
+        "50 lbs",
+        "80 lbs"
+      ],
+      "correct_answer": "50 lbs"
+    },
+    {
+      "question_number": 77,
+      "question_text": "What is the correct procedure if an engine fire develops in flight?",
+      "options": [
+        "Increase airspeed to blow out the fire, then land immediately",
+        "Shut off fuel, turn off master switch, close vents, and perform an emergency descent",
+        "Descend to a lower altitude and enrich the mixture",
+        "Turn on carburetor heat and open the cowl flaps"
+      ],
+      "correct_answer": "Shut off fuel, turn off master switch, close vents, and perform an emergency descent"
+    },
+    {
+      "question_number": 78,
+      "question_text": "How is the wing flap system operated in a Cessna 172M/N? [7]",
+      "options": [
+        "Manually via a lever between the seats",
+        "Electrically via a switch on the instrument panel",
+        "Hydraulically via a pump handle",
+        "Pneumatically using bleed air from the engine"
+      ],
+      "correct_answer": "Electrically via a switch on the instrument panel"
+    },
+    {
+      "question_number": 79,
+      "question_text": "What is the maximum flap setting available on a Cessna 172M?",
+      "options": [
+        "30 degrees",
+        "20 degrees",
+        "40 degrees",
+        "35 degrees"
+      ],
+      "correct_answer": "40 degrees"
+    },
+    {
+      "question_number": 80,
+      "question_text": "What is the maximum flap setting available on a later model Cessna 172N (1979 onwards)?",
+      "options": [
+        "40 degrees",
+        "30 degrees",
+        "25 degrees",
+        "35 degrees"
+      ],
+      "correct_answer": "30 degrees"
+    },
+    {
+      "question_number": 81,
+      "question_text": "What is the primary source of cabin heat in a Cessna 172?",
+      "options": [
+        "An electric heating element",
+        "A shroud around the engine exhaust muffler",
+        "Bleed air from the vacuum pump",
+        "A combustion heater in the tail cone"
+      ],
+      "correct_answer": "A shroud around the engine exhaust muffler"
+    },
+    {
+      "question_number": 82,
+      "question_text": "What is a potential hazard associated with using cabin heat?",
+      "options": [
+        "Engine overheating",
+        "Electrical system overload",
+        "Carbon monoxide poisoning if the exhaust shroud is cracked",
+        "Depressurization of the cabin"
+      ],
+      "correct_answer": "Carbon monoxide poisoning if the exhaust shroud is cracked"
+    },
+    {
+      "question_number": 83,
+      "question_text": "What is the purpose of the pitot tube?",
+      "options": [
+        "To measure static air pressure for the altimeter",
+        "To measure ram air pressure for the airspeed indicator",
+        "To provide ventilation for the cabin",
+        "To measure outside air temperature"
+      ],
+      "correct_answer": "To measure ram air pressure for the airspeed indicator"
+    },
+    {
+      "question_number": 84,
+      "question_text": "What is the purpose of the static port?",
+      "options": [
+        "To measure ram air pressure",
+        "To relieve excess cabin pressure",
+        "To provide a source of undisturbed ambient air pressure for the altimeter, VSI, and airspeed indicator",
+        "To drain moisture from the instrument lines"
+      ],
+      "correct_answer": "To provide a source of undisturbed ambient air pressure for the altimeter, VSI, and airspeed indicator"
+    },
+    {
+      "question_number": 85,
+      "question_text": "If the pitot tube becomes blocked but the static port remains clear, which instrument will be affected and how?",
+      "options": [
+        "The altimeter will freeze at the altitude of the blockage",
+        "The airspeed indicator will act like an altimeter, reading higher in a climb and lower in a descent",
+        "The vertical speed indicator will show a constant climb",
+        "The airspeed indicator will drop to zero"
+      ],
+      "correct_answer": "The airspeed indicator will act like an altimeter, reading higher in a climb and lower in a descent"
+    },
+    {
+      "question_number": 86,
+      "question_text": "If the static port becomes blocked, which instruments will give inaccurate readings?",
+      "options": [
+        "Airspeed indicator, attitude indicator, and directional gyro",
+        "Airspeed indicator, altimeter, and vertical speed indicator",
+        "Tachometer, oil pressure gauge, and fuel gauges",
+        "Turn coordinator and magnetic compass"
+      ],
+      "correct_answer": "Airspeed indicator, altimeter, and vertical speed indicator"
+    },
+    {
+      "question_number": 87,
+      "question_text": "What is the recommended action if you suspect carburetor ice is forming?",
+      "options": [
+        "Immediately apply full carburetor heat",
+        "Lean the mixture and increase power",
+        "Descend to a lower, warmer altitude",
+        "Turn on the pitot heat"
+      ],
+      "correct_answer": "Immediately apply full carburetor heat"
+    },
+    {
+      "question_number": 88,
+      "question_text": "What is the definition of 'Arm' in weight and balance calculations? [13]",
+      "options": [
+        "The weight of an object multiplied by its distance from the datum",
+        "The total weight of the aircraft",
+        "The horizontal distance from the reference datum to the center of gravity of an item",
+        "The location of the center of gravity"
+      ],
+      "correct_answer": "The horizontal distance from the reference datum to the center of gravity of an item"
+    },
+    {
+      "question_number": 89,
+      "question_text": "What is the definition of 'Moment' in weight and balance calculations? [13]",
+      "options": [
+        "The total empty weight of the aircraft",
+        "The product of the weight of an item multiplied by its arm",
+        "The distance from the datum to the CG",
+        "The maximum allowable weight"
+      ],
+      "correct_answer": "The product of the weight of an item multiplied by its arm"
+    },
+    {
+      "question_number": 90,
+      "question_text": "An aircraft loaded with a center of gravity that is too far aft will exhibit what flight characteristics?",
+      "options": [
+        "Difficulty in raising the nose for takeoff and landing",
+        "Increased longitudinal stability and slow cruise speeds",
+        "Instability, making it difficult to recover from a stall",
+        "A tendency to nose-dive"
+      ],
+      "correct_answer": "Instability, making it difficult to recover from a stall"
+    },
+    {
+      "question_number": 91,
+      "question_text": "An aircraft loaded with a center of gravity that is too far forward will exhibit what flight characteristics?",
+      "options": [
+        "Very easy to flare for landing",
+        "Reduced stall speed",
+        "Difficulty in raising the nose, especially during takeoff and landing",
+        "Poor stall recovery"
+      ],
+      "correct_answer": "Difficulty in raising the nose, especially during takeoff and landing"
+    },
+    {
+      "question_number": 92,
+      "question_text": "What is the effect of high density altitude on takeoff performance? [22]",
+      "options": [
+        "Shorter takeoff roll and increased climb rate",
+        "Longer takeoff roll and reduced climb rate",
+        "No effect on takeoff performance",
+        "Shorter takeoff roll and reduced climb rate"
+      ],
+      "correct_answer": "Longer takeoff roll and reduced climb rate"
+    },
+    {
+      "question_number": 93,
+      "question_text": "According to the POH, how should takeoff distance be adjusted for operation on a dry, grass runway? [30]",
+      "options": [
+        "Decrease distance by 10%",
+        "Increase distance by 15% of the 'ground roll' figure",
+        "No adjustment is necessary",
+        "Increase distance by 30% of the total distance over a 50-ft obstacle"
+      ],
+      "correct_answer": "Increase distance by 15% of the 'ground roll' figure"
+    },
+    {
+      "question_number": 94,
+      "question_text": "What is the procedure for recovering from a spin?",
+      "options": [
+        "Power to full, ailerons neutral, full rudder opposite spin, and elevator forward",
+        "Power to idle, ailerons with the spin, rudder neutral, and elevator back",
+        "Power to idle, ailerons neutral, full rudder opposite spin, and elevator control forward to break the stall",
+        "Power to full, flaps to 20 degrees, and pull back firmly on the elevator"
+      ],
+      "correct_answer": "Power to idle, ailerons neutral, full rudder opposite spin, and elevator control forward to break the stall"
+    },
+    {
+      "question_number": 95,
+      "question_text": "Are intentional spins permitted in a Cessna 172N when operating in the Normal Category?",
+      "options": [
+        "Yes, with any flap setting",
+        "No, spins are prohibited",
+        "Yes, but only with flaps retracted",
+        "Only if the aircraft is below 2000 lbs"
+      ],
+      "correct_answer": "No, spins are prohibited"
+    },
+    {
+      "question_number": 96,
+      "question_text": "Intentional spins are only permitted when the aircraft is in which category?",
+      "options": [
+        "Normal Category",
+        "Transport Category",
+        "Acrobatic Category",
+        "Utility Category"
+      ],
+      "correct_answer": "Utility Category"
+    },
+    {
+      "question_number": 97,
+      "question_text": "What is the purpose of the elevator trim?",
+      "options": [
+        "To move the elevator directly for pitch control",
+        "To relieve control pressures and maintain a desired pitch attitude",
+        "To assist in banking the aircraft",
+        "To counteract engine torque"
+      ],
+      "correct_answer": "To relieve control pressures and maintain a desired pitch attitude"
+    },
+    {
+      "question_number": 98,
+      "question_text": "During a preflight, you notice the stall warning opening is blocked. What is the consequence?",
+      "options": [
+        "The stall warning horn will sound continuously",
+        "The airspeed indicator will be inaccurate",
+        "The stall warning system will be inoperative",
+        "The altimeter will freeze"
+      ],
+      "correct_answer": "The stall warning system will be inoperative"
+    },
+    {
+      "question_number": 99,
+      "question_text": "What is the source of power for the stall warning horn?",
+      "options": [
+        "Vacuum system",
+        "Aircraft electrical system",
+        "Ram air pressure",
+        "A self-contained battery"
+      ],
+      "correct_answer": "Aircraft electrical system"
+    },
+    {
+      "question_number": 100,
+      "question_text": "What is the correct response to a 'LOW VOLTAGE' annunciation in flight?",
+      "options": [
+        "Turn on all electrical equipment to increase the load",
+        "Turn off the alternator, reduce electrical load, and land as soon as practical",
+        "Cycle the master switch several times",
+        "Ignore it unless the battery dies"
+      ],
+      "correct_answer": "Turn off the alternator, reduce electrical load, and land as soon as practical"
+    },
+    {
+      "question_number": 101,
+      "question_text": "What is the flap operating range (white arc) for a Cessna 172M? [3]",
+      "options": [
+        "47-128 KIAS",
+        "41-85 KIAS",
+        "50-100 KIAS",
+        "44-87 KIAS"
+      ],
+      "correct_answer": "41-85 KIAS"
+    },
+    {
+      "question_number": 102,
+      "question_text": "What is the normal operating range (green arc) for a Cessna 172M? [3]",
+      "options": [
+        "41-85 KIAS",
+        "50-120 KIAS",
+        "47-128 KIAS",
+        "55-130 KIAS"
+      ],
+      "correct_answer": "47-128 KIAS"
+    },
+    {
+      "question_number": 103,
+      "question_text": "What is the caution range (yellow arc) for a Cessna 172M/N? [3]",
+      "options": [
+        "120-150 KIAS",
+        "128-160 KIAS",
+        "110-158 KIAS",
+        "130-165 KIAS"
+      ],
+      "correct_answer": "128-160 KIAS"
+    },
+    {
+      "question_number": 104,
+      "question_text": "What is the best rate of climb speed (Vy) at sea level for a Cessna 172N?",
+      "options": [
+        "65 KIAS",
+        "73 KIAS",
+        "80 KIAS",
+        "60 KIAS"
+      ],
+      "correct_answer": "73 KIAS"
+    },
+    {
+      "question_number": 105,
+      "question_text": "What is the best angle of climb speed (Vx) at sea level for a Cessna 172N?",
+      "options": [
+        "73 KIAS",
+        "65 KIAS",
+        "59 KIAS",
+        "70 KIAS"
+      ],
+      "correct_answer": "59 KIAS"
+    },
+    {
+      "question_number": 106,
+      "question_text": "If a landing with flaps up is necessary, how should the approach speed be adjusted? [22]",
+      "options": [
+        "Decrease by 5 KIAS",
+        "Increase by 9 KIAS",
+        "Keep the same speed as a normal landing",
+        "Increase by 20 KIAS"
+      ],
+      "correct_answer": "Increase by 9 KIAS"
+    },
+    {
+      "question_number": 107,
+      "question_text": "What is the service ceiling of a Cessna 172N? [11]",
+      "options": [
+        "12,500 feet",
+        "14,200 feet",
+        "15,000 feet",
+        "13,100 feet"
+      ],
+      "correct_answer": "14,200 feet"
+    },
+    {
+      "question_number": 108,
+      "question_text": "What is the primary difference between Vs1 and Vso?",
+      "options": [
+        "Vs1 is the stall speed with flaps up, Vso is with flaps down",
+        "Vs1 is the stall speed at gross weight, Vso is at minimum weight",
+        "Vs1 is the stall speed in a turn, Vso is in level flight",
+        "Vs1 is the stall speed with power on, Vso is with power off"
+      ],
+      "correct_answer": "Vs1 is the stall speed with flaps up, Vso is with flaps down"
+    },
+    {
+      "question_number": 109,
+      "question_text": "What is the power source for the magnetos?",
+      "options": [
+        "The aircraft's main battery",
+        "The aircraft's alternator",
+        "They are engine-driven and self-contained, requiring no external electrical power",
+        "A separate, dedicated generator"
+      ],
+      "correct_answer": "They are engine-driven and self-contained, requiring no external electrical power"
+    },
+    {
+      "question_number": 110,
+      "question_text": "Why is it important to check that the ignition switch is OFF during the pre-flight inspection?",
+      "options": [
+        "To prevent draining the battery",
+        "To prevent accidental starting of the engine if the propeller is moved",
+        "To allow the GPS to acquire satellites",
+        "To reset the electrical system"
+      ],
+      "correct_answer": "To prevent accidental starting of the engine if the propeller is moved"
+    },
+    {
+      "question_number": 111,
+      "question_text": "What is the purpose of the 'Master Switch'?",
+      "options": [
+        "It only controls the ignition system",
+        "It controls all the lights on the aircraft",
+        "It is a split switch that controls the main battery and the alternator",
+        "It only controls the avionics"
+      ],
+      "correct_answer": "It is a split switch that controls the main battery and the alternator"
+    },
+    {
+      "question_number": 112,
+      "question_text": "What is the correct procedure for starting the engine in a standard Cessna 172?",
+      "options": [
+        "Mixture full rich, throttle closed, crank engine",
+        "Mixture idle cut-off, throttle open 1/4 inch, crank engine, then advance mixture",
+        "Mixture full rich, throttle open 1/4 to 1/8 inch, prime as required, then crank engine",
+        "Mixture half, throttle full, crank engine"
+      ],
+      "correct_answer": "Mixture full rich, throttle open 1/4 to 1/8 inch, prime as required, then crank engine"
+    },
+    {
+      "question_number": 113,
+      "question_text": "What is the indication of a failed alternator?",
+      "options": [
+        "A positive reading on the ammeter",
+        "A negative (discharge) reading on the ammeter and a 'LOW VOLTAGE' annunciator light",
+        "The engine RPM will decrease significantly",
+        "All lights will immediately extinguish"
+      ],
+      "correct_answer": "A negative (discharge) reading on the ammeter and a 'LOW VOLTAGE' annunciator light"
+    },
+    {
+      "question_number": 114,
+      "question_text": "How long can the battery be expected to supply power to essential equipment after an alternator failure? [21]",
+      "options": [
+        "Approximately 10 minutes",
+        "Approximately 30 minutes",
+        "Approximately 1 hour",
+        "Approximately 2 hours"
+      ],
+      "correct_answer": "Approximately 30 minutes"
+    },
+    {
+      "question_number": 115,
+      "question_text": "What is the purpose of the circuit breakers in the electrical system?",
+      "options": [
+        "To act as on/off switches for all equipment",
+        "To protect electrical circuits from overloads",
+        "To regulate voltage from the alternator",
+        "To increase the amperage to certain components"
+      ],
+      "correct_answer": "To protect electrical circuits from overloads"
+    },
+    {
+      "question_number": 116,
+      "question_text": "If a circuit breaker pops in flight, what is the recommended procedure?",
+      "options": [
+        "Reset it immediately and continue to do so if it pops again",
+        "Leave it out for the remainder of the flight",
+        "Wait a few minutes for it to cool, then reset it once. If it pops again, do not reset.",
+        "Land immediately at the nearest airport"
+      ],
+      "correct_answer": "Wait a few minutes for it to cool, then reset it once. If it pops again, do not reset."
+    },
+    {
+      "question_number": 117,
+      "question_text": "What is the tire pressure for the main wheels on a Cessna 172? [24]",
+      "options": [
+        "25 psi",
+        "35 psi",
+        "29 psi",
+        "40 psi"
+      ],
+      "correct_answer": "29 psi"
+    },
+    {
+      "question_number": 118,
+      "question_text": "What is the tire pressure for the nose wheel on a Cessna 172? [24]",
+      "options": [
+        "29 psi",
+        "31 psi",
+        "35 psi",
+        "28 psi"
+      ],
+      "correct_answer": "31 psi"
+    },
+    {
+      "question_number": 119,
+      "question_text": "What is the primary method of steering the aircraft during taxi?",
+      "options": [
+        "Using the ailerons",
+        "Using the rudder pedals to control the nosewheel, supplemented by differential braking",
+        "Using differential braking only",
+        "Using the elevator to lift the nosewheel"
+      ],
+      "correct_answer": "Using the rudder pedals to control the nosewheel, supplemented by differential braking"
+    },
+    {
+      "question_number": 120,
+      "question_text": "What is the purpose of the oil breather line?",
+      "options": [
+        "To add oil to the engine",
+        "To check the oil level",
+        "To vent excess pressure from the crankcase",
+        "To cool the oil"
+      ],
+      "correct_answer": "To vent excess pressure from the crankcase"
+    },
+    {
+      "question_number": 121,
+      "question_text": "What is the minimum turning radius of a Cessna 172M/N? [4]",
+      "options": [
+        "25' 6\"",
+        "30' 2\"",
+        "27' 5.5\"",
+        "22' 8\""
+      ],
+      "correct_answer": "27' 5.5\""
+    },
+    {
+      "question_number": 122,
+      "question_text": "What is the wingspan of a Cessna 172M/N? [23]",
+      "options": [
+        "32.5 feet",
+        "35.83 feet",
+        "36.1 feet",
+        "34.0 feet"
+      ],
+      "correct_answer": "35.83 feet"
+    },
+    {
+      "question_number": 123,
+      "question_text": "What is the recommended oil type for a Cessna 172N after the initial break-in period? [1]",
+      "options": [
+        "MIL-L-6082 Aviation Grade Straight Mineral Oil",
+        "MIL-L-22851 Ashless Dispersant Oil",
+        "Automotive 10W-30 Motor Oil",
+        "Synthetic Two-Stroke Oil"
+      ],
+      "correct_answer": "MIL-L-22851 Ashless Dispersant Oil"
+    },
+    {
+      "question_number": 124,
+      "question_text": "During a run-up, what is the indication that carburetor heat is working properly?",
+      "options": [
+        "A slight, momentary rise in RPM followed by a decrease",
+        "A slight, immediate decrease in RPM",
+        "A significant, sustained increase in RPM",
+        "No change in engine parameters, but the 'CARB HEAT' light illuminates"
+      ],
+      "correct_answer": "A slight, immediate decrease in RPM"
+    },
+    {
+      "question_number": 125,
+      "question_text": "What is the procedure for a power-off stall recovery?",
+      "options": [
+        "Simultaneously decrease pitch attitude, apply full power, and level the wings",
+        "Apply full power first, then lower the nose",
+        "Lower the nose, then apply power once airspeed increases",
+        "Level the wings, then apply power and lower the nose"
+      ],
+      "correct_answer": "Simultaneously decrease pitch attitude, apply full power, and level the wings"
+    },
+    {
+      "question_number": 126,
+      "question_text": "What is the primary danger of a skid during a turn?",
+      "options": [
+        "A rapid increase in airspeed",
+        "A tendency to overbank",
+        "The possibility of entering a skidding stall, which can lead to a spin",
+        "Excessive load factor on the wings"
+      ],
+      "correct_answer": "The possibility of entering a skidding stall, which can lead to a spin"
+    },
+    {
+      "question_number": 127,
+      "question_text": "What is the primary danger of a slip during a turn?",
+      "options": [
+        "A rapid loss of altitude and potential for a spin",
+        "A decrease in turn rate and an increase in turn radius",
+        "Excessive side-loading on the landing gear",
+        "Engine stoppage due to fuel unporting"
+      ],
+      "correct_answer": "A decrease in turn rate and an increase in turn radius"
+    },
+    {
+      "question_number": 128,
+      "question_text": "When should the fuel selector valve be operated from a single tank (LEFT or RIGHT) instead of BOTH? [18]",
+      "options": [
+        "During takeoff and landing",
+        "Only in emergency situations",
+        "During cruising flight to balance fuel levels",
+        "It should never be moved from the BOTH position"
+      ],
+      "correct_answer": "During cruising flight to balance fuel levels"
+    },
+    {
+      "question_number": 129,
+      "question_text": "What is the consequence of taking off with the fuel selector on a nearly empty tank?",
+      "options": [
+        "The engine will run rough but continue to operate",
+        "The engine will fail shortly after takeoff",
+        "The fuel will automatically draw from the fuller tank",
+        "The fuel gauges will become inaccurate"
+      ],
+      "correct_answer": "The engine will fail shortly after takeoff"
+    },
+    {
+      "question_number": 130,
+      "question_text": "What is the purpose of the 'squat switch' on some retractable gear aircraft (though not standard on a 172)?",
+      "options": [
+        "To measure the aircraft's weight",
+        "To prevent the landing gear from retracting while on the ground",
+        "To activate the stall warning horn",
+        "To turn on the landing light automatically"
+      ],
+      "correct_answer": "To prevent the landing gear from retracting while on the ground"
+    },
+    {
+      "question_number": 131,
+      "question_text": "What is the recommended action if the door opens in flight?",
+      "options": [
+        "Immediately attempt to close it",
+        "Perform an emergency descent and land",
+        "Slow the aircraft, trim for hands-off flight, and then close the door using a firm, smooth motion",
+        "Ignore it, as it poses no significant aerodynamic hazard"
+      ],
+      "correct_answer": "Slow the aircraft, trim for hands-off flight, and then close the door using a firm, smooth motion"
+    },
+    {
+      "question_number": 132,
+      "question_text": "What is the effect of extending flaps on the stalling speed?",
+      "options": [
+        "It increases the stalling speed",
+        "It has no effect on the stalling speed",
+        "It decreases the stalling speed",
+        "It only affects the stalling speed at high altitudes"
+      ],
+      "correct_answer": "It decreases the stalling speed"
+    },
+    {
+      "question_number": 133,
+      "question_text": "What is the effect of an increase in weight on stalling speed?",
+      "options": [
+        "It has no effect",
+        "It decreases the stalling speed",
+        "It increases the stalling speed",
+        "It only increases the stalling speed in a turn"
+      ],
+      "correct_answer": "It increases the stalling speed"
+    },
+    {
+      "question_number": 134,
+      "question_text": "What is the effect of an increased load factor (e.g., in a steep turn) on stalling speed?",
+      "options": [
+        "It decreases the stalling speed",
+        "It increases the stalling speed",
+        "It has no effect on the stalling speed",
+        "It only affects the stalling speed with flaps down"
+      ],
+      "correct_answer": "It increases the stalling speed"
+    },
+    {
+      "question_number": 135,
+      "question_text": "What is the primary instrument for maintaining pitch attitude during instrument flight?",
+      "options": [
+        "Altimeter",
+        "Vertical Speed Indicator",
+        "Attitude Indicator",
+        "Airspeed Indicator"
+      ],
+      "correct_answer": "Attitude Indicator"
+    },
+    {
+      "question_number": 136,
+      "question_text": "What is the primary instrument for maintaining bank during instrument flight?",
+      "options": [
+        "Directional Gyro",
+        "Magnetic Compass",
+        "Attitude Indicator",
+        "Turn Coordinator"
+      ],
+      "correct_answer": "Attitude Indicator"
+    },
+    {
+      "question_number": 137,
+      "question_text": "What is the purpose of the 'Alternate Static Source' valve?",
+      "options": [
+        "To provide an alternate source of electricity",
+        "To provide an alternate source of vacuum",
+        "To provide static pressure from inside the cabin if the external port is blocked",
+        "To provide an alternate source of fuel"
+      ],
+      "correct_answer": "To provide static pressure from inside the cabin if the external port is blocked"
+    },
+    {
+      "question_number": 138,
+      "question_text": "When using the alternate static source, what is the recommended action regarding cabin vents and windows?",
+      "options": [
+        "Open them to equalize pressure",
+        "Close them to ensure the most stable pressure reading",
+        "It does not matter",
+        "Only open the pilot's side window"
+      ],
+      "correct_answer": "Close them to ensure the most stable pressure reading"
+    },
+    {
+      "question_number": 139,
+      "question_text": "What is the maximum flap extended speed (Vfe) for flaps beyond 10 degrees in a Cessna 172N?",
+      "options": [
+        "110 KIAS",
+        "100 KIAS",
+        "85 KIAS",
+        "95 KIAS"
+      ],
+      "correct_answer": "85 KIAS"
+    },
+    {
+      "question_number": 140,
+      "question_text": "What is the maximum speed for extending the first 10 degrees of flaps in a 1979 Cessna 172N?",
+      "options": [
+        "85 KIAS",
+        "110 KIAS",
+        "100 KIAS",
+        "128 KIAS"
+      ],
+      "correct_answer": "110 KIAS"
+    },
+    {
+      "question_number": 141,
+      "question_text": "What is the primary cause of 'adverse yaw'?",
+      "options": [
+        "The rudder being deflected too much",
+        "The increased drag on the outside wing in a turn",
+        "The differential drag produced by the ailerons when initiating a bank",
+        "The torque effect of the propeller"
+      ],
+      "correct_answer": "The differential drag produced by the ailerons when initiating a bank"
+    },
+    {
+      "question_number": 142,
+      "question_text": "What is 'P-factor'?",
+      "options": [
+        "The tendency for the aircraft to roll left due to propeller torque",
+        "The gyroscopic precession effect of the propeller",
+        "The asymmetric thrust from the propeller at high angles of attack, causing a yawing moment to the left",
+        "The spiraling slipstream hitting the tail"
+      ],
+      "correct_answer": "The asymmetric thrust from the propeller at high angles of attack, causing a yawing moment to the left"
+    },
+    {
+      "question_number": 143,
+      "question_text": "P-factor is most pronounced under which conditions?",
+      "options": [
+        "High airspeed, low power, low angle of attack",
+        "Low airspeed, high power, high angle of attack",
+        "High airspeed, high power, low angle of attack",
+        "Low airspeed, low power, low angle of attack"
+      ],
+      "correct_answer": "Low airspeed, high power, high angle of attack"
+    },
+    {
+      "question_number": 144,
+      "question_text": "What is the purpose of the 'bus bar' in the electrical system?",
+      "options": [
+        "To store electrical energy",
+        "To act as a central distribution point for electrical power",
+        "To convert AC to DC power",
+        "To regulate the alternator's output"
+      ],
+      "correct_answer": "To act as a central distribution point for electrical power"
+    },
+    {
+      "question_number": 145,
+      "question_text": "What is the difference between 'true airspeed' (TAS) and 'indicated airspeed' (IAS)?",
+      "options": [
+        "TAS is IAS corrected for instrument error only",
+        "TAS is IAS corrected for non-standard pressure and temperature (density altitude)",
+        "TAS is always lower than IAS",
+        "There is no difference"
+      ],
+      "correct_answer": "TAS is IAS corrected for non-standard pressure and temperature (density altitude)"
+    },
+    {
+      "question_number": 146,
+      "question_text": "As altitude increases, what is the relationship between TAS and IAS (assuming constant power)?",
+      "options": [
+        "TAS will be lower than IAS",
+        "TAS will be higher than IAS",
+        "They will remain the same",
+        "The relationship is unpredictable"
+      ],
+      "correct_answer": "TAS will be higher than IAS"
+    },
+    {
+      "question_number": 147,
+      "question_text": "What is the purpose of the 'dihedral' angle of the wings?",
+      "options": [
+        "To increase longitudinal stability",
+        "To improve lateral (roll) stability",
+        "To increase the lift coefficient",
+        "To reduce drag"
+      ],
+      "correct_answer": "To improve lateral (roll) stability"
+    },
+    {
+      "question_number": 148,
+      "question_text": "What is the procedure for a short-field landing?",
+      "options": [
+        "A steep approach with full flaps, touching down at the minimum possible airspeed on a precise point, and applying maximum braking",
+        "A long, shallow approach with no flaps to bleed off speed",
+        "A normal approach but with heavy braking after touchdown",
+        "A high-speed approach to ensure positive control over the threshold"
+      ],
+      "correct_answer": "A steep approach with full flaps, touching down at the minimum possible airspeed on a precise point, and applying maximum braking"
+    },
+    {
+      "question_number": 149,
+      "question_text": "What is the primary risk of landing with excessive airspeed?",
+      "options": [
+        "Stalling the aircraft before the runway",
+        "Floating down the runway and potentially overshooting it",
+        "A hard landing that could damage the gear",
+        "Losing directional control"
+      ],
+      "correct_answer": "Floating down the runway and potentially overshooting it"
+    },
+    {
+      "question_number": 150,
+      "question_text": "What is the purpose of the 'Hobbs meter'?",
+      "options": [
+        "To measure the distance flown",
+        "To record the total time the engine has been running",
+        "To measure the aircraft's groundspeed",
+        "To count the number of landings"
+      ],
+      "correct_answer": "To record the total time the engine has been running"
+    },
+    {
+      "question_number": 151,
+      "question_text": "If you are performing a short-field takeoff over a 50-foot obstacle, which speed should be maintained until the obstacle is cleared?",
+      "options": [
+        "Vy (Best rate of climb)",
+        "Vx (Best angle of climb)",
+        "Va (Maneuvering speed)",
+        "Vno (Max structural cruising speed)"
+      ],
+      "correct_answer": "Vx (Best angle of climb)"
+    },
+    {
+      "question_number": 152,
+      "question_text": "After clearing an obstacle on a short-field takeoff, what is the correct procedure regarding airspeed?",
+      "options": [
+        "Maintain Vx until reaching cruise altitude",
+        "Immediately retract flaps and accelerate to cruise speed",
+        "Lower the nose to accelerate to Vy for a more efficient climb",
+        "Reduce power to 75% and maintain Vx"
+      ],
+      "correct_answer": "Lower the nose to accelerate to Vy for a more efficient climb"
+    },
+    {
+      "question_number": 153,
+      "question_text": "You are in cruise flight at 5,500 feet and notice the engine running rough. Applying carburetor heat causes the engine to run even rougher initially, then smooth out with an increase in RPM. What does this indicate?",
+      "options": [
+        "The carburetor heat is malfunctioning",
+        "You have spark plug fouling",
+        "Carburetor ice was present and has been melted",
+        "The mixture is too rich"
+      ],
+      "correct_answer": "Carburetor ice was present and has been melted"
+    },
+    {
+      "question_number": 154,
+      "question_text": "During a flight in a Cessna 172N, the suction gauge drops to zero. What is the most appropriate immediate action if you are in VMC?",
+      "options": [
+        "Declare an emergency and land immediately",
+        "Descend to a lower altitude",
+        "Plan to terminate the flight as soon as practical, anticipating the loss of the attitude and heading indicators",
+        "Activate the alternate vacuum pump"
+      ],
+      "correct_answer": "Plan to terminate the flight as soon as practical, anticipating the loss of the attitude and heading indicators"
+    },
+    {
+      "question_number": 155,
+      "question_text": "Why is it recommended to avoid prolonged slips with low fuel in one tank?",
+      "options": [
+        "It can cause the engine to overheat",
+        "It can lead to fuel unporting, where the fuel outlet is no longer submerged in fuel, causing engine failure",
+        "It can damage the fuel tank bladder",
+        "It places excessive stress on the wing structure"
+      ],
+      "correct_answer": "It can lead to fuel unporting, where the fuel outlet is no longer submerged in fuel, causing engine failure"
+    },
+    {
+      "question_number": 156,
+      "question_text": "You are on final approach for landing and your electrical system fails completely (master switch is unresponsive). What is the status of your wing flaps?",
+      "options": [
+        "They will automatically retract",
+        "They will remain in their last set position and cannot be moved",
+        "They can be operated manually with a hand crank",
+        "They will slowly extend to the full down position"
+      ],
+      "correct_answer": "They will remain in their last set position and cannot be moved"
+    },
+    {
+      "question_number": 157,
+      "question_text": "If you must perform a no-flap landing due to an electrical failure, what changes to your landing technique are required?",
+      "options": [
+        "Use a slower approach speed and a shorter runway",
+        "Use a faster approach speed and expect a longer landing roll",
+        "The landing technique is identical to a normal landing",
+        "Use a steeper approach angle to compensate for the lack of drag"
+      ],
+      "correct_answer": "Use a faster approach speed and expect a longer landing roll"
+    },
+    {
+      "question_number": 158,
+      "question_text": "What is the primary reason for the RPM drop when checking magnetos during a run-up?",
+      "options": [
+        "The engine is running on only one magneto and a single set of spark plugs, resulting in less efficient combustion",
+        "It indicates a malfunction in the checked magneto",
+        "The engine is being deliberately overloaded to test its performance",
+        "The carburetor heat is activating simultaneously"
+      ],
+      "correct_answer": "The engine is running on only one magneto and a single set of spark plugs, resulting in less efficient combustion"
+    },
+    {
+      "question_number": 159,
+      "question_text": "If there is no RPM drop when switching to a single magneto, what is the most likely cause?",
+      "options": [
+        "The engine is running exceptionally well",
+        "The magneto timing is off",
+        "The ground wire for the unchecked magneto is broken or disconnected, meaning it was never actually turned off",
+        "The spark plugs are fouled"
+      ],
+      "correct_answer": "The ground wire for the unchecked magneto is broken or disconnected, meaning it was never actually turned off"
+    },
+    {
+      "question_number": 160,
+      "question_text": "Why is it critical to check 'flight controls free and correct' during the pre-flight and before takeoff?",
+      "options": [
+        "To ensure the trim is set correctly",
+        "To check the hydraulic fluid level",
+        "To ensure no control locks are installed and that the controls move in the proper direction",
+        "To warm up the control cables"
+      ],
+      "correct_answer": "To ensure no control locks are installed and that the controls move in the proper direction"
+    },
+    {
+      "question_number": 161,
+      "question_text": "You are flying at cruise power and notice the oil pressure has dropped to the bottom of the green arc (25 psi). What is the appropriate course of action?",
+      "options": [
+        "Continue to your destination while monitoring the gauge",
+        "Increase power to try and raise the pressure",
+        "Assume the gauge is faulty and ignore it",
+        "Reduce power, look for a suitable place to land, and prepare for a potential engine failure"
+      ],
+      "correct_answer": "Reduce power, look for a suitable place to land, and prepare for a potential engine failure"
+    },
+    {
+      "question_number": 162,
+      "question_text": "What is the significance of the propeller's diameter specifications (e.g., Max 75 inches, Min 74 inches)? [1]",
+      "options": [
+        "It indicates the range of adjustable pitch",
+        "It defines the limits for repairs; if a blade is damaged and must be filed down, it cannot be shorter than the minimum",
+        "It is the required diameter for different altitudes",
+        "It is the difference between the M and N model propellers"
+      ],
+      "correct_answer": "It defines the limits for repairs; if a blade is damaged and must be filed down, it cannot be shorter than the minimum"
+    },
+    {
+      "question_number": 163,
+      "question_text": "What is the purpose of having two separate magnetos and two spark plugs per cylinder?",
+      "options": [
+        "To increase engine horsepower by 10%",
+        "To provide redundancy and improved combustion efficiency",
+        "To allow the engine to run on lower octane fuel",
+        "To reduce the engine's operating temperature"
+      ],
+      "correct_answer": "To provide redundancy and improved combustion efficiency"
+    },
+    {
+      "question_number": 164,
+      "question_text": "If you are taking off from a high-altitude airport on a hot day, what is the correct procedure for leaning the mixture? [22]",
+      "options": [
+        "Lean for maximum RPM during the static run-up",
+        "Lean only after reaching 3,000 feet AGL",
+        "Use full rich mixture for all takeoffs regardless of altitude",
+        "Lean until the engine begins to run rough, then enrich slightly"
+      ],
+      "correct_answer": "Lean for maximum RPM during the static run-up"
+    },
+    {
+      "question_number": 165,
+      "question_text": "What is the primary aerodynamic effect of ground effect?",
+      "options": [
+        "A significant increase in induced drag, requiring more power for takeoff",
+        "A reduction in induced drag, causing the aircraft to float during landing or become airborne before reaching a safe flying speed",
+        "An increase in longitudinal stability",
+        "A decrease in elevator effectiveness"
+      ],
+      "correct_answer": "A reduction in induced drag, causing the aircraft to float during landing or become airborne before reaching a safe flying speed"
+    },
+    {
+      "question_number": 166,
+      "question_text": "You are on a long final approach and notice you are low. What is the correct way to adjust your glide path?",
+      "options": [
+        "Lower the nose to gain speed, then pull back",
+        "Add power to decrease the rate of descent, and adjust pitch to maintain airspeed",
+        "Retract flaps to reduce drag",
+        "Raise the nose to stretch the glide"
+      ],
+      "correct_answer": "Add power to decrease the rate of descent, and adjust pitch to maintain airspeed"
+    },
+    {
+      "question_number": 167,
+      "question_text": "What is the relationship between maneuvering speed (Va) and aircraft weight?",
+      "options": [
+        "Va is not affected by weight",
+        "Va increases as weight decreases",
+        "Va decreases as weight decreases",
+        "Va is always a fixed value regardless of weight"
+      ],
+      "correct_answer": "Va decreases as weight decreases"
+    },
+    {
+      "question_number": 168,
+      "question_text": "Why must abrupt control movements be avoided above maneuvering speed (Va)?",
+      "options": [
+        "The engine cannot handle the rapid changes in airflow",
+        "The flight controls may become ineffective",
+        "The aircraft could exceed its structural load limits",
+        "It could cause a spin"
+      ],
+      "correct_answer": "The aircraft could exceed its structural load limits"
+    },
+    {
+      "question_number": 169,
+      "question_text": "If the engine begins to run rough in heavy rain, what is a likely cause and remedy?",
+      "options": [
+        "Spark plug fouling; lean the mixture",
+        "Carburetor icing; apply carburetor heat",
+        "Water in the fuel; switch tanks",
+        "Excessive cooling; reduce airspeed and power"
+      ],
+      "correct_answer": "Carburetor icing; apply carburetor heat"
+    },
+    {
+      "question_number": 170,
+      "question_text": "What is the purpose of the 'moment' value being divided by 1000 in the Cessna POH weight and balance calculations? [13]",
+      "options": [
+        "To convert the value to metric units",
+        "To simplify calculations by reducing the number of digits",
+        "To account for the weight of the fuel",
+        "It is a required FAA calculation standard"
+      ],
+      "correct_answer": "To simplify calculations by reducing the number of digits"
+    },
+    {
+      "question_number": 171,
+      "question_text": "What is the primary force that opposes thrust?",
+      "options": [
+        "Lift",
+        "Weight",
+        "Drag",
+        "Inertia"
+      ],
+      "correct_answer": "Drag"
+    },
+    {
+      "question_number": 172,
+      "question_text": "What is the primary force that opposes lift?",
+      "options": [
+        "Thrust",
+        "Weight",
+        "Drag",
+        "Momentum"
+      ],
+      "correct_answer": "Weight"
+    },
+    {
+      "question_number": 173,
+      "question_text": "In straight-and-level, unaccelerated flight, what is the relationship between the four forces of flight?",
+      "options": [
+        "Thrust is greater than drag, and lift is greater than weight",
+        "Thrust equals drag, and lift equals weight",
+        "Thrust is less than drag, and lift is less than weight",
+        "Thrust equals lift, and drag equals weight"
+      ],
+      "correct_answer": "Thrust equals drag, and lift equals weight"
+    },
+    {
+      "question_number": 174,
+      "question_text": "What is the definition of 'density altitude'?",
+      "options": [
+        "The altitude shown on the altimeter",
+        "The pressure altitude corrected for non-standard temperature",
+        "The actual height of the aircraft above ground level",
+        "The height of the aircraft above sea level"
+      ],
+      "correct_answer": "The pressure altitude corrected for non-standard temperature"
+    },
+    {
+      "question_number": 175,
+      "question_text": "What is the primary reason for using flaps during takeoff and landing?",
+      "options": [
+        "To increase the aircraft's maximum speed",
+        "To increase the wing's lift and drag, allowing for steeper approaches and shorter takeoff/landing distances",
+        "To improve roll control at low speeds",
+        "To reduce the structural load on the wings"
+      ],
+      "correct_answer": "To increase the wing's lift and drag, allowing for steeper approaches and shorter takeoff/landing distances"
+    },
+    {
+      "question_number": 176,
+      "question_text": "What is the 'standard temperature' at sea level according to ISA (International Standard Atmosphere)? [2]",
+      "options": [
+        "20°C (68°F)",
+        "15°C (59°F)",
+        "10°C (50°F)",
+        "25°C (77°F)"
+      ],
+      "correct_answer": "15°C (59°F)"
+    },
+    {
+      "question_number": 177,
+      "question_text": "What is the standard temperature lapse rate with altitude in the ISA?",
+      "options": [
+        "Decreases 1°C per 1000 feet",
+        "Decreases 3°C per 1000 feet",
+        "Decreases 2°C per 1000 feet",
+        "Increases 2°C per 1000 feet"
+      ],
+      "correct_answer": "Decreases 2°C per 1000 feet"
+    },
+    {
+      "question_number": 178,
+      "question_text": "What is 'pressure altitude'? [2]",
+      "options": [
+        "The altitude corrected for temperature",
+        "The altitude read from the altimeter when the barometric scale is set to the current local setting",
+        "The altitude read from the altimeter when the barometric scale is set to 29.92 inches of mercury",
+        "The true height above sea level"
+      ],
+      "correct_answer": "The altitude read from the altimeter when the barometric scale is set to 29.92 inches of mercury"
+    },
+    {
+      "question_number": 179,
+      "question_text": "You are cleared for takeoff and notice a large bird strike the propeller during the takeoff roll. What is the most prudent action?",
+      "options": [
+        "Continue the takeoff as the propeller is robust",
+        "Abort the takeoff immediately if there is sufficient runway remaining",
+        "Continue the takeoff and plan to return for an inspection",
+        "Reduce power slightly and continue the takeoff"
+      ],
+      "correct_answer": "Abort the takeoff immediately if there is sufficient runway remaining"
+    },
+    {
+      "question_number": 180,
+      "question_text": "What is the primary instrument to use for pitch control when recovering from an unusual attitude (e.g., extreme nose high)?",
+      "options": [
+        "Airspeed Indicator",
+        "Attitude Indicator",
+        "Altimeter",
+        "Vertical Speed Indicator"
+      ],
+      "correct_answer": "Attitude Indicator"
+    },
+    {
+      "question_number": 181,
+      "question_text": "What is the correct procedure to follow if you become lost in flight (disoriented)?",
+      "options": [
+        "Climb, Conserve, Confess (the 3 C's)",
+        "Descend to read town names on water towers",
+        "Fly a triangular pattern to signal an emergency",
+        "Turn off all radios to save battery and focus on flying"
+      ],
+      "correct_answer": "Climb, Conserve, Confess (the 3 C's)"
+    },
+    {
+      "question_number": 182,
+      "question_text": "What is the significance of a steady red light from a control tower to an aircraft in flight?",
+      "options": [
+        "Cleared to land",
+        "Return for landing",
+        "Give way to other aircraft and continue circling",
+        "Airport unsafe, do not land"
+      ],
+      "correct_answer": "Give way to other aircraft and continue circling"
+    },
+    {
+      "question_number": 183,
+      "question_text": "What is the significance of a flashing green light from a control tower to an aircraft on the ground?",
+      "options": [
+        "Cleared for takeoff",
+        "Cleared to taxi",
+        "Return to starting point on airport",
+        "Exercise extreme caution"
+      ],
+      "correct_answer": "Cleared to taxi"
+    },
+    {
+      "question_number": 184,
+      "question_text": "What is the primary purpose of the 'detent' in the flap switch system of a Cessna 172N?",
+      "options": [
+        "To prevent accidental flap retraction",
+        "To mark the 10, 20, and 30 degree flap settings",
+        "To allow for manual flap operation",
+        "To increase the speed of flap extension"
+      ],
+      "correct_answer": "To mark the 10, 20, and 30 degree flap settings"
+    },
+    {
+      "question_number": 185,
+      "question_text": "What is the unusable fuel quantity in a standard Cessna 172N tank?",
+      "options": [
+        "1 gallon per tank",
+        "1.5 gallons per tank",
+        "2 gallons total",
+        "3 gallons total"
+      ],
+      "correct_answer": "3 gallons total"
+    },
+    {
+      "question_number": 186,
+      "question_text": "What is the unusable fuel quantity in a long-range Cessna 172N tank?",
+      "options": [
+        "2 gallons total",
+        "3 gallons total",
+        "4 gallons total",
+        "5 gallons total"
+      ],
+      "correct_answer": "4 gallons total"
+    },
+    {
+      "question_number": 187,
+      "question_text": "What is the primary difference in the engine of a Cessna 172M versus a 172N?",
+      "options": [
+        "The 172N has a fuel-injected engine",
+        "The 172M has a lower horsepower rating (150 hp vs 160 hp)",
+        "The 172N has a turbocharger",
+        "The 172M uses a Continental engine"
+      ],
+      "correct_answer": "The 172M has a lower horsepower rating (150 hp vs 160 hp)"
+    },
+    {
+      "question_number": 188,
+      "question_text": "What is the primary difference in the electrical system of a pre-1978 Cessna 172 versus a 1978 172N?",
+      "options": [
+        "The older models had no electrical system",
+        "The older models had a 14-volt system, while the 172N has a 28-volt system",
+        "The older models had a generator, while the 172N has an alternator",
+        "The older models had a 28-volt system, while the 172N has a 14-volt system"
+      ],
+      "correct_answer": "The older models had a 14-volt system, while the 172N has a 28-volt system"
+    },
+    {
+      "question_number": 189,
+      "question_text": "What is the purpose of the 'ground' wire on a magneto's ignition switch?",
+      "options": [
+        "To provide power to the magneto",
+        "To disable or 'kill' the magneto by grounding the primary circuit",
+        "To help start the engine",
+        "To prevent electrical shock"
+      ],
+      "correct_answer": "To disable or 'kill' the magneto by grounding the primary circuit"
+    },
+    {
+      "question_number": 190,
+      "question_text": "If you are flying into an airport without an operating control tower, what is the standard procedure for announcing your position and intentions?",
+      "options": [
+        "Broadcast on the emergency frequency 121.5 MHz",
+        "Broadcast on the designated Common Traffic Advisory Frequency (CTAF)",
+        "Contact the nearest ARTCC for instructions",
+        "No communication is required"
+      ],
+      "correct_answer": "Broadcast on the designated Common Traffic Advisory Frequency (CTAF)"
+    },
+    {
+      "question_number": 191,
+      "question_text": "What is the standard entry procedure for a traffic pattern at a non-towered airport?",
+      "options": [
+        "A straight-in approach to the landing runway",
+        "A 45-degree entry to the downwind leg at pattern altitude",
+        "A direct entry to the base leg",
+        "Crossing over the field 500 feet above pattern altitude and entering on the crosswind leg"
+      ],
+      "correct_answer": "A 45-degree entry to the downwind leg at pattern altitude"
+    },
+    {
+      "question_number": 192,
+      "question_text": "What is the standard traffic pattern altitude (TPA) for a piston-engine aircraft?",
+      "options": [
+        "500 feet AGL",
+        "1,500 feet AGL",
+        "1,000 feet AGL",
+        "2,000 feet AGL"
+      ],
+      "correct_answer": "1,000 feet AGL"
+    },
+    {
+      "question_number": 193,
+      "question_text": "What is the primary risk associated with 'wake turbulence'?",
+      "options": [
+        "Engine failure due to disturbed air",
+        "Loss of control due to powerful wingtip vortices, especially when following a large, heavy aircraft",
+        "Inaccurate instrument readings",
+        "Damage to the aircraft's paint"
+      ],
+      "correct_answer": "Loss of control due to powerful wingtip vortices, especially when following a large, heavy aircraft"
+    },
+    {
+      "question_number": 194,
+      "question_text": "To avoid wake turbulence from a large aircraft that has just taken off, what is the recommended procedure?",
+      "options": [
+        "Rotate at the same point as the large aircraft and climb above its flight path",
+        "Rotate prior to the large aircraft's rotation point and climb above its flight path",
+        "Rotate after the large aircraft's rotation point and remain below its flight path",
+        "Wait at least 10 minutes before taking off"
+      ],
+      "correct_answer": "Rotate prior to the large aircraft's rotation point and climb above its flight path"
+    },
+    {
+      "question_number": 195,
+      "question_text": "To avoid wake turbulence from a large aircraft that has just landed, what is the recommended procedure?",
+      "options": [
+        "Land prior to the large aircraft's touchdown point",
+        "Land beyond the large aircraft's touchdown point",
+        "Land in the same spot as the large aircraft",
+        "Perform a go-around"
+      ],
+      "correct_answer": "Land beyond the large aircraft's touchdown point"
+    },
+    {
+      "question_number": 196,
+      "question_text": "What does the term 'KIAS' stand for? [13]",
+      "options": [
+        "Knots Indicated Air Speed",
+        "Kilometers Indicated Air Speed",
+        "Knots Instrument Air Speed",
+        "Knots Inertial Air Speed"
+      ],
+      "correct_answer": "Knots Indicated Air Speed"
+    },
+    {
+      "question_number": 197,
+      "question_text": "What does the term 'BHP' stand for in relation to engine power? [9]",
+      "options": [
+        "Blade Horsepower",
+        "Basic Horsepower",
+        "Brake Horsepower",
+        "Burned Horsepower"
+      ],
+      "correct_answer": "Brake Horsepower"
+    },
+    {
+      "question_number": 198,
+      "question_text": "What is the primary flight control that creates and controls the 'angle of attack'?",
+      "options": [
+        "Ailerons",
+        "Rudder",
+        "Elevator",
+        "Flaps"
+      ],
+      "correct_answer": "Elevator"
+    },
+    {
+      "question_number": 199,
+      "question_text": "A stall is caused by:",
+      "options": [
+        "Insufficient airspeed",
+        "The wing exceeding its critical angle of attack",
+        "Engine failure",
+        "Excessive weight"
+      ],
+      "correct_answer": "The wing exceeding its critical angle of attack"
+    },
+    {
+      "question_number": 200,
+      "question_text": "If you are on a west heading (270°) and initiate a turn to the north (360°), what initial error will the magnetic compass show?",
+      "options": [
+        "It will initially indicate a turn to the south (acceleration/deceleration error)",
+        "It will lag behind the actual heading (northerly turning error)",
+        "It will lead the turn, indicating a heading past north (southerly turning error)",
+        "It will show no error"
+      ],
+      "correct_answer": "It will lag behind the actual heading (northerly turning error)"
+    }
+  ]
+}
