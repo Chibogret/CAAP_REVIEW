@@ -1,0 +1,2205 @@
+{
+    "exam_title": "Operational Procedures",
+    "questions": [
+        {
+            "question_number": 1,
+            "question_text": "According to ICAO Annex 2, what action should two aircraft take when approaching head-on?",
+            "options": [
+                "The larger aircraft has the right-of-way.",
+                "Both aircraft shall alter their heading to the right.",
+                "The aircraft on the left shall give way.",
+                "Both aircraft shall climb 500 feet."
+            ],
+            "correct_answer": "Both aircraft shall alter their heading to the right."
+        },
+        {
+            "question_number": 2,
+            "question_text": "What is the standard transponder code for a VFR flight in Europe?",
+            "options": [
+                "1200",
+                "7000",
+                "7600",
+                "7700"
+            ],
+            "correct_answer": "7000"
+        },
+        {
+            "question_number": 3,
+            "question_text": "In the ICAO framework, which Annex is titled 'Rules of the Air'?",
+            "options": [
+                "Annex 11",
+                "Annex 1",
+                "Annex 2",
+                "Annex 6"
+            ],
+            "correct_answer": "Annex 2"
+        },
+        {
+            "question_number": 4,
+            "question_text": "What is the primary purpose of the Alerting Service as defined in ICAO Annex 11?",
+            "options": [
+                "To provide flight information.",
+                "To prevent collisions between aircraft.",
+                "To notify appropriate organizations regarding aircraft in need of search and rescue aid.",
+                "To manage the flow of air traffic."
+            ],
+            "correct_answer": "To notify appropriate organizations regarding aircraft in need of search and rescue aid."
+        },
+        {
+            "question_number": 5,
+            "question_text": "Which document, carried on board, contains information of a lasting character essential for air navigation?",
+            "options": [
+                "Aircraft Technical Log",
+                "Aeronautical Information Publication (AIP)",
+                "Journey Log",
+                "Load and Performance Manifest"
+            ],
+            "correct_answer": "Aeronautical Information Publication (AIP)"
+        },
+        {
+            "question_number": 6,
+            "question_text": "What does the transponder code 7700 signify?",
+            "options": [
+                "Hijacking",
+                "Lost Communication",
+                "General Emergency",
+                "VFR Flight"
+            ],
+            "correct_answer": "General Emergency"
+        },
+        {
+            "question_number": 7,
+            "question_text": "When two aircraft are converging at approximately the same level, which aircraft has the right-of-way according to ICAO rules?",
+            "options": [
+                "The aircraft that has the other on its right shall give way.",
+                "The faster aircraft.",
+                "The aircraft that has the other on its left shall give way.",
+                "The larger aircraft."
+            ],
+            "correct_answer": "The aircraft that has the other on its right shall give way."
+        },
+        {
+            "question_number": 8,
+            "question_text": "What is the minimum flight visibility for a VFR flight in Class C airspace below 10,000 feet MSL?",
+            "options": [
+                "1 statute mile",
+                "5 statute miles",
+                "3 statute miles",
+                "10 statute miles"
+            ],
+            "correct_answer": "3 statute miles"
+        },
+        {
+            "question_number": 9,
+            "question_text": "Which part of the Aeronautical Information Publication (AIP) contains information about aerodromes?",
+            "options": [
+                "GEN (General)",
+                "AD (Aerodromes)",
+                "ENR (En-route)",
+                "SUP (Supplement)"
+            ],
+            "correct_answer": "AD (Aerodromes)"
+        },
+        {
+            "question_number": 10,
+            "question_text": "What is the correct procedure to avoid wake turbulence when landing behind a larger aircraft?",
+            "options": [
+                "Stay below the larger aircraft's final approach path and land before its touchdown point.",
+                "Stay at or above the larger aircraft's final approach flight path and land beyond its touchdown point.",
+                "Maintain the same approach path and land at the same touchdown point.",
+                "Fly a steeper approach and land short of the larger aircraft's touchdown point."
+            ],
+            "correct_answer": "Stay at or above the larger aircraft's final approach flight path and land beyond its touchdown point."
+        },
+        {
+            "question_number": 11,
+            "question_text": "What does the transponder code 7600 indicate?",
+            "options": [
+                "General Emergency",
+                "VFR Flight",
+                "Hijacking",
+                "Lost Communication"
+            ],
+            "correct_answer": "Lost Communication"
+        },
+        {
+            "question_number": 12,
+            "question_text": "According to ICAO Annex 2, an overtaking aircraft must alter its course to the:",
+            "options": [
+                "Left",
+                "Right",
+                "Up or down",
+                "Direction instructed by ATC"
+            ],
+            "correct_answer": "Right"
+        },
+        {
+            "question_number": 13,
+            "question_text": "What are the three main services provided by Air Traffic Services (ATS) as outlined in ICAO Annex 11?",
+            "options": [
+                "Weather, Navigation, and Communication",
+                "Air Traffic Control, Flight Information, and Alerting Service",
+                "Ground Control, Tower Control, and Approach Control",
+                "Search and Rescue, Aerodrome Information, and Traffic Advisories"
+            ],
+            "correct_answer": "Air Traffic Control, Flight Information, and Alerting Service"
+        },
+        {
+            "question_number": 14,
+            "question_text": "In the Philippines, what is the minimum visibility for VFR flights within controlled airspace as per the AIP?",
+            "options": [
+                "3 km",
+                "8 km",
+                "5 km",
+                "10 km"
+            ],
+            "correct_answer": "5 km"
+        },
+        {
+            "question_number": 15,
+            "question_text": "What is the primary function of a Mode C transponder?",
+            "options": [
+                "To transmit a four-digit identifying code only.",
+                "To transmit the aircraft's call sign.",
+                "To transmit an identifying code and pressure altitude.",
+                "To transmit detailed flight data including position and speed."
+            ],
+            "correct_answer": "To transmit an identifying code and pressure altitude."
+        },
+        {
+            "question_number": 16,
+            "question_text": "What does the term 'VMC' stand for in aviation?",
+            "options": [
+                "Visual Meteorological Conditions",
+                "Variable Meteorological Conditions",
+                "Very Windy Conditions",
+                "Visual Monitoring of Clouds"
+            ],
+            "correct_answer": "Visual Meteorological Conditions"
+        },
+        {
+            "question_number": 17,
+            "question_text": "What is the correct procedure to avoid wake turbulence during takeoff behind a larger aircraft?",
+            "options": [
+                "Rotate at the same point as the preceding aircraft.",
+                "Rotate prior to the point at which the preceding aircraft rotated and maneuver to avoid its flight path.",
+                "Wait for at least 5 minutes before commencing takeoff roll.",
+                "Rotate after the point at which the preceding aircraft rotated."
+            ],
+            "correct_answer": "Rotate prior to the point at which the preceding aircraft rotated and maneuver to avoid its flight path."
+        },
+        {
+            "question_number": 18,
+            "question_text": "Which ICAO Annex deals with Aeronautical Charts?",
+            "options": [
+                "Annex 15",
+                "Annex 3",
+                "Annex 4",
+                "Annex 10"
+            ],
+            "correct_answer": "Annex 4"
+        },
+        {
+            "question_number": 19,
+            "question_text": "What is the standard transponder code for a hijacking situation?",
+            "options": [
+                "7700",
+                "7500",
+                "7600",
+                "1200"
+            ],
+            "correct_answer": "7500"
+        },
+        {
+            "question_number": 20,
+            "question_text": "According to PCAR, which of the following must be carried on board an aircraft for every flight?",
+            "options": [
+                "The pilot's training records",
+                "The aircraft's maintenance manuals",
+                "The Certificate of Registration and Certificate of Airworthiness",
+                "A copy of the airline's operations manual"
+            ],
+            "correct_answer": "The Certificate of Registration and Certificate of Airworthiness"
+        },
+        {
+            "question_number": 21,
+            "question_text": "What is the purpose of an AIP Supplement?",
+            "options": [
+                "To provide permanent changes to the AIP.",
+                "To issue NOTAMs.",
+                "To publish temporary changes of long duration to the AIP.",
+                "To provide a checklist of AIP pages."
+            ],
+            "correct_answer": "To publish temporary changes of long duration to the AIP."
+        },
+        {
+            "question_number": 22,
+            "question_text": "In a standard right-hand traffic pattern, all turns are made to the:",
+            "options": [
+                "Right",
+                "Left",
+                "Direction of the wind",
+                "Direction specified by the tower"
+            ],
+            "correct_answer": "Right"
+        },
+        {
+            "question_number": 23,
+            "question_text": "What is the meaning of the light signal 'Steady Green' from the tower to an aircraft in flight?",
+            "options": [
+                "Return for landing",
+                "Cleared to land",
+                "Give way to other aircraft and continue circling",
+                "Airport unsafe, do not land"
+            ],
+            "correct_answer": "Cleared to land"
+        },
+        {
+            "question_number": 24,
+            "question_text": "What is the minimum cloud clearance for a VFR flight in Class D airspace?",
+            "options": [
+                "Clear of clouds",
+                "1,000 ft above, 500 ft below, 2,000 ft horizontally",
+                "500 ft below, 1,000 ft above, 2,000 ft horizontally",
+                "1,000 ft vertically, 1 statute mile horizontally"
+            ],
+            "correct_answer": "500 ft below, 1,000 ft above, 2,000 ft horizontally"
+        },
+        {
+            "question_number": 25,
+            "question_text": "Which of the following has the highest priority for landing?",
+            "options": [
+                "A large passenger aircraft",
+                "A glider",
+                "An aircraft in distress",
+                "A military aircraft"
+            ],
+            "correct_answer": "An aircraft in distress"
+        },
+        {
+            "question_number": 26,
+            "question_text": "What does 'PCAR' stand for in the context of Philippine aviation?",
+            "options": [
+                "Philippine Civil Aviation Regulations",
+                "Pilot Certification and Airworthiness Requirements",
+                "Philippine Civil Aircraft Registry",
+                "Procedures for Commercial Air Routes"
+            ],
+            "correct_answer": "Philippine Civil Aviation Regulations"
+        },
+        {
+            "question_number": 27,
+            "question_text": "What is the purpose of a 'read-back' in radio communications?",
+            "options": [
+                "To acknowledge receipt of a message.",
+                "To confirm understanding and accuracy of a clearance or instruction.",
+                "To test the radio frequency.",
+                "To inform the controller of your position."
+            ],
+            "correct_answer": "To confirm understanding and accuracy of a clearance or instruction."
+        },
+        {
+            "question_number": 28,
+            "question_text": "What is the definition of 'night' for the purpose of logging flight time in the Philippines?",
+            "options": [
+                "The time between sunset and sunrise.",
+                "The time between the end of evening civil twilight and the beginning of morning civil twilight.",
+                "From 6:00 PM to 6:00 AM local time.",
+                "Any time when artificial lights are required to see."
+            ],
+            "correct_answer": "The time between the end of evening civil twilight and the beginning of morning civil twilight."
+        },
+        {
+            "question_number": 29,
+            "question_text": "What is a 'NOTAM'?",
+            "options": [
+                "A notice containing information concerning the establishment, condition or change in any aeronautical facility, service, procedure or hazard, the timely knowledge of which is essential to personnel concerned with flight operations.",
+                "A report on the technical status of an aircraft.",
+                "A summary of weather conditions for a specific route.",
+                "A flight plan amendment."
+            ],
+            "correct_answer": "A notice containing information concerning the establishment, condition or change in any aeronautical facility, service, procedure or hazard, the timely knowledge of which is essential to personnel concerned with flight operations."
+        },
+        {
+            "question_number": 30,
+            "question_text": "What is the minimum fuel requirement for a VFR flight during the day?",
+            "options": [
+                "Enough fuel to fly to the first point of intended landing and then for an additional 30 minutes.",
+                "Enough fuel to fly to the destination and then for an additional 45 minutes.",
+                "Enough fuel to fly to the destination, plus a 10% reserve.",
+                "Enough fuel to fly to the first point of intended landing and, assuming normal cruising speed, to fly after that for at least 30 minutes."
+            ],
+            "correct_answer": "Enough fuel to fly to the first point of intended landing and, assuming normal cruising speed, to fly after that for at least 30 minutes."
+        },
+        {
+            "question_number": 31,
+            "question_text": "What is the meaning of the light signal 'Flashing Red' from the tower to an aircraft on the ground?",
+            "options": [
+                "Cleared for takeoff",
+                "Taxi clear of the runway in use",
+                "Return to starting point on the aerodrome",
+                "Cleared to taxi"
+            ],
+            "correct_answer": "Taxi clear of the runway in use"
+        },
+        {
+            "question_number": 32,
+            "question_text": "What is a 'Special VFR' clearance?",
+            "options": [
+                "A clearance to operate VFR at night.",
+                "A clearance to operate VFR in weather conditions below the normal VFR minima within a control zone.",
+                "A clearance for aerobatic maneuvers.",
+                "A clearance to fly a non-standard route."
+            ],
+            "correct_answer": "A clearance to operate VFR in weather conditions below the normal VFR minima within a control zone."
+        },
+        {
+            "question_number": 33,
+            "question_text": "According to ICAO, what is the order of priority between a glider and a balloon?",
+            "options": [
+                "The glider gives way to the balloon.",
+                "The balloon gives way to the glider.",
+                "The one on the right gives way.",
+                "They have equal priority."
+            ],
+            "correct_answer": "The glider gives way to the balloon."
+        },
+        {
+            "question_number": 34,
+            "question_text": "What is the purpose of the 'Transition Altitude'?",
+            "options": [
+                "It is the altitude at which aircraft transition from VFR to IFR.",
+                "It is the altitude at or below which the vertical position of an aircraft is controlled by reference to altitudes.",
+                "It is the altitude above which all aircraft must be on an IFR flight plan.",
+                "It is the altitude at which you switch from tower frequency to approach frequency."
+            ],
+            "correct_answer": "It is the altitude at or below which the vertical position of an aircraft is controlled by reference to altitudes."
+        },
+        {
+            "question_number": 35,
+            "question_text": "What is the primary document that governs the operations of the Civil Aviation Authority of the Philippines (CAAP)?",
+            "options": [
+                "The Philippine Constitution",
+                "Republic Act No. 9497 (The Civil Aviation Authority Act of 2008)",
+                "The ICAO Chicago Convention",
+                "The Philippine Air Transportation Act"
+            ],
+            "correct_answer": "Republic Act No. 9497 (The Civil Aviation Authority Act of 2008)"
+        },
+        {
+            "question_number": 36,
+            "question_text": "What is the correct way to state the altitude 9,500 feet on the radio?",
+            "options": [
+                "NINETY-FIVE HUNDRED FEET",
+                "NINER THOUSAND FIVE HUNDRED FEET",
+                "NINER THOUSAND, FIVE HUNDRED",
+                "NINE THOUSAND FIVE HUNDRED FEET"
+            ],
+            "correct_answer": "NINE THOUSAND FIVE HUNDRED FEET"
+        },
+        {
+            "question_number": 37,
+            "question_text": "What is the minimum age to obtain a Private Pilot License in the Philippines?",
+            "options": [
+                "16 years old",
+                "18 years old",
+                "17 years old",
+                "21 years old"
+            ],
+            "correct_answer": "17 years old"
+        },
+        {
+            "question_number": 38,
+            "question_text": "What is the purpose of a 'holding procedure'?",
+            "options": [
+                "To practice instrument approaches.",
+                "To delay an aircraft already in flight while keeping it within a specified airspace.",
+                "To perform a 360-degree turn for spacing.",
+                "To wait for a gate to become available."
+            ],
+            "correct_answer": "To delay an aircraft already in flight while keeping it within a specified airspace."
+        },
+        {
+            "question_number": 39,
+            "question_text": "What is the meaning of the light signal 'Alternating Red and Green' from the tower?",
+            "options": [
+                "General warning signal - Exercise extreme caution",
+                "Cleared to land",
+                "Return for landing",
+                "Taxi clear of the runway in use"
+            ],
+            "correct_answer": "General warning signal - Exercise extreme caution"
+        },
+        {
+            "question_number": 40,
+            "question_text": "What is the 'maneuvering area' of an aerodrome?",
+            "options": [
+                "The aprons and parking areas.",
+                "The part of an aerodrome to be used for the take-off, landing and taxiing of aircraft, excluding aprons.",
+                "All areas accessible to aircraft.",
+                "Only the runways."
+            ],
+            "correct_answer": "The part of an aerodrome to be used for the take-off, landing and taxiing of aircraft, excluding aprons."
+        },
+        {
+            "question_number": 41,
+            "question_text": "What is the primary responsibility of the Pilot-in-Command (PIC)?",
+            "options": [
+                "To ensure the comfort of the passengers.",
+                "The final authority and responsibility for the operation and safety of the flight.",
+                "To communicate with air traffic control.",
+                "To navigate the aircraft."
+            ],
+            "correct_answer": "The final authority and responsibility for the operation and safety of the flight."
+        },
+        {
+            "question_number": 42,
+            "question_text": "What is the 'Transition Level'?",
+            "options": [
+                "The lowest flight level available for use above the transition altitude.",
+                "The flight level at which you transition between sectors.",
+                "The flight level used for VFR cruising.",
+                "The flight level at which you contact the destination airport."
+            ],
+            "correct_answer": "The lowest flight level available for use above the transition altitude."
+        },
+        {
+            "question_number": 43,
+            "question_text": "What is the procedure for acknowledging a light signal from the tower during the day?",
+            "options": [
+                "By flashing the landing lights.",
+                "By rocking the aircraft's wings.",
+                "By making a turn to the right.",
+                "By transmitting on the radio."
+            ],
+            "correct_answer": "By rocking the aircraft's wings."
+        },
+        {
+            "question_number": 44,
+            "question_text": "What is the minimum fuel requirement for a VFR flight at night?",
+            "options": [
+                "Enough fuel to fly to the first point of intended landing and then for an additional 30 minutes.",
+                "Enough fuel to fly to the destination and then for an additional 60 minutes.",
+                "Enough fuel to fly to the first point of intended landing and, assuming normal cruising speed, to fly after that for at least 45 minutes.",
+                "Enough fuel to fly to the destination plus a 25% reserve."
+            ],
+            "correct_answer": "Enough fuel to fly to the first point of intended landing and, assuming normal cruising speed, to fly after that for at least 45 minutes."
+        },
+        {
+            "question_number": 45,
+            "question_text": "What is the purpose of an 'ELT' (Emergency Locator Transmitter)?",
+            "options": [
+                "To transmit the aircraft's altitude to ATC.",
+                "To aid in locating an aircraft in distress.",
+                "To provide weather information to the pilot.",
+                "To record flight data."
+            ],
+            "correct_answer": "To aid in locating an aircraft in distress."
+        },
+        {
+            "question_number": 46,
+            "question_text": "What is the difference between 'controlled' and 'uncontrolled' airspace?",
+            "options": [
+                "Controlled airspace has radar coverage, while uncontrolled does not.",
+                "Air traffic control service is provided in controlled airspace, but not in uncontrolled airspace.",
+                "Only IFR flights are allowed in controlled airspace.",
+                "There are no weather minimums in uncontrolled airspace."
+            ],
+            "correct_answer": "Air traffic control service is provided in controlled airspace, but not in uncontrolled airspace."
+        },
+        {
+            "question_number": 47,
+            "question_text": "What is the correct procedure if you experience a radio communication failure while on a VFR flight in VMC?",
+            "options": [
+                "Land at the nearest suitable aerodrome.",
+                "Continue the flight under VFR, land at the destination aerodrome, and report arrival by the most expeditious means.",
+                "Squawk 7700 and wait for light signals.",
+                "Immediately return to the departure aerodrome."
+            ],
+            "correct_answer": "Continue the flight under VFR, land at the destination aerodrome, and report arrival by the most expeditious means."
+        },
+        {
+            "question_number": 48,
+            "question_text": "What is the purpose of a 'flight plan'?",
+            "options": [
+                "To provide information to ATC for traffic flow management and search and rescue purposes.",
+                "To calculate fuel consumption.",
+                "To serve as a contract between the pilot and the passengers.",
+                "To get a discount on landing fees."
+            ],
+            "correct_answer": "To provide information to ATC for traffic flow management and search and rescue purposes."
+        },
+        {
+            "question_number": 49,
+            "question_text": "What is the meaning of the term 'Roger' in radio communications?",
+            "options": [
+                "I have received all of your last transmission.",
+                "Yes.",
+                "I will comply with your instruction.",
+                "Message understood."
+            ],
+            "correct_answer": "I have received all of your last transmission."
+        },
+        {
+            "question_number": 50,
+            "question_text": "What is the 'apron' of an aerodrome?",
+            "options": [
+                "The area where aircraft are parked, loaded, unloaded, refueled, and boarded.",
+                "The runway and taxiways.",
+                "The area reserved for helicopter operations.",
+                "The grass areas next to the runway."
+            ],
+            "correct_answer": "The area where aircraft are parked, loaded, unloaded, refueled, and boarded."
+        },
+        {
+            "question_number": 51,
+            "question_text": "What is the purpose of the 'altimeter setting' (QNH)?",
+            "options": [
+                "To set the altimeter to indicate height above the aerodrome.",
+                "To set the altimeter to indicate altitude above mean sea level.",
+                "To set the altimeter to indicate pressure altitude.",
+                "To set the altimeter to indicate zero on the ground."
+            ],
+            "correct_answer": "To set the altimeter to indicate altitude above mean sea level."
+        },
+        {
+            "question_number": 52,
+            "question_text": "What is the difference between a 'clearance' and an 'instruction' from ATC?",
+            "options": [
+                "There is no difference.",
+                "A clearance is an authorization to proceed under specified conditions, while an instruction is a directive that must be obeyed.",
+                "A clearance is for IFR flights, while an instruction is for VFR flights.",
+                "A clearance is given by the tower, while an instruction is given by approach control."
+            ],
+            "correct_answer": "A clearance is an authorization to proceed under specified conditions, while an instruction is a directive that must be obeyed."
+        },
+        {
+            "question_number": 53,
+            "question_text": "What is the correct procedure for crossing a runway after landing?",
+            "options": [
+                "Cross the runway immediately after exiting.",
+                "Stop and wait for a specific clearance to cross.",
+                "Cross the runway at a 45-degree angle.",
+                "Flash your landing lights before crossing."
+            ],
+            "correct_answer": "Stop and wait for a specific clearance to cross."
+        },
+        {
+            "question_number": 54,
+            "question_text": "What is the meaning of the term 'Wilco' in radio communications?",
+            "options": [
+                "I have received your message.",
+                "I understand your message and will comply with it.",
+                "I will report back later.",
+                "What is your command?"
+            ],
+            "correct_answer": "I understand your message and will comply with it."
+        },
+        {
+            "question_number": 55,
+            "question_text": "What is the purpose of the 'phonetic alphabet' in aviation?",
+            "options": [
+                "To spell out words and avoid confusion between similar sounding letters.",
+                "To communicate in a secret code.",
+                "To shorten radio transmissions.",
+                "To comply with military regulations."
+            ],
+            "correct_answer": "To spell out words and avoid confusion between similar sounding letters."
+        },
+        {
+            "question_number": 56,
+            "question_text": "What is the minimum altitude for flight over a congested area?",
+            "options": [
+                "500 feet above the highest obstacle.",
+                "1,000 feet above the highest obstacle within a horizontal radius of 2,000 feet.",
+                "2,000 feet above the ground.",
+                "An altitude that allows for a safe landing in case of engine failure."
+            ],
+            "correct_answer": "1,000 feet above the highest obstacle within a horizontal radius of 2,000 feet."
+        },
+        {
+            "question_number": 57,
+            "question_text": "What is the purpose of a 'wind shear' alert?",
+            "options": [
+                "To warn of a sudden change in wind speed and/or direction over a short distance.",
+                "To indicate the direction of the surface wind.",
+                "To provide information on upper-level winds.",
+                "To warn of turbulence."
+            ],
+            "correct_answer": "To warn of a sudden change in wind speed and/or direction over a short distance."
+        },
+        {
+            "question_number": 58,
+            "question_text": "What is the correct procedure for making a position report?",
+            "options": [
+                "Aircraft identification, position, time, altitude, and next reporting point.",
+                "Aircraft identification, speed, and heading.",
+                "Aircraft identification and fuel remaining.",
+                "Aircraft identification and destination."
+            ],
+            "correct_answer": "Aircraft identification, position, time, altitude, and next reporting point."
+        },
+        {
+            "question_number": 59,
+            "question_text": "What is the purpose of the 'critical engine' concept in multi-engine aircraft?",
+            "options": [
+                "It is the engine that is most likely to fail.",
+                "It is the engine whose failure would most adversely affect the performance or handling qualities of the aircraft.",
+                "It is the engine that provides the most power.",
+                "It is the engine that is located on the left side."
+            ],
+            "correct_answer": "It is the engine whose failure would most adversely affect the performance or handling qualities of the aircraft."
+        },
+        {
+            "question_number": 60,
+            "question_text": "What is the meaning of the term 'Mayday'?",
+            "options": [
+                "A condition of being threatened by serious and/or imminent danger and of requiring immediate assistance.",
+                "A condition concerning the safety of an aircraft or other vehicle, or of some person on board or within sight, but which does not require immediate assistance.",
+                "I have an urgent message to transmit.",
+                "I am lost."
+            ],
+            "correct_answer": "A condition of being threatened by serious and/or imminent danger and of requiring immediate assistance."
+        },
+        {
+            "question_number": 61,
+            "question_text": "What is the purpose of the 'standard rate turn'?",
+            "options": [
+                "To make a turn at a rate of 3 degrees per second.",
+                "To make a turn with a bank angle of 30 degrees.",
+                "To make a turn that is comfortable for passengers.",
+                "To make the fastest possible turn."
+            ],
+            "correct_answer": "To make a turn at a rate of 3 degrees per second."
+        },
+        {
+            "question_number": 62,
+            "question_text": "What is the difference between 'altitude' and 'flight level'?",
+            "options": [
+                "Altitude is height above mean sea level, while flight level is a surface of constant atmospheric pressure related to a specific pressure datum.",
+                "Altitude is used by VFR flights, while flight level is used by IFR flights.",
+                "Altitude is measured in feet, while flight level is measured in meters.",
+                "There is no difference."
+            ],
+            "correct_answer": "Altitude is height above mean sea level, while flight level is a surface of constant atmospheric pressure related to a specific pressure datum."
+        },
+        {
+            "question_number": 63,
+            "question_text": "What is the purpose of the 'minimum descent altitude' (MDA)?",
+            "options": [
+                "The lowest altitude to which descent is authorized on final approach in a non-precision approach.",
+                "The altitude at which the pilot must decide to land or go-around.",
+                "The minimum altitude for cruising.",
+                "The altitude of the airport."
+            ],
+            "correct_answer": "The lowest altitude to which descent is authorized on final approach in a non-precision approach."
+        },
+        {
+            "question_number": 64,
+            "question_text": "What is the meaning of the term 'Pan-Pan'?",
+            "options": [
+                "A condition concerning the safety of an aircraft or other vehicle, or of some person on board or within sight, but which does not require immediate assistance.",
+                "A condition of being threatened by serious and/or imminent danger and of requiring immediate assistance.",
+                "I have a message for all stations.",
+                "I am experiencing a medical emergency."
+            ],
+            "correct_answer": "A condition concerning the safety of an aircraft or other vehicle, or of some person on board or within sight, but which does not require immediate assistance."
+        },
+        {
+            "question_number": 65,
+            "question_text": "What is the purpose of the 'decision altitude' (DA)?",
+            "options": [
+                "A specified altitude in a precision approach at which a missed approach must be initiated if the required visual reference to continue the approach has not been established.",
+                "The altitude at which you decide to divert to an alternate airport.",
+                "The altitude at which you make your final landing check.",
+                "The altitude at which you are cleared to land."
+            ],
+            "correct_answer": "A specified altitude in a precision approach at which a missed approach must be initiated if the required visual reference to continue the approach has not been established."
+        },
+        {
+            "question_number": 66,
+            "question_text": "What is the correct procedure for intercepting a VOR radial?",
+            "options": [
+                "Turn to a heading that will intercept the desired radial at a 45-degree angle.",
+                "Fly directly to the VOR station and then turn to the desired radial.",
+                "Parallel the desired radial and wait for the CDI to center.",
+                "Select the desired radial on the OBS and turn towards the needle."
+            ],
+            "correct_answer": "Turn to a heading that will intercept the desired radial at a 45-degree angle."
+        },
+        {
+            "question_number": 67,
+            "question_text": "What is the purpose of the 'instrument landing system' (ILS)?",
+            "options": [
+                "To provide vertical and horizontal guidance for approach and landing.",
+                "To provide distance information to the runway.",
+                "To provide weather information for the airport.",
+                "To provide communication with the tower."
+            ],
+            "correct_answer": "To provide vertical and horizontal guidance for approach and landing."
+        },
+        {
+            "question_number": 68,
+            "question_text": "What is the meaning of the term 'cleared for the option'?",
+            "options": [
+                "The pilot is authorized to perform a touch-and-go, stop-and-go, low approach, missed approach, or full stop landing.",
+                "The pilot can choose which runway to land on.",
+                "The pilot can choose to land or divert.",
+                "The pilot can choose to fly a visual or instrument approach."
+            ],
+            "correct_answer": "The pilot is authorized to perform a touch-and-go, stop-and-go, low approach, missed approach, or full stop landing."
+        },
+        {
+            "question_number": 69,
+            "question_text": "What is the purpose of the 'minimum equipment list' (MEL)?",
+            "options": [
+                "To specify the minimum equipment required for a particular type of flight.",
+                "To list all the equipment installed on the aircraft.",
+                "To provide a list of equipment that can be inoperative and still allow the aircraft to be flown.",
+                "To list the equipment that must be inspected before each flight."
+            ],
+            "correct_answer": "To provide a list of equipment that can be inoperative and still allow the aircraft to be flown."
+        },
+        {
+            "question_number": 70,
+            "question_text": "What is the correct procedure for recovering from a stall?",
+            "options": [
+                "Decrease the angle of attack, apply maximum power, and level the wings.",
+                "Increase the angle of attack and apply power.",
+                "Pull back on the control column and add rudder.",
+                "Lower the nose and wait for the airspeed to increase."
+            ],
+            "correct_answer": "Decrease the angle of attack, apply maximum power, and level the wings."
+        },
+        {
+            "question_number": 71,
+            "question_text": "What is the purpose of the 'weight and balance' calculation?",
+            "options": [
+                "To ensure that the aircraft's weight and center of gravity are within the allowable limits.",
+                "To calculate the fuel consumption for the flight.",
+                "To determine the takeoff and landing distances.",
+                "To comply with customs regulations."
+            ],
+            "correct_answer": "To ensure that the aircraft's weight and center of gravity are within the allowable limits."
+        },
+        {
+            "question_number": 72,
+            "question_text": "What is the meaning of the term 'abeam' in a traffic pattern?",
+            "options": [
+                "The point where the aircraft is directly opposite the intended point of landing.",
+                "The point where the aircraft begins its descent.",
+                "The point where the aircraft turns from the downwind leg to the base leg.",
+                "The point where the aircraft is aligned with the runway."
+            ],
+            "correct_answer": "The point where the aircraft is directly opposite the intended point of landing."
+        },
+        {
+            "question_number": 73,
+            "question_text": "What is the purpose of the 'pre-flight inspection'?",
+            "options": [
+                "To ensure that the aircraft is airworthy and in a condition for safe flight.",
+                "To clean the aircraft.",
+                "To check the fuel level.",
+                "To load the baggage."
+            ],
+            "correct_answer": "To ensure that the aircraft is airworthy and in a condition for safe flight."
+        },
+        {
+            "question_number": 74,
+            "question_text": "What is the correct procedure for dealing with an engine fire in flight?",
+            "options": [
+                "Follow the emergency checklist for an engine fire, which typically includes shutting off the fuel and electrical power to the engine and using the fire extinguisher if installed.",
+                "Immediately descend and land.",
+                "Increase airspeed to blow out the fire.",
+                "Ignore it unless it becomes severe."
+            ],
+            "correct_answer": "Follow the emergency checklist for an engine fire, which typically includes shutting off the fuel and electrical power to the engine and using the fire extinguisher if installed."
+        },
+        {
+            "question_number": 75,
+            "question_text": "What is the purpose of the 'run-up' or 'magneto check' before takeoff?",
+            "options": [
+                "To check the operation of the engine and its systems at high power settings.",
+                "To warm up the engine.",
+                "To clear any fouling from the spark plugs.",
+                "To test the brakes."
+            ],
+            "correct_answer": "To check the operation of the engine and its systems at high power settings."
+        },
+        {
+            "question_number": 76,
+            "question_text": "What is the meaning of the term 'final approach'?",
+            "options": [
+                "The part of an instrument approach procedure in which alignment and descent for landing are accomplished.",
+                "The last leg of the traffic pattern.",
+                "The point where the pilot decides to land.",
+                "The last 1,000 feet of the approach."
+            ],
+            "correct_answer": "The part of an instrument approach procedure in which alignment and descent for landing are accomplished."
+        },
+        {
+            "question_number": 77,
+            "question_text": "What is the purpose of the 'go-around' or 'missed approach' procedure?",
+            "options": [
+                "To discontinue an approach to landing for safety reasons.",
+                "To practice landings.",
+                "To show off for the people on the ground.",
+                "To cool the engine."
+            ],
+            "correct_answer": "To discontinue an approach to landing for safety reasons."
+        },
+        {
+            "question_number": 78,
+            "question_text": "What is the correct procedure for entering a standard traffic pattern?",
+            "options": [
+                "Enter on a 45-degree angle to the downwind leg, abeam the midpoint of the runway.",
+                "Enter directly on the downwind leg.",
+                "Enter on the base leg.",
+                "Enter on the final approach."
+            ],
+            "correct_answer": "Enter on a 45-degree angle to the downwind leg, abeam the midpoint of the runway."
+        },
+        {
+            "question_number": 79,
+            "question_text": "What is the purpose of the 'flaps' on an aircraft?",
+            "options": [
+                "To increase lift and drag, allowing for a steeper approach and a lower landing speed.",
+                "To increase the speed of the aircraft.",
+                "To help with steering the aircraft on the ground.",
+                "To improve the stability of the aircraft."
+            ],
+            "correct_answer": "To increase lift and drag, allowing for a steeper approach and a lower landing speed."
+        },
+        {
+            "question_number": 80,
+            "question_text": "What is the correct procedure for recovering from a spin?",
+            "options": [
+                "Follow the manufacturer's recommended spin recovery procedure, which typically involves neutralizing the ailerons, applying full opposite rudder, and moving the control column forward.",
+                "Pull back on the control column and add power.",
+                "Apply full rudder in the direction of the spin.",
+                "Wait for the aircraft to recover on its own."
+            ],
+            "correct_answer": "Follow the manufacturer's recommended spin recovery procedure, which typically involves neutralizing the ailerons, applying full opposite rudder, and moving the control column forward."
+        },
+        {
+            "question_number": 81,
+            "question_text": "What is the purpose of the 'carburetor heat' control?",
+            "options": [
+                "To prevent or melt ice that can form in the carburetor.",
+                "To provide extra heat to the cabin.",
+                "To improve engine performance at high altitudes.",
+                "To cool the engine."
+            ],
+            "correct_answer": "To prevent or melt ice that can form in the carburetor."
+        },
+        {
+            "question_number": 82,
+            "question_text": "What is the meaning of the term 'short field takeoff'?",
+            "options": [
+                "A takeoff technique used to get airborne in the shortest possible distance.",
+                "A takeoff from a runway that is less than 3,000 feet long.",
+                "A takeoff with a tailwind.",
+                "A takeoff without flaps."
+            ],
+            "correct_answer": "A takeoff technique used to get airborne in the shortest possible distance."
+        },
+        {
+            "question_number": 83,
+            "question_text": "What is the purpose of the 'mixture' control?",
+            "options": [
+                "To adjust the ratio of fuel to air entering the engine.",
+                "To control the engine RPM.",
+                "To select the fuel tank.",
+                "To prime the engine."
+            ],
+            "correct_answer": "To adjust the ratio of fuel to air entering the engine."
+        },
+        {
+            "question_number": 84,
+            "question_text": "What is the meaning of the term 'soft field takeoff'?",
+            "options": [
+                "A takeoff technique used on unpaved or soft surfaces to prevent the wheels from digging in.",
+                "A takeoff from a grass runway.",
+                "A takeoff with a crosswind.",
+                "A takeoff at a slow speed."
+            ],
+            "correct_answer": "A takeoff technique used on unpaved or soft surfaces to prevent the wheels from digging in."
+        },
+        {
+            "question_number": 85,
+            "question_text": "What is the purpose of the 'rudder' on an aircraft?",
+            "options": [
+                "To control yaw, or the movement of the aircraft's nose left and right.",
+                "To control roll, or the movement of the aircraft's wings up and down.",
+                "To control pitch, or the movement of the aircraft's nose up and down.",
+                "To control the speed of the aircraft."
+            ],
+            "correct_answer": "To control yaw, or the movement of the aircraft's nose left and right."
+        },
+        {
+            "question_number": 86,
+            "question_text": "What is the meaning of the term 'short field landing'?",
+            "options": [
+                "A landing technique used to stop the aircraft in the shortest possible distance.",
+                "A landing on a runway that is less than 3,000 feet long.",
+                "A landing with a tailwind.",
+                "A landing without flaps."
+            ],
+            "correct_answer": "A landing technique used to stop the aircraft in the shortest possible distance."
+        },
+        {
+            "question_number": 87,
+            "question_text": "What is the purpose of the 'ailerons' on an aircraft?",
+            "options": [
+                "To control roll, or the movement of the aircraft's wings up and down.",
+                "To control yaw, or the movement of the aircraft's nose left and right.",
+                "To control pitch, or the movement of the aircraft's nose up and down.",
+                "To control the speed of the aircraft."
+            ],
+            "correct_answer": "To control roll, or the movement of the aircraft's wings up and down."
+        },
+        {
+            "question_number": 88,
+            "question_text": "What is the meaning of the term 'soft field landing'?",
+            "options": [
+                "A landing technique used on unpaved or soft surfaces to prevent the wheels from digging in.",
+                "A landing on a grass runway.",
+                "A landing with a crosswind.",
+                "A landing at a slow speed."
+            ],
+            "correct_answer": "A landing technique used on unpaved or soft surfaces to prevent the wheels from digging in."
+        },
+        {
+            "question_number": 89,
+            "question_text": "What is the purpose of the 'elevator' on an aircraft?",
+            "options": [
+                "To control pitch, or the movement of the aircraft's nose up and down.",
+                "To control roll, or the movement of the aircraft's wings up and down.",
+                "To control yaw, or the movement of the aircraft's nose left and right.",
+                "To control the speed of the aircraft."
+            ],
+            "correct_answer": "To control pitch, or the movement of the aircraft's nose up and down."
+        },
+        {
+            "question_number": 90,
+            "question_text": "What is the meaning of the term 'crosswind landing'?",
+            "options": [
+                "A landing technique used when the wind is blowing across the runway.",
+                "A landing on a runway that intersects another runway.",
+                "A landing with a tailwind.",
+                "A landing at a high speed."
+            ],
+            "correct_answer": "A landing technique used when the wind is blowing across the runway."
+        },
+        {
+            "question_number": 91,
+            "question_text": "What is the purpose of the 'trim tab'?",
+            "options": [
+                "To relieve control pressure and help maintain a desired flight attitude.",
+                "To make the aircraft turn faster.",
+                "To increase the speed of the aircraft.",
+                "To help with steering the aircraft on the ground."
+            ],
+            "correct_answer": "To relieve control pressure and help maintain a desired flight attitude."
+        },
+        {
+            "question_number": 92,
+            "question_text": "What is the meaning of the term 'forward slip'?",
+            "options": [
+                "A maneuver used to increase the rate of descent without increasing airspeed.",
+                "A maneuver used to lose altitude quickly in an emergency.",
+                "A maneuver used to correct for a crosswind during landing.",
+                "A maneuver used to practice stalls."
+            ],
+            "correct_answer": "A maneuver used to increase the rate of descent without increasing airspeed."
+        },
+        {
+            "question_number": 93,
+            "question_text": "What is the purpose of the 'pitot-static system'?",
+            "options": [
+                "To provide airspeed, altitude, and vertical speed information.",
+                "To provide engine instrument readings.",
+                "To provide navigation information.",
+                "To provide communication with ATC."
+            ],
+            "correct_answer": "To provide airspeed, altitude, and vertical speed information."
+        },
+        {
+            "question_number": 94,
+            "question_text": "What is the meaning of the term 'sideslip'?",
+            "options": [
+                "A maneuver in which the aircraft's longitudinal axis is not aligned with its flight path, used to correct for a crosswind during landing.",
+                "A maneuver used to lose altitude quickly.",
+                "A maneuver used to practice stalls.",
+                "A maneuver used to make a steep turn."
+            ],
+            "correct_answer": "A maneuver in which the aircraft's longitudinal axis is not aligned with its flight path, used to correct for a crosswind during landing."
+        },
+        {
+            "question_number": 95,
+            "question_text": "What is the purpose of the 'vacuum system' in an aircraft?",
+            "options": [
+                "To power some of the flight instruments, such as the attitude indicator and heading indicator.",
+                "To provide suction for the de-icing boots.",
+                "To operate the retractable landing gear.",
+                "To provide cabin pressurization."
+            ],
+            "correct_answer": "To power some of the flight instruments, such as the attitude indicator and heading indicator."
+        },
+        {
+            "question_number": 96,
+            "question_text": "What is the meaning of the term 'chandelle'?",
+            "options": [
+                "A maximum performance climbing turn.",
+                "A steep descending turn.",
+                "A maneuver to reverse course.",
+                "A type of aerobatic maneuver."
+            ],
+            "correct_answer": "A maximum performance climbing turn."
+        },
+        {
+            "question_number": 97,
+            "question_text": "What is the purpose of the 'electrical system' in an aircraft?",
+            "options": [
+                "To power the lights, radios, instruments, and other electrical equipment.",
+                "To start the engine.",
+                "To provide heat to the cabin.",
+                "To operate the flight controls."
+            ],
+            "correct_answer": "To power the lights, radios, instruments, and other electrical equipment."
+        },
+        {
+            "question_number": 98,
+            "question_text": "What is the meaning of the term 'lazy eight'?",
+            "options": [
+                "A maneuver consisting of two 180-degree turns in opposite directions, with a climb and a descent.",
+                "A series of S-turns across a road.",
+                "A steep turn.",
+                "A slow flight maneuver."
+            ],
+            "correct_answer": "A maneuver consisting of two 180-degree turns in opposite directions, with a climb and a descent."
+        },
+        {
+            "question_number": 99,
+            "question_text": "What is the purpose of the 'fuel system' in an aircraft?",
+            "options": [
+                "To store and deliver fuel to the engine.",
+                "To measure the amount of fuel remaining.",
+                "To cool the engine.",
+                "To provide weight and balance."
+            ],
+            "correct_answer": "To store and deliver fuel to the engine."
+        },
+        {
+            "question_number": 100,
+            "question_text": "What is the meaning of the term 'steep turn'?",
+            "options": [
+                "A turn with a bank angle of 45 degrees or more.",
+                "A turn with a bank angle of 30 degrees.",
+                "A turn at a high speed.",
+                "A turn in which the aircraft loses altitude."
+            ],
+            "correct_answer": "A turn with a bank angle of 45 degrees or more."
+        },
+        {
+            "question_number": 101,
+            "question_text": "What is the purpose of the 'oil system' in an aircraft engine?",
+            "options": [
+                "To lubricate, cool, and clean the engine's moving parts.",
+                "To provide hydraulic pressure.",
+                "To mix with the fuel.",
+                "To prevent rust."
+            ],
+            "correct_answer": "To lubricate, cool, and clean the engine's moving parts."
+        },
+        {
+            "question_number": 102,
+            "question_text": "What is the meaning of the term 'slow flight'?",
+            "options": [
+                "Flying the aircraft at the slowest possible airspeed without stalling.",
+                "Flying with the flaps down.",
+                "Flying with the engine at idle.",
+                "Flying at a low altitude."
+            ],
+            "correct_answer": "Flying the aircraft at the slowest possible airspeed without stalling."
+        },
+        {
+            "question_number": 103,
+            "question_text": "What is the purpose of the 'ignition system' in an aircraft engine?",
+            "options": [
+                "To provide a spark to ignite the fuel-air mixture in the cylinders.",
+                "To start the engine.",
+                "To power the electrical system.",
+                "To control the engine RPM."
+            ],
+            "correct_answer": "To provide a spark to ignite the fuel-air mixture in the cylinders."
+        },
+        {
+            "question_number": 104,
+            "question_text": "What is the meaning of the term 'power-off stall'?",
+            "options": [
+                "A stall entered from a low power setting, simulating an approach to landing.",
+                "A stall with the engine turned off.",
+                "A stall at a high altitude.",
+                "A stall in a turn."
+            ],
+            "correct_answer": "A stall entered from a low power setting, simulating an approach to landing."
+        },
+        {
+            "question_number": 105,
+            "question_text": "What is the purpose of the 'cooling system' in an aircraft engine?",
+            "options": [
+                "To dissipate the heat generated by the engine.",
+                "To provide heat to the cabin.",
+                "To cool the fuel.",
+                "To cool the oil."
+            ],
+            "correct_answer": "To dissipate the heat generated by the engine."
+        },
+        {
+            "question_number": 106,
+            "question_text": "What is the meaning of the term 'power-on stall'?",
+            "options": [
+                "A stall entered from a high power setting, simulating a takeoff or climb.",
+                "A stall with the engine at full power.",
+                "A stall at a low altitude.",
+                "A stall in a turn."
+            ],
+            "correct_answer": "A stall entered from a high power setting, simulating a takeoff or climb."
+        },
+        {
+            "question_number": 107,
+            "question_text": "What is the purpose of the 'propeller' on an aircraft?",
+            "options": [
+                "To convert the engine's power into thrust.",
+                "To cool the engine.",
+                "To provide directional control.",
+                "To generate electricity."
+            ],
+            "correct_answer": "To convert the engine's power into thrust."
+        },
+        {
+            "question_number": 108,
+            "question_text": "What is the meaning of the term 'accelerated stall'?",
+            "options": [
+                "A stall that occurs at a higher airspeed than a normal stall, due to an increased load factor.",
+                "A stall that happens very quickly.",
+                "A stall in a dive.",
+                "A stall with the engine at full power."
+            ],
+            "correct_answer": "A stall that occurs at a higher airspeed than a normal stall, due to an increased load factor."
+        },
+        {
+            "question_number": 109,
+            "question_text": "What is the purpose of the 'landing gear' on an aircraft?",
+            "options": [
+                "To support the aircraft on the ground and to absorb the shock of landing.",
+                "To help with steering the aircraft on the ground.",
+                "To provide braking action.",
+                "To retract in flight to reduce drag."
+            ],
+            "correct_answer": "To support the aircraft on the ground and to absorb the shock of landing."
+        },
+        {
+            "question_number": 110,
+            "question_text": "What is the meaning of the term 'emergency descent'?",
+            "options": [
+                "A maneuver to lose altitude as rapidly as possible.",
+                "A descent with the engine turned off.",
+                "A descent in bad weather.",
+                "A descent to an alternate airport."
+            ],
+            "correct_answer": "A maneuver to lose altitude as rapidly as possible."
+        },
+        {
+            "question_number": 111,
+            "question_text": "What is the purpose of the 'brakes' on an aircraft?",
+            "options": [
+                "To slow down or stop the aircraft on the ground.",
+                "To help with steering the aircraft on the ground.",
+                "To prevent the aircraft from rolling when parked.",
+                "All of the above."
+            ],
+            "correct_answer": "All of the above."
+        },
+        {
+            "question_number": 112,
+            "question_text": "What is the meaning of the term 'diversion'?",
+            "options": [
+                "Flying to an alternate airport instead of the planned destination.",
+                "Flying a different route than planned.",
+                "Flying at a different altitude than planned.",
+                "Flying at a different speed than planned."
+            ],
+            "correct_answer": "Flying to an alternate airport instead of the planned destination."
+        },
+        {
+            "question_number": 113,
+            "question_text": "What is the purpose of the 'flight instruments'?",
+            "options": [
+                "To provide the pilot with information about the aircraft's speed, altitude, attitude, and heading.",
+                "To provide the pilot with information about the engine's performance.",
+                "To provide the pilot with navigation information.",
+                "All of the above."
+            ],
+            "correct_answer": "All of the above."
+        },
+        {
+            "question_number": 114,
+            "question_text": "What is the meaning of the term 'lost procedures'?",
+            "options": [
+                "A set of procedures to follow if you become lost or disoriented.",
+                "Procedures for finding a lost aircraft.",
+                "Procedures for dealing with lost baggage.",
+                "Procedures for recovering from a lost communication situation."
+            ],
+            "correct_answer": "A set of procedures to follow if you become lost or disoriented."
+        },
+        {
+            "question_number": 115,
+            "question_text": "What is the purpose of the 'navigation instruments'?",
+            "options": [
+                "To provide the pilot with information about the aircraft's position and to help with navigation.",
+                "To provide the pilot with information about the aircraft's speed and altitude.",
+                "To provide the pilot with information about the engine's performance.",
+                "To provide the pilot with communication with ATC."
+            ],
+            "correct_answer": "To provide the pilot with information about the aircraft's position and to help with navigation."
+        },
+        {
+            "question_number": 116,
+            "question_text": "What is the meaning of the term 'precautionary landing'?",
+            "options": [
+                "A landing made as a precaution, when there is a potential problem with the aircraft or a passenger.",
+                "A landing in bad weather.",
+                "A landing at an alternate airport.",
+                "A landing without engine power."
+            ],
+            "correct_answer": "A landing made as a precaution, when there is a potential problem with the aircraft or a passenger."
+        },
+        {
+            "question_number": 117,
+            "question_text": "What is the purpose of the 'engine instruments'?",
+            "options": [
+                "To provide the pilot with information about the engine's performance, such as RPM, oil pressure, and temperature.",
+                "To provide the pilot with information about the aircraft's speed and altitude.",
+                "To provide the pilot with navigation information.",
+                "To provide the pilot with communication with ATC."
+            ],
+            "correct_answer": "To provide the pilot with information about the engine's performance, such as RPM, oil pressure, and temperature."
+        },
+        {
+            "question_number": 118,
+            "question_text": "What is the meaning of the term 'forced landing'?",
+            "options": [
+                "A landing made due to an engine failure or other critical situation.",
+                "A landing in a field or other unprepared area.",
+                "A landing at night.",
+                "A landing in strong winds."
+            ],
+            "correct_answer": "A landing made due to an engine failure or other critical situation."
+        },
+        {
+            "question_number": 119,
+            "question_text": "What is the purpose of the 'communication equipment'?",
+            "options": [
+                "To allow the pilot to communicate with air traffic control and other aircraft.",
+                "To listen to music.",
+                "To make phone calls.",
+                "To send text messages."
+            ],
+            "correct_answer": "To allow the pilot to communicate with air traffic control and other aircraft."
+        },
+        {
+            "question_number": 120,
+            "question_text": "What is the meaning of the term 'ditching'?",
+            "options": [
+                "A forced landing on water.",
+                "A forced landing in the desert.",
+                "A forced landing in the mountains.",
+                "A forced landing at night."
+            ],
+            "correct_answer": "A forced landing on water."
+        },
+        {
+            "question_number": 121,
+            "question_text": "What is the purpose of the 'Pilot's Operating Handbook' (POH) or 'Aircraft Flight Manual' (AFM)?",
+            "options": [
+                "To provide the pilot with all the information necessary to operate the aircraft safely and efficiently.",
+                "To provide maintenance instructions for the aircraft.",
+                "To provide a list of all the parts on the aircraft.",
+                "To provide the history of the aircraft."
+            ],
+            "correct_answer": "To provide the pilot with all the information necessary to operate the aircraft safely and efficiently."
+        },
+        {
+            "question_number": 122,
+            "question_text": "What is the meaning of the term 'crew resource management' (CRM)?",
+            "options": [
+                "The effective use of all available resources, including people, equipment, and information, to achieve safe and efficient flight operations.",
+                "The management of the flight crew's schedule.",
+                "The training of the flight crew.",
+                "The selection of the flight crew."
+            ],
+            "correct_answer": "The effective use of all available resources, including people, equipment, and information, to achieve safe and efficient flight operations."
+        },
+        {
+            "question_number": 123,
+            "question_text": "What is the purpose of the 'sterile cockpit' rule?",
+            "options": [
+                "To prohibit non-essential conversations and activities during critical phases of flight, such as takeoff and landing.",
+                "To keep the cockpit clean.",
+                "To prevent unauthorized people from entering the cockpit.",
+                "To ensure that the pilots are not distracted by their cell phones."
+            ],
+            "correct_answer": "To prohibit non-essential conversations and activities during critical phases of flight, such as takeoff and landing."
+        },
+        {
+            "question_number": 124,
+            "question_text": "What is the meaning of the term 'situational awareness'?",
+            "options": [
+                "The accurate perception of the factors and conditions affecting the aircraft and the flight crew.",
+                "The ability to fly the aircraft by reference to instruments.",
+                "The ability to communicate effectively with ATC.",
+                "The ability to perform emergency procedures."
+            ],
+            "correct_answer": "The accurate perception of the factors and conditions affecting the aircraft and the flight crew."
+        },
+        {
+            "question_number": 125,
+            "question_text": "What is the purpose of the 'threat and error management' (TEM) model?",
+            "options": [
+                "To identify and manage threats and errors before they lead to an accident or incident.",
+                "To investigate accidents and incidents.",
+                "To punish pilots who make mistakes.",
+                "To design safer aircraft."
+            ],
+            "correct_answer": "To identify and manage threats and errors before they lead to an accident or incident."
+        },
+        {
+            "question_number": 126,
+            "question_text": "What is the meaning of the term 'human factors' in aviation?",
+            "options": [
+                "The study of how people interact with their environments, and the application of that knowledge to improve safety and performance.",
+                "The study of the human body and its limitations.",
+                "The study of human psychology.",
+                "The study of human error."
+            ],
+            "correct_answer": "The study of how people interact with their environments, and the application of that knowledge to improve safety and performance."
+        },
+        {
+            "question_number": 127,
+            "question_text": "What is the purpose of the 'IMSAFE' checklist?",
+            "options": [
+                "To help pilots assess their fitness to fly.",
+                "To check the airworthiness of the aircraft.",
+                "To plan a cross-country flight.",
+                "To perform a pre-flight inspection."
+            ],
+            "correct_answer": "To help pilots assess their fitness to fly."
+        },
+        {
+            "question_number": 128,
+            "question_text": "What does the 'I' in the IMSAFE checklist stand for?",
+            "options": [
+                "Illness",
+                "Injury",
+                "Intoxication",
+                "Inspection"
+            ],
+            "correct_answer": "Illness"
+        },
+        {
+            "question_number": 129,
+            "question_text": "What does the 'M' in the IMSAFE checklist stand for?",
+            "options": [
+                "Medication",
+                "Medical",
+                "Mental",
+                "Mood"
+            ],
+            "correct_answer": "Medication"
+        },
+        {
+            "question_number": 130,
+            "question_text": "What does the 'S' in the IMSAFE checklist stand for?",
+            "options": [
+                "Stress",
+                "Sleep",
+                "Sickness",
+                "Stamina"
+            ],
+            "correct_answer": "Stress"
+        },
+        {
+            "question_number": 131,
+            "question_text": "What does the 'A' in the IMSAFE checklist stand for?",
+            "options": [
+                "Alcohol",
+                "Attitude",
+                "Alertness",
+                "Anxiety"
+            ],
+            "correct_answer": "Alcohol"
+        },
+        {
+            "question_number": 132,
+            "question_text": "What does the 'F' in the IMSAFE checklist stand for?",
+            "options": [
+                "Fatigue",
+                "Fear",
+                "Fitness",
+                "Food"
+            ],
+            "correct_answer": "Fatigue"
+        },
+        {
+            "question_number": 133,
+            "question_text": "What does the 'E' in the IMSAFE checklist stand for?",
+            "options": [
+                "Emotion",
+                "Eating",
+                "Energy",
+                "Experience"
+            ],
+            "correct_answer": "Emotion"
+        },
+        {
+            "question_number": 134,
+            "question_text": "What is the purpose of the 'PAVE' checklist?",
+            "options": [
+                "To help pilots identify and mitigate risks before a flight.",
+                "To perform a pre-flight inspection.",
+                "To plan a cross-country flight.",
+                "To assess their fitness to fly."
+            ],
+            "correct_answer": "To help pilots identify and mitigate risks before a flight."
+        },
+        {
+            "question_number": 135,
+            "question_text": "What does the 'P' in the PAVE checklist stand for?",
+            "options": [
+                "Pilot",
+                "Plane",
+                "Performance",
+                "Pressure"
+            ],
+            "correct_answer": "Pilot"
+        },
+        {
+            "question_number": 136,
+            "question_text": "What does the 'A' in the PAVE checklist stand for?",
+            "options": [
+                "Aircraft",
+                "Altitude",
+                "Airspace",
+                "Attitude"
+            ],
+            "correct_answer": "Aircraft"
+        },
+        {
+            "question_number": 137,
+            "question_text": "What does the 'V' in the PAVE checklist stand for?",
+            "options": [
+                "enVironment",
+                "Visibility",
+                "VFR",
+                "VOR"
+            ],
+            "correct_answer": "enVironment"
+        },
+        {
+            "question_number": 138,
+            "question_text": "What does the 'E' in the PAVE checklist stand for?",
+            "options": [
+                "External pressures",
+                "Emergency",
+                "Engine",
+                "Experience"
+            ],
+            "correct_answer": "External pressures"
+        },
+        {
+            "question_number": 139,
+            "question_text": "What is the purpose of the 'DECIDE' model?",
+            "options": [
+                "To provide a structured framework for aeronautical decision-making.",
+                "To help pilots memorize emergency procedures.",
+                "To calculate weight and balance.",
+                "To plan a flight."
+            ],
+            "correct_answer": "To provide a structured framework for aeronautical decision-making."
+        },
+        {
+            "question_number": 140,
+            "question_text": "What does the 'D' in the DECIDE model stand for?",
+            "options": [
+                "Detect",
+                "Decide",
+                "Descend",
+                "Divert"
+            ],
+            "correct_answer": "Detect"
+        },
+        {
+            "question_number": 141,
+            "question_text": "What does the first 'E' in the DECIDE model stand for?",
+            "options": [
+                "Estimate",
+                "Evaluate",
+                "Emergency",
+                "Engine"
+            ],
+            "correct_answer": "Estimate"
+        },
+        {
+            "question_number": 142,
+            "question_text": "What does the 'C' in the DECIDE model stand for?",
+            "options": [
+                "Choose",
+                "Communicate",
+                "Climb",
+                "Check"
+            ],
+            "correct_answer": "Choose"
+        },
+        {
+            "question_number": 143,
+            "question_text": "What does the 'I' in the DECIDE model stand for?",
+            "options": [
+                "Identify",
+                "Implement",
+                "Instruct",
+                "Inform"
+            ],
+            "correct_answer": "Identify"
+        },
+        {
+            "question_number": 144,
+            "question_text": "What does the 'D' in the DECIDE model stand for?",
+            "options": [
+                "Do",
+                "Descend",
+                "Divert",
+                "Declare"
+            ],
+            "correct_answer": "Do"
+        },
+        {
+            "question_number": 145,
+            "question_text": "What does the second 'E' in the DECIDE model stand for?",
+            "options": [
+                "Evaluate",
+                "Emergency",
+                "Engine",
+                "Execute"
+            ],
+            "correct_answer": "Evaluate"
+        },
+        {
+            "question_number": 146,
+            "question_text": "What is the purpose of the '5 P's' checklist?",
+            "options": [
+                "To help pilots maintain situational awareness throughout the flight.",
+                "To perform a pre-flight inspection.",
+                "To plan a cross-country flight.",
+                "To assess their fitness to fly."
+            ],
+            "correct_answer": "To help pilots maintain situational awareness throughout the flight."
+        },
+        {
+            "question_number": 147,
+            "question_text": "What are the '5 P's'?",
+            "options": [
+                "The Plan, The Plane, The Pilot, The Passengers, The Programming",
+                "Position, Performance, Power, People, Procedures",
+                "Pressure, Pitch, Power, Performance, Precision",
+                "Pilot, Plane, Path, Programming, Plan"
+            ],
+            "correct_answer": "The Plan, The Plane, The Pilot, The Passengers, The Programming"
+        },
+        {
+            "question_number": 148,
+            "question_text": "What is the purpose of a 'Safety Management System' (SMS)?",
+            "options": [
+                "To provide a systematic approach to managing safety, including the necessary organizational structures, accountabilities, policies, and procedures.",
+                "To investigate accidents and incidents.",
+                "To punish employees who violate safety rules.",
+                "To comply with government regulations."
+            ],
+            "correct_answer": "To provide a systematic approach to managing safety, including the necessary organizational structures, accountabilities, policies, and procedures."
+        },
+        {
+            "question_number": 149,
+            "question_text": "What are the four components of a Safety Management System (SMS)?",
+            "options": [
+                "Safety Policy, Safety Risk Management, Safety Assurance, and Safety Promotion",
+                "Planning, Doing, Checking, and Acting",
+                "Prevention, Detection, Correction, and Improvement",
+                "People, Equipment, Procedures, and Environment"
+            ],
+            "correct_answer": "Safety Policy, Safety Risk Management, Safety Assurance, and Safety Promotion"
+        },
+        {
+            "question_number": 150,
+            "question_text": "What is the purpose of 'Safety Risk Management' in SMS?",
+            "options": [
+                "To identify hazards and mitigate the associated risks.",
+                "To investigate accidents.",
+                "To train employees on safety procedures.",
+                "To promote a positive safety culture."
+            ],
+            "correct_answer": "To identify hazards and mitigate the associated risks."
+        },
+        {
+            "question_number": 151,
+            "question_text": "What is the purpose of 'Safety Assurance' in SMS?",
+            "options": [
+                "To evaluate the effectiveness of safety risk controls and to continuously improve the SMS.",
+                "To ensure that all employees are following safety procedures.",
+                "To conduct safety audits and inspections.",
+                "To report safety data to the management."
+            ],
+            "correct_answer": "To evaluate the effectiveness of safety risk controls and to continuously improve the SMS."
+        },
+        {
+            "question_number": 152,
+            "question_text": "What is the purpose of 'Safety Promotion' in SMS?",
+            "options": [
+                "To foster a positive safety culture and to provide safety training and communication.",
+                "To advertise the company's safety record.",
+                "To reward employees for good safety performance.",
+                "To punish employees for unsafe acts."
+            ],
+            "correct_answer": "To foster a positive safety culture and to provide safety training and communication."
+        },
+        {
+            "question_number": 153,
+            "question_text": "What is the difference between a 'hazard' and a 'risk'?",
+            "options": [
+                "A hazard is a condition with the potential to cause harm, while a risk is the assessed likelihood and severity of the harm.",
+                "A hazard is a minor problem, while a risk is a major problem.",
+                "A hazard is something that can be eliminated, while a risk is something that must be accepted.",
+                "There is no difference."
+            ],
+            "correct_answer": "A hazard is a condition with the potential to cause harm, while a risk is the assessed likelihood and severity of the harm."
+        },
+        {
+            "question_number": 154,
+            "question_text": "What is the purpose of a 'risk matrix'?",
+            "options": [
+                "To assess the level of risk associated with a hazard by considering its likelihood and severity.",
+                "To list all the hazards in the workplace.",
+                "To track the progress of risk mitigation actions.",
+                "To communicate risk information to employees."
+            ],
+            "correct_answer": "To assess the level of risk associated with a hazard by considering its likelihood and severity."
+        },
+        {
+            "question_number": 155,
+            "question_text": "What are the levels of risk mitigation in the 'hierarchy of controls'?",
+            "options": [
+                "Elimination, Substitution, Engineering Controls, Administrative Controls, and Personal Protective Equipment (PPE)",
+                "Avoidance, Reduction, Transfer, and Acceptance",
+                "Prevention, Detection, and Correction",
+                "Low, Medium, and High"
+            ],
+            "correct_answer": "Elimination, Substitution, Engineering Controls, Administrative Controls, and Personal Protective Equipment (PPE)"
+        },
+        {
+            "question_number": 156,
+            "question_text": "What is the most effective level of risk mitigation in the hierarchy of controls?",
+            "options": [
+                "Elimination",
+                "Substitution",
+                "Engineering Controls",
+                "Personal Protective Equipment (PPE)"
+            ],
+            "correct_answer": "Elimination"
+        },
+        {
+            "question_number": 157,
+            "question_text": "What is the least effective level of risk mitigation in the hierarchy of controls?",
+            "options": [
+                "Personal Protective Equipment (PPE)",
+                "Elimination",
+                "Substitution",
+                "Administrative Controls"
+            ],
+            "correct_answer": "Personal Protective Equipment (PPE)"
+        },
+        {
+            "question_number": 158,
+            "question_text": "What is the purpose of a 'safety culture'?",
+            "options": [
+                "To create an environment where safety is a core value and everyone is committed to it.",
+                "To comply with safety regulations.",
+                "To avoid accidents.",
+                "To reduce insurance costs."
+            ],
+            "correct_answer": "To create an environment where safety is a core value and everyone is committed to it."
+        },
+        {
+            "question_number": 159,
+            "question_text": "What are the characteristics of a 'positive safety culture'?",
+            "options": [
+                "Open reporting, just culture, learning culture, and informed culture.",
+                "Blame culture, punitive culture, and reactive culture.",
+                "Top-down management, strict rules, and fear of punishment.",
+                "Lack of communication, lack of trust, and lack of commitment."
+            ],
+            "correct_answer": "Open reporting, just culture, learning culture, and informed culture."
+        },
+        {
+            "question_number": 160,
+            "question_text": "What is the purpose of a 'just culture'?",
+            "options": [
+                "To encourage open reporting of errors and hazards without fear of blame, while still holding individuals accountable for their actions.",
+                "To punish everyone who makes a mistake.",
+                "To blame the system for all errors.",
+                "To ignore errors and hope they don't happen again."
+            ],
+            "correct_answer": "To encourage open reporting of errors and hazards without fear of blame, while still holding individuals accountable for their actions."
+        },
+        {
+            "question_number": 161,
+            "question_text": "What is the difference between an 'active failure' and a 'latent condition'?",
+            "options": [
+                "An active failure is an unsafe act committed by a front-line operator, while a latent condition is a hidden problem within the system.",
+                "An active failure is a minor error, while a latent condition is a major error.",
+                "An active failure is intentional, while a latent condition is unintentional.",
+                "There is no difference."
+            ],
+            "correct_answer": "An active failure is an unsafe act committed by a front-line operator, while a latent condition is a hidden problem within the system."
+        },
+        {
+            "question_number": 162,
+            "question_text": "What is the 'Swiss Cheese Model' of accident causation?",
+            "options": [
+                "A model that shows how accidents happen when holes in multiple layers of defense line up.",
+                "A model that blames the pilot for all accidents.",
+                "A model that focuses on the technical causes of accidents.",
+                "A model that is used to investigate cheese-related accidents."
+            ],
+            "correct_answer": "A model that shows how accidents happen when holes in multiple layers of defense line up."
+        },
+        {
+            "question_number": 163,
+            "question_text": "What is the purpose of an 'accident investigation'?",
+            "options": [
+                "To determine the probable cause of an accident and to make recommendations to prevent similar accidents from happening in the future.",
+                "To find someone to blame for the accident.",
+                "To assess the damage to the aircraft.",
+                "To provide information to the media."
+            ],
+            "correct_answer": "To determine the probable cause of an accident and to make recommendations to prevent similar accidents from happening in the future."
+        },
+        {
+            "question_number": 164,
+            "question_text": "What is the role of the 'National Transportation Safety Board' (NTSB) in the United States?",
+            "options": [
+                "To investigate every civil aviation accident in the United States and significant accidents in other modes of transportation.",
+                "To regulate the aviation industry.",
+                "To provide air traffic control services.",
+                "To operate the nation's airports."
+            ],
+            "correct_answer": "To investigate every civil aviation accident in the United States and significant accidents in other modes of transportation."
+        },
+        {
+            "question_number": 165,
+            "question_text": "What is the role of the 'Aircraft Accident Investigation and Inquiry Board' (AAIIB) in the Philippines?",
+            "options": [
+                "To investigate aircraft accidents and incidents in the Philippines.",
+                "To issue pilot licenses.",
+                "To certify aircraft.",
+                "To manage the airports."
+            ],
+            "correct_answer": "To investigate aircraft accidents and incidents in the Philippines."
+        },
+        {
+            "question_number": 166,
+            "question_text": "What is the purpose of a 'cockpit voice recorder' (CVR)?",
+            "options": [
+                "To record the conversations and sounds in the cockpit.",
+                "To record the flight data.",
+                "To provide entertainment for the pilots.",
+                "To communicate with the passengers."
+            ],
+            "correct_answer": "To record the conversations and sounds in the cockpit."
+        },
+        {
+            "question_number": 167,
+            "question_text": "What is the purpose of a 'flight data recorder' (FDR)?",
+            "options": [
+                "To record various parameters of the aircraft's performance.",
+                "To record the conversations in the cockpit.",
+                "To provide a backup navigation system.",
+                "To track the location of the aircraft."
+            ],
+            "correct_answer": "To record various parameters of the aircraft's performance."
+        },
+        {
+            "question_number": 168,
+            "question_text": "What is the purpose of the 'search and rescue' (SAR) system?",
+            "options": [
+                "To locate and rescue people in distress.",
+                "To investigate accidents.",
+                "To provide medical assistance.",
+                "To recover wreckage."
+            ],
+            "correct_answer": "To locate and rescue people in distress."
+        },
+        {
+            "question_number": 169,
+            "question_text": "What is the international emergency frequency for aircraft?",
+            "options": [
+                "121.5 MHz",
+                "123.45 MHz",
+                "122.9 MHz",
+                "118.1 MHz"
+            ],
+            "correct_answer": "121.5 MHz"
+        },
+        {
+            "question_number": 170,
+            "question_text": "What is the purpose of the 'visual approach slope indicator' (VASI)?",
+            "options": [
+                "To provide visual guidance to help pilots maintain the proper approach slope.",
+                "To indicate the direction of the wind.",
+                "To mark the threshold of the runway.",
+                "To provide distance information to the runway."
+            ],
+            "correct_answer": "To provide visual guidance to help pilots maintain the proper approach slope."
+        },
+        {
+            "question_number": 171,
+            "question_text": "What is the purpose of the 'precision approach path indicator' (PAPI)?",
+            "options": [
+                "To provide precise visual guidance to help pilots maintain the proper approach slope.",
+                "To indicate the alignment with the runway centerline.",
+                "To mark the touchdown zone.",
+                "To provide a visual indication of the wind."
+            ],
+            "correct_answer": "To provide precise visual guidance to help pilots maintain the proper approach slope."
+        },
+        {
+            "question_number": 172,
+            "question_text": "What is the purpose of the 'runway end identifier lights' (REIL)?",
+            "options": [
+                "To provide rapid and positive identification of the approach end of a particular runway.",
+                "To mark the edges of the runway.",
+                "To indicate the remaining length of the runway.",
+                "To provide a visual glide path."
+            ],
+            "correct_answer": "To provide rapid and positive identification of the approach end of a particular runway."
+        },
+        {
+            "question_number": 173,
+            "question_text": "What is the purpose of the 'runway edge lights'?",
+            "options": [
+                "To outline the edges of the runway during periods of darkness or restricted visibility.",
+                "To mark the centerline of the runway.",
+                "To indicate the touchdown zone.",
+                "To provide a visual glide path."
+            ],
+            "correct_answer": "To outline the edges of the runway during periods of darkness or restricted visibility."
+        },
+        {
+            "question_number": 174,
+            "question_text": "What is the purpose of the 'runway centerline lights'?",
+            "options": [
+                "To facilitate landing under adverse visibility conditions.",
+                "To mark the edges of the runway.",
+                "To indicate the remaining length of the runway.",
+                "To provide a visual glide path."
+            ],
+            "correct_answer": "To facilitate landing under adverse visibility conditions."
+        },
+        {
+            "question_number": 175,
+            "question_text": "What is the purpose of the 'touchdown zone lights' (TDZL)?",
+            "options": [
+                "To indicate the touchdown zone for landing operations.",
+                "To mark the centerline of the runway.",
+                "To mark the edges of the runway.",
+                "To provide a visual glide path."
+            ],
+            "correct_answer": "To indicate the touchdown zone for landing operations."
+        },
+        {
+            "question_number": 176,
+            "question_text": "What is the purpose of the 'taxiway lights'?",
+            "options": [
+                "To outline the edges of the taxiways during periods of darkness or restricted visibility.",
+                "To mark the centerline of the taxiways.",
+                "To indicate the direction to the runway.",
+                "All of the above."
+            ],
+            "correct_answer": "All of the above."
+        },
+        {
+            "question_number": 177,
+            "question_text": "What is the purpose of the 'rotating beacon' at an airport?",
+            "options": [
+                "To indicate the location of the airport.",
+                "To indicate the direction of the wind.",
+                "To indicate that the airport is open.",
+                "To indicate the type of airport (e.g., civilian, military)."
+            ],
+            "correct_answer": "To indicate the location of the airport."
+        },
+        {
+            "question_number": 178,
+            "question_text": "What is the meaning of a white and green rotating beacon?",
+            "options": [
+                "Lighted land airport",
+                "Lighted water airport",
+                "Heliport",
+                "Military airport"
+            ],
+            "correct_answer": "Lighted land airport"
+        },
+        {
+            "question_number": 179,
+            "question_text": "What is the purpose of the 'wind sock' or 'wind cone'?",
+            "options": [
+                "To provide a visual indication of the wind direction and approximate speed.",
+                "To measure the barometric pressure.",
+                "To measure the temperature.",
+                "To measure the humidity."
+            ],
+            "correct_answer": "To provide a visual indication of the wind direction and approximate speed."
+        },
+        {
+            "question_number": 180,
+            "question_text": "What is the purpose of the 'segmented circle' at an airport?",
+            "options": [
+                "To provide traffic pattern information at airports without operating control towers.",
+                "To mark a helicopter landing area.",
+                "To indicate the location of the fuel pumps.",
+                "To show the magnetic deviation."
+            ],
+            "correct_answer": "To provide traffic pattern information at airports without operating control towers."
+        },
+        {
+            "question_number": 181,
+            "question_text": "What is the purpose of the 'displaced threshold' on a runway?",
+            "options": [
+                "To indicate that the beginning of the runway is not available for landing, but may be used for takeoff and taxiing.",
+                "To mark a closed runway.",
+                "To indicate a temporary runway.",
+                "To show the location of an obstacle."
+            ],
+            "correct_answer": "To indicate that the beginning of the runway is not available for landing, but may be used for takeoff and taxiing."
+        },
+        {
+            "question_number": 182,
+            "question_text": "What is the purpose of the 'blast pad' or 'stopway'?",
+            "options": [
+                "An area designed to prevent erosion from jet blast and to provide a space for aircraft to stop in case of an aborted takeoff.",
+                "An area for parking aircraft.",
+                "An area for maintenance.",
+                "An area for de-icing."
+            ],
+            "correct_answer": "An area designed to prevent erosion from jet blast and to provide a space for aircraft to stop in case of an aborted takeoff."
+        },
+        {
+            "question_number": 183,
+            "question_text": "What is the meaning of a large 'X' on a runway or taxiway?",
+            "options": [
+                "The runway or taxiway is closed.",
+                "The runway or taxiway is for emergency use only.",
+                "The runway or taxiway is under construction.",
+                "The runway or taxiway has a displaced threshold."
+            ],
+            "correct_answer": "The runway or taxiway is closed."
+        },
+        {
+            "question_number": 184,
+            "question_text": "What is the purpose of the 'holding position' marking on a taxiway?",
+            "options": [
+                "To indicate the position where a taxiing aircraft is to stop and hold short of a runway.",
+                "To mark a parking spot.",
+                "To indicate an intersection with another taxiway.",
+                "To show the direction to the terminal."
+            ],
+            "correct_answer": "To indicate the position where a taxiing aircraft is to stop and hold short of a runway."
+        },
+        {
+            "question_number": 185,
+            "question_text": "What is the purpose of the 'ILS critical area' marking?",
+            "options": [
+                "To indicate an area where parking or taxiing of aircraft is prohibited when an ILS approach is in progress, to prevent interference with the ILS signal.",
+                "To mark the location of the ILS equipment.",
+                "To show the path of the ILS glideslope.",
+                "To indicate the decision altitude for the ILS approach."
+            ],
+            "correct_answer": "To indicate an area where parking or taxiing of aircraft is prohibited when an ILS approach is in progress, to prevent interference with the ILS signal."
+        },
+        {
+            "question_number": 186,
+            "question_text": "What is the purpose of the 'mandatory instruction' signs at an airport?",
+            "options": [
+                "To denote an entrance to a runway, critical area, or prohibited area, and they have a red background with white inscriptions.",
+                "To provide directional guidance to taxiing aircraft, and they have a yellow background with black inscriptions.",
+                "To indicate the location of services, such as fuel or parking, and they have a black background with yellow inscriptions.",
+                "To provide information on noise abatement procedures, and they have a white background with black inscriptions."
+            ],
+            "correct_answer": "To denote an entrance to a runway, critical area, or prohibited area, and they have a red background with white inscriptions."
+        },
+        {
+            "question_number": 187,
+            "question_text": "What is the purpose of the 'location' signs at an airport?",
+            "options": [
+                "To identify the taxiway or runway on which the aircraft is located, and they have a black background with a yellow inscription and a yellow border.",
+                "To provide directional guidance to taxiing aircraft.",
+                "To indicate the distance remaining on a runway.",
+                "To mark a hazardous area."
+            ],
+            "correct_answer": "To identify the taxiway or runway on which the aircraft is located, and they have a black background with a yellow inscription and a yellow border."
+        },
+        {
+            "question_number": 188,
+            "question_text": "What is the purpose of the 'direction' signs at an airport?",
+            "options": [
+                "To indicate the direction of taxiways leading out of an intersection, and they have a yellow background with black inscriptions.",
+                "To identify the current taxiway.",
+                "To mark the entrance to a runway.",
+                "To show the location of the terminal."
+            ],
+            "correct_answer": "To indicate the direction of taxiways leading out of an intersection, and they have a yellow background with black inscriptions."
+        },
+        {
+            "question_number": 189,
+            "question_text": "What is the purpose of the 'destination' signs at an airport?",
+            "options": [
+                "To provide information on locating runways, terminals, cargo areas, and civil aviation areas, and they have a yellow background with black inscriptions.",
+                "To identify the current location.",
+                "To mark a prohibited area.",
+                "To indicate a mandatory instruction."
+            ],
+            "correct_answer": "To provide information on locating runways, terminals, cargo areas, and civil aviation areas, and they have a yellow background with black inscriptions."
+        },
+        {
+            "question_number": 190,
+            "question_text": "What is the purpose of the 'information' signs at an airport?",
+            "options": [
+                "To provide information such as frequencies or noise abatement procedures, and they have a yellow background with black inscriptions.",
+                "To give mandatory instructions.",
+                "To provide directional guidance.",
+                "To identify the current location."
+            ],
+            "correct_answer": "To provide information such as frequencies or noise abatement procedures, and they have a yellow background with black inscriptions."
+        },
+        {
+            "question_number": 191,
+            "question_text": "What is the purpose of the 'runway distance remaining' signs?",
+            "options": [
+                "To provide the pilot with information about the remaining distance of the runway in thousands of feet, and they have a black background with white numbers.",
+                "To indicate the distance to the end of the taxiway.",
+                "To show the length of the runway.",
+                "To mark the touchdown zone."
+            ],
+            "correct_answer": "To provide the pilot with information about the remaining distance of the runway in thousands of feet, and they have a black background with white numbers."
+        },
+        {
+            "question_number": 192,
+            "question_text": "What is the correct procedure for reporting a safety concern?",
+            "options": [
+                "Follow the company's established safety reporting procedures, which may include filling out a form or using a confidential reporting system.",
+                "Tell your supervisor.",
+                "Post it on social media.",
+                "Ignore it."
+            ],
+            "correct_answer": "Follow the company's established safety reporting procedures, which may include filling out a form or using a confidential reporting system."
+        },
+        {
+            "question_number": 193,
+            "question_text": "What is the purpose of the 'Aviation Safety Reporting System' (ASRS) in the United States?",
+            "options": [
+                "A confidential reporting system that allows pilots and other aviation professionals to report safety concerns without fear of enforcement action.",
+                "A system for investigating accidents.",
+                "A system for tracking flight data.",
+                "A system for communicating with ATC."
+            ],
+            "correct_answer": "A confidential reporting system that allows pilots and other aviation professionals to report safety concerns without fear of enforcement action."
+        },
+        {
+            "question_number": 194,
+            "question_text": "What is the purpose of the 'Line Operations Safety Audit' (LOSA)?",
+            "options": [
+                "A proactive safety tool that uses trained observers to collect safety-related data on flight operations in real-time.",
+                "An audit of the company's financial records.",
+                "An inspection of the aircraft.",
+                "A test of the pilot's knowledge."
+            ],
+            "correct_answer": "A proactive safety tool that uses trained observers to collect safety-related data on flight operations in real-time."
+        },
+        {
+            "question_number": 195,
+            "question_text": "What is the purpose of the 'Flight Operations Quality Assurance' (FOQA) program?",
+            "options": [
+                "A program that uses flight data to identify and mitigate safety risks.",
+                "A program to ensure that pilots are qualified.",
+                "A program to maintain the airworthiness of the aircraft.",
+                "A program to manage the company's finances."
+            ],
+            "correct_answer": "A program that uses flight data to identify and mitigate safety risks."
+        },
+        {
+            "question_number": 196,
+            "question_text": "What is the purpose of the 'Advanced Qualification Program' (AQP)?",
+            "options": [
+                "A voluntary alternative to traditional pilot training and checking requirements, which allows airlines to develop innovative training programs tailored to their specific needs.",
+                "A program for training air traffic controllers.",
+                "A program for certifying aircraft.",
+                "A program for investigating accidents."
+            ],
+            "correct_answer": "A voluntary alternative to traditional pilot training and checking requirements, which allows airlines to develop innovative training programs tailored to their specific needs."
+        },
+        {
+            "question_number": 197,
+            "question_text": "What is the purpose of the 'International Civil Aviation Organization' (ICAO)?",
+            "options": [
+                "A specialized agency of the United Nations that sets international standards and recommended practices for civil aviation.",
+                "An organization that represents the interests of airlines.",
+                "An organization that represents the interests of pilots.",
+                "An organization that operates the world's air traffic control system."
+            ],
+            "correct_answer": "A specialized agency of the United Nations that sets international standards and recommended practices for civil aviation."
+        },
+        {
+            "question_number": 198,
+            "question_text": "What is the purpose of the 'Federal Aviation Administration' (FAA) in the United States?",
+            "options": [
+                "The national aviation authority of the United States, responsible for regulating and overseeing all aspects of civil aviation.",
+                "An organization that investigates aviation accidents.",
+                "An organization that represents the interests of airports.",
+                "An organization that provides weather services."
+            ],
+            "correct_answer": "The national aviation authority of the United States, responsible for regulating and overseeing all aspects of civil aviation."
+        },
+        {
+            "question_number": 199,
+            "question_text": "What is the purpose of the 'Civil Aviation Authority of the Philippines' (CAAP)?",
+            "options": [
+                "The national aviation authority of the Philippines, responsible for regulating and overseeing all aspects of civil aviation.",
+                "An organization that operates the Philippine airports.",
+                "An organization that provides air traffic control services in the Philippines.",
+                "An organization that represents the interests of Philippine airlines."
+            ],
+            "correct_answer": "The national aviation authority of the Philippines, responsible for regulating and overseeing all aspects of civil aviation."
+        },
+        {
+            "question_number": 200,
+            "question_text": "What is the ultimate goal of all operational procedures in aviation?",
+            "options": [
+                "To ensure the safety of flight.",
+                "To make money.",
+                "To fly as fast as possible.",
+                "To comply with regulations."
+            ],
+            "correct_answer": "To ensure the safety of flight."
+        }
+    ]
+}
