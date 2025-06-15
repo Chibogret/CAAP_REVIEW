@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAAP Mock by Chippo</title>
+    <!-- Google Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Google Gemini AI SDK -->
+    <script src="https://unpkg.com/@google/generative-ai"></script>
+
     <style>
         :root {
             --primary-bg: #f0f4f8; /* Lighter background */
@@ -28,9 +35,6 @@
             margin: 0;
             padding: 0;
         }
-
-        /* Google Font Import */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
         body {
             font-family: var(--font-family);
@@ -197,29 +201,13 @@
              font-weight: 600;
              color: var(--primary-accent);
          }
-         .option-item input[type="radio"]:checked + label::before {
-             /* Optional: enhance visual cue for selection if hiding radio */
-         }
 
 
         .option-item input[type="radio"] {
             margin-right: 12px;
             transform: scale(1.1);
             accent-color: var(--primary-accent);
-             /* Optional: Hide default radio if using custom styling */
-            /* appearance: none;
-            width: 18px; height: 18px; border: 2px solid var(--primary-accent);
-            border-radius: 50%; margin-right: 12px; cursor: pointer;
-            position: relative; */
         }
-
-        /* Optional: Custom radio button checkmark */
-         /* .option-item input[type="radio"]:checked::after {
-             content: ''; position: absolute; top: 3px; left: 3px;
-             width: 10px; height: 10px; background-color: var(--primary-accent);
-             border-radius: 50%;
-         } */
-
 
         .option-item label {
             cursor: pointer;
@@ -276,7 +264,6 @@
              opacity: 0.7;
         }
 
-
         /* Results Area */
         #results-container {
             margin-top: 30px;
@@ -321,6 +308,80 @@
         }
         #restart-button:hover { background-color: var(--secondary-accent); }
 
+        /* API Key Input */
+        .api-key-container {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: var(--tertiary-bg);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            align-items: center;
+            gap: 10px;
+        }
+        .api-key-container label {
+            font-weight: 600;
+            flex-shrink: 0; /* Prevent label from shrinking */
+        }
+        .api-key-container input[type="password"] {
+            flex-grow: 1;
+            padding: 10px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            font-size: 1em;
+            background-color: #fff;
+            color: var(--text-color);
+            min-width: 150px; /* Ensure input doesn't get too small */
+        }
+        .api-key-container #save-api-key-btn {
+            padding: 10px 15px;
+            background-color: var(--primary-accent);
+            min-width: unset; /* Override flex-grow */
+            flex-grow: 0;
+            font-size: 1em; /* Adjust for compactness */
+        }
+        #api-key-status {
+            margin-top: 5px;
+            font-size: 0.9em;
+            text-align: center;
+            width: 100%;
+        }
+        .api-key-status-success { color: var(--correct-color); }
+        .api-key-status-error { color: var(--incorrect-color); }
+
+        /* AI Explanation Area */
+        #explanation-container {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            background-color: #fdfdfd;
+        }
+        #explanation-container h3 {
+            color: var(--primary-accent);
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 8px;
+        }
+        #explanation-text {
+            white-space: pre-wrap; /* Preserve formatting from AI */
+            font-size: 0.95em;
+            color: var(--text-color);
+        }
+        .explanation-loader {
+            margin: 20px auto;
+        }
+
+        /* Google Search Button */
+        #google-search-btn {
+            background-color: #4285F4; /* Google Blue */
+        }
+        #google-search-btn:hover {
+            background-color: #357ae8;
+        }
+
         /* Visibility Control */
         .hidden { display: none !important; } /* Use !important carefully */
 
@@ -346,6 +407,14 @@
                     <!-- Options populated by JS -->
                 </select>
             </div>
+            <!-- API Key Input Section -->
+            <div class="api-key-container">
+                <label for="gemini-api-key">Gemini API Key:</label>
+                <input type="password" id="gemini-api-key" placeholder="Enter your Gemini API key">
+                <button id="save-api-key-btn" class="quiz-button">Save Key</button>
+                <div id="api-key-status" class="hidden"></div>
+            </div>
+
             <!-- Dynamic Info Display -->
             <div id="quiz-info-area" class="quiz-info hidden">
                 <span id="progress-display">Q: 1 / 10</span>
@@ -367,10 +436,19 @@
 
             <div id="feedback-area" class="hidden"></div>
 
+            <!-- AI Explanation Area -->
+            <div id="explanation-container" class="hidden">
+                <h3>AI Explanation:</h3>
+                <div id="explanation-text"></div>
+                <div class="loader explanation-loader hidden"></div>
+                <div id="explanation-error" class="error-message hidden"></div>
+            </div>
+
             <!-- Control Buttons -->
             <div class="button-container">
                 <button id="submit-answer-btn" class="quiz-button">Submit Answer</button>
                 <button id="skip-question-btn" class="quiz-button">Skip Question</button>
+                <button id="google-search-btn" class="quiz-button">Search Question</button>
                 <button id="next-question-btn" class="quiz-button hidden">Next Question</button>
             </div>
         </div>
@@ -408,6 +486,16 @@
             const restartBtn = document.getElementById('restart-button');
             const quizTitleElement = document.querySelector('.quiz-title');
 
+            // NEW: Gemini AI Elements
+            const geminiApiKeyInput = document.getElementById('gemini-api-key');
+            const saveApiKeyBtn = document.getElementById('save-api-key-btn');
+            const apiKeyStatus = document.getElementById('api-key-status');
+            const explanationContainer = document.getElementById('explanation-container');
+            const explanationText = document.getElementById('explanation-text');
+            const explanationLoader = document.querySelector('.explanation-loader');
+            const explanationError = document.getElementById('explanation-error');
+            const googleSearchBtn = document.getElementById('google-search-btn');
+
             // --- State Variables ---
             let currentQuizData = null;
             let allQuestions = [];
@@ -420,6 +508,11 @@
             let remainingSkips = 3;
             let questionsAnsweredInSession = 0; // Tracks questions presented (excluding skips initially)
 
+            // NEW: Gemini AI State
+            let geminiApiKey = localStorage.getItem('geminiApiKey') || '';
+            let genAI = null; // Will be initialized when API key is set
+            const MODEL_NAME = "gemini-1.5-flash"; // A fast and cost-effective model
+
             const TOTAL_SUBJECTS = 11; // Updated to 9 subjects
             const subjectNames = [ // Array of subject names and filenames
                 { name: "Air Law", filename: "Air Law.json" },
@@ -428,7 +521,7 @@
                 { name: "Aircraft General Knowledge", filename: "Aircraft General Knowledge.json" },
                 { name: "Human Performance and Limitations", filename: "Human Performance and Limitations.json" },
                 { name: "Meteorology", filename: "Meteorology.json" },
-                { name: "Operational Procedures", filename: "Operational Procedures.json" },
+                { name: "Operational Procedures", filename: "OP.json" },
                 { name: "Flight Performance and Planning", filename: "Flight Performance and Planning.json" },
                 { name: "Radiotelephony", filename: "Radiotelephony.json" },
                 { name: "EQC - C172", filename: "EQC.json" },
@@ -442,6 +535,37 @@
                 appContainer.style.opacity = 1; // Fade in
                 populateSubjectSelector();
                 resetUI(); // Ensure clean state
+
+                // NEW: Load and initialize Gemini API key if present
+                if (geminiApiKey) {
+                    geminiApiKeyInput.value = geminiApiKey;
+                    initializeGemini(geminiApiKey);
+                }
+            }
+
+            // NEW: Gemini API Key Handling
+            function initializeGemini(key) {
+                if (!window.GoogleGenerativeAI) {
+                    apiKeyStatus.textContent = 'Google Gemini SDK not loaded. Check internet connection or script tag.';
+                    apiKeyStatus.className = 'api-key-status-error';
+                    showElement(apiKeyStatus);
+                    return;
+                }
+                try {
+                    genAI = new GoogleGenerativeAI.GoogleGenerativeAI(key);
+                    apiKeyStatus.textContent = 'API key loaded. Gemini AI ready!';
+                    apiKeyStatus.className = 'api-key-status-success';
+                    showElement(apiKeyStatus);
+                    console.log("Gemini AI SDK initialized.");
+                } catch (e) {
+                    geminiApiKey = ''; // Clear invalid key
+                    localStorage.removeItem('geminiApiKey');
+                    apiKeyStatus.textContent = 'Invalid API key. Please check and re-enter.';
+                    apiKeyStatus.className = 'api-key-status-error';
+                    showElement(apiKeyStatus);
+                    console.error("Error initializing Gemini SDK:", e);
+                    genAI = null; // Ensure genAI is null if initialization fails
+                }
             }
 
             function populateSubjectSelector() {
@@ -467,6 +591,7 @@
                 hideElement(quizContent);
                 hideElement(quizInfoArea);
                 hideElement(resultsContainer);
+                hideElement(explanationContainer); // NEW
             }
 
             function clearError() {
@@ -497,6 +622,8 @@
                 enableButton(subjectSelector); // Re-enable subject selection
                 subjectSelector.value = ""; // Reset dropdown
                 quizTitleElement.textContent = 'CAAP Mock by Chippo'; // Reset title
+                hideElement(explanationContainer); // NEW: Hide explanation area
+                hideElement(apiKeyStatus); // NEW: Hide API status message
             }
 
             // --- Quiz Logic ---
@@ -543,7 +670,7 @@
                 remainingSkips = 3;
                 questionsAnsweredInSession = 0;
 
-                quizTitleElement.textContent = currentQuizData.exam_title || `Subject Quiz`;
+                quizTitleElement.textContent = currentQuizData.exam_title || 'Subject Quiz';
                 hideElement(feedbackArea);
                 clearError();
                 showElement(quizContent);
@@ -581,9 +708,10 @@
                 showElement(skipBtn);
                 enableButton(submitBtn);
                 enableButton(skipBtn);
-                 if (remainingSkips <= 0) {
+                if (remainingSkips <= 0) {
                     disableButton(skipBtn);
                 }
+                hideElement(explanationContainer); // NEW: Hide previous explanation for new question
 
 
                 const question = questionsToAsk[currentQuestionIndex];
@@ -653,6 +781,9 @@
                 questionsAnsweredInSession++; // Increment *after* answering
                 updateQuizInfo(); // Update score immediately
 
+                // NEW: Generate AI Explanation after answer submission
+                generateExplanation(currentQuestion, userAnswer, correctAnswer);
+
                 // Check if quiz is over OR prepare for next question button
                 if (questionsToAsk.length === 0 && skippedQuestions.length === 0) {
                     // Truly finished
@@ -705,6 +836,7 @@
                 hideElement(quizContent);
                 hideElement(quizInfoArea);
                 hideElement(feedbackArea);
+                hideElement(explanationContainer); // NEW: Hide explanation at end
 
                 const finalScore = totalQuestionsInQuiz === 0 ? 0 : Math.round((correctAnswersCount / totalQuestionsInQuiz) * 100);
                  // Use allQuestions.length (totalQuestionsInQuiz) for the final denominator
@@ -715,6 +847,79 @@
 
                 showElement(resultsContainer);
                 enableButton(subjectSelector); // Allow selecting a new quiz
+            }
+
+            // NEW: AI Explanation Function
+            async function generateExplanation(question, userAnswer, correctAnswer) {
+                if (!genAI) {
+                    explanationError.textContent = 'Gemini AI not initialized. Please provide an API key.';
+                    showElement(explanationError);
+                    hideElement(explanationLoader);
+                    hideElement(explanationText);
+                    return;
+                }
+
+                showElement(explanationContainer);
+                showElement(explanationLoader);
+                hideElement(explanationText);
+                hideElement(explanationError);
+                explanationText.textContent = ''; // Clear previous explanation
+
+                const model = genAI.getGenerativeModel({ model: MODEL_NAME });
+
+                const prompt = `Explain the following multiple-choice question and its correct answer in detail.
+
+Question: "${question.question_text}"
+Options:
+${question.options.map((opt, i) => String.fromCharCode(65 + i) + ". " + opt).join('\n')}
+
+Your Answer: "${userAnswer}"
+Correct Answer: "${correctAnswer}"
+
+Provide a concise and informative explanation focusing on why the correct answer is correct and briefly why other options might be incorrect, without directly confirming if the user's answer was right or wrong. Structure it clearly.`;
+
+                try {
+                    const result = await model.generateContent(prompt);
+                    const response = await result.response;
+                    const text = response.text();
+                    explanationText.textContent = text;
+                    showElement(explanationText);
+                } catch (e) {
+                    console.error("Error generating explanation:", e);
+                    explanationError.textContent = 'Failed to generate explanation. Please try again or check your API key/network.';
+                    showElement(explanationError);
+                } finally {
+                    hideElement(explanationLoader);
+                }
+            }
+
+            // NEW: AI-powered Google Search Prompt Function
+            async function generateSearchPrompt(questionText) {
+                if (!genAI) {
+                    displayError('Gemini AI not initialized. Cannot generate search prompt.');
+                    return null;
+                }
+
+                const model = genAI.getGenerativeModel({ model: MODEL_NAME });
+
+                const prompt = `Generate a concise and effective Google search query (1-2 sentences, max 100 characters) for the following question to find more information related to the topic. Do not include the answer in the search query.
+
+Question: "${questionText}"
+
+Example Output: "explain the principles of flight lift and drag" or "what is the capital of France"
+
+Search Query:`;
+
+                try {
+                    const result = await model.generateContent(prompt);
+                    const response = await result.response;
+                    const text = response.text().trim();
+                    return text;
+                } catch (e) {
+                    console.error("Error generating search prompt:", e);
+                    displayError('Failed to generate search prompt. Please try again.');
+                    return null;
+                }
             }
 
 
@@ -733,8 +938,39 @@
             nextBtn.addEventListener('click', handleNext);
             restartBtn.addEventListener('click', resetUI); // Allow choosing subject again
 
+            // NEW: API Key Save Button Listener
+            saveApiKeyBtn.addEventListener('click', () => {
+                const key = geminiApiKeyInput.value.trim();
+                if (key) {
+                    localStorage.setItem('geminiApiKey', key);
+                    geminiApiKey = key;
+                    initializeGemini(key);
+                } else {
+                    localStorage.removeItem('geminiApiKey');
+                    geminiApiKey = '';
+                    genAI = null;
+                    apiKeyStatus.textContent = 'API key cleared.';
+                    apiKeyStatus.className = 'api-key-status-error';
+                    showElement(apiKeyStatus);
+                }
+            });
+
+            // NEW: Google Search Button Listener
+            googleSearchBtn.addEventListener('click', async () => {
+                const currentQuestion = questionsToAsk[currentQuestionIndex];
+                if (!currentQuestion) {
+                    displayError("No question currently displayed to search.");
+                    return;
+                }
+                const searchPrompt = await generateSearchPrompt(currentQuestion.question_text);
+                if (searchPrompt) {
+                    window.open(`https://www.google.com/search?q=${encodeURIComponent(searchPrompt)}`, '_blank');
+                }
+            });
+
+
             // --- Initial Execution ---
-            // Show splash screen for 3 seconds, then initialize
+            // Show splash screen for 1 second, then initialize
             setTimeout(initializeApp, 1000);
 
         });
