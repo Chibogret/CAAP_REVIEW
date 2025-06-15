@@ -464,6 +464,7 @@
     </div>
 
     <!-- Google Gemini AI SDK - MOVED TO HERE -->
+    <!-- This script MUST be loaded before your main application script attempts to use GoogleGenerativeAI -->
     <script src="https://cdn.jsdelivr.net/npm/@google/generative-ai@latest/dist/gemini.min.js"></script>
 
     <script>
@@ -515,7 +516,9 @@
             // NEW: Gemini AI State
             let geminiApiKey = localStorage.getItem('geminiApiKey') || '';
             let genAI = null; // Will be initialized when API key is set
-            const MODEL_NAME = "gemini-1.5-flash"; // A fast and cost-effective model
+            // Note: gemini-1.5-flash is the currently available and recommended "flash" model for the SDK.
+            // The curl example's "gemini-2.0-flash" is not a standard public SDK model name.
+            const MODEL_NAME = "gemini-1.5-flash"; 
 
             const TOTAL_SUBJECTS = 11; // Updated to 9 subjects
             const subjectNames = [ // Array of subject names and filenames
@@ -544,17 +547,31 @@
                 if (geminiApiKey) {
                     geminiApiKeyInput.value = geminiApiKey;
                     initializeGemini(geminiApiKey);
+                } else {
+                    // If no key stored, ensure status message is hidden
+                    hideElement(apiKeyStatus);
+                }
+
+                // IMPORTANT: Add an explicit check here in case the SDK script failed to load.
+                // This is crucial for avoiding 'GoogleGenerativeAI is undefined' errors.
+                if (typeof GoogleGenerativeAI === 'undefined') {
+                    apiKeyStatus.textContent = 'ERROR: Google Gemini SDK not loaded. AI features will not work.';
+                    apiKeyStatus.className = 'api-key-status-error';
+                    showElement(apiKeyStatus);
+                    console.error("Critical: GoogleGenerativeAI is undefined. SDK script might be blocked or failed to load correctly.");
+                    genAI = null; // Ensure genAI is null if SDK is genuinely missing
                 }
             }
 
             // NEW: Gemini API Key Handling
             function initializeGemini(key) {
-                // Ensure GoogleGenerativeAI is defined before trying to use it
+                // Defensive check, though initializeApp should catch most SDK loading issues
                 if (typeof GoogleGenerativeAI === 'undefined') {
-                    apiKeyStatus.textContent = 'Google Gemini SDK not loaded. Check internet connection or script tag.';
+                    apiKeyStatus.textContent = 'Google Gemini SDK not found. AI features disabled.';
                     apiKeyStatus.className = 'api-key-status-error';
                     showElement(apiKeyStatus);
-                    console.error("GoogleGenerativeAI is undefined. SDK might not have loaded.");
+                    console.error("GoogleGenerativeAI is undefined within initializeGemini. SDK not available.");
+                    genAI = null; // Important to ensure genAI is null if SDK is missing
                     return;
                 }
                 try {
@@ -629,8 +646,8 @@
                 subjectSelector.value = ""; // Reset dropdown
                 quizTitleElement.textContent = 'CAAP Mock by Chippo'; // Reset title
                 hideElement(explanationContainer); // NEW: Hide explanation area
-                // Keep API key status visible if it was set, or hide if it wasn't there
-                if (!geminiApiKey) { // Only hide if no key was ever loaded/set
+                // Ensure API key status is hidden only if no key is present or it failed
+                if (!geminiApiKey || genAI === null) {
                      hideElement(apiKeyStatus);
                 }
             }
@@ -696,15 +713,20 @@
             function displayQuestion() {
                 // Check if we ran out of questions to ask but have skipped ones
                 if (currentQuestionIndex >= questionsToAsk.length) {
-                    if (skippedQuestions.length > 0) {
+                    if (questionsToAsk.length === 0 && skippedQuestions.length > 0) {
                         // Move skipped back to main list and reset index
                         questionsToAsk = [...skippedQuestions];
                         skippedQuestions = [];
                         currentQuestionIndex = 0;
                          // Don't increment questionsAnsweredInSession here, these are repeats
+                    } else if (questionsToAsk.length === 0 && skippedQuestions.length === 0) {
+                         // Truly finished all questions
+                        console.log("All questions processed, ending quiz.");
+                        endQuiz();
+                        return;
                     } else {
                         // Should not happen if nextBtn logic is correct, but handle defensively
-                        console.error("Reached end of questions unexpectedly.");
+                        console.error("Reached end of questions unexpectedly without new ones or skips.");
                         endQuiz();
                         return;
                     }
@@ -849,7 +871,6 @@
 
                 const finalScore = totalQuestionsInQuiz === 0 ? 0 : Math.round((correctAnswersCount / totalQuestionsInQuiz) * 100);
                  // Use allQuestions.length (totalQuestionsInQuiz) for the final denominator
-                 // Or potentially use (correctAnswersCount + incorrectAnswersCount) if you want score based only on attempts? Let's stick to total Qs.
 
                 finalScoreDisplay.textContent = `Final Score: ${finalScore}%`;
                 resultsSummary.textContent = `You answered ${correctAnswersCount} out of ${totalQuestionsInQuiz} questions correctly.`; // Modify as needed based on how you count 'answered'
@@ -957,7 +978,7 @@ Search Query:`;
                 } else {
                     localStorage.removeItem('geminiApiKey');
                     geminiApiKey = '';
-                    genAI = null;
+                    genAI = null; // Ensure genAI is null if key is cleared
                     apiKeyStatus.textContent = 'API key cleared.';
                     apiKeyStatus.className = 'api-key-status-error';
                     showElement(apiKeyStatus);
