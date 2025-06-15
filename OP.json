@@ -307,7 +307,7 @@
                 "Cross the runway at a 45-degree angle to expedite traffic flow.",
                 "Flash your landing lights repeatedly before entering the runway."
             ],
-            "correct_answer": "Stop and wait for a specific clearance to cross."
+            "correct_answer": "Stop and wait for a specific clearance to cross the runway."
         },
         {
             "question_number": 29,
@@ -417,7 +417,7 @@
                 "To ensure that the aircraft's weight and center of gravity are within the allowable limits for safe flight.",
                 "To comply with international customs and cargo regulations for freight operations."
             ],
-            "correct_answer": "To ensure that the aircraft's weight and center of gravity are within the allowable limits."
+            "correct_answer": "To ensure that the aircraft's weight and center of gravity are within the allowable limits for safe flight."
         },
         {
             "question_number": 39,
@@ -483,7 +483,7 @@
                 "To perform an aerial display for observers on the ground.",
                 "To allow the engine to cool down after a period of high power setting."
             ],
-            "correct_answer": "To discontinue an approach to landing for safety reasons."
+            "correct_answer": "To discontinue an approach to landing for safety reasons or when conditions are not suitable."
         },
         {
             "question_number": 45,
@@ -527,7 +527,7 @@
                 "To improve engine performance and efficiency at high altitudes.",
                 "To cool the engine during prolonged ground operations."
             ],
-            "correct_answer": "To prevent or melt ice that can form in the carburetor."
+            "correct_answer": "To prevent or melt ice that can form in the carburetor, which can reduce engine power."
         },
         {
             "question_number": 49,
@@ -538,7 +538,7 @@
                 "A takeoff performed with a significant tailwind component to reduce ground roll.",
                 "A takeoff executed without the use of flaps to maximize climb performance."
             ],
-            "correct_answer": "A takeoff technique used to get airborne in the shortest possible distance."
+            "correct_answer": "A takeoff technique used to get airborne in the shortest possible distance, often requiring high engine power and specific flap settings."
         },
         {
             "question_number": 50,
@@ -549,7 +549,7 @@
                 "To adjust the ratio of fuel to air entering the engine for optimal combustion at various altitudes and power settings.",
                 "To prime the engine with fuel for starting in cold conditions."
             ],
-            "correct_answer": "To adjust the ratio of fuel to air entering the engine."
+            "correct_answer": "To adjust the ratio of fuel to air entering the engine for optimal combustion at various altitudes and power settings."
         },
         {
             "question_number": 51,
@@ -560,7 +560,7 @@
                 "A takeoff performed with a strong crosswind component.",
                 "A takeoff at a very slow airspeed to conserve fuel."
             ],
-            "correct_answer": "A takeoff technique used on unpaved or soft surfaces to prevent the wheels from digging in."
+            "correct_answer": "A takeoff technique used on unpaved or soft surfaces (like grass or mud) to prevent the wheels from digging in and to get airborne quickly."
         },
         {
             "question_number": 52,
@@ -582,7 +582,7 @@
                 "A landing performed with a significant tailwind component.",
                 "A landing executed without the use of flaps to maintain higher airspeed."
             ],
-            "correct_answer": "A landing technique used to stop the aircraft in the shortest possible distance."
+            "correct_answer": "A landing technique used to stop the aircraft in the shortest possible distance, often involving a steep approach and maximum braking."
         },
         {
             "question_number": 54,
@@ -604,7 +604,7 @@
                 "A landing performed with a strong crosswind component.",
                 "A landing at a very slow airspeed to conserve fuel."
             ],
-            "correct_answer": "A landing technique used on unpaved or soft surfaces to prevent the wheels from digging in."
+            "correct_answer": "A landing technique used on unpaved or soft surfaces to prevent the wheels from digging in, often involving touching down at the slowest possible speed."
         },
         {
             "question_number": 56,
@@ -626,7 +626,7 @@
                 "A landing performed with a significant tailwind component.",
                 "A landing at an unusually high airspeed to increase stability."
             ],
-            "correct_answer": "A landing technique used when the wind is blowing across the runway."
+            "correct_answer": "A landing technique used when the wind is blowing directly across the runway, requiring specific control inputs to maintain alignment."
         },
         {
             "question_number": 58,
@@ -637,7 +637,7 @@
                 "To relieve control pressure and help maintain a desired flight attitude without continuous pilot input.",
                 "To assist with steering the aircraft on the ground during taxi."
             ],
-            "correct_answer": "To relieve control pressure and help maintain a desired flight attitude."
+            "correct_answer": "To relieve control pressure and help maintain a desired flight attitude without continuous pilot input."
         },
         {
             "question_number": 59,
@@ -648,7 +648,7 @@
                 "A maneuver used to correct for a crosswind during landing.",
                 "A maneuver primarily used to practice stalls and recoveries."
             ],
-            "correct_answer": "A maneuver used to increase the rate of descent without increasing airspeed."
+            "correct_answer": "A maneuver used to increase the rate of descent without significantly increasing airspeed, often used for precision landings."
         },
         {
             "question_number": 60,
@@ -659,7 +659,7 @@
                 "To provide navigation information using VOR/ILS signals.",
                 "To facilitate communication with Air Traffic Control."
             ],
-            "correct_answer": "To provide airspeed, altitude, and vertical speed information."
+            "correct_answer": "To provide airspeed, altitude, and vertical speed information to the pilot."
         },
         {
             "question_number": 61,
@@ -670,7 +670,7 @@
                 "A maneuver primarily used to practice stalls and recoveries.",
                 "A maneuver used to make an extremely steep turn."
             ],
-            "correct_answer": "A maneuver in which the aircraft's longitudinal axis is not aligned with its flight path, used to correct for a crosswind during landing."
+            "correct_answer": "A maneuver in which the aircraft's longitudinal axis is not aligned with its flight path, often used to correct for a crosswind during landing."
         },
         {
             "question_number": 62,
@@ -692,7 +692,7 @@
                 "A maneuver designed to reverse course quickly at a constant altitude.",
                 "A specific type of aerobatic maneuver performed at high speed."
             ],
-            "correct_answer": "A maximum performance climbing turn."
+            "correct_answer": "A maximum performance climbing turn, gaining altitude while reversing course."
         },
         {
             "question_number": 64,
@@ -703,7 +703,7 @@
                 "To power the lights, radios, instruments, and other electrical equipment essential for flight.",
                 "To operate the primary flight controls such as elevators and ailerons."
             ],
-            "correct_answer": "To power the lights, radios, instruments, and other electrical equipment."
+            "correct_answer": "To power the lights, radios, instruments, and other electrical equipment essential for flight."
         },
         {
             "question_number": 65,
@@ -714,7 +714,7 @@
                 "A steep turn maneuver performed at maximum bank angle.",
                 "A slow flight maneuver performed at minimum controllable airspeed."
             ],
-            "correct_answer": "A maneuver consisting of two 180-degree turns in opposite directions, with a climb and a descent."
+            "correct_answer": "A maneuver consisting of two 180-degree turns in opposite directions, performed with continuous changes in altitude and airspeed."
         },
         {
             "question_number": 66,
@@ -725,7 +725,7 @@
                 "To store and deliver fuel to the engine in a controlled manner.",
                 "To manage the aircraft's weight and balance during flight."
             ],
-            "correct_answer": "To store and deliver fuel to the engine."
+            "correct_answer": "To store and deliver fuel to the engine in a controlled manner."
         },
         {
             "question_number": 67,
@@ -736,7 +736,7 @@
                 "A turn performed at a very high airspeed.",
                 "A turn in which the aircraft intentionally loses altitude."
             ],
-            "correct_answer": "A turn with a bank angle of 45 degrees or more."
+            "correct_answer": "A turn with a bank angle of 45 degrees or more, used to demonstrate control coordination."
         },
         {
             "question_number": 68,
@@ -758,7 +758,7 @@
                 "Flying with the engine at idle power setting.",
                 "Flying at a very low altitude, close to the ground."
             ],
-            "correct_answer": "Flying the aircraft at the slowest possible airspeed without stalling."
+            "correct_answer": "Flying the aircraft at the slowest possible airspeed without stalling, demonstrating precise control."
         },
         {
             "question_number": 70,
@@ -769,7 +769,7 @@
                 "To provide a spark to ignite the fuel-air mixture in the cylinders, initiating combustion.",
                 "To control the engine's RPM and power output."
             ],
-            "correct_answer": "To provide a spark to ignite the fuel-air mixture in the cylinders."
+            "correct_answer": "To provide a spark to ignite the fuel-air mixture in the cylinders, initiating combustion."
         },
         {
             "question_number": 71,
@@ -791,7 +791,7 @@
                 "To dissipate the heat generated by the engine to prevent overheating.",
                 "To cool the engine oil during flight operations."
             ],
-            "correct_answer": "To dissipate the heat generated by the engine."
+            "correct_answer": "To dissipate the heat generated by the engine to prevent overheating."
         },
         {
             "question_number": 73,
@@ -813,7 +813,7 @@
                 "To provide directional control during ground operations.",
                 "To generate electrical power for the aircraft's systems."
             ],
-            "correct_answer": "To convert the engine's power into thrust."
+            "correct_answer": "To convert the engine's rotational power into thrust, propelling the aircraft forward."
         },
         {
             "question_number": 75,
@@ -824,7 +824,7 @@
                 "A stall that occurs during a steep dive maneuver.",
                 "A stall with the engine at full power."
             ],
-            "correct_answer": "A stall that occurs at a higher airspeed than a normal stall, due to an increased load factor."
+            "correct_answer": "A stall that occurs at a higher airspeed than a normal stall, due to an increased load factor (e.g., in a turn)."
         },
         {
             "question_number": 76,
@@ -846,7 +846,7 @@
                 "A descent performed in severe instrument meteorological conditions.",
                 "A controlled descent to an alternate airport due to a minor issue."
             ],
-            "correct_answer": "A maneuver to lose altitude as rapidly as possible."
+            "correct_answer": "A maneuver to lose altitude as rapidly as possible, often due to an in-flight emergency."
         },
         {
             "question_number": 78,
@@ -868,7 +868,7 @@
                 "Flying at a different altitude than planned to avoid turbulence.",
                 "Flying at a different speed than planned to adjust to air traffic flow."
             ],
-            "correct_answer": "Flying to an alternate airport instead of the planned destination."
+            "correct_answer": "Flying to an alternate airport instead of the planned destination due to unforeseen circumstances."
         },
         {
             "question_number": 80,
@@ -890,7 +890,7 @@
                 "Procedures for dealing with lost baggage at the airport.",
                 "Procedures for recovering from a complete loss of communication situation."
             ],
-            "correct_answer": "A set of procedures to follow if you become lost or disoriented."
+            "correct_answer": "A set of procedures to follow if you become lost or disoriented during a flight."
         },
         {
             "question_number": 82,
@@ -912,7 +912,7 @@
                 "A landing at a designated alternate airport instead of the planned destination.",
                 "A landing executed without engine power due to a complete engine failure."
             ],
-            "correct_answer": "A landing made as a precaution, when there is a potential problem with the aircraft or a passenger."
+            "correct_answer": "A landing made as a precaution, when there is a potential problem with the aircraft, weather, or a passenger, but not an immediate emergency."
         },
         {
             "question_number": 84,
@@ -934,7 +934,7 @@
                 "A landing performed during nighttime hours without airport lighting.",
                 "A landing in extremely strong crosswinds."
             ],
-            "correct_answer": "A landing made due to an engine failure or other critical situation."
+            "correct_answer": "A landing made due to an engine failure or other critical situation that precludes continuation of flight."
         },
         {
             "question_number": 86,
@@ -960,7 +960,7 @@
         },
         {
             "question_number": 88,
-            "question_text": "What is the purpose of the 'Pilot's Operating Handbook' (POH) or 'Aircraft Flight Manual' (AFM)?",
+            "question_text": "What is the purpose of the 'Pilot's Operating Handbook' (POH) or 'Aircraft Flight Manual' (AFM)?"
             "options": [
                 "To provide detailed maintenance instructions for the aircraft systems.",
                 "To provide the pilot with all the information necessary to operate the aircraft safely and efficiently.",
@@ -989,7 +989,7 @@
                 "To prevent unauthorized persons from entering the cockpit during flight.",
                 "To ensure that pilots are not distracted by personal electronic devices."
             ],
-            "correct_answer": "To prohibit non-essential conversations and activities during critical phases of flight, such as takeoff and landing."
+            "correct_answer": "To prohibit non-essential conversations and activities during critical phases of flight, such as takeoff and landing, to minimize distractions."
         },
         {
             "question_number": 91,
@@ -1000,7 +1000,7 @@
                 "The ability to communicate effectively and concisely with Air Traffic Control.",
                 "The capability to perform complex emergency procedures under pressure."
             ],
-            "correct_answer": "The accurate perception of the factors and conditions affecting the aircraft and the flight crew."
+            "correct_answer": "The accurate perception of the factors and conditions affecting the aircraft and the flight crew, both internal and external."
         },
         {
             "question_number": 92,
@@ -1033,7 +1033,7 @@
                 "To plan a cross-country flight route and fuel requirements.",
                 "To perform a comprehensive pre-flight inspection of the aircraft."
             ],
-            "correct_answer": "To help pilots assess their fitness to fly."
+            "correct_answer": "To help pilots assess their fitness to fly and identify potential impairments."
         },
         {
             "question_number": 95,
@@ -1110,7 +1110,7 @@
                 "To plan a comprehensive cross-country flight, including navigation and fuel stops.",
                 "To assess their personal fitness to fly and any medical conditions."
             ],
-            "correct_answer": "To help pilots identify and mitigate risks before a flight."
+            "correct_answer": "To help pilots identify and mitigate risks before a flight by evaluating specific categories."
         },
         {
             "question_number": 102,
@@ -1165,7 +1165,7 @@
                 "To calculate accurate weight and balance for different flight configurations.",
                 "To plan a detailed flight route with multiple checkpoints."
             ],
-            "correct_answer": "To provide a structured framework for aeronautical decision-making."
+            "correct_answer": "To provide a structured framework for aeronautical decision-making in complex situations."
         },
         {
             "question_number": 107,
@@ -1242,7 +1242,7 @@
                 "To plan a cross-country flight, including navigation and alternate airports.",
                 "To assess their fitness to fly and any personal limitations."
             ],
-            "correct_answer": "To help pilots maintain situational awareness throughout the flight."
+            "correct_answer": "To help pilots maintain situational awareness throughout the flight by focusing on key aspects."
         },
         {
             "question_number": 114,
@@ -1286,7 +1286,7 @@
                 "To train employees on all safety procedures and regulations.",
                 "To promote a positive safety culture through communication campaigns."
             ],
-            "correct_answer": "To identify hazards and mitigate the associated risks."
+            "correct_answer": "To identify hazards and mitigate the associated risks before they lead to incidents or accidents."
         },
         {
             "question_number": 118,
@@ -1308,7 +1308,7 @@
                 "To reward employees for good safety performance and compliance.",
                 "To implement disciplinary actions for unsafe acts."
             ],
-            "correct_answer": "To foster a positive safety culture and to provide safety training and communication."
+            "correct_answer": "To foster a positive safety culture and to provide safety training and communication to all personnel."
         },
         {
             "question_number": 120,
@@ -1396,7 +1396,7 @@
                 "To shift all blame for errors from individuals to the system.",
                 "To disregard minor errors hoping they do not recur."
             ],
-            "correct_answer": "To encourage open reporting of errors and hazards without fear of blame, while still holding individuals accountable for their actions."
+            "correct_answer": "To encourage open reporting of errors and hazards without fear of blame, while still holding individuals accountable for reckless actions."
         },
         {
             "question_number": 128,
@@ -1407,7 +1407,7 @@
                 "An active failure is intentional, while a latent condition is unintentional.",
                 "There is no difference; they are interchangeable terms for unsafe acts."
             ],
-            "correct_answer": "An active failure is an unsafe act committed by a front-line operator, while a latent condition is a hidden problem within the system."
+            "correct_answer": "An active failure is an unsafe act committed by a front-line operator, while a latent condition is a hidden problem within the system's design or organization."
         },
         {
             "question_number": 129,
@@ -1418,7 +1418,7 @@
                 "A model that focuses exclusively on the technical and mechanical causes of accidents.",
                 "A model used to analyze supply chain failures in cheese production."
             ],
-            "correct_answer": "A model that shows how accidents happen when holes in multiple layers of defense line up."
+            "correct_answer": "A model that shows how accidents happen when holes or weaknesses in multiple layers of defense line up, allowing a hazard to pass through."
         },
         {
             "question_number": 130,
@@ -1451,7 +1451,7 @@
                 "To record the conversations and sounds in the cockpit, including communications and crew remarks.",
                 "To serve as a backup navigation system in case of primary system failure."
             ],
-            "correct_answer": "To record the conversations and sounds in the cockpit."
+            "correct_answer": "To record the conversations and sounds in the cockpit, including communications and crew remarks."
         },
         {
             "question_number": 133,
@@ -1462,7 +1462,7 @@
                 "To provide a backup communication system for pilots.",
                 "To track the exact geographical location of the aircraft in real-time."
             ],
-            "correct_answer": "To record various parameters of the aircraft's performance."
+            "correct_answer": "To record various parameters of the aircraft's performance, such as altitude, airspeed, and heading."
         },
         {
             "question_number": 134,
@@ -1473,7 +1473,7 @@
                 "To locate and rescue people in distress, particularly in aviation and maritime incidents.",
                 "To recover wreckage from accident sites."
             ],
-            "correct_answer": "To locate and rescue people in distress."
+            "correct_answer": "To locate and rescue people in distress, particularly in aviation and maritime incidents."
         },
         {
             "question_number": 135,
@@ -1495,7 +1495,7 @@
                 "To mark the precise threshold of the runway.",
                 "To provide distance information to the runway touchdown zone."
             ],
-            "correct_answer": "To provide visual guidance to help pilots maintain the proper approach slope."
+            "correct_answer": "To provide visual guidance to help pilots maintain the proper approach slope during landing."
         },
         {
             "question_number": 137,
@@ -1506,7 +1506,7 @@
                 "To mark the beginning of the touchdown zone on the runway.",
                 "To provide a visual indication of the crosswind component."
             ],
-            "correct_answer": "To provide precise visual guidance to help pilots maintain the proper approach slope."
+            "correct_answer": "To provide precise visual guidance to help pilots maintain the proper approach slope, typically with four lights."
         },
         {
             "question_number": 138,
@@ -1539,7 +1539,7 @@
                 "To indicate the remaining length of the runway.",
                 "To provide a visual glide path."
             ],
-            "correct_answer": "To facilitate landing under adverse visibility conditions."
+            "correct_answer": "To facilitate landing under adverse visibility conditions by providing alignment guidance."
         },
         {
             "question_number": 141,
@@ -1550,7 +1550,7 @@
                 "To mark the edges of the runway.",
                 "To provide a visual glide path."
             ],
-            "correct_answer": "To indicate the touchdown zone for landing operations."
+            "correct_answer": "To indicate the touchdown zone for landing operations, especially in low visibility."
         },
         {
             "question_number": 142,
@@ -1572,7 +1572,7 @@
                 "To signal that the airport is open for all types of operations.",
                 "To distinguish between civilian and military airports."
             ],
-            "correct_answer": "To indicate the location of the airport."
+            "correct_answer": "To indicate the location of the airport, especially during darkness or adverse weather."
         },
         {
             "question_number": 144,
@@ -1583,7 +1583,7 @@
                 "It signifies a heliport.",
                 "It signifies a military airport."
             ],
-            "correct_answer": "Lighted land airport"
+            "correct_answer": "It signifies a lighted land airport."
         },
         {
             "question_number": 145,
@@ -1594,7 +1594,7 @@
                 "To measure the ambient air temperature.",
                 "To measure the relative humidity at the airport."
             ],
-            "correct_answer": "To provide a visual indication of the wind direction and approximate speed."
+            "correct_answer": "To provide a visual indication of the wind direction and approximate speed to pilots."
         },
         {
             "question_number": 146,
@@ -1638,7 +1638,7 @@
                 "The runway or taxiway is currently under construction.",
                 "The runway or taxiway has a displaced threshold."
             ],
-            "correct_answer": "The runway or taxiway is closed."
+            "correct_answer": "The runway or taxiway is closed to all aircraft operations."
         },
         {
             "question_number": 150,
@@ -1649,7 +1649,7 @@
                 "To indicate the position where a taxiing aircraft is to stop and hold short of a runway or critical area.",
                 "To show the shortest direction to the main terminal building."
             ],
-            "correct_answer": "To indicate the position where a taxiing aircraft is to stop and hold short of a runway."
+            "correct_answer": "To indicate the position where a taxiing aircraft is to stop and hold short of a runway or critical area."
         },
         {
             "question_number": 151,
@@ -1671,7 +1671,7 @@
                 "They denote an entrance to a runway, critical area, or prohibited area, and they have a red background with white inscriptions.",
                 "They provide information on noise abatement procedures, with a white background and black inscriptions."
             ],
-            "correct_answer": "To denote an entrance to a runway, critical area, or prohibited area, and they have a red background with white inscriptions."
+            "correct_answer": "They denote an entrance to a runway, critical area, or prohibited area, and they have a red background with white inscriptions."
         },
         {
             "question_number": 153,
@@ -1682,7 +1682,7 @@
                 "They identify the taxiway or runway on which the aircraft is currently located, with a black background and a yellow inscription and border.",
                 "They mark a hazardous area requiring extreme caution."
             ],
-            "correct_answer": "They identify the taxiway or runway on which the aircraft is located, and they have a black background with a yellow inscription and a yellow border."
+            "correct_answer": "They identify the taxiway or runway on which the aircraft is currently located, with a black background and a yellow inscription and border."
         },
         {
             "question_number": 154,
@@ -1693,7 +1693,7 @@
                 "They indicate the direction of taxiways leading out of an intersection, and they have a yellow background with black inscriptions.",
                 "They show the shortest route to the passenger terminal."
             ],
-            "correct_answer": "To indicate the direction of taxiways leading out of an intersection, and they have a yellow background with black inscriptions."
+            "correct_answer": "They indicate the direction of taxiways leading out of an intersection, and they have a yellow background with black inscriptions."
         },
         {
             "question_number": 155,
@@ -1704,7 +1704,7 @@
                 "They provide information on locating runways, terminals, cargo areas, and civil aviation areas, and they have a yellow background with black inscriptions.",
                 "They give mandatory instructions for ground movement."
             ],
-            "correct_answer": "To provide information on locating runways, terminals, cargo areas, and civil aviation areas, and they have a yellow background with black inscriptions."
+            "correct_answer": "They provide information on locating runways, terminals, cargo areas, and civil aviation areas, and they have a yellow background with black inscriptions."
         },
         {
             "question_number": 156,
@@ -1715,7 +1715,7 @@
                 "They identify the current location of the aircraft.",
                 "They provide information such as frequencies or noise abatement procedures, and they have a yellow background with black inscriptions."
             ],
-            "correct_answer": "To provide information such as frequencies or noise abatement procedures, and they have a yellow background with black inscriptions."
+            "correct_answer": "They provide information such as frequencies or noise abatement procedures, and they have a yellow background with black inscriptions."
         },
         {
             "question_number": 157,
@@ -1726,7 +1726,7 @@
                 "To show the total length of the runway from threshold to end.",
                 "To mark the touchdown zone for landing aircraft."
             ],
-            "correct_answer": "To provide the pilot with information about the remaining distance of the runway in thousands of feet, and they have a black background with white numbers."
+            "correct_answer": "To provide the pilot with information about the remaining length of the runway in thousands of feet, with a black background and white numbers."
         },
         {
             "question_number": 158,
@@ -1737,7 +1737,7 @@
                 "Only report the concern verbally to your immediate supervisor.",
                 "Ignore the concern unless it directly impacts your personal safety."
             ],
-            "correct_answer": "Follow the company's established safety reporting procedures, which may include filling out a form or using a confidential reporting system."
+            "correct_answer": "Follow the company's established safety reporting procedures, which may include filling out a specific form or using a confidential reporting system."
         },
         {
             "question_number": 159,
@@ -1748,7 +1748,7 @@
                 "An inspection of the physical condition and maintenance records of individual aircraft.",
                 "A comprehensive written test of a pilot's knowledge of operational procedures."
             ],
-            "correct_answer": "A proactive safety tool that uses trained observers to collect safety-related data on flight operations in real-time."
+            "correct_answer": "A proactive safety tool that uses trained observers to collect safety-related data on flight operations in real-time without interfering with operations."
         },
         {
             "question_number": 160,
@@ -1759,7 +1759,7 @@
                 "A program to maintain the airworthiness of the aircraft fleet through scheduled inspections.",
                 "A program to manage the company's operational budget and optimize resource allocation."
             ],
-            "correct_answer": "A program that uses flight data to identify and mitigate safety risks."
+            "correct_answer": "A program that uses actual flight data recorded during normal operations to identify and mitigate safety risks."
         },
         {
             "question_number": 161,
@@ -1770,7 +1770,7 @@
                 "A program for certifying new aircraft models for commercial operation.",
                 "A program for investigating aviation accidents and incidents."
             ],
-            "correct_answer": "A voluntary alternative to traditional pilot training and checking requirements, which allows airlines to develop innovative training programs tailored to their specific needs."
+            "correct_answer": "A voluntary alternative to traditional pilot training and checking requirements, allowing airlines to develop innovative and tailored training programs."
         },
         {
             "question_number": 162,
@@ -1803,7 +1803,7 @@
                 "To ensure strict compliance with all international regulations.",
                 "To ensure the safety of flight for all occupants and ground personnel."
             ],
-            "correct_answer": "To ensure the safety of flight."
+            "correct_answer": "To ensure the safety of flight for all occupants and ground personnel."
         },
         {
             "question_number": 165,
@@ -1814,7 +1814,7 @@
                 "Goods requiring special handling due to their high monetary value.",
                 "Items that are perishable or require temperature control during transit."
             ],
-            "correct_answer": "Articles or substances which are capable of posing a risk to health, safety, property or the environment and which are shown in the list of dangerous goods in the Technical Instructions or which are classified according to those Instructions."
+            "correct_answer": "Articles or substances capable of posing a risk to health, safety, property, or the environment, as listed or classified by Technical Instructions."
         },
         {
             "question_number": 166,
@@ -1825,7 +1825,7 @@
                 "If the operator has obtained a special waiver from the Civil Aviation Authority.",
                 "Provided the pilot-in-command gives verbal approval."
             ],
-            "correct_answer": "Unless the dangerous goods are accompanied by a completed dangerous goods transport document, except where the Technical Instructions indicate that such a document is not required; and until the package, overpack or freight container containing the dangerous goods has been inspected in accordance with the acceptance procedures contained in the Technical Instructions."
+            "correct_answer": "Only if they are accompanied by a completed dangerous goods transport document and have been inspected."
         },
         {
             "question_number": 167,
@@ -1847,7 +1847,7 @@
                 "The Operator's Operations Manual",
                 "The Aeronautical Information Publication (AIP)"
             ],
-            "correct_answer": "DOCUMENT 9284 - TECHINCAL INSTRUCTIONS FOR TRANSORTATION OF DANGEROUS GOODS"
+            "correct_answer": "Document 9284"
         },
         {
             "question_number": 169,
@@ -1891,7 +1891,7 @@
                 "Only air traffic controllers and ground personnel.",
                 "All airline employees, regardless of their role."
             ],
-            "correct_answer": "Any person who performs any function requiring a license, rating, qualification, or authorization prescribed by these regulations directly or by contract for a certificate holder under the provisions of these regulations may be tested for usage of psychoactive substances"
+            "correct_answer": "Any person performing functions requiring a license, rating, or authorization prescribed by these regulations, directly or by contract for a certificate holder."
         },
         {
             "question_number": 173,
@@ -1913,7 +1913,7 @@
                 "Zero tolerance and 24 hours.",
                 "Below 0.02% and 4 hours."
             ],
-            "correct_answer": "Below 0.04% and 8 hours (just a rule of thumb)"
+            "correct_answer": "Below 0.04% and 8 hours."
         },
         {
             "question_number": 175,
@@ -1924,7 +1924,7 @@
                 "They may be denied any license/certificate for up to 1 year and/or have their license suspended or revoked.",
                 "They are required to pay a fine but retain their license."
             ],
-            "correct_answer": "Be denied any license, certificate, rating, qualification or authorization issued under these regulations for a period up to 1 year after the date of refusal; Have his or her license, certificate, rating, qualification or authorization issued under these regulations suspended or revoked"
+            "correct_answer": "They may be denied any license/certificate for up to 1 year and/or have their license suspended or revoked."
         },
         {
             "question_number": 176,
@@ -1957,7 +1957,7 @@
                 "The pilot-in-command.",
                 "The ground handler."
             ],
-            "correct_answer": "The PIC shall certify by signing the aircraft technical log that he or she is satisfied that the requirements of paragraph (a) have been met for a particular flight."
+            "correct_answer": "The pilot-in-command."
         },
         {
             "question_number": 179,
@@ -1968,7 +1968,7 @@
                 "Expected ATC routings and anticipated traffic delays.",
                 "Only the payload and passenger count."
             ],
-            "correct_answer": "Expected ATC routings; Anticipated traffic delays"
+            "correct_answer": "Expected ATC routings and anticipated traffic delays."
         },
         {
             "question_number": 180,
@@ -1979,7 +1979,7 @@
                 "Only hand signals are permitted to avoid radio interference.",
                 "Communication is only required if an emergency arises."
             ],
-            "correct_answer": "Two-way communication is maintained by the aircraft's intercommunication system or other suitable means between the ground crew supervising the refueling and the qualified personnel on board the aircraft"
+            "correct_answer": "Two-way communication must be maintained between ground crew and qualified personnel on board."
         },
         {
             "question_number": 181,
@@ -1990,7 +1990,7 @@
                 "It must be checked-in if it exceeds a certain size.",
                 "It can be held by passengers if space is limited."
             ],
-            "correct_answer": "No person may allow aircraft passenger entry doors to be closed in preparation for taxi or pushback unless at least one required crew member has verified that each article of baggage has been properly stowed in overhead racks with approved restraining devices or doors or in approved locations aft of the bulkhead."
+            "correct_answer": "It must be adequately and securely stowed, and at least one required crew member must verify it."
         },
         {
             "question_number": 182,
@@ -2001,7 +2001,7 @@
                 "One life jacket or equivalent individual floatation device for each person on board, stowed in an easily accessible position.",
                 "Only the pilot needs to wear a life jacket."
             ],
-            "correct_answer": "Should carry one life jacket or equivalent individual floatation device for each person on board, stowed in a position easily accessible from the seat or berth of the person for whose use it is provided"
+            "correct_answer": "One life jacket or equivalent individual floatation device for each person on board, stowed in an easily accessible position."
         },
         {
             "question_number": 183,
@@ -2012,7 +2012,7 @@
                 "It is G-sensitive.",
                 "It is light-sensitive."
             ],
-            "correct_answer": "G sensitive"
+            "correct_answer": "It is G-sensitive."
         },
         {
             "question_number": 184,
@@ -2023,7 +2023,7 @@
                 "126.9 MHz, 134.5 MHz",
                 "8.33 kHz, 25 kHz"
             ],
-            "correct_answer": "121.5. 243mhz or 406mhz"
+            "correct_answer": "121.5 MHz, 243 MHz, or 406 MHz"
         },
         {
             "question_number": 185,
@@ -2034,18 +2034,18 @@
                 "After exhausting all possible resources and the probability of survival is negligible.",
                 "When the responsible government agency runs out of funding."
             ],
-            "correct_answer": "SaR needs to stop after exhausting all possible resources."
+            "correct_answer": "After exhausting all possible resources and the probability of survival is negligible."
         },
         {
             "question_number": 186,
-            "question_text": "What is the definition of a 'Rescue Coordination Center' (RCC)?",
+            "question_text": "What is the definition of a 'Rescue Coordination Center' (RCC)?"
             "options": [
                 "A facility for storing search and rescue equipment.",
                 "A primary search and rescue facility staffed by supervisory personnel and equipped for coordinating and controlling SAR operations.",
                 "A training center for search and rescue teams.",
                 "A communication relay station for distress calls."
             ],
-            "correct_answer": "is a primary search and rescue facility in a country that is staffed by supervisory personnel and equipped for coordinating and controlling search and rescue operations."
+            "correct_answer": "A primary search and rescue facility staffed by supervisory personnel and equipped for coordinating and controlling SAR operations."
         },
         {
             "question_number": 187,
@@ -2100,7 +2100,7 @@
                 "A satellite-aided search and rescue initiative that detects emergency radio beacons.",
                 "To track commercial flights for airline operational control."
             ],
-            "correct_answer": "Is a satellite aided search and rescue initiative organize by treaty-based NGO"
+            "correct_answer": "A satellite-aided search and rescue initiative that detects emergency radio beacons."
         },
         {
             "question_number": 192,
@@ -2122,7 +2122,7 @@
                 "An event that causes significant flight delays but no physical damage.",
                 "A minor malfunction that is corrected in flight without incident."
             ],
-            "correct_answer": "An occurrence associated with the operation of an aircraft which takes place between the time any person boards the aircraft with the intention of flight until such time as all such persons have disembarked, in which: a person is fatally or seriously injured; the aircraft sustains damage or structural failure; the aircraft is missing or is completely inaccessible."
+            "correct_answer": "An occurrence associated with the operation of an aircraft in which a person is fatally or seriously injured, the aircraft sustains damage or structural failure, or the aircraft is missing or completely inaccessible."
         },
         {
             "question_number": 194,
@@ -2133,7 +2133,7 @@
                 "Any unexpected event that does not result in serious losses or injury, distinct from an accident which causes damage, injury, or harm.",
                 "A pre-planned emergency drill or exercise."
             ],
-            "correct_answer": "Any unexpected event that does not result in serious losses or injury; an \"accident\" is an unexpected event that causes damage, injury, or harm"
+            "correct_answer": "Any unexpected event that does not result in serious losses or injury, distinct from an accident which causes damage, injury, or harm."
         },
         {
             "question_number": 195,
@@ -2144,7 +2144,7 @@
                 "To the nearest salvage company for disposal.",
                 "To the insurance company for assessment."
             ],
-            "correct_answer": "The State of Occurrence shall release custody of the aircraft, its contents or any parts thereof as soon as they are no longer required in the investigation, to any person or persons duly designated by the State of Registry or the State of the Operator, as applicable"
+            "correct_answer": "To any person or persons duly designated by the State of Registry or the State of the Operator."
         },
         {
             "question_number": 196,
@@ -2155,7 +2155,7 @@
                 "Only after all preliminary findings have been established.",
                 "Once translated into all working languages of ICAO."
             ],
-            "correct_answer": "The State of Occurrence shall forward a notification of an accident or serious incident with a minimum of delay and by the most suitable and quickest means"
+            "correct_answer": "With a minimum of delay and by the most suitable and quickest means."
         },
         {
             "question_number": 197,
@@ -2166,7 +2166,7 @@
                 "It must contain only unconfirmed preliminary information to avoid speculation.",
                 "It must be a voice recording in the native language of the reporting state."
             ],
-            "correct_answer": "The notification shall be in plain language and contain as much of the following information as is readily available, but its dispatch shall not be delayed due to the lack of complete information"
+            "correct_answer": "It shall be in plain language and contain as much readily available information, but its dispatch shall not be delayed due to lack of complete information."
         },
         {
             "question_number": 198,
@@ -2177,7 +2177,7 @@
                 "Contact next of kin, issue a public statement, and begin preliminary investigation.",
                 "Collect flight data recorder, secure personal belongings, and clear debris."
             ],
-            "correct_answer": "Remove a person/animal injured or trap; Protect the wreckage from further damage; Protect the public from injuries"
+            "correct_answer": "Remove injured persons/animals, protect the wreckage from further damage, and protect the public from injuries."
         },
         {
             "question_number": 199,
@@ -2210,7 +2210,7 @@
                 "They must have at least 1,000 hours of flight experience.",
                 "They must be employed by a certified airline."
             ],
-            "correct_answer": "He holds a valid license appropriate to his duties"
+            "correct_answer": "They must hold a valid license appropriate to their duties."
         },
         {
             "question_number": 202,
@@ -2221,7 +2221,7 @@
                 "The authorization validity is independent of the license validity.",
                 "Authorizations are permanent once issued, regardless of license status."
             ],
-            "correct_answer": "The validity of the authorization shall not extend beyond the period of validity of the license"
+            "correct_answer": "The validity of the authorization shall not extend beyond the period of validity of the license."
         },
         {
             "question_number": 203,
@@ -2232,7 +2232,7 @@
                 "A holder of a license shall not exercise privileges other than the privileges of the license he holds.",
                 "Privileges are automatically expanded with additional flight experience."
             ],
-            "correct_answer": "A holder of a license shall not exercise privileges other than the privileges of the license he holds"
+            "correct_answer": "A holder of a license shall not exercise privileges other than the privileges of the license he holds."
         },
         {
             "question_number": 204,
@@ -2243,7 +2243,7 @@
                 "Any time before its expiration date.",
                 "30 days before the expiration."
             ],
-            "correct_answer": "Any license or rating covered in this part of the car may be renewed 30 days before the expiration"
+            "correct_answer": "30 days before the expiration."
         },
         {
             "question_number": 205,
@@ -2254,7 +2254,7 @@
                 "Passing a CAR and practical examination.",
                 "Accumulating a specified number of flight hours."
             ],
-            "correct_answer": "A holder of an expired license and/ or rating shall pass CAR and practical examination"
+            "correct_answer": "Passing a CAR and practical examination."
         },
         {
             "question_number": 206,
@@ -2265,7 +2265,7 @@
                 "Upon the suspension, revocation or expiration of the license.",
                 "Upon completing a new rating."
             ],
-            "correct_answer": "Upon the suspension, revocation or expiration of license the holder thereof shall surrender such license"
+            "correct_answer": "Upon the suspension, revocation or expiration of the license."
         },
         {
             "question_number": 207,
@@ -2276,7 +2276,7 @@
                 "It should be kept in the pilot's locker at the airport.",
                 "A holder of an airman shall keep his license in his person."
             ],
-            "correct_answer": "A holder of an airman shall keep his license in his person when he is on duty or performing the duties pertinent to his license"
+            "correct_answer": "A holder of an airman shall keep his license in his person."
         },
         {
             "question_number": 208,
@@ -2287,7 +2287,7 @@
                 "They must re-take all theoretical examinations but are exempt from practical exams.",
                 "Reinstatement is automatically granted without examination."
             ],
-            "correct_answer": "A holder of an airmen license who surrenders his license on or before the expiration date may not be required to take any theoretical examination"
+            "correct_answer": "They may not be required to take any theoretical examination."
         }
     ]
 }
