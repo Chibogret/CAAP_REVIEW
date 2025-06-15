@@ -970,23 +970,11 @@ Provide a concise and informative explanation focusing on why the correct answer
 
                 try {
                     const result = await genAI.models.generateContent({
-                        model: MODEL_NAME, // Model name moved into the request body
-                        contents: [{ parts: [{ text: prompt }] }], // Contents format for new SDK
+                      model: MODEL_NAME,
+                      contents: prompt          // a plain string or array is fine
                     });
-
-                    let generatedText = '';
-                    if (result && result.response && typeof result.response.text === 'function') {
-                        // Standard successful text extraction
-                        generatedText = result.response.text();
-                    } else if (result && result.promptFeedback && result.promptFeedback.blockReason) {
-                        // Content was blocked by safety settings
-                        console.warn('Gemini API blocked content:', result.promptFeedback.blockReason);
-                        generatedText = `AI explanation blocked due to safety settings: ${result.promptFeedback.blockReason}`;
-                    } else {
-                        // Fallback for unexpected empty or malformed result
-                        console.error('Unexpected empty or malformed response from Gemini API:', result);
-                        generatedText = 'Failed to get a valid explanation from AI.';
-                    }
+                    
+                    const generatedText = result.text;    // ← this is all you need
 
                     explanationText.textContent = generatedText;
                     showElement(explanationText);
