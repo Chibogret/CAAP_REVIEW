@@ -41,7 +41,7 @@
             line-height: 1.6;
             display: flex; /* Use flex for centering app container */
             justify-content: center;
-            align-items: center;
+            align-items: flex-start; /* Align to top for longer content */
             min-height: 100vh;
             padding: 20px;
         }
@@ -63,13 +63,13 @@
         }
 
         #splash-screen img {
-            max-width: 150px; /* Adjust as needed */
+            max-width: 150px;
             margin-bottom: 20px;
         }
 
         .loader {
-            border: 4px solid var(--tertiary-bg); /* Light grey */
-            border-top: 4px solid var(--primary-accent); /* Blue */
+            border: 4px solid var(--tertiary-bg);
+            border-top: 4px solid var(--primary-accent);
             border-radius: 50%;
             width: 40px;
             height: 40px;
@@ -83,7 +83,7 @@
 
         /* Main App Container */
         .app-container {
-            max-width: 650px; /* Slightly narrower for single question */
+            max-width: 900px; /* Wider to accommodate question browser */
             width: 100%;
             background-color: var(--secondary-bg);
             padding: 30px 35px;
@@ -96,7 +96,7 @@
         header {
             margin-bottom: 25px;
             padding-bottom: 15px;
-            text-align: center; /* Center header content */
+            text-align: center;
         }
 
         h1.quiz-title {
@@ -104,6 +104,44 @@
             margin: 0 0 10px 0;
             font-size: 1.9em;
             font-weight: 600;
+        }
+
+        /* NEW: Mode Selector */
+        #mode-selector-container {
+            text-align: center;
+            padding: 20px 0;
+        }
+        #mode-selector-container h2 {
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+        .mode-button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .mode-button {
+            padding: 15px 30px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            border: 2px solid var(--primary-accent);
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
+        }
+        #caap-mode-btn {
+            background-color: var(--primary-accent);
+            color: white;
+        }
+        #caap-mode-btn:hover {
+            background-color: var(--secondary-accent);
+        }
+        #study-mode-btn {
+            background-color: white;
+            color: var(--primary-accent);
+        }
+        #study-mode-btn:hover {
+            background-color: var(--tertiary-bg);
         }
 
         .quiz-info {
@@ -117,24 +155,13 @@
             font-size: 0.95em;
         }
 
-        .quiz-info span {
-             font-weight: 600;
-        }
-
+        .quiz-info span { font-weight: 600; }
         #score-display { color: var(--primary-accent); }
         #skips-display { color: var(--skip-color); }
         #progress-display { color: var(--text-color); }
 
-
-        /* Subject Selector (Optional - keep if needed later) */
-        .selector-container {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .selector-container label {
-            font-weight: 600;
-            margin-right: 10px;
-        }
+        .selector-container { margin-bottom: 20px; text-align: center; }
+        .selector-container label { font-weight: 600; margin-right: 10px; }
         #subject-selector {
             padding: 10px 15px;
             border: 1px solid var(--border-color);
@@ -151,11 +178,83 @@
             margin-top: 15px;
             margin-bottom: 15px;
             padding: 12px;
-            background-color: #fdd; /* Lighter red */
+            background-color: #fdd;
             border: 1px solid var(--incorrect-color);
             border-radius: 5px;
             text-align: center;
         }
+        
+        /* NEW: Main quiz layout (for Study Mode) */
+        #quiz-layout {
+            display: flex;
+            gap: 25px;
+        }
+        #main-content {
+            flex-grow: 1;
+        }
+
+        /* NEW: Question Browser */
+        #question-browser-container {
+            flex-basis: 220px; /* Fixed width */
+            flex-shrink: 0;
+            padding: 15px;
+            background-color: var(--tertiary-bg);
+            border-radius: var(--border-radius);
+            height: fit-content; /* Adjust height to content */
+            max-height: 500px; /* Prevent it from being too tall */
+            overflow-y: auto;
+        }
+        #question-browser-container h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: center;
+            color: var(--primary-accent);
+            font-size: 1.1em;
+        }
+        .question-browser-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+            gap: 8px;
+        }
+        .q-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            background-color: white;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .q-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .q-link.current {
+            background-color: var(--primary-accent);
+            color: white;
+            border-color: var(--primary-accent);
+        }
+        .q-link.correct {
+            background-color: var(--correct-color);
+            color: white;
+            border-color: var(--correct-color);
+        }
+        .q-link.incorrect {
+            background-color: var(--incorrect-color);
+            color: white;
+            border-color: var(--incorrect-color);
+        }
+        .q-link.skipped {
+            background-color: var(--skip-color);
+            color: white;
+            border-color: var(--skip-color);
+        }
+
 
         /* Question Area */
         #question-area {
@@ -173,15 +272,10 @@
             color: var(--primary-accent);
         }
 
-        .options {
-            list-style-type: none;
-            padding: 0;
-            margin: 10px 0 0 0;
-        }
-
+        .options { list-style-type: none; padding: 0; margin: 10px 0 0 0; }
         .option-item {
             margin-bottom: 12px;
-            padding: 12px 15px; /* More padding */
+            padding: 12px 15px;
             border: 1px solid var(--border-color);
             border-radius: 5px;
             transition: background-color 0.2s ease, border-color 0.2s ease;
@@ -189,28 +283,17 @@
             align-items: center;
             cursor: pointer;
         }
-
-        .option-item:hover {
-             background-color: var(--tertiary-bg);
-        }
-
-         /* Style for selected option */
-         .option-item input[type="radio"]:checked + label {
+        .option-item:hover { background-color: var(--tertiary-bg); }
+        .option-item input[type="radio"]:checked + label {
              font-weight: 600;
              color: var(--primary-accent);
          }
-
-
         .option-item input[type="radio"] {
             margin-right: 12px;
             transform: scale(1.1);
             accent-color: var(--primary-accent);
         }
-
-        .option-item label {
-            cursor: pointer;
-            flex-grow: 1;
-         }
+        .option-item label { cursor: pointer; flex-grow: 1; }
 
         /* Feedback Area */
         #feedback-area {
@@ -225,42 +308,37 @@
         .feedback-incorrect { background-color: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; }
         .feedback-skipped { background-color: #fff3cd; border: 1px solid #ffeeba; color: #856404; }
 
-
         /* Control Buttons */
         .button-container {
             display: flex;
-            justify-content: space-between; /* Space out buttons */
-            gap: 15px; /* Add space between buttons */
+            justify-content: space-between;
+            gap: 15px;
             margin-top: 25px;
+            flex-wrap: wrap; /* Allow buttons to wrap */
         }
 
         .quiz-button {
-            flex-grow: 1; /* Make buttons share space */
+            flex-grow: 1;
             padding: 12px 20px;
             font-size: 1.05em;
-            font-weight: 600; /* Bolder */
+            font-weight: 600;
             color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.2s ease, opacity 0.2s ease;
             text-align: center;
+            min-width: 150px; /* Ensure buttons don't get too squished */
         }
 
         #submit-answer-btn { background-color: var(--primary-accent); }
         #submit-answer-btn:hover { background-color: var(--secondary-accent); }
-
         #skip-question-btn { background-color: var(--skip-color); }
-        #skip-question-btn:hover { background-color: #f1c40f; } /* Lighter orange */
-
-        #next-question-btn { background-color: var(--correct-color); } /* Green for next */
+        #skip-question-btn:hover { background-color: #f1c40f; }
+        #next-question-btn { background-color: var(--correct-color); }
         #next-question-btn:hover { background-color: #25a244; }
-
-        /* New Explain button */
         #explain-question-btn { background-color: var(--primary-accent); }
         #explain-question-btn:hover { background-color: var(--secondary-accent); }
-
-
         .quiz-button:disabled {
              background-color: var(--disabled-color);
              cursor: not-allowed;
@@ -276,7 +354,6 @@
             background-color: var(--secondary-bg);
             text-align: center;
         }
-
         #results-container h2 {
              margin-top: 0;
              color: var(--primary-accent);
@@ -285,18 +362,13 @@
              margin-bottom: 20px;
              font-size: 1.5em;
         }
-
         #final-score-display {
-             font-weight: 700; /* Extra bold */
-             font-size: 1.8em; /* Larger */
+             font-weight: 700;
+             font-size: 1.8em;
              margin-bottom: 15px;
              color: var(--primary-accent);
         }
-        #results-summary {
-            font-size: 1.1em;
-            margin-bottom: 25px;
-        }
-
+        #results-summary { font-size: 1.1em; margin-bottom: 25px; }
         #restart-button {
             padding: 12px 30px;
             font-size: 1.1em;
@@ -319,14 +391,11 @@
             border-radius: var(--border-radius);
             border: 1px solid var(--border-color);
             display: flex;
-            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            flex-wrap: wrap;
             align-items: center;
             gap: 10px;
         }
-        .api-key-container label {
-            font-weight: 600;
-            flex-shrink: 0; /* Prevent label from shrinking */
-        }
+        .api-key-container label { font-weight: 600; flex-shrink: 0; }
         .api-key-container input[type="password"] {
             flex-grow: 1;
             padding: 10px 12px;
@@ -335,14 +404,14 @@
             font-size: 1em;
             background-color: #fff;
             color: var(--text-color);
-            min-width: 150px; /* Ensure input doesn't get too small */
+            min-width: 150px;
         }
         .api-key-container #save-api-key-btn {
             padding: 10px 15px;
             background-color: var(--primary-accent);
-            min-width: unset; /* Override flex-grow */
+            min-width: unset;
             flex-grow: 0;
-            font-size: 1em; /* Adjust for compactness */
+            font-size: 1em;
         }
         #api-key-status {
             margin-top: 5px;
@@ -368,75 +437,24 @@
             border-bottom: 1px dashed var(--border-color);
             padding-bottom: 8px;
         }
-        #explanation-text {
-            /* white-space: pre-wrap; /* Preserve formatting from AI - this might interfere with markdown rendering */
-            font-size: 0.95em;
-            color: var(--text-color);
-        }
-
-        /* Add basic markdown styling for rendered content */
-        #explanation-text h1, #explanation-text h2, #explanation-text h3, #explanation-text h4, #explanation-text h5, #explanation-text h6 {
-            margin-top: 1em;
-            margin-bottom: 0.5em;
-            font-weight: 600;
-            line-height: 1.2;
-            color: var(--primary-accent);
-        }
-        #explanation-text p {
-            margin-bottom: 1em;
-        }
-        #explanation-text ul, #explanation-text ol {
-            margin-left: 20px;
-            margin-bottom: 1em;
-        }
-        #explanation-text li {
-            margin-bottom: 0.5em;
-        }
-        #explanation-text strong {
-            font-weight: 700;
-        }
-        #explanation-text em {
-            font-style: italic;
-        }
-        #explanation-text pre {
-            background-color: #f4f4f4;
-            border: 1px solid #ddd;
-            border-left: 3px solid var(--primary-accent);
-            padding: 10px;
-            overflow-x: auto;
-            border-radius: 4px;
-            margin-bottom: 1em;
-        }
-        #explanation-text code {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: #eee;
-            padding: 2px 4px;
-            border-radius: 3px;
-        }
-        #explanation-text blockquote {
-            border-left: 4px solid var(--border-color);
-            padding-left: 15px;
-            margin-left: 0;
-            color: #555;
-            font-style: italic;
-            margin-bottom: 1em;
-        }
-
-        .explanation-loader {
-            margin: 20px auto;
-        }
+        #explanation-text { font-size: 0.95em; color: var(--text-color); }
+        #explanation-text h1, #explanation-text h2, #explanation-text h3, #explanation-text h4 { margin-top: 1em; margin-bottom: 0.5em; font-weight: 600; line-height: 1.2; color: var(--primary-accent); }
+        #explanation-text p { margin-bottom: 1em; }
+        #explanation-text ul, #explanation-text ol { margin-left: 20px; margin-bottom: 1em; }
+        #explanation-text li { margin-bottom: 0.5em; }
+        #explanation-text strong { font-weight: 700; }
+        #explanation-text em { font-style: italic; }
+        #explanation-text pre { background-color: #f4f4f4; border: 1px solid #ddd; border-left: 3px solid var(--primary-accent); padding: 10px; overflow-x: auto; border-radius: 4px; margin-bottom: 1em; }
+        #explanation-text code { font-family: 'Courier New', Courier, monospace; background-color: #eee; padding: 2px 4px; border-radius: 3px; }
+        #explanation-text blockquote { border-left: 4px solid var(--border-color); padding-left: 15px; margin-left: 0; color: #555; font-style: italic; margin-bottom: 1em; }
+        .explanation-loader { margin: 20px auto; }
 
         /* Google Search Button */
-        #google-search-btn {
-            background-color: #4285F4; /* Google Blue */
-        }
-        #google-search-btn:hover {
-            background-color: #357ae8;
-        }
+        #google-search-btn { background-color: #4285F4; }
+        #google-search-btn:hover { background-color: #357ae8; }
 
         /* Visibility Control */
-        .hidden { display: none !important; } /* Use !important carefully */
-
+        .hidden { display: none !important; }
     </style>
 </head>
 <body>
@@ -451,20 +469,30 @@
     <div class="app-container hidden">
         <header>
             <h1 class="quiz-title">CAAP Mock by Chippo</h1>
-             <!-- Subject Selector -->
-             <div class="selector-container">
-                <label for="subject-selector">Select Subject:</label>
-                <select id="subject-selector">
-                    <option value="">-- Select a Subject --</option>
-                    <!-- Options populated by JS -->
-                </select>
+            
+            <!-- NEW: Mode Selector -->
+            <div id="mode-selector-container">
+                <h2>Choose Your Mode</h2>
+                <div class="mode-button-container">
+                    <button id="caap-mode-btn" class="mode-button">CAAP Mode (Exam)</button>
+                    <button id="study-mode-btn" class="mode-button">Study Mode (Learn)</button>
+                </div>
             </div>
-            <!-- API Key Input Section -->
-            <div class="api-key-container">
-                <label for="gemini-api-key">Gemini API Key:</label>
-                <input type="password" id="gemini-api-key" placeholder="Enter your Gemini API key">
-                <button id="save-api-key-btn" class="quiz-button">Save Key</button>
-                <div id="api-key-status" class="hidden"></div>
+
+            <!-- Subject Selector & API Key (Initially Hidden) -->
+            <div id="setup-container" class="hidden">
+                 <div class="selector-container">
+                    <label for="subject-selector">Select Subject:</label>
+                    <select id="subject-selector">
+                        <option value="">-- Select a Subject --</option>
+                    </select>
+                </div>
+                <div class="api-key-container">
+                    <label for="gemini-api-key">Gemini API Key:</label>
+                    <input type="password" id="gemini-api-key" placeholder="Enter your Gemini API key">
+                    <button id="save-api-key-btn" class="quiz-button">Save Key</button>
+                    <div id="api-key-status" class="hidden"></div>
+                </div>
             </div>
 
             <!-- Dynamic Info Display -->
@@ -477,32 +505,37 @@
 
         <div id="error-container" class="error-message hidden"></div>
 
-        <!-- Single Question Display Area -->
+        <!-- Quiz Content Area -->
         <div id="quiz-content" class="hidden">
-            <div id="question-area">
-                <div id="question-text">Question text will load here...</div>
-                <ul id="options-list" class="options">
-                    <!-- Options will be loaded here -->
-                </ul>
-            </div>
-
-            <div id="feedback-area" class="hidden"></div>
-
-            <!-- AI Explanation Area -->
-            <div id="explanation-container" class="hidden">
-                <h3>AI Explanation:</h3>
-                <div id="explanation-text"></div>
-                <div class="loader explanation-loader hidden"></div>
-                <div id="explanation-error" class="error-message hidden"></div>
-            </div>
-
-            <!-- Control Buttons -->
-            <div class="button-container">
-                <button id="submit-answer-btn" class="quiz-button">Submit Answer</button>
-                <button id="skip-question-btn" class="quiz-button">Skip Question</button>
-                <button id="google-search-btn" class="quiz-button">Search Question</button>
-                <button id="explain-question-btn" class="quiz-button hidden">Explain Answer</button> <!-- NEW BUTTON -->
-                <button id="next-question-btn" class="quiz-button hidden">Next Question</button>
+            <div id="quiz-layout">
+                <!-- Main Question Area -->
+                <div id="main-content">
+                    <div id="question-area">
+                        <div id="question-text">Question text will load here...</div>
+                        <ul id="options-list" class="options"></ul>
+                    </div>
+                    <div id="feedback-area" class="hidden"></div>
+                    <div id="explanation-container" class="hidden">
+                        <h3>AI Explanation:</h3>
+                        <div id="explanation-text"></div>
+                        <div class="loader explanation-loader hidden"></div>
+                        <div id="explanation-error" class="error-message hidden"></div>
+                    </div>
+                    <div class="button-container">
+                        <button id="submit-answer-btn" class="quiz-button">Submit Answer</button>
+                        <button id="skip-question-btn" class="quiz-button">Skip Question</button>
+                        <button id="google-search-btn" class="quiz-button hidden">Search Question</button>
+                        <button id="explain-question-btn" class="quiz-button hidden">Explain Answer</button>
+                        <button id="next-question-btn" class="quiz-button hidden">Next Question</button>
+                    </div>
+                </div>
+                <!-- NEW: Question Browser (for Study Mode) -->
+                <aside id="question-browser-container" class="hidden">
+                    <h3>Questions</h3>
+                    <div id="question-browser-list" class="question-browser-list">
+                        <!-- Links populated by JS -->
+                    </div>
+                </aside>
             </div>
         </div>
 
@@ -515,39 +548,33 @@
         </div>
     </div>
 
-    <!-- NEW SDK Import: This MUST be an ES Module and placed BEFORE your main script
-         so that window.GoogleGenAI and window.geminiSdkInstance are available. -->
+    <!-- SDK Imports and Scripts -->
     <script type="module">
       import { GoogleGenAI } from 'https://esm.run/@google/genai';
-      
-      // Expose the new SDK class globally for the non-module script to use for instantiation.
       window.GoogleGenAI = GoogleGenAI;
-
-      // Initialize a global instance of the SDK if an API key exists in localStorage.
-      // Your main script will pick this up on DOMContentLoaded.
       const initialApiKey = localStorage.getItem('geminiApiKey');
       if (initialApiKey) {
         try {
           window.geminiSdkInstance = new GoogleGenAI({ apiKey: initialApiKey });
-          console.log("Gemini AI SDK (new version) pre-initialized globally from localStorage.");
+          console.log("Gemini AI SDK pre-initialized globally.");
         } catch (e) {
-          console.error("Error pre-initializing Gemini SDK from localStorage:", e);
-          window.geminiSdkInstance = null; // Ensure null if pre-init fails
+          console.error("Error pre-initializing Gemini SDK:", e);
+          window.geminiSdkInstance = null;
         }
       } else {
         window.geminiSdkInstance = null;
       }
     </script>
-
-    <!-- Marked.js for Markdown rendering -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
-    <!-- Your main application script -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // --- DOM Elements ---
             const splashScreen = document.getElementById('splash-screen');
             const appContainer = document.querySelector('.app-container');
+            const modeSelectorContainer = document.getElementById('mode-selector-container');
+            const caapModeBtn = document.getElementById('caap-mode-btn');
+            const studyModeBtn = document.getElementById('study-mode-btn');
+            const setupContainer = document.getElementById('setup-container');
             const subjectSelector = document.getElementById('subject-selector');
             const errorContainer = document.getElementById('error-container');
             const quizInfoArea = document.getElementById('quiz-info-area');
@@ -566,8 +593,6 @@
             const resultsSummary = document.getElementById('results-summary');
             const restartBtn = document.getElementById('restart-button');
             const quizTitleElement = document.querySelector('.quiz-title');
-
-            // NEW: Gemini AI Elements
             const geminiApiKeyInput = document.getElementById('gemini-api-key');
             const saveApiKeyBtn = document.getElementById('save-api-key-btn');
             const apiKeyStatus = document.getElementById('api-key-status');
@@ -576,32 +601,30 @@
             const explanationLoader = document.querySelector('.explanation-loader');
             const explanationError = document.getElementById('explanation-error');
             const googleSearchBtn = document.getElementById('google-search-btn');
-            const explainBtn = document.getElementById('explain-question-btn'); // NEW: Explain button
+            const explainBtn = document.getElementById('explain-question-btn');
+            const questionBrowserContainer = document.getElementById('question-browser-container');
+            const questionBrowserList = document.getElementById('question-browser-list');
 
             // --- State Variables ---
+            let currentMode = null; // 'caap' or 'study'
             let currentQuizData = null;
             let allQuestions = [];
             let questionsToAsk = [];
             let skippedQuestions = [];
-            let currentQuestionIndex = 0; // Index within questionsToAsk
+            let questionStatus = {}; // NEW: { 0: 'correct', 1: 'incorrect', ... }
+            let currentQuestionIndex = 0;
             let totalQuestionsInQuiz = 0;
             let correctAnswersCount = 0;
-            let incorrectAnswersCount = 0; // Tracks wrong attempts
+            let incorrectAnswersCount = 0;
             let remainingSkips = 3;
-            let questionsAnsweredInSession = 0; // Tracks questions presented (excluding skips initially)
-
-            // NEW: Gemini AI State - Initialize from the global instance set by the module script
+            let questionsAnsweredInSession = 0;
             let genAI = window.geminiSdkInstance;
-            // Update MODEL_NAME for the new SDK (common, stable version)
-            const MODEL_NAME = "gemini-2.5-flash-preview-05-20"; 
-
-            // NEW: Variables to store last answered question for explanation
+            const MODEL_NAME = "gemini-1.5-flash-latest"; 
             let lastAnsweredQuestion = null;
             let lastUserAnswer = null;
             let lastCorrectAnswer = null;
 
-            const TOTAL_SUBJECTS = 11; // Updated to 9 subjects
-            const subjectNames = [ // Array of subject names and filenames
+            const subjectNames = [
                 { name: "Air Law", filename: "Air Law.json" },
                 { name: "Principles of Flight", filename: "POF.json" },
                 { name: "Navigation", filename: "Navigation.json" },
@@ -619,71 +642,24 @@
             function initializeApp() {
                 hideElement(splashScreen);
                 showElement(appContainer);
-                appContainer.style.opacity = 1; // Fade in
+                appContainer.style.opacity = 1;
                 populateSubjectSelector();
-                resetUI(); // Ensure clean state
+                resetToModeSelection();
 
-                // Re-check and update local genAI reference
                 genAI = window.geminiSdkInstance;
-
-                // Check if the new SDK class is available globally (set by module script)
                 if (typeof window.GoogleGenAI === 'undefined') {
-                    apiKeyStatus.textContent = 'ERROR: Google Gemini SDK not loaded. AI features will not work.';
+                    apiKeyStatus.textContent = 'ERROR: Google Gemini SDK not loaded.';
                     apiKeyStatus.className = 'api-key-status-error';
                     showElement(apiKeyStatus);
-                    console.error("Critical: window.GoogleGenAI is undefined. New SDK script might be blocked or failed to load correctly.");
-                    genAI = null; // Ensure local genAI is null
-                    window.geminiSdkInstance = null; // Ensure global instance is null
-                } else if (genAI) { // If window.geminiSdkInstance was successfully created by the module script
-                    geminiApiKeyInput.value = localStorage.getItem('geminiApiKey'); // Set input value
+                    genAI = null;
+                    window.geminiSdkInstance = null;
+                } else if (genAI) {
+                    geminiApiKeyInput.value = localStorage.getItem('geminiApiKey');
                     apiKeyStatus.textContent = 'API key loaded. Gemini AI ready!';
                     apiKeyStatus.className = 'api-key-status-success';
                     showElement(apiKeyStatus);
-                } else { // No API key initially, or initialization failed in module script
-                    hideElement(apiKeyStatus); // Hide status until key is entered
-                }
-            }
-
-            // NEW: Gemini API Key Handling
-            function initializeGemini(key) {
-                // Check for the GoogleGenAI class exposed by the module script
-                if (typeof window.GoogleGenAI === 'undefined') {
-                    apiKeyStatus.textContent = 'Google Gemini SDK (new) not loaded. AI features disabled.';
-                    apiKeyStatus.className = 'api-key-status-error';
-                    showElement(apiKeyStatus);
-                    console.error("window.GoogleGenAI is undefined within initializeGemini. New SDK not available.");
-                    genAI = null; // Ensure local genAI is null
-                    window.geminiSdkInstance = null; // Ensure global is null
-                    return;
-                }
-                try {
-                    // Re-instantiate the global SDK instance
-                    window.geminiSdkInstance = new window.GoogleGenAI({ apiKey: key });
-                    genAI = window.geminiSdkInstance; // Update local reference to the new instance
-                    apiKeyStatus.textContent = 'API key loaded. Gemini AI ready!';
-                    apiKeyStatus.className = 'api-key-status-success';
-                    showElement(apiKeyStatus);
-                    console.log("Gemini AI SDK initialized.");
-                } catch (e) {
-                    localStorage.removeItem('geminiApiKey');
-                    geminiApiKeyInput.value = ''; // Clear input on error
-                    apiKeyStatus.textContent = 'Invalid API key. Please check and re-enter.';
-                    apiKeyStatus.className = 'api-key-status-error';
-                    showElement(apiKeyStatus);
-                    console.error("Error initializing Gemini SDK:", e);
-                    genAI = null; // Ensure local genAI is null
-                    window.geminiSdkInstance = null; // Ensure global is null
-                }
-            }
-
-            function populateSubjectSelector() {
-                // Clear existing options except the placeholder
-                subjectSelector.innerHTML = '<option value="">-- Select a Subject --</option>';
-                for (let i = 0; i < TOTAL_SUBJECTS; i++) { // Iterate through subjectNames array
-                    const option = document.createElement('option');
-                    option.value = subjectNames[i].filename; // Use filename from array
-                    option.textContent = subjectNames[i].name; // Use subject name from array
-                    subjectSelector.appendChild(option);
+                } else {
+                    hideElement(apiKeyStatus);
                 }
             }
 
@@ -692,31 +668,89 @@
             function hideElement(el) { el?.classList.add('hidden'); }
             function disableButton(btn) { btn.disabled = true; }
             function enableButton(btn) { btn.disabled = false; }
-
             function displayError(message) {
                 errorContainer.textContent = message;
                 showElement(errorContainer);
                 hideElement(quizContent);
                 hideElement(quizInfoArea);
                 hideElement(resultsContainer);
-                hideElement(explanationContainer); // NEW
+                hideElement(explanationContainer);
+            }
+            function clearError() { hideElement(errorContainer); }
+
+            // --- Quiz & UI Logic ---
+            function resetToModeSelection() {
+                clearError();
+                hideElement(setupContainer);
+                hideElement(quizContent);
+                hideElement(quizInfoArea);
+                hideElement(resultsContainer);
+                hideElement(feedbackArea);
+                hideElement(explanationContainer);
+                hideElement(questionBrowserContainer);
+                showElement(modeSelectorContainer);
+                enableButton(subjectSelector);
+                subjectSelector.value = "";
+                quizTitleElement.textContent = 'CAAP Mock by Chippo';
+                currentMode = null;
             }
 
-            function clearError() {
-                hideElement(errorContainer);
+            function selectMode(mode) {
+                currentMode = mode;
+                hideElement(modeSelectorContainer);
+                showElement(setupContainer);
+                // In Study Mode, hide the API key input if no key is present, as it's optional
+                if (mode === 'study' && !localStorage.getItem('geminiApiKey')) {
+                    hideElement(apiKeyStatus);
+                }
+            }
+            
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
             }
 
-            function updateQuizInfo() {
-                progressDisplay.textContent = `Q: ${questionsAnsweredInSession + 1} / ${totalQuestionsInQuiz}`;
-                // Score: (Correct Answers) / (Correct + Incorrect Attempts)
-                const totalAttempts = correctAnswersCount + incorrectAnswersCount;
-                const currentScore = totalAttempts === 0 ? 100 : Math.round((correctAnswersCount / totalAttempts) * 100);
-                scoreDisplay.textContent = `Score: ${currentScore}%`;
-                skipsDisplay.textContent = `Skips Left: ${remainingSkips}`;
-                showElement(quizInfoArea);
+            function populateSubjectSelector() {
+                subjectSelector.innerHTML = '<option value="">-- Select a Subject --</option>';
+                subjectNames.forEach(subject => {
+                    const option = document.createElement('option');
+                    option.value = subject.filename;
+                    option.textContent = subject.name;
+                    subjectSelector.appendChild(option);
+                });
             }
 
-            function resetUI() {
+            function loadQuiz(filename) {
+                resetUIForNewQuiz();
+                disableButton(subjectSelector);
+                feedbackArea.textContent = 'Loading Quiz...';
+                feedbackArea.className = 'feedback-skipped';
+                showElement(feedbackArea);
+
+                fetch(filename)
+                    .then(response => {
+                        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+                        return response.json();
+                    })
+                    .then(data => {
+                        if (!data || !Array.isArray(data.questions) || data.questions.length === 0) {
+                            throw new Error(`Invalid or empty quiz data in ${filename}`);
+                        }
+                        currentQuizData = data;
+                        allQuestions = data.questions.map((q, index) => ({ ...q, originalIndex: index }));
+                        startQuiz();
+                    })
+                    .catch(error => {
+                        console.error('Error loading quiz:', error);
+                        displayError(`Failed to load quiz: ${error.message}`);
+                        hideElement(feedbackArea);
+                        enableButton(subjectSelector);
+                    });
+            }
+            
+            function resetUIForNewQuiz() {
                 clearError();
                 hideElement(quizContent);
                 hideElement(quizInfoArea);
@@ -727,58 +761,20 @@
                 showElement(skipBtn);
                 enableButton(submitBtn);
                 enableButton(skipBtn);
-                enableButton(subjectSelector); // Re-enable subject selection
-                subjectSelector.value = ""; // Reset dropdown
-                quizTitleElement.textContent = 'CAAP Mock by Chippo'; // Reset title
-                hideElement(explanationContainer); // NEW: Hide explanation area
-                hideElement(explainBtn); // NEW: Hide explain button on full reset
-
-                // Adjust visibility of API key status based on current state
-                if (window.geminiSdkInstance && localStorage.getItem('geminiApiKey')) {
-                    // Only show status if an instance exists AND a key is stored
-                    showElement(apiKeyStatus);
-                } else {
-                    hideElement(apiKeyStatus);
-                }
-            }
-
-            // --- Quiz Logic ---
-
-            function loadQuiz(filename) {
-                resetUI(); // Clear previous state
-                disableButton(subjectSelector); // Prevent changing during load
-                feedbackArea.textContent = 'Loading Quiz...';
-                feedbackArea.className = 'feedback-skipped'; // Use a neutral style
-                showElement(feedbackArea);
-
-                fetch(filename)
-                    .then(response => {
-                        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-                        return response.json();
-                    })
-                    .then(data => {
-                        if (!data || !Array.isArray(data.questions) || data.questions.length === 0) {
-                             throw new Error(`Invalid or empty quiz data in ${filename}`);
-                        }
-                        currentQuizData = data;
-                        allQuestions = data.questions; // Keep original list
-                        // Ensure question_number exists or assign one
-                        allQuestions.forEach((q, index) => {
-                            if (q.question_number === undefined) q.question_number = index + 1;
-                        });
-                        startQuiz();
-                    })
-                    .catch(error => {
-                        console.error('Error loading quiz:', error);
-                        displayError(`Failed to load quiz: ${error.message}`);
-                        hideElement(feedbackArea);
-                        enableButton(subjectSelector); // Re-enable on error
-                    });
+                hideElement(explanationContainer);
+                hideElement(explainBtn);
+                hideElement(googleSearchBtn);
+                hideElement(questionBrowserContainer);
             }
 
             function startQuiz() {
-                questionsToAsk = [...allQuestions]; // Start with all questions
+                questionsToAsk = [...allQuestions];
+                if (currentMode === 'caap') {
+                    shuffleArray(questionsToAsk);
+                }
+                
                 skippedQuestions = [];
+                questionStatus = {};
                 currentQuestionIndex = 0;
                 totalQuestionsInQuiz = allQuestions.length;
                 correctAnswersCount = 0;
@@ -786,11 +782,16 @@
                 remainingSkips = 3;
                 questionsAnsweredInSession = 0;
 
-                quizTitleElement.textContent = currentQuizData.exam_title || 'Subject Quiz';
+                quizTitleElement.textContent = currentQuizData.exam_title || 'Quiz';
                 hideElement(feedbackArea);
                 clearError();
                 showElement(quizContent);
-                disableButton(subjectSelector); // Keep disabled during quiz
+                disableButton(subjectSelector);
+                
+                if (currentMode === 'study') {
+                    renderQuestionBrowser();
+                    showElement(questionBrowserContainer);
+                }
 
                 if (questionsToAsk.length > 0) {
                     displayQuestion();
@@ -801,305 +802,317 @@
             }
 
             function displayQuestion() {
-                // Check if we ran out of questions to ask but have skipped ones
                 if (currentQuestionIndex >= questionsToAsk.length) {
                     if (questionsToAsk.length === 0 && skippedQuestions.length > 0) {
-                        // Move skipped back to main list and reset index
                         questionsToAsk = [...skippedQuestions];
                         skippedQuestions = [];
                         currentQuestionIndex = 0;
-                         // Don't increment questionsAnsweredInSession here, these are repeats
-                    } else if (questionsToAsk.length === 0 && skippedQuestions.length === 0) {
-                         // Truly finished all questions
-                        console.log("All questions processed, ending quiz.");
-                        endQuiz();
-                        return;
                     } else {
-                        // Should not happen if nextBtn logic is correct, but handle defensively
-                        console.error("Reached end of questions unexpectedly without new ones or skips.");
                         endQuiz();
                         return;
                     }
                 }
 
-                 // Reset UI for the new question
                 hideElement(feedbackArea);
                 hideElement(nextBtn);
+                hideElement(explainBtn);
+                hideElement(googleSearchBtn);
+                hideElement(explanationContainer);
                 showElement(submitBtn);
                 showElement(skipBtn);
                 enableButton(submitBtn);
                 enableButton(skipBtn);
-                if (remainingSkips <= 0) {
-                    disableButton(skipBtn);
-                }
-                hideElement(explanationContainer); // NEW: Hide previous explanation for new question
-                hideElement(explainBtn); // NEW: Hide explain button for new question
-
+                if (remainingSkips <= 0) disableButton(skipBtn);
 
                 const question = questionsToAsk[currentQuestionIndex];
                 questionTextElement.textContent = question.question_text;
-                optionsList.innerHTML = ''; // Clear previous options
+                optionsList.innerHTML = '';
 
                 question.options.forEach((option, index) => {
                     const optionItem = document.createElement('li');
                     optionItem.classList.add('option-item');
-
                     const radioInput = document.createElement('input');
                     radioInput.type = 'radio';
-                    radioInput.name = `question-${question.question_number}`; // Use unique name per question
+                    radioInput.name = `question-${question.originalIndex}`;
                     radioInput.value = option;
-                    const optionId = `option-${question.question_number}-${index}`;
+                    const optionId = `option-${question.originalIndex}-${index}`;
                     radioInput.id = optionId;
-
                     const label = document.createElement('label');
                     label.textContent = option;
                     label.setAttribute('for', optionId);
-
                     optionItem.appendChild(radioInput);
                     optionItem.appendChild(label);
                     optionsList.appendChild(optionItem);
                 });
 
-                updateQuizInfo(); // Update progress counter etc.
+                updateQuizInfo();
+                if (currentMode === 'study') {
+                    renderQuestionBrowser();
+                }
             }
 
             function handleSubmit() {
                 const selectedOptionInput = optionsList.querySelector(`input[name^="question-"]:checked`);
-
                 if (!selectedOptionInput) {
                     feedbackArea.textContent = "Please select an answer.";
-                    feedbackArea.className = 'feedback-incorrect'; // Use error styling
+                    feedbackArea.className = 'feedback-incorrect';
                     showElement(feedbackArea);
-                    return; // Don't proceed
+                    return;
                 }
 
-                // Disable buttons after submission
                 disableButton(submitBtn);
                 disableButton(skipBtn);
-                hideElement(feedbackArea); // Clear previous feedback
+                hideElement(feedbackArea);
 
                 const userAnswer = selectedOptionInput.value;
-                const currentQuestion = questionsToAsk[currentQuestionIndex]; // Reference to the question being answered
+                const currentQuestion = questionsToAsk[currentQuestionIndex];
                 const correctAnswer = currentQuestion.correct_answer;
+                const questionId = currentQuestion.originalIndex;
 
-                // NEW: Store for on-demand explanation
                 lastAnsweredQuestion = currentQuestion;
                 lastUserAnswer = userAnswer;
                 lastCorrectAnswer = correctAnswer;
-                showElement(explainBtn); // Show explain button
-                enableButton(explainBtn);
 
-                let wasCorrect = false;
                 if (userAnswer === correctAnswer) {
                     feedbackArea.textContent = "Correct!";
                     feedbackArea.className = 'feedback-correct';
                     correctAnswersCount++;
-                    wasCorrect = true;
-                    // Remove correct question from the list to ask
-                    questionsToAsk.splice(currentQuestionIndex, 1);
-                    // Don't increment currentQuestionIndex, next item shifts into place
+                    questionStatus[questionId] = 'correct';
+                    if (currentMode === 'caap') {
+                        questionsToAsk.splice(currentQuestionIndex, 1);
+                    } else {
+                        currentQuestionIndex++;
+                    }
                 } else {
-                    feedbackArea.textContent = `Incorrect. The correct answer was: "${correctAnswer}"`;
+                    feedbackArea.textContent = `Incorrect. Correct answer: "${correctAnswer}"`;
                     feedbackArea.className = 'feedback-incorrect';
                     incorrectAnswersCount++;
-                    // Keep incorrect question in the list, move to next index for next round
-                    currentQuestionIndex++;
+                    questionStatus[questionId] = 'incorrect';
+                    if (currentMode === 'caap') {
+                        currentQuestionIndex++;
+                    } else {
+                        currentQuestionIndex++;
+                    }
                 }
 
                 showElement(feedbackArea);
-                questionsAnsweredInSession++; // Increment *after* answering
-                updateQuizInfo(); // Update score immediately
+                questionsAnsweredInSession++;
+                updateQuizInfo();
 
-                // generateExplanation(currentQuestion, userAnswer, correctAnswer); // REMOVED: Now called by explainBtn
+                if (currentMode === 'study') {
+                    showElement(explainBtn);
+                    enableButton(explainBtn);
+                    showElement(googleSearchBtn);
+                    renderQuestionBrowser();
+                }
 
-                // Check if quiz is over OR prepare for next question button
-                if (questionsToAsk.length === 0 && skippedQuestions.length === 0) {
-                    // Truly finished
-                    setTimeout(endQuiz, 1000); // Show feedback briefly before ending
+                if ((currentMode === 'caap' && questionsToAsk.length === 0 && skippedQuestions.length === 0) || (currentMode === 'study' && questionsAnsweredInSession >= totalQuestionsInQuiz)) {
+                    setTimeout(endQuiz, 1000);
                 } else {
-                    showElement(nextBtn); // Show button to proceed
+                    showElement(nextBtn);
                     enableButton(nextBtn);
                 }
             }
 
             function handleSkip() {
-                if (remainingSkips <= 0) return; // Should be disabled, but double-check
+                if (remainingSkips <= 0) return;
 
                 const currentQuestion = questionsToAsk[currentQuestionIndex];
+                const questionId = currentQuestion.originalIndex;
 
-                // Move question from questionsToAsk to skippedQuestions
+                questionStatus[questionId] = 'skipped';
                 skippedQuestions.push(currentQuestion);
                 questionsToAsk.splice(currentQuestionIndex, 1);
-                // Don't increment currentQuestionIndex
 
                 remainingSkips--;
-                // Don't count this as an "attempt" for score calculation yet
-                // questionsAnsweredInSession is NOT incremented here
-
                 feedbackArea.textContent = "Question Skipped";
                 feedbackArea.className = 'feedback-skipped';
                 showElement(feedbackArea);
-                updateQuizInfo(); // Update skip count display
+                updateQuizInfo();
 
                 disableButton(submitBtn);
                 disableButton(skipBtn);
-                hideElement(explainBtn); // No explanation for skipped question initially
-                hideElement(explanationContainer); // Hide previous explanation
+                hideElement(explainBtn);
+                hideElement(googleSearchBtn);
+                hideElement(explanationContainer);
+                
+                if (currentMode === 'study') {
+                    renderQuestionBrowser();
+                }
 
-                 // Check if quiz is over OR prepare for next question button
                 if (questionsToAsk.length === 0 && skippedQuestions.length === 0) {
-                     // This case should only happen if they skip the very last question
-                     setTimeout(endQuiz, 1000);
+                    setTimeout(endQuiz, 1000);
                 } else {
-                    showElement(nextBtn); // Show button to proceed
+                    showElement(nextBtn);
                     enableButton(nextBtn);
                 }
             }
 
-            function handleNext() {
-                 // Move to the next question logically
-                 // The actual index update/reset happens *within* displayQuestion
-                 displayQuestion();
-            }
-
-            // NEW: Handle Explain button click
-            async function handleExplain() {
-                if (!lastAnsweredQuestion) {
-                    explanationError.textContent = 'No question available for explanation.';
-                    showElement(explanationError);
-                    return;
-                }
-                disableButton(explainBtn); // Disable during generation
-                await generateExplanation(lastAnsweredQuestion, lastUserAnswer, lastCorrectAnswer);
-                enableButton(explainBtn); // Re-enable after explanation is attempted
-            }
-
+            function handleNext() { displayQuestion(); }
 
             function endQuiz() {
                 hideElement(quizContent);
                 hideElement(quizInfoArea);
                 hideElement(feedbackArea);
-                hideElement(explanationContainer); // NEW: Hide explanation at end
-                hideElement(explainBtn); // NEW: Hide explain button at end
+                hideElement(explanationContainer);
+                hideElement(questionBrowserContainer);
 
                 const finalScore = totalQuestionsInQuiz === 0 ? 0 : Math.round((correctAnswersCount / totalQuestionsInQuiz) * 100);
-                 // Use allQuestions.length (totalQuestionsInQuiz) for the final denominator
-
                 finalScoreDisplay.textContent = `Final Score: ${finalScore}%`;
-                resultsSummary.textContent = `You answered ${correctAnswersCount} out of ${totalQuestionsInQuiz} questions correctly.`; // Modify as needed based on how you count 'answered'
-
+                resultsSummary.textContent = `You answered ${correctAnswersCount} out of ${totalQuestionsInQuiz} questions correctly.`;
                 showElement(resultsContainer);
-                enableButton(subjectSelector); // Allow selecting a new quiz
+                enableButton(subjectSelector);
+            }
+            
+            // --- Study Mode Specific Functions ---
+            function renderQuestionBrowser() {
+                questionBrowserList.innerHTML = '';
+                allQuestions.forEach((q, index) => {
+                    const qLink = document.createElement('button');
+                    qLink.className = 'q-link';
+                    qLink.textContent = index + 1;
+                    qLink.dataset.index = index;
+                    
+                    const status = questionStatus[q.originalIndex];
+                    if (status) {
+                        qLink.classList.add(status);
+                    }
+
+                    if (questionsToAsk[currentQuestionIndex] && q.originalIndex === questionsToAsk[currentQuestionIndex].originalIndex) {
+                        qLink.classList.add('current');
+                    }
+
+                    qLink.addEventListener('click', () => jumpToQuestion(index));
+                    questionBrowserList.appendChild(qLink);
+                });
             }
 
-            // NEW: AI Explanation Function
+            function jumpToQuestion(index) {
+                // In study mode, questionsToAsk is the same as allQuestions
+                currentQuestionIndex = index;
+                displayQuestion();
+            }
+
+            // --- AI & API Functions ---
+            function initializeGemini(key) {
+                if (typeof window.GoogleGenAI === 'undefined') {
+                    apiKeyStatus.textContent = 'Google Gemini SDK not loaded.';
+                    apiKeyStatus.className = 'api-key-status-error';
+                    showElement(apiKeyStatus);
+                    genAI = null; window.geminiSdkInstance = null; return;
+                }
+                try {
+                    window.geminiSdkInstance = new window.GoogleGenAI({ apiKey: key });
+                    genAI = window.geminiSdkInstance;
+                    apiKeyStatus.textContent = 'API key loaded. Gemini AI ready!';
+                    apiKeyStatus.className = 'api-key-status-success';
+                    showElement(apiKeyStatus);
+                } catch (e) {
+                    localStorage.removeItem('geminiApiKey');
+                    geminiApiKeyInput.value = '';
+                    apiKeyStatus.textContent = 'Invalid API key. Please check and re-enter.';
+                    apiKeyStatus.className = 'api-key-status-error';
+                    showElement(apiKeyStatus);
+                    genAI = null; window.geminiSdkInstance = null;
+                }
+            }
+            
+            async function handleExplain() {
+                if (!lastAnsweredQuestion) return;
+                disableButton(explainBtn);
+                await generateExplanation(lastAnsweredQuestion, lastUserAnswer, lastCorrectAnswer);
+                enableButton(explainBtn);
+            }
+
             async function generateExplanation(question, userAnswer, correctAnswer) {
-                // Use the local 'genAI' variable, which points to window.geminiSdkInstance
-                if (!genAI) {
-                    explanationError.textContent = 'Gemini AI not initialized. Please provide an API key.';
-                    showElement(explanationError);
-                    hideElement(explanationLoader);
-                    hideElement(explanationText);
-                    return;
+                if (!genAI || typeof marked === 'undefined') {
+                    explanationError.textContent = 'AI features not ready. Check API key and script imports.';
+                    showElement(explanationError); return;
                 }
-                // Check if marked.js is loaded
-                if (typeof marked === 'undefined') {
-                    explanationError.textContent = 'Markdown renderer not loaded. Please check script imports.';
-                    showElement(explanationError);
-                    hideElement(explanationLoader);
-                    hideElement(explanationText);
-                    console.error("Marked.js is not loaded.");
-                    return;
-                }
-
-
                 showElement(explanationContainer);
                 showElement(explanationLoader);
                 hideElement(explanationText);
                 hideElement(explanationError);
-                explanationText.textContent = ''; // Clear previous explanation (use textContent initially to avoid flickering with old markdown)
+                explanationText.innerHTML = '';
 
-                const prompt = `Explain the following multiple-choice question and its correct answer in detail. Please use Markdown for formatting (e.g., **bold**, *italic*, lists, headings).
+                const prompt = `Explain the following multiple-choice question and its correct answer in detail, assuming the user is studying for a Philippine pilot license. Where relevant, reference the Philippine Civil Aviation Regulations (PCAR). Use Markdown for formatting.
 
 Question: "${question.question_text}"
-Options:
-${question.options.map((opt, i) => String.fromCharCode(65 + i) + ". " + opt).join('\n')}
+Options:\n${question.options.map((opt, i) => `${String.fromCharCode(65 + i)}. ${opt}`).join('\n')}
 
 Your Answer: "${userAnswer}"
 Correct Answer: "${correctAnswer}"
 
-Provide a concise and informative explanation focusing on why the correct answer is correct and briefly why other options might be incorrect, without directly confirming if the user's answer was right or wrong. Structure it clearly.`;
+Provide a clear explanation of why the correct answer is right and briefly why other options are wrong.`;
 
                 try {
-                    const result = await genAI.models.generateContent({ model: MODEL_NAME, contents: prompt });
-                    const generatedText = result.text;
-                    // Use marked.js to convert markdown to HTML
+                    const result = await genAI.getGenerativeModel({ model: MODEL_NAME }).generateContent(prompt);
+                    const response = await result.response;
+                    const generatedText = response.text();
                     explanationText.innerHTML = marked.parse(generatedText);
                     showElement(explanationText);
                 } catch (e) {
                     console.error("Error generating explanation:", e);
-                    explanationError.textContent = 'Failed to generate explanation. Please try again or check your API key/network.';
+                    explanationError.textContent = 'Failed to generate explanation. Check API key/network.';
                     showElement(explanationError);
                 } finally {
                     hideElement(explanationLoader);
                 }
             }
 
-            // NEW: AI-powered Google Search Prompt Function
             async function generateSearchPrompt(questionText) {
-                // Use the local 'genAI' variable, which points to window.geminiSdkInstance
                 if (!genAI) {
                     displayError('Gemini AI not initialized. Cannot generate search prompt.');
                     return null;
                 }
-
-                const prompt = `Generate a concise and effective Google search query (1-2 sentences, max 100 characters) for the following question to find more information related to the topic. The output should be plain text, suitable for a URL. Do not include the answer in the search query.
+                const prompt = `Generate a concise and effective Google search query (max 100 characters) for the following aviation question. The query should be tailored to find information relevant to the Philippine Civil Aviation Authority (CAAP) and Philippine Civil Aviation Regulations (PCAR). Output only the plain text search query.
 
 Question: "${questionText}"
 
-Example Output: "explain the principles of flight lift and drag" or "what is the capital of France"
-
 Search Query:`;
-
                 try {
-                    const result = await genAI.models.generateContent({ model: MODEL_NAME, contents: prompt });
-                    const searchText = result.text;
-                    
-                    return searchText;
+                    const result = await genAI.getGenerativeModel({ model: MODEL_NAME }).generateContent(prompt);
+                    const response = await result.response;
+                    return response.text();
                 } catch (e) {
                     console.error("Error generating search prompt:", e);
-                    displayError('Failed to generate search prompt. Please try again.');
+                    displayError('Failed to generate search prompt.');
                     return null;
                 }
             }
 
+            function updateQuizInfo() {
+                const progressText = currentMode === 'study' 
+                    ? `Q: ${currentQuestionIndex + 1} / ${totalQuestionsInQuiz}`
+                    : `Remaining: ${questionsToAsk.length + skippedQuestions.length} / ${totalQuestionsInQuiz}`;
+                progressDisplay.textContent = progressText;
+                
+                const totalAttempts = correctAnswersCount + incorrectAnswersCount;
+                const currentScore = totalAttempts === 0 ? 100 : Math.round((correctAnswersCount / totalAttempts) * 100);
+                scoreDisplay.textContent = `Score: ${currentScore}%`;
+                skipsDisplay.textContent = `Skips Left: ${remainingSkips}`;
+                showElement(quizInfoArea);
+            }
 
             // --- Event Listeners ---
+            caapModeBtn.addEventListener('click', () => selectMode('caap'));
+            studyModeBtn.addEventListener('click', () => selectMode('study'));
             subjectSelector.addEventListener('change', () => {
                 const selectedFile = subjectSelector.value;
-                if (selectedFile) {
-                    loadQuiz(selectedFile);
-                } else {
-                    resetUI(); // Clear if "-- Select --" is chosen
-                }
+                if (selectedFile) loadQuiz(selectedFile);
             });
-
             submitBtn.addEventListener('click', handleSubmit);
             skipBtn.addEventListener('click', handleSkip);
             nextBtn.addEventListener('click', handleNext);
-            restartBtn.addEventListener('click', resetUI); // Allow choosing subject again
-            explainBtn.addEventListener('click', handleExplain); // NEW: Explain button listener
-
-            // NEW: API Key Save Button Listener
+            restartBtn.addEventListener('click', resetToModeSelection);
+            explainBtn.addEventListener('click', handleExplain);
             saveApiKeyBtn.addEventListener('click', () => {
                 const key = geminiApiKeyInput.value.trim();
                 if (key) {
                     localStorage.setItem('geminiApiKey', key);
-                    // Call initializeGemini to instantiate and set global/local genAI
                     initializeGemini(key);
                 } else {
                     localStorage.removeItem('geminiApiKey');
-                    // Explicitly nullify both global and local instances
                     window.geminiSdkInstance = null;
                     genAI = null;
                     apiKeyStatus.textContent = 'API key cleared.';
@@ -1107,29 +1120,19 @@ Search Query:`;
                     showElement(apiKeyStatus);
                 }
             });
-
-            // NEW: Google Search Button Listener
             googleSearchBtn.addEventListener('click', async () => {
                 const currentQuestion = questionsToAsk[currentQuestionIndex];
-                if (!currentQuestion) {
-                    displayError("No question currently displayed to search.");
-                    return;
-                }
-                // Temporarily disable the button while search prompt is being generated
+                if (!currentQuestion) return;
                 disableButton(googleSearchBtn);
                 const searchPrompt = await generateSearchPrompt(currentQuestion.question_text);
-                enableButton(googleSearchBtn); // Re-enable button
-
+                enableButton(googleSearchBtn);
                 if (searchPrompt) {
                     window.open(`https://www.google.com/search?q=${encodeURIComponent(searchPrompt)}`, '_blank');
                 }
             });
 
-
             // --- Initial Execution ---
-            // Show splash screen for 1 second, then initialize
             setTimeout(initializeApp, 1000);
-
         });
     </script>
 
