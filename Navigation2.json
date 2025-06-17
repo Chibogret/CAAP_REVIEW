@@ -1,0 +1,2205 @@
+{
+  "exam_title": "Navigation2",
+  "questions": [
+    {
+      "question_number": 1,
+      "question_text": "The distance between parallels of latitude 10°N and 11°N along a meridian is approximately:",
+      "options": [
+        "60 nautical miles",
+        "111 nautical miles",
+        "60 statute miles",
+        "11 kilometers"
+      ],
+      "correct_answer": "60 nautical miles"
+    },
+    {
+      "question_number": 2,
+      "question_text": "Magnetic variation is the angle between which two directions?",
+      "options": [
+        "True north and Magnetic north",
+        "True north and Geographic meridian",
+        "Magnetic north and the aircraft’s magnetic heading",
+        "Magnetic north and the aircraft’s true heading"
+      ],
+      "correct_answer": "True north and Magnetic north"
+    },
+    {
+      "question_number": 3,
+      "question_text": "An isogonal (isogonic) line on a navigation chart connects points of equal:",
+      "options": [
+        "Magnetic variation",
+        "Magnetic deviation",
+        "Latitude",
+        "Compass heading"
+      ],
+      "correct_answer": "Magnetic variation"
+    },
+    {
+      "question_number": 4,
+      "question_text": "Which of the following best describes a rhumb line (loxodrome)?",
+      "options": [
+        "A line crossing all meridians at the same angle",
+        "A line crossing all parallels of latitude at the same angle",
+        "A line following a constant compass direction",
+        "The shortest path between two points on Earth"
+      ],
+      "correct_answer": "A line crossing all meridians at the same angle"
+    },
+    {
+      "question_number": 5,
+      "question_text": "The shortest route between two points on the Earth’s surface is along a:",
+      "options": [
+        "Great circle",
+        "Rhumb line",
+        "Meridian",
+        "Parallel of latitude"
+      ],
+      "correct_answer": "Great circle"
+    },
+    {
+      "question_number": 6,
+      "question_text": "What is the latitude of the North Pole?",
+      "options": [
+        "90°N",
+        "0°",
+        "90°S",
+        "180°"
+      ],
+      "correct_answer": "90°N"
+    },
+    {
+      "question_number": 7,
+      "question_text": "The meridian passing through Greenwich, England is called the:",
+      "options": [
+        "Prime Meridian",
+        "Equator",
+        "International Date Line",
+        "Axis of Rotation"
+      ],
+      "correct_answer": "Prime Meridian"
+    },
+    {
+      "question_number": 8,
+      "question_text": "Which two points on the Earth’s surface define its axis of rotation?",
+      "options": [
+        "North and South geographic poles",
+        "North geographic pole and North magnetic pole",
+        "North and South magnetic poles",
+        "The equator and the International Date Line"
+      ],
+      "correct_answer": "North and South geographic poles"
+    },
+    {
+      "question_number": 9,
+      "question_text": "Geographic latitude of a point on Earth’s surface is measured from the:",
+      "options": [
+        "Equator",
+        "Prime Meridian",
+        "North Pole",
+        "International Date Line"
+      ],
+      "correct_answer": "Equator"
+    },
+    {
+      "question_number": 10,
+      "question_text": "The intersection of two lines of position on a chart is called a:",
+      "options": [
+        "Fix",
+        "Waypoint",
+        "Checkpoint",
+        "Station passage"
+      ],
+      "correct_answer": "Fix"
+    },
+    {
+      "question_number": 11,
+      "question_text": "An aircraft’s heading is defined as:",
+      "options": [
+        "The direction the aircraft's nose is pointing",
+        "The direction of the aircraft’s motion over the ground",
+        "The direction of the north marker on the compass",
+        "The direction of the magnetic meridian"
+      ],
+      "correct_answer": "The direction the aircraft's nose is pointing"
+    },
+    {
+      "question_number": 12,
+      "question_text": "Magnetic deviation in a compass is the difference between:",
+      "options": [
+        "The aircraft’s magnetic heading and compass reading",
+        "True north and magnetic north",
+        "Compass indication and true heading",
+        "Magnetic north and geographic pole"
+      ],
+      "correct_answer": "The aircraft’s magnetic heading and compass reading"
+    },
+    {
+      "question_number": 13,
+      "question_text": "In the mnemonic “West is best, East is least” for variation correction, if the variation is 10° West, you should:",
+      "options": [
+        "Add 10° to the true heading",
+        "Subtract 10° from the true heading",
+        "Ignore the variation",
+        "Use compass east-west error card instead"
+      ],
+      "correct_answer": "Add 10° to the true heading"
+    },
+    {
+      "question_number": 14,
+      "question_text": "In the Northern Hemisphere, the compass mnemonic “UNOS” stands for:",
+      "options": [
+        "Undershoot North, Overshoot South",
+        "Undershoot North, Overshoot Sam",
+        "Up North, On South",
+        "Undergo Navigation, Observe Signals"
+      ],
+      "correct_answer": "Undershoot North, Overshoot South"
+    },
+    {
+      "question_number": 15,
+      "question_text": "When a plane accelerates on an east or west heading in the Northern Hemisphere, the magnetic compass will indicate a false turn toward:",
+      "options": [
+        "North",
+        "South",
+        "East",
+        "West"
+      ],
+      "correct_answer": "North"
+    },
+    {
+      "question_number": 16,
+      "question_text": "When a plane accelerates on an east or west heading in the Southern Hemisphere, the magnetic compass will indicate a false turn toward:",
+      "options": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "correct_answer": "South"
+    },
+    {
+      "question_number": 17,
+      "question_text": "When a plane decelerates on an east or west heading in the Northern Hemisphere, the magnetic compass will indicate a false turn toward:",
+      "options": [
+        "South",
+        "North",
+        "East",
+        "West"
+      ],
+      "correct_answer": "South"
+    },
+    {
+      "question_number": 18,
+      "question_text": "When a plane decelerates on an east or west heading in the Southern Hemisphere, the magnetic compass will indicate a false turn toward:",
+      "options": [
+        "North",
+        "South",
+        "East",
+        "West"
+      ],
+      "correct_answer": "North"
+    },
+    {
+      "question_number": 19,
+      "question_text": "The fixed vertical reference line on a compass is called the:",
+      "options": [
+        "Lubber line",
+        "Meridian line",
+        "Isogonic line",
+        "Deviation card"
+      ],
+      "correct_answer": "Lubber line"
+    },
+    {
+      "question_number": 20,
+      "question_text": "On a chart with scale 1:500,000, 1 centimeter on the chart represents how many kilometers on the ground?",
+      "options": [
+        "5 kilometers",
+        "50 kilometers",
+        "500 meters",
+        "500 kilometers"
+      ],
+      "correct_answer": "5 kilometers"
+    },
+    {
+      "question_number": 21,
+      "question_text": "AIP (Aeronautical Information Publication) stands for:",
+      "options": [
+        "Aeronautical Information Publication",
+        "Airport Information Panel",
+        "Airspace Information Pack",
+        "Automatic Instrument Procedure"
+      ],
+      "correct_answer": "Aeronautical Information Publication"
+    },
+    {
+      "question_number": 22,
+      "question_text": "A NOTAM provides pilots with:",
+      "options": [
+        "Time-critical information on changes and hazards at airports or en route nav facilities",
+        "Entertainment content for passengers",
+        "Annual airport schedule changes",
+        "Weather broadcasts only"
+      ],
+      "correct_answer": "Time-critical information on changes and hazards at airports or en route nav facilities"
+    },
+    {
+      "question_number": 23,
+      "question_text": "One knot is equal to how many kilometers per hour (approximately)?",
+      "options": [
+        "1.852 km/h",
+        "0.540 km/h",
+        "1.000 km/h",
+        "2.000 km/h"
+      ],
+      "correct_answer": "1.852 km/h"
+    },
+    {
+      "question_number": 24,
+      "question_text": "One nautical mile is equal to how many kilometers (approximately)?",
+      "options": [
+        "1.852 km",
+        "1.150 km",
+        "0.540 km",
+        "2.000 km"
+      ],
+      "correct_answer": "1.852 km"
+    },
+    {
+      "question_number": 25,
+      "question_text": "One nautical mile is equal to how many statute miles (approximately)?",
+      "options": [
+        "1.15 statute miles",
+        "0.87 statute miles",
+        "2.00 statute miles",
+        "1.00 statute miles"
+      ],
+      "correct_answer": "1.15 statute miles"
+    },
+    {
+      "question_number": 26,
+      "question_text": "One statute mile is approximately how many kilometers?",
+      "options": [
+        "1.609 km",
+        "1.000 km",
+        "1.852 km",
+        "2.000 km"
+      ],
+      "correct_answer": "1.609 km"
+    },
+    {
+      "question_number": 27,
+      "question_text": "One nautical mile is equal to how many meters?",
+      "options": [
+        "1852 meters",
+        "1500 meters",
+        "1000 meters",
+        "2000 meters"
+      ],
+      "correct_answer": "1852 meters"
+    },
+    {
+      "question_number": 28,
+      "question_text": "What does the acronym VOR stand for?",
+      "options": [
+        "Very High Frequency Omni-directional Range",
+        "Variable Omni Radio",
+        "Visual Orientation Range",
+        "VHF Operational Radio"
+      ],
+      "correct_answer": "Very High Frequency Omni-directional Range"
+    },
+    {
+      "question_number": 29,
+      "question_text": "What does the acronym ADF stand for?",
+      "options": [
+        "Automatic Direction Finder",
+        "Aeronautical Data Facility",
+        "Altitude and Drift Finder",
+        "Aircraft Data Function"
+      ],
+      "correct_answer": "Automatic Direction Finder"
+    },
+    {
+      "question_number": 30,
+      "question_text": "What does the acronym DME stand for in radio navigation?",
+      "options": [
+        "Distance Measuring Equipment",
+        "Digital Map Editor",
+        "Direction Measuring Equipment",
+        "Dual Mode Encoder"
+      ],
+      "correct_answer": "Distance Measuring Equipment"
+    },
+    {
+      "question_number": 31,
+      "question_text": "What does the acronym NDB stand for?",
+      "options": [
+        "Non-Directional Beacon",
+        "New Directional Beacon",
+        "Navigation Distance Bearing",
+        "National Data Base"
+      ],
+      "correct_answer": "Non-Directional Beacon"
+    },
+    {
+      "question_number": 32,
+      "question_text": "What does the acronym GPS stand for in aviation navigation?",
+      "options": [
+        "Global Positioning System",
+        "Ground Positioning System",
+        "Global Pilot Satellite",
+        "Geo Positioning Service"
+      ],
+      "correct_answer": "Global Positioning System"
+    },
+    {
+      "question_number": 33,
+      "question_text": "What does GNSS stand for?",
+      "options": [
+        "Global Navigation Satellite System",
+        "Ground Navigation Signal System",
+        "General Nav Sys Software",
+        "Global Nav Signal Spectrum"
+      ],
+      "correct_answer": "Global Navigation Satellite System"
+    },
+    {
+      "question_number": 34,
+      "question_text": "What does WAAS stand for in the context of GPS?",
+      "options": [
+        "Wide Area Augmentation System",
+        "Worldwide Airway Advisory System",
+        "Wide Angle Approach System",
+        "Weight and Altitude Advisory System"
+      ],
+      "correct_answer": "Wide Area Augmentation System"
+    },
+    {
+      "question_number": 35,
+      "question_text": "What does RAIM stand for?",
+      "options": [
+        "Receiver Autonomous Integrity Monitoring",
+        "Radar Altitude Indication Method",
+        "Radio Aircraft Intersection Meter",
+        "Regional Altitude Information Monitor"
+      ],
+      "correct_answer": "Receiver Autonomous Integrity Monitoring"
+    },
+    {
+      "question_number": 36,
+      "question_text": "What does RMI stand for in aircraft instruments?",
+      "options": [
+        "Radio Magnetic Indicator",
+        "Radar Missile Indicator",
+        "Radar Magnetic Instrument",
+        "Radio Magnetic Indicator"
+      ],
+      "correct_answer": "Radio Magnetic Indicator"
+    },
+    {
+      "question_number": 37,
+      "question_text": "What is the primary advantage of GPS (GNSS) over VOR navigation?",
+      "options": [
+        "Worldwide coverage without reliance on ground stations",
+        "Higher frequency signals",
+        "Cheaper equipment",
+        "Immune to all errors"
+      ],
+      "correct_answer": "Worldwide coverage without reliance on ground stations"
+    },
+    {
+      "question_number": 38,
+      "question_text": "Which of the following best describes pilotage as a navigation method?",
+      "options": [
+        "Navigating by reference to visible landmarks",
+        "Navigating using time, speed, and heading calculations",
+        "Navigating using only instruments",
+        "Navigating by following flight paths"
+      ],
+      "correct_answer": "Navigating by reference to visible landmarks"
+    },
+    {
+      "question_number": 39,
+      "question_text": "Which of the following best describes dead reckoning as a navigation method?",
+      "options": [
+        "Navigating using calculations based on speed, time, and heading",
+        "Navigating by using visual checkpoints",
+        "Navigating by following radio beacons",
+        "Navigating by search and rescue"
+      ],
+      "correct_answer": "Navigating using calculations based on speed, time, and heading"
+    },
+    {
+      "question_number": 40,
+      "question_text": "Dead reckoning navigation assumes that wind conditions remain:",
+      "options": [
+        "Constant throughout the flight",
+        "Changing randomly",
+        "Only at the end of flight",
+        "Negligible when climbing"
+      ],
+      "correct_answer": "Constant throughout the flight"
+    },
+    {
+      "question_number": 41,
+      "question_text": "On which type of map projection do great circle routes appear as straight lines?",
+      "options": [
+        "Gnomonic projection",
+        "Mercator projection",
+        "Lambert conformal projection",
+        "Polar stereographic projection"
+      ],
+      "correct_answer": "Gnomonic projection"
+    },
+    {
+      "question_number": 42,
+      "question_text": "On which type of map projection do rhumb lines (constant bearing lines) appear as straight lines?",
+      "options": [
+        "Mercator projection",
+        "Gnomonic projection",
+        "Lambert conformal projection",
+        "Azimuthal equidistant projection"
+      ],
+      "correct_answer": "Mercator projection"
+    },
+    {
+      "question_number": 43,
+      "question_text": "Why is filing a VFR flight plan recommended?",
+      "options": [
+        "Search and Rescue can know your route and ETA",
+        "It is required for any flight",
+        "It automatically clears you through controlled airspace",
+        "It reduces navigation errors automatically"
+      ],
+      "correct_answer": "Search and Rescue can know your route and ETA"
+    },
+    {
+      "question_number": 44,
+      "question_text": "What is the minimum fuel reserve typically required for a VFR flight?",
+      "options": [
+        "30 minutes of fuel at normal cruise",
+        "No reserve is required",
+        "3 hours of fuel",
+        "Fuel for an alternate airport"
+      ],
+      "correct_answer": "30 minutes of fuel at normal cruise"
+    },
+    {
+      "question_number": 45,
+      "question_text": "If weather deteriorates en route or at the destination, a prudent pilot should:",
+      "options": [
+        "Plan a diversion to a suitable alternate airport and inform ATC",
+        "Continue to the destination at the expense of safety",
+        "Shut off communications and search for landmarks",
+        "Immediately climb to the highest altitude possible"
+      ],
+      "correct_answer": "Plan a diversion to a suitable alternate airport and inform ATC"
+    },
+    {
+      "question_number": 46,
+      "question_text": "ATIS stands for:",
+      "options": [
+        "Automatic Terminal Information Service",
+        "Automatic Terrain Information Service",
+        "Air Traffic Information System",
+        "Automated Tracking and Identification Service"
+      ],
+      "correct_answer": "Automatic Terminal Information Service"
+    },
+    {
+      "question_number": 47,
+      "question_text": "METAR stands for:",
+      "options": [
+        "Meteorological Aerodrome Report",
+        "Mechanical Equipment Technical Air Report",
+        "Meteorological Area Reading",
+        "Meteorological Aerodynamics Report"
+      ],
+      "correct_answer": "Meteorological Aerodrome Report"
+    },
+    {
+      "question_number": 48,
+      "question_text": "TAF stands for:",
+      "options": [
+        "Terminal Aerodrome Forecast",
+        "Tactical Air Force",
+        "Technical Aircraft Forecast",
+        "Terminal Aircraft File"
+      ],
+      "correct_answer": "Terminal Aerodrome Forecast"
+    },
+    {
+      "question_number": 49,
+      "question_text": "An ATIS broadcast typically includes:",
+      "options": [
+        "Current weather conditions, active runway, and airport information",
+        "In-flight movie announcements",
+        "Advance weather forecasts only",
+        "Fuel prices"
+      ],
+      "correct_answer": "Current weather conditions, active runway, and airport information"
+    },
+    {
+      "question_number": 50,
+      "question_text": "A METAR report provides:",
+      "options": [
+        "Current observed weather at an airport",
+        "Enroute weather forecast",
+        "Automobile traffic data",
+        "Historical weather trends"
+      ],
+      "correct_answer": "Current observed weather at an airport"
+    },
+    {
+      "question_number": 51,
+      "question_text": "A TAF report provides:",
+      "options": [
+        "Forecast weather for an airport",
+        "Current observed weather",
+        "NOTAM information",
+        "Pilot reports"
+      ],
+      "correct_answer": "Forecast weather for an airport"
+    },
+    {
+      "question_number": 52,
+      "question_text": "Which of the following is true: METAR vs TAF?",
+      "options": [
+        "METAR is an observation (current weather) and TAF is a forecast",
+        "METAR is a forecast and TAF is a current observation",
+        "Both METAR and TAF are forecasts",
+        "Both METAR and TAF are historical observations"
+      ],
+      "correct_answer": "METAR is an observation (current weather) and TAF is a forecast"
+    },
+    {
+      "question_number": 53,
+      "question_text": "In a METAR report, CAVOK means:",
+      "options": [
+        "Ceiling and visibility OK (>=10 km, no clouds below 5000 ft, no significant weather)",
+        "Clouds at various altitudes OK",
+        "Visibility only 500 m",
+        "High winds and precipitation expected"
+      ],
+      "correct_answer": "Ceiling and visibility OK (>=10 km, no clouds below 5000 ft, no significant weather)"
+    },
+    {
+      "question_number": 54,
+      "question_text": "In a METAR report, BKN indicates:",
+      "options": [
+        "Broken clouds (5-7 eighths sky coverage)",
+        "Few clouds",
+        "Overcast clouds",
+        "No clouds"
+      ],
+      "correct_answer": "Broken clouds (5-7 eighths sky coverage)"
+    },
+    {
+      "question_number": 55,
+      "question_text": "In a METAR report, NSW means:",
+      "options": [
+        "No significant weather",
+        "Northerly strong winds",
+        "New snow",
+        "No sudden windchange"
+      ],
+      "correct_answer": "No significant weather"
+    },
+    {
+      "question_number": 56,
+      "question_text": "In a METAR report, TS indicates:",
+      "options": [
+        "Thunderstorm",
+        "Tropical storm",
+        "Temperature spike",
+        "Tactical security alert"
+      ],
+      "correct_answer": "Thunderstorm"
+    },
+    {
+      "question_number": 57,
+      "question_text": "In an ATIS or TAF, NOSIG stands for:",
+      "options": [
+        "No significant changes expected",
+        "Noise significant intensity gauge",
+        "Not on scheduled information",
+        "Notice of SIGmet"
+      ],
+      "correct_answer": "No significant changes expected"
+    },
+    {
+      "question_number": 58,
+      "question_text": "Routine METAR reports are normally issued every:",
+      "options": [
+        "60 minutes",
+        "30 minutes",
+        "15 minutes",
+        "6 hours"
+      ],
+      "correct_answer": "60 minutes"
+    },
+    {
+      "question_number": 59,
+      "question_text": "A standard TAF typically covers how many hours?",
+      "options": [
+        "24 hours",
+        "3 hours",
+        "12 hours",
+        "48 hours"
+      ],
+      "correct_answer": "24 hours"
+    },
+    {
+      "question_number": 60,
+      "question_text": "RVR in aerodrome weather reports stands for:",
+      "options": [
+        "Runway Visual Range",
+        "Radar Vector Requirement",
+        "Recommended Velocity Region",
+        "Runway Visibility Record"
+      ],
+      "correct_answer": "Runway Visual Range"
+    },
+    {
+      "question_number": 61,
+      "question_text": "If an aircraft flies at 100 knots for 0.5 hours, how far does it travel (in NM)?",
+      "options": [
+        "50 NM",
+        "100 NM",
+        "0.5 NM",
+        "150 NM"
+      ],
+      "correct_answer": "50 NM"
+    },
+    {
+      "question_number": 62,
+      "question_text": "If a plane flies at 200 knots for 2 hours, how many nautical miles does it cover?",
+      "options": [
+        "400 NM",
+        "200 NM",
+        "100 NM",
+        "800 NM"
+      ],
+      "correct_answer": "400 NM"
+    },
+    {
+      "question_number": 63,
+      "question_text": "How many nautical miles will an aircraft cover at 150 knots in 2.5 hours?",
+      "options": [
+        "375 NM",
+        "300 NM",
+        "250 NM",
+        "400 NM"
+      ],
+      "correct_answer": "375 NM"
+    },
+    {
+      "question_number": 64,
+      "question_text": "If an aircraft travels at 120 knots for 1.5 hours, how far does it go (in NM)?",
+      "options": [
+        "180 NM",
+        "150 NM",
+        "120 NM",
+        "60 NM"
+      ],
+      "correct_answer": "180 NM"
+    },
+    {
+      "question_number": 65,
+      "question_text": "If a plane travels 90 NM at 150 knots, how long will the flight take?",
+      "options": [
+        "0.6 hours",
+        "1.5 hours",
+        "1.2 hours",
+        "0.9 hours"
+      ],
+      "correct_answer": "0.6 hours"
+    },
+    {
+      "question_number": 66,
+      "question_text": "If a plane has ground speed 100 knots, how long to travel 150 NM?",
+      "options": [
+        "1.5 hours",
+        "1.0 hour",
+        "1.25 hours",
+        "0.5 hours"
+      ],
+      "correct_answer": "1.5 hours"
+    },
+    {
+      "question_number": 67,
+      "question_text": "If an aircraft covers 240 NM in 3 hours, what is its groundspeed?",
+      "options": [
+        "80 knots",
+        "75 knots",
+        "100 knots",
+        "60 knots"
+      ],
+      "correct_answer": "80 knots"
+    },
+    {
+      "question_number": 68,
+      "question_text": "If an aircraft travels 300 NM in 2.5 hours, what is its groundspeed?",
+      "options": [
+        "120 knots",
+        "100 knots",
+        "150 knots",
+        "180 knots"
+      ],
+      "correct_answer": "120 knots"
+    },
+    {
+      "question_number": 69,
+      "question_text": "At a groundspeed of 120 knots, how far will an aircraft travel in 30 minutes?",
+      "options": [
+        "60 NM",
+        "120 NM",
+        "30 NM",
+        "90 NM"
+      ],
+      "correct_answer": "60 NM"
+    },
+    {
+      "question_number": 70,
+      "question_text": "At a groundspeed of 90 knots, how far will an aircraft travel in 30 minutes?",
+      "options": [
+        "45 NM",
+        "30 NM",
+        "60 NM",
+        "90 NM"
+      ],
+      "correct_answer": "45 NM"
+    },
+    {
+      "question_number": 71,
+      "question_text": "At 150 knots ground speed, how far does an aircraft travel in 2 hours?",
+      "options": [
+        "300 NM",
+        "150 NM",
+        "200 NM",
+        "250 NM"
+      ],
+      "correct_answer": "300 NM"
+    },
+    {
+      "question_number": 72,
+      "question_text": "At 100 knots ground speed, how many NM are covered in 1.5 hours?",
+      "options": [
+        "150 NM",
+        "100 NM",
+        "75 NM",
+        "180 NM"
+      ],
+      "correct_answer": "150 NM"
+    },
+    {
+      "question_number": 73,
+      "question_text": "If an aircraft has a true airspeed of 160 knots and encounters a 20 knot headwind, what is the approximate groundspeed?",
+      "options": [
+        "140 knots",
+        "180 knots",
+        "100 knots",
+        "160 knots"
+      ],
+      "correct_answer": "140 knots"
+    },
+    {
+      "question_number": 74,
+      "question_text": "If an aircraft has a true airspeed of 160 knots and encounters a 20 knot tailwind, what is the approximate groundspeed?",
+      "options": [
+        "180 knots",
+        "140 knots",
+        "160 knots",
+        "120 knots"
+      ],
+      "correct_answer": "180 knots"
+    },
+    {
+      "question_number": 75,
+      "question_text": "How many hours are in 90 minutes?",
+      "options": [
+        "1.5 hours",
+        "1.0 hour",
+        "2.0 hours",
+        "0.5 hours"
+      ],
+      "correct_answer": "1.5 hours"
+    },
+    {
+      "question_number": 76,
+      "question_text": "How many hours are in 30 minutes?",
+      "options": [
+        "0.5 hours",
+        "1.0 hour",
+        "0.3 hours",
+        "2.0 hours"
+      ],
+      "correct_answer": "0.5 hours"
+    },
+    {
+      "question_number": 77,
+      "question_text": "If an aircraft flies 75 NM at 150 knots, how long will the flight take?",
+      "options": [
+        "0.5 hours",
+        "1.0 hour",
+        "0.25 hours",
+        "2.0 hours"
+      ],
+      "correct_answer": "0.5 hours"
+    },
+    {
+      "question_number": 78,
+      "question_text": "If an aircraft flies 60 NM at 120 knots, how long will the flight take?",
+      "options": [
+        "0.5 hours",
+        "1.0 hour",
+        "0.75 hours",
+        "2.0 hours"
+      ],
+      "correct_answer": "0.5 hours"
+    },
+    {
+      "question_number": 79,
+      "question_text": "One minute of latitude on Earth equals how many nautical miles (approximately)?",
+      "options": [
+        "1 NM",
+        "0.1 NM",
+        "1.15 NM",
+        "0.54 NM"
+      ],
+      "correct_answer": "1 NM"
+    },
+    {
+      "question_number": 80,
+      "question_text": "One degree of latitude on Earth equals how many nautical miles (approximately)?",
+      "options": [
+        "60 NM",
+        "30 NM",
+        "90 NM",
+        "15 NM"
+      ],
+      "correct_answer": "60 NM"
+    },
+    {
+      "question_number": 81,
+      "question_text": "If True Heading is 090°, variation 4°E, deviation 2°W, what is the compass heading?",
+      "options": [
+        "088°",
+        "086°",
+        "094°",
+        "090°"
+      ],
+      "correct_answer": "088°"
+    },
+    {
+      "question_number": 82,
+      "question_text": "If True Heading is 360°, variation 5°W, deviation 3°E, what is the compass heading?",
+      "options": [
+        "002°",
+        "358°",
+        "005°",
+        "360°"
+      ],
+      "correct_answer": "002°"
+    },
+    {
+      "question_number": 83,
+      "question_text": "On an ADF, magnetic heading plus relative bearing equals:",
+      "options": [
+        "Magnetic bearing",
+        "True bearing",
+        "Compass error",
+        "Airspeed indicator"
+      ],
+      "correct_answer": "Magnetic bearing"
+    },
+    {
+      "question_number": 84,
+      "question_text": "What is the purpose of applying a wind correction angle to your heading?",
+      "options": [
+        "To maintain a desired ground track despite wind drift",
+        "To adjust compass errors",
+        "To follow magnetic variation",
+        "To compute groundspeed"
+      ],
+      "correct_answer": "To maintain a desired ground track despite wind drift"
+    },
+    {
+      "question_number": 85,
+      "question_text": "Which factor is NOT required for dead reckoning navigation?",
+      "options": [
+        "Altitude",
+        "Time",
+        "Groundspeed",
+        "Heading"
+      ],
+      "correct_answer": "Altitude"
+    },
+    {
+      "question_number": 86,
+      "question_text": "What does ETA stand for in flight planning?",
+      "options": [
+        "Estimated Time of Arrival",
+        "Exact Time of Altitude",
+        "Emergency Terrain Avoidance",
+        "Estimated Takeoff Altitude"
+      ],
+      "correct_answer": "Estimated Time of Arrival"
+    },
+    {
+      "question_number": 87,
+      "question_text": "What code is used to identify a VOR station?",
+      "options": [
+        "Morse code identifier",
+        "Color flashes",
+        "Voice pronunciation",
+        "Binary code"
+      ],
+      "correct_answer": "Morse code identifier"
+    },
+    {
+      "question_number": 88,
+      "question_text": "What code is used to identify an NDB station?",
+      "options": [
+        "Morse code identifier",
+        "Voice broadcast",
+        "Radar pulse",
+        "Light signal"
+      ],
+      "correct_answer": "Morse code identifier"
+    },
+    {
+      "question_number": 89,
+      "question_text": "If local time is 18:00 at 60°E, what is UTC?",
+      "options": [
+        "14:00",
+        "15:00",
+        "16:00",
+        "18:00"
+      ],
+      "correct_answer": "14:00"
+    },
+    {
+      "question_number": 90,
+      "question_text": "If local time is 09:00 at 75°W, what is UTC?",
+      "options": [
+        "14:00",
+        "13:00",
+        "15:00",
+        "16:00"
+      ],
+      "correct_answer": "14:00"
+    },
+    {
+      "question_number": 91,
+      "question_text": "Which phrase helps pilots remember how to apply magnetic variation to a course or heading?",
+      "options": [
+        "West is best, East is least",
+        "Never trust a compass",
+        "North and South are always the best",
+        "All variations are subtracted"
+      ],
+      "correct_answer": "West is best, East is least"
+    },
+    {
+      "question_number": 92,
+      "question_text": "Which two factors cause an aircraft’s compass heading to differ from its true heading?",
+      "options": [
+        "Magnetic variation and magnetic deviation",
+        "Wind direction and weight",
+        "Air temperature and pressure",
+        "Altitude and airspeed"
+      ],
+      "correct_answer": "Magnetic variation and magnetic deviation"
+    },
+    {
+      "question_number": 93,
+      "question_text": "What is the wind correction angle?",
+      "options": [
+        "The angle between heading and track to compensate for drift",
+        "The angle between ground track and magnetic north",
+        "The angle between true north and magnetic north",
+        "The bank angle needed to maintain heading"
+      ],
+      "correct_answer": "The angle between heading and track to compensate for drift"
+    },
+    {
+      "question_number": 94,
+      "question_text": "Ground speed is the aircraft’s speed:",
+      "options": [
+        "Over the ground, including effect of wind",
+        "Through the air, excluding wind",
+        "At sea level",
+        "At cruising altitude"
+      ],
+      "correct_answer": "Over the ground, including effect of wind"
+    },
+    {
+      "question_number": 95,
+      "question_text": "True airspeed (TAS) refers to the aircraft’s speed:",
+      "options": [
+        "Through the air mass",
+        "Over the ground",
+        "Indicated on the airspeed indicator",
+        "At sea level conditions"
+      ],
+      "correct_answer": "Through the air mass"
+    },
+    {
+      "question_number": 96,
+      "question_text": "Mercator projection is most useful for:",
+      "options": [
+        "Drawn navigation charts where rhumb lines are straight",
+        "Plotting shortest great-circle routes",
+        "Mapping polar regions",
+        "Military charting only"
+      ],
+      "correct_answer": "Drawn navigation charts where rhumb lines are straight"
+    },
+    {
+      "question_number": 97,
+      "question_text": "Which of the following describes pilotage?",
+      "options": [
+        "Navigating by landmarks and visual references",
+        "Navigating by calculations of time and speed",
+        "Navigating without ground reference",
+        "Flying by instruments only"
+      ],
+      "correct_answer": "Navigating by landmarks and visual references"
+    },
+    {
+      "question_number": 98,
+      "question_text": "Which of the following describes dead reckoning?",
+      "options": [
+        "Navigating by time, speed, and heading",
+        "Navigating by sight of ground features",
+        "Using an autopilot",
+        "Flying directly to a fix"
+      ],
+      "correct_answer": "Navigating by time, speed, and heading"
+    },
+    {
+      "question_number": 99,
+      "question_text": "How many nautical miles are covered in 30 minutes at 120 knots?",
+      "options": [
+        "60 NM",
+        "30 NM",
+        "90 NM",
+        "120 NM"
+      ],
+      "correct_answer": "60 NM"
+    },
+    {
+      "question_number": 100,
+      "question_text": "How many nautical miles are covered in 45 minutes at 90 knots?",
+      "options": [
+        "67.5 NM",
+        "45 NM",
+        "60 NM",
+        "90 NM"
+      ],
+      "correct_answer": "67.5 NM"
+    },
+    {
+      "question_number": 101,
+      "question_text": "Which is an advantage of VHF VOR signals over ADF NDB signals?",
+      "options": [
+        "Less susceptible to static interference",
+        "Longer range",
+        "Requires simpler equipment",
+        "Higher transmitter power"
+      ],
+      "correct_answer": "Less susceptible to static interference"
+    },
+    {
+      "question_number": 102,
+      "question_text": "Which is a disadvantage of ADF/NDB navigation?",
+      "options": [
+        "Subject to static interference and night effect",
+        "Limited to line-of-sight",
+        "Cannot fly directly to NDB",
+        "No Morse identification"
+      ],
+      "correct_answer": "Subject to static interference and night effect"
+    },
+    {
+      "question_number": 103,
+      "question_text": "The frequency range for VOR navigation is:",
+      "options": [
+        "108.00 – 117.95 MHz",
+        "190 – 535 kHz",
+        "118.00 – 135.00 MHz",
+        "20.0 – 40.0 MHz"
+      ],
+      "correct_answer": "108.00 – 117.95 MHz"
+    },
+    {
+      "question_number": 104,
+      "question_text": "The frequency range for NDB/ADF is:",
+      "options": [
+        "190 – 535 kHz",
+        "108.00 – 117.95 MHz",
+        "30 – 300 GHz",
+        "530 – 1700 kHz"
+      ],
+      "correct_answer": "190 – 535 kHz"
+    },
+    {
+      "question_number": 105,
+      "question_text": "You tune a VOR and want to be sure it's correct. You should:",
+      "options": [
+        "Listen for the station’s Morse code identifier",
+        "Watch for a blinking light",
+        "Check for GPS overlay",
+        "Trust the needle immediately"
+      ],
+      "correct_answer": "Listen for the station’s Morse code identifier"
+    },
+    {
+      "question_number": 106,
+      "question_text": "What does the 'FROM' flag on a VOR indicator mean?",
+      "options": [
+        "The aircraft is on the selected course from the station",
+        "The station is to the front of the aircraft",
+        "The aircraft should fly away from the station",
+        "The OBS is set to the airport inbound course"
+      ],
+      "correct_answer": "The aircraft is on the selected course from the station"
+    },
+    {
+      "question_number": 107,
+      "question_text": "A homing technique to an NDB is characterized by:",
+      "options": [
+        "Constantly pointing the ADF needle to the aircraft’s nose",
+        "Holding a constant heading",
+        "Adjusting heading to correct for wind",
+        "Flying directly away from the station"
+      ],
+      "correct_answer": "Constantly pointing the ADF needle to the aircraft’s nose"
+    },
+    {
+      "question_number": 108,
+      "question_text": "Tracking to an NDB means:",
+      "options": [
+        "Adjusting heading to maintain a constant bearing",
+        "Flying directly toward the station",
+        "Flying away from the station",
+        "Changing frequency to track"
+      ],
+      "correct_answer": "Adjusting heading to maintain a constant bearing"
+    },
+    {
+      "question_number": 109,
+      "question_text": "Which technique uses a constant aircraft heading and corrects track by drift correction?",
+      "options": [
+        "Dead reckoning",
+        "Pilotage",
+        "ADF homing",
+        "GPS direct"
+      ],
+      "correct_answer": "Dead reckoning"
+    },
+    {
+      "question_number": 110,
+      "question_text": "A VOR station co-located with a DME is known as:",
+      "options": [
+        "VOR/DME",
+        "VORTAC",
+        "ADF",
+        "NDB/DME"
+      ],
+      "correct_answer": "VOR/DME"
+    },
+    {
+      "question_number": 111,
+      "question_text": "Magnetic heading plus relative bearing (to a station) equals:",
+      "options": [
+        "Magnetic bearing to the station",
+        "True course",
+        "Compass heading",
+        "Drift angle"
+      ],
+      "correct_answer": "Magnetic bearing to the station"
+    },
+    {
+      "question_number": 112,
+      "question_text": "Relative bearing is defined as:",
+      "options": [
+        "The angle from the aircraft’s nose to the station",
+        "The bearing from the station to the aircraft",
+        "The difference between true and magnetic north",
+        "The angle of descent"
+      ],
+      "correct_answer": "The angle from the aircraft’s nose to the station"
+    },
+    {
+      "question_number": 113,
+      "question_text": "If aircraft heading is 045° and bearing to station is 120°, what is the relative bearing?",
+      "options": [
+        "075°",
+        "165°",
+        "045°",
+        "105°"
+      ],
+      "correct_answer": "075°"
+    },
+    {
+      "question_number": 114,
+      "question_text": "If aircraft heading is 270° and relative bearing to station is 090°, what is the magnetic bearing to the station?",
+      "options": [
+        "000°",
+        "180°",
+        "270°",
+        "090°"
+      ],
+      "correct_answer": "000°"
+    },
+    {
+      "question_number": 115,
+      "question_text": "If aircraft heading is 090° and relative bearing is 315°, what is the magnetic bearing to the station?",
+      "options": [
+        "405° (i.e. 045°)",
+        "225°",
+        "135°",
+        "315°"
+      ],
+      "correct_answer": "405° (i.e. 045°)"
+    },
+    {
+      "question_number": 116,
+      "question_text": "If relative bearing is 135° and magnetic bearing is 225°, what is the aircraft’s magnetic heading?",
+      "options": [
+        "090°",
+        "180°",
+        "315°",
+        "225°"
+      ],
+      "correct_answer": "090°"
+    },
+    {
+      "question_number": 117,
+      "question_text": "If relative bearing is 045° and magnetic bearing is 360°, what is the aircraft’s magnetic heading?",
+      "options": [
+        "315°",
+        "045°",
+        "000°",
+        "360°"
+      ],
+      "correct_answer": "315°"
+    },
+    {
+      "question_number": 118,
+      "question_text": "An aircraft using dead reckoning primarily relies on:",
+      "options": [
+        "Time, speed, heading, and drift calculations",
+        "Visual landmarks",
+        "Radio beacons",
+        "GPS satellites only"
+      ],
+      "correct_answer": "Time, speed, heading, and drift calculations"
+    },
+    {
+      "question_number": 119,
+      "question_text": "If traveling at 150 knots, how far will you go in 1.5 hours?",
+      "options": [
+        "225 NM",
+        "150 NM",
+        "300 NM",
+        "175 NM"
+      ],
+      "correct_answer": "225 NM"
+    },
+    {
+      "question_number": 120,
+      "question_text": "If traveling at 180 knots, how far will you go in 0.5 hours?",
+      "options": [
+        "90 NM",
+        "180 NM",
+        "45 NM",
+        "180.5 NM"
+      ],
+      "correct_answer": "90 NM"
+    },
+    {
+      "question_number": 121,
+      "question_text": "A pilot plans a ground speed of 120 knots and a flight time of 3 hours. Approximately how many NM is this flight?",
+      "options": [
+        "360 NM",
+        "120 NM",
+        "240 NM",
+        "480 NM"
+      ],
+      "correct_answer": "360 NM"
+    },
+    {
+      "question_number": 122,
+      "question_text": "A pilot expects a 60 knot ground speed. How far will the aircraft travel in 2 hours?",
+      "options": [
+        "120 NM",
+        "180 NM",
+        "60 NM",
+        "240 NM"
+      ],
+      "correct_answer": "120 NM"
+    },
+    {
+      "question_number": 123,
+      "question_text": "If an aircraft has ground speed 100 knots, how long to fly 50 NM?",
+      "options": [
+        "0.5 hours",
+        "0.25 hours",
+        "1 hour",
+        "0.75 hours"
+      ],
+      "correct_answer": "0.5 hours"
+    },
+    {
+      "question_number": 124,
+      "question_text": "If an aircraft flies 200 NM in 2 hours, what is its groundspeed?",
+      "options": [
+        "100 knots",
+        "200 knots",
+        "50 knots",
+        "150 knots"
+      ],
+      "correct_answer": "100 knots"
+    },
+    {
+      "question_number": 125,
+      "question_text": "What is 1 knot in statute miles per hour (approximately)?",
+      "options": [
+        "1.15 mph",
+        "1.00 mph",
+        "2.00 mph",
+        "0.87 mph"
+      ],
+      "correct_answer": "1.15 mph"
+    },
+    {
+      "question_number": 126,
+      "question_text": "What is 60 knots in kilometers per hour (approximately)?",
+      "options": [
+        "111 km/h",
+        "150 km/h",
+        "100 km/h",
+        "185 km/h"
+      ],
+      "correct_answer": "111 km/h"
+    },
+    {
+      "question_number": 127,
+      "question_text": "What is 90 knots in kilometers per hour (approximately)?",
+      "options": [
+        "167 km/h",
+        "185 km/h",
+        "150 km/h",
+        "100 km/h"
+      ],
+      "correct_answer": "167 km/h"
+    },
+    {
+      "question_number": 128,
+      "question_text": "What is 80 knots in kilometers per hour (approximately)?",
+      "options": [
+        "148 km/h",
+        "120 km/h",
+        "100 km/h",
+        "185 km/h"
+      ],
+      "correct_answer": "148 km/h"
+    },
+    {
+      "question_number": 129,
+      "question_text": "What is 150 knots in kilometers per hour (approximately)?",
+      "options": [
+        "278 km/h",
+        "150 km/h",
+        "185 km/h",
+        "120 km/h"
+      ],
+      "correct_answer": "278 km/h"
+    },
+    {
+      "question_number": 130,
+      "question_text": "What is 130 knots in kilometers per hour (approximately)?",
+      "options": [
+        "241 km/h",
+        "120 km/h",
+        "150 km/h",
+        "185 km/h"
+      ],
+      "correct_answer": "241 km/h"
+    },
+    {
+      "question_number": 131,
+      "question_text": "What is 120 knots in kilometers per hour (approximately)?",
+      "options": [
+        "222 km/h",
+        "120 km/h",
+        "150 km/h",
+        "185 km/h"
+      ],
+      "correct_answer": "222 km/h"
+    },
+    {
+      "question_number": 132,
+      "question_text": "For a given true heading and magnetic variation, the magnetic heading is:",
+      "options": [
+        "True heading plus West variation or minus East variation",
+        "True heading plus East variation",
+        "True heading minus West variation",
+        "Only equal if variation is zero"
+      ],
+      "correct_answer": "True heading plus West variation or minus East variation"
+    },
+    {
+      "question_number": 133,
+      "question_text": "For a magnetic heading and deviation, the compass heading is:",
+      "options": [
+        "Magnetic heading plus West deviation or minus East deviation",
+        "Magnetic heading minus West deviation",
+        "Always equal",
+        "Independent of deviation"
+      ],
+      "correct_answer": "Magnetic heading plus West deviation or minus East deviation"
+    },
+    {
+      "question_number": 134,
+      "question_text": "Which factor would NOT be included in a dead reckoning navigation calculation?",
+      "options": [
+        "Radio station bearing",
+        "Airspeed",
+        "Time",
+        "Wind direction"
+      ],
+      "correct_answer": "Radio station bearing"
+    },
+    {
+      "question_number": 135,
+      "question_text": "If departing at 0600 local from 75°E (UTC+5h), what is the UTC time at departure?",
+      "options": [
+        "0100 UTC",
+        "0000 UTC",
+        "1100 UTC",
+        "0500 UTC"
+      ],
+      "correct_answer": "0100 UTC"
+    },
+    {
+      "question_number": 136,
+      "question_text": "If departing at 1400 local from 30°W (UTC−10h), what is the UTC time at departure?",
+      "options": [
+        "2400 UTC (same day)",
+        "0400 UTC",
+        "1600 UTC",
+        "1400 UTC"
+      ],
+      "correct_answer": "2400 UTC (same day)"
+    },
+    {
+      "question_number": 137,
+      "question_text": "Which of the following is an example of dead reckoning navigation?",
+      "options": [
+        "Calculating position by time, speed, and heading",
+        "Using VOR radials to fix position",
+        "Flying to visible landmarks",
+        "Listening to ATIS"
+      ],
+      "correct_answer": "Calculating position by time, speed, and heading"
+    },
+    {
+      "question_number": 138,
+      "question_text": "How many minutes of time difference does 45° of longitude represent?",
+      "options": [
+        "3 hours",
+        "45 minutes",
+        "1 hour 48 minutes",
+        "4.5 hours"
+      ],
+      "correct_answer": "3 hours"
+    },
+    {
+      "question_number": 139,
+      "question_text": "If crossing from the equator to 15°N, how many nautical miles north have you traveled (approximately)?",
+      "options": [
+        "900 NM",
+        "150 NM",
+        "1000 NM",
+        "60 NM"
+      ],
+      "correct_answer": "900 NM"
+    },
+    {
+      "question_number": 140,
+      "question_text": "If you set course 045°M and hold heading 030°, your ground track will be:",
+      "options": [
+        "South of the desired course",
+        "North of the desired course",
+        "Directly on the course",
+        "East of desired course"
+      ],
+      "correct_answer": "South of the desired course"
+    },
+    {
+      "question_number": 141,
+      "question_text": "What is the recommended action when being blown off course by crosswind?",
+      "options": [
+        "Turn into the wind by applying a wind correction angle",
+        "Turn away from the wind",
+        "Ignore the wind and maintain heading",
+        "Descend to find calm air"
+      ],
+      "correct_answer": "Turn into the wind by applying a wind correction angle"
+    },
+    {
+      "question_number": 142,
+      "question_text": "Which navigation method does NOT require reference to landmarks?",
+      "options": [
+        "Dead reckoning",
+        "Pilotage",
+        "Navaid tracking",
+        "Celestial navigation"
+      ],
+      "correct_answer": "Dead reckoning"
+    },
+    {
+      "question_number": 143,
+      "question_text": "Which of these is a ground-based navigation aid?",
+      "options": [
+        "VOR",
+        "GPS",
+        "INS",
+        "Multilateration (ADS-B)"
+      ],
+      "correct_answer": "VOR"
+    },
+    {
+      "question_number": 144,
+      "question_text": "A flight computer (E6B) is used primarily for:",
+      "options": [
+        "Time, speed, distance and wind calculations",
+        "Checking instruments",
+        "Monitoring engine health",
+        "Radio communication"
+      ],
+      "correct_answer": "Time, speed, distance and wind calculations"
+    },
+    {
+      "question_number": 145,
+      "question_text": "Which method provides weather information from ATC en route?",
+      "options": [
+        "Pilot Reports (PIREPs)",
+        "Flight plan updates",
+        "NOTAMs",
+        "Chernovsky reports"
+      ],
+      "correct_answer": "Pilot Reports (PIREPs)"
+    },
+    {
+      "question_number": 146,
+      "question_text": "If flight time is given as 0.5 hours, how many minutes is that?",
+      "options": [
+        "30 minutes",
+        "15 minutes",
+        "45 minutes",
+        "60 minutes"
+      ],
+      "correct_answer": "30 minutes"
+    },
+    {
+      "question_number": 147,
+      "question_text": "If flight time is given as 1.75 hours, how many minutes is that?",
+      "options": [
+        "105 minutes",
+        "75 minutes",
+        "100 minutes",
+        "1.5 hours"
+      ],
+      "correct_answer": "105 minutes"
+    },
+    {
+      "question_number": 148,
+      "question_text": "The phrase “flap landing” in navigation means:",
+      "options": [
+        "Adjusting the rate of descent using flaps",
+        "Flying low over flaps",
+        "Descending into wind",
+        "Approaching with flaps down for shorter runway usage"
+      ],
+      "correct_answer": "Approaching with flaps down for shorter runway usage"
+    },
+    {
+      "question_number": 149,
+      "question_text": "If True Heading is 090°, magnetic variation 3°W, what is the magnetic heading?",
+      "options": [
+        "093°",
+        "087°",
+        "100°",
+        "077°"
+      ],
+      "correct_answer": "093°"
+    },
+    {
+      "question_number": 150,
+      "question_text": "If magnetic heading is 120°, deviation is 2°E, what is the compass heading?",
+      "options": [
+        "118°",
+        "122°",
+        "120°",
+        "117°"
+      ],
+      "correct_answer": "118°"
+    },
+    {
+      "question_number": 151,
+      "question_text": "For IFR operations, which chart projection is commonly used?",
+      "options": [
+        "Lambert conformal conic",
+        "Mercator",
+        "Gnomonic",
+        "Azimuthal equidistant"
+      ],
+      "correct_answer": "Lambert conformal conic"
+    },
+    {
+      "question_number": 152,
+      "question_text": "In flight planning, what is the purpose of an alternate airport?",
+      "options": [
+        "To divert to if the destination is not suitable",
+        "To refuel",
+        "To land in case of engine failure",
+        "To wait for VFR conditions"
+      ],
+      "correct_answer": "To divert to if the destination is not suitable"
+    },
+    {
+      "question_number": 153,
+      "question_text": "Which of these is NOT a commonly used navigation aid?",
+      "options": [
+        "Radar Altimeter",
+        "VOR",
+        "NDB",
+        "DME"
+      ],
+      "correct_answer": "Radar Altimeter"
+    },
+    {
+      "question_number": 154,
+      "question_text": "An aircraft's drift angle is defined as:",
+      "options": [
+        "The angle between the heading and the ground track",
+        "The angle between true north and magnetic north",
+        "The angle between the runway and wind",
+        "The bank angle when turning"
+      ],
+      "correct_answer": "The angle between the heading and the ground track"
+    },
+    {
+      "question_number": 155,
+      "question_text": "What effect does an 180 knot tailwind have on the time to cover a fixed distance, compared to no wind?",
+      "options": [
+        "Decreases flight time",
+        "Increases flight time",
+        "No effect",
+        "Doubles flight time"
+      ],
+      "correct_answer": "Decreases flight time"
+    },
+    {
+      "question_number": 156,
+      "question_text": "Which of the following does a VOR receiver provide to the pilot?",
+      "options": [
+        "Bearing to/from the station in the form of radials",
+        "Distance to the station in NM",
+        "Direct GPS coordinates",
+        "Weather information"
+      ],
+      "correct_answer": "Bearing to/from the station in the form of radials"
+    },
+    {
+      "question_number": 157,
+      "question_text": "During flight planning, which factor is least critical to calculate accurately?",
+      "options": [
+        "Passenger weight",
+        "Fuel needed",
+        "Distance to travel",
+        "Ground speed estimate"
+      ],
+      "correct_answer": "Passenger weight"
+    },
+    {
+      "question_number": 158,
+      "question_text": "If an aircraft's track is 045° and heading is 035°, from which side is the wind blowing?",
+      "options": [
+        "Right side",
+        "Left side",
+        "Directly from behind",
+        "Directly head-on"
+      ],
+      "correct_answer": "Right side"
+    },
+    {
+      "question_number": 159,
+      "question_text": "Which of the following is true about piloting by landmarks alone?",
+      "options": [
+        "It is called pilotage",
+        "It is called dead reckoning",
+        "It relies on ground radials",
+        "It is prohibited under IFR"
+      ],
+      "correct_answer": "It is called pilotage"
+    },
+    {
+      "question_number": 160,
+      "question_text": "Which navigational aid uses a rotating directional antenna and card to point to a ground transmitter?",
+      "options": [
+        "ADF",
+        "VOR",
+        "GPS",
+        "DME"
+      ],
+      "correct_answer": "ADF"
+    },
+    {
+      "question_number": 161,
+      "question_text": "If True Heading is 180°, variation is 5°E, deviation is 2°W, what is the compass heading?",
+      "options": [
+        "177°",
+        "183°",
+        "175°",
+        "185°"
+      ],
+      "correct_answer": "177°"
+    },
+    {
+      "question_number": 162,
+      "question_text": "The mnemonic UNOS refers to compass turns in the:",
+      "options": [
+        "Northern Hemisphere",
+        "Southern Hemisphere",
+        "Equatorial region",
+        "Both hemispheres"
+      ],
+      "correct_answer": "Northern Hemisphere"
+    },
+    {
+      "question_number": 163,
+      "question_text": "The mnemonic ANDS refers to compass errors in the:",
+      "options": [
+        "Northern Hemisphere",
+        "Southern Hemisphere",
+        "Over the poles",
+        "At the equator"
+      ],
+      "correct_answer": "Northern Hemisphere"
+    },
+    {
+      "question_number": 164,
+      "question_text": "When flying a VFR cross-country, which chart is most likely used?",
+      "options": [
+        "Sectional chart",
+        "High altitude IFR chart",
+        "World Aeronautical chart",
+        "Mercator world chart"
+      ],
+      "correct_answer": "Sectional chart"
+    },
+    {
+      "question_number": 165,
+      "question_text": "Which chart shows topography and obstacles for VFR navigation?",
+      "options": [
+        "Sectional chart",
+        "High altitude enroute chart",
+        "Low altitude IFR chart",
+        "Instrument departure chart"
+      ],
+      "correct_answer": "Sectional chart"
+    },
+    {
+      "question_number": 166,
+      "question_text": "What is the significance of the 'FROM' indication on a VOR CDI?",
+      "options": [
+        "You are flying away from the station on the selected course",
+        "You are flying toward the station on the selected course",
+        "You are east of the station",
+        "The VOR is not valid"
+      ],
+      "correct_answer": "You are flying away from the station on the selected course"
+    },
+    {
+      "question_number": 167,
+      "question_text": "If heading 270°, speed 100 kt, wind from 360° at 20 kt, the track will be approximately:",
+      "options": [
+        "260°",
+        "270°",
+        "280°",
+        "225°"
+      ],
+      "correct_answer": "260°"
+    },
+    {
+      "question_number": 168,
+      "question_text": "What is the term for a bearing measured relative to magnetic north?",
+      "options": [
+        "Magnetic bearing",
+        "Relative bearing",
+        "True bearing",
+        "Compass bearing"
+      ],
+      "correct_answer": "Magnetic bearing"
+    },
+    {
+      "question_number": 169,
+      "question_text": "What does 'TCAS' stand for in aviation?",
+      "options": [
+        "Traffic Collision Avoidance System",
+        "Terminal Control and Approach System",
+        "Terrain Clearance Advisory System",
+        "Timing and Course Alignment System"
+      ],
+      "correct_answer": "Traffic Collision Avoidance System"
+    },
+    {
+      "question_number": 170,
+      "question_text": "What is the maximum range of VOR reception at 18,000 feet?",
+      "options": [
+        "Approximately 130 NM",
+        "Always 200 NM",
+        "Less than 50 NM",
+        "Unlimited"
+      ],
+      "correct_answer": "Approximately 130 NM"
+    },
+    {
+      "question_number": 171,
+      "question_text": "Which frequency band is used by VHF Omnidirectional Range stations?",
+      "options": [
+        "VHF (108-117.95 MHz)",
+        "LF",
+        "HF",
+        "UHF"
+      ],
+      "correct_answer": "VHF (108-117.95 MHz)"
+    },
+    {
+      "question_number": 172,
+      "question_text": "Which navigation aid might experience a night effect causing bearing errors after sunset?",
+      "options": [
+        "NDB",
+        "VOR",
+        "DME",
+        "GPS"
+      ],
+      "correct_answer": "NDB"
+    },
+    {
+      "question_number": 173,
+      "question_text": "What unit is typically used for winds reported in aviation weather (METAR)?",
+      "options": [
+        "Knots",
+        "Miles per hour",
+        "Meters per second",
+        "Kilometers per hour"
+      ],
+      "correct_answer": "Knots"
+    },
+    {
+      "question_number": 174,
+      "question_text": "What is the meaning of 'FM' in a TAF forecast?",
+      "options": [
+        "Significant change begins at that time",
+        "From (start of a period)",
+        "Forecast Meteorology",
+        "For the remainder"
+      ],
+      "correct_answer": "Significant change begins at that time"
+    },
+    {
+      "question_number": 175,
+      "question_text": "Which of these is NOT included in a METAR report?",
+      "options": [
+        "Expected visibility in 6 hours",
+        "Current wind, temperature, and visibility",
+        "Active runway information",
+        "Recent weather phenomena"
+      ],
+      "correct_answer": "Expected visibility in 6 hours"
+    },
+    {
+      "question_number": 176,
+      "question_text": "Which of these is included in a TAF report?",
+      "options": [
+        "Probabilistic weather forecasts for an airport",
+        "Current actual conditions",
+        "Pilot reports",
+        "Flight plans"
+      ],
+      "correct_answer": "Probabilistic weather forecasts for an airport"
+    },
+    {
+      "question_number": 177,
+      "question_text": "In a METAR, what does ‘NSW’ indicate?",
+      "options": [
+        "No significant weather",
+        "New snow",
+        "No significant wind",
+        "Near surface wind"
+      ],
+      "correct_answer": "No significant weather"
+    },
+    {
+      "question_number": 178,
+      "question_text": "In a METAR, ‘BKN008’ means:",
+      "options": [
+        "Broken clouds at 800 feet",
+        "Low broken clouds",
+        "Visibility is broken",
+        "No clouds below 800 ft"
+      ],
+      "correct_answer": "Broken clouds at 800 feet"
+    },
+    {
+      "question_number": 179,
+      "question_text": "What does the runway visual range (RVR) measure?",
+      "options": [
+        "Horizontal visibility on the runway",
+        "Wind speed on the runway",
+        "Distance to the runway",
+        "Temperature at the runway"
+      ],
+      "correct_answer": "Horizontal visibility on the runway"
+    },
+    {
+      "question_number": 180,
+      "question_text": "If the DME reads 1.0 NM, the aircraft is likely:",
+      "options": [
+        "About 1 NM from the station (slant range)",
+        "Over the station",
+        "At 1000 ft altitude",
+        "Heading west"
+      ],
+      "correct_answer": "About 1 NM from the station (slant range)"
+    },
+    {
+      "question_number": 181,
+      "question_text": "Which is NOT a valid use of dead reckoning navigation?",
+      "options": [
+        "Flying low over land with no instruments",
+        "Calculating position using drift, time, and speed",
+        "Estimating position after encountering a GPS outage",
+        "Navigating in clear VFR conditions with landmarks"
+      ],
+      "correct_answer": "Flying low over land with no instruments"
+    },
+    {
+      "question_number": 182,
+      "question_text": "On a sectional chart, which symbol indicates a towered airport?",
+      "options": [
+        "A star inside a circle",
+        "Blue circle with 'X'",
+        "Magenta circle",
+        "An inverted P"
+      ],
+      "correct_answer": "A star inside a circle"
+    },
+    {
+      "question_number": 183,
+      "question_text": "Which of the following flight planning factors has the largest impact on fuel consumption?",
+      "options": [
+        "Altitude (higher altitude improves fuel efficiency)",
+        "Pilot experience",
+        "Number of passengers",
+        "Departure time"
+      ],
+      "correct_answer": "Altitude (higher altitude improves fuel efficiency)"
+    },
+    {
+      "question_number": 184,
+      "question_text": "What is the primary purpose of a flight plan?",
+      "options": [
+        "Provide route and timing information for Search and Rescue",
+        "Book airport slots",
+        "Calculate GPS waypoints",
+        "File for customs clearance"
+      ],
+      "correct_answer": "Provide route and timing information for Search and Rescue"
+    },
+    {
+      "question_number": 185,
+      "question_text": "Which method of navigation uses time, speed, direction, and wind to determine position?",
+      "options": [
+        "Dead reckoning",
+        "Pilotage",
+        "LORAN",
+        "GPS"
+      ],
+      "correct_answer": "Dead reckoning"
+    },
+    {
+      "question_number": 186,
+      "question_text": "Which method of navigation uses magnetic bearings to a radio station?",
+      "options": [
+        "Radio Navigation",
+        "Dead reckoning",
+        "Pilotage",
+        "Satellite Navigation"
+      ],
+      "correct_answer": "Radio Navigation"
+    },
+    {
+      "question_number": 187,
+      "question_text": "Which method of navigation relies on visual checkpoints on a map?",
+      "options": [
+        "Pilotage",
+        "Dead reckoning",
+        "GPS",
+        "ADF"
+      ],
+      "correct_answer": "Pilotage"
+    },
+    {
+      "question_number": 188,
+      "question_text": "Which method of navigation relies on visible landmarks and features?",
+      "options": [
+        "Pilotage",
+        "Dead reckoning",
+        "VOR tracking",
+        "Distance measuring"
+      ],
+      "correct_answer": "Pilotage"
+    },
+    {
+      "question_number": 189,
+      "question_text": "Which method of navigation relies on calculations of wind, time, and speed?",
+      "options": [
+        "Dead reckoning",
+        "Pilotage",
+        "Radio navigation",
+        "GPS"
+      ],
+      "correct_answer": "Dead reckoning"
+    },
+    {
+      "question_number": 190,
+      "question_text": "Which method of navigation relies on a compass bearing to a non-directional beacon?",
+      "options": [
+        "ADF navigation",
+        "Pilotage",
+        "Dead reckoning",
+        "INS"
+      ],
+      "correct_answer": "ADF navigation"
+    },
+    {
+      "question_number": 191,
+      "question_text": "Which method of navigation relies on angle and distance to a VOR and an NDB?",
+      "options": [
+        "Combined radio navigation",
+        "Pilotage",
+        "Dead reckoning",
+        "Celestial navigation"
+      ],
+      "correct_answer": "Combined radio navigation"
+    },
+    {
+      "question_number": 192,
+      "question_text": "What does RNAV allow a pilot to do?",
+      "options": [
+        "Fly direct routes without overflying ground stations",
+        "Use only VOR stations",
+        "Eliminate the need for charts",
+        "Fly only scheduled airways"
+      ],
+      "correct_answer": "Fly direct routes without overflying ground stations"
+    },
+    {
+      "question_number": 193,
+      "question_text": "What does GNSS refer to in navigation?",
+      "options": [
+        "Global Navigation Satellite System",
+        "Ground Based Augmentation",
+        "Gyroscopic Navigation System",
+        "Grid North Supplemental Signals"
+      ],
+      "correct_answer": "Global Navigation Satellite System"
+    },
+    {
+      "question_number": 194,
+      "question_text": "What does DME provide to pilots?",
+      "options": [
+        "Slant range distance to the station",
+        "A bearing to the station",
+        "Wind velocity",
+        "Altitude"
+      ],
+      "correct_answer": "Slant range distance to the station"
+    },
+    {
+      "question_number": 195,
+      "question_text": "Which of these is NOT a component of total compass error?",
+      "options": [
+        "Altitude",
+        "Variation",
+        "Deviation",
+        "Oscillation error"
+      ],
+      "correct_answer": "Altitude"
+    },
+    {
+      "question_number": 196,
+      "question_text": "Which factor causes magnetic deviation in a compass?",
+      "options": [
+        "Magnetic fields in the aircraft",
+        "The difference between true and magnetic north",
+        "Variation in Earth's core",
+        "Crosswinds"
+      ],
+      "correct_answer": "Magnetic fields in the aircraft"
+    },
+    {
+      "question_number": 197,
+      "question_text": "Which factor causes magnetic variation on Earth?",
+      "options": [
+        "Misalignment of magnetic and geographic poles",
+        "Local geomagnetic anomalies",
+        "Electrical fields",
+        "Radio signals"
+      ],
+      "correct_answer": "Misalignment of magnetic and geographic poles"
+    },
+    {
+      "question_number": 198,
+      "question_text": "Which of these instruments shows bearing to a VOR station?",
+      "options": [
+        "OBS/HSI (Course Deviation Indicator)",
+        "Airspeed indicator",
+        "Altimeter",
+        "Heading indicator"
+      ],
+      "correct_answer": "OBS/HSI (Course Deviation Indicator)"
+    },
+    {
+      "question_number": 199,
+      "question_text": "Which of these instruments shows bearing to an NDB station?",
+      "options": [
+        "ADF indicator",
+        "HSI",
+        "VOR receiver",
+        "Altimeter"
+      ],
+      "correct_answer": "ADF indicator"
+    },
+    {
+      "question_number": 200,
+      "question_text": "In aviation navigation, the term \"track\" refers to:",
+      "options": [
+        "The actual path of the aircraft over the ground",
+        "The direction the aircraft’s nose is pointing",
+        "The magnetic course set on the compass",
+        "The direction of true north"
+      ],
+      "correct_answer": "The actual path of the aircraft over the ground"
+    }
+  ]
+}
