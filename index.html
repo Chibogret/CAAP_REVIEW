@@ -1154,7 +1154,7 @@ Options:\n${question.options.map((opt, i) => `${String.fromCharCode(65 + i)}. ${
 Your Answer: "${userAnswer}"
 Correct Answer: "${correctAnswer}"
 
-Provide a clear explanation of why the correct answer is right and briefly why other options are wrong.`;
+Provide a clear explanation of why the correct answer is right and briefly why other options are wrong. Also, add an eli5 section.`;
 
                 try {
                     const result = await genAI.models.generateContent({ model: MODEL_NAME, tools: ["google_search"], contents: prompt });
