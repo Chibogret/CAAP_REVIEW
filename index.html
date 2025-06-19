@@ -1304,29 +1304,30 @@
             displayQuestion();
         }
 
-        // --- AI & API Functions ---
         function initializeGemini(key) {
-            // Corrected: Use window.GoogleGenerativeAI for the check
             if (typeof window.GoogleGenerativeAI === 'undefined') {
                 apiKeyStatus.textContent = 'Google Gemini SDK not loaded.';
                 apiKeyStatus.className = 'api-key-status-error';
                 showElement(apiKeyStatus);
-                genAI = null; window.geminiSdkInstance = null; return;
+                return;
             }
+        
             try {
-                // Corrected: Instantiate window.GoogleGenerativeAI
-                window.geminiSdkInstance = new window.GoogleGenerativeAI({ apiKey: key });
-                genAI = window.geminiSdkInstance;
+                const instance = new GoogleGenerativeAI({ apiKey: key });
+                window.geminiSdkInstance = instance;
+                genAI = instance;
                 apiKeyStatus.textContent = 'API key loaded. Gemini AI ready!';
                 apiKeyStatus.className = 'api-key-status-success';
                 showElement(apiKeyStatus);
             } catch (e) {
+                console.error("Error initializing Gemini SDK:", e);
                 localStorage.removeItem('geminiApiKey');
                 geminiApiKeyInput.value = '';
                 apiKeyStatus.textContent = 'Invalid API key. Please check and re-enter.';
                 apiKeyStatus.className = 'api-key-status-error';
                 showElement(apiKeyStatus);
-                genAI = null; window.geminiSdkInstance = null;
+                window.geminiSdkInstance = null;
+                genAI = null;
             }
         }
         
