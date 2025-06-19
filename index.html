@@ -1367,7 +1367,7 @@ Correct Answer: "${correctAnswer}"
 Provide a clear explanation of why the correct answer is right and briefly why other options are wrong. Conclude with a simple "ELI5" (Explain Like I'm 5) summary of the core concept.`;
 
             try {
-                const model = genAI.getGenerativeModel({ model: MODEL_NAME });
+                const model = genAI.getModel({ model: MODEL_NAME });
                 // CORRECTED: Use the modern, explicit call shape for generateContent
                 const result = await model.generateContent({
                     contents: [{ parts: [{ text: prompt }] }]
@@ -1395,7 +1395,7 @@ Provide a clear explanation of why the correct answer is right and briefly why o
         Search Query:`;
 
           try {
-            const model = genAI.getGenerativeModel({ model: MODEL_NAME });
+            const model = genAI.getModel({ model: MODEL_NAME });
             // CORRECTED: Use the modern, explicit call shape for generateContent
             const result = await model.generateContent({
                 contents: [{ parts: [{ text: prompt }] }]
