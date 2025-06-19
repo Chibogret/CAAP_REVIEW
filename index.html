@@ -738,13 +738,16 @@
 
 <!-- SDK Imports and Scripts -->
 <script type="module">
-  import { GoogleGenAI } from 'https://esm.run/@google/genai';
-  window.GoogleGenAI = GoogleGenAI;
+  // Changed import URL to official CDN and corrected class name to GoogleGenerativeAI
+  import { GoogleGenerativeAI } from 'https://cdn.jsdelivr.net/npm/@google/generative-ai@latest/dist/index.mjs';
+  // Updated the global variable assignment to reflect the correct class name
+  window.GoogleGenerativeAI = GoogleGenerativeAI;
+  
   const initialApiKey = localStorage.getItem('geminiApiKey');
   if (initialApiKey) {
     try {
-      // The constructor expects an object with the apiKey property
-      window.geminiSdkInstance = new GoogleGenAI({ apiKey: initialApiKey });
+      // Updated class instantiation to use GoogleGenerativeAI
+      window.geminiSdkInstance = new GoogleGenerativeAI({ apiKey: initialApiKey });
       console.log("Gemini AI SDK pre-initialized globally.");
     } catch (e) {
       console.error("Error pre-initializing Gemini SDK:", e);
@@ -818,7 +821,7 @@
         let consecutiveSkips = 0; // For CAAP Mode
         let currentScoreValue = 0; // New scoring system
         let questionsAnsweredInSession = 0;
-        let genAI = window.geminiSdkInstance;
+        let genAI = window.geminiSdkInstance; // This variable correctly holds the SDK instance
         const MODEL_NAME = "gemini-2.5-flash"; 
         let lastAnsweredQuestion = null;
         let lastUserAnswer = null;
@@ -848,7 +851,8 @@
             resetToModeSelection();
 
             genAI = window.geminiSdkInstance;
-            if (typeof window.GoogleGenAI === 'undefined') {
+            // Corrected: Use window.GoogleGenerativeAI for the check
+            if (typeof window.GoogleGenerativeAI === 'undefined') {
                 apiKeyStatus.textContent = 'ERROR: Google Gemini SDK not loaded.';
                 apiKeyStatus.className = 'api-key-status-error';
                 showElement(apiKeyStatus);
@@ -1302,15 +1306,16 @@
 
         // --- AI & API Functions ---
         function initializeGemini(key) {
-            if (typeof window.GoogleGenAI === 'undefined') {
+            // Corrected: Use window.GoogleGenerativeAI for the check
+            if (typeof window.GoogleGenerativeAI === 'undefined') {
                 apiKeyStatus.textContent = 'Google Gemini SDK not loaded.';
                 apiKeyStatus.className = 'api-key-status-error';
                 showElement(apiKeyStatus);
                 genAI = null; window.geminiSdkInstance = null; return;
             }
             try {
-                // The constructor expects the key directly
-                window.geminiSdkInstance = new window.GoogleGenAI({ apiKey: key });
+                // Corrected: Instantiate window.GoogleGenerativeAI
+                window.geminiSdkInstance = new window.GoogleGenerativeAI({ apiKey: key });
                 genAI = window.geminiSdkInstance;
                 apiKeyStatus.textContent = 'API key loaded. Gemini AI ready!';
                 apiKeyStatus.className = 'api-key-status-success';
@@ -1367,7 +1372,8 @@ Correct Answer: "${correctAnswer}"
 Provide a clear explanation of why the correct answer is right and briefly why other options are wrong. Conclude with a simple "ELI5" (Explain Like I'm 5) summary of the core concept.`;
 
             try {
-                const model = genAI.getModel({ model: MODEL_NAME });
+                // Corrected: Changed method call from .getModel to .getGenerativeModel
+                const model = genAI.getGenerativeModel({ model: MODEL_NAME });
                 // CORRECTED: Use the modern, explicit call shape for generateContent
                 const result = await model.generateContent({
                     contents: [{ parts: [{ text: prompt }] }]
@@ -1395,7 +1401,8 @@ Provide a clear explanation of why the correct answer is right and briefly why o
         Search Query:`;
 
           try {
-            const model = genAI.getModel({ model: MODEL_NAME });
+            // Corrected: Changed method call from .getModel to .getGenerativeModel
+            const model = genAI.getGenerativeModel({ model: MODEL_NAME });
             // CORRECTED: Use the modern, explicit call shape for generateContent
             const result = await model.generateContent({
                 contents: [{ parts: [{ text: prompt }] }]
