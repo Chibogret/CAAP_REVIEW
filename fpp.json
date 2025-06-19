@@ -1,0 +1,2205 @@
+{
+  "exam_title": "Flight Performance and Planning",
+  "questions": [
+    {
+      "question_number": 1,
+      "question_text": "What is normally used for ATIS broadcasts?",
+      "options": [
+        "Discrete VHF frequency and/or VOR",
+        "Commercial telephone lines",
+        "Satellite communication",
+        "HF radio"
+      ],
+      "correct_answer": "Discrete VHF frequency and/or VOR"
+    },
+    {
+      "question_number": 2,
+      "question_text": "What are the four forces acting on an airplane in flight?",
+      "options": [
+        "Power, Friction, Gravity, and Lift",
+        "Thrust, Drag, Gravity, and Inertia",
+        "Lift, Weight, Thrust, and Drag",
+        "Lift, Weight, Power, and Drag"
+      ],
+      "correct_answer": "Lift, Weight, Thrust, and Drag"
+    },
+    {
+      "question_number": 3,
+      "question_text": "What is the primary purpose of calculating weight and balance?",
+      "options": [
+        "To ensure the aircraft is aesthetically pleasing.",
+        "To determine the fuel efficiency of the aircraft.",
+        "To ensure the aircraft is operated within its weight and center of gravity limits.",
+        "To calculate the maximum speed of the aircraft."
+      ],
+      "correct_answer": "To ensure the aircraft is operated within its weight and center of gravity limits."
+    },
+    {
+      "question_number": 4,
+      "question_text": "The 'empty weight' of an aircraft generally includes the weight of the airframe, engines, and standard equipment. What else is typically included?",
+      "options": [
+        "The pilot and passengers.",
+        "All usable fuel.",
+        "Unusable fuel and undrainable oil.",
+        "Baggage and cargo."
+      ],
+      "correct_answer": "Unusable fuel and undrainable oil."
+    },
+    {
+      "question_number": 5,
+      "question_text": "What effect does an increase in an aircraft's weight have on its takeoff performance?",
+      "options": [
+        "It has no effect on takeoff performance.",
+        "It shortens the takeoff roll.",
+        "It increases the takeoff distance.",
+        "It decreases the takeoff speed required."
+      ],
+      "correct_answer": "It increases the takeoff distance."
+    },
+    {
+      "question_number": 6,
+      "question_text": "How does a higher-than-standard-day temperature affect aircraft performance?",
+      "options": [
+        "It improves engine performance.",
+        "It increases air density and improves lift.",
+        "It has no effect on performance.",
+        "It decreases air density and reduces performance."
+      ],
+      "correct_answer": "It decreases air density and reduces performance."
+    },
+    {
+      "question_number": 7,
+      "question_text": "What is pressure altitude?",
+      "options": [
+        "The altitude indicated on the altimeter.",
+        "The altitude corrected for non-standard temperature.",
+        "The altitude read on the altimeter when the barometric scale is set to 29.92 in Hg.",
+        "The actual height above the ground."
+      ],
+      "correct_answer": "The altitude read on the altimeter when the barometric scale is set to 29.92 in Hg."
+    },
+    {
+      "question_number": 8,
+      "question_text": "What is density altitude?",
+      "options": [
+        "The pressure altitude corrected for non-standard temperature.",
+        "The altitude shown on the altimeter.",
+        "The actual height of the aircraft above ground level.",
+        "The height of the aircraft above mean sea level."
+      ],
+      "correct_answer": "The pressure altitude corrected for non-standard temperature."
+    },
+    {
+      "question_number": 9,
+      "question_text": "Which of the following would lead to an increase in density altitude?",
+      "options": [
+        "A decrease in ambient temperature.",
+        "An increase in barometric pressure.",
+        "An increase in humidity.",
+        "A decrease in altitude."
+      ],
+      "correct_answer": "An increase in humidity."
+    },
+    {
+      "question_number": 10,
+      "question_text": "In the context of weight and balance, what is the 'reference datum'?",
+      "options": [
+        "The aircraft's center of gravity.",
+        "The point from which all moment arms are measured.",
+        "The maximum allowable weight of the aircraft.",
+        "The location of the main landing gear."
+      ],
+      "correct_answer": "The point from which all moment arms are measured."
+    },
+    {
+      "question_number": 11,
+      "question_text": "What is the 'arm' in a weight and balance calculation?",
+      "options": [
+        "The weight of an object.",
+        "The horizontal distance from the reference datum to an object's center of gravity.",
+        "The total weight of the aircraft.",
+        "The turning force of an object."
+      ],
+      "correct_answer": "The horizontal distance from the reference datum to an object's center of gravity."
+    },
+    {
+      "question_number": 12,
+      "question_text": "How is 'moment' calculated in weight and balance?",
+      "options": [
+        "Weight / Arm",
+        "Weight + Arm",
+        "Weight x Arm",
+        "Weight - Arm"
+      ],
+      "correct_answer": "Weight x Arm"
+    },
+    {
+      "question_number": 13,
+      "question_text": "What is the 'useful load' of an aircraft?",
+      "options": [
+        "The weight of the aircraft including all fuel and oil.",
+        "The weight of the pilot, copilot, passengers, baggage, usable fuel and drainable oil.",
+        "The maximum takeoff weight minus the empty weight.",
+        "The weight of the aircraft without any occupants or baggage."
+      ],
+      "correct_answer": "The maximum takeoff weight minus the empty weight."
+    },
+    {
+      "question_number": 14,
+      "question_text": "What is the definition of a 'forward center of gravity' condition?",
+      "options": [
+        "The CG is located behind the aft CG limit.",
+        "The CG is located forward of the forward CG limit.",
+        "The aircraft is loaded within its CG range.",
+        "The aircraft's tail is heavier than its nose."
+      ],
+      "correct_answer": "The CG is located forward of the forward CG limit."
+    },
+    {
+      "question_number": 15,
+      "question_text": "What is a potential consequence of an excessively aft center of gravity?",
+      "options": [
+        "Improved longitudinal stability.",
+        "Difficulty in flaring for landing.",
+        "Reduced cruise speed.",
+        "Instability and difficulty in recovering from a stall."
+      ],
+      "correct_answer": "Instability and difficulty in recovering from a stall."
+    },
+    {
+      "question_number": 16,
+      "question_text": "What information is found in the 'Limitations' section of the Pilot's Operating Handbook (POH)?",
+      "options": [
+        "Recommended flight procedures.",
+        "A list of all installed equipment.",
+        "Airspeeds, weight limits, and powerplant limitations.",
+        "Information on the aircraft's history."
+      ],
+      "correct_answer": "Airspeeds, weight limits, and powerplant limitations."
+    },
+    {
+      "question_number": 17,
+      "question_text": "What is Vso?",
+      "options": [
+        "The stalling speed or minimum steady flight speed in the landing configuration.",
+        "The never-exceed speed.",
+        "The maximum structural cruising speed.",
+        "The stalling speed in a specified configuration."
+      ],
+      "correct_answer": "The stalling speed or minimum steady flight speed in the landing configuration."
+    },
+    {
+      "question_number": 18,
+      "question_text": "What is Vs1?",
+      "options": [
+        "The stalling speed in the landing configuration.",
+        "The never-exceed speed.",
+        "The stalling speed or minimum steady flight speed in a specified (clean) configuration.",
+        "The maximum flaps extended speed."
+      ],
+      "correct_answer": "The stalling speed or minimum steady flight speed in a specified (clean) configuration."
+    },
+    {
+      "question_number": 19,
+      "question_text": "What does the white arc on an airspeed indicator represent?",
+      "options": [
+        "The normal operating range.",
+        "The flap operating range.",
+        "The caution range.",
+        "The never-exceed speed."
+      ],
+      "correct_answer": "The flap operating range."
+    },
+    {
+      "question_number": 20,
+      "question_text": "What does the green arc on an airspeed indicator represent?",
+      "options": [
+        "The flap operating range.",
+        "The normal operating range.",
+        "The caution range.",
+        "The never-exceed speed."
+      ],
+      "correct_answer": "The normal operating range."
+    },
+    {
+      "question_number": 21,
+      "question_text": "What is the significance of the yellow arc on an airspeed indicator?",
+      "options": [
+        "The flap operating range.",
+        "The normal operating range.",
+        "The caution range; smooth air only.",
+        "The never-exceed speed."
+      ],
+      "correct_answer": "The caution range; smooth air only."
+    },
+    {
+      "question_number": 22,
+      "question_text": "What does the red radial line on an airspeed indicator signify?",
+      "options": [
+        "The maximum structural cruising speed.",
+        "The never-exceed speed (Vne).",
+        "The best angle-of-climb speed.",
+        "The stalling speed."
+      ],
+      "correct_answer": "The never-exceed speed (Vne)."
+    },
+    {
+      "question_number": 23,
+      "question_text": "What is Vy?",
+      "options": [
+        "Best angle of climb speed.",
+        "Best rate of climb speed.",
+        "Maneuvering speed.",
+        "Never-exceed speed."
+      ],
+      "correct_answer": "Best rate of climb speed."
+    },
+    {
+      "question_number": 24,
+      "question_text": "What is Vx?",
+      "options": [
+        "Best rate of climb speed.",
+        "Best angle of climb speed.",
+        "Maneuvering speed.",
+        "Flap extended speed."
+      ],
+      "correct_answer": "Best angle of climb speed."
+    },
+    {
+      "question_number": 25,
+      "question_text": "When is it most appropriate to use Vx?",
+      "options": [
+        "During a normal takeoff.",
+        "When clearing an obstacle at the end of the runway.",
+        "To reach cruise altitude in the shortest time.",
+        "During a descent."
+      ],
+      "correct_answer": "When clearing an obstacle at the end of the runway."
+    },
+    {
+      "question_number": 26,
+      "question_text": "What is Va, or maneuvering speed?",
+      "options": [
+        "The speed at which full, abrupt control movements can be made without overstressing the airframe.",
+        "The maximum speed at which flaps can be extended.",
+        "The never-exceed speed.",
+        "The best rate of climb speed."
+      ],
+      "correct_answer": "The speed at which full, abrupt control movements can be made without overstressing the airframe."
+    },
+    {
+      "question_number": 27,
+      "question_text": "How does an increase in weight affect maneuvering speed (Va)?",
+      "options": [
+        "It has no effect on Va.",
+        "It decreases Va.",
+        "It increases Va.",
+        "It makes Va equal to Vne."
+      ],
+      "correct_answer": "It increases Va."
+    },
+    {
+      "question_number": 28,
+      "question_text": "What is the primary purpose of a flight plan?",
+      "options": [
+        "To inform ATC of your intended route for search and rescue purposes.",
+        "To calculate fuel consumption.",
+        "To determine the aircraft's weight and balance.",
+        "To check the weather for the flight."
+      ],
+      "correct_answer": "To inform ATC of your intended route for search and rescue purposes."
+    },
+    {
+      "question_number": 29,
+      "question_text": "For a VFR flight, what is the minimum fuel reserve required by the FAA for a daytime flight?",
+      "options": [
+        "Enough fuel to fly to the destination only.",
+        "Enough fuel to fly to the destination and then for 30 minutes at normal cruising speed.",
+        "Enough fuel to fly to the destination and then for 45 minutes at normal cruising speed.",
+        "Enough fuel to fly to the destination, and then to an alternate airport."
+      ],
+      "correct_answer": "Enough fuel to fly to the destination and then for 30 minutes at normal cruising speed."
+    },
+    {
+      "question_number": 30,
+      "question_text": "What is a 'true course'?",
+      "options": [
+        "The course of the aircraft over the ground.",
+        "The course measured on a sectional chart with reference to a meridian.",
+        "The course corrected for wind.",
+        "The course steered by the pilot."
+      ],
+      "correct_answer": "The course measured on a sectional chart with reference to a meridian."
+    },
+    {
+      "question_number": 31,
+      "question_text": "What is 'magnetic variation'?",
+      "options": [
+        "The error in the magnetic compass.",
+        "The angle between true north and magnetic north.",
+        "The change in magnetic heading due to wind.",
+        "The dip of the magnetic compass."
+      ],
+      "correct_answer": "The angle between true north and magnetic north."
+    },
+    {
+      "question_number": 32,
+      "question_text": "How do you convert a true course to a magnetic course?",
+      "options": [
+        "By adding or subtracting magnetic deviation.",
+        "By adding or subtracting magnetic variation.",
+        "By applying a wind correction angle.",
+        "By referencing the altimeter."
+      ],
+      "correct_answer": "By adding or subtracting magnetic variation."
+    },
+    {
+      "question_number": 33,
+      "question_text": "What is 'magnetic deviation'?",
+      "options": [
+        "The angle between true north and magnetic north.",
+        "The error in the magnetic compass due to magnetic fields within the aircraft.",
+        "The effect of wind on the aircraft's course.",
+        "The difference between indicated airspeed and true airspeed."
+      ],
+      "correct_answer": "The error in the a magnetic compass due to magnetic fields within the aircraft."
+    },
+    {
+      "question_number": 34,
+      "question_text": "How do you find the magnetic deviation for a particular aircraft?",
+      "options": [
+        "On a sectional chart.",
+        "In the Airport/Facility Directory.",
+        "On a compass correction card located in the cockpit.",
+        "By contacting Flight Service."
+      ],
+      "correct_answer": "On a compass correction card located in the cockpit."
+    },
+    {
+      "question_number": 35,
+      "question_text": "What is a 'wind correction angle'?",
+      "options": [
+        "The angle between the aircraft's heading and the desired course.",
+        "The angle between true north and magnetic north.",
+        "The error in the magnetic compass.",
+        "The difference between true airspeed and groundspeed."
+      ],
+      "correct_answer": "The angle between the aircraft's heading and the desired course."
+    },
+    {
+      "question_number": 36,
+      "question_text": "If you are flying a true course of 180° with a 20-knot wind from 270°, will your groundspeed be higher or lower than your true airspeed?",
+      "options": [
+        "Lower",
+        "Higher",
+        "The same",
+        "It is impossible to determine."
+      ],
+      "correct_answer": "Higher"
+    },
+    {
+      "question_number": 37,
+      "question_text": "What is the primary source for preflight weather information?",
+      "options": [
+        "The evening news.",
+        "A Flight Service Station (FSS).",
+        "Another pilot.",
+        "The airport manager."
+      ],
+      "correct_answer": "A Flight Service Station (FSS)."
+    },
+    {
+      "question_number": 38,
+      "question_text": "What is a METAR?",
+      "options": [
+        "A terminal area forecast.",
+        "An aviation routine weather report.",
+        "An in-flight weather advisory.",
+        "A report of pilot weather observations."
+      ],
+      "correct_answer": "An aviation routine weather report."
+    },
+    {
+      "question_number": 39,
+      "question_text": "What is a TAF?",
+      "options": [
+        "An aviation routine weather report.",
+        "A forecast of weather conditions for a specific airport.",
+        "A graphical representation of weather.",
+        "A pilot report."
+      ],
+      "correct_answer": "A forecast of weather conditions for a specific airport."
+    },
+    {
+      "question_number": 40,
+      "question_text": "What is a PIREP?",
+      "options": [
+        "A terminal area forecast.",
+        "A report of weather conditions observed by a pilot in flight.",
+        "A surface weather observation.",
+        "A weather chart."
+      ],
+      "correct_answer": "A report of weather conditions observed by a pilot in flight."
+    },
+    {
+      "question_number": 41,
+      "question_text": "What does a takeoff and landing distance chart help a pilot determine?",
+      "options": [
+        "The amount of fuel required for a flight.",
+        "The runway length required for takeoff and landing under various conditions.",
+        "The aircraft's maximum speed.",
+        "The best altitude for cruising."
+      ],
+      "correct_answer": "The runway length required for takeoff and landing under various conditions."
+    },
+    {
+      "question_number": 42,
+      "question_text": "What effect does a headwind have on takeoff distance?",
+      "options": [
+        "It increases the takeoff distance.",
+        "It decreases the takeoff distance.",
+        "It has no effect on takeoff distance.",
+        "It makes takeoff impossible."
+      ],
+      "correct_answer": "It decreases the takeoff distance."
+    },
+    {
+      "question_number": 43,
+      "question_text": "What effect does a tailwind have on landing distance?",
+      "options": [
+        "It has no effect on landing distance.",
+        "It decreases the landing distance.",
+        "It increases the landing distance.",
+        "It makes landing easier."
+      ],
+      "correct_answer": "It increases the landing distance."
+    },
+    {
+      "question_number": 44,
+      "question_text": "What is the effect of an upslope runway on takeoff performance?",
+      "options": [
+        "It increases the takeoff distance.",
+        "It decreases the takeoff distance.",
+        "It has no effect on takeoff distance.",
+        "It improves acceleration."
+      ],
+      "correct_answer": "It increases the takeoff distance."
+    },
+    {
+      "question_number": 45,
+      "question_text": "How does a soft or wet runway surface affect takeoff performance?",
+      "options": [
+        "It has no effect.",
+        "It decreases the takeoff roll.",
+        "It increases the takeoff roll.",
+        "It improves tire traction."
+      ],
+      "correct_answer": "It increases the takeoff roll."
+    },
+    {
+      "question_number": 46,
+      "question_text": "What is the primary use of a cruise performance chart?",
+      "options": [
+        "To determine the best takeoff speed.",
+        "To calculate the fuel consumption, endurance, and true airspeed at various power settings.",
+        "To find the landing distance.",
+        "To check the aircraft's weight and balance."
+      ],
+      "correct_answer": "To calculate the fuel consumption, endurance, and true airspeed at various power settings."
+    },
+    {
+      "question_number": 47,
+      "question_text": "What is 'endurance' in the context of aircraft performance?",
+      "options": [
+        "The maximum distance an aircraft can fly.",
+        "The maximum time an aircraft can remain airborne.",
+        "The maximum speed of the aircraft.",
+        "The rate of fuel consumption."
+      ],
+      "correct_answer": "The maximum time an aircraft can remain airborne."
+    },
+    {
+      "question_number": 48,
+      "question_text": "What is 'range' in the context of aircraft performance?",
+      "options": [
+        "The maximum time an aircraft can fly.",
+        "The maximum distance an aircraft can fly over the ground.",
+        "The maximum altitude an aircraft can reach.",
+        "The speed at which the aircraft burns the least fuel."
+      ],
+      "correct_answer": "The maximum distance an aircraft can fly over the ground."
+    },
+    {
+      "question_number": 49,
+      "question_text": "What is the purpose of a crosswind and headwind component chart?",
+      "options": [
+        "To determine the total wind speed.",
+        "To find the headwind and crosswind components of the wind for a given runway.",
+        "To calculate the true airspeed.",
+        "To check for turbulence."
+      ],
+      "correct_answer": "To find the headwind and crosswind components of the wind for a given runway."
+    },
+    {
+      "question_number": 50,
+      "question_text": "What is the 'demonstrated crosswind component'?",
+      "options": [
+        "The maximum crosswind in which a pilot is allowed to land.",
+        "The maximum crosswind that was demonstrated during aircraft certification.",
+        "The crosswind component that requires a specific pilot skill level.",
+        "The minimum crosswind for which a rudder is effective."
+      ],
+      "correct_answer": "The maximum crosswind that was demonstrated during aircraft certification."
+    },
+    {
+      "question_number": 51,
+      "question_text": "What is 'indicated airspeed' (IAS)?",
+      "options": [
+        "The speed of the aircraft relative to the air.",
+        "The speed shown on the airspeed indicator.",
+        "The airspeed corrected for instrument error.",
+        "The airspeed corrected for temperature and pressure."
+      ],
+      "correct_answer": "The speed shown on the airspeed indicator."
+    },
+    {
+      "question_number": 52,
+      "question_text": "What is 'calibrated airspeed' (CAS)?",
+      "options": [
+        "Indicated airspeed corrected for installation and instrument errors.",
+        "The speed of the aircraft relative to the ground.",
+        "The airspeed corrected for compressibility effects.",
+        "The speed shown on the airspeed indicator."
+      ],
+      "correct_answer": "Indicated airspeed corrected for installation and instrument errors."
+    },
+    {
+      "question_number": 53,
+      "question_text": "What is 'true airspeed' (TAS)?",
+      "options": [
+        "The speed of the aircraft through the air.",
+        "The speed shown on the airspeed indicator.",
+        "The speed of the aircraft over the ground.",
+        "The airspeed corrected for wind."
+      ],
+      "correct_answer": "The speed of the aircraft through the air."
+    },
+    {
+      "question_number": 54,
+      "question_text": "What is 'groundspeed' (GS)?",
+      "options": [
+        "The speed of the aircraft relative to the air.",
+        "The speed of the aircraft over the ground.",
+        "The speed shown on the airspeed indicator.",
+        "The true airspeed corrected for temperature."
+      ],
+      "correct_answer": "The speed of the aircraft over the ground."
+    },
+    {
+      "question_number": 55,
+      "question_text": "How is TAS affected by an increase in altitude, assuming a constant IAS?",
+      "options": [
+        "TAS decreases.",
+        "TAS remains the same.",
+        "TAS increases.",
+        "TAS becomes equal to GS."
+      ],
+      "correct_answer": "TAS increases."
+    },
+    {
+      "question_number": 56,
+      "question_text": "What is the purpose of the 'Normal Procedures' section of the POH?",
+      "options": [
+        "To provide information on emergency situations.",
+        "To list the aircraft's limitations.",
+        "To describe the recommended procedures for normal operations.",
+        "To detail the aircraft's systems."
+      ],
+      "correct_answer": "To describe the recommended procedures for normal operations."
+    },
+    {
+      "question_number": 57,
+      "question_text": "What is a 'checklist' used for in aviation?",
+      "options": [
+        "To help the pilot remember all necessary tasks for a particular phase of flight.",
+        "To calculate weight and balance.",
+        "To navigate.",
+        "To communicate with ATC."
+      ],
+      "correct_answer": "To help the pilot remember all necessary tasks for a particular phase of flight."
+    },
+    {
+      "question_number": 58,
+      "question_text": "What is the purpose of the 'Emergency Procedures' section of the POH?",
+      "options": [
+        "To describe normal flight operations.",
+        "To provide checklists and procedures for dealing with various emergencies.",
+        "To list the aircraft's performance data.",
+        "To detail the aircraft's weight and balance information."
+      ],
+      "correct_answer": "To provide checklists and procedures for dealing with various emergencies."
+    },
+    {
+      "question_number": 59,
+      "question_text": "If you experience an engine failure shortly after takeoff, what is generally the best course of action?",
+      "options": [
+        "Immediately turn back to the runway.",
+        "Establish the best glide speed and select a suitable landing area ahead.",
+        "Attempt to restart the engine.",
+        "Increase the pitch to gain altitude."
+      ],
+      "correct_answer": "Establish the best glide speed and select a suitable landing area ahead."
+    },
+    {
+      "question_number": 60,
+      "question_text": "What is the significance of the best glide speed (Vg)?",
+      "options": [
+        "It provides the greatest forward distance for a given loss of altitude.",
+        "It is the fastest speed the aircraft can fly.",
+        "It is the speed for maximum endurance.",
+        "It is the speed used for normal landings."
+      ],
+      "correct_answer": "It provides the greatest forward distance for a given loss of altitude."
+    },
+    {
+      "question_number": 61,
+      "question_text": "What is a 'sectional chart'?",
+      "options": [
+        "A chart that shows the aircraft's internal components.",
+        "Aeronautical chart for VFR navigation.",
+        "A chart depicting weather patterns.",
+        "A chart used for IFR flights."
+      ],
+      "correct_answer": "Aeronautical chart for VFR navigation."
+    },
+    {
+      "question_number": 62,
+      "question_text": "What does a line of latitude measure?",
+      "options": [
+        "Distance east or west of the Prime Meridian.",
+        "Distance north or south of the Equator.",
+        "Magnetic variation.",
+        "Altitude."
+      ],
+      "correct_answer": "Distance north or south of the Equator."
+    },
+    {
+      "question_number": 63,
+      "question_text": "What does a line of longitude measure?",
+      "options": [
+        "Distance north or south of the Equator.",
+        "Distance east or west of the Prime Meridian.",
+        "Elevation.",
+        "Magnetic heading."
+      ],
+      "correct_answer": "Distance east or west of the Prime Meridian."
+    },
+    {
+      "question_number": 64,
+      "question_text": "What is a 'nautical mile'?",
+      "options": [
+        "A unit of distance equal to one minute of latitude.",
+        "A unit of speed.",
+        "A unit of weight.",
+        "A unit of volume."
+      ],
+      "correct_answer": "A unit of distance equal to one minute of latitude."
+    },
+    {
+      "question_number": 65,
+      "question_text": "How do you identify an airport with a hard-surfaced runway on a sectional chart?",
+      "options": [
+        "A circular symbol.",
+        "A tick mark next to the airport symbol.",
+        "The runway layout is depicted.",
+        "A star symbol."
+      ],
+      "correct_answer": "The runway layout is depicted."
+    },
+    {
+      "question_number": 66,
+      "question_text": "What does a star above an airport symbol on a sectional chart indicate?",
+      "options": [
+        "The airport has a rotating beacon.",
+        "The airport is closed.",
+        "The airport has fuel available.",
+        "The airport is a military base."
+      ],
+      "correct_answer": "The airport has a rotating beacon."
+    },
+    {
+      "question_number": 67,
+      "question_text": "What does the color of an airport's rotating beacon indicate?",
+      "options": [
+        "The runway length.",
+        "The type of airport (civilian, military, etc.).",
+        "The availability of fuel.",
+        "The time of day."
+      ],
+      "correct_answer": "The type of airport (civilian, military, etc.)."
+    },
+    {
+      "question_number": 68,
+      "question_text": "What does a 'tick mark' next to an airport symbol on a sectional chart indicate?",
+      "options": [
+        "The airport has services such as fuel.",
+        "The airport is a private airport.",
+        "The airport has a control tower.",
+        "The airport is restricted."
+      ],
+      "correct_answer": "The airport has services such as fuel."
+    },
+    {
+      "question_number": 69,
+      "question_text": "What is a 'visual checkpoint' on a sectional chart?",
+      "options": [
+        "A point on the ground used for navigation by visual reference.",
+        "A point where a pilot must contact ATC.",
+        "An airport with a control tower.",
+        "A point where the magnetic variation changes."
+      ],
+      "correct_answer": "A point on the ground used for navigation by visual reference."
+    },
+    {
+      "question_number": 70,
+      "question_text": "What is 'pilotage'?",
+      "options": [
+        "Navigating by reference to instruments.",
+        "Navigating by reference to visible landmarks on the ground.",
+        "Communicating with ATC.",
+        "Flying an aircraft."
+      ],
+      "correct_answer": "Navigating by reference to visible landmarks on the ground."
+    },
+    {
+      "question_number": 71,
+      "question_text": "What is 'dead reckoning'?",
+      "options": [
+        "Navigating by calculating position based on a previously known position, course, speed, and time.",
+        "Navigating by visual reference to landmarks.",
+        "Using GPS for navigation.",
+        "Following a VOR radial."
+      ],
+      "correct_answer": "Navigating by calculating position based on a previously known position, course, speed, and time."
+    },
+    {
+      "question_number": 72,
+      "question_text": "What is a VOR?",
+      "options": [
+        "A type of radar.",
+        "A ground-based radio navigation aid.",
+        "A satellite-based navigation system.",
+        "A visual signaling device."
+      ],
+      "correct_answer": "A ground-based radio navigation aid."
+    },
+    {
+      "question_number": 73,
+      "question_text": "What is a 'radial' from a VOR?",
+      "options": [
+        "A magnetic course from the VOR station.",
+        "A true course from the VOR station.",
+        "A line of equal magnetic variation.",
+        "A communication frequency."
+      ],
+      "correct_answer": "A magnetic course from the VOR station."
+    },
+    {
+      "question_number": 74,
+      "question_text": "What information does a VOR provide to the pilot?",
+      "options": [
+        "Distance to the station.",
+        "The aircraft's position relative to a selected radial.",
+        "The aircraft's altitude.",
+        "The wind direction."
+      ],
+      "correct_answer": "The aircraft's position relative to a selected radial."
+    },
+    {
+      "question_number": 75,
+      "question_text": "What is DME?",
+      "options": [
+        "A system that provides distance information from a ground station.",
+        "A type of autopilot.",
+        "A weather radar system.",
+        "A communication radio."
+      ],
+      "correct_answer": "A system that provides distance information from a ground station."
+    },
+    {
+      "question_number": 76,
+      "question_text": "What is GPS?",
+      "options": [
+        "A ground-based navigation system.",
+        "A satellite-based radio navigation system.",
+        "A system for communicating with ATC.",
+        "A weather forecasting tool."
+      ],
+      "correct_answer": "A satellite-based radio navigation system."
+    },
+    {
+      "question_number": 77,
+      "question_text": "What is the primary advantage of GPS for aviation navigation?",
+      "options": [
+        "It is not affected by weather.",
+        "It provides highly accurate position information.",
+        "It is only available in the United States.",
+        "It does not require any equipment in the aircraft."
+      ],
+      "correct_answer": "It provides highly accurate position information."
+    },
+    {
+      "question_number": 78,
+      "question_text": "What is a 'waypoint' in GPS navigation?",
+      "options": [
+        "A physical landmark on the ground.",
+        "A predetermined geographical position.",
+        "A VOR station.",
+        "An airport."
+      ],
+      "correct_answer": "A predetermined geographical position."
+    },
+    {
+      "question_number": 79,
+      "question_text": "What is the primary function of a flight computer (E6B)?",
+      "options": [
+        "To navigate the aircraft automatically.",
+        "To perform calculations related to time, speed, distance, fuel, and wind.",
+        "To communicate with ATC.",
+        "To display weather information."
+      ],
+      "correct_answer": "To perform calculations related to time, speed, distance, fuel, and wind."
+    },
+    {
+      "question_number": 80,
+      "question_text": "What can you calculate using the wind side of an E6B?",
+      "options": [
+        "Fuel consumption.",
+        "True airspeed.",
+        "Groundspeed and wind correction angle.",
+        "Density altitude."
+      ],
+      "correct_answer": "Groundspeed and wind correction angle."
+    },
+    {
+      "question_number": 81,
+      "question_text": "How do you calculate fuel required for a flight?",
+      "options": [
+        "By guessing based on the length of the trip.",
+        "By dividing the distance by the aircraft's top speed.",
+        "By considering the fuel burn rate, time en route, and required reserves.",
+        "By filling the tanks completely for every flight."
+      ],
+      "correct_answer": "By considering the fuel burn rate, time en route, and required reserves."
+    },
+    {
+      "question_number": 82,
+      "question_text": "What is a 'navigation log'?",
+      "options": [
+        "A record of all communications with ATC.",
+        "A detailed plan of a flight, including checkpoints, courses, distances, and estimated times.",
+        "A maintenance record for the aircraft.",
+        "A list of all airports in the country."
+      ],
+      "correct_answer": "A detailed plan of a flight, including checkpoints, courses, distances, and estimated times."
+    },
+    {
+      "question_number": 83,
+      "question_text": "What is 'lost procedures'?",
+      "options": [
+        "A set of actions to take if you become disoriented and are not sure of your position.",
+        "The procedures for recovering a lost item in the cockpit.",
+        "The process of filing a lost flight plan.",
+        "A method for finding a lost airport."
+      ],
+      "correct_answer": "A set of actions to take if you become disoriented and are not sure of your position."
+    },
+    {
+      "question_number": 84,
+      "question_text": "If you are lost, what is a good first step to take?",
+      "options": [
+        "Continue flying in the same direction.",
+        "Climb to a higher altitude to get a better view and improve radio reception.",
+        "Descend to a lower altitude.",
+        "Shut down the engine to conserve fuel."
+      ],
+      "correct_answer": "Climb to a higher altitude to get a better view and improve radio reception."
+    },
+    {
+      "question_number": 85,
+      "question_text": "What is the emergency transponder code for a lost aircraft?",
+      "options": [
+        "7500",
+        "7600",
+        "7700",
+        "There is no specific code for a lost aircraft."
+      ],
+      "correct_answer": "There is no specific code for a lost aircraft."
+    },
+    {
+      "question_number": 86,
+      "question_text": "What is a 'diversion' in aviation?",
+      "options": [
+        "Flying a different route for fun.",
+        "A planned change in the flight path to an alternate airport.",
+        "Losing your way during a flight.",
+        "Flying in a holding pattern."
+      ],
+      "correct_answer": "A planned change in the flight path to an alternate airport."
+    },
+    {
+      "question_number": 87,
+      "question_text": "What is a key consideration when planning a diversion?",
+      "options": [
+        "The availability of in-flight movies at the alternate airport.",
+        "The distance to the alternate, fuel required, and weather conditions at the alternate.",
+        "The color of the runway at the alternate.",
+        "The number of other aircraft in the area."
+      ],
+      "correct_answer": "The distance to the alternate, fuel required, and weather conditions at the alternate."
+    },
+    {
+      "question_number": 88,
+      "question_text": "What is 'special use airspace'?",
+      "options": [
+        "Airspace that is always open to all aircraft.",
+        "Airspace where activities must be confined because of their nature.",
+        "Airspace that is only for military aircraft.",
+        "Airspace above 18,000 feet."
+      ],
+      "correct_answer": "Airspace where activities must be confined because of their nature."
+    },
+    {
+      "question_number": 89,
+      "question_text": "What is a 'prohibited area'?",
+      "options": [
+        "Airspace where flight is prohibited.",
+        "Airspace where flight is restricted to certain times.",
+        "Airspace where VFR flight is not allowed.",
+        "Airspace that is for military use only."
+      ],
+      "correct_answer": "Airspace where flight is prohibited."
+    },
+    {
+      "question_number": 90,
+      "question_text": "What is a 'restricted area'?",
+      "options": [
+        "Airspace where flight is always prohibited.",
+        "Airspace where flight is subject to restrictions.",
+        "Airspace that is only for commercial airliners.",
+        "Airspace that has no flight rules."
+      ],
+      "correct_answer": "Airspace where flight is subject to restrictions."
+    },
+    {
+      "question_number": 91,
+      "question_text": "What is a 'military operations area' (MOA)?",
+      "options": [
+        "Airspace where military training activities are conducted.",
+        "Airspace that is closed to all civilian aircraft.",
+        "Airspace where VFR flight is prohibited.",
+        "Airspace that is controlled by the military."
+      ],
+      "correct_answer": "Airspace where military training activities are conducted."
+    },
+    {
+      "question_number": 92,
+      "question_text": "What should a pilot do when flying through an MOA?",
+      "options": [
+        "Fly at a very low altitude.",
+        "Exercise extreme caution and contact the controlling agency for traffic advisories.",
+        "Avoid the area at all costs.",
+        "Turn off all radios."
+      ],
+      "correct_answer": "Exercise extreme caution and contact the controlling agency for traffic advisories."
+    },
+    {
+      "question_number": 93,
+      "question_text": "What is an 'alert area'?",
+      "options": [
+        "An area with a high volume of pilot training or unusual aerial activity.",
+        "An area where flight is prohibited.",
+        "An area with hazardous weather.",
+        "An area that is always active."
+      ],
+      "correct_answer": "An area with a high volume of pilot training or unusual aerial activity."
+    },
+    {
+      "question_number": 94,
+      "question_text": "What is a 'controlled firing area'?",
+      "options": [
+        "An area where firing activities are conducted in a controlled environment.",
+        "An area where flight is prohibited.",
+        "An area that is not shown on aeronautical charts.",
+        "An area where pilots must have special clearance to enter."
+      ],
+      "correct_answer": "An area where firing activities are conducted in a controlled environment."
+    },
+    {
+      "question_number": 95,
+      "question_text": "What are 'temporary flight restrictions' (TFRs)?",
+      "options": [
+        "Restrictions on flight that are put in place for a specific event or incident.",
+        "Permanent restrictions on flight.",
+        "Restrictions that only apply to IFR flights.",
+        "Restrictions that are not published."
+      ],
+      "correct_answer": "Restrictions on flight that are put in place for a specific event or incident."
+    },
+    {
+      "question_number": 96,
+      "question_text": "Where can a pilot find information about active TFRs?",
+      "options": [
+        "From a Flight Service Station (FSS) or the FAA's TFR website.",
+        "On a sectional chart.",
+        "In the POH.",
+        "By asking another pilot."
+      ],
+      "correct_answer": "From a Flight Service Station (FSS) or the FAA's TFR website."
+    },
+    {
+      "question_number": 97,
+      "question_text": "What is a 'Notice to Airmen' (NOTAM)?",
+      "options": [
+        "A notice containing information concerning the establishment, condition, or change in any aeronautical facility, service, procedure, or hazard, the timely knowledge of which is essential to personnel concerned with flight operations.",
+        "A weather forecast.",
+        "A flight plan.",
+        "A maintenance record."
+      ],
+      "correct_answer": "A notice containing information concerning the establishment, condition, or change in any aeronautical facility, service, procedure, or hazard, the timely knowledge of which is essential to personnel concerned with flight operations."
+    },
+    {
+      "question_number": 98,
+      "question_text": "What are the different types of NOTAMs?",
+      "options": [
+        "NOTAM(D), FDC NOTAMs, and Pointer NOTAMs.",
+        "Local, regional, and national NOTAMs.",
+        "Weather, airport, and airspace NOTAMs.",
+        "Urgent, routine, and informational NOTAMs."
+      ],
+      "correct_answer": "NOTAM(D), FDC NOTAMs, and Pointer NOTAMs."
+    },
+    {
+      "question_number": 99,
+      "question_text": "What is an FDC NOTAM?",
+      "options": [
+        "A NOTAM that contains regulatory information such as changes to an instrument approach procedure or airway.",
+        "A NOTAM that is distributed locally.",
+        "A NOTAM that has to do with airport conditions.",
+        "A NOTAM that is only for military pilots."
+      ],
+      "correct_answer": "A NOTAM that contains regulatory information such as changes to an instrument approach procedure or airway."
+    },
+    {
+      "question_number": 100,
+      "question_text": "Where can a pilot obtain NOTAM information?",
+      "options": [
+        "From a Flight Service Station (FSS), DUATS, or the FAA's website.",
+        "Only from the airport manager.",
+        "Only by listening to the ATIS.",
+        "Only from another pilot."
+      ],
+      "correct_answer": "From a Flight Service Station (FSS), DUATS, or the FAA's website."
+    },
+    {
+      "question_number": 101,
+      "question_text": "Using a POH performance chart, if the pressure altitude is 4,000 feet and the temperature is 21°C, what is the density altitude?",
+      "options": [
+        "Approximately 5,000 feet",
+        "Approximately 6,000 feet",
+        "Approximately 4,000 feet",
+        "Approximately 3,000 feet"
+      ],
+      "correct_answer": "Approximately 6,000 feet"
+    },
+    {
+      "question_number": 102,
+      "question_text": "Given a takeoff weight of 2,300 lbs, a pressure altitude of 2,000 feet, and a temperature of 30°C, what is the expected takeoff distance to clear a 50-foot obstacle?",
+      "options": [
+        "This requires a specific POH chart to answer.",
+        "1,500 feet",
+        "2,000 feet",
+        "1,000 feet"
+      ],
+      "correct_answer": "This requires a specific POH chart to answer."
+    },
+    {
+      "question_number": 103,
+      "question_text": "If the total moment is 85,000 in-lbs and the total weight is 2,400 lbs, what is the center of gravity?",
+      "options": [
+        "35.4 inches aft of the datum",
+        "28.2 inches aft of the datum",
+        "32.0 inches aft of the datum",
+        "40.1 inches aft of the datum"
+      ],
+      "correct_answer": "35.4 inches aft of the datum"
+    },
+    {
+      "question_number": 104,
+      "question_text": "An aircraft has an empty weight of 1,500 lbs at a CG of 35.0 inches. If a pilot weighing 180 lbs is seated at an arm of 37.0 inches, what is the new CG?",
+      "options": [
+        "35.2 inches",
+        "36.1 inches",
+        "34.8 inches",
+        "35.0 inches"
+      ],
+      "correct_answer": "35.2 inches"
+    },
+    {
+      "question_number": 105,
+      "question_text": "You are planning a flight of 250 NM. Your aircraft cruises at 120 knots TAS and has a fuel burn of 8 gallons per hour. How much fuel will you need for the flight, not including reserves?",
+      "options": [
+        "16.7 gallons",
+        "20.8 gallons",
+        "15.0 gallons",
+        "25.0 gallons"
+      ],
+      "correct_answer": "16.7 gallons"
+    },
+    {
+      "question_number": 106,
+      "question_text": "On a cross-country flight, you plan to fly a true course of 090°. The winds are from 030° at 20 knots. Your true airspeed is 110 knots. What is your approximate magnetic heading and groundspeed?",
+      "options": [
+        "This requires an E6B or flight planning software to solve accurately.",
+        "MH 100°, GS 120 knots",
+        "MH 080°, GS 100 knots",
+        "MH 090°, GS 110 knots"
+      ],
+      "correct_answer": "This requires an E6B or flight planning software to solve accurately."
+    },
+    {
+      "question_number": 107,
+      "question_text": "If you are flying at a pressure altitude of 8,000 feet with an OAT of -10°C, and your calibrated airspeed is 115 knots, what is your true airspeed?",
+      "options": [
+        "Approximately 133 knots",
+        "Approximately 125 knots",
+        "Approximately 115 knots",
+        "Approximately 140 knots"
+      ],
+      "correct_answer": "Approximately 133 knots"
+    },
+    {
+      "question_number": 108,
+      "question_text": "You are on a flight and have covered 60 NM in 30 minutes. What is your groundspeed?",
+      "options": [
+        "120 knots",
+        "100 knots",
+        "90 knots",
+        "150 knots"
+      ],
+      "correct_answer": "120 knots"
+    },
+    {
+      "question_number": 109,
+      "question_text": "Your destination is 180 NM away. Your groundspeed is 90 knots. How long will it take to reach your destination?",
+      "options": [
+        "2 hours",
+        "1.5 hours",
+        "2.5 hours",
+        "1 hour"
+      ],
+      "correct_answer": "2 hours"
+    },
+    {
+      "question_number": 110,
+      "question_text": "The wind is reported as 270 at 15 knots. You are landing on Runway 24. What are the headwind and crosswind components?",
+      "options": [
+        "Approximately 13 knots headwind and 7.5 knots crosswind.",
+        "Approximately 10 knots headwind and 10 knots crosswind.",
+        "15 knots headwind and 0 knots crosswind.",
+        "0 knots headwind and 15 knots crosswind."
+      ],
+      "correct_answer": "Approximately 13 knots headwind and 7.5 knots crosswind."
+    },
+    {
+      "question_number": 111,
+      "question_text": "If a runway is 5,000 feet long and has a 2% upslope, what is the effective runway length increase for takeoff?",
+      "options": [
+        "Takeoff distance is increased, not the effective length.",
+        "The effective length is decreased.",
+        "The effective length is increased by 100 feet.",
+        "The effective length is increased by 10%."
+      ],
+      "correct_answer": "Takeoff distance is increased, not the effective length."
+    },
+    {
+      "question_number": 112,
+      "question_text": "How does an aft CG position affect an aircraft's stall speed?",
+      "options": [
+        "It has no effect.",
+        "It increases the stall speed.",
+        "It decreases the stall speed.",
+        "It makes the aircraft impossible to stall."
+      ],
+      "correct_answer": "It decreases the stall speed."
+    },
+    {
+      "question_number": 113,
+      "question_text": "What is the relationship between load factor and stall speed?",
+      "options": [
+        "Stall speed increases in proportion to the square root of the load factor.",
+        "Stall speed decreases with an increase in load factor.",
+        "There is no relationship.",
+        "Stall speed increases directly with the load factor."
+      ],
+      "correct_answer": "Stall speed increases in proportion to the square root of the load factor."
+    },
+    {
+      "question_number": 114,
+      "question_text": "In a 60-degree level bank turn, what is the load factor?",
+      "options": [
+        "1 G",
+        "1.5 Gs",
+        "2 Gs",
+        "3 Gs"
+      ],
+      "correct_answer": "2 Gs"
+    },
+    {
+      "question_number": 115,
+      "question_text": "How does frost on the wings of an airplane affect takeoff performance?",
+      "options": [
+        "It improves lift.",
+        "It disrupts the smooth flow of air over the wing, decreasing lift and increasing drag.",
+        "It has no significant effect.",
+        "It reduces the weight of the aircraft."
+      ],
+      "correct_answer": "It disrupts the smooth flow of air over the wing, decreasing lift and increasing drag."
+    },
+    {
+      "question_number": 116,
+      "question_text": "What is the primary reason for filing a VFR flight plan?",
+      "options": [
+        "It is required for all flights.",
+        "To ensure search and rescue services are initiated if the flight is overdue.",
+        "To get a discount on fuel.",
+        "To inform the FAA of your flight for traffic separation."
+      ],
+      "correct_answer": "To ensure search and rescue services are initiated if the flight is overdue."
+    },
+    {
+      "question_number": 117,
+      "question_text": "When must you close a VFR flight plan?",
+      "options": [
+        "Within 30 minutes of your estimated time of arrival.",
+        "Upon arrival at the destination airport.",
+        "It closes automatically.",
+        "Only if you land at an airport with a control tower."
+      ],
+      "correct_answer": "Upon arrival at the destination airport."
+    },
+    {
+      "question_number": 118,
+      "question_text": "What does the term 'abeam' mean in the context of navigation?",
+      "options": [
+        "Directly in front of the aircraft.",
+        "Directly behind the aircraft.",
+        "At a 90-degree angle to the side of the aircraft.",
+        "At a 45-degree angle to the front of the aircraft."
+      ],
+      "correct_answer": "At a 90-degree angle to the side of the aircraft."
+    },
+    {
+      "question_number": 119,
+      "question_text": "What is a 'dogleg' in a flight plan?",
+      "options": [
+        "A sharp turn in the flight path.",
+        "A direct route between two points.",
+        "A route that follows a road or river.",
+        "A type of navigational error."
+      ],
+      "correct_answer": "A sharp turn in the flight path."
+    },
+    {
+      "question_number": 120,
+      "question_text": "What is the purpose of a 'fuel totalizer'?",
+      "options": [
+        "To measure the amount of fuel in the tanks.",
+        "To calculate and display fuel flow, fuel remaining, and endurance.",
+        "To automatically switch fuel tanks.",
+        "To warn of a low fuel state."
+      ],
+      "correct_answer": "To calculate and display fuel flow, fuel remaining, and endurance."
+    },
+    {
+      "question_number": 121,
+      "question_text": "What is the difference between 'basic empty weight' and 'licensed empty weight'?",
+      "options": [
+        "There is no difference.",
+        "Basic empty weight includes unusable fuel and undrainable oil, while licensed empty weight does not.",
+        "Licensed empty weight is a term no longer in use; basic empty weight is the current standard.",
+        "Basic empty weight includes the weight of the pilot."
+      ],
+      "correct_answer": "Licensed empty weight is a term no longer in use; basic empty weight is the current standard."
+    },
+    {
+      "question_number": 122,
+      "question_text": "If a flight is made with the CG at the aft limit, what flight characteristics can be expected?",
+      "options": [
+        "Increased longitudinal stability and higher stall speed.",
+        "Decreased longitudinal stability and lower stall speed.",
+        "No change in flight characteristics.",
+        "Difficulty in raising the nose during takeoff."
+      ],
+      "correct_answer": "Decreased longitudinal stability and lower stall speed."
+    },
+    {
+      "question_number": 123,
+      "question_text": "What is the effect of high humidity on engine power?",
+      "options": [
+        "It increases engine power.",
+        "It decreases engine power.",
+        "It has no effect on engine power.",
+        "It only affects turbocharged engines."
+      ],
+      "correct_answer": "It decreases engine power."
+    },
+    {
+      "question_number": 124,
+      "question_text": "What is the primary factor that determines the performance of an aircraft on any given day?",
+      "options": [
+        "The pilot's skill.",
+        "The color of the aircraft.",
+        "Density altitude.",
+        "The time of day."
+      ],
+      "correct_answer": "Density altitude."
+    },
+    {
+      "question_number": 125,
+      "question_text": "You are flying a triangular course with legs of 50 NM each. Your TAS is 100 knots, and there is a 20-knot wind from the north. How will the wind affect your total time en route compared to a no-wind condition?",
+      "options": [
+        "The total time will be less.",
+        "The total time will be the same.",
+        "The total time will be greater.",
+        "It is impossible to determine."
+      ],
+      "correct_answer": "The total time will be greater."
+    },
+    {
+      "question_number": 126,
+      "question_text": "What is a 'standard rate turn'?",
+      "options": [
+        "A turn at a rate of 3 degrees per second.",
+        "A turn at a bank angle of 30 degrees.",
+        "A turn that takes 3 minutes to complete 360 degrees.",
+        "A turn at the aircraft's maximum bank angle."
+      ],
+      "correct_answer": "A turn at a rate of 3 degrees per second."
+    },
+    {
+      "question_number": 127,
+      "question_text": "How can a pilot estimate the angle of bank required for a standard rate turn?",
+      "options": [
+        "Divide the TAS in knots by 10 and add 7.",
+        "It is always 15 degrees.",
+        "Multiply the TAS in knots by 0.15.",
+        "It is not possible to estimate."
+      ],
+      "correct_answer": "Divide the TAS in knots by 10 and add 7."
+    },
+    {
+      "question_number": 128,
+      "question_text": "What is the purpose of the 'Weight and Balance' section of the POH?",
+      "options": [
+        "To provide information on how to load the aircraft and ensure it is within limits.",
+        "To list the weight of all aircraft components.",
+        "To give examples of weight and balance problems.",
+        "To explain the theory of aerodynamics."
+      ],
+      "correct_answer": "To provide information on how to load the aircraft and ensure it is within limits."
+    },
+    {
+      "question_number": 129,
+      "question_text": "What are 'isogonic lines' on a sectional chart?",
+      "options": [
+        "Lines connecting points of equal magnetic variation.",
+        "Lines connecting points of equal elevation.",
+        "Lines indicating airways.",
+        "Lines showing the boundaries of controlled airspace."
+      ],
+      "correct_answer": "Lines connecting points of equal magnetic variation."
+    },
+    {
+      "question_number": 130,
+      "question_text": "What is the 'agonic line'?",
+      "options": [
+        "The line of zero magnetic variation.",
+        "The line of maximum magnetic variation.",
+        "The equator.",
+        "The Prime Meridian."
+      ],
+      "correct_answer": "The line of zero magnetic variation."
+    },
+    {
+      "question_number": 131,
+      "question_text": "If an airport is listed as 'PRIVATE' on a sectional chart, what does this mean?",
+      "options": [
+        "It is closed to the public and requires permission to land.",
+        "It is a military airport.",
+        "It has no services available.",
+        "It is only for IFR flights."
+      ],
+      "correct_answer": "It is closed to the public and requires permission to land."
+    },
+    {
+      "question_number": 132,
+      "question_text": "What is a 'visual approach slope indicator' (VASI)?",
+      "options": [
+        "A system of lights to provide visual descent guidance during an approach to a runway.",
+        "A radio navigation aid.",
+        "A type of runway marking.",
+        "An instrument in the cockpit."
+      ],
+      "correct_answer": "A system of lights to provide visual descent guidance during an approach to a runway."
+    },
+    {
+      "question_number": 133,
+      "question_text": "What does a 'red over white' VASI indication mean?",
+      "options": [
+        "You are on the proper glide path.",
+        "You are too high.",
+        "You are too low.",
+        "The VASI is out of service."
+      ],
+      "correct_answer": "You are on the proper glide path."
+    },
+    {
+      "question_number": 134,
+      "question_text": "What is a 'precision approach path indicator' (PAPI)?",
+      "options": [
+        "A system of lights similar to a VASI but with the lights in a single row.",
+        "A ground-based radar system.",
+        "A type of instrument approach.",
+        "A marking on the runway."
+      ],
+      "correct_answer": "A system of lights similar to a VASI but with the lights in a single row."
+    },
+    {
+      "question_number": 135,
+      "question_text": "When approaching to land at an airport in Class D airspace, when must you establish two-way radio communication with the control tower?",
+      "options": [
+        "Before entering the Class D airspace.",
+        "After entering the Class D airspace.",
+        "When you are on final approach.",
+        "It is not required."
+      ],
+      "correct_answer": "Before entering the Class D airspace."
+    },
+    {
+      "question_number": 136,
+      "question_text": "What is a 'runway incursion'?",
+      "options": [
+        "Any occurrence at an aerodrome involving the incorrect presence of an aircraft, vehicle, or person on the protected area of a surface designated for the landing and takeoff of aircraft.",
+        "A safe and normal operation.",
+        "When an aircraft lands on the wrong runway.",
+        "When an aircraft takes off without clearance."
+      ],
+      "correct_answer": "Any occurrence at an aerodrome involving the incorrect presence of an aircraft, vehicle, or person on the protected area of a surface designated for the landing and takeoff of aircraft."
+    },
+    {
+      "question_number": 137,
+      "question_text": "What is the best way to avoid a runway incursion?",
+      "options": [
+        "By maintaining situational awareness, listening to ATC instructions, and understanding airport signage and markings.",
+        "By flying at a high speed on the ground.",
+        "By not talking to ATC.",
+        "By closing your eyes while taxiing."
+      ],
+      "correct_answer": "By maintaining situational awareness, listening to ATC instructions, and understanding airport signage and markings."
+    },
+    {
+      "question_number": 138,
+      "question_text": "What is 'wake turbulence'?",
+      "options": [
+        "Turbulence generated by the wings of an aircraft.",
+        "Turbulence caused by weather.",
+        "Turbulence found in mountainous areas.",
+        "Turbulence at high altitudes."
+      ],
+      "correct_answer": "Turbulence generated by the wings of an aircraft."
+    },
+    {
+      "question_number": 139,
+      "question_text": "When is wake turbulence most severe?",
+      "options": [
+        "Behind a heavy, slow, and clean aircraft.",
+        "Behind a light, fast aircraft with flaps down.",
+        "In strong winds.",
+        "At high altitudes."
+      ],
+      "correct_answer": "Behind a heavy, slow, and clean aircraft."
+    },
+    {
+      "question_number": 140,
+      "question_text": "How can a pilot avoid wake turbulence when landing behind a large aircraft?",
+      "options": [
+        "Stay above the large aircraft's flight path and land beyond its touchdown point.",
+        "Fly below the large aircraft's flight path.",
+        "Land as close as possible behind the large aircraft.",
+        "Wake turbulence is not a concern during landing."
+      ],
+      "correct_answer": "Stay above the large aircraft's flight path and land beyond its touchdown point."
+    },
+    {
+      "question_number": 141,
+      "question_text": "What is a 'short field' takeoff technique?",
+      "options": [
+        "A technique used to take off in the shortest possible distance.",
+        "A normal takeoff.",
+        "A takeoff with a long ground roll.",
+        "A takeoff with no flaps."
+      ],
+      "correct_answer": "A technique used to take off in the shortest possible distance."
+    },
+    {
+      "question_number": 142,
+      "question_text": "What is a 'soft field' takeoff technique?",
+      "options": [
+        "A technique used to take off from a soft or rough surface, keeping the nosewheel off the ground as much as possible.",
+        "A takeoff on a paved runway.",
+        "A takeoff with a tailwind.",
+        "A takeoff at a high speed."
+      ],
+      "correct_answer": "A technique used to take off from a soft or rough surface, keeping the nosewheel off the ground as much as possible."
+    },
+    {
+      "question_number": 143,
+      "question_text": "What is a 'short field' landing technique?",
+      "options": [
+        "A technique used to land and stop in the shortest possible distance.",
+        "A normal landing.",
+        "A landing with a long rollout.",
+        "A landing without using flaps."
+      ],
+      "correct_answer": "A technique used to land and stop in the shortest possible distance."
+    },
+    {
+      "question_number": 144,
+      "question_text": "What is a 'soft field' landing technique?",
+      "options": [
+        "A technique used to land on a soft or rough surface, holding the nosewheel off as long as possible.",
+        "A landing on a paved runway.",
+        "A landing with a strong headwind.",
+        "A landing at a high speed."
+      ],
+      "correct_answer": "A technique used to land on a soft or rough surface, holding the nosewheel off as long as possible."
+    },
+    {
+      "question_number": 145,
+      "question_text": "What is a 'go-around'?",
+      "options": [
+        "Aborting a landing approach.",
+        "A maneuver to circle the airport.",
+        "A normal landing.",
+        "A type of takeoff."
+      ],
+      "correct_answer": "Aborting a landing approach."
+    },
+    {
+      "question_number": 146,
+      "question_text": "When is a go-around appropriate?",
+      "options": [
+        "Anytime the pilot feels the approach is not safe or stable.",
+        "Only when instructed by ATC.",
+        "Never.",
+        "Only in an emergency."
+      ],
+      "correct_answer": "Anytime the pilot feels the approach is not safe or stable."
+    },
+    {
+      "question_number": 147,
+      "question_text": "What is the primary cause of an inadvertent spin?",
+      "options": [
+        "A stalled aircraft with yaw.",
+        "Flying too fast.",
+        "A steep bank.",
+        "Engine failure."
+      ],
+      "correct_answer": "A stalled aircraft with yaw."
+    },
+    {
+      "question_number": 148,
+      "question_text": "What is the standard spin recovery procedure (PARE)?",
+      "options": [
+        "Power to idle, Ailerons neutral, Rudder opposite the spin, Elevator forward.",
+        "Power full, Ailerons into the spin, Rudder with the spin, Elevator back.",
+        "Power to idle, Ailerons neutral, Rudder with the spin, Elevator forward.",
+        "Power full, Ailerons neutral, Rudder opposite the spin, Elevator back."
+      ],
+      "correct_answer": "Power to idle, Ailerons neutral, Rudder opposite the spin, Elevator forward."
+    },
+    {
+      "question_number": 149,
+      "question_text": "What is 'hypoxia'?",
+      "options": [
+        "A state of oxygen deficiency in the body.",
+        "A feeling of euphoria.",
+        "Disorientation.",
+        "Carbon monoxide poisoning."
+      ],
+      "correct_answer": "A state of oxygen deficiency in the body."
+    },
+    {
+      "question_number": 150,
+      "question_text": "At what altitude is supplemental oxygen recommended for pilots during the day?",
+      "options": [
+        "Above 12,500 feet MSL for more than 30 minutes, and at all times above 14,000 feet MSL.",
+        "Above 5,000 feet MSL.",
+        "Only when feeling symptoms of hypoxia.",
+        "It is never required for VFR flights."
+      ],
+      "correct_answer": "Above 12,500 feet MSL for more than 30 minutes, and at all times above 14,000 feet MSL."
+    },
+    {
+      "question_number": 151,
+      "question_text": "What is 'carbon monoxide' poisoning and how can it be detected?",
+      "options": [
+        "A colorless, odorless gas that can leak into the cabin; it can be detected with a CO detector.",
+        "A type of food poisoning.",
+        "A result of hyperventilation.",
+        "A side effect of high altitude flight."
+      ],
+      "correct_answer": "A colorless, odorless gas that can leak into the cabin; it can be detected with a CO detector."
+    },
+    {
+      "question_number": 152,
+      "question_text": "What is 'spatial disorientation'?",
+      "options": [
+        "A state of confusion where a pilot cannot determine the aircraft's attitude, altitude, or airspeed in relation to the Earth.",
+        "Getting lost.",
+        "Forgetting the flight plan.",
+        "A medical condition."
+      ],
+      "correct_answer": "A state of confusion where a pilot cannot determine the aircraft's attitude, altitude, or airspeed in relation to the Earth."
+    },
+    {
+      "question_number": 153,
+      "question_text": "How can a pilot overcome spatial disorientation?",
+      "options": [
+        "By trusting the flight instruments.",
+        "By looking outside.",
+        "By closing their eyes.",
+        "By shaking their head."
+      ],
+      "correct_answer": "By trusting the flight instruments."
+    },
+    {
+      "question_number": 154,
+      "question_text": "What are the 'five hazardous attitudes' in aviation?",
+      "options": [
+        "Anti-authority, Impulsivity, Invulnerability, Macho, and Resignation.",
+        "Happy, Sad, Angry, Scared, and Confused.",
+        "Careful, Cautious, Prudent, Thoughtful, and Deliberate.",
+        "Fast, Slow, High, Low, and Turning."
+      ],
+      "correct_answer": "Anti-authority, Impulsivity, Invulnerability, Macho, and Resignation."
+    },
+    {
+      "question_number": 155,
+      "question_text": "What is 'aeronautical decision making' (ADM)?",
+      "options": [
+        "A systematic approach to the mental process used by pilots to consistently determine the best course of action in response to a given set of circumstances.",
+        "A type of autopilot.",
+        "A navigation technique.",
+        "A communication procedure."
+      ],
+      "correct_answer": "A systematic approach to the mental process used by pilots to consistently determine the best course of action in response to a given set of circumstances."
+    },
+    {
+      "question_number": 156,
+      "question_text": "What is the 'DECIDE' model of ADM?",
+      "options": [
+        "Detect, Estimate, Choose, Identify, Do, and Evaluate.",
+        "Decide, Estimate, Comply, Inform, Decide, and Execute.",
+        "Determine, Evaluate, Choose, Implement, Decide, and Examine.",
+        "Detect, Examine, Comply, Inform, Do, and Evaluate."
+      ],
+      "correct_answer": "Detect, Estimate, Choose, Identify, Do, and Evaluate."
+    },
+    {
+      "question_number": 157,
+      "question_text": "What is 'risk management' in aviation?",
+      "options": [
+        "The process of identifying, assessing, and mitigating risks.",
+        "Avoiding all risks.",
+        "Flying only in perfect weather.",
+        "A type of insurance."
+      ],
+      "correct_answer": "The process of identifying, assessing, and mitigating risks."
+    },
+    {
+      "question_number": 158,
+      "question_text": "What is the 'PAVE' checklist used for in risk management?",
+      "options": [
+        "Pilot, Aircraft, enVironment, and External pressures.",
+        "Position, Altitude, Velocity, and Engine.",
+        "Plan, Airport, VFR, and Emergency.",
+        "Proceed, Assess, Verify, and Execute."
+      ],
+      "correct_answer": "Pilot, Aircraft, enVironment, and External pressures."
+    },
+    {
+      "question_number": 159,
+      "question_text": "What is 'situational awareness'?",
+      "options": [
+        "The accurate perception of the factors and conditions that affect the aircraft and the pilot.",
+        "Knowing the location of the nearest airport.",
+        "Being aware of the time.",
+        "Understanding how to use the GPS."
+      ],
+      "correct_answer": "The accurate perception of the factors and conditions that affect the aircraft and the pilot."
+    },
+    {
+      "question_number": 160,
+      "question_text": "How can a pilot maintain situational awareness?",
+      "options": [
+        "By actively monitoring the environment, communicating effectively, and managing workload.",
+        "By focusing on only one task at a time.",
+        "By flying at a low altitude.",
+        "By not using a checklist."
+      ],
+      "correct_answer": "By actively monitoring the environment, communicating effectively, and managing workload."
+    },
+    {
+      "question_number": 161,
+      "question_text": "If a pilot changes their mailing address, how long do they have to notify the FAA?",
+      "options": [
+        "30 days",
+        "60 days",
+        "90 days",
+        "1 year"
+      ],
+      "correct_answer": "30 days"
+    },
+    {
+      "question_number": 162,
+      "question_text": "To act as pilot in command of an aircraft carrying passengers, a pilot must have made within the preceding 90 days:",
+      "options": [
+        "Three takeoffs and three landings in an aircraft of the same category, class, and type.",
+        "One solo flight.",
+        "A flight review.",
+        "An instrument proficiency check."
+      ],
+      "correct_answer": "Three takeoffs and three landings in an aircraft of the same category, class, and type."
+    },
+    {
+      "question_number": 163,
+      "question_text": "What is a 'flight review'?",
+      "options": [
+        "A review of a pilot's skills and knowledge, required every 24 calendar months.",
+        "A preflight inspection.",
+        "A debriefing after a flight.",
+        "A type of flight plan."
+      ],
+      "correct_answer": "A review of a pilot's skills and knowledge, required every 24 calendar months."
+    },
+    {
+      "question_number": 164,
+      "question_text": "What are the requirements for a private pilot certificate?",
+      "options": [
+        "At least 17 years of age, be able to read, speak, and understand English, hold at least a third-class medical certificate, and meet the aeronautical experience requirements.",
+        "At least 16 years of age and a high school diploma.",
+        "A college degree in aviation.",
+        "At least 18 years of age and a commercial pilot certificate."
+      ],
+      "correct_answer": "At least 17 years of age, be able to read, speak, and understand English, hold at least a third-class medical certificate, and meet the aeronautical experience requirements."
+    },
+    {
+      "question_number": 165,
+      "question_text": "What privileges and limitations apply to a private pilot?",
+      "options": [
+        "A private pilot may not act as pilot in command of an aircraft that is carrying passengers or property for compensation or hire.",
+        "A private pilot can fly any aircraft.",
+        "A private pilot is not required to have a medical certificate.",
+        "A private pilot can only fly during the day."
+      ],
+      "correct_answer": "A private pilot may not act as pilot in command of an aircraft that is carrying passengers or property for compensation or hire."
+    },
+    {
+      "question_number": 166,
+      "question_text": "What is the 'sterile cockpit rule'?",
+      "options": [
+        "A rule that prohibits non-essential conversations and activities during critical phases of flight (taxi, takeoff, landing, and below 10,000 feet).",
+        "A rule that requires the cockpit to be cleaned before every flight.",
+        "A rule about not talking to passengers.",
+        "A rule that only applies to airline pilots."
+      ],
+      "correct_answer": "A rule that prohibits non-essential conversations and activities during critical phases of flight (taxi, takeoff, landing, and below 10,000 feet)."
+    },
+    {
+      "question_number": 167,
+      "question_text": "What is the difference between a 'category', 'class', and 'type' of aircraft?",
+      "options": [
+        "Category refers to a broad classification (e.g., airplane, rotorcraft), class refers to a classification within a category (e.g., single-engine land, multi-engine sea), and type refers to a specific make and model.",
+        "They all mean the same thing.",
+        "Category refers to the size of the aircraft, class to its speed, and type to its manufacturer.",
+        "Category is for military aircraft, class for civilian, and type for experimental."
+      ],
+      "correct_answer": "Category refers to a broad classification (e.g., airplane, rotorcraft), class refers to a classification within a category (e.g., single-engine land, multi-engine sea), and type refers to a specific make and model."
+    },
+    {
+      "question_number": 168,
+      "question_text": "What is the 'fuselage' of an aircraft?",
+      "options": [
+        "The main body of the aircraft.",
+        "The wings.",
+        "The tail.",
+        "The landing gear."
+      ],
+      "correct_answer": "The main body of the aircraft."
+    },
+    {
+      "question_number": 169,
+      "question_text": "What is the 'empennage'?",
+      "options": [
+        "The tail assembly of an aircraft.",
+        "The engine.",
+        "The cockpit.",
+        "The propellers."
+      ],
+      "correct_answer": "The tail assembly of an aircraft."
+    },
+    {
+      "question_number": 170,
+      "question_text": "What are 'ailerons' used for?",
+      "options": [
+        "To control the roll of the aircraft.",
+        "To control the pitch.",
+        "To control the yaw.",
+        "To slow the aircraft down."
+      ],
+      "correct_answer": "To control the roll of the aircraft."
+    },
+    {
+      "question_number": 171,
+      "question_text": "What is the 'elevator' used for?",
+      "options": [
+        "To control the pitch of the aircraft.",
+        "To control the roll.",
+        "To control the yaw.",
+        "To increase lift."
+      ],
+      "correct_answer": "To control the pitch of the aircraft."
+    },
+    {
+      "question_number": 172,
+      "question_text": "What is the 'rudder' used for?",
+      "options": [
+        "To control the yaw of the aircraft.",
+        "To control the pitch.",
+        "To control the roll.",
+        "To steer on the ground."
+      ],
+      "correct_answer": "To control the yaw of the aircraft."
+    },
+    {
+      "question_number": 173,
+      "question_text": "What are 'flaps' used for?",
+      "options": [
+        "To increase lift and drag, allowing for a steeper approach and a slower landing speed.",
+        "To increase the speed of the aircraft.",
+        "To steer the aircraft.",
+        "To improve fuel efficiency."
+      ],
+      "correct_answer": "To increase lift and drag, allowing for a steeper approach and a slower landing speed."
+    },
+    {
+      "question_number": 174,
+      "question_text": "What is 'trim' used for?",
+      "options": [
+        "To relieve control pressures, making the aircraft easier to fly.",
+        "To make the aircraft go faster.",
+        "To steer the aircraft on the ground.",
+        "To communicate with ATC."
+      ],
+      "correct_answer": "To relieve control pressures, making the aircraft easier to fly."
+    },
+    {
+      "question_number": 175,
+      "question_text": "What is a 'pitot tube'?",
+      "options": [
+        "A device that measures ram air pressure to determine airspeed.",
+        "A communication antenna.",
+        "A fuel vent.",
+        "A part of the landing gear."
+      ],
+      "correct_answer": "A device that measures ram air pressure to determine airspeed."
+    },
+    {
+      "question_number": 176,
+      "question_text": "What is a 'static port'?",
+      "options": [
+        "A device that measures static air pressure, used by the altimeter, vertical speed indicator, and airspeed indicator.",
+        "An opening for cabin ventilation.",
+        "A drain for water.",
+        "A connection for ground power."
+      ],
+      "correct_answer": "A device that measures static air pressure, used by the altimeter, vertical speed indicator, and airspeed indicator."
+    },
+    {
+      "question_number": 177,
+      "question_text": "What happens if the pitot tube becomes blocked?",
+      "options": [
+        "The airspeed indicator will become unreliable.",
+        "The altimeter will not work.",
+        "The engine will fail.",
+        "The radios will not transmit."
+      ],
+      "correct_answer": "The airspeed indicator will become unreliable."
+    },
+    {
+      "question_number": 178,
+      "question_text": "What happens if the static port becomes blocked?",
+      "options": [
+        "The altimeter will freeze at the altitude where the blockage occurred, and the VSI will read zero.",
+        "The airspeed indicator will read zero.",
+        "The engine will lose power.",
+        "The flaps will not extend."
+      ],
+      "correct_answer": "The altimeter will freeze at the altitude where the blockage occurred, and the VSI will read zero."
+    },
+    {
+      "question_number": 179,
+      "question_text": "What is an 'alternate static source' and when would you use it?",
+      "options": [
+        "A secondary source of static pressure for the flight instruments, used if the primary static port becomes blocked.",
+        "A backup radio.",
+        "A handheld GPS.",
+        "An emergency power supply."
+      ],
+      "correct_answer": "A secondary source of static pressure for the flight instruments, used if the primary static port becomes blocked."
+    },
+    {
+      "question_number": 180,
+      "question_text": "What is a 'magnetic compass' and what are its errors?",
+      "options": [
+        "A self-contained direction-finding instrument; its errors include variation, deviation, magnetic dip, and acceleration/deceleration errors.",
+        "A GPS.",
+        "An instrument that shows the aircraft's attitude.",
+        "A communication device."
+      ],
+      "correct_answer": "A self-contained direction-finding instrument; its errors include variation, deviation, magnetic dip, and acceleration/deceleration errors."
+    },
+    {
+      "question_number": 181,
+      "question_text": "What is 'magnetic dip'?",
+      "options": [
+        "The tendency of the compass to point down towards the magnetic pole.",
+        "The difference between true north and magnetic north.",
+        "An error caused by the aircraft's magnetic fields.",
+        "An error that occurs during turns."
+      ],
+      "correct_answer": "The tendency of the compass to point down towards the magnetic pole."
+    },
+    {
+      "question_number": 182,
+      "question_text": "When turning from a northerly heading, the magnetic compass will:",
+      "options": [
+        "Lag behind the turn.",
+        "Lead the turn.",
+        "Be accurate.",
+        "Point to the south."
+      ],
+      "correct_answer": "Lag behind the turn."
+    },
+    {
+      "question_number": 183,
+      "question_text": "When turning from a southerly heading, the magnetic compass will:",
+      "options": [
+        "Lead the turn.",
+        "Lag behind the turn.",
+        "Be accurate.",
+        "Point to the north."
+      ],
+      "correct_answer": "Lead the turn."
+    },
+    {
+      "question_number": 184,
+      "question_text": "When accelerating on an easterly or westerly heading, the magnetic compass will:",
+      "options": [
+        "Indicate a turn to the north.",
+        "Indicate a turn to the south.",
+        "Be accurate.",
+        "Stop working."
+      ],
+      "correct_answer": "Indicate a turn to the north."
+    },
+    {
+      "question_number": 185,
+      "question_text": "What is a 'heading indicator' or 'directional gyro'?",
+      "options": [
+        "A gyroscopic instrument that provides a stable heading reference and is not subject to the errors of a magnetic compass.",
+        "A magnetic compass.",
+        "A GPS.",
+        "A VOR indicator."
+      ],
+      "correct_answer": "A gyroscopic instrument that provides a stable heading reference and is not subject to the errors of a magnetic compass."
+    },
+    {
+      "question_number": 186,
+      "question_text": "Why must the heading indicator be periodically realigned with the magnetic compass?",
+      "options": [
+        "Due to precession, a characteristic of all gyroscopes.",
+        "Because of magnetic variation.",
+        "Because of magnetic deviation.",
+        "It does not need to be realigned."
+      ],
+      "correct_answer": "Due to precession, a characteristic of all gyroscopes."
+    },
+    {
+      "question_number": 187,
+      "question_text": "What is an 'attitude indicator' or 'artificial horizon'?",
+      "options": [
+        "A gyroscopic instrument that provides a visual indication of the aircraft's pitch and bank attitude.",
+        "An altimeter.",
+        "A vertical speed indicator.",
+        "A compass."
+      ],
+      "correct_answer": "A gyroscopic instrument that provides a visual indication of the aircraft's pitch and bank attitude."
+    },
+    {
+      "question_number": 188,
+      "question_text": "What is a 'turn coordinator'?",
+      "options": [
+        "A gyroscopic instrument that shows the rate of turn and the rate of roll, and includes an inclinometer to indicate the quality of the turn.",
+        "A heading indicator.",
+        "An attitude indicator.",
+        "A magnetic compass."
+      ],
+      "correct_answer": "A gyroscopic instrument that shows the rate of turn and the rate of roll, and includes an inclinometer to indicate the quality of the turn."
+    },
+    {
+      "question_number": 189,
+      "question_text": "What does the 'inclinometer' or 'ball' in the turn coordinator indicate?",
+      "options": [
+        "Whether the aircraft is in a coordinated turn (yawing correctly).",
+        "The angle of bank.",
+        "The rate of turn.",
+        "The pitch attitude."
+      ],
+      "correct_answer": "Whether the aircraft is in a coordinated turn (yawing correctly)."
+    },
+    {
+      "question_number": 190,
+      "question_text": "If the ball in the turn coordinator is to the inside of the turn, the aircraft is in a:",
+      "options": [
+        "Slip",
+        "Skid",
+        "Coordinated turn",
+        "Spin"
+      ],
+      "correct_answer": "Slip"
+    },
+    {
+      "question_number": 191,
+      "question_text": "What is a 'slip' in a turn?",
+      "options": [
+        "A condition where the aircraft is yawing to the outside of the turn.",
+        "A condition where the aircraft is not turning enough for the angle of bank.",
+        "A coordinated turn.",
+        "A type of stall."
+      ],
+      "correct_answer": "A condition where the aircraft is not turning enough for the angle of bank."
+    },
+    {
+      "question_number": 192,
+      "question_text": "If the ball in the turn coordinator is to the outside of the turn, the aircraft is in a:",
+      "options": [
+        "Skid",
+        "Slip",
+        "Coordinated turn",
+        "Dive"
+      ],
+      "correct_answer": "Skid"
+    },
+    {
+      "question_number": 193,
+      "question_text": "What is a 'skid' in a turn?",
+      "options": [
+        "A condition where the aircraft is yawing to the inside of the turn.",
+        "A condition where the aircraft is turning too much for the angle of bank.",
+        "A coordinated turn.",
+        "A maneuver to lose altitude quickly."
+      ],
+      "correct_answer": "A condition where the aircraft is turning too much for the angle of bank."
+    },
+    {
+      "question_number": 194,
+      "question_text": "What is 'adverse yaw'?",
+      "options": [
+        "The tendency of an aircraft to yaw in the opposite direction of the roll.",
+        "A desirable flight characteristic.",
+        "A type of turbulence.",
+        "An error in the magnetic compass."
+      ],
+      "correct_answer": "The tendency of an aircraft to yaw in the opposite direction of the roll."
+    },
+    {
+      "question_number": 195,
+      "question_text": "How is adverse yaw counteracted?",
+      "options": [
+        "By using the rudder in the direction of the turn.",
+        "By using the ailerons.",
+        "By increasing power.",
+        "It cannot be counteracted."
+      ],
+      "correct_answer": "By using the rudder in the direction of the turn."
+    },
+    {
+      "question_number": 196,
+      "question_text": "What is 'p-factor'?",
+      "options": [
+        "A tendency for an aircraft to yaw to the left at high power settings and high angles of attack.",
+        "A type of propeller.",
+        "A measure of engine performance.",
+        "A force that acts perpendicular to the direction of flight."
+      ],
+      "correct_answer": "A tendency for an aircraft to yaw to the left at high power settings and high angles of attack."
+    },
+    {
+      "question_number": 197,
+      "question_text": "What are the four left-turning tendencies of a single-engine propeller aircraft?",
+      "options": [
+        "P-factor, spiraling slipstream, torque, and gyroscopic precession.",
+        "Lift, weight, thrust, and drag.",
+        "Ailerons, elevator, rudder, and flaps.",
+        "Adverse yaw, slips, skids, and spins."
+      ],
+      "correct_answer": "P-factor, spiraling slipstream, torque, and gyroscopic precession."
+    },
+    {
+      "question_number": 198,
+      "question_text": "What is 'spiraling slipstream'?",
+      "options": [
+        "The slipstream from the propeller rotating around the fuselage and striking the left side of the vertical stabilizer.",
+        "A type of weather phenomenon.",
+        "A maneuver.",
+        "A component of the engine."
+      ],
+      "correct_answer": "The slipstream from the propeller rotating around the fuselage and striking the left side of the vertical stabilizer."
+    },
+    {
+      "question_number": 199,
+      "question_text": "What is 'torque' as a left-turning tendency?",
+      "options": [
+        "The tendency of the aircraft to roll to the left in reaction to the right-turning propeller.",
+        "A measure of engine power.",
+        "A force that opposes thrust.",
+        "A type of structural stress."
+      ],
+      "correct_answer": "The tendency of the aircraft to roll to the left in reaction to the right-turning propeller."
+    },
+    {
+      "question_number": 200,
+      "question_text": "What is 'gyroscopic precession' as a left-turning tendency in a tailwheel aircraft?",
+      "options": [
+        "When the tail is raised during takeoff, a force is applied to the top of the propeller, and the resultant force is felt 90 degrees ahead in the direction of rotation, causing a yaw to the left.",
+        "An error in the heading indicator.",
+        "A force that affects the ailerons.",
+        "A phenomenon that only occurs in helicopters."
+      ],
+      "correct_answer": "When the tail is raised during takeoff, a force is applied to the top of the propeller, and the resultant force is felt 90 degrees ahead in the direction of rotation, causing a yaw to the left."
+    }
+  ]
+}
