@@ -1279,32 +1279,54 @@
         // --- Study Mode Specific Functions ---
         function renderQuestionBrowser() {
             questionBrowserList.innerHTML = '';
+            // Iterate through allQuestions to create links for every question in the loaded set.
             allQuestions.forEach((q, index) => {
                 const qLink = document.createElement('button');
                 qLink.className = 'q-link';
-                qLink.textContent = index + 1;
-                qLink.dataset.index = index;
-                
+                qLink.textContent = index + 1; // Display question number 1-based
+                qLink.dataset.originalIndex = q.originalIndex; // Store original index for status lookup
+
                 const status = questionStatus[q.originalIndex];
                 if (status) {
                     qLink.classList.add(status);
                 }
 
-                if (questionsToAsk[currentQuestionIndex] && q.originalIndex === questionsToAsk[currentQuestionIndex].originalIndex) {
+                // Check if this question is the one currently being displayed
+                const currentQuestion = questionsToAsk[currentQuestionIndex];
+                if (currentQuestion && q.originalIndex === currentQuestion.originalIndex) {
                     qLink.classList.add('current');
                 }
 
-                qLink.addEventListener('click', () => jumpToQuestion(index));
+                qLink.addEventListener('click', () => jumpToQuestionByOriginalIndex(q.originalIndex));
                 questionBrowserList.appendChild(qLink);
             });
         }
 
-        function jumpToQuestion(index) {
-            currentQuestionIndex = index;
-            displayQuestion();
+        // Helper to find the index in the 'questionsToAsk' array by original index
+        function findQuestionIndexInCurrentList(originalIndex) {
+            for (let i = 0; i < questionsToAsk.length; i++) {
+                if (questionsToAsk[i].originalIndex === originalIndex) {
+                    return i;
+                }
+            }
+            return -1; // Not found
+        }
+
+        function jumpToQuestionByOriginalIndex(originalIndex) {
+            const indexInCurrentList = findQuestionIndexInCurrentList(originalIndex);
+            if (indexInCurrentList !== -1) {
+                currentQuestionIndex = indexInCurrentList;
+                displayQuestion();
+            } else {
+                // This case might happen if the question was skipped and is now in skippedQuestions
+                // or if the browser list contains questions that are no longer in questionsToAsk
+                console.warn(`Question with original index ${originalIndex} not found in current active questions.`);
+                // Optionally, you could handle this by moving to the next available question or displaying an error.
+            }
         }
 
         function initializeGemini(key) {
+            console.log("Attempting to initialize Gemini with key:", key.substring(0, 4) + '...'); // Log first few chars of API key
             if (typeof window.GoogleGenerativeAI === 'undefined') {
                 apiKeyStatus.textContent = 'Google Gemini SDK not loaded.';
                 apiKeyStatus.className = 'api-key-status-error';
@@ -1319,6 +1341,7 @@
                 apiKeyStatus.textContent = 'API key loaded. Gemini AI ready!';
                 apiKeyStatus.className = 'api-key-status-success';
                 showElement(apiKeyStatus);
+                console.log("Gemini AI SDK successfully initialized.");
             } catch (e) {
                 console.error("Error initializing Gemini SDK:", e);
                 localStorage.removeItem('geminiApiKey');
@@ -1346,15 +1369,18 @@
             hideElement(explanationError);
             explanationText.innerHTML = '';
 
+            console.log("Requesting AI explanation for question:", lastAnsweredQuestion.question_text.substring(0, 50) + '...');
             const explanationHTML = await getAIExplanationHTML(lastAnsweredQuestion, lastUserAnswer, lastCorrectAnswer);
             
             hideElement(explanationLoader);
             if (explanationHTML.includes('error-message')) {
                 explanationError.innerHTML = explanationHTML;
                 showElement(explanationError);
+                console.error("AI explanation request failed.");
             } else {
                 explanationText.innerHTML = explanationHTML;
                 showElement(explanationText);
+                console.log("AI explanation received and displayed.");
             }
 
             enableButton(explainBtn);
@@ -1388,7 +1414,10 @@ Provide a clear explanation of why the correct answer is right and briefly why o
                 });
                 const response = result.response;
                 // ✅ FIXED: Changed response.text to response.text()
-                const generatedText = response.text;
+                const generatedText = response.text(); // This is now a function call
+                
+                console.log("AI Response Text:", generatedText.substring(0, 200) + '...'); // Log part of the response
+                
                 return marked.parse(generatedText);
             } catch (e) {
                 console.error("Error generating explanation:", e);
@@ -1417,7 +1446,9 @@ Provide a clear explanation of why the correct answer is right and briefly why o
             });
             const response = result.response;
             // ✅ FIXED: Changed response.text to response.text()
-            return response.text.trim();
+            const generatedQuery = response.text(); // This is now a function call
+            console.log("Generated Search Query:", generatedQuery);
+            return generatedQuery.trim();
           } catch (e) {
             console.error("Error generating search prompt:", e);
             displayError('Failed to generate search prompt.');
@@ -1475,6 +1506,7 @@ Provide a clear explanation of why the correct answer is right and briefly why o
                 apiKeyStatus.textContent = 'API key cleared.';
                 apiKeyStatus.className = 'api-key-status-error';
                 showElement(apiKeyStatus);
+                console.log("API key cleared from local storage.");
             }
         });
        
