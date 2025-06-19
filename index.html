@@ -744,7 +744,7 @@
   if (initialApiKey) {
     try {
       // The constructor expects an object with the apiKey property
-      window.geminiSdkInstance = new GoogleGenAI(initialApiKey);
+      window.geminiSdkInstance = new GoogleGenAI({ apiKey: initialApiKey });
       console.log("Gemini AI SDK pre-initialized globally.");
     } catch (e) {
       console.error("Error pre-initializing Gemini SDK:", e);
@@ -1310,7 +1310,7 @@
             }
             try {
                 // The constructor expects the key directly
-                window.geminiSdkInstance = new window.GoogleGenAI(key);
+                window.geminiSdkInstance = new window.GoogleGenAI({ apiKey: key });
                 genAI = window.geminiSdkInstance;
                 apiKeyStatus.textContent = 'API key loaded. Gemini AI ready!';
                 apiKeyStatus.className = 'api-key-status-success';
