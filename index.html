@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,1453 +10,1493 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        :root {
-            --primary-bg: #f0f4f8; /* Lighter background */
-            --secondary-bg: #ffffff;
-            --tertiary-bg: #e9eef2; /* Slightly darker than primary for areas */
-            --border-color: #d8e1e8;
-            --text-color: #2c3e50; /* Softer black */
-            --primary-accent: #3498db; /* Brighter blue */
-            --secondary-accent: #5dade2; /* Lighter blue */
-            --correct-color: #2ecc71; /* Green */
-            --incorrect-color: #e74c3c; /* Red */
-            --skip-color: #f39c12; /* Orange */
-            --disabled-color: #bdc3c7; /* Gray */
-            --font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-            --border-radius: 8px;
-        }
+<style>
+    :root {
+        --primary-bg: #f0f4f8; /* Lighter background */
+        --secondary-bg: #ffffff;
+        --tertiary-bg: #e9eef2; /* Slightly darker than primary for areas */
+        --border-color: #d8e1e8;
+        --text-color: #2c3e50; /* Softer black */
+        --primary-accent: #3498db; /* Brighter blue */
+        --secondary-accent: #5dade2; /* Lighter blue */
+        --correct-color: #2ecc71; /* Green */
+        --incorrect-color: #e74c3c; /* Red */
+        --skip-color: #f39c12; /* Orange */
+        --disabled-color: #bdc3c7; /* Gray */
+        --font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        --border-radius: 8px;
+    }
 
-        /* Basic Reset */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    /* Basic Reset */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-        body {
-            font-family: var(--font-family);
-            background-color: var(--primary-bg);
-            color: var(--text-color);
-            line-height: 1.6;
-            display: flex; /* Use flex for centering app container */
-            justify-content: center;
-            align-items: flex-start; /* Align to top for longer content */
-            min-height: 100vh;
-            padding: 20px;
-        }
+    body {
+        font-family: var(--font-family);
+        background-color: var(--primary-bg);
+        color: var(--text-color);
+        line-height: 1.6;
+        display: flex; /* Use flex for centering app container */
+        justify-content: center;
+        align-items: flex-start; /* Align to top for longer content */
+        min-height: 100vh;
+        padding: 20px;
+    }
 
-        /* Splash Screen */
-        #splash-screen {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #3498db;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            transition: opacity 0.5s ease-out;
-        }
+    /* Splash Screen */
+    #splash-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #3498db;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        transition: opacity 0.5s ease-out;
+    }
 
-        #splash-screen img {
-            max-width: 150px;
-            margin-bottom: 20px;
-        }
+    #splash-screen img {
+        max-width: 150px;
+        margin-bottom: 20px;
+    }
 
-        .loader {
-            border: 4px solid var(--tertiary-bg);
-            border-top: 4px solid var(--primary-accent);
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-        }
+    .loader {
+        border: 4px solid var(--tertiary-bg);
+        border-top: 4px solid var(--primary-accent);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+    }
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
 
-        /* Main App Container */
-        .app-container {
-            max-width: 900px; /* Wider to accommodate question browser */
-            width: 100%;
-            background-color: var(--secondary-bg);
-            padding: 30px 35px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--box-shadow);
-            opacity: 0; /* Start hidden */
-            transition: opacity 0.5s ease-in;
-        }
+    /* Main App Container */
+    .app-container {
+        max-width: 900px; /* Wider to accommodate question browser */
+        width: 100%;
+        background-color: var(--secondary-bg);
+        padding: 30px 35px;
+        border-radius: var(--border-radius);
+        box-shadow: var(--box-shadow);
+        opacity: 0; /* Start hidden */
+        transition: opacity 0.5s ease-in;
+    }
 
-        header {
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            text-align: center;
-        }
+    header {
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
 
-        h1.quiz-title {
-            color: var(--primary-accent);
-            margin: 0 0 10px 0;
-            font-size: 1.9em;
-            font-weight: 600;
-        }
+    h1.quiz-title {
+        color: var(--primary-accent);
+        margin: 0 0 10px 0;
+        font-size: 1.9em;
+        font-weight: 600;
+    }
 
-        /* Mode Selector & Disclaimer */
-        #mode-selector-container {
-            text-align: center;
-            padding: 20px 0;
-        }
+    /* Mode Selector & Disclaimer */
+    #mode-selector-container {
+        text-align: center;
+        padding: 20px 0;
+    }
 
-        /* --- NEW: Disclaimer Section Styles --- */
-        #disclaimer-section {
-            padding: 20px;
-            margin-bottom: 25px;
-            background-color: #fffbe6; /* Light yellow warning color */
-            border-left: 5px solid var(--skip-color);
-            border-radius: var(--border-radius);
-            text-align: left;
-        }
-        #disclaimer-section h3 {
-            color: var(--skip-color);
-            margin-top: 0;
-            margin-bottom: 15px;
-            font-size: 1.2em;
-        }
-        #disclaimer-section p {
-            margin-bottom: 10px;
-            font-size: 0.9em;
-        }
-        .disclaimer-ack {
-            margin-top: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .disclaimer-ack input[type="checkbox"] {
-            margin-right: 10px;
-            transform: scale(1.3);
-            cursor: pointer;
-        }
-        .disclaimer-ack label {
-            font-weight: 600;
-            cursor: pointer;
-            font-size: 1em;
-        }
-        /* --- End Disclaimer Styles --- */
-
-
-        #mode-selector-container h2 {
-            margin-top: 15px;
-            margin-bottom: 20px;
-            color: var(--text-color);
-        }
-        .mode-button-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .mode-button {
-            padding: 15px 30px;
-            font-size: 1.1em;
-            font-weight: 600;
-            cursor: pointer;
-            border: 2px solid var(--primary-accent);
-            border-radius: var(--border-radius);
-            transition: all 0.3s ease;
-        }
-        #caap-mode-btn {
-            background-color: var(--primary-accent);
-            color: white;
-        }
-        #caap-mode-btn:hover {
-            background-color: var(--secondary-accent);
-        }
-        #study-mode-btn {
-            background-color: white;
-            color: var(--primary-accent);
-        }
-        #study-mode-btn:hover {
-            background-color: var(--tertiary-bg);
-        }
-
-        .mode-button:disabled {
-            background-color: var(--disabled-color) !important;
-            border-color: var(--disabled-color) !important;
-            color: #fff !important;
-            cursor: not-allowed;
-            opacity: 0.7;
-        }
-        .mode-button:disabled:hover {
-            transform: none;
-            box-shadow: none;
-            background-color: var(--disabled-color) !important;
-        }
-
-        .quiz-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: var(--tertiary-bg);
-            padding: 10px 15px;
-            border-radius: 5px;
-            margin-top: 15px;
-            font-size: 0.95em;
-        }
-
-        .quiz-info span { font-weight: 600; }
-        #score-display { color: var(--primary-accent); }
-        #skips-display { color: var(--skip-color); }
-        #progress-display { color: var(--text-color); }
-
-        .selector-container { margin-bottom: 20px; text-align: center; }
-        .selector-container label { font-weight: 600; margin-right: 10px; }
-        #subject-selector, #question-count-input {
-            padding: 10px 15px;
-            border: 1px solid var(--border-color);
-            border-radius: 5px;
-            font-size: 1em;
-            background-color: #fff;
-            cursor: pointer;
-        }
-        #subject-selector {
-            min-width: 250px;
-        }
-        #question-count-input {
-            width: 80px;
-            text-align: center;
-        }
-        #max-questions-info {
-            font-size: 0.9em;
-            color: #555;
-            margin-left: 8px;
-        }
-
-        #error-container {
-            color: var(--incorrect-color);
-            font-weight: 600;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            padding: 12px;
-            background-color: #fdd;
-            border: 1px solid var(--incorrect-color);
-            border-radius: 5px;
-            text-align: center;
-        }
-        
-        #quiz-layout {
-            display: flex;
-            gap: 25px;
-        }
-        #main-content {
-            flex-grow: 1;
-        }
-
-        #question-browser-container {
-            flex-basis: 220px; /* Fixed width */
-            flex-shrink: 0;
-            padding: 15px;
-            background-color: var(--tertiary-bg);
-            border-radius: var(--border-radius);
-            height: fit-content; /* Adjust height to content */
-            max-height: 500px; /* Prevent it from being too tall */
-            overflow-y: auto;
-        }
-        #question-browser-container h3 {
-            margin-top: 0;
-            margin-bottom: 15px;
-            text-align: center;
-            color: var(--primary-accent);
-            font-size: 1.1em;
-        }
-        .question-browser-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
-            gap: 8px;
-        }
-        .q-link {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 40px;
-            background-color: white;
-            border: 1px solid var(--border-color);
-            border-radius: 5px;
-            text-decoration: none;
-            color: var(--text-color);
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-        .q-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .q-link.current {
-            background-color: var(--primary-accent);
-            color: white;
-            border-color: var(--primary-accent);
-        }
-        .q-link.correct {
-            background-color: var(--correct-color);
-            color: white;
-            border-color: var(--correct-color);
-        }
-        .q-link.incorrect {
-            background-color: var(--incorrect-color);
-            color: white;
-            border-color: var(--incorrect-color);
-        }
-        .q-link.skipped {
-            background-color: var(--skip-color);
-            color: white;
-            border-color: var(--skip-color);
-        }
+    /* --- NEW: Disclaimer Section Styles --- */
+    #disclaimer-section {
+        padding: 20px;
+        margin-bottom: 25px;
+        background-color: #fffbe6; /* Light yellow warning color */
+        border-left: 5px solid var(--skip-color);
+        border-radius: var(--border-radius);
+        text-align: left;
+    }
+    #disclaimer-section h3 {
+        color: var(--skip-color);
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 1.2em;
+    }
+    #disclaimer-section p {
+        margin-bottom: 10px;
+        font-size: 0.9em;
+    }
+    .disclaimer-ack {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .disclaimer-ack input[type="checkbox"] {
+        margin-right: 10px;
+        transform: scale(1.3);
+        cursor: pointer;
+    }
+    .disclaimer-ack label {
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 1em;
+    }
+    /* --- End Disclaimer Styles --- */
 
 
-        /* Question Area */
-        #question-area {
-            margin-bottom: 25px;
-            padding: 25px;
-            border: 1px solid var(--border-color);
-            border-radius: var(--border-radius);
-            background-color: #fdfdfd;
-        }
+    #mode-selector-container h2 {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        color: var(--text-color);
+    }
+    .mode-button-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .mode-button {
+        padding: 15px 30px;
+        font-size: 1.1em;
+        font-weight: 600;
+        cursor: pointer;
+        border: 2px solid var(--primary-accent);
+        border-radius: var(--border-radius);
+        transition: all 0.3s ease;
+    }
+    #caap-mode-btn {
+        background-color: var(--primary-accent);
+        color: white;
+    }
+    #caap-mode-btn:hover {
+        background-color: var(--secondary-accent);
+    }
+    #study-mode-btn {
+        background-color: white;
+        color: var(--primary-accent);
+    }
+    #study-mode-btn:hover {
+        background-color: var(--tertiary-bg);
+    }
 
-        #question-text {
-            font-size: 1.2em;
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: var(--primary-accent);
-        }
+    .mode-button:disabled {
+        background-color: var(--disabled-color) !important;
+        border-color: var(--disabled-color) !important;
+        color: #fff !important;
+        cursor: not-allowed;
+        opacity: 0.7;
+    }
+    .mode-button:disabled:hover {
+        transform: none;
+        box-shadow: none;
+        background-color: var(--disabled-color) !important;
+    }
 
-        .options { list-style-type: none; padding: 0; margin: 10px 0 0 0; }
-        .option-item {
-            margin-bottom: 12px;
-            padding: 12px 15px;
-            border: 1px solid var(--border-color);
-            border-radius: 5px;
-            transition: background-color 0.2s ease, border-color 0.2s ease;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
-        .option-item:hover { background-color: var(--tertiary-bg); }
-        .option-item input[type="radio"]:checked + label {
-             font-weight: 600;
-             color: var(--primary-accent);
-         }
-        .option-item input[type="radio"] {
-            margin-right: 12px;
-            transform: scale(1.1);
-            accent-color: var(--primary-accent);
-        }
-        .option-item label { cursor: pointer; flex-grow: 1; }
+    .quiz-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--tertiary-bg);
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-top: 15px;
+        font-size: 0.95em;
+    }
 
-        /* Feedback Area */
-        #feedback-area {
-            margin-top: 15px;
-            padding: 12px;
-            border-radius: 5px;
-            font-weight: 600;
-            text-align: center;
-            font-size: 1.1em;
-        }
-        .feedback-correct { background-color: #d4edda; border: 1px solid #c3e6cb; color: #155724; }
-        .feedback-incorrect { background-color: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; }
-        .feedback-skipped { background-color: #fff3cd; border: 1px solid #ffeeba; color: #856404; }
+    .quiz-info span { font-weight: 600; }
+    #score-display { color: var(--primary-accent); }
+    #skips-display { color: var(--skip-color); }
+    #progress-display { color: var(--text-color); }
 
-        /* Control Buttons */
-        .button-container {
-            display: flex;
-            justify-content: space-between;
-            gap: 15px;
-            margin-top: 25px;
-            flex-wrap: wrap; /* Allow buttons to wrap */
-        }
+    .selector-container { margin-bottom: 20px; text-align: center; }
+    .selector-container label { font-weight: 600; margin-right: 10px; }
+    #subject-selector, #question-count-input {
+        padding: 10px 15px;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        font-size: 1em;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    #subject-selector {
+        min-width: 250px;
+    }
+    #question-count-input {
+        width: 80px;
+        text-align: center;
+    }
+    #max-questions-info {
+        font-size: 0.9em;
+        color: #555;
+        margin-left: 8px;
+    }
 
-        .quiz-button {
-            flex-grow: 1;
-            padding: 12px 20px;
-            font-size: 1.05em;
-            font-weight: 600;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.2s ease, opacity 0.2s ease;
-            text-align: center;
-            min-width: 150px; /* Ensure buttons don't get too squished */
-        }
+    #error-container {
+        color: var(--incorrect-color);
+        font-weight: 600;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 12px;
+        background-color: #fdd;
+        border: 1px solid var(--incorrect-color);
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    #quiz-layout {
+        display: flex;
+        gap: 25px;
+    }
+    #main-content {
+        flex-grow: 1;
+    }
 
-        #submit-answer-btn { background-color: var(--primary-accent); }
-        #submit-answer-btn:hover { background-color: var(--secondary-accent); }
-        #skip-question-btn { background-color: var(--skip-color); }
-        #skip-question-btn:hover { background-color: #f1c40f; }
-        #next-question-btn { background-color: var(--correct-color); }
-        #next-question-btn:hover { background-color: #25a244; }
-        #explain-question-btn { background-color: var(--primary-accent); }
-        #explain-question-btn:hover { background-color: var(--secondary-accent); }
-        .quiz-button:disabled {
-             background-color: var(--disabled-color);
-             cursor: not-allowed;
-             opacity: 0.7;
-        }
+    #question-browser-container {
+        flex-basis: 220px; /* Fixed width */
+        flex-shrink: 0;
+        padding: 15px;
+        background-color: var(--tertiary-bg);
+        border-radius: var(--border-radius);
+        height: fit-content; /* Adjust height to content */
+        max-height: 500px; /* Prevent it from being too tall */
+        overflow-y: auto;
+    }
+    #question-browser-container h3 {
+        margin-top: 0;
+        margin-bottom: 15px;
+        text-align: center;
+        color: var(--primary-accent);
+        font-size: 1.1em;
+    }
+    .question-browser-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+        gap: 8px;
+    }
+    .q-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        background-color: white;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    .q-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .q-link.current {
+        background-color: var(--primary-accent);
+        color: white;
+        border-color: var(--primary-accent);
+    }
+    .q-link.correct {
+        background-color: var(--correct-color);
+        color: white;
+        border-color: var(--correct-color);
+    }
+    .q-link.incorrect {
+        background-color: var(--incorrect-color);
+        color: white;
+        border-color: var(--incorrect-color);
+    }
+    .q-link.skipped {
+        background-color: var(--skip-color);
+        color: white;
+        border-color: var(--skip-color);
+    }
 
-        /* Results Area */
-        #results-container {
-            margin-top: 30px;
-            padding: 25px;
-            border: 1px solid var(--border-color);
-            border-radius: var(--border-radius);
-            background-color: var(--secondary-bg);
-            text-align: center;
-        }
-        #results-container h2 {
-             margin-top: 0;
-             color: var(--primary-accent);
-             border-bottom: 1px solid var(--border-color);
-             padding-bottom: 10px;
-             margin-bottom: 20px;
-             font-size: 1.5em;
-        }
-        #final-score-display {
-             font-weight: 700;
-             font-size: 1.8em;
-             margin-bottom: 15px;
-             color: var(--primary-accent);
-        }
-        #results-summary { font-size: 1.1em; margin-bottom: 25px; }
-        #restart-button {
-            padding: 12px 30px;
-            font-size: 1.1em;
-            font-weight: 600;
-            color: #fff;
-            background-color: var(--primary-accent);
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.2s ease;
-            margin-top: 15px;
-        }
-        #restart-button:hover { background-color: var(--secondary-accent); }
 
-        /* Review Area */
-        #review-container {
-            margin-top: 30px;
-            padding: 25px;
-            border: 1px solid var(--border-color);
-            border-radius: var(--border-radius);
-            background-color: var(--secondary-bg);
-        }
-        #review-container h2 {
-             margin-top: 0;
-             color: var(--primary-accent);
-             border-bottom: 1px solid var(--border-color);
-             padding-bottom: 10px;
-             margin-bottom: 20px;
-             font-size: 1.5em;
-        }
-        .review-item {
-            padding: 20px;
-            margin-bottom: 15px;
-            border: 1px solid var(--border-color);
-            border-radius: var(--border-radius);
-            background-color: #fdfdfd;
-        }
-        .review-question-text {
-            font-weight: 600;
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-        .review-user-answer {
-            color: var(--incorrect-color);
-            margin-bottom: 5px;
-        }
-        .review-correct-answer {
-            color: var(--correct-color);
-            margin-bottom: 15px;
-        }
-        .review-explanation {
-            margin-top: 15px;
-            padding-top: 15px;
-            border-top: 1px dashed var(--border-color);
-        }
-        .explain-review-btn {
-            background-color: var(--primary-accent);
-            flex-grow: 0; /* Don't let it take full width */
-        }
-        .explain-review-btn:hover {
-            background-color: var(--secondary-accent);
-        }
-        
-        /* API Key Input */
-        .api-key-container {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: var(--tertiary-bg);
-            border-radius: var(--border-radius);
-            border: 1px solid var(--border-color);
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 10px;
-        }
-        .api-key-container label { font-weight: 600; flex-shrink: 0; }
-        .api-key-container input[type="password"] {
-            flex-grow: 1;
-            padding: 10px 12px;
-            border: 1px solid var(--border-color);
-            border-radius: 5px;
-            font-size: 1em;
-            background-color: #fff;
-            color: var(--text-color);
-            min-width: 150px;
-        }
-        .api-key-container #save-api-key-btn {
-            padding: 10px 15px;
-            background-color: var(--primary-accent);
-            min-width: unset;
-            flex-grow: 0;
-            font-size: 1em;
-        }
-        #api-key-status {
-            margin-top: 5px;
-            font-size: 0.9em;
-            text-align: center;
-            width: 100%;
-        }
-        .api-key-status-success { color: var(--correct-color); }
-        .api-key-status-error { color: var(--incorrect-color); }
+    /* Question Area */
+    #question-area {
+        margin-bottom: 25px;
+        padding: 25px;
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        background-color: #fdfdfd;
+    }
 
-        /* AI Explanation Area */
-        #explanation-container {
-            margin-top: 20px;
-            padding: 20px;
-            border: 1px solid var(--border-color);
-            border-radius: var(--border-radius);
-            background-color: #fdfdfd;
-        }
-        #explanation-container h3 {
-            color: var(--primary-accent);
-            margin-bottom: 10px;
-            font-size: 1.3em;
-            border-bottom: 1px dashed var(--border-color);
-            padding-bottom: 8px;
-        }
-        #explanation-text { font-size: 0.95em; color: var(--text-color); }
-        #explanation-text h1, #explanation-text h2, #explanation-text h3, #explanation-text h4 { margin-top: 1em; margin-bottom: 0.5em; font-weight: 600; line-height: 1.2; color: var(--primary-accent); }
-        #explanation-text p { margin-bottom: 1em; }
-        #explanation-text ul, #explanation-text ol { margin-left: 20px; margin-bottom: 1em; }
-        #explanation-text li { margin-bottom: 0.5em; }
-        #explanation-text strong { font-weight: 700; }
-        #explanation-text em { font-style: italic; }
-        #explanation-text pre { background-color: #f4f4f4; border: 1px solid #ddd; border-left: 3px solid var(--primary-accent); padding: 10px; overflow-x: auto; border-radius: 4px; margin-bottom: 1em; }
-        #explanation-text code { font-family: 'Courier New', Courier, monospace; background-color: #eee; padding: 2px 4px; border-radius: 3px; }
-        #explanation-text blockquote { border-left: 4px solid var(--border-color); padding-left: 15px; margin-left: 0; color: #555; font-style: italic; margin-bottom: 1em; }
-        .explanation-loader { margin: 20px auto; }
+    #question-text {
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: var(--primary-accent);
+    }
 
-        /* Google Search Button */
-        #google-search-btn { background-color: #4285F4; }
-        #google-search-btn:hover { background-color: #357ae8; }
-        
-        #external-reviewers-section {
-            margin-top: 10px;
-            margin-bottom: 20px;
-            padding: 25px;
-            background-color: var(--tertiary-bg);
-            border-radius: var(--border-radius);
-            border: 1px solid var(--border-color);
-        }
-        #external-reviewers-section h2 {
-            text-align: center;
-            color: var(--primary-accent);
-            margin-top: 0;
-            margin-bottom: 20px;
-            font-size: 1.4em;
-        }
-        .reviewer-links-list {
-            list-style-type: none;
-            padding: 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 15px;
-        }
-        .reviewer-links-list li a {
-            display: block;
-            padding: 12px 15px;
-            background-color: var(--secondary-bg);
-            color: var(--text-color);
-            text-decoration: none;
-            border-radius: 5px;
-            border: 1px solid var(--border-color);
-            transition: all 0.2s ease-in-out;
-            text-align: center;
-            font-weight: 500;
-        }
-        .reviewer-links-list li a:hover {
-            background-color: var(--primary-accent);
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+    .options { list-style-type: none; padding: 0; margin: 10px 0 0 0; }
+    .option-item {
+        margin-bottom: 12px;
+        padding: 12px 15px;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        transition: background-color 0.2s ease, border-color 0.2s ease;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .option-item:hover { background-color: var(--tertiary-bg); }
+    .option-item input[type="radio"]:checked + label {
+         font-weight: 600;
+         color: var(--primary-accent);
+     }
+    .option-item input[type="radio"] {
+        margin-right: 12px;
+        transform: scale(1.1);
+        accent-color: var(--primary-accent);
+    }
+    .option-item label { cursor: pointer; flex-grow: 1; }
 
-        /* Visibility Control */
-        .hidden { display: none !important; }
-    </style>
+    /* Feedback Area */
+    #feedback-area {
+        margin-top: 15px;
+        padding: 12px;
+        border-radius: 5px;
+        font-weight: 600;
+        text-align: center;
+        font-size: 1.1em;
+    }
+    .feedback-correct { background-color: #d4edda; border: 1px solid #c3e6cb; color: #155724; }
+    .feedback-incorrect { background-color: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; }
+    .feedback-skipped { background-color: #fff3cd; border: 1px solid #ffeeba; color: #856404; }
+
+    /* Control Buttons */
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        margin-top: 25px;
+        flex-wrap: wrap; /* Allow buttons to wrap */
+    }
+
+    .quiz-button {
+        flex-grow: 1;
+        padding: 12px 20px;
+        font-size: 1.05em;
+        font-weight: 600;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s ease, opacity 0.2s ease;
+        text-align: center;
+        min-width: 150px; /* Ensure buttons don't get too squished */
+    }
+
+    #submit-answer-btn { background-color: var(--primary-accent); }
+    #submit-answer-btn:hover { background-color: var(--secondary-accent); }
+    #skip-question-btn { background-color: var(--skip-color); }
+    #skip-question-btn:hover { background-color: #f1c40f; }
+    #next-question-btn { background-color: var(--correct-color); }
+    #next-question-btn:hover { background-color: #25a244; }
+    #explain-question-btn { background-color: var(--primary-accent); }
+    #explain-question-btn:hover { background-color: var(--secondary-accent); }
+    .quiz-button:disabled {
+         background-color: var(--disabled-color);
+         cursor: not-allowed;
+         opacity: 0.7;
+    }
+
+    /* Results Area */
+    #results-container {
+        margin-top: 30px;
+        padding: 25px;
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        background-color: var(--secondary-bg);
+        text-align: center;
+    }
+    #results-container h2 {
+         margin-top: 0;
+         color: var(--primary-accent);
+         border-bottom: 1px solid var(--border-color);
+         padding-bottom: 10px;
+         margin-bottom: 20px;
+         font-size: 1.5em;
+    }
+    #final-score-display {
+         font-weight: 700;
+         font-size: 1.8em;
+         margin-bottom: 15px;
+         color: var(--primary-accent);
+    }
+    #results-summary { font-size: 1.1em; margin-bottom: 25px; }
+    #restart-button {
+        padding: 12px 30px;
+        font-size: 1.1em;
+        font-weight: 600;
+        color: #fff;
+        background-color: var(--primary-accent);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        margin-top: 15px;
+    }
+    #restart-button:hover { background-color: var(--secondary-accent); }
+
+    /* Review Area */
+    #review-container {
+        margin-top: 30px;
+        padding: 25px;
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        background-color: var(--secondary-bg);
+    }
+    #review-container h2 {
+         margin-top: 0;
+         color: var(--primary-accent);
+         border-bottom: 1px solid var(--border-color);
+         padding-bottom: 10px;
+         margin-bottom: 20px;
+         font-size: 1.5em;
+    }
+    .review-item {
+        padding: 20px;
+        margin-bottom: 15px;
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        background-color: #fdfdfd;
+    }
+    .review-question-text {
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-size: 1.1em;
+    }
+    .review-user-answer {
+        color: var(--incorrect-color);
+        margin-bottom: 5px;
+    }
+    .review-correct-answer {
+        color: var(--correct-color);
+        margin-bottom: 15px;
+    }
+    .review-explanation {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px dashed var(--border-color);
+    }
+    .explain-review-btn {
+        background-color: var(--primary-accent);
+        flex-grow: 0; /* Don't let it take full width */
+    }
+    .explain-review-btn:hover {
+        background-color: var(--secondary-accent);
+    }
+    
+    /* API Key Input */
+    .api-key-container {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: var(--tertiary-bg);
+        border-radius: var(--border-radius);
+        border: 1px solid var(--border-color);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+    .api-key-container label { font-weight: 600; flex-shrink: 0; }
+    .api-key-container input[type="password"] {
+        flex-grow: 1;
+        padding: 10px 12px;
+        border: 1px solid var(--border-color);
+        border-radius: 5px;
+        font-size: 1em;
+        background-color: #fff;
+        color: var(--text-color);
+        min-width: 150px;
+    }
+    .api-key-container #save-api-key-btn {
+        padding: 10px 15px;
+        background-color: var(--primary-accent);
+        min-width: unset;
+        flex-grow: 0;
+        font-size: 1em;
+    }
+    #api-key-status {
+        margin-top: 5px;
+        font-size: 0.9em;
+        text-align: center;
+        width: 100%;
+    }
+    .api-key-status-success { color: var(--correct-color); }
+    .api-key-status-error { color: var(--incorrect-color); }
+
+    /* AI Explanation Area */
+    #explanation-container {
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        background-color: #fdfdfd;
+    }
+    #explanation-container h3 {
+        color: var(--primary-accent);
+        margin-bottom: 10px;
+        font-size: 1.3em;
+        border-bottom: 1px dashed var(--border-color);
+        padding-bottom: 8px;
+    }
+    #explanation-text { font-size: 0.95em; color: var(--text-color); }
+    #explanation-text h1, #explanation-text h2, #explanation-text h3, #explanation-text h4 { margin-top: 1em; margin-bottom: 0.5em; font-weight: 600; line-height: 1.2; color: var(--primary-accent); }
+    #explanation-text p { margin-bottom: 1em; }
+    #explanation-text ul, #explanation-text ol { margin-left: 20px; margin-bottom: 1em; }
+    #explanation-text li { margin-bottom: 0.5em; }
+    #explanation-text strong { font-weight: 700; }
+    #explanation-text em { font-style: italic; }
+    #explanation-text pre { background-color: #f4f4f4; border: 1px solid #ddd; border-left: 3px solid var(--primary-accent); padding: 10px; overflow-x: auto; border-radius: 4px; margin-bottom: 1em; }
+    #explanation-text code { font-family: 'Courier New', Courier, monospace; background-color: #eee; padding: 2px 4px; border-radius: 3px; }
+    #explanation-text blockquote { border-left: 4px solid var(--border-color); padding-left: 15px; margin-left: 0; color: #555; font-style: italic; margin-bottom: 1em; }
+    .explanation-loader { margin: 20px auto; }
+
+    /* Google Search Button */
+    #google-search-btn { background-color: #4285F4; }
+    #google-search-btn:hover { background-color: #357ae8; }
+    
+    #external-reviewers-section {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 25px;
+        background-color: var(--tertiary-bg);
+        border-radius: var(--border-radius);
+        border: 1px solid var(--border-color);
+    }
+    #external-reviewers-section h2 {
+        text-align: center;
+        color: var(--primary-accent);
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 1.4em;
+    }
+    .reviewer-links-list {
+        list-style-type: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px;
+    }
+    .reviewer-links-list li a {
+        display: block;
+        padding: 12px 15px;
+        background-color: var(--secondary-bg);
+        color: var(--text-color);
+        text-decoration: none;
+        border-radius: 5px;
+        border: 1px solid var(--border-color);
+        transition: all 0.2s ease-in-out;
+        text-align: center;
+        font-weight: 500;
+    }
+    .reviewer-links-list li a:hover {
+        background-color: var(--primary-accent);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Visibility Control */
+    .hidden { display: none !important; }
+</style>
+
 </head>
 <body>
 
-    <!-- Splash Screen -->
-    <div id="splash-screen">
-        <img src="logo.png" alt="Logo"> <!-- Make sure you have logo.png -->
-        <div class="loader"></div>
-    </div>
+<!-- Splash Screen -->
+<div id="splash-screen">
+    <img src="logo.png" alt="Logo"> <!-- Make sure you have logo.png -->
+    <div class="loader"></div>
+</div>
 
-    <!-- Main Application -->
-    <div class="app-container hidden">
-        <header>
-            <h1 class="quiz-title">CAAP Mock by Chippo</h1>
-            
-            <div id="mode-selector-container">
-                 <!-- --- NEW: Disclaimer Section --- -->
-                <div id="disclaimer-section">
-                    <h3>Disclaimer & Important Notice</h3>
-                    <p>This is a mock quiz and reviewer tool created from a compilation of publicly available questions. It is <strong>NOT</strong> an official CAAP examination.</p>
-                    <p>The information provided, especially the answers and explanations generated by the AI, may contain inaccuracies. <strong>Always verify information with official sources</strong>, such as the Philippine Civil Aviation Regulations (PCAR) and official pilot training materials.</p>
-                    <p>The developer is not responsible for any inaccuracies or for your performance on the actual examination. Use this tool as a supplementary study aid at your own risk.</p>
-                    <div class="disclaimer-ack">
-                        <input type="checkbox" id="disclaimer-checkbox">
-                        <label for="disclaimer-checkbox">I have read and understood the disclaimer.</label>
-                    </div>
-                </div>
-                 <!-- --- End Disclaimer Section --- -->
-
-                <h2>Choose Your Mode</h2>
-                <div class="mode-button-container">
-                    <button id="caap-mode-btn" class="mode-button">CAAP Mode (Exam)</button>
-                    <button id="study-mode-btn" class="mode-button">Study Mode (Learn)</button>
-                </div>
-            </div>
-
-            <div id="setup-container" class="hidden">
-                 <div class="selector-container">
-                    <label for="subject-selector">Select Subject:</label>
-                    <select id="subject-selector">
-                        <option value="">-- Select a Subject --</option>
-                    </select>
-                </div>
-                <!-- NEW: Question Count Selector for CAAP Mode -->
-                <div id="question-count-container" class="selector-container hidden">
-                    <label for="question-count-input">Number of Questions:</label>
-                    <input type="number" id="question-count-input" value="40" min="10">
-                    <span id="max-questions-info"></span>
-                </div>
-                <div class="api-key-container">
-                    <label for="gemini-api-key">Gemini API Key:</label>
-                    <input type="password" id="gemini-api-key" placeholder="Enter your Gemini API key">
-                    <button id="save-api-key-btn" class="quiz-button">Save Key</button>
-                    <div id="api-key-status" class="hidden"></div>
-                </div>
-            </div>
-
-            <div id="quiz-info-area" class="quiz-info hidden">
-                <span id="progress-display">Q: 1 / 10</span>
-                <span id="score-display">Score: 100%</span>
-                <span id="skips-display">Skips Left: 3</span>
-            </div>
-        </header>
+<!-- Main Application -->
+<div class="app-container hidden">
+    <header>
+        <h1 class="quiz-title">CAAP Mock by Chippo</h1>
         
-        <section id="external-reviewers-section">
-            <h2>External Study Links</h2>
-            <ul class="reviewer-links-list">
-                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-air-law_4fh" target="_blank" rel="noopener noreferrer">Air Law</a></li>
-                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-aircraft-general-knowledge" target="_blank" rel="noopener noreferrer">Aircraft General Knowledge</a></li>
-                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-principles-of-flight" target="_blank" rel="noopener noreferrer">Principles of Flight</a></li>
-                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=untitled-quiz_16065dk" target="_blank" rel="noopener noreferrer">Flight Performance & Planning</a></li>
-                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-human-performance" target="_blank" rel="noopener noreferrer">Human Performance</a></li>
-                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-meteorology_5ic" target="_blank" rel="noopener noreferrer">Meteorology</a></li>
-                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-navigation_3pd" target="_blank" rel="noopener noreferrer">Navigation</a></li>
-                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-operational-procedures" target="_blank" rel="noopener noreferrer">Operational Procedures</a></li>
-                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=private-pilotradio-telephony" target="_blank" rel="noopener noreferrer">Radio Telephony</a></li>
-                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-eqc-c172m" target="_blank" rel="noopener noreferrer">EQC – Cessna 172M</a></li>
-            </ul>
-        </section>
-
-        <div id="error-container" class="error-message hidden"></div>
-
-        <div id="quiz-content" class="hidden">
-            <div id="quiz-layout">
-                <div id="main-content">
-                    <div id="question-area">
-                        <div id="question-text">Question text will load here...</div>
-                        <ul id="options-list" class="options"></ul>
-                    </div>
-                    <div id="feedback-area" class="hidden"></div>
-                    <div id="explanation-container" class="hidden">
-                        <h3>AI Explanation:</h3>
-                        <div id="explanation-text"></div>
-                        <div class="loader explanation-loader hidden"></div>
-                        <div id="explanation-error" class="error-message hidden"></div>
-                    </div>
-                    <div class="button-container">
-                        <button id="submit-answer-btn" class="quiz-button">Submit Answer</button>
-                        <button id="skip-question-btn" class="quiz-button">Skip Question</button>
-                        <button id="google-search-btn" class="quiz-button hidden">Search Question</button>
-                        <button id="explain-question-btn" class="quiz-button hidden">Explain Answer</button>
-                        <button id="next-question-btn" class="quiz-button hidden">Next Question</button>
-                    </div>
+        <div id="mode-selector-container">
+             <!-- --- NEW: Disclaimer Section --- -->
+            <div id="disclaimer-section">
+                <h3>Disclaimer & Important Notice</h3>
+                <p>This is a mock quiz and reviewer tool created from a compilation of publicly available questions. It is <strong>NOT</strong> an official CAAP examination.</p>
+                <p>The information provided, especially the answers and explanations generated by the AI, may contain inaccuracies. <strong>Always verify information with official sources</strong>, such as the Philippine Civil Aviation Regulations (PCAR) and official pilot training materials.</p>
+                <p>The developer is not responsible for any inaccuracies or for your performance on the actual examination. Use this tool as a supplementary study aid at your own risk.</p>
+                <div class="disclaimer-ack">
+                    <input type="checkbox" id="disclaimer-checkbox">
+                    <label for="disclaimer-checkbox">I have read and understood the disclaimer.</label>
                 </div>
-                <aside id="question-browser-container" class="hidden">
-                    <h3>Questions</h3>
-                    <div id="question-browser-list" class="question-browser-list">
-                    </div>
-                </aside>
+            </div>
+             <!-- --- End Disclaimer Section --- -->
+
+            <h2>Choose Your Mode</h2>
+            <div class="mode-button-container">
+                <button id="caap-mode-btn" class="mode-button">CAAP Mode (Exam)</button>
+                <button id="study-mode-btn" class="mode-button">Study Mode (Learn)</button>
             </div>
         </div>
 
-        <div id="results-container" class="hidden">
-            <h2>Quiz Completed!</h2>
-            <div id="final-score-display">Score: 90%</div>
-            <div id="results-summary">You answered X out of Y questions correctly.</div>
-            <button id="restart-button" class="quiz-button">Choose Another Subject</button>
-        </div>
-
-        <div id="review-container" class="hidden">
-            <h2>Review Incorrect Answers</h2>
-            <div id="incorrect-answers-list">
+        <div id="setup-container" class="hidden">
+             <div class="selector-container">
+                <label for="subject-selector">Select Subject:</label>
+                <select id="subject-selector">
+                    <option value="">-- Select a Subject --</option>
+                </select>
+            </div>
+            <!-- NEW: Question Count Selector for CAAP Mode -->
+            <div id="question-count-container" class="selector-container hidden">
+                <label for="question-count-input">Number of Questions:</label>
+                <input type="number" id="question-count-input" value="40" min="10">
+                <span id="max-questions-info"></span>
+            </div>
+            <div class="api-key-container">
+                <label for="gemini-api-key">Gemini API Key:</label>
+                <input type="password" id="gemini-api-key" placeholder="Enter your Gemini API key">
+                <button id="save-api-key-btn" class="quiz-button">Save Key</button>
+                <div id="api-key-status" class="hidden"></div>
             </div>
         </div>
 
+        <div id="quiz-info-area" class="quiz-info hidden">
+            <span id="progress-display">Q: 1 / 10</span>
+            <span id="score-display">Score: 0</span>
+            <span id="skips-display">Skips Left: 3</span>
+        </div>
+    </header>
+    
+    <section id="external-reviewers-section">
+        <h2>External Study Links</h2>
+        <ul class="reviewer-links-list">
+            <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-air-law_4fh" target="_blank" rel="noopener noreferrer">Air Law</a></li>
+            <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-aircraft-general-knowledge" target="_blank" rel="noopener noreferrer">Aircraft General Knowledge</a></li>
+            <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-principles-of-flight" target="_blank" rel="noopener noreferrer">Principles of Flight</a></li>
+            <li><a href="https://www.proprofs.com/quiz-school/story.php?title=untitled-quiz_16065dk" target="_blank" rel="noopener noreferrer">Flight Performance & Planning</a></li>
+            <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-human-performance" target="_blank" rel="noopener noreferrer">Human Performance</a></li>
+            <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-meteorology_5ic" target="_blank" rel="noopener noreferrer">Meteorology</a></li>
+            <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-navigation_3pd" target="_blank" rel="noopener noreferrer">Navigation</a></li>
+            <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-operational-procedures" target="_blank" rel="noopener noreferrer">Operational Procedures</a></li>
+            <li><a href="https://www.proprofs.com/quiz-school/story.php?title=private-pilotradio-telephony" target="_blank" rel="noopener noreferrer">Radio Telephony</a></li>
+            <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-eqc-c172m" target="_blank" rel="noopener noreferrer">EQC – Cessna 172M</a></li>
+        </ul>
+    </section>
+
+    <div id="error-container" class="error-message hidden"></div>
+
+    <div id="quiz-content" class="hidden">
+        <div id="quiz-layout">
+            <div id="main-content">
+                <div id="question-area">
+                    <div id="question-text">Question text will load here...</div>
+                    <ul id="options-list" class="options"></ul>
+                </div>
+                <div id="feedback-area" class="hidden"></div>
+                <div id="explanation-container" class="hidden">
+                    <h3>AI Explanation:</h3>
+                    <div id="explanation-text"></div>
+                    <div class="loader explanation-loader hidden"></div>
+                    <div id="explanation-error" class="error-message hidden"></div>
+                </div>
+                <div class="button-container">
+                    <button id="submit-answer-btn" class="quiz-button">Submit Answer</button>
+                    <button id="skip-question-btn" class="quiz-button">Skip Question</button>
+                    <button id="google-search-btn" class="quiz-button hidden">Search Question</button>
+                    <button id="explain-question-btn" class="quiz-button hidden">Explain Answer</button>
+                    <button id="next-question-btn" class="quiz-button hidden">Next Question</button>
+                </div>
+            </div>
+            <aside id="question-browser-container" class="hidden">
+                <h3>Questions</h3>
+                <div id="question-browser-list" class="question-browser-list">
+                </div>
+            </aside>
+        </div>
     </div>
 
-    <!-- SDK Imports and Scripts -->
-    <script type="module">
-      import { GoogleGenAI } from 'https://esm.run/@google/genai';
-      window.GoogleGenAI = GoogleGenAI;
-      const initialApiKey = localStorage.getItem('geminiApiKey');
-      if (initialApiKey) {
-        try {
-          window.geminiSdkInstance = new GoogleGenAI({ apiKey: initialApiKey });
-          console.log("Gemini AI SDK pre-initialized globally.");
-        } catch (e) {
-          console.error("Error pre-initializing Gemini SDK:", e);
-          window.geminiSdkInstance = null;
+    <div id="results-container" class="hidden">
+        <h2>Quiz Completed!</h2>
+        <div id="final-score-display">Score: 90%</div>
+        <div id="results-summary">You answered X out of Y questions correctly.</div>
+        <button id="restart-button" class="quiz-button">Choose Another Subject</button>
+    </div>
+
+    <div id="review-container" class="hidden">
+        <h2>Review Incorrect Answers</h2>
+        <div id="incorrect-answers-list">
+        </div>
+    </div>
+
+</div>
+
+<!-- SDK Imports and Scripts -->
+<script type="module">
+  import { GoogleGenAI } from 'https://esm.run/@google/genai';
+  window.GoogleGenAI = GoogleGenAI;
+  const initialApiKey = localStorage.getItem('geminiApiKey');
+  if (initialApiKey) {
+    try {
+      window.geminiSdkInstance = new GoogleGenAI({ apiKey: initialApiKey });
+      console.log("Gemini AI SDK pre-initialized globally.");
+    } catch (e) {
+      console.error("Error pre-initializing Gemini SDK:", e);
+      window.geminiSdkInstance = null;
+    }
+  } else {
+    window.geminiSdkInstance = null;
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // --- DOM Elements ---
+        const splashScreen = document.getElementById('splash-screen');
+        const appContainer = document.querySelector('.app-container');
+        const modeSelectorContainer = document.getElementById('mode-selector-container');
+        const caapModeBtn = document.getElementById('caap-mode-btn');
+        const studyModeBtn = document.getElementById('study-mode-btn');
+        const setupContainer = document.getElementById('setup-container');
+        const subjectSelector = document.getElementById('subject-selector');
+        const errorContainer = document.getElementById('error-container');
+        const quizInfoArea = document.getElementById('quiz-info-area');
+        const progressDisplay = document.getElementById('progress-display');
+        const scoreDisplay = document.getElementById('score-display');
+        const skipsDisplay = document.getElementById('skips-display');
+        const quizContent = document.getElementById('quiz-content');
+        const questionTextElement = document.getElementById('question-text');
+        const optionsList = document.getElementById('options-list');
+        const feedbackArea = document.getElementById('feedback-area');
+        const submitBtn = document.getElementById('submit-answer-btn');
+        const skipBtn = document.getElementById('skip-question-btn');
+        const nextBtn = document.getElementById('next-question-btn');
+        const resultsContainer = document.getElementById('results-container');
+        const finalScoreDisplay = document.getElementById('final-score-display');
+        const resultsSummary = document.getElementById('results-summary');
+        const restartBtn = document.getElementById('restart-button');
+        const quizTitleElement = document.querySelector('.quiz-title');
+        const geminiApiKeyInput = document.getElementById('gemini-api-key');
+        const saveApiKeyBtn = document.getElementById('save-api-key-btn');
+        const apiKeyStatus = document.getElementById('api-key-status');
+        const explanationContainer = document.getElementById('explanation-container');
+        const explanationText = document.getElementById('explanation-text');
+        const explanationLoader = document.querySelector('.explanation-loader');
+        const explanationError = document.getElementById('explanation-error');
+        const googleSearchBtn = document.getElementById('google-search-btn');
+        const explainBtn = document.getElementById('explain-question-btn');
+        const questionBrowserContainer = document.getElementById('question-browser-container');
+        const questionBrowserList = document.getElementById('question-browser-list');
+        const reviewContainer = document.getElementById('review-container');
+        const incorrectAnswersList = document.getElementById('incorrect-answers-list');
+        const externalReviewersSection = document.getElementById('external-reviewers-section');
+        const disclaimerCheckbox = document.getElementById('disclaimer-checkbox');
+        const questionCountContainer = document.getElementById('question-count-container');
+        const questionCountInput = document.getElementById('question-count-input');
+        const maxQuestionsInfo = document.getElementById('max-questions-info');
+
+
+        // --- State Variables ---
+        let currentMode = null; // 'caap' or 'study'
+        let currentQuizData = null;
+        let allQuestions = [];
+        let questionsToAsk = [];
+        let skippedQuestions = [];
+        let questionStatus = {}; 
+        let userAnswers = {}; 
+        let currentQuestionIndex = 0;
+        let totalQuestionsInQuiz = 0;
+        let correctAnswersCount = 0;
+        let incorrectAnswersCount = 0;
+        let remainingSkips = 3; // For Study Mode
+        let consecutiveSkips = 0; // For CAAP Mode
+        let currentScoreValue = 0; // New scoring system
+        let questionsAnsweredInSession = 0;
+        let genAI = window.geminiSdkInstance;
+        const MODEL_NAME = "gemini-2.5-flash"; 
+        let lastAnsweredQuestion = null;
+        let lastUserAnswer = null;
+        let lastCorrectAnswer = null;
+
+        const subjectNames = [
+            { name: "Air Law", filename: "Air Law.json" },
+            { name: "Principles of Flight", filename: "POF.json" },
+            { name: "Navigation", filename: "Navigation.json" },
+            { name: "Navigation", filename: "Navigation2.json" },
+            { name: "Aircraft General Knowledge", filename: "Aircraft General Knowledge.json" },
+            { name: "Human Performance and Limitations", filename: "HP.json" },
+            { name: "Meteorology", filename: "Meteorology.json" },
+            { name: "Operational Procedures", filename: "OP.json" },
+            { name: "Flight Performance and Planning", filename: "FPP.json" },
+            { name: "Radiotelephony", filename: "Radiotelephony.json" },
+            { name: "EQC - C172", filename: "EQC.json" },
+            { name: "Private Pilot Ground Course Exam", filename: "questions.json" }
+        ];
+
+        // --- Initialization ---
+        function initializeApp() {
+            hideElement(splashScreen);
+            showElement(appContainer);
+            appContainer.style.opacity = 1;
+            populateSubjectSelector();
+            resetToModeSelection();
+
+            genAI = window.geminiSdkInstance;
+            if (typeof window.GoogleGenAI === 'undefined') {
+                apiKeyStatus.textContent = 'ERROR: Google Gemini SDK not loaded.';
+                apiKeyStatus.className = 'api-key-status-error';
+                showElement(apiKeyStatus);
+                genAI = null;
+                window.geminiSdkInstance = null;
+            } else if (genAI) {
+                geminiApiKeyInput.value = localStorage.getItem('geminiApiKey');
+                apiKeyStatus.textContent = 'API key loaded. Gemini AI ready!';
+                apiKeyStatus.className = 'api-key-status-success';
+                showElement(apiKeyStatus);
+            } else {
+                hideElement(apiKeyStatus);
+            }
         }
-      } else {
-        window.geminiSdkInstance = null;
-      }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // --- DOM Elements ---
-            const splashScreen = document.getElementById('splash-screen');
-            const appContainer = document.querySelector('.app-container');
-            const modeSelectorContainer = document.getElementById('mode-selector-container');
-            const caapModeBtn = document.getElementById('caap-mode-btn');
-            const studyModeBtn = document.getElementById('study-mode-btn');
-            const setupContainer = document.getElementById('setup-container');
-            const subjectSelector = document.getElementById('subject-selector');
-            const errorContainer = document.getElementById('error-container');
-            const quizInfoArea = document.getElementById('quiz-info-area');
-            const progressDisplay = document.getElementById('progress-display');
-            const scoreDisplay = document.getElementById('score-display');
-            const skipsDisplay = document.getElementById('skips-display');
-            const quizContent = document.getElementById('quiz-content');
-            const questionTextElement = document.getElementById('question-text');
-            const optionsList = document.getElementById('options-list');
-            const feedbackArea = document.getElementById('feedback-area');
-            const submitBtn = document.getElementById('submit-answer-btn');
-            const skipBtn = document.getElementById('skip-question-btn');
-            const nextBtn = document.getElementById('next-question-btn');
-            const resultsContainer = document.getElementById('results-container');
-            const finalScoreDisplay = document.getElementById('final-score-display');
-            const resultsSummary = document.getElementById('results-summary');
-            const restartBtn = document.getElementById('restart-button');
-            const quizTitleElement = document.querySelector('.quiz-title');
-            const geminiApiKeyInput = document.getElementById('gemini-api-key');
-            const saveApiKeyBtn = document.getElementById('save-api-key-btn');
-            const apiKeyStatus = document.getElementById('api-key-status');
-            const explanationContainer = document.getElementById('explanation-container');
-            const explanationText = document.getElementById('explanation-text');
-            const explanationLoader = document.querySelector('.explanation-loader');
-            const explanationError = document.getElementById('explanation-error');
-            const googleSearchBtn = document.getElementById('google-search-btn');
-            const explainBtn = document.getElementById('explain-question-btn');
-            const questionBrowserContainer = document.getElementById('question-browser-container');
-            const questionBrowserList = document.getElementById('question-browser-list');
-            const reviewContainer = document.getElementById('review-container');
-            const incorrectAnswersList = document.getElementById('incorrect-answers-list');
-            const externalReviewersSection = document.getElementById('external-reviewers-section');
-            const disclaimerCheckbox = document.getElementById('disclaimer-checkbox');
-            // NEW DOM Elements for question count
-            const questionCountContainer = document.getElementById('question-count-container');
-            const questionCountInput = document.getElementById('question-count-input');
-            const maxQuestionsInfo = document.getElementById('max-questions-info');
 
+        // --- UI Helper Functions ---
+        function showElement(el) { el?.classList.remove('hidden'); }
+        function hideElement(el) { el?.classList.add('hidden'); }
+        function disableButton(btn) { btn.disabled = true; }
+        function enableButton(btn) { btn.disabled = false; }
+        function displayError(message) {
+            errorContainer.textContent = message;
+            showElement(errorContainer);
+            hideElement(quizContent);
+            hideElement(quizInfoArea);
+            hideElement(resultsContainer);
+            hideElement(explanationContainer);
+        }
+        function clearError() { hideElement(errorContainer); }
 
-            // --- State Variables ---
-            let currentMode = null; // 'caap' or 'study'
-            let currentQuizData = null;
-            let allQuestions = [];
-            let questionsToAsk = [];
-            let skippedQuestions = [];
-            let questionStatus = {}; 
-            let userAnswers = {}; 
-            let currentQuestionIndex = 0;
-            let totalQuestionsInQuiz = 0;
-            let correctAnswersCount = 0;
-            let incorrectAnswersCount = 0;
-            let remainingSkips = 3;
-            let questionsAnsweredInSession = 0;
-            let genAI = window.geminiSdkInstance;
-            const MODEL_NAME = "gemini-2.5-flash"; 
-            let lastAnsweredQuestion = null;
-            let lastUserAnswer = null;
-            let lastCorrectAnswer = null;
+        // --- Quiz & UI Logic ---
+        function resetToModeSelection() {
+            clearError();
+            hideElement(setupContainer);
+            hideElement(quizContent);
+            hideElement(quizInfoArea);
+            hideElement(resultsContainer);
+            hideElement(feedbackArea);
+            hideElement(explanationContainer);
+            hideElement(questionBrowserContainer);
+            hideElement(reviewContainer);
+            hideElement(questionCountContainer);
+            showElement(modeSelectorContainer);
+            showElement(externalReviewersSection);
+            enableButton(subjectSelector);
+            subjectSelector.value = "";
+            quizTitleElement.textContent = 'CAAP Mock by Chippo';
+            currentMode = null;
 
-            const subjectNames = [
-                { name: "Air Law", filename: "Air Law.json" },
-                { name: "Principles of Flight", filename: "POF.json" },
-                { name: "Navigation", filename: "Navigation.json" },
-                { name: "Navigation", filename: "Navigation2.json" },
-                { name: "Aircraft General Knowledge", filename: "Aircraft General Knowledge.json" },
-                { name: "Human Performance and Limitations", filename: "HP.json" },
-                { name: "Meteorology", filename: "Meteorology.json" },
-                { name: "Operational Procedures", filename: "OP.json" },
-                { name: "Flight Performance and Planning", filename: "FPP.json" },
-                { name: "Radiotelephony", filename: "Radiotelephony.json" },
-                { name: "EQC - C172", filename: "EQC.json" },
-                { name: "Private Pilot Ground Course Exam", filename: "questions.json" }
-            ];
+            disclaimerCheckbox.checked = false;
+            disableButton(caapModeBtn);
+            disableButton(studyModeBtn);
+        }
 
-            // --- Initialization ---
-            function initializeApp() {
-                hideElement(splashScreen);
-                showElement(appContainer);
-                appContainer.style.opacity = 1;
-                populateSubjectSelector();
-                resetToModeSelection();
-
-                genAI = window.geminiSdkInstance;
-                if (typeof window.GoogleGenAI === 'undefined') {
-                    apiKeyStatus.textContent = 'ERROR: Google Gemini SDK not loaded.';
-                    apiKeyStatus.className = 'api-key-status-error';
-                    showElement(apiKeyStatus);
-                    genAI = null;
-                    window.geminiSdkInstance = null;
-                } else if (genAI) {
-                    geminiApiKeyInput.value = localStorage.getItem('geminiApiKey');
-                    apiKeyStatus.textContent = 'API key loaded. Gemini AI ready!';
-                    apiKeyStatus.className = 'api-key-status-success';
-                    showElement(apiKeyStatus);
-                } else {
-                    hideElement(apiKeyStatus);
-                }
-            }
-
-            // --- UI Helper Functions ---
-            function showElement(el) { el?.classList.remove('hidden'); }
-            function hideElement(el) { el?.classList.add('hidden'); }
-            function disableButton(btn) { btn.disabled = true; }
-            function enableButton(btn) { btn.disabled = false; }
-            function displayError(message) {
-                errorContainer.textContent = message;
-                showElement(errorContainer);
-                hideElement(quizContent);
-                hideElement(quizInfoArea);
-                hideElement(resultsContainer);
-                hideElement(explanationContainer);
-            }
-            function clearError() { hideElement(errorContainer); }
-
-            // --- Quiz & UI Logic ---
-            function resetToModeSelection() {
-                clearError();
-                hideElement(setupContainer);
-                hideElement(quizContent);
-                hideElement(quizInfoArea);
-                hideElement(resultsContainer);
-                hideElement(feedbackArea);
-                hideElement(explanationContainer);
-                hideElement(questionBrowserContainer);
-                hideElement(reviewContainer);
-                hideElement(questionCountContainer); // NEW: Hide question count on reset
-                showElement(modeSelectorContainer);
-                showElement(externalReviewersSection);
-                enableButton(subjectSelector);
-                subjectSelector.value = "";
-                quizTitleElement.textContent = 'CAAP Mock by Chippo';
-                currentMode = null;
-
-                disclaimerCheckbox.checked = false;
-                disableButton(caapModeBtn);
-                disableButton(studyModeBtn);
-            }
-
-            function selectMode(mode) {
-                currentMode = mode;
-                hideElement(modeSelectorContainer);
-                hideElement(externalReviewersSection);
-                showElement(setupContainer);
-                
-                // NEW: Show/hide question count selector based on mode
-                if (mode === 'caap') {
-                    showElement(questionCountContainer);
-                } else {
-                    hideElement(questionCountContainer);
-                }
-
-                if (mode === 'study' && !localStorage.getItem('geminiApiKey')) {
-                    hideElement(apiKeyStatus);
-                }
-            }
+        function selectMode(mode) {
+            currentMode = mode;
+            hideElement(modeSelectorContainer);
+            hideElement(externalReviewersSection);
+            showElement(setupContainer);
             
-            function shuffleArray(array) {
-                for (let i = array.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [array[i], array[j]] = [array[j], array[i]];
-                }
+            if (mode === 'caap') {
+                showElement(questionCountContainer);
+            } else {
+                hideElement(questionCountContainer);
             }
 
-            function populateSubjectSelector() {
-                subjectSelector.innerHTML = '<option value="">-- Select a Subject --</option>';
-                subjectNames.forEach(subject => {
-                    const option = document.createElement('option');
-                    option.value = subject.filename;
-                    option.textContent = subject.name;
-                    subjectSelector.appendChild(option);
-                });
+            if (mode === 'study' && !localStorage.getItem('geminiApiKey')) {
+                hideElement(apiKeyStatus);
             }
-
-            function loadQuiz(filename) {
-                resetUIForNewQuiz();
-                disableButton(subjectSelector);
-                feedbackArea.textContent = 'Loading Quiz...';
-                feedbackArea.className = 'feedback-skipped';
-                showElement(feedbackArea);
-
-                fetch(filename)
-                    .then(response => {
-                        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-                        return response.json();
-                    })
-                    .then(data => {
-                        if (!data || !Array.isArray(data.questions) || data.questions.length === 0) {
-                            throw new Error(`Invalid or empty quiz data in ${filename}`);
-                        }
-                        currentQuizData = data;
-                        allQuestions = data.questions.map((q, index) => ({ ...q, originalIndex: index }));
-                        
-                        // NEW: Update question count input for CAAP mode
-                        if (currentMode === 'caap') {
-                            const totalAvailable = allQuestions.length;
-                            questionCountInput.max = totalAvailable;
-                            maxQuestionsInfo.textContent = `(Max: ${totalAvailable})`;
-                            if (parseInt(questionCountInput.value) > totalAvailable) {
-                                questionCountInput.value = totalAvailable;
-                            }
-                        }
-                        
-                        startQuiz();
-                    })
-                    .catch(error => {
-                        console.error('Error loading quiz:', error);
-                        displayError(`Failed to load quiz: ${error.message}`);
-                        hideElement(feedbackArea);
-                        enableButton(subjectSelector);
-                    });
+        }
+        
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
             }
-            
-            function resetUIForNewQuiz() {
-                clearError();
-                hideElement(quizContent);
-                hideElement(quizInfoArea);
-                hideElement(resultsContainer);
-                hideElement(feedbackArea);
-                hideElement(nextBtn);
-                showElement(submitBtn);
-                showElement(skipBtn);
-                enableButton(submitBtn);
-                enableButton(skipBtn);
-                hideElement(explanationContainer);
-                hideElement(explainBtn);
-                hideElement(googleSearchBtn);
-                hideElement(questionBrowserContainer);
-                hideElement(reviewContainer);
-                incorrectAnswersList.innerHTML = '';
-            }
+        }
 
-            function startQuiz() {
-                // NEW: Logic to select number of questions for the quiz
-                let questionsForThisRound;
-                shuffleArray(allQuestions); // Shuffle the master list first
+        function populateSubjectSelector() {
+            subjectSelector.innerHTML = '<option value="">-- Select a Subject --</option>';
+            subjectNames.forEach(subject => {
+                const option = document.createElement('option');
+                option.value = subject.filename;
+                option.textContent = subject.name;
+                subjectSelector.appendChild(option);
+            });
+        }
 
-                if (currentMode === 'caap') {
-                    const requestedCount = parseInt(questionCountInput.value, 10) || 40;
-                    const numToTake = Math.min(requestedCount, allQuestions.length);
-                    questionsForThisRound = allQuestions.slice(0, numToTake);
-                } else { // Study mode takes all questions
-                    questionsForThisRound = [...allQuestions];
-                }
-                questionsToAsk = questionsForThisRound;
-                
-                skippedQuestions = [];
-                questionStatus = {};
-                userAnswers = {};
-                currentQuestionIndex = 0;
-                totalQuestionsInQuiz = questionsToAsk.length; // MODIFIED: Use the length of the selected questions
-                correctAnswersCount = 0;
-                incorrectAnswersCount = 0;
-                remainingSkips = 3;
-                questionsAnsweredInSession = 0;
+        function loadQuiz(filename) {
+            resetUIForNewQuiz();
+            disableButton(subjectSelector);
+            feedbackArea.textContent = 'Loading Quiz...';
+            feedbackArea.className = 'feedback-skipped';
+            showElement(feedbackArea);
 
-                quizTitleElement.textContent = currentQuizData.exam_title || 'Quiz';
-                hideElement(feedbackArea);
-                clearError();
-                showElement(quizContent);
-                disableButton(subjectSelector);
-                
-                if (currentMode === 'study') {
-                    renderQuestionBrowser();
-                    showElement(questionBrowserContainer);
-                }
-
-                if (questionsToAsk.length > 0) {
-                    displayQuestion();
-                    updateQuizInfo();
-                } else {
-                    displayError("Quiz loaded but contains no questions.");
-                }
-            }
-
-            function displayQuestion() {
-                if (currentQuestionIndex >= questionsToAsk.length) {
-                    if (questionsToAsk.length === 0 && skippedQuestions.length > 0) {
-                        questionsToAsk = [...skippedQuestions];
-                        skippedQuestions = [];
-                        currentQuestionIndex = 0;
-                    } else {
-                        endQuiz();
-                        return;
+            fetch(filename)
+                .then(response => {
+                    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+                    return response.json();
+                })
+                .then(data => {
+                    if (!data || !Array.isArray(data.questions) || data.questions.length === 0) {
+                        throw new Error(`Invalid or empty quiz data in ${filename}`);
                     }
-                }
-
-                hideElement(feedbackArea);
-                hideElement(nextBtn);
-                hideElement(explainBtn);
-                hideElement(googleSearchBtn);
-                hideElement(explanationContainer);
-                showElement(submitBtn);
-                showElement(skipBtn);
-                enableButton(submitBtn);
-                enableButton(skipBtn);
-                if (remainingSkips <= 0) disableButton(skipBtn);
-
-                const question = questionsToAsk[currentQuestionIndex];
-                questionTextElement.textContent = question.question_text;
-                optionsList.innerHTML = '';
-
-                const shuffledOptions = [...question.options];
-                shuffleArray(shuffledOptions);
-
-                shuffledOptions.forEach((option, index) => {
-                    const optionItem = document.createElement('li');
-                    optionItem.classList.add('option-item');
-                    const radioInput = document.createElement('input');
-                    radioInput.type = 'radio';
-                    radioInput.name = `question-${question.originalIndex}`;
-                    radioInput.value = option;
-                    const optionId = `option-${question.originalIndex}-${index}`;
-                    radioInput.id = optionId;
-                    const label = document.createElement('label');
-                    label.textContent = option;
-                    label.setAttribute('for', optionId);
-                    optionItem.appendChild(radioInput);
-                    optionItem.appendChild(label);
-                    optionsList.appendChild(optionItem);
+                    currentQuizData = data;
+                    allQuestions = data.questions.map((q, index) => ({ ...q, originalIndex: index }));
+                    
+                    if (currentMode === 'caap') {
+                        const totalAvailable = allQuestions.length;
+                        questionCountInput.max = totalAvailable;
+                        maxQuestionsInfo.textContent = `(Max: ${totalAvailable})`;
+                        if (parseInt(questionCountInput.value) > totalAvailable) {
+                            questionCountInput.value = totalAvailable;
+                        }
+                    }
+                    
+                    startQuiz();
+                })
+                .catch(error => {
+                    console.error('Error loading quiz:', error);
+                    displayError(`Failed to load quiz: ${error.message}`);
+                    hideElement(feedbackArea);
+                    enableButton(subjectSelector);
                 });
+        }
+        
+        function resetUIForNewQuiz() {
+            clearError();
+            hideElement(quizContent);
+            hideElement(quizInfoArea);
+            hideElement(resultsContainer);
+            hideElement(feedbackArea);
+            hideElement(nextBtn);
+            showElement(submitBtn);
+            showElement(skipBtn);
+            enableButton(submitBtn);
+            enableButton(skipBtn);
+            hideElement(explanationContainer);
+            hideElement(explainBtn);
+            hideElement(googleSearchBtn);
+            hideElement(questionBrowserContainer);
+            hideElement(reviewContainer);
+            incorrectAnswersList.innerHTML = '';
+        }
 
+        function startQuiz() {
+            let questionsForThisRound;
+            shuffleArray(allQuestions); 
+
+            if (currentMode === 'caap') {
+                const requestedCount = parseInt(questionCountInput.value, 10) || 40;
+                const numToTake = Math.min(requestedCount, allQuestions.length);
+                questionsForThisRound = allQuestions.slice(0, numToTake);
+            } else { 
+                questionsForThisRound = [...allQuestions];
+            }
+            questionsToAsk = questionsForThisRound;
+            
+            skippedQuestions = [];
+            questionStatus = {};
+            userAnswers = {};
+            currentQuestionIndex = 0;
+            totalQuestionsInQuiz = questionsToAsk.length;
+            correctAnswersCount = 0;
+            incorrectAnswersCount = 0;
+            remainingSkips = 3; // For Study Mode
+            consecutiveSkips = 0; // For CAAP Mode
+            currentScoreValue = 0; // Score starts at 0
+            questionsAnsweredInSession = 0;
+
+            quizTitleElement.textContent = currentQuizData.exam_title || 'Quiz';
+            hideElement(feedbackArea);
+            clearError();
+            showElement(quizContent);
+            disableButton(subjectSelector);
+            
+            if (currentMode === 'study') {
+                renderQuestionBrowser();
+                showElement(questionBrowserContainer);
+            }
+
+            if (questionsToAsk.length > 0) {
+                displayQuestion();
                 updateQuizInfo();
-                if (currentMode === 'study') {
-                    renderQuestionBrowser();
+            } else {
+                displayError("Quiz loaded but contains no questions.");
+            }
+        }
+
+        function displayQuestion() {
+            if (currentQuestionIndex >= questionsToAsk.length) {
+                if (questionsToAsk.length === 0 && skippedQuestions.length > 0) {
+                    questionsToAsk = [...skippedQuestions];
+                    skippedQuestions = [];
+                    currentQuestionIndex = 0;
+                } else {
+                    endQuiz();
+                    return;
                 }
             }
 
-            function handleSubmit() {
-                const selectedOptionInput = optionsList.querySelector(`input[name^="question-"]:checked`);
-                if (!selectedOptionInput) {
-                    feedbackArea.textContent = "Please select an answer.";
+            hideElement(feedbackArea);
+            hideElement(nextBtn);
+            hideElement(explainBtn);
+            hideElement(googleSearchBtn);
+            hideElement(explanationContainer);
+            showElement(submitBtn);
+            showElement(skipBtn);
+            enableButton(submitBtn);
+            
+            // Set skip button state based on mode
+            if (currentMode === 'caap') {
+                if (consecutiveSkips < 3) enableButton(skipBtn);
+                else disableButton(skipBtn);
+            } else { // Study Mode
+                if (remainingSkips > 0) enableButton(skipBtn);
+                else disableButton(skipBtn);
+            }
+
+            const question = questionsToAsk[currentQuestionIndex];
+            questionTextElement.textContent = question.question_text;
+            optionsList.innerHTML = '';
+
+            const shuffledOptions = [...question.options];
+            shuffleArray(shuffledOptions);
+
+            shuffledOptions.forEach((option, index) => {
+                const optionItem = document.createElement('li');
+                optionItem.classList.add('option-item');
+                const radioInput = document.createElement('input');
+                radioInput.type = 'radio';
+                radioInput.name = `question-${question.originalIndex}`;
+                radioInput.value = option;
+                const optionId = `option-${question.originalIndex}-${index}`;
+                radioInput.id = optionId;
+                const label = document.createElement('label');
+                label.textContent = option;
+                label.setAttribute('for', optionId);
+                optionItem.appendChild(radioInput);
+                optionItem.appendChild(label);
+                optionsList.appendChild(optionItem);
+            });
+
+            updateQuizInfo();
+            if (currentMode === 'study') {
+                renderQuestionBrowser();
+            }
+        }
+
+        function handleSubmit() {
+            const selectedOptionInput = optionsList.querySelector(`input[name^="question-"]:checked`);
+            if (!selectedOptionInput) {
+                feedbackArea.textContent = "Please select an answer.";
+                feedbackArea.className = 'feedback-incorrect';
+                showElement(feedbackArea);
+                return;
+            }
+
+            disableButton(submitBtn);
+            disableButton(skipBtn);
+            hideElement(feedbackArea);
+
+            const userAnswer = selectedOptionInput.value;
+            const currentQuestion = questionsToAsk[currentQuestionIndex];
+            const correctAnswer = currentQuestion.correct_answer;
+            const questionId = currentQuestion.originalIndex;
+
+            lastAnsweredQuestion = currentQuestion;
+            lastUserAnswer = userAnswer;
+            lastCorrectAnswer = correctAnswer;
+            userAnswers[questionId] = userAnswer;
+
+            if (userAnswer === correctAnswer) {
+                feedbackArea.textContent = "Correct!";
+                feedbackArea.className = 'feedback-correct';
+                correctAnswersCount++;
+                currentScoreValue += (100 / totalQuestionsInQuiz); // Add points for correct answer
+                questionStatus[questionId] = 'correct';
+                if (currentMode === 'caap') {
+                    questionsToAsk.splice(currentQuestionIndex, 1);
+                } else {
+                    currentQuestionIndex++;
+                }
+            } else {
+                feedbackArea.textContent = `Incorrect. Correct answer: "${correctAnswer}"`;
+                feedbackArea.className = 'feedback-incorrect';
+                incorrectAnswersCount++;
+                questionStatus[questionId] = 'incorrect';
+                // For both modes, move to the next question in the list after an incorrect answer.
+                currentQuestionIndex++;
+            }
+
+            if (currentMode === 'caap') {
+                consecutiveSkips = 0; // Reset consecutive skips on any answer
+            }
+
+            showElement(feedbackArea);
+            questionsAnsweredInSession++;
+            updateQuizInfo();
+
+            if (currentMode === 'study') {
+                showElement(explainBtn);
+                enableButton(explainBtn);
+                showElement(googleSearchBtn);
+                renderQuestionBrowser();
+            }
+
+            if ((currentMode === 'caap' && questionsToAsk.length === 0 && skippedQuestions.length === 0) || (currentMode === 'study' && questionsAnsweredInSession >= totalQuestionsInQuiz)) {
+                setTimeout(endQuiz, 1000);
+            } else {
+                showElement(nextBtn);
+                enableButton(nextBtn);
+            }
+        }
+
+        function handleSkip() {
+            if (currentMode === 'caap') {
+                if (consecutiveSkips >= 3) {
+                    feedbackArea.textContent = "Consecutive skip limit reached. You must answer this question to reset the counter.";
                     feedbackArea.className = 'feedback-incorrect';
                     showElement(feedbackArea);
                     return;
                 }
-
-                disableButton(submitBtn);
-                disableButton(skipBtn);
-                hideElement(feedbackArea);
-
-                const userAnswer = selectedOptionInput.value;
-                const currentQuestion = questionsToAsk[currentQuestionIndex];
-                const correctAnswer = currentQuestion.correct_answer;
-                const questionId = currentQuestion.originalIndex;
-
-                lastAnsweredQuestion = currentQuestion;
-                lastUserAnswer = userAnswer;
-                lastCorrectAnswer = correctAnswer;
-                userAnswers[questionId] = userAnswer;
-
-                if (userAnswer === correctAnswer) {
-                    feedbackArea.textContent = "Correct!";
-                    feedbackArea.className = 'feedback-correct';
-                    correctAnswersCount++;
-                    questionStatus[questionId] = 'correct';
-                    if (currentMode === 'caap') {
-                        questionsToAsk.splice(currentQuestionIndex, 1);
-                    } else {
-                        currentQuestionIndex++;
-                    }
-                } else {
-                    feedbackArea.textContent = `Incorrect. Correct answer: "${correctAnswer}"`;
-                    feedbackArea.className = 'feedback-incorrect';
-                    incorrectAnswersCount++;
-                    questionStatus[questionId] = 'incorrect';
-                    if (currentMode === 'caap') {
-                        currentQuestionIndex++;
-                    } else {
-                        currentQuestionIndex++;
-                    }
-                }
-
-                showElement(feedbackArea);
-                questionsAnsweredInSession++;
-                updateQuizInfo();
-
-                if (currentMode === 'study') {
-                    showElement(explainBtn);
-                    enableButton(explainBtn);
-                    showElement(googleSearchBtn);
-                    renderQuestionBrowser();
-                }
-
-                if ((currentMode === 'caap' && questionsToAsk.length === 0 && skippedQuestions.length === 0) || (currentMode === 'study' && questionsAnsweredInSession >= totalQuestionsInQuiz)) {
-                    setTimeout(endQuiz, 1000);
-                } else {
-                    showElement(nextBtn);
-                    enableButton(nextBtn);
-                }
-            }
-
-            function handleSkip() {
+                consecutiveSkips++;
+            } else { // Study Mode
                 if (remainingSkips <= 0) return;
-
-                const currentQuestion = questionsToAsk[currentQuestionIndex];
-                const questionId = currentQuestion.originalIndex;
-
-                questionStatus[questionId] = 'skipped';
-                skippedQuestions.push(currentQuestion);
-                questionsToAsk.splice(currentQuestionIndex, 1);
-
                 remainingSkips--;
-                feedbackArea.textContent = "Question Skipped";
-                feedbackArea.className = 'feedback-skipped';
-                showElement(feedbackArea);
-                updateQuizInfo();
+            }
 
-                disableButton(submitBtn);
+            const currentQuestion = questionsToAsk[currentQuestionIndex];
+            const questionId = currentQuestion.originalIndex;
+
+            questionStatus[questionId] = 'skipped';
+            skippedQuestions.push(currentQuestion);
+            questionsToAsk.splice(currentQuestionIndex, 1);
+
+            feedbackArea.textContent = "Question Skipped";
+            feedbackArea.className = 'feedback-skipped';
+            showElement(feedbackArea);
+            updateQuizInfo();
+
+            disableButton(submitBtn);
+            disableButton(skipBtn);
+            hideElement(explainBtn);
+            hideElement(googleSearchBtn);
+            hideElement(explanationContainer);
+            
+            if (currentMode === 'study') {
+                renderQuestionBrowser();
+            }
+            
+            if (currentMode === 'caap' && consecutiveSkips >= 3) {
                 disableButton(skipBtn);
-                hideElement(explainBtn);
-                hideElement(googleSearchBtn);
-                hideElement(explanationContainer);
-                
-                if (currentMode === 'study') {
-                    renderQuestionBrowser();
-                }
+            }
 
-                if (questionsToAsk.length === 0 && skippedQuestions.length === 0) {
-                    setTimeout(endQuiz, 1000);
+            if (questionsToAsk.length === 0 && skippedQuestions.length === 0) {
+                setTimeout(endQuiz, 1000);
+            } else {
+                showElement(nextBtn);
+                enableButton(nextBtn);
+            }
+        }
+
+        function handleNext() { displayQuestion(); }
+
+        function endQuiz() {
+            hideElement(quizContent);
+            hideElement(quizInfoArea);
+            hideElement(feedbackArea);
+            hideElement(explanationContainer);
+            hideElement(questionBrowserContainer);
+
+            const finalScore = Math.round(currentScoreValue);
+            const cappedScore = finalScore > 100 ? 100 : finalScore; // Cap score at 100
+            const passingGrade = 70;
+
+            finalScoreDisplay.textContent = `Final Score: ${cappedScore}%`;
+            resultsSummary.textContent = `You answered ${correctAnswersCount} out of ${totalQuestionsInQuiz} questions correctly.`;
+            showElement(resultsContainer);
+            enableButton(subjectSelector);
+            
+            setTimeout(() => {
+                if (cappedScore >= passingGrade) {
+                    alert(`Congratulations! You passed the quiz with a score of ${cappedScore}%.`);
                 } else {
-                    showElement(nextBtn);
-                    enableButton(nextBtn);
+                    alert(`You did not pass. Your score was ${cappedScore}%. The passing score is ${passingGrade}%. Please review your answers and try again.`);
                 }
+            }, 100); // Short delay to allow UI to render first
+
+            displayIncorrectAnswersReview();
+        }
+
+
+        function displayIncorrectAnswersReview() {
+            incorrectAnswersList.innerHTML = '';
+            const incorrectQuestions = allQuestions.filter(q => questionStatus[q.originalIndex] === 'incorrect');
+
+            if (incorrectQuestions.length === 0) {
+                hideElement(reviewContainer);
+                return;
             }
 
-            function handleNext() { displayQuestion(); }
+            incorrectQuestions.forEach(question => {
+                const questionId = question.originalIndex;
+                const userAnswer = userAnswers[questionId] || 'Not answered';
 
-            function endQuiz() {
-                hideElement(quizContent);
-                hideElement(quizInfoArea);
-                hideElement(feedbackArea);
-                hideElement(explanationContainer);
-                hideElement(questionBrowserContainer);
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'review-item';
+                itemDiv.innerHTML = `
+                    <p class="review-question-text">${question.question_text}</p>
+                    <p class="review-user-answer"><strong>Your Answer:</strong> ${userAnswer}</p>
+                    <p class="review-correct-answer"><strong>Correct Answer:</strong> ${question.correct_answer}</p>
+                    <button class="quiz-button explain-review-btn" data-question-id="${questionId}">Get AI Explanation</button>
+                    <div class="review-explanation hidden">
+                        <div class="loader explanation-loader"></div>
+                    </div>
+                `;
+                incorrectAnswersList.appendChild(itemDiv);
+            });
 
-                const finalScore = totalQuestionsInQuiz === 0 ? 0 : Math.round((correctAnswersCount / totalQuestionsInQuiz) * 100);
-                finalScoreDisplay.textContent = `Final Score: ${finalScore}%`;
-                resultsSummary.textContent = `You answered ${correctAnswersCount} out of ${totalQuestionsInQuiz} questions correctly.`;
-                showElement(resultsContainer);
-                enableButton(subjectSelector);
-
-                displayIncorrectAnswersReview();
-            }
-
-            function displayIncorrectAnswersReview() {
-                incorrectAnswersList.innerHTML = '';
-                const incorrectQuestions = allQuestions.filter(q => questionStatus[q.originalIndex] === 'incorrect');
-
-                if (incorrectQuestions.length === 0) {
-                    hideElement(reviewContainer);
-                    return;
+            showElement(reviewContainer);
+        }
+        
+        // --- Study Mode Specific Functions ---
+        function renderQuestionBrowser() {
+            questionBrowserList.innerHTML = '';
+            allQuestions.forEach((q, index) => {
+                const qLink = document.createElement('button');
+                qLink.className = 'q-link';
+                qLink.textContent = index + 1;
+                qLink.dataset.index = index;
+                
+                const status = questionStatus[q.originalIndex];
+                if (status) {
+                    qLink.classList.add(status);
                 }
 
-                incorrectQuestions.forEach(question => {
-                    const questionId = question.originalIndex;
-                    const userAnswer = userAnswers[questionId] || 'Not answered';
+                if (questionsToAsk[currentQuestionIndex] && q.originalIndex === questionsToAsk[currentQuestionIndex].originalIndex) {
+                    qLink.classList.add('current');
+                }
 
-                    const itemDiv = document.createElement('div');
-                    itemDiv.className = 'review-item';
-                    itemDiv.innerHTML = `
-                        <p class="review-question-text">${question.question_text}</p>
-                        <p class="review-user-answer"><strong>Your Answer:</strong> ${userAnswer}</p>
-                        <p class="review-correct-answer"><strong>Correct Answer:</strong> ${question.correct_answer}</p>
-                        <button class="quiz-button explain-review-btn" data-question-id="${questionId}">Get AI Explanation</button>
-                        <div class="review-explanation hidden">
-                            <div class="loader explanation-loader"></div>
-                        </div>
-                    `;
-                    incorrectAnswersList.appendChild(itemDiv);
-                });
+                qLink.addEventListener('click', () => jumpToQuestion(index));
+                questionBrowserList.appendChild(qLink);
+            });
+        }
 
-                showElement(reviewContainer);
+        function jumpToQuestion(index) {
+            currentQuestionIndex = index;
+            displayQuestion();
+        }
+
+        // --- AI & API Functions ---
+        function initializeGemini(key) {
+            if (typeof window.GoogleGenAI === 'undefined') {
+                apiKeyStatus.textContent = 'Google Gemini SDK not loaded.';
+                apiKeyStatus.className = 'api-key-status-error';
+                showElement(apiKeyStatus);
+                genAI = null; window.geminiSdkInstance = null; return;
+            }
+            try {
+                window.geminiSdkInstance = new window.GoogleGenAI({ apiKey: key });
+                genAI = window.geminiSdkInstance;
+                apiKeyStatus.textContent = 'API key loaded. Gemini AI ready!';
+                apiKeyStatus.className = 'api-key-status-success';
+                showElement(apiKeyStatus);
+            } catch (e) {
+                localStorage.removeItem('geminiApiKey');
+                geminiApiKeyInput.value = '';
+                apiKeyStatus.textContent = 'Invalid API key. Please check and re-enter.';
+                apiKeyStatus.className = 'api-key-status-error';
+                showElement(apiKeyStatus);
+                genAI = null; window.geminiSdkInstance = null;
+            }
+        }
+        
+        async function handleExplain() {
+            if (!lastAnsweredQuestion) return;
+            
+            disableButton(explainBtn);
+            showElement(explanationContainer);
+            showElement(explanationLoader);
+            hideElement(explanationText);
+            hideElement(explanationError);
+            explanationText.innerHTML = '';
+
+            const explanationHTML = await getAIExplanationHTML(lastAnsweredQuestion, lastUserAnswer, lastCorrectAnswer);
+            
+            hideElement(explanationLoader);
+            if (explanationHTML.includes('error-message')) {
+                explanationError.innerHTML = explanationHTML;
+                showElement(explanationError);
+            } else {
+                explanationText.innerHTML = explanationHTML;
+                showElement(explanationText);
+            }
+
+            enableButton(explainBtn);
+        }
+
+        async function getAIExplanationHTML(question, userAnswer, correctAnswer) {
+            if (!genAI || typeof marked === 'undefined') {
+                return '<p class="error-message" style="color: var(--incorrect-color);">AI features not ready. Check API key and script imports.</p>';
             }
             
-            // --- Study Mode Specific Functions ---
-            function renderQuestionBrowser() {
-                questionBrowserList.innerHTML = '';
-                allQuestions.forEach((q, index) => {
-                    const qLink = document.createElement('button');
-                    qLink.className = 'q-link';
-                    qLink.textContent = index + 1;
-                    qLink.dataset.index = index;
-                    
-                    const status = questionStatus[q.originalIndex];
-                    if (status) {
-                        qLink.classList.add(status);
-                    }
-
-                    if (questionsToAsk[currentQuestionIndex] && q.originalIndex === questionsToAsk[currentQuestionIndex].originalIndex) {
-                        qLink.classList.add('current');
-                    }
-
-                    qLink.addEventListener('click', () => jumpToQuestion(index));
-                    questionBrowserList.appendChild(qLink);
-                });
-            }
-
-            function jumpToQuestion(index) {
-                currentQuestionIndex = index;
-                displayQuestion();
-            }
-
-            // --- AI & API Functions ---
-            function initializeGemini(key) {
-                if (typeof window.GoogleGenAI === 'undefined') {
-                    apiKeyStatus.textContent = 'Google Gemini SDK not loaded.';
-                    apiKeyStatus.className = 'api-key-status-error';
-                    showElement(apiKeyStatus);
-                    genAI = null; window.geminiSdkInstance = null; return;
-                }
-                try {
-                    window.geminiSdkInstance = new window.GoogleGenAI({ apiKey: key });
-                    genAI = window.geminiSdkInstance;
-                    apiKeyStatus.textContent = 'API key loaded. Gemini AI ready!';
-                    apiKeyStatus.className = 'api-key-status-success';
-                    showElement(apiKeyStatus);
-                } catch (e) {
-                    localStorage.removeItem('geminiApiKey');
-                    geminiApiKeyInput.value = '';
-                    apiKeyStatus.textContent = 'Invalid API key. Please check and re-enter.';
-                    apiKeyStatus.className = 'api-key-status-error';
-                    showElement(apiKeyStatus);
-                    genAI = null; window.geminiSdkInstance = null;
-                }
-            }
-            
-            async function handleExplain() {
-                if (!lastAnsweredQuestion) return;
-                
-                disableButton(explainBtn);
-                showElement(explanationContainer);
-                showElement(explanationLoader);
-                hideElement(explanationText);
-                hideElement(explanationError);
-                explanationText.innerHTML = '';
-
-                const explanationHTML = await getAIExplanationHTML(lastAnsweredQuestion, lastUserAnswer, lastCorrectAnswer);
-                
-                hideElement(explanationLoader);
-                if (explanationHTML.includes('error-message')) {
-                    explanationError.innerHTML = explanationHTML;
-                    showElement(explanationError);
-                } else {
-                    explanationText.innerHTML = explanationHTML;
-                    showElement(explanationText);
-                }
-
-                enableButton(explainBtn);
-            }
-
-            async function getAIExplanationHTML(question, userAnswer, correctAnswer) {
-                if (!genAI || typeof marked === 'undefined') {
-                    return '<p class="error-message" style="color: var(--incorrect-color);">AI features not ready. Check API key and script imports.</p>';
-                }
-                
-                const prompt = `Explain the following multiple-choice question and its correct answer in detail, assuming the user is studying for a pilot license. Use Markdown for formatting.
+            const prompt = `Explain the following multiple-choice question and its correct answer in detail, assuming the user is studying for a pilot license. Use Markdown for formatting.
 
 Question: "${question.question_text}"
-Options:\n${question.options.map((opt, i) => `${String.fromCharCode(65 + i)}. ${opt}`).join('\n')}
+
+Options:
+${question.options.map((opt, i) => `${String.fromCharCode(65 + i)}. ${opt}`).join('\n')}
 
 Your Answer: "${userAnswer}"
 Correct Answer: "${correctAnswer}"
 
 Provide a clear explanation of why the correct answer is right and briefly why other options are wrong. Conclude with a simple "ELI5" (Explain Like I'm 5) summary of the core concept.`;
 
-                try {
-                    const model = genAI.getGenerativeModel({ model: MODEL_NAME });
-                    const result = await model.generateContent(prompt);
-                    const response = result.response;
-                    const generatedText = response.text();
-                    return marked.parse(generatedText);
-                } catch (e) {
-                    console.error("Error generating explanation:", e);
-                    return '<p class="error-message" style="color: var(--incorrect-color);">Failed to generate explanation. Check API key/network.</p>';
-                }
-            }
-
-            async function generateSearchPrompt(questionText, correctAnswer) {
-              if (!genAI) {
-                displayError('Gemini AI not initialized. Cannot generate search prompt.');
-                return null;
-              }
-              const prompt = `
-            Generate a concise and effective Google search query (max 200 characters) that will find authoritative information on this PPL exam question, using both the question and the known correct answer to guide the query.
-
-            Question: "${questionText}"
-            Correct Answer: "${correctAnswer}"
-
-            Search Query:`;
-
-              try {
+            try {
                 const model = genAI.getGenerativeModel({ model: MODEL_NAME });
                 const result = await model.generateContent(prompt);
                 const response = result.response;
-                return response.text().trim();
-              } catch (e) {
-                console.error("Error generating search prompt:", e);
-                displayError('Failed to generate search prompt.');
-                return null;
-              }
+                const generatedText = response.text();
+                return marked.parse(generatedText);
+            } catch (e) {
+                console.error("Error generating explanation:", e);
+                return '<p class="error-message" style="color: var(--incorrect-color);">Failed to generate explanation. Check API key/network.</p>';
             }
+        }
 
-            function updateQuizInfo() {
-                const progressText = currentMode === 'study' 
-                    ? `Q: ${currentQuestionIndex + 1} / ${totalQuestionsInQuiz}`
-                    : `Remaining: ${questionsToAsk.length + skippedQuestions.length} / ${totalQuestionsInQuiz}`;
-                progressDisplay.textContent = progressText;
-                
-                const totalAttempts = correctAnswersCount + incorrectAnswersCount;
-                const currentScore = totalAttempts === 0 ? 100 : Math.round((correctAnswersCount / totalAttempts) * 100);
-                scoreDisplay.textContent = `Score: ${currentScore}%`;
+        async function generateSearchPrompt(questionText, correctAnswer) {
+          if (!genAI) {
+            displayError('Gemini AI not initialized. Cannot generate search prompt.');
+            return null;
+          }
+          const prompt = `
+        Generate a concise and effective Google search query (max 200 characters) that will find authoritative information on this PPL exam question, using both the question and the known correct answer to guide the query.
+
+        Question: "${questionText}"
+        Correct Answer: "${correctAnswer}"
+
+        Search Query:`;
+
+          try {
+            const model = genAI.getGenerativeModel({ model: MODEL_NAME });
+            const result = await model.generateContent(prompt);
+            const response = result.response;
+            return response.text().trim();
+          } catch (e) {
+            console.error("Error generating search prompt:", e);
+            displayError('Failed to generate search prompt.');
+            return null;
+          }
+        }
+
+        function updateQuizInfo() {
+            const progressText = currentMode === 'study' 
+                ? `Q: ${currentQuestionIndex + 1} / ${totalQuestionsInQuiz}`
+                : `Remaining: ${questionsToAsk.length + skippedQuestions.length} / ${totalQuestionsInQuiz}`;
+            progressDisplay.textContent = progressText;
+            
+            scoreDisplay.textContent = `Score: ${Math.round(currentScoreValue)}`;
+
+            if (currentMode === 'caap') {
+                skipsDisplay.textContent = `Consecutive Skips: ${consecutiveSkips} / 3`;
+            } else { // Study Mode
                 skipsDisplay.textContent = `Skips Left: ${remainingSkips}`;
-                showElement(quizInfoArea);
             }
+            showElement(quizInfoArea);
+        }
 
-            // --- Event Listeners ---
-            disclaimerCheckbox.addEventListener('change', () => {
-                if (disclaimerCheckbox.checked) {
-                    enableButton(caapModeBtn);
-                    enableButton(studyModeBtn);
-                } else {
-                    disableButton(caapModeBtn);
-                    disableButton(studyModeBtn);
-                }
-            });
-
-            caapModeBtn.addEventListener('click', () => selectMode('caap'));
-            studyModeBtn.addEventListener('click', () => selectMode('study'));
-            subjectSelector.addEventListener('change', () => {
-                const selectedFile = subjectSelector.value;
-                if (selectedFile) loadQuiz(selectedFile);
-            });
-            submitBtn.addEventListener('click', handleSubmit);
-            skipBtn.addEventListener('click', handleSkip);
-            nextBtn.addEventListener('click', handleNext);
-            restartBtn.addEventListener('click', resetToModeSelection);
-            explainBtn.addEventListener('click', handleExplain);
-            saveApiKeyBtn.addEventListener('click', () => {
-                const key = geminiApiKeyInput.value.trim();
-                if (key) {
-                    localStorage.setItem('geminiApiKey', key);
-                    initializeGemini(key);
-                } else {
-                    localStorage.removeItem('geminiApiKey');
-                    window.geminiSdkInstance = null;
-                    genAI = null;
-                    apiKeyStatus.textContent = 'API key cleared.';
-                    apiKeyStatus.className = 'api-key-status-error';
-                    showElement(apiKeyStatus);
-                }
-            });
-           
-            googleSearchBtn.addEventListener('click', async ev => {
-              ev.preventDefault();
-              if (!lastAnsweredQuestion) return;
-
-              const { question_text, correct_answer } = lastAnsweredQuestion;
-              disableButton(googleSearchBtn);
-
-              const searchPrompt = await generateSearchPrompt(question_text, correct_answer);
-
-              enableButton(googleSearchBtn);
-              if (searchPrompt) {
-                window.open(
-                  `https://www.google.com/search?q=${encodeURIComponent(searchPrompt)}`,
-                  '_blank'
-                );
-              }
-            });
-
-            incorrectAnswersList.addEventListener('click', async (event) => {
-                if (event.target.classList.contains('explain-review-btn')) {
-                    const button = event.target;
-                    const questionId = parseInt(button.dataset.questionId, 10);
-                    const question = allQuestions.find(q => q.originalIndex === questionId);
-                    const userAnswer = userAnswers[questionId];
-                    const explanationDiv = button.nextElementSibling;
-
-                    if (!question || !explanationDiv) return;
-
-                    button.disabled = true;
-                    button.textContent = 'Generating...';
-                    showElement(explanationDiv);
-
-                    const explanationHTML = await getAIExplanationHTML(question, userAnswer, question.correct_answer);
-                    
-                    explanationDiv.innerHTML = explanationHTML;
-                    button.classList.add('hidden');
-                }
-            });
-
-
-            // --- Initial Execution ---
-            setTimeout(initializeApp, 1000);
+        // --- Event Listeners ---
+        disclaimerCheckbox.addEventListener('change', () => {
+            if (disclaimerCheckbox.checked) {
+                enableButton(caapModeBtn);
+                enableButton(studyModeBtn);
+            } else {
+                disableButton(caapModeBtn);
+                disableButton(studyModeBtn);
+            }
         });
-    </script>
 
+        caapModeBtn.addEventListener('click', () => selectMode('caap'));
+        studyModeBtn.addEventListener('click', () => selectMode('study'));
+        subjectSelector.addEventListener('change', () => {
+            const selectedFile = subjectSelector.value;
+            if (selectedFile) loadQuiz(selectedFile);
+        });
+        submitBtn.addEventListener('click', handleSubmit);
+        skipBtn.addEventListener('click', handleSkip);
+        nextBtn.addEventListener('click', handleNext);
+        restartBtn.addEventListener('click', resetToModeSelection);
+        explainBtn.addEventListener('click', handleExplain);
+        saveApiKeyBtn.addEventListener('click', () => {
+            const key = geminiApiKeyInput.value.trim();
+            if (key) {
+                localStorage.setItem('geminiApiKey', key);
+                initializeGemini(key);
+            } else {
+                localStorage.removeItem('geminiApiKey');
+                window.geminiSdkInstance = null;
+                genAI = null;
+                apiKeyStatus.textContent = 'API key cleared.';
+                apiKeyStatus.className = 'api-key-status-error';
+                showElement(apiKeyStatus);
+            }
+        });
+       
+        googleSearchBtn.addEventListener('click', async ev => {
+          ev.preventDefault();
+          if (!lastAnsweredQuestion) return;
+
+          const { question_text, correct_answer } = lastAnsweredQuestion;
+          disableButton(googleSearchBtn);
+
+          const searchPrompt = await generateSearchPrompt(question_text, correct_answer);
+
+          enableButton(googleSearchBtn);
+          if (searchPrompt) {
+            window.open(
+              `https://www.google.com/search?q=${encodeURIComponent(searchPrompt)}`,
+              '_blank'
+            );
+          }
+        });
+
+        incorrectAnswersList.addEventListener('click', async (event) => {
+            if (event.target.classList.contains('explain-review-btn')) {
+                const button = event.target;
+                const questionId = parseInt(button.dataset.questionId, 10);
+                const question = allQuestions.find(q => q.originalIndex === questionId);
+                const userAnswer = userAnswers[questionId];
+                const explanationDiv = button.nextElementSibling;
+
+                if (!question || !explanationDiv) return;
+
+                button.disabled = true;
+                button.textContent = 'Generating...';
+                showElement(explanationDiv);
+
+                const explanationHTML = await getAIExplanationHTML(question, userAnswer, question.correct_answer);
+                
+                explanationDiv.innerHTML = explanationHTML;
+                button.classList.add('hidden');
+            }
+        });
+
+
+        // --- Initial Execution ---
+        setTimeout(initializeApp, 1000);
+    });
+</script>
 </body>
 </html>
