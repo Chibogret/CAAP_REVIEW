@@ -1,5 +1,5 @@
 {
-    "exam_title": "CAAP Meteorology Reviewer",
+    "exam_title": "Meteorology Reviewer",
     "questions": [
         {
             "question_number": 1,
@@ -215,11 +215,11 @@
             "question_text": "What is dew point?",
             "options": [
                 "The temperature at which ice forms",
-                "The temperature at which air becomes fully saturated",
+                "The temperature to which air must be cooled to become saturated",
                 "The amount of moisture the air currently holds",
                 "The pressure exerted by water vapor"
             ],
-            "correct_answer": "The temperature at which air becomes fully saturated"
+            "correct_answer": "The temperature to which air must be cooled to become saturated"
         },
         {
             "question_number": 21,
@@ -267,14 +267,14 @@
         },
         {
             "question_number": 25,
-            "question_text": "What is fog defined as in the notes?",
+            "question_text": "What is fog defined as?",
             "options": [
-                "Any cloud touching the ground",
+                "Any cloud touching the ground with visibility restricted to less than 1km",
                 "Clouds below 1,000 ft",
-                "Clouds 50ft under (near the surface)",
-                "Mist with visibility less than 1 km"
+                "A cloud with its base very near to the Earth's surface",
+                "Mist with visibility less than 500m"
             ],
-            "correct_answer": "Clouds 50ft under (near the surface)"
+            "correct_answer": "A cloud with its base very near to the Earth's surface"
         },
         {
             "question_number": 26,
@@ -355,25 +355,25 @@
         },
         {
             "question_number": 33,
-            "question_text": "What does METAR stand for (in general terms)?",
+            "question_text": "What does METAR stand for?",
             "options": [
                 "Meteorological Terminal Aircraft Report",
                 "Meteorological Aerodrome Report",
                 "Aviation Routine Weather Report",
                 "Meteorological Aviation Regional Report"
             ],
-            "correct_answer": "Meteorological Terminal Aircraft Report""
+            "correct_answer": "Meteorological Aerodrome Report"
         },
         {
             "question_number": 34,
             "question_text": "How often are METAR reports routinely updated?",
             "options": [
-                "Every 30 minutes",
-                "Every hour",
+                "Every 15 minutes",
+                "Every hour or half-hour",
                 "Every 6 hours",
                 "Only when conditions change significantly"
             ],
-            "correct_answer": "Every hour"
+            "correct_answer": "Every hour or half-hour"
         },
         {
             "question_number": 35,
@@ -434,12 +434,12 @@
             "question_number": 40,
             "question_text": "A TAF generally forecasts conditions within what radius of the airport?",
             "options": [
-                "1 SM",
-                "5 SM",
-                "10 SM",
-                "25 SM"
+                "1 SM (Statute Mile)",
+                "5 SM (Statute Miles)",
+                "10 SM (Statute Miles)",
+                "25 SM (Statute Miles)"
             ],
-            "correct_answer": "5 SM"
+            "correct_answer": "5 SM (Statute Miles)"
         },
         {
             "question_number": 41,
@@ -550,7 +550,7 @@
                 "50 knots"
             ],
             "correct_answer": "5 knots"
-        },  
+        },
         {
             "question_number": 51,
             "question_text": "What is the primary government agency responsible for providing weather forecasts, advisories, and warnings for aviation in the Philippines?",
@@ -619,7 +619,7 @@
         },
         {
             "question_number": 57,
-            "question_text": "In the Philippines, where can pilots typically obtain official pre-flight weather briefings according to the user's notes?",
+            "question_text": "In the Philippines, where can pilots typically obtain official pre-flight weather briefings?",
             "options": [
                 "Directly from PAGASA headquarters",
                 "From Air Traffic Control Tower",
@@ -641,7 +641,7 @@
         },
         {
             "question_number": 59,
-            "question_text": "Using the METAR from question 8 (RPLL 250300Z 27008KT 8000 SCT015 BKN080 31/25 Q1010 NOSIG=), what is the reported ceiling?",
+            "question_text": "Using the METAR from the previous question (RPLL 250300Z 27008KT 8000 SCT015 BKN080 31/25 Q1010 NOSIG=), what is the reported ceiling?",
             "options": [
                 "1,500 feet (Scattered)",
                 "8,000 feet (Broken)",
@@ -755,14 +755,14 @@
             "options": [
                 "Every 6 hours",
                 "Every 3 hours",
-                "Routinely every hour (or half-hour at some locations)",
+                "Routinely every hour (and half-hour SPECI reports if needed)",
                 "Only when significant weather occurs"
             ],
-            "correct_answer": "Routinely every hour (or half-hour at some locations)"
+            "correct_answer": "Routinely every hour (and half-hour SPECI reports if needed)"
         },
         {
             "question_number": 70,
-            "question_text": "A pilot encountering unexpected hazardous weather in flight over the Philippines should report it to ATC. While the formal system might differ from the US PIREP system, the primary purpose of such a report is:",
+            "question_text": "A pilot encountering unexpected hazardous weather in flight over the Philippines should report it to ATC. The primary purpose of such a report is:",
             "options": [
                 "To complain about the forecast",
                 "To fulfill a training requirement",
@@ -770,6 +770,1436 @@
                 "To request immediate diversion without reason"
             ],
             "correct_answer": "To enhance the safety of other aircraft by providing real-time weather information"
+        },
+        {
+            "question_number": 71,
+            "question_text": "What is the primary force that causes wind?",
+            "options": [
+                "Coriolis Force",
+                "Friction",
+                "Pressure Gradient Force",
+                "Gravity"
+            ],
+            "correct_answer": "Pressure Gradient Force"
+        },
+        {
+            "question_number": 72,
+            "question_text": "In a METAR, what does the code 'CAVOK' signify?",
+            "options": [
+                "Ceiling and visibility are below minimums",
+                "The sky is completely overcast",
+                "Ceiling and Visibility OK (Visibility 10km or more, no clouds below 5,000ft, no significant weather)",
+                "Caution, volcanic ash in the vicinity"
+            ],
+            "correct_answer": "Ceiling and Visibility OK (Visibility 10km or more, no clouds below 5,000ft, no significant weather)"
+        },
+        {
+            "question_number": 73,
+            "question_text": "The Mature Stage of a thunderstorm is characterized by:",
+            "options": [
+                "Only updrafts",
+                "Only downdrafts and the anvil cloud",
+                "Both updrafts and downdrafts, and the start of precipitation at the surface",
+                "The complete dissipation of the cloud"
+            ],
+            "correct_answer": "Both updrafts and downdrafts, and the start of precipitation at the surface"
+        },
+        {
+            "question_number": 74,
+            "question_text": "What is Density Altitude?",
+            "options": [
+                "The altitude read directly from the altimeter",
+                "Pressure altitude corrected for non-standard temperature",
+                "The physical height of the aircraft above the ground",
+                "The altitude at which the air density would be equal to the standard atmosphere"
+            ],
+            "correct_answer": "Pressure altitude corrected for non-standard temperature"
+        },
+        {
+            "question_number": 75,
+            "question_text": "You are flying from an area of high pressure to an area of low pressure without resetting your altimeter. Your altimeter will indicate:",
+            "options": [
+                "Higher than your true altitude",
+                "Lower than your true altitude",
+                "The correct true altitude",
+                "The correct pressure altitude"
+            ],
+            "correct_answer": "Higher than your true altitude"
+        },
+        {
+            "question_number": 76,
+            "question_text": "The weather associated with stable air is typically:",
+            "options": [
+                "Cumuliform clouds, good visibility, and showers",
+                "Stratiform clouds, poor visibility, and steady precipitation",
+                "Thunderstorms and heavy turbulence",
+                "Clear skies and strong vertical air movement"
+            ],
+            "correct_answer": "Stratiform clouds, poor visibility, and steady precipitation"
+        },
+        {
+            "question_number": 77,
+            "question_text": "What does the code 'TSRA' in a METAR mean?",
+            "options": [
+                "Thunderstorm with Sand",
+                "Turbulence and Rain",
+                "Thunderstorm with Rain",
+                "Temperature and Saturation Rising"
+            ],
+            "correct_answer": "Thunderstorm with Rain"
+        },
+        {
+            "question_number": 78,
+            "question_text": "Which type of structural ice is milky white, opaque, and forms from the instantaneous freezing of small, supercooled water droplets?",
+            "options": [
+                "Clear Ice",
+                "Mixed Ice",
+                "Frost",
+                "Rime Ice"
+            ],
+            "correct_answer": "Rime Ice"
+        },
+        {
+            "question_number": 79,
+            "question_text": "What does a long barb on a wind aloft chart symbol represent?",
+            "options": [
+                "5 knots",
+                "10 knots",
+                "20 knots",
+                "50 knots"
+            ],
+            "correct_answer": "10 knots"
+        },
+        {
+            "question_number": 80,
+            "question_text": "The 'anvil' shape at the top of a mature cumulonimbus cloud is caused by:",
+            "options": [
+                "Strong downdrafts pushing the cloud outwards",
+                "The cloud's updrafts reaching the stable air of the tropopause",
+                "The rotation of the cloud base",
+                "Hail falling from the cloud"
+            ],
+            "correct_answer": "The cloud's updrafts reaching the stable air of the tropopause"
+        },
+        {
+            "question_number": 81,
+            "question_text": "In a TAF, what does 'BECMG 1315' signify?",
+            "options": [
+                "Beginning at 1315Z, a temporary change will occur",
+                "Between 1300Z and 1500Z, a temporary change will occur",
+                "A gradual change in conditions is expected, becoming complete between 1300Z and 1500Z",
+                "The forecast is valid from 1300Z to 1500Z"
+            ],
+            "correct_answer": "A gradual change in conditions is expected, becoming complete between 1300Z and 1500Z"
+        },
+        {
+            "question_number": 82,
+            "question_text": "What is sublimation?",
+            "options": [
+                "The change of state from a liquid to a gas",
+                "The change of state from a gas to a liquid",
+                "The change of state from a solid directly to a gas",
+                "The change of state from a liquid to a solid"
+            ],
+            "correct_answer": "The change of state from a solid directly to a gas"
+        },
+        {
+            "question_number": 83,
+            "question_text": "A SIGMET is issued as a warning for weather phenomena that are potentially hazardous to:",
+            "options": [
+                "Only small, single-engine aircraft",
+                "Only light aircraft operating VFR",
+                "All aircraft",
+                "Only military aircraft"
+            ],
+            "correct_answer": "All aircraft"
+        },
+        {
+            "question_number": 84,
+            "question_text": "Mountain wave turbulence can be expected on which side of a mountain range when strong winds are present?",
+            "options": [
+                "The windward (upwind) side",
+                "The leeward (downwind) side",
+                "Directly over the peak",
+                "Equally on both sides"
+            ],
+            "correct_answer": "The leeward (downwind) side"
+        },
+        {
+            "question_number": 85,
+            "question_text": "In a METAR, 'R24/1200' indicates:",
+            "options": [
+                "Runway 24 is closed until 1200Z",
+                "Runway visibility is 2400 feet and the trend is 1200",
+                "Runway Visual Range for runway 24 is 1,200 meters",
+                "Rain on runway 24, 1.2 inches deep"
+            ],
+            "correct_answer": "Runway Visual Range for runway 24 is 1,200 meters"
+        },
+        {
+            "question_number": 86,
+            "question_text": "A 'trough' on a weather chart is a(n):",
+            "options": [
+                "Elongated area of high pressure",
+                "Elongated area of low pressure",
+                "Area of calm winds",
+                "Boundary between two air masses"
+            ],
+            "correct_answer": "Elongated area of low pressure"
+        },
+        {
+            "question_number": 87,
+            "question_text": "The presence of lenticular clouds is a strong indicator of:",
+            "options": [
+                "An active cold front",
+                "A nearby thunderstorm",
+                "Mountain wave activity",
+                "Widespread fog formation"
+            ],
+            "correct_answer": "Mountain wave activity"
+        },
+        {
+            "question_number": 88,
+            "question_text": "What is the primary danger of volcanic ash to an aircraft?",
+            "options": [
+                "Reduced visibility and abrasion of external surfaces",
+                "Engine flameout due to melting and resolidifying of ash in the turbine",
+                "Clogging of the pitot-static system",
+                "All of the above"
+            ],
+            "correct_answer": "All of the above"
+        },
+        {
+            "question_number": 89,
+            "question_text": "On a Winds and Temperatures Aloft Forecast (FD), the code '9900' indicates:",
+            "options": [
+                "Wind from 99 degrees at 0 knots",
+                "Wind variable at 99 knots",
+                "Calm or light and variable winds (less than 5 knots)",
+                "Data is missing"
+            ],
+            "correct_answer": "Calm or light and variable winds (less than 5 knots)"
+        },
+        {
+            "question_number": 90,
+            "question_text": "The Coriolis force is strongest at the:",
+            "options": [
+                "Equator",
+                "Mid-latitudes (30-60 degrees)",
+                "Poles",
+                "Tropopause"
+            ],
+            "correct_answer": "Poles"
+        },
+        {
+            "question_number": 91,
+            "question_text": "What is the term for the dissipation or weakening of a front?",
+            "options": [
+                "Frontogenesis",
+                "Frontolysis",
+                "Cyclolysis",
+                "Anticyclogenesis"
+            ],
+            "correct_answer": "Frontolysis"
+        },
+        {
+            "question_number": 92,
+            "question_text": "Which condition produces the most hazardous type of structural icing, known as clear ice?",
+            "options": [
+                "Small water droplets in cold temperatures below -15°C",
+                "Large, supercooled water droplets that freeze slowly upon contact",
+                "Ice crystals in cirrus clouds",
+                "Dry snow pellets"
+            ],
+            "correct_answer": "Large, supercooled water droplets that freeze slowly upon contact"
+        },
+        {
+            "question_number": 93,
+            "question_text": "An AIRMET Tango would be issued for which of the following conditions?",
+            "options": [
+                "Widespread IFR conditions",
+                "Moderate turbulence or sustained surface winds of 30 knots or more",
+                "Moderate icing",
+                "Severe thunderstorms"
+            ],
+            "correct_answer": "Moderate turbulence or sustained surface winds of 30 knots or more"
+        },
+        {
+            "question_number": 94,
+            "question_text": "In a TAF, 'PROB30 1416' indicates:",
+            "options": [
+                "A 30% probability of certain weather conditions occurring between 1400Z and 1600Z",
+                "A 30-minute period of weather starting at 1416Z",
+                "A change is probable at 30 minutes past the hour, from 14Z to 16Z",
+                "Visibility is forecast to be 3000m between 1400Z and 1600Z"
+            ],
+            "correct_answer": "A 30% probability of certain weather conditions occurring between 1400Z and 1600Z"
+        },
+        {
+            "question_number": 95,
+            "question_text": "The dry adiabatic lapse rate (DALR) is approximately:",
+            "options": [
+                "1°C per 1,000 ft",
+                "2°C per 1,000 ft",
+                "3°C per 1,000 ft",
+                "4°C per 1,000 ft"
+            ],
+            "correct_answer": "3°C per 1,000 ft"
+        },
+        {
+            "question_number": 96,
+            "question_text": "A 'SPECI' report is issued when:",
+            "options": [
+                "It is a special holiday",
+                "A pilot makes a special request for weather",
+                "Weather conditions change to meet specific criteria between routine METAR reports",
+                "A special VFR clearance is in effect"
+            ],
+            "correct_answer": "Weather conditions change to meet specific criteria between routine METAR reports"
+        },
+        {
+            "question_number": 97,
+            "question_text": "What is the primary characteristic of the Dissipating Stage of a thunderstorm?",
+            "options": [
+                "Strong updrafts",
+                "Predominantly downdrafts",
+                "Equal updrafts and downdrafts",
+                "The formation of an anvil top"
+            ],
+            "correct_answer": "Predominantly downdrafts"
+        },
+        {
+            "question_number": 98,
+            "question_text": "You are flying at 5,000 ft and the outside air temperature is +20°C. The standard temperature at this altitude should be +5°C. This indicates that the density altitude is:",
+            "options": [
+                "Lower than the pressure altitude",
+                "The same as the pressure altitude",
+                "Higher than the pressure altitude",
+                "The same as the true altitude"
+            ],
+            "correct_answer": "Higher than the pressure altitude"
+        },
+        {
+            "question_number": 99,
+            "question_text": "What does the weather code 'BR' signify in a METAR?",
+            "options": [
+                "Broken clouds",
+                "Blowing rain",
+                "Mist (visibility 1,000m to 5,000m)",
+                "Barometric reading"
+            ],
+            "correct_answer": "Mist (visibility 1,000m to 5,000m)"
+        },
+        {
+            "question_number": 100,
+            "question_text": "A wind of '27045G60KT' in a METAR indicates:",
+            "options": [
+                "Wind from 270 degrees at 45 knots, with gusts from 60 degrees",
+                "Wind from 270 degrees at 45 knots, with gusts up to 60 knots",
+                "Wind from 270 to 60 degrees at 45 knots",
+                "Wind from 270 degrees at 60 knots, with a minimum speed of 45 knots"
+            ],
+            "correct_answer": "Wind from 270 degrees at 45 knots, with gusts up to 60 knots"
+        },
+        {
+            "question_number": 101,
+            "question_text": "A cold front occlusion occurs when:",
+            "options": [
+                "A warm front lifts a cold front off the surface",
+                "A fast-moving cold front lifts a warm front, and the air ahead of the warm front is warmer than the air behind the cold front",
+                "A fast-moving cold front lifts a warm front, and the air behind the cold front is colder than the air ahead of the warm front",
+                "Two cold fronts merge"
+            ],
+            "correct_answer": "A fast-moving cold front lifts a warm front, and the air behind the cold front is colder than the air ahead of the warm front"
+        },
+        {
+            "question_number": 102,
+            "question_text": "The Tropopause is the boundary between which two layers of the atmosphere?",
+            "options": [
+                "Troposphere and Stratosphere",
+                "Stratosphere and Mesosphere",
+                "Mesosphere and Thermosphere",
+                "Thermosphere and Exosphere"
+            ],
+            "correct_answer": "Troposphere and Stratosphere"
+        },
+        {
+            "question_number": 103,
+            "question_text": "What type of clouds would you most likely encounter flying through a warm front?",
+            "options": [
+                "A line of cumulonimbus clouds",
+                "A sequence of cirrus, cirrostratus, altostratus, and finally nimbostratus",
+                "Scattered cumulus humilis",
+                "Lenticular clouds"
+            ],
+            "correct_answer": "A sequence of cirrus, cirrostratus, altostratus, and finally nimbostratus"
+        },
+        {
+            "question_number": 104,
+            "question_text": "What does 'VRB' in the wind group of a METAR indicate?",
+            "options": [
+                "Wind speed is variable",
+                "Wind direction is variable, usually when speed is 3 knots or less",
+                "Very rough braking action",
+                "Vertical visibility is restricted"
+            ],
+            "correct_answer": "Wind direction is variable, usually when speed is 3 knots or less"
+        },
+        {
+            "question_number": 105,
+            "question_text": "An 'isotherm' is a line on a weather chart connecting points of equal:",
+            "options": [
+                "Pressure",
+                "Wind speed",
+                "Dew point",
+                "Temperature"
+            ],
+            "correct_answer": "Temperature"
+        },
+        {
+            "question_number": 106,
+            "question_text": "What is the primary hazard associated with a temperature inversion for landing and takeoff?",
+            "options": [
+                "Strong updrafts",
+                "Wind shear and poor visibility due to trapped pollutants",
+                "Severe icing",
+                "Heavy precipitation"
+            ],
+            "correct_answer": "Wind shear and poor visibility due to trapped pollutants"
+        },
+        {
+            "question_number": 107,
+            "question_text": "In the Philippines, a PAGASA Tropical Cyclone Warning Signal (TCWS) No. 1 means:",
+            "options": [
+                "A typhoon is expected within 12 hours",
+                "A typhoon is expected within 24 hours",
+                "A tropical cyclone will affect the locality within 36 hours",
+                "A super typhoon is imminent"
+            ],
+            "correct_answer": "A tropical cyclone will affect the locality within 36 hours"
+        },
+        {
+            "question_number": 108,
+            "question_text": "The pressure gradient force is directed from:",
+            "options": [
+                "Low pressure to high pressure",
+                "High pressure to low pressure",
+                "North to South in the Northern Hemisphere",
+                "The surface to the upper atmosphere"
+            ],
+            "correct_answer": "High pressure to low pressure"
+        },
+        {
+            "question_number": 109,
+            "question_text": "If the temperature and dew point are very close together, what weather phenomenon is likely?",
+            "options": [
+                "Strong winds",
+                "Clear skies",
+                "Fog or low clouds",
+                "High-level turbulence"
+            ],
+            "correct_answer": "Fog or low clouds"
+        },
+        {
+            "question_number": 110,
+            "question_text": "A 'squall line' is a:",
+            "options": [
+                "A line of high pressure ridges",
+                "A narrow, non-frontal band of active thunderstorms",
+                "The boundary of the ITCZ",
+                "A type of warm front"
+            ],
+            "correct_answer": "A narrow, non-frontal band of active thunderstorms"
+        },
+        {
+            "question_number": 111,
+            "question_text": "The Transition Level is the:",
+            "options": [
+                "Altitude at which a pilot sets the standard pressure setting when climbing",
+                "Lowest flight level available for use above the transition altitude",
+                "Altitude at which a pilot sets the local QNH when descending",
+                "The top of the troposphere"
+            ],
+            "correct_answer": "Lowest flight level available for use above the transition altitude"
+        },
+        {
+            "question_number": 112,
+            "question_text": "What does the code 'HZ' signify in a METAR?",
+            "options": [
+                "Hail",
+                "Freezing rain",
+                "Haze",
+                "High-level clouds"
+            ],
+            "correct_answer": "Haze"
+        },
+        {
+            "question_number": 113,
+            "question_text": "Surface friction causes the wind to:",
+            "options": [
+                "Increase in speed and shift towards the right in the Northern Hemisphere",
+                "Decrease in speed and shift towards low pressure (to the left in the Northern Hemisphere)",
+                "Blow parallel to the isobars",
+                "Increase in speed and shift towards high pressure"
+            ],
+            "correct_answer": "Decrease in speed and shift towards low pressure (to the left in the Northern Hemisphere)"
+        },
+        {
+            "question_number": 114,
+            "question_text": "An AIRMET Zulu would be issued for which of the following conditions?",
+            "options": [
+                "Moderate turbulence",
+                "Widespread IFR conditions",
+                "Moderate icing and provides freezing level information",
+                "Volcanic eruption"
+            ],
+            "correct_answer": "Moderate icing and provides freezing level information"
+        },
+        {
+            "question_number": 115,
+            "question_text": "On a weather depiction chart, a shaded area indicates:",
+            "options": [
+                "VFR conditions",
+                "MVFR conditions",
+                "IFR conditions (ceiling less than 1,000 ft and/or visibility less than 3 miles)",
+                "Areas of turbulence"
+            ],
+            "correct_answer": "IFR conditions (ceiling less than 1,000 ft and/or visibility less than 3 miles)"
+        },
+        {
+            "question_number": 116,
+            "question_text": "A down-sloping wind, typically occurring at night as high-density air cools and flows down a mountainside, is called a:",
+            "options": [
+                "Anabatic wind",
+                "Sea breeze",
+                "Katabatic wind",
+                "Foehn wind"
+            ],
+            "correct_answer": "Katabatic wind"
+        },
+        {
+            "question_number": 117,
+            "question_text": "The abbreviation 'OVC' in a METAR indicates what fraction of sky cover?",
+            "options": [
+                "1/8 to 2/8",
+                "3/8 to 4/8",
+                "5/8 to 7/8",
+                "8/8 (Overcast)"
+            ],
+            "correct_answer": "8/8 (Overcast)"
+        },
+        {
+            "question_number": 118,
+            "question_text": "If you fly from a warm air mass into a cold air mass without resetting your altimeter, your true altitude will be:",
+            "options": [
+                "Higher than indicated",
+                "Lower than indicated",
+                "The same as indicated",
+                "Equal to the pressure altitude"
+            ],
+            "correct_answer": "Lower than indicated"
+        },
+        {
+            "question_number": 119,
+            "question_text": "Steam fog, or 'sea smoke,' forms when:",
+            "options": [
+                "Warm, moist air moves over a cold surface",
+                "Cold, dry air moves over a warm water surface",
+                "The ground cools by radiation on a clear night",
+                "Moist air is forced up a slope"
+            ],
+            "correct_answer": "Cold, dry air moves over a warm water surface"
+        },
+        {
+            "question_number": 120,
+            "question_text": "Which weather phenomenon is considered a convective SIGMET event?",
+            "options": [
+                "Severe icing not associated with thunderstorms",
+                "Severe turbulence not associated with thunderstorms",
+                "A line of thunderstorms or embedded thunderstorms",
+                "Widespread dust or sandstorms"
+            ],
+            "correct_answer": "A line of thunderstorms or embedded thunderstorms"
+        },
+        {
+            "question_number": 121,
+            "question_text": "What is the primary cause of the seasonal variation of weather in the Philippines, such as the Habagat and Amihan?",
+            "options": [
+                "The shifting of the ITCZ and the influence of large-scale pressure systems like the Siberian High",
+                "The daily rotation of the Earth",
+                "The tidal pull of the moon",
+                "The El Niño and La Niña cycles exclusively"
+            ],
+            "correct_answer": "The shifting of the ITCZ and the influence of large-scale pressure systems like the Siberian High"
+        },
+        {
+            "question_number": 122,
+            "question_text": "What does a pennant (a triangular flag) on a wind aloft chart symbol represent?",
+            "options": [
+                "10 knots",
+                "25 knots",
+                "50 knots",
+                "100 knots"
+            ],
+            "correct_answer": "50 knots"
+        },
+        {
+            "question_number": 123,
+            "question_text": "What is 'vertical visibility'?",
+            "options": [
+                "The horizontal distance you can see down a runway",
+                "The height of the highest cloud layer",
+                "The distance that can be seen vertically into an obscuring phenomenon like fog or snow",
+                "The visibility reported by a pilot in a climb"
+            ],
+            "correct_answer": "The distance that can be seen vertically into an obscuring phenomenon like fog or snow"
+        },
+        {
+            "question_number": 124,
+            "question_text": "On a surface analysis chart, what does a blue line with triangles pointing in the direction of movement represent?",
+            "options": [
+                "A warm front",
+                "A cold front",
+                "A stationary front",
+                "An occluded front"
+            ],
+            "correct_answer": "A cold front"
+        },
+        {
+            "question_number": 125,
+            "question_text": "A 'ridge' on a weather chart is a(n):",
+            "options": [
+                "Elongated area of high pressure",
+                "Elongated area of low pressure",
+                "Line of constant temperature",
+                "Fast-moving frontal system"
+            ],
+            "correct_answer": "Elongated area of high pressure"
+        },
+        {
+            "question_number": 126,
+            "question_text": "What is the primary danger associated with flying through an occluded front?",
+            "options": [
+                "Clear, calm air",
+                "A mix of weather from both cold and warm fronts, often with embedded thunderstorms",
+                "Guaranteed VFR conditions",
+                "Only light, steady rain"
+            ],
+            "correct_answer": "A mix of weather from both cold and warm fronts, often with embedded thunderstorms"
+        },
+        {
+            "question_number": 127,
+            "question_text": "The presence of standing lenticular altocumulus clouds (ACSL) is a good indication of:",
+            "options": [
+                "A stable airmass with little or no wind",
+                "A developing sea breeze",
+                "Very strong turbulence associated with mountain waves",
+                "An approaching warm front"
+            ],
+            "correct_answer": "Very strong turbulence associated with mountain waves"
+        },
+        {
+            "question_number": 128,
+            "question_text": "In a TAF from RPLC (Clark International Airport), what does 'TEMPO 1821 4000 SHRA' mean?",
+            "options": [
+                "Permanently between 1800Z and 2100Z, visibility will be 4000 meters with heavy rain",
+                "Temporarily between 1800Z and 2100Z, visibility will be 4000 meters with rain showers",
+                "The temperature will be 18-21°C with 4000m visibility and showers",
+                "Wind from 180 at 21 knots, visibility 4000 meters with showers"
+            ],
+            "correct_answer": "Temporarily between 1800Z and 2100Z, visibility will be 4000 meters with rain showers"
+        },
+        {
+            "question_number": 129,
+            "question_text": "An unstable air mass is characterized by:",
+            "options": [
+                "Smooth air and poor visibility",
+                "Stratiform clouds and steady drizzle",
+                "Turbulence and good visibility outside of showers",
+                "Temperature inversions"
+            ],
+            "correct_answer": "Turbulence and good visibility outside of showers"
+        },
+        {
+            "question_number": 130,
+            "question_text": "What is indicated by the entry '731960' on a Winds and Temperatures Aloft Forecast (FD)?",
+            "options": [
+                "Wind 230° at 119 knots, temperature -60°C",
+                "Wind 230° at 19 knots, temperature -60°C",
+                "Wind 230° at 196 knots, temperature not forecast",
+                "Wind 730° at 19 knots, temperature +60°C"
+            ],
+            "correct_answer": "Wind 230° at 119 knots, temperature -60°C"
+        },
+        {
+            "question_number": 131,
+            "question_text": "The main reason for the existence of the jet stream is:",
+            "options": [
+                "The Earth's magnetic field",
+                "The large temperature contrast between polar and tropical air masses",
+                "The rotation of the sun",
+                "Ocean currents"
+            ],
+            "correct_answer": "The large temperature contrast between polar and tropical air masses"
+        },
+        {
+            "question_number": 132,
+            "question_text": "The most dangerous aspect of a microburst is the:",
+            "options": [
+                "Heavy rain associated with it",
+                "Rapid change from strong headwind to strong tailwind during approach or takeoff",
+                "Sharp drop in temperature",
+                "Lightning it produces"
+            ],
+            "correct_answer": "Rapid change from strong headwind to strong tailwind during approach or takeoff"
+        },
+        {
+            "question_number": 133,
+            "question_text": "A METAR shows the temperature as 15°C and the dew point as 14°C. What can you expect?",
+            "options": [
+                "A large spread, indicating dry air and clear skies",
+                "A small spread, indicating high relative humidity and potential for fog/low clouds",
+                "A temperature inversion",
+                "Severe turbulence"
+            ],
+            "correct_answer": "A small spread, indicating high relative humidity and potential for fog/low clouds"
+        },
+        {
+            "question_number": 134,
+            "question_text": "Which cloud family is most likely to contain supercooled water droplets and present an icing hazard?",
+            "options": [
+                "High clouds (Cirrus types)",
+                "Low and Middle clouds (Stratus and Cumulus types)",
+                "All clouds present an equal icing hazard",
+                "Only clouds with vertical development"
+            ],
+            "correct_answer": "Low and Middle clouds (Stratus and Cumulus types)"
+        },
+        {
+            "question_number": 135,
+            "question_text": "What is the primary characteristic of a stationary front?",
+            "options": [
+                "It moves very rapidly, causing severe weather",
+                "The two air masses are not moving or are moving parallel to the front",
+                "It only forms over stationary bodies of water",
+                "It is always a warm front"
+            ],
+            "correct_answer": "The two air masses are not moving or are moving parallel to the front"
+        },
+        {
+            "question_number": 136,
+            "question_text": "A standard briefing from a Flight Service Station (FSS) should include:",
+            "options": [
+                "Adverse conditions, VFR flight not recommended, synopsis, current conditions, en route forecast, destination forecast, winds aloft",
+                "Only the destination forecast and winds aloft",
+                "Only a summary of adverse conditions",
+                "A go/no-go recommendation from the briefer"
+            ],
+            "correct_answer": "Adverse conditions, VFR flight not recommended, synopsis, current conditions, en route forecast, destination forecast, winds aloft"
+        },
+        {
+            "question_number": 137,
+            "question_text": "What does the code 'M' in front of a temperature value in a METAR (e.g., M02/M05) signify?",
+            "options": [
+                "The temperature is missing",
+                "The temperature is 'minus' or below 0°C",
+                "The reading is in meters",
+                "The conditions are marginal"
+            ],
+            "correct_answer": "The temperature is 'minus' or below 0°C"
+        },
+        {
+            "question_number": 138,
+            "question_text": "An 'updraft' is a key component of which type of cloud formation process?",
+            "options": [
+                "Advection",
+                "Radiation",
+                "Convection",
+                "Conduction"
+            ],
+            "correct_answer": "Convection"
+        },
+        {
+            "question_number": 139,
+            "question_text": "If you are taking off from an airport where the temperature is much higher than standard, your aircraft will experience:",
+            "options": [
+                "A shorter takeoff roll and a better rate of climb",
+                "No change in performance",
+                "A longer takeoff roll and a poorer rate of climb",
+                "Improved engine performance"
+            ],
+            "correct_answer": "A longer takeoff roll and a poorer rate of climb"
+        },
+        {
+            "question_number": 140,
+            "question_text": "Which of these is a form of induction icing?",
+            "options": [
+                "Rime ice on the leading edge of the wing",
+                "Frost on the windscreen",
+                "Carburetor ice",
+                "Clear ice on the propeller"
+            ],
+            "correct_answer": "Carburetor ice"
+        },
+        {
+            "question_number": 141,
+            "question_text": "The height of a cloud base can be estimated by using the surface temperature and dew point. The formula is: ((Temp - Dew Point) / 2.5) * 1000 = Cloud Base AGL (in feet). If the temp is 30°C and dew point is 20°C, the approximate cloud base is:",
+            "options": [
+                "2,500 ft AGL",
+                "4,000 ft AGL",
+                "8,000 ft AGL",
+                "10,000 ft AGL"
+            ],
+            "correct_answer": "4,000 ft AGL"
+        },
+        {
+            "question_number": 142,
+            "question_text": "What does a remark like 'SLP101' in a METAR mean?",
+            "options": [
+                "Sea Level Pressure is 1010.1 hPa",
+                "Sea Level Pressure is 101.0 hPa",
+                "Slippery runway, pressure 1010 hPa",
+                "Sea Level Pressure is 1010.1 inHg"
+            ],
+            "correct_answer": "Sea Level Pressure is 1010.1 hPa"
+        },
+        {
+            "question_number": 143,
+            "question_text": "Radiation fog is most likely to dissipate or 'burn off' through which process?",
+            "options": [
+                "An increase in wind speed",
+                "A drop in temperature",
+                "Heating of the ground by the sun, which in turn warms the air",
+                "A heavy rainfall"
+            ],
+            "correct_answer": "Heating of the ground by the sun, which in turn warms the air"
+        },
+        {
+            "question_number": 144,
+            "question_text": "The prefix 'Nimbo' or the suffix 'nimbus' added to a cloud name indicates:",
+            "options": [
+                "The cloud is a high-level cloud",
+                "The cloud is wispy and thin",
+                "The cloud is precipitation-producing",
+                "The cloud has vertical development"
+            ],
+            "correct_answer": "The cloud is precipitation-producing"
+        },
+        {
+            "question_number": 145,
+            "question_text": "In the Southern Hemisphere, air circulates around a high-pressure system:",
+            "options": [
+                "Counterclockwise and outward",
+                "Clockwise and inward",
+                "Counterclockwise and inward",
+                "Clockwise and outward"
+            ],
+            "correct_answer": "Counterclockwise and outward"
+        },
+        {
+            "question_number": 146,
+            "question_text": "Which organization sets the international standards for meteorological services for aviation, which member states like the Philippines largely follow?",
+            "options": [
+                "FAA (Federal Aviation Administration)",
+                "EASA (European Union Aviation Safety Agency)",
+                "ICAO (International Civil Aviation Organization)",
+                "WMO (World Meteorological Organization)"
+            ],
+            "correct_answer": "ICAO (International Civil Aviation Organization)"
+        },
+        {
+            "question_number": 147,
+            "question_text": "Wake turbulence is a phenomenon created by an aircraft generating lift and is most severe when the generating aircraft is:",
+            "options": [
+                "Light, fast, and in a clean configuration",
+                "Heavy, slow, and in a clean configuration",
+                "Heavy, fast, and in a dirty configuration",
+                "Light, slow, and in a dirty configuration"
+            ],
+            "correct_answer": "Heavy, slow, and in a clean configuration"
+        },
+        {
+            "question_number": 148,
+            "question_text": "An AIRMET Sierra would be issued for which of the following conditions?",
+            "options": [
+                "Widespread IFR conditions or extensive mountain obscuration",
+                "Moderate turbulence",
+                "Moderate icing",
+                "Sustained surface winds of 30 knots or more"
+            ],
+            "correct_answer": "Widespread IFR conditions or extensive mountain obscuration"
+        },
+        {
+            "question_number": 149,
+            "question_text": "What is the primary danger associated with frost on an aircraft's wings?",
+            "options": [
+                "It adds significant weight to the aircraft",
+                "It disrupts the smooth flow of air, reducing lift and increasing stall speed",
+                "It can cause the ailerons to jam",
+                "It has no significant effect on performance"
+            ],
+            "correct_answer": "It disrupts the smooth flow of air, reducing lift and increasing stall speed"
+        },
+        {
+            "question_number": 150,
+            "question_text": "In a METAR, 'SCT020CB' indicates:",
+            "options": [
+                "Scattered clouds at 200 feet, type unknown",
+                "Scattered cumulonimbus clouds at 2,000 feet",
+                "Scattered cumulus clouds at 20,000 feet",
+                "Scattered clouds at 2000 feet, becoming cumulonimbus"
+            ],
+            "correct_answer": "Scattered cumulonimbus clouds at 2,000 feet"
+        },
+        {
+            "question_number": 151,
+            "question_text": "The general circulation of air in a low-pressure system is:",
+            "options": [
+                "Inward, upward, and counterclockwise in the Northern Hemisphere",
+                "Outward, downward, and clockwise in the Northern Hemisphere",
+                "Inward, downward, and clockwise in the Northern Hemisphere",
+                "Outward, upward, and counterclockwise in the Northern Hemisphere"
+            ],
+            "correct_answer": "Inward, upward, and counterclockwise in the Northern Hemisphere"
+        },
+        {
+            "question_number": 152,
+            "question_text": "Which weather chart provides a forecast of observed weather (fronts, pressure systems) for a future time?",
+            "options": [
+                "Surface Analysis Chart",
+                "Weather Depiction Chart",
+                "Prognostic Chart (Prog Chart)",
+                "Radar Summary Chart"
+            ],
+            "correct_answer": "Prognostic Chart (Prog Chart)"
+        },
+        {
+            "question_number": 153,
+            "question_text": "Upslope fog forms as a result of:",
+            "options": [
+                "Moist air being cooled by moving up sloping terrain",
+                "The ground cooling on a clear night",
+                "Warm air moving over a cold surface",
+                "Cold air moving over a warm water surface"
+            ],
+            "correct_answer": "Moist air being cooled by moving up sloping terrain"
+        },
+        {
+            "question_number": 154,
+            "question_text": "If you are flying towards a thunderstorm, a recommended procedure is to:",
+            "options": [
+                "Fly under the anvil",
+                "Fly over the top if possible",
+                "Circumnavigate the storm by at least 20 nautical miles",
+                "Penetrate the storm at a low altitude"
+            ],
+            "correct_answer": "Circumnavigate the storm by at least 20 nautical miles"
+        },
+        {
+            "question_number": 155,
+            "question_text": "In the Philippines, a TAF for RPVM (Mactan-Cebu) might be amended. An amended TAF is identified by the code:",
+            "options": [
+                "AMD",
+                "COR",
+                "RTD",
+                "SPECI"
+            ],
+            "correct_answer": "AMD"
+        },
+        {
+            "question_number": 156,
+            "question_text": "A 'ceiling' is defined as the height above the ground of the:",
+            "options": [
+                "Highest cloud layer reported",
+                "Lowest layer of clouds reported as broken (BKN) or overcast (OVC)",
+                "Lowest layer of clouds reported, regardless of coverage",
+                "Average height of all cloud layers"
+            ],
+            "correct_answer": "Lowest layer of clouds reported as broken (BKN) or overcast (OVC)"
+        },
+        {
+            "question_number": 157,
+            "question_text": "Which force balances the Pressure Gradient Force to cause winds aloft to flow parallel to isobars?",
+            "options": [
+                "Friction",
+                "Gravity",
+                "Centrifugal Force",
+                "Coriolis Force"
+            ],
+            "correct_answer": "Coriolis Force"
+        },
+        {
+            "question_number": 158,
+            "question_text": "The presence of hail at the surface is a strong indication that a thunderstorm:",
+            "options": [
+                "Is in its dissipating stage",
+                "Has very strong updrafts",
+                "Is not producing lightning",
+                "Is weak and not dangerous"
+            ],
+            "correct_answer": "Has very strong updrafts"
+        },
+        {
+            "question_number": 159,
+            "question_text": "When descending from a flight level to an altitude below the Transition Level (in the Philippines, FL130), a pilot must:",
+            "options": [
+                "Reset the altimeter to the local QNH before passing the Transition Level",
+                "Keep the standard setting (1013.2 hPa)",
+                "Reset the altimeter to the local QFE",
+                "Wait until landing to reset the altimeter"
+            ],
+            "correct_answer": "Reset the altimeter to the local QNH before passing the Transition Level"
+        },
+        {
+            "question_number": 160,
+            "question_text": "The ITCZ (Intertropical Convergence Zone) is a region where:",
+            "options": [
+                "The northeast and southwest monsoons diverge",
+                "The trade winds from the Northern and Southern Hemispheres converge",
+                "Polar air meets tropical air",
+                "High-pressure systems dominate"
+            ],
+            "correct_answer": "The trade winds from the Northern and Southern Hemispheres converge"
+        },
+        {
+            "question_number": 161,
+            "question_text": "What does the code 'FG' signify in a METAR?",
+            "options": [
+                "Frequent gusts",
+                "Fog (visibility less than 1,000m)",
+                "For ground operations only",
+                "Freezing"
+            ],
+            "correct_answer": "Fog (visibility less than 1,000m)"
+        },
+        {
+            "question_number": 162,
+            "question_text": "An 'isobar' is a line on a weather chart connecting points of equal:",
+            "options": [
+                "Temperature",
+                "Wind speed",
+                "Pressure",
+                "Dew point"
+            ],
+            "correct_answer": "Pressure"
+        },
+        {
+            "question_number": 163,
+            "question_text": "If an atmospheric sounding shows that the environmental lapse rate is greater than the dry adiabatic lapse rate (3°C/1000ft), the atmosphere is:",
+            "options": [
+                "Conditionally unstable",
+                "Stable",
+                "Neutral",
+                "Absolutely unstable"
+            ],
+            "correct_answer": "Absolutely unstable"
+        },
+        {
+            "question_number": 164,
+            "question_text": "What type of precipitation is indicated by the code 'DZ' in a METAR?",
+            "options": [
+                "Dust storm",
+                "Drizzle",
+                "Dense fog",
+                "Damaging hail"
+            ],
+            "correct_answer": "Drizzle"
+        },
+        {
+            "question_number": 165,
+            "question_text": "The primary weather hazard associated with the Amihan (Northeast Monsoon) in the Philippines is:",
+            "options": [
+                "Widespread heavy rain and thunderstorms on the western coasts",
+                "Hot and dry conditions everywhere",
+                "Showers and cooler temperatures, especially on the eastern coasts",
+                "The formation of typhoons"
+            ],
+            "correct_answer": "Showers and cooler temperatures, especially on the eastern coasts"
+        },
+        {
+            "question_number": 166,
+            "question_text": "Why is it dangerous to fly under the base of a thunderstorm?",
+            "options": [
+                "The air is perfectly smooth",
+                "Visibility is excellent",
+                "To avoid strong downdrafts (microbursts) and potentially damaging hail",
+                "The magnetic compass becomes unreliable"
+            ],
+            "correct_answer": "To avoid strong downdrafts (microbursts) and potentially damaging hail"
+        },
+        {
+            "question_number": 167,
+            "question_text": "What does a remark of 'VIRGA' on a weather report signify?",
+            "options": [
+                "Virginal, untouched air mass",
+                "Precipitation that is evaporating before reaching the ground",
+                "Variable, irregular gusts of wind",
+                "A volcanic eruption is in progress"
+            ],
+            "correct_answer": "Precipitation that is evaporating before reaching the ground"
+        },
+        {
+            "question_number": 168,
+            "question_text": "An anabatic wind is a wind that:",
+            "options": [
+                "Flows downhill at night",
+                "Flows uphill during the day as a slope is heated by the sun",
+                "Blows from the land to the sea",
+                "Is associated with a Foehn effect"
+            ],
+            "correct_answer": "Flows uphill during the day as a slope is heated by the sun"
+        },
+        {
+            "question_number": 169,
+            "question_text": "A pilot can determine the freezing level by referencing a PIREP, a Winds and Temperatures Aloft Forecast, or a(n):",
+            "options": [
+                "Surface Analysis Chart",
+                "AIRMET Zulu",
+                "METAR",
+                "TAF"
+            ],
+            "correct_answer": "AIRMET Zulu"
+        },
+        {
+            "question_number": 170,
+            "question_text": "What is the primary heat transfer mechanism that warms the lower part of the troposphere?",
+            "options": [
+                "Direct absorption of solar radiation by the air",
+                "Conduction from the Earth's core",
+                "Absorption of terrestrial radiation from the sun-heated ground",
+                "Advection from the equator"
+            ],
+            "correct_answer": "Absorption of terrestrial radiation from the sun-heated ground"
+        },
+        {
+            "question_number": 171,
+            "question_text": "On a surface analysis chart, what does a purple line with alternating triangles and semicircles on the same side represent?",
+            "options": [
+                "A warm front",
+                "A cold front",
+                "A stationary front",
+                "An occluded front"
+            ],
+            "correct_answer": "An occluded front"
+        },
+        {
+            "question_number": 172,
+            "question_text": "The 'geostrophic wind' is a balance between which two forces and flows parallel to isobars?",
+            "options": [
+                "Pressure Gradient and Friction",
+                "Pressure Gradient and Coriolis",
+                "Coriolis and Centrifugal",
+                "Gravity and Friction"
+            ],
+            "correct_answer": "Pressure Gradient and Coriolis"
+        },
+        {
+            "question_number": 173,
+            "question_text": "What does the abbreviation 'FEW' in a METAR indicate for sky cover?",
+            "options": [
+                "1/8 to 2/8",
+                "3/8 to 4/8",
+                "5/8 to 7/8",
+                "8/8"
+            ],
+            "correct_answer": "1/8 to 2/8"
+        },
+        {
+            "question_number": 174,
+            "question_text": "Clear Air Turbulence (CAT) is most commonly found:",
+            "options": [
+                "Near the ground on a calm day",
+                "In the vicinity of the jet stream",
+                "Inside stratiform clouds",
+                "In areas of high humidity"
+            ],
+            "correct_answer": "In the vicinity of the jet stream"
+        },
+        {
+            "question_number": 175,
+            "question_text": "Which condition is a prerequisite for the formation of a thunderstorm?",
+            "options": [
+                "A stable atmosphere",
+                "An initial lifting action",
+                "Low humidity",
+                "A strong temperature inversion"
+            ],
+            "correct_answer": "An initial lifting action"
+        },
+        {
+            "question_number": 176,
+            "question_text": "The wind at 5,000 feet AGL is generally stronger than the surface wind primarily because:",
+            "options": [
+                "It is less affected by the Coriolis force",
+                "It is warmer",
+                "It is less affected by surface friction",
+                "The pressure gradient is weaker aloft"
+            ],
+            "correct_answer": "It is less affected by surface friction"
+        },
+        {
+            "question_number": 177,
+            "question_text": "A METAR for RPUO (Baguio Loakan Airport) might show lower temperatures and higher density altitude concerns due to its:",
+            "options": [
+                "Coastal location",
+                "Low elevation",
+                "High field elevation",
+                "Proximity to the equator"
+            ],
+            "correct_answer": "High field elevation"
+        },
+        {
+            "question_number": 178,
+            "question_text": "Which type of weather briefing should a pilot request when the proposed departure time is 6 or more hours away?",
+            "options": [
+                "Standard Briefing",
+                "Abbreviated Briefing",
+                "Outlook Briefing",
+                "In-flight Briefing"
+            ],
+            "correct_answer": "Outlook Briefing"
+        },
+        {
+            "question_number": 179,
+            "question_text": "The term 'cyclone' in meteorology refers to:",
+            "options": [
+                "Any rotating weather system",
+                "A high-pressure system",
+                "A low-pressure system, which rotates counterclockwise in the Northern Hemisphere",
+                "A severe thunderstorm"
+            ],
+            "correct_answer": "A low-pressure system, which rotates counterclockwise in the Northern Hemisphere"
+        },
+        {
+            "question_number": 180,
+            "question_text": "What does the code 'SQ' in a METAR mean?",
+            "options": [
+                "Squall (a sudden increase in wind speed)",
+                "Showers and Quiet conditions",
+                "Stationary front question",
+                "Snow and Quartz"
+            ],
+            "correct_answer": "Squall (a sudden increase in wind speed)"
+        },
+        {
+            "question_number": 181,
+            "question_text": "The 'saturated adiabatic lapse rate' (SALR) is less than the dry adiabatic lapse rate (DALR) because:",
+            "options": [
+                "Saturated air is heavier than dry air",
+                "Latent heat is released during condensation, which warms the air parcel",
+                "Saturated air is less dense",
+                "Moisture increases the effect of friction"
+            ],
+            "correct_answer": "Latent heat is released during condensation, which warms the air parcel"
+        },
+        {
+            "question_number": 182,
+            "question_text": "A prognostic chart is used to:",
+            "options": [
+                "Show the current weather conditions",
+                "Forecast weather conditions for a future time",
+                "Display past weather events",
+                "Report pilot observations"
+            ],
+            "correct_answer": "Forecast weather conditions for a future time"
+        },
+        {
+            "question_number": 183,
+            "question_text": "What is the primary danger of hydroplaning on a runway?",
+            "options": [
+                "Increased engine performance",
+                "Loss of braking effectiveness and directional control",
+                "Damage to the landing gear",
+                "Improved steering"
+            ],
+            "correct_answer": "Loss of braking effectiveness and directional control"
+        },
+        {
+            "question_number": 184,
+            "question_text": "If a METAR reports 'VV002', it means:",
+            "options": [
+                "Visibility is 2 miles",
+                "The ceiling is 200 feet",
+                "Vertical visibility is 200 feet into an obscuring phenomenon",
+                "Wind is variable from 2 directions"
+            ],
+            "correct_answer": "Vertical visibility is 200 feet into an obscuring phenomenon"
+        },
+        {
+            "question_number": 185,
+            "question_text": "The term for the temperature at which water boils is dependent on:",
+            "options": [
+                "Relative humidity",
+                "Wind speed",
+                "Ambient pressure",
+                "Air density"
+            ],
+            "correct_answer": "Ambient pressure"
+        },
+        {
+            "question_number": 186,
+            "question_text": "Which stage of a thunderstorm is characterized mainly by updrafts?",
+            "options": [
+                "Cumulus stage",
+                "Mature stage",
+                "Dissipating stage",
+                "Anvil stage"
+            ],
+            "correct_answer": "Cumulus stage"
+        },
+        {
+            "question_number": 187,
+            "question_text": "When flying VFR, what is the best source for obtaining en-route weather information in an area without direct ATC communication?",
+            "options": [
+                "Flight Information Service (FIS) or by listening to ATIS/AWOS of nearby airports",
+                "Guessing based on the initial briefing",
+                "Looking out the window only",
+                "Commercial FM radio stations"
+            ],
+            "correct_answer": "Flight Information Service (FIS) or by listening to ATIS/AWOS of nearby airports"
+        },
+        {
+            "question_number": 188,
+            "question_text": "What is the main difference between advection fog and radiation fog?",
+            "options": [
+                "Advection fog requires wind to form, while radiation fog requires calm or light winds",
+                "Radiation fog only forms over water",
+                "Advection fog is caused by cooling, while radiation fog is caused by heating",
+                "There is no difference"
+            ],
+            "correct_answer": "Advection fog requires wind to form, while radiation fog requires calm or light winds"
+        },
+        {
+            "question_number": 189,
+            "question_text": "What does a station model on a weather chart with a completely filled-in circle indicate?",
+            "options": [
+                "Clear skies",
+                "Scattered clouds",
+                "Broken clouds",
+                "Overcast skies (8/8 cloud cover)"
+            ],
+            "correct_answer": "Overcast skies (8/8 cloud cover)"
+        },
+        {
+            "question_number": 190,
+            "question_text": "A 'Gale Warning' issued by PAGASA is primarily for:",
+            "options": [
+                "Aviation operations",
+                "Land-based activities",
+                "Maritime operations concerning strong winds associated with monsoons or tropical cyclones",
+                "General public information about heat waves"
+            ],
+            "correct_answer": "Maritime operations concerning strong winds associated with monsoons or tropical cyclones"
+        },
+        {
+            "question_number": 191,
+            "question_text": "The composition of the Earth's atmosphere is approximately:",
+            "options": [
+                "78% Oxygen, 21% Nitrogen, 1% Other gases",
+                "78% Nitrogen, 21% Oxygen, 1% Other gases",
+                "50% Nitrogen, 50% Oxygen",
+                "99% Water Vapor, 1% Other gases"
+            ],
+            "correct_answer": "78% Nitrogen, 21% Oxygen, 1% Other gases"
+        },
+        {
+            "question_number": 192,
+            "question_text": "Why do winds generally flow across isobars at an angle over land surfaces but more parallel to isobars over oceans?",
+            "options": [
+                "The Coriolis effect is weaker over land",
+                "The pressure gradient is stronger over land",
+                "The effect of surface friction is greater over land",
+                "The air is warmer over land"
+            ],
+            "correct_answer": "The effect of surface friction is greater over land"
+        },
+        {
+            "question_number": 193,
+            "question_text": "A sudden, powerful downdraft of air from the base of a cumulonimbus cloud, with a horizontal dimension of less than 4km, is called a:",
+            "options": [
+                "Tornado",
+                "Land breeze",
+                "Microburst",
+                "Katabatic wind"
+            ],
+            "correct_answer": "Microburst"
+        },
+        {
+            "question_number": 194,
+            "question_text": "An altimeter setting of QFE, when set on the ground at an airport, will cause the altimeter to read:",
+            "options": [
+                "The field elevation",
+                "Zero",
+                "The pressure altitude",
+                "The density altitude"
+            ],
+            "correct_answer": "Zero"
+        },
+        {
+            "question_number": 195,
+            "question_text": "On a weather chart, a red line with semicircles pointing in the direction of movement represents a:",
+            "options": [
+                "Cold front",
+                "Warm front",
+                "Stationary front",
+                "Trough"
+            ],
+            "correct_answer": "Warm front"
+        },
+        {
+            "question_number": 196,
+            "question_text": "The two main conditions required for structural icing in flight are:",
+            "options": [
+                "High pressure and clear skies",
+                "Flight through visible moisture and temperatures at or below freezing",
+                "Strong winds and low humidity",
+                "Flight within the stratosphere"
+            ],
+            "correct_answer": "Flight through visible moisture and temperatures at or below freezing"
+        },
+        {
+            "question_number": 197,
+            "question_text": "The formation of dew on the ground overnight is an example of which process?",
+            "options": [
+                "Evaporation",
+                "Sublimation",
+                "Condensation",
+                "Freezing"
+            ],
+            "correct_answer": "Condensation"
+        },
+        {
+            "question_number": 198,
+            "question_text": "The general flow of weather systems across the mid-latitudes (like the US and Europe) is from:",
+            "options": [
+                "East to West",
+                "West to East",
+                "North to South",
+                "South to North"
+            ],
+            "correct_answer": "West to East"
+        },
+        {
+            "question_number": 199,
+            "question_text": "What type of report would be most useful to determine the actual freezing level and icing conditions along your planned route of flight?",
+            "options": [
+                "A TAF for your destination",
+                "A METAR from a nearby airport",
+                "Recent PIREPs from other aircraft",
+                "A Surface Analysis Chart"
+            ],
+            "correct_answer": "Recent PIREPs from other aircraft"
+        },
+        {
+            "question_number": 200,
+            "question_text": "Low-level temperature inversions, common in the early morning, can lead to which combination of aviation hazards?",
+            "options": [
+                "Good visibility and smooth air",
+                "Poor visibility due to trapped haze/fog, and the potential for wind shear",
+                "Thunderstorms and strong updrafts",
+                "Clear icing and moderate turbulence"
+            ],
+            "correct_answer": "Poor visibility due to trapped haze/fog, and the potential for wind shear"
         }
     ]
 }
