@@ -215,14 +215,25 @@
 
         .selector-container { margin-bottom: 20px; text-align: center; }
         .selector-container label { font-weight: 600; margin-right: 10px; }
-        #subject-selector {
+        #subject-selector, #question-count-input {
             padding: 10px 15px;
             border: 1px solid var(--border-color);
             border-radius: 5px;
-            min-width: 250px;
             font-size: 1em;
             background-color: #fff;
             cursor: pointer;
+        }
+        #subject-selector {
+            min-width: 250px;
+        }
+        #question-count-input {
+            width: 80px;
+            text-align: center;
+        }
+        #max-questions-info {
+            font-size: 0.9em;
+            color: #555;
+            margin-left: 8px;
         }
 
         #error-container {
@@ -639,6 +650,12 @@
                         <option value="">-- Select a Subject --</option>
                     </select>
                 </div>
+                <!-- NEW: Question Count Selector for CAAP Mode -->
+                <div id="question-count-container" class="selector-container hidden">
+                    <label for="question-count-input">Number of Questions:</label>
+                    <input type="number" id="question-count-input" value="40" min="10">
+                    <span id="max-questions-info"></span>
+                </div>
                 <div class="api-key-container">
                     <label for="gemini-api-key">Gemini API Key:</label>
                     <input type="password" id="gemini-api-key" placeholder="Enter your Gemini API key">
@@ -776,7 +793,11 @@
             const reviewContainer = document.getElementById('review-container');
             const incorrectAnswersList = document.getElementById('incorrect-answers-list');
             const externalReviewersSection = document.getElementById('external-reviewers-section');
-            const disclaimerCheckbox = document.getElementById('disclaimer-checkbox'); // --- NEW: Disclaimer checkbox
+            const disclaimerCheckbox = document.getElementById('disclaimer-checkbox');
+            // NEW DOM Elements for question count
+            const questionCountContainer = document.getElementById('question-count-container');
+            const questionCountInput = document.getElementById('question-count-input');
+            const maxQuestionsInfo = document.getElementById('max-questions-info');
 
 
             // --- State Variables ---
@@ -794,7 +815,7 @@
             let remainingSkips = 3;
             let questionsAnsweredInSession = 0;
             let genAI = window.geminiSdkInstance;
-            const MODEL_NAME = "gemini-2.5-flash-preview-05-20"; 
+            const MODEL_NAME = "gemini-2.5-flash"; 
             let lastAnsweredQuestion = null;
             let lastUserAnswer = null;
             let lastCorrectAnswer = null;
@@ -865,6 +886,7 @@
                 hideElement(explanationContainer);
                 hideElement(questionBrowserContainer);
                 hideElement(reviewContainer);
+                hideElement(questionCountContainer); // NEW: Hide question count on reset
                 showElement(modeSelectorContainer);
                 showElement(externalReviewersSection);
                 enableButton(subjectSelector);
@@ -872,7 +894,6 @@
                 quizTitleElement.textContent = 'CAAP Mock by Chippo';
                 currentMode = null;
 
-                // --- NEW: Reset disclaimer and disable mode buttons ---
                 disclaimerCheckbox.checked = false;
                 disableButton(caapModeBtn);
                 disableButton(studyModeBtn);
@@ -883,6 +904,14 @@
                 hideElement(modeSelectorContainer);
                 hideElement(externalReviewersSection);
                 showElement(setupContainer);
+                
+                // NEW: Show/hide question count selector based on mode
+                if (mode === 'caap') {
+                    showElement(questionCountContainer);
+                } else {
+                    hideElement(questionCountContainer);
+                }
+
                 if (mode === 'study' && !localStorage.getItem('geminiApiKey')) {
                     hideElement(apiKeyStatus);
                 }
@@ -923,6 +952,17 @@
                         }
                         currentQuizData = data;
                         allQuestions = data.questions.map((q, index) => ({ ...q, originalIndex: index }));
+                        
+                        // NEW: Update question count input for CAAP mode
+                        if (currentMode === 'caap') {
+                            const totalAvailable = allQuestions.length;
+                            questionCountInput.max = totalAvailable;
+                            maxQuestionsInfo.textContent = `(Max: ${totalAvailable})`;
+                            if (parseInt(questionCountInput.value) > totalAvailable) {
+                                questionCountInput.value = totalAvailable;
+                            }
+                        }
+                        
                         startQuiz();
                     })
                     .catch(error => {
@@ -953,16 +993,24 @@
             }
 
             function startQuiz() {
-                questionsToAsk = [...allQuestions];
+                // NEW: Logic to select number of questions for the quiz
+                let questionsForThisRound;
+                shuffleArray(allQuestions); // Shuffle the master list first
+
                 if (currentMode === 'caap') {
-                    shuffleArray(questionsToAsk);
+                    const requestedCount = parseInt(questionCountInput.value, 10) || 40;
+                    const numToTake = Math.min(requestedCount, allQuestions.length);
+                    questionsForThisRound = allQuestions.slice(0, numToTake);
+                } else { // Study mode takes all questions
+                    questionsForThisRound = [...allQuestions];
                 }
+                questionsToAsk = questionsForThisRound;
                 
                 skippedQuestions = [];
                 questionStatus = {};
                 userAnswers = {};
                 currentQuestionIndex = 0;
-                totalQuestionsInQuiz = allQuestions.length;
+                totalQuestionsInQuiz = questionsToAsk.length; // MODIFIED: Use the length of the selected questions
                 correctAnswersCount = 0;
                 incorrectAnswersCount = 0;
                 remainingSkips = 3;
@@ -1266,8 +1314,7 @@
                 if (!genAI || typeof marked === 'undefined') {
                     return '<p class="error-message" style="color: var(--incorrect-color);">AI features not ready. Check API key and script imports.</p>';
                 }
-
-                // --- MODIFIED PROMPT ---
+                
                 const prompt = `Explain the following multiple-choice question and its correct answer in detail, assuming the user is studying for a pilot license. Use Markdown for formatting.
 
 Question: "${question.question_text}"
@@ -1279,8 +1326,10 @@ Correct Answer: "${correctAnswer}"
 Provide a clear explanation of why the correct answer is right and briefly why other options are wrong. Conclude with a simple "ELI5" (Explain Like I'm 5) summary of the core concept.`;
 
                 try {
-                    const result = await genAI.models.generateContent({ model: MODEL_NAME, tools: ["google_search"], contents: prompt });
-                    const generatedText = result.text;
+                    const model = genAI.getGenerativeModel({ model: MODEL_NAME });
+                    const result = await model.generateContent(prompt);
+                    const response = result.response;
+                    const generatedText = response.text();
                     return marked.parse(generatedText);
                 } catch (e) {
                     console.error("Error generating explanation:", e);
@@ -1302,11 +1351,10 @@ Provide a clear explanation of why the correct answer is right and briefly why o
             Search Query:`;
 
               try {
-                const result = await genAI.models.generateContent({
-                  model: MODEL_NAME,
-                  contents: prompt
-                });
-                return result.text.trim();
+                const model = genAI.getGenerativeModel({ model: MODEL_NAME });
+                const result = await model.generateContent(prompt);
+                const response = result.response;
+                return response.text().trim();
               } catch (e) {
                 console.error("Error generating search prompt:", e);
                 displayError('Failed to generate search prompt.');
