@@ -502,6 +502,50 @@
         /* Google Search Button */
         #google-search-btn { background-color: #4285F4; }
         #google-search-btn:hover { background-color: #357ae8; }
+        
+        /* --- START: New Styles for External Reviewers Section --- */
+        #external-reviewers-section {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding: 25px;
+            background-color: var(--tertiary-bg);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+        }
+        #external-reviewers-section h2 {
+            text-align: center;
+            color: var(--primary-accent);
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+        }
+        .reviewer-links-list {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .reviewer-links-list li a {
+            display: block;
+            padding: 12px 15px;
+            background-color: var(--secondary-bg);
+            color: var(--text-color);
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease-in-out;
+            text-align: center;
+            font-weight: 500;
+        }
+        .reviewer-links-list li a:hover {
+            background-color: var(--primary-accent);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* --- END: New Styles for External Reviewers Section --- */
+
 
         /* Visibility Control */
         .hidden { display: none !important; }
@@ -549,6 +593,24 @@
                 <span id="skips-display">Skips Left: 3</span>
             </div>
         </header>
+        
+        <!-- --- START: New Section for External Reviewer Links --- -->
+        <section id="external-reviewers-section">
+            <h2>External Study Links</h2>
+            <ul class="reviewer-links-list">
+                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-air-law_4fh" target="_blank" rel="noopener noreferrer">Air Law</a></li>
+                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-aircraft-general-knowledge" target="_blank" rel="noopener noreferrer">Aircraft General Knowledge</a></li>
+                <li><a href="https://www.proprofsflashcards.com/story.php?title=ppl-practice-exam" target="_blank" rel="noopener noreferrer">Principles of Flight</a></li>
+                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=untitled-quiz_16065dk" target="_blank" rel="noopener noreferrer">Flight Performance & Planning</a></li>
+                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-human-performance" target="_blank" rel="noopener noreferrer">Human Performance</a></li>
+                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-meteorology_5ic" target="_blank" rel="noopener noreferrer">Meteorology</a></li>
+                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-navigation_3pd" target="_blank" rel="noopener noreferrer">Navigation</a></li>
+                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-operational-procedures" target="_blank" rel="noopener noreferrer">Operational Procedures</a></li>
+                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=private-pilotradio-telephony" target="_blank" rel="noopener noreferrer">Radio Telephony</a></li>
+                <li><a href="https://www.proprofs.com/quiz-school/story.php?title=ppl-eqc-c172m" target="_blank" rel="noopener noreferrer">EQC – Cessna 172M</a></li>
+            </ul>
+        </section>
+        <!-- --- END: New Section for External Reviewer Links --- -->
 
         <div id="error-container" class="error-message hidden"></div>
 
@@ -658,6 +720,8 @@
             // --- NEW: Review Area Elements ---
             const reviewContainer = document.getElementById('review-container');
             const incorrectAnswersList = document.getElementById('incorrect-answers-list');
+            // --- NEW: External links section ---
+            const externalReviewersSection = document.getElementById('external-reviewers-section');
 
 
             // --- State Variables ---
@@ -747,6 +811,7 @@
                 hideElement(questionBrowserContainer);
                 hideElement(reviewContainer); // --- NEW: Hide review container on reset
                 showElement(modeSelectorContainer);
+                showElement(externalReviewersSection); // Show external links on reset
                 enableButton(subjectSelector);
                 subjectSelector.value = "";
                 quizTitleElement.textContent = 'CAAP Mock by Chippo';
@@ -756,6 +821,7 @@
             function selectMode(mode) {
                 currentMode = mode;
                 hideElement(modeSelectorContainer);
+                hideElement(externalReviewersSection); // Hide external links when mode is selected
                 showElement(setupContainer);
                 if (mode === 'study' && !localStorage.getItem('geminiApiKey')) {
                     hideElement(apiKeyStatus);
