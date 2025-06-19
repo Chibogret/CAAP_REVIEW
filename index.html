@@ -743,7 +743,8 @@
   const initialApiKey = localStorage.getItem('geminiApiKey');
   if (initialApiKey) {
     try {
-      window.geminiSdkInstance = new GoogleGenAI({ apiKey: initialApiKey });
+      // The constructor expects an object with the apiKey property
+      window.geminiSdkInstance = new GoogleGenAI(initialApiKey);
       console.log("Gemini AI SDK pre-initialized globally.");
     } catch (e) {
       console.error("Error pre-initializing Gemini SDK:", e);
@@ -754,7 +755,7 @@
   }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script>
+<script defer>
     document.addEventListener('DOMContentLoaded', () => {
         // --- DOM Elements ---
         const splashScreen = document.getElementById('splash-screen');
@@ -1308,7 +1309,8 @@
                 genAI = null; window.geminiSdkInstance = null; return;
             }
             try {
-                window.geminiSdkInstance = new window.GoogleGenAI({ apiKey: key });
+                // The constructor expects the key directly
+                window.geminiSdkInstance = new window.GoogleGenAI(key);
                 genAI = window.geminiSdkInstance;
                 apiKeyStatus.textContent = 'API key loaded. Gemini AI ready!';
                 apiKeyStatus.className = 'api-key-status-success';
@@ -1366,7 +1368,10 @@ Provide a clear explanation of why the correct answer is right and briefly why o
 
             try {
                 const model = genAI.getGenerativeModel({ model: MODEL_NAME });
-                const result = await model.generateContent(prompt);
+                // CORRECTED: Use the modern, explicit call shape for generateContent
+                const result = await model.generateContent({
+                    contents: [{ parts: [{ text: prompt }] }]
+                });
                 const response = result.response;
                 const generatedText = response.text();
                 return marked.parse(generatedText);
@@ -1391,7 +1396,10 @@ Provide a clear explanation of why the correct answer is right and briefly why o
 
           try {
             const model = genAI.getGenerativeModel({ model: MODEL_NAME });
-            const result = await model.generateContent(prompt);
+            // CORRECTED: Use the modern, explicit call shape for generateContent
+            const result = await model.generateContent({
+                contents: [{ parts: [{ text: prompt }] }]
+            });
             const response = result.response;
             return response.text().trim();
           } catch (e) {
