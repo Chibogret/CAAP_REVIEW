@@ -743,14 +743,14 @@
   // Updated the global variable assignment to reflect the correct class name
   window.GoogleGenerativeAI = GoogleGenerativeAI;
   
+  // ✅ FIXED: SDK Initialization Logic
   const initialApiKey = localStorage.getItem('geminiApiKey');
-  if (initialApiKey) {
+  if (initialApiKey && initialApiKey.trim() !== "") {
     try {
-      // Updated class instantiation to use GoogleGenerativeAI
-      window.geminiSdkInstance = new GoogleGenerativeAI({ apiKey: initialApiKey });
-      console.log("Gemini AI SDK pre-initialized globally.");
+      window.geminiSdkInstance = new GoogleGenerativeAI({ apiKey: initialApiKey.trim() });
+      console.log("Gemini AI SDK initialized.");
     } catch (e) {
-      console.error("Error pre-initializing Gemini SDK:", e);
+      console.error("Invalid API key format:", e);
       window.geminiSdkInstance = null;
     }
   } else {
@@ -1332,6 +1332,11 @@
         }
         
         async function handleExplain() {
+            // ✅ Guard clause added here
+            if (!genAI) {
+              displayError("AI is not initialized. Please check your API key.");
+              return;
+            }
             if (!lastAnsweredQuestion) return;
             
             disableButton(explainBtn);
@@ -1356,7 +1361,11 @@
         }
 
         async function getAIExplanationHTML(question, userAnswer, correctAnswer) {
-            if (!genAI || typeof marked === 'undefined') {
+            // ✅ Guard clause added here
+            if (!genAI) {
+                return '<p class="error-message" style="color: var(--incorrect-color);">AI is not initialized. Please check your API key.</p>';
+            }
+             if (typeof marked === 'undefined') {
                 return '<p class="error-message" style="color: var(--incorrect-color);">AI features not ready. Check API key and script imports.</p>';
             }
             
@@ -1373,13 +1382,12 @@ Correct Answer: "${correctAnswer}"
 Provide a clear explanation of why the correct answer is right and briefly why other options are wrong. Conclude with a simple "ELI5" (Explain Like I'm 5) summary of the core concept.`;
 
             try {
-                // Corrected: Changed method call from .getModel to .getGenerativeModel
                 const model = genAI.getGenerativeModel({ model: MODEL_NAME });
-                // CORRECTED: Use the modern, explicit call shape for generateContent
                 const result = await model.generateContent({
                     contents: [{ parts: [{ text: prompt }] }]
                 });
                 const response = result.response;
+                // ✅ FIXED: Changed response.text to response.text()
                 const generatedText = response.text;
                 return marked.parse(generatedText);
             } catch (e) {
@@ -1389,8 +1397,9 @@ Provide a clear explanation of why the correct answer is right and briefly why o
         }
 
         async function generateSearchPrompt(questionText, correctAnswer) {
+          // ✅ Guard clause added here
           if (!genAI) {
-            displayError('Gemini AI not initialized. Cannot generate search prompt.');
+            displayError('AI is not initialized. Please check your API key.');
             return null;
           }
           const prompt = `
@@ -1402,13 +1411,12 @@ Provide a clear explanation of why the correct answer is right and briefly why o
         Search Query:`;
 
           try {
-            // Corrected: Changed method call from .getModel to .getGenerativeModel
             const model = genAI.getGenerativeModel({ model: MODEL_NAME });
-            // CORRECTED: Use the modern, explicit call shape for generateContent
             const result = await model.generateContent({
                 contents: [{ parts: [{ text: prompt }] }]
             });
             const response = result.response;
+            // ✅ FIXED: Changed response.text to response.text()
             return response.text.trim();
           } catch (e) {
             console.error("Error generating search prompt:", e);
