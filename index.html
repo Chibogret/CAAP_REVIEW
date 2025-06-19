@@ -1373,7 +1373,7 @@ Provide a clear explanation of why the correct answer is right and briefly why o
                     contents: [{ parts: [{ text: prompt }] }]
                 });
                 const response = result.response;
-                const generatedText = response.text();
+                const generatedText = response.text;
                 return marked.parse(generatedText);
             } catch (e) {
                 console.error("Error generating explanation:", e);
@@ -1401,7 +1401,7 @@ Provide a clear explanation of why the correct answer is right and briefly why o
                 contents: [{ parts: [{ text: prompt }] }]
             });
             const response = result.response;
-            return response.text().trim();
+            return response.text.trim();
           } catch (e) {
             console.error("Error generating search prompt:", e);
             displayError('Failed to generate search prompt.');
