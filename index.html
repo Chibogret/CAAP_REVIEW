@@ -747,7 +747,7 @@
   const initialApiKey = localStorage.getItem('geminiApiKey');
   if (initialApiKey && initialApiKey.trim() !== "") {
     try {
-      window.geminiSdkInstance = new GoogleGenerativeAI({ apiKey: initialApiKey.trim() });
+      window.geminiSdkInstance = new GoogleGenerativeAI(initialApiKey.trim());
       console.log("Gemini AI SDK initialized.");
     } catch (e) {
       console.error("Invalid API key format:", e);
@@ -1335,7 +1335,7 @@
             }
         
             try {
-                const instance = new GoogleGenerativeAI({ apiKey: key });
+                const instance = new GoogleGenerativeAI(key);
                 window.geminiSdkInstance = instance;
                 genAI = instance;
                 apiKeyStatus.textContent = 'API key loaded. Gemini AI ready!';
