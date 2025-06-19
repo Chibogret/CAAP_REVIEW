@@ -1,0 +1,1105 @@
+{
+  "exam_title": "PPL Human Performance and Limitations - CAAP",
+  "questions": [
+    {
+      "question_number": 1,
+      "question_text": "What is the most significant factor causing hypoxia at altitude?",
+      "options": [
+        "A decrease in the percentage of oxygen in the air.",
+        "A decrease in the partial pressure of oxygen.",
+        "An increase in carbon dioxide in the atmosphere.",
+        "The colder air temperature."
+      ],
+      "correct_answer": "A decrease in the partial pressure of oxygen."
+    },
+    {
+      "question_number": 2,
+      "question_text": "Which sensory system is most reliable for determining spatial orientation in flight?",
+      "options": [
+        "Vestibular (inner ear)",
+        "Somatosensory (seat-of-the-pants)",
+        "Auditory (hearing)",
+        "Visual (eyes)"
+      ],
+      "correct_answer": "Visual (eyes)"
+    },
+    {
+      "question_number": 3,
+      "question_text": "The 'IMSAFE' checklist is used to assess a pilot's fitness to fly. What does the 'A' stand for?",
+      "options": [
+        "Attitude",
+        "Alcohol",
+        "Altitude",
+        "Aircraft"
+      ],
+      "correct_answer": "Alcohol"
+    },
+    {
+      "question_number": 4,
+      "question_text": "A narrower-than-usual runway can create an illusion that the aircraft is:",
+      "options": [
+        "Lower than it actually is, leading to a high approach.",
+        "Higher than it actually is, leading to a low approach.",
+        "Closer to the runway than it is.",
+        "Flying faster than it actually is."
+      ],
+      "correct_answer": "Higher than it actually is, leading to a low approach."
+    },
+    {
+      "question_number": 5,
+      "question_text": "What is the primary symptom of hyperventilation?",
+      "options": [
+        "Blue discoloration of lips and fingernails (cyanosis).",
+        "A sense of euphoria and well-being.",
+        "Dizziness, tingling in the extremities, and light-headedness.",
+        "Headache and impaired judgment."
+      ],
+      "correct_answer": "Dizziness, tingling in the extremities, and light-headedness."
+    },
+    {
+      "question_number": 6,
+      "question_text": "The feeling of being in a nose-high attitude during a forward acceleration is what type of illusion?",
+      "options": [
+        "Somatogyral illusion",
+        "Autokinetic illusion",
+        "Somatogravic illusion",
+        "False horizon illusion"
+      ],
+      "correct_answer": "Somatogravic illusion"
+    },
+    {
+      "question_number": 7,
+      "question_text": "What is the primary danger of carbon monoxide poisoning in an aircraft?",
+      "options": [
+        "It has a strong, pungent odor that is distracting.",
+        "It prevents the blood from carrying oxygen effectively.",
+        "It causes severe ear pain.",
+        "It leads to rapid hyperventilation."
+      ],
+      "correct_answer": "It prevents the blood from carrying oxygen effectively."
+    },
+    {
+      "question_number": 8,
+      "question_text": "The hazardous attitude characterized by the thought 'Don't tell me what to do' is known as:",
+      "options": [
+        "Impulsivity",
+        "Invulnerability",
+        "Macho",
+        "Anti-authority"
+      ],
+      "correct_answer": "Anti-authority"
+    },
+    {
+      "question_number": 9,
+      "question_text": "What is the term for the conflict between the information relayed by your central vision and your peripheral vision?",
+      "options": [
+        "Autokinesis",
+        "The Coriolis illusion",
+        "Vection illusion",
+        "The black hole effect"
+      ],
+      "correct_answer": "Vection illusion"
+    },
+    {
+      "question_number": 10,
+      "question_text": "Which type of fatigue is a result of long-term stress and is not cured by a single night of rest?",
+      "options": [
+        "Acute fatigue",
+        "Skill fatigue",
+        "Chronic fatigue",
+        "Transient fatigue"
+      ],
+      "correct_answer": "Chronic fatigue"
+    },
+    {
+      "question_number": 11,
+      "question_text": "Pain in the sinuses, ears, or teeth during changes in altitude is a symptom of:",
+      "options": [
+        "Decompression sickness",
+        "Hypoxia",
+        "Barotrauma",
+        "Hyperventilation"
+      ],
+      "correct_answer": "Barotrauma"
+    },
+    {
+      "question_number": 12,
+      "question_text": "How can a pilot best overcome spatial disorientation?",
+      "options": [
+        "Rely on their 'seat-of-the-pants' sensation.",
+        "Trust the flight instruments.",
+        "Focus on a single point on the horizon.",
+        "Make quick, aggressive control inputs."
+      ],
+      "correct_answer": "Trust the flight instruments."
+    },
+    {
+      "question_number": 13,
+      "question_text": "The 'black hole' approach illusion typically occurs during:",
+      "options": [
+        "Daylight approaches over featureless terrain.",
+        "Night approaches to a brightly lit runway in a city.",
+        "Night approaches over dark, featureless terrain or water.",
+        "Approaches in heavy rain."
+      ],
+      "correct_answer": "Night approaches over dark, featureless terrain or water."
+    },
+    {
+      "question_number": 14,
+      "question_text": "What is the antidote for the hazardous attitude of 'Invulnerability'?",
+      "options": [
+        "Follow the rules. They are usually right.",
+        "Not so fast. Think first.",
+        "It could happen to me.",
+        "Taking chances is foolish."
+      ],
+      "correct_answer": "It could happen to me."
+    },
+    {
+      "question_number": 15,
+      "question_text": "The part of the eye responsible for color vision and sharp detail is the:",
+      "options": [
+        "Rods",
+        "Pupil",
+        "Cones",
+        "Iris"
+      ],
+      "correct_answer": "Cones"
+    },
+    {
+      "question_number": 16,
+      "question_text": "What is the minimum time a pilot should wait before flying after consuming any alcohol?",
+      "options": [
+        "4 hours 'bottle to throttle'",
+        "8 hours 'bottle to throttle'",
+        "12 hours 'bottle to throttle'",
+        "24 hours 'bottle to throttle'"
+      ],
+      "correct_answer": "8 hours 'bottle to throttle'"
+    },
+    {
+      "question_number": 17,
+      "question_text": "Aeronautical Decision Making (ADM) is a:",
+      "options": [
+        "Checklist for preflight inspection.",
+        "Systematic approach to the mental process used by pilots.",
+        "Regulation set by the CAAP.",
+        "Type of flight instrument."
+      ],
+      "correct_answer": "Systematic approach to the mental process used by pilots."
+    },
+    {
+      "question_number": 18,
+      "question_text": "What is a common symptom of dehydration?",
+      "options": [
+        "Increased mental acuity",
+        "Headache and fatigue",
+        "A strong urge to sleep",
+        "Tingling in the extremities"
+      ],
+      "correct_answer": "Headache and fatigue"
+    },
+    {
+      "question_number": 19,
+      "question_text": "The illusion of a stationary light appearing to move when stared at for a prolonged period is called:",
+      "options": [
+        "The Coriolis illusion",
+        "Autokinesis",
+        "The Leans",
+        "A false horizon"
+      ],
+      "correct_answer": "Autokinesis"
+    },
+    {
+      "question_number": 20,
+      "question_text": "Decompression sickness is caused by what gas coming out of solution in the body's fluids?",
+      "options": [
+        "Oxygen",
+        "Carbon Dioxide",
+        "Carbon Monoxide",
+        "Nitrogen"
+      ],
+      "correct_answer": "Nitrogen"
+    },
+    {
+      "question_number": 21,
+      "question_text": "What does the 'L' represent in the SHEL model of human factors?",
+      "options": [
+        "Lighting",
+        "Legislation",
+        "Liveware",
+        "Logistics"
+      ],
+      "correct_answer": "Liveware"
+    },
+    {
+      "question_number": 22,
+      "question_text": "An upsloping runway can create the illusion that the aircraft is:",
+      "options": [
+        "Too high, causing a pilot to fly a low approach.",
+        "Too low, causing a pilot to fly a high approach.",
+        "Closer than it is, causing a pilot to flare too early.",
+        "Farther than it is, causing a pilot to flare too late."
+      ],
+      "correct_answer": "Too high, causing a pilot to fly a low approach."
+    },
+    {
+      "question_number": 23,
+      "question_text": "Which of the following is a corrective action for hyperventilation?",
+      "options": [
+        "Breathing into a paper bag or consciously controlling breathing rate.",
+        "Using supplemental oxygen.",
+        "Performing the Valsalva maneuver.",
+        "Increasing physical activity to generate more CO2."
+      ],
+      "correct_answer": "Breathing into a paper bag or consciously controlling breathing rate."
+    },
+    {
+      "question_number": 24,
+      "question_text": "The 'Leans' is an illusion of attitude caused by:",
+      "options": [
+        "A rapid acceleration.",
+        "A sudden return to level flight from a prolonged, unnoticed turn.",
+        "Staring at a single point of light in the dark.",
+        "Movement of the head in a different plane during a turn."
+      ],
+      "correct_answer": "A sudden return to level flight from a prolonged, unnoticed turn."
+    },
+    {
+      "question_number": 25,
+      "question_text": "The PAVE checklist helps pilots assess risk. What does the 'V' stand for?",
+      "options": [
+        "Visibility",
+        "Visuals",
+        "Vehicle (aircraft)",
+        "Vestibular"
+      ],
+      "correct_answer": "Vehicle (aircraft)"
+    },
+    {
+      "question_number": 26,
+      "question_text": "For best night vision, a pilot should use what part of their vision?",
+      "options": [
+        "Central vision, looking directly at objects.",
+        "Peripheral vision, looking slightly off-center of objects.",
+        "The fovea, for sharp focus.",
+        "The optic nerve directly."
+      ],
+      "correct_answer": "Peripheral vision, looking slightly off-center of objects."
+    },
+    {
+      "question_number": 27,
+      "question_text": "What is the term for a pilot's accurate perception of all factors and conditions affecting the aircraft and themselves?",
+      "options": [
+        "Aeronautical Decision Making (ADM)",
+        "Risk Management",
+        "Situational Awareness (SA)",
+        "Crew Resource Management (CRM)"
+      ],
+      "correct_answer": "Situational Awareness (SA)"
+    },
+    {
+      "question_number": 28,
+      "question_text": "The hazardous attitude of 'Impulsivity' is best described as:",
+      "options": [
+        "The feeling that accidents only happen to others.",
+        "The need to prove one's ability by taking risks.",
+        "The need to do something, anything, immediately.",
+        "A dislike for rules."
+      ],
+      "correct_answer": "The need to do something, anything, immediately."
+    },
+    {
+      "question_number": 29,
+      "question_text": "Flying with a head cold can be particularly dangerous because of the risk of:",
+      "options": [
+        "Hyperventilation",
+        "Barotrauma in the ears and sinuses.",
+        "Hypoxia",
+        "Carbon monoxide poisoning."
+      ],
+      "correct_answer": "Barotrauma in the ears and sinuses."
+    },
+    {
+      "question_number": 30,
+      "question_text": "What is the most effective way to prevent motion sickness?",
+      "options": [
+        "Focusing on tasks inside the cockpit.",
+        "Looking outside at a fixed point on the horizon.",
+        "Making sudden, sharp head movements.",
+        "Closing your eyes."
+      ],
+      "correct_answer": "Looking outside at a fixed point on the horizon."
+    },
+    {
+      "question_number": 31,
+      "question_text": "The 'graveyard spiral' is an illusion that can occur when a pilot:",
+      "options": [
+        "Accelerates rapidly during takeoff.",
+        "Loses the sensation of being in a prolonged turn and tries to level the wings, tightening the spiral.",
+        "Stares at a fixed light in the dark.",
+        "Flies into a 'black hole' on approach."
+      ],
+      "correct_answer": "Loses the sensation of being in a prolonged turn and tries to level the wings, tightening the spiral."
+    },
+    {
+      "question_number": 32,
+      "question_text": "What is the antidote for the hazardous attitude of 'Macho'?",
+      "options": [
+        "It could happen to me.",
+        "Follow the rules.",
+        "Not so fast, think first.",
+        "Taking chances is foolish."
+      ],
+      "correct_answer": "Taking chances is foolish."
+    },
+    {
+      "question_number": 33,
+      "question_text": "Haze can create the illusion that the aircraft is:",
+      "options": [
+        "Closer to the runway than it actually is.",
+        "Higher and farther away from the runway than it actually is.",
+        "Lower and closer to the runway than it actually is.",
+        "Flying slower than it actually is."
+      ],
+      "correct_answer": "Higher and farther away from the runway than it actually is."
+    },
+    {
+      "question_number": 34,
+      "question_text": "What is the primary purpose of Single-Pilot Resource Management (SRM)?",
+      "options": [
+        "To manage fuel resources efficiently.",
+        "To manage the pilot's workload and use all available resources.",
+        "To communicate with air traffic control.",
+        "To ensure the aircraft is properly maintained."
+      ],
+      "correct_answer": "To manage the pilot's workload and use all available resources."
+    },
+    {
+      "question_number": 35,
+      "question_text": "'Time of Useful Consciousness' (TUC) refers to the period of time:",
+      "options": [
+        "An aircraft can operate at a certain altitude.",
+        "A pilot has to make a decision.",
+        "From oxygen deprivation until a pilot is no longer able to take corrective action.",
+        "It takes for the eyes to adapt to darkness."
+      ],
+      "correct_answer": "From oxygen deprivation until a pilot is no longer able to take corrective action."
+    },
+    {
+      "question_number": 36,
+      "question_text": "Which type of hypoxia is caused by the inability of the blood to carry sufficient oxygen, such as in carbon monoxide poisoning?",
+      "options": [
+        "Hypoxic hypoxia",
+        "Hypemic hypoxia",
+        "Stagnant hypoxia",
+        "Histotoxic hypoxia"
+      ],
+      "correct_answer": "Hypemic hypoxia"
+    },
+    {
+      "question_number": 37,
+      "question_text": "The Coriolis illusion is caused by:",
+      "options": [
+        "A rapid forward acceleration.",
+        "Staring at a fixed light in the darkness.",
+        "Moving the head in a different plane of rotation while the aircraft is turning.",
+        "A sudden return to level flight from a prolonged bank."
+      ],
+      "correct_answer": "Moving the head in a different plane of rotation while the aircraft is turning."
+    },
+    {
+      "question_number": 38,
+      "question_text": "Stress can lead to which of the following performance degradations?",
+      "options": [
+        "Improved long-term memory.",
+        "Increased perceptual field.",
+        "A narrowing of attention, or 'tunnel vision'.",
+        "Heightened situational awareness."
+      ],
+      "correct_answer": "A narrowing of attention, or 'tunnel vision'."
+    },
+    {
+      "question_number": 39,
+      "question_text": "A wider-than-usual runway can create an illusion that the aircraft is:",
+      "options": [
+        "Higher than it is, leading to a low approach.",
+        "Lower than it is, leading to a high approach and flare.",
+        "Farther from the runway than it is.",
+        "Closer to the runway than it is."
+      ],
+      "correct_answer": "Lower than it is, leading to a high approach and flare."
+    },
+    {
+      "question_number": 40,
+      "question_text": "Which of the hazardous attitudes is countered by the antidote 'Not so fast, think first'?",
+      "options": [
+        "Anti-authority",
+        "Resignation",
+        "Impulsivity",
+        "Invulnerability"
+      ],
+      "correct_answer": "Impulsivity"
+    },
+    {
+      "question_number": 41,
+      "question_text": "The inner ear contains the vestibular system, which is responsible for the sense of:",
+      "options": [
+        "Hearing",
+        "Sight",
+        "Balance and spatial orientation",
+        "Touch"
+      ],
+      "correct_answer": "Balance and spatial orientation"
+    },
+    {
+      "question_number": 42,
+      "question_text": "A 'false horizon' illusion can be caused by:",
+      "options": [
+        "A narrow runway.",
+        "Rapid acceleration.",
+        "A sloping cloud deck or rows of lights at night.",
+        "Staring at a single light for a long time."
+      ],
+      "correct_answer": "A sloping cloud deck or rows of lights at night."
+    },
+    {
+      "question_number": 43,
+      "question_text": "The inability of body tissues to use available oxygen is defined as what type of hypoxia?",
+      "options": [
+        "Hypoxic hypoxia",
+        "Hypemic hypoxia",
+        "Stagnant hypoxia",
+        "Histotoxic hypoxia"
+      ],
+      "correct_answer": "Histotoxic hypoxia"
+    },
+    {
+      "question_number": 44,
+      "question_text": "What is the hazardous attitude of Resignation?",
+      "options": [
+        "The feeling that rules don't apply to you.",
+        "The feeling that you can't make a difference or that things are out of your control.",
+        "The need to do something immediately.",
+        "The need to prove your abilities by taking risks."
+      ],
+      "correct_answer": "The feeling that you can't make a difference or that things are out of your control."
+    },
+    {
+      "question_number": 45,
+      "question_text": "To effectively scan for traffic during the day, pilots should:",
+      "options": [
+        "Stare at a single spot on the horizon.",
+        "Use a series of short, regularly spaced eye movements that bring successive areas of the sky into the central visual field.",
+        "Continuously scan from side to side without stopping.",
+        "Focus only on the area directly in front of the aircraft."
+      ],
+      "correct_answer": "Use a series of short, regularly spaced eye movements that bring successive areas of the sky into the central visual field."
+    },
+    {
+      "question_number": 46,
+      "question_text": "The physiological effects of positive G-forces can include:",
+      "options": [
+        "Blood being forced towards the head, causing a 'red-out'.",
+        "Blood being forced away from the head, potentially causing a 'grey-out' or 'blackout'.",
+        "A feeling of weightlessness.",
+        "Decompression sickness."
+      ],
+      "correct_answer": "Blood being forced away from the head, potentially causing a 'grey-out' or 'blackout'."
+    },
+    {
+      "question_number": 47,
+      "question_text": "The antidote 'I'm not helpless. I can make a difference' is used to counter which hazardous attitude?",
+      "options": [
+        "Macho",
+        "Invulnerability",
+        "Anti-authority",
+        "Resignation"
+      ],
+      "correct_answer": "Resignation"
+    },
+    {
+      "question_number": 48,
+      "question_text": "Stagnant hypoxia is caused by:",
+      "options": [
+        "Low partial pressure of oxygen.",
+        "The blood's inability to carry oxygen.",
+        "The pooling of blood or poor circulation, such as during high-G maneuvers.",
+        "The tissues' inability to use available oxygen."
+      ],
+      "correct_answer": "The pooling of blood or poor circulation, such as during high-G maneuvers."
+    },
+    {
+      "question_number": 49,
+      "question_text": "A downsloping runway can create the illusion that the aircraft is:",
+      "options": [
+        "Too high, leading to a low approach.",
+        "Too low, leading to a high approach.",
+        "Farther away than it actually is.",
+        "Closer than it actually is."
+      ],
+      "correct_answer": "Too low, leading to a high approach."
+    },
+    {
+      "question_number": 50,
+      "question_text": "The process of the eyes becoming accustomed to low-light conditions is called:",
+      "options": [
+        "Light adaptation",
+        "Foveal vision",
+        "Dark adaptation",
+        "Autokinesis"
+      ],
+      "correct_answer": "Dark adaptation"
+    },
+    {
+      "question_number": 51,
+      "question_text": "Which part of the PAVE checklist considers factors like experience, currency, and physical/emotional condition?",
+      "options": [
+        "Pilot-in-command",
+        "Aircraft",
+        "enVironment",
+        "External Pressures"
+      ],
+      "correct_answer": "Pilot-in-command"
+    },
+    {
+      "question_number": 52,
+      "question_text": "A state of temporary confusion resulting from misleading information being sent to the brain by various sensory organs is known as:",
+      "options": [
+        "Motion sickness",
+        "Fatigue",
+        "Spatial disorientation",
+        "Hypoxia"
+      ],
+      "correct_answer": "Spatial disorientation"
+    },
+    {
+      "question_number": 53,
+      "question_text": "One of the earliest and most subtle symptoms of hypoxia is:",
+      "options": [
+        "Loss of consciousness.",
+        "Severe headache.",
+        "Impaired judgment or a sense of euphoria.",
+        "Cyanosis."
+      ],
+      "correct_answer": "Impaired judgment or a sense of euphoria."
+    },
+    {
+      "question_number": 54,
+      "question_text": "Which of these is a significant risk of flying shortly after a scuba dive?",
+      "options": [
+        "Increased susceptibility to carbon monoxide poisoning.",
+        "Greater chance of experiencing visual illusions.",
+        "Increased risk of decompression sickness.",
+        "Reduced night vision capability."
+      ],
+      "correct_answer": "Increased risk of decompression sickness."
+    },
+    {
+      "question_number": 55,
+      "question_text": "The tendency to make decisions based on what one expects to happen is called:",
+      "options": [
+        "Confirmation bias",
+        "Expectation bias",
+        "The recency effect",
+        "Complacency"
+      ],
+      "correct_answer": "Expectation bias"
+    },
+    {
+      "question_number": 56,
+      "question_text": "What is the primary function of the rods in the human eye?",
+      "options": [
+        "To see color and fine detail.",
+        "To see in low-light conditions and for peripheral vision.",
+        "To focus light onto the retina.",
+        "To adapt to bright light conditions."
+      ],
+      "correct_answer": "To see in low-light conditions and for peripheral vision."
+    },
+    {
+      "question_number": 57,
+      "question_text": "In the SHEL model, the interaction between 'Liveware' and 'Hardware' (L-H) refers to:",
+      "options": [
+        "The pilot's interaction with regulations and procedures.",
+        "The pilot's interaction with the physical design of the cockpit and instruments.",
+        "The interaction between different crew members.",
+        "The pilot's interaction with the environment like weather."
+      ],
+      "correct_answer": "The pilot's interaction with the physical design of the cockpit and instruments."
+    },
+    {
+      "question_number": 58,
+      "question_text": "A pilot making an approach to land at night over water with no lights may feel they are:",
+      "options": [
+        "Too low, and fly a high approach.",
+        "Too high, and fly a dangerously low approach.",
+        "In a bank, even when wings are level.",
+        "Flying faster than they actually are."
+      ],
+      "correct_answer": "Too high, and fly a dangerously low approach."
+    },
+    {
+      "question_number": 59,
+      "question_text": "The 'DECIDE' model of aeronautical decision-making stands for:",
+      "options": [
+        "Detect, Estimate, Choose, Identify, Do, Evaluate.",
+        "Declare, Estimate, Consider, Implement, Determine, Execute.",
+        "Decipher, Examine, Conclude, Initiate, Direct, Engage.",
+        "Define, Execute, Consider, Implement, Decide, Evaluate."
+      ],
+      "correct_answer": "Detect, Estimate, Choose, Identify, Do, Evaluate."
+    },
+    {
+      "question_number": 60,
+      "question_text": "What is a common physiological effect of stress?",
+      "options": [
+        "Decreased heart rate and blood pressure.",
+        "Increased heart rate and release of adrenaline.",
+        "Improved digestion.",
+        "A sense of calm and relaxation."
+      ],
+      "correct_answer": "Increased heart rate and release of adrenaline."
+    },
+    {
+      "question_number": 61,
+      "question_text": "In the 'IMSAFE' checklist, what does the 'E' stand for?",
+      "options": [
+        "Environment",
+        "Engine",
+        "Emergency",
+        "Emotion"
+      ],
+      "correct_answer": "Emotion"
+    },
+    {
+      "question_number": 62,
+      "question_text": "The somatosensory system provides orientation cues based on:",
+      "options": [
+        "What the pilot sees.",
+        "What the pilot hears.",
+        "What the pilot feels through nerves in the skin, muscles, and joints.",
+        "What the pilot's inner ear detects."
+      ],
+      "correct_answer": "What the pilot feels through nerves in the skin, muscles, and joints."
+    },
+    {
+      "question_number": 63,
+      "question_text": "Flying with an overcast sky above a flat, snow-covered ground can lead to which dangerous condition?",
+      "options": [
+        "Black hole effect",
+        "Whiteout conditions",
+        "Autokinesis",
+        "Somatogravic illusion"
+      ],
+      "correct_answer": "Whiteout conditions"
+    },
+    {
+      "question_number": 64,
+      "question_text": "A pilot's memory can be affected by stress, leading to a tendency to remember:",
+      "options": [
+        "Only the positive aspects of a situation.",
+        "The first and last items in a sequence more easily than the middle items.",
+        "Complex procedures with greater accuracy.",
+        "Information from a long time ago more clearly than recent events."
+      ],
+      "correct_answer": "The first and last items in a sequence more easily than the middle items."
+    },
+    {
+      "question_number": 65,
+      "question_text": "What is the primary risk associated with taking over-the-counter medications before a flight?",
+      "options": [
+        "They are generally ineffective for common ailments.",
+        "They can have unknown and adverse side effects, like drowsiness.",
+        "They are prohibited by all aviation authorities.",
+        "They can interfere with aircraft radio communications."
+      ],
+      "correct_answer": "They can have unknown and adverse side effects, like drowsiness."
+    },
+    {
+      "question_number": 66,
+      "question_text": "The '3P' model in ADM asks the pilot to:",
+      "options": [
+        "Plan, Perform, Prosecute.",
+        "Perceive, Process, Perform.",
+        "Prepare, Pilot, Perfect.",
+        "Proceed, Plan, Practice."
+      ],
+      "correct_answer": "Perceive, Process, Perform."
+    },
+    {
+      "question_number": 67,
+      "question_text": "An illusion of rotation in the opposite direction from a spin or spiral that has been corrected is called the:",
+      "options": [
+        "Leans",
+        "Graveyard spin",
+        "Coriolis illusion",
+        "Somatogravic illusion"
+      ],
+      "correct_answer": "Graveyard spin"
+    },
+    {
+      "question_number": 68,
+      "question_text": "What is the main difference between acute and chronic fatigue?",
+      "options": [
+        "Acute fatigue is purely mental, while chronic fatigue is purely physical.",
+        "Acute fatigue is relieved by a single night of rest, while chronic fatigue is not.",
+        "Acute fatigue only occurs during long-haul flights.",
+        "Chronic fatigue is less dangerous than acute fatigue."
+      ],
+      "correct_answer": "Acute fatigue is relieved by a single night of rest, while chronic fatigue is not."
+    },
+    {
+      "question_number": 69,
+      "question_text": "In the context of risk management, 'External Pressures' can include:",
+      "options": [
+        "The pilot's physical condition.",
+        "The aircraft's performance limitations.",
+        "Pressure to complete a flight for a scheduled event or to please passengers.",
+        "Weather conditions like thunderstorms or icing."
+      ],
+      "correct_answer": "Pressure to complete a flight for a scheduled event or to please passengers."
+    },
+    {
+      "question_number": 70,
+      "question_text": "What is the first action a pilot should take if carbon monoxide poisoning is suspected?",
+      "options": [
+        "Descend to a lower altitude.",
+        "Turn off all electronics.",
+        "Shut off the cabin heat and open fresh air vents or windows.",
+        "Immediately declare an emergency and return to the airport."
+      ],
+      "correct_answer": "Shut off the cabin heat and open fresh air vents or windows."
+    },
+    {
+      "question_number": 71,
+      "question_text": "The tendency to rely on a single source of information and ignore others is a sign of:",
+      "options": [
+        "Good situational awareness.",
+        "Fixation or tunnel vision.",
+        "Effective scanning.",
+        "The Macho attitude."
+      ],
+      "correct_answer": "Fixation or tunnel vision."
+    },
+    {
+      "question_number": 72,
+      "question_text": "The body's 'biological clock' which regulates sleep/wake cycles is also known as:",
+      "options": [
+        "The SHEL model",
+        "The PAVE checklist",
+        "The Circadian rhythm",
+        "The Somatosensory system"
+      ],
+      "correct_answer": "The Circadian rhythm"
+    },
+    {
+      "question_number": 73,
+      "question_text": "Which component of the vestibular system detects angular acceleration like rolls, pitches, and yaws?",
+      "options": [
+        "The otolith organs",
+        "The cochlea",
+        "The semicircular canals",
+        "The proprioceptors"
+      ],
+      "correct_answer": "The semicircular canals"
+    },
+    {
+      "question_number": 74,
+      "question_text": "A pilot's judgment can be negatively influenced by a hazardous thought pattern. What is the best tool to counteract this?",
+      "options": [
+        "Checklists",
+        "Flight instruments",
+        "Applying the appropriate antidote",
+        "Ignoring the thought"
+      ],
+      "correct_answer": "Applying the appropriate antidote"
+    },
+    {
+      "question_number": 75,
+      "question_text": "Rain on the windscreen can create an illusion of being:",
+      "options": [
+        "Higher, causing a lower approach.",
+        "Lower, causing a higher approach.",
+        "Farther from the runway.",
+        "In a shallower bank."
+      ],
+      "correct_answer": "Higher, causing a lower approach."
+    },
+    {
+      "question_number": 76,
+      "question_text": "What is 'complacency' in an aviation context?",
+      "options": [
+        "A high level of skill and proficiency.",
+        "A hazardous attitude of overconfidence and a false sense of security.",
+        "A mental state caused by hypoxia.",
+        "A type of visual illusion."
+      ],
+      "correct_answer": "A hazardous attitude of overconfidence and a false sense of security."
+    },
+    {
+      "question_number": 77,
+      "question_text": "Which component of the vestibular system detects linear acceleration and gravity?",
+      "options": [
+        "The semicircular canals",
+        "The otolith organs",
+        "The auditory nerve",
+        "The cochlea"
+      ],
+      "correct_answer": "The otolith organs"
+    },
+    {
+      "question_number": 78,
+      "question_text": "The process of managing all available resources, both onboard and from outside sources, is the core of:",
+      "options": [
+        "The IMSAFE checklist",
+        "Spatial orientation",
+        "Single-Pilot Resource Management (SRM)",
+        "The hazardous attitudes"
+      ],
+      "correct_answer": "Single-Pilot Resource Management (SRM)"
+    },
+    {
+      "question_number": 79,
+      "question_text": "What is the primary reason the 'seat-of-the-pants' sense is unreliable in flight without visual reference?",
+      "options": [
+        "It only works at low altitudes.",
+        "It cannot distinguish between the force of gravity and acceleration forces.",
+        "It is dulled by engine vibration.",
+        "It is less sensitive than hearing."
+      ],
+      "correct_answer": "It cannot distinguish between the force of gravity and acceleration forces."
+    },
+    {
+      "question_number": 80,
+      "question_text": "A featureless terrain approach, such as over dark water or snow, can cause a pilot to:",
+      "options": [
+        "Fly a higher approach than normal.",
+        "Fly a lower approach than normal.",
+        "Flare too late.",
+        "Perceive the runway as being tilted."
+      ],
+      "correct_answer": "Fly a lower approach than normal."
+    },
+    {
+      "question_number": 81,
+      "question_text": "Loss of cabin pressurization at high altitude would most immediately lead to which condition?",
+      "options": [
+        "Carbon monoxide poisoning",
+        "Hypoxic hypoxia",
+        "Stagnant hypoxia",
+        "Hyperventilation"
+      ],
+      "correct_answer": "Hypoxic hypoxia"
+    },
+    {
+      "question_number": 82,
+      "question_text": "A common behavioral sign of a pilot experiencing high stress is:",
+      "options": [
+        "Calm and methodical decision-making.",
+        "Increased tolerance for errors.",
+        "Irritability and impatience.",
+        "Enhanced communication skills."
+      ],
+      "correct_answer": "Irritability and impatience."
+    },
+    {
+      "question_number": 83,
+      "question_text": "The blind spot in the human eye is caused by:",
+      "options": [
+        "The high concentration of cones in the fovea.",
+        "The point where the optic nerve connects to the retina.",
+        "The lens being unable to focus light properly.",
+        "The pupil being too constricted."
+      ],
+      "correct_answer": "The point where the optic nerve connects to the retina."
+    },
+    {
+      "question_number": 84,
+      "question_text": "Which human factors model considers the interactions between Software, Hardware, Environment, and Liveware?",
+      "options": [
+        "ADM Model",
+        "PAVE Model",
+        "IMSAFE Model",
+        "SHEL Model"
+      ],
+      "correct_answer": "SHEL Model"
+    },
+    {
+      "question_number": 85,
+      "question_text": "To prevent dehydration during flight, a pilot should:",
+      "options": [
+        "Drink plenty of caffeinated beverages.",
+        "Drink water regularly, even if not thirsty.",
+        "Avoid drinking fluids to minimize restroom breaks.",
+        "Drink sugary sodas for energy."
+      ],
+      "correct_answer": "Drink water regularly, even if not thirsty."
+    },
+    {
+      "question_number": 86,
+      "question_text": "What is the primary reason for performing clearing turns before maneuvers?",
+      "options": [
+        "To check the functionality of flight controls.",
+        "To mitigate the risk of collision by checking for other traffic.",
+        "To warm up the engine.",
+        "To practice steep turns."
+      ],
+      "correct_answer": "To mitigate the risk of collision by checking for other traffic."
+    },
+    {
+      "question_number": 87,
+      "question_text": "During a rapid decompression, the first and most critical action the pilot must take is to:",
+      "options": [
+        "Declare an emergency.",
+        "Don their oxygen mask.",
+        "Initiate an emergency descent.",
+        "Check the cabin pressurization system."
+      ],
+      "correct_answer": "Don their oxygen mask."
+    },
+    {
+      "question_number": 88,
+      "question_text": "The tendency to seek information that supports a preconceived notion and ignore contradictory information is:",
+      "options": [
+        "Expectation bias",
+        "Confirmation bias",
+        "Complacency",
+        "Invulnerability"
+      ],
+      "correct_answer": "Confirmation bias"
+    },
+    {
+      "question_number": 89,
+      "question_text": "How can a pilot maintain fitness to fly?",
+      "options": [
+        "By relying on experience alone.",
+        "By ensuring proper diet, exercise, and sufficient rest.",
+        "By flying the minimum required hours.",
+        "By taking stimulants before a flight."
+      ],
+      "correct_answer": "By ensuring proper diet, exercise, and sufficient rest."
+    },
+    {
+      "question_number": 90,
+      "question_text": "Controlled Flight Into Terrain (CFIT) is an accident where a perfectly functional aircraft is:",
+      "options": [
+        "Involved in a mid-air collision.",
+        "Struck by lightning.",
+        "Inadvertently flown into the ground, water, or an obstacle.",
+        "Experiencing an engine failure."
+      ],
+      "correct_answer": "Inadvertently flown into the ground, water, or an obstacle."
+    },
+    {
+      "question_number": 91,
+      "question_text": "The most significant human factor contributing to CFIT accidents is:",
+      "options": [
+        "Engine mismanagement.",
+        "Loss of situational awareness.",
+        "Improper use of automation.",
+        "Poor communication with ATC."
+      ],
+      "correct_answer": "Loss of situational awareness."
+    },
+    {
+      "question_number": 92,
+      "question_text": "If a pilot experiences a greyout during a steep turn, it indicates:",
+      "options": [
+        "The onset of hypoxia.",
+        "The effects of negative G-forces.",
+        "That positive G-forces are causing a decrease of blood flow to the brain.",
+        "The beginning of spatial disorientation."
+      ],
+      "correct_answer": "That positive G-forces are causing a decrease of blood flow to the brain."
+    },
+    {
+      "question_number": 93,
+      "question_text": "What is the most common cause of hyperventilation in student pilots?",
+      "options": [
+        "High altitude flying.",
+        "Emotional stress, anxiety, or fear.",
+        "Carbon monoxide poisoning.",
+        "Physical exertion."
+      ],
+      "correct_answer": "Emotional stress, anxiety, or fear."
+    },
+    {
+      "question_number": 94,
+      "question_text": "The antidote 'Follow the rules. They are usually right' is for which hazardous attitude?",
+      "options": [
+        "Macho",
+        "Resignation",
+        "Impulsivity",
+        "Anti-authority"
+      ],
+      "correct_answer": "Anti-authority"
+    },
+    {
+      "question_number": 95,
+      "question_text": "The ability to manage one's own workload, especially during high-stress situations, is a key component of:",
+      "options": [
+        "The PAVE checklist",
+        "Effective ADM and SRM",
+        "The SHEL model",
+        "Visual scanning techniques"
+      ],
+      "correct_answer": "Effective ADM and SRM"
+    },
+    {
+      "question_number": 96,
+      "question_text": "What type of vision is lost when the cones are not effective in low light?",
+      "options": [
+        "Peripheral vision",
+        "Night vision",
+        "Color vision and visual acuity",
+        "Scotopic vision"
+      ],
+      "correct_answer": "Color vision and visual acuity"
+    },
+    {
+      "question_number": 97,
+      "question_text": "A pilot enters a prolonged, constant-rate turn. After a while, the inner ear may stop sensing the turn, leading to the illusion that:",
+      "options": [
+        "The aircraft is climbing.",
+        "The aircraft is descending.",
+        "The aircraft is no longer turning.",
+        "The aircraft is turning in the opposite direction."
+      ],
+      "correct_answer": "The aircraft is no longer turning."
+    },
+    {
+      "question_number": 98,
+      "question_text": "In the PAVE checklist, 'Environment' refers to factors such as:",
+      "options": [
+        "Aircraft airworthiness and performance.",
+        "The pilot's health and emotional state.",
+        "Weather, terrain, and airport conditions.",
+        "Passenger needs and schedule pressures."
+      ],
+      "correct_answer": "Weather, terrain, and airport conditions."
+    },
+    {
+      "question_number": 99,
+      "question_text": "A good pre-flight briefing for passengers should include information on:",
+      "options": [
+        "Advanced aerodynamic principles.",
+        "How to operate the aircraft in an emergency.",
+        "The use of seatbelts, emergency exits, and sterile cockpit procedures.",
+        "The pilot's complete flight history."
+      ],
+      "correct_answer": "The use of seatbelts, emergency exits, and sterile cockpit procedures."
+    },
+    {
+      "question_number": 100,
+      "question_text": "The single most important action to prevent human-error related accidents is:",
+      "options": [
+        "To fly a technologically advanced aircraft.",
+        "To always fly with a co-pilot.",
+        "To maintain a high level of situational awareness and practice good ADM.",
+        "To avoid flying at night or in marginal weather."
+      ],
+      "correct_answer": "To maintain a high level of situational awareness and practice good ADM."
+    }
+  ]
+}
