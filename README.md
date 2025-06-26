@@ -14,6 +14,7 @@ This project is a web-based quiz application designed to help users prepare for 
 *   **Question Skipping:** Users can skip a limited number of questions to attempt later.
 *   **Score Tracking:** Dynamically updates and displays the user's score.
 *   **Quiz Completion Summary:** Shows a final score and summary at the end of the quiz.
+*   **Pain Point Analytics:** Highlights questions you frequently miss to help focus your study.
 *   **Responsive Design:** Adapts to different screen sizes for usability on various devices.
 *   **Client-Side Operation:** Runs entirely in the web browser with no server-side backend required.
 

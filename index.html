@@ -494,7 +494,25 @@
     .explain-review-btn:hover {
         background-color: var(--secondary-accent);
     }
-    
+
+    /* Analytics Area */
+    #analytics-container {
+        margin-top: 30px;
+        padding: 25px;
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        background-color: var(--secondary-bg);
+    }
+    #analytics-container h2 {
+         margin-top: 0;
+         color: var(--primary-accent);
+         border-bottom: 1px solid var(--border-color);
+         padding-bottom: 10px;
+         margin-bottom: 20px;
+         font-size: 1.5em;
+    }
+    .analytics-item { margin-bottom: 10px; }
+
     /* API Key Input */
     .api-key-container {
         margin-top: 20px;
@@ -734,6 +752,11 @@
         </div>
     </div>
 
+    <div id="analytics-container" class="hidden">
+        <h2>Pain Point Analytics</h2>
+        <div id="analytics-summary"></div>
+    </div>
+
 </div>
 
 <!-- SDK Imports and Scripts -->
@@ -798,6 +821,8 @@
         const questionBrowserList = document.getElementById('question-browser-list');
         const reviewContainer = document.getElementById('review-container');
         const incorrectAnswersList = document.getElementById('incorrect-answers-list');
+        const analyticsContainer = document.getElementById('analytics-container');
+        const analyticsSummary = document.getElementById('analytics-summary');
         const externalReviewersSection = document.getElementById('external-reviewers-section');
         const disclaimerCheckbox = document.getElementById('disclaimer-checkbox');
         const questionCountContainer = document.getElementById('question-count-container');
@@ -821,6 +846,7 @@
         let consecutiveSkips = 0; // For CAAP Mode
         let currentScoreValue = 0; // New scoring system
         let questionsAnsweredInSession = 0;
+        const analyticsData = JSON.parse(localStorage.getItem('quizAnalytics') || '{}');
         let genAI = window.geminiSdkInstance; // This variable correctly holds the SDK instance
         const MODEL_NAME = "gemini-2.5-flash-preview-04-17"; 
         let lastAnsweredQuestion = null;
@@ -995,6 +1021,8 @@
             hideElement(googleSearchBtn);
             hideElement(questionBrowserContainer);
             hideElement(reviewContainer);
+            hideElement(analyticsContainer);
+            analyticsSummary.innerHTML = '';
             incorrectAnswersList.innerHTML = '';
         }
 
@@ -1145,6 +1173,8 @@
                 currentQuestionIndex++;
             }
 
+            updateAnalytics(currentQuestion, userAnswer === correctAnswer);
+
             if (currentMode === 'caap') {
                 consecutiveSkips = 0; // Reset consecutive skips on any answer
             }
@@ -1243,6 +1273,7 @@
             }, 100); // Short delay to allow UI to render first
 
             displayIncorrectAnswersReview();
+            displayAnalytics();
         }
 
 
@@ -1275,7 +1306,42 @@
 
             showElement(reviewContainer);
         }
-        
+
+        function updateAnalytics(question, wasCorrect) {
+            const key = `${currentQuizData.exam_title}_${question.originalIndex}`;
+            if (!analyticsData[key]) {
+                analyticsData[key] = { attempts: 0, incorrect: 0, text: question.question_text };
+            }
+            analyticsData[key].attempts++;
+            if (!wasCorrect) analyticsData[key].incorrect++;
+            localStorage.setItem('quizAnalytics', JSON.stringify(analyticsData));
+        }
+
+        function displayAnalytics() {
+            analyticsSummary.innerHTML = '';
+            const prefix = `${currentQuizData.exam_title}_`;
+            const stats = Object.entries(analyticsData)
+                .filter(([k]) => k.startsWith(prefix))
+                .map(([k, v]) => v);
+
+            if (stats.length === 0) {
+                analyticsSummary.textContent = 'No analytics data yet.';
+                hideElement(analyticsContainer);
+                return;
+            }
+
+            stats.sort((a, b) => (b.incorrect / b.attempts) - (a.incorrect / a.attempts));
+            stats.slice(0, 5).forEach(stat => {
+                const p = document.createElement('p');
+                const text = stat.text.length > 80 ? stat.text.slice(0, 80) + '...' : stat.text;
+                const ratio = ((stat.incorrect / stat.attempts) * 100).toFixed(0);
+                p.className = 'analytics-item';
+                p.textContent = `${text} - ${ratio}% incorrect (${stat.incorrect}/${stat.attempts})`;
+                analyticsSummary.appendChild(p);
+            });
+            showElement(analyticsContainer);
+        }
+
         // --- Study Mode Specific Functions ---
         function renderQuestionBrowser() {
             questionBrowserList.innerHTML = '';
