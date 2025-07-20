@@ -848,7 +848,7 @@
         let questionsAnsweredInSession = 0;
         const analyticsData = JSON.parse(localStorage.getItem('quizAnalytics') || '{}');
         let genAI = window.geminiSdkInstance; // This variable correctly holds the SDK instance
-        const MODEL_NAME = "gemini-2.5-flash-preview-04-17"; 
+        const MODEL_NAME = "gemini-2.5-flash"; 
         let lastAnsweredQuestion = null;
         let lastUserAnswer = null;
         let lastCorrectAnswer = null;
