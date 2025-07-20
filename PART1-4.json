@@ -1,0 +1,665 @@
+{
+  "exam_title": "Software Development and Engineering Examination",
+  "questions": [
+    {
+      "question_number": 1,
+      "question_text": "Which package is automatically imported into every Java program?",
+      "options": [
+        "java.util.*",
+        "java.io.*",
+        "java.lang.*",
+        "java.net.*"
+      ],
+      "correct_answer": "java.lang.*"
+    },
+    {
+      "question_number": 2,
+      "question_text": "In Java, what is the result of an explicit type cast from a double to an int?",
+      "options": [
+        "The double value is rounded to the nearest integer.",
+        "The fractional part of the double is truncated.",
+        "A compilation error occurs.",
+        "The double value is converted to its binary representation."
+      ],
+      "correct_answer": "The fractional part of the double is truncated."
+    },
+    {
+      "question_number": 3,
+      "question_text": "What is the key principle of method overloading in Java?",
+      "options": [
+        "Methods with the same name must have the same number and type of parameters.",
+        "Methods with the same name must have different return types.",
+        "Methods with the same name can have different parameter lists.",
+        "Methods with the same name must be in different classes."
+      ],
+      "correct_answer": "Methods with the same name can have different parameter lists."
+    },
+    {
+      "question_number": 4,
+      "question_text": "What is the primary purpose of the SQL WHERE clause?",
+      "options": [
+        "To sort the result set.",
+        "To group rows that have the same values into summary rows.",
+        "To filter records and retrieve only those that fulfill a specified condition.",
+        "To join two or more tables."
+      ],
+      "correct_answer": "To filter records and retrieve only those that fulfill a specified condition."
+    },
+    {
+      "question_number": 5,
+      "question_text": "What is the correct syntax for an SQL UPDATE statement?",
+      "options": [
+        "UPDATE table_name SET column1 = value1, column2 = value2;",
+        "UPDATE table_name SET (column1, column2) = (value1, value2) WHERE condition;",
+        "UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition;",
+        "UPDATE table_name (column1, column2) VALUES (value1, value2) WHERE condition;"
+      ],
+      "correct_answer": "UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition;"
+    },
+    {
+      "question_number": 6,
+      "question_text": "Which SQL JOIN returns all rows from the left table and the matched rows from the right table?",
+      "options": [
+        "INNER JOIN",
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "FULL OUTER JOIN"
+      ],
+      "correct_answer": "LEFT JOIN"
+    },
+    {
+      "question_number": 7,
+      "question_text": "Which annotation in Spring Boot implicitly includes @Configuration, @EnableAutoConfiguration, and @ComponentScan?",
+      "options": [
+        "@SpringBootApplication",
+        "@EnableAutoConfiguration",
+        "@ComponentScan",
+        "@Configuration"
+      ],
+      "correct_answer": "@SpringBootApplication"
+    },
+    {
+      "question_number": 8,
+      "question_text": "Which HTTP method is used to request a representation of the specified resource without the response body?",
+      "options": [
+        "GET",
+        "POST",
+        "HEAD",
+        "PUT"
+      ],
+      "correct_answer": "HEAD"
+    },
+    {
+      "question_number": 9,
+      "question_text": "What is the main advantage of Spring Boot's use of embedded servers?",
+      "options": [
+        "It allows for more complex server configurations.",
+        "It creates self-contained applications that are easy to run.",
+        "It improves the performance of the application.",
+        "It reduces the size of the application."
+      ],
+      "correct_answer": "It creates self-contained applications that are easy to run."
+    },
+    {
+      "question_number": 10,
+      "question_text": "What is the core concept of the Object-Oriented Paradigm?",
+      "options": [
+        "Thinking about systems as a sequence of function calls.",
+        "Thinking about systems as networks of collaborating objects.",
+        "Thinking about systems as a collection of data structures.",
+        "Thinking about systems as a set of mathematical equations."
+      ],
+      "correct_answer": "Thinking about systems as networks of collaborating objects."
+    },
+    {
+      "question_number": 11,
+      "question_text": "In OOAD, what is the primary role of a class?",
+      "options": [
+        "To represent a single instance with state and behavior.",
+        "To serve as a blueprint for creating objects.",
+        "To execute a specific function.",
+        "To store data in a relational database."
+      ],
+      "correct_answer": "To serve as a blueprint for creating objects."
+    },
+    {
+      "question_number": 12,
+      "question_text": "What is the main purpose of encapsulation in object-oriented programming?",
+      "options": [
+        "To expose all data and methods to other objects.",
+        "To bundle data and methods together and control access to them.",
+        "To create as many objects as possible.",
+        "To ensure that all methods have the same name."
+      ],
+      "correct_answer": "To bundle data and methods together and control access to them."
+    },
+    {
+      "question_number": 13,
+      "question_text": "What is the defining characteristic of the 'IS-A' relationship in object-oriented programming?",
+      "options": [
+        "It represents a 'has-a' relationship between two objects.",
+        "It is another term for the 'uses-a' relationship.",
+        "It is the litmus test for inheritance.",
+        "It is primarily used to model composition."
+      ],
+      "correct_answer": "It is the litmus test for inheritance."
+    },
+    {
+      "question_number": 14,
+      "question_text": "What are UML Activity Diagrams best suited for modeling?",
+      "options": [
+        "The static structure of a system.",
+        "The deployment of software components.",
+        "The flow of control from one activity to another.",
+        "The interaction between objects over time."
+      ],
+      "correct_answer": "The flow of control from one activity to another."
+    },
+    {
+      "question_number": 15,
+      "question_text": "What is the key benefit of favoring composition over inheritance?",
+      "options": [
+        "It leads to more rigid and less flexible designs.",
+        "It allows for greater flexibility and simpler designs.",
+        "It is the only way to achieve code reuse.",
+        "It is a principle that only applies to procedural programming."
+      ],
+      "correct_answer": "It allows for greater flexibility and simpler designs."
+    },
+    {
+      "question_number": 16,
+      "question_text": "In Java, what is the difference between `i++` and `++i`?",
+      "options": [
+        "There is no difference.",
+        "`i++` increments the value of `i` and then returns the new value, while `++i` returns the original value of `i` and then increments it.",
+        "`i++` returns the current value of `i` and then increments it, while `++i` increments the value of `i` and then returns the new value.",
+        "`i++` can only be used in loops, while `++i` can be used anywhere."
+      ],
+      "correct_answer": "`i++` returns the current value of `i` and then increments it, while `++i` increments the value of `i` and then returns the new value."
+    },
+    {
+      "question_number": 17,
+      "question_text": "What is the main advantage of using generics in Java?",
+      "options": [
+        "It allows you to write code that can work with any data type.",
+        "It provides type safety by allowing you to detect errors at compile time.",
+        "It simplifies the syntax of Java code.",
+        "It improves the performance of Java applications."
+      ],
+      "correct_answer": "It provides type safety by allowing you to detect errors at compile time."
+    },
+    {
+      "question_number": 18,
+      "question_text": "Which of the following is an example of an unchecked exception in Java?",
+      "options": [
+        "IOException",
+        "SQLException",
+        "ArrayIndexOutOfBoundsException",
+        "FileNotFoundException"
+      ],
+      "correct_answer": "ArrayIndexOutOfBoundsException"
+    },
+    {
+      "question_number": 19,
+      "question_text": "How are arguments passed to methods in Java?",
+      "options": [
+        "Primitives are passed by reference, and objects are passed by value.",
+        "Primitives are passed by value, and objects are passed by reference.",
+        "Both primitives and objects are passed by value.",
+        "Both primitives and objects are passed by reference."
+      ],
+      "correct_answer": "Both primitives and objects are passed by value."
+    },
+    {
+      "question_number": 20,
+      "question_text": "What is the primary difference between the WHERE and HAVING clauses in SQL?",
+      "options": [
+        "WHERE filters individual rows, while HAVING filters groups of rows after aggregation.",
+        "HAVING filters individual rows, while WHERE filters groups of rows after aggregation.",
+        "There is no difference; they are interchangeable.",
+        "WHERE is used with SELECT statements, while HAVING is used with UPDATE statements."
+      ],
+      "correct_answer": "WHERE filters individual rows, while HAVING filters groups of rows after aggregation."
+    },
+    {
+      "question_number": 21,
+      "question_text": "Which type of SQL JOIN returns all rows when there is a match in either the left or the right table?",
+      "options": [
+        "INNER JOIN",
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "FULL OUTER JOIN"
+      ],
+      "correct_answer": "FULL OUTER JOIN"
+    },
+    {
+      "question_number": 22,
+      "question_text": "What is the purpose of a subquery in SQL?",
+      "options": [
+        "To join two tables together.",
+        "To create a new table.",
+        "To filter or retrieve data that depends on the result of another query.",
+        "To sort the results of a query."
+      ],
+      "correct_answer": "To filter or retrieve data that depends on the result of another query."
+    },
+    {
+      "question_number": 23,
+      "question_text": "Which HTTP method is idempotent and used to replace all current representations of the target resource with the request content?",
+      "options": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "correct_answer": "PUT"
+    },
+    {
+      "question_number": 24,
+      "question_text": "What is the primary benefit of Dependency Injection (DI) in Spring?",
+      "options": [
+        "It makes the code more tightly coupled.",
+        "It decouples the components of an application, making them easier to manage and test.",
+        "It improves the performance of the application by reducing the number of objects created.",
+        "It is a security feature that prevents unauthorized access to the application."
+      ],
+      "correct_answer": "It decouples the components of an application, making them easier to manage and test."
+    },
+    {
+      "question_number": 25,
+      "question_text": "In Spring MVC, which annotation is used to extract data from the request body?",
+      "options": [
+        "@PathVariable",
+        "@RequestParam",
+        "@RequestBody",
+        "@ModelAttribute"
+      ],
+      "correct_answer": "@RequestBody"
+    },
+    {
+      "question_number": 26,
+      "question_text": "What is the difference between @Controller and @RestController in Spring?",
+      "options": [
+        "@Controller is a specialization of @RestController.",
+        "@RestController is a convenience annotation that combines @Controller and @ResponseBody.",
+        "@Controller is used for RESTful web services, while @RestController is used for traditional web applications.",
+        "There is no difference between the two annotations."
+      ],
+      "correct_answer": "@RestController is a convenience annotation that combines @Controller and @ResponseBody."
+    },
+    {
+      "question_number": 27,
+      "question_text": "What is the purpose of the `spring-boot-starter-parent` POM in a Maven project?",
+      "options": [
+        "It provides a default configuration for the application.",
+        "It manages the dependencies and their versions for the project.",
+        "It is used to package the application as a JAR or WAR file.",
+        "It is required to run the application."
+      ],
+      "correct_answer": "It manages the dependencies and their versions for the project."
+    },
+    {
+      "question_number": 28,
+      "question_text": "What is the main capability of the JpaRepository in Spring Data JPA?",
+      "options": [
+        "It provides basic CRUD operations, as well as pagination and sorting.",
+        "It is used to configure the database connection.",
+        "It is a marker interface that does not provide any methods.",
+        "It is used to execute native SQL queries."
+      ],
+      "correct_answer": "It provides basic CRUD operations, as well as pagination and sorting."
+    },
+    {
+      "question_number": 29,
+      "question_text": "How can you inject a property with a default value in Spring using the @Value annotation?",
+      "options": [
+        "@Value(\"${my.property:defaultValue}\")",
+        "@Value(\"${my.property}\", defaultValue=\"defaultValue\")",
+        "@Value(\"${my.property}\", default=\"defaultValue\")",
+        "@Value(\"${my.property} || defaultValue\")"
+      ],
+      "correct_answer": "@Value(\"${my.property:defaultValue}\")"
+    },
+    {
+      "question_number": 30,
+      "question_text": "Which interface in Spring Boot allows you to run specific code once the application context is fully loaded?",
+      "options": [
+        "ApplicationRunner",
+        "CommandLineRunner",
+        "ContextRunner",
+        "StartupRunner"
+      ],
+      "correct_answer": "CommandLineRunner"
+    },
+    {
+      "question_number": 31,
+      "question_text": "What is the purpose of the @ConditionalOnClass annotation in Spring Boot?",
+      "options": [
+        "To conditionally create a bean if a certain class is on the classpath.",
+        "To conditionally enable a configuration if a certain class is on the classpath.",
+        "To conditionally create a bean if a certain property is set.",
+        "To conditionally enable a configuration if a certain property is set."
+      ],
+      "correct_answer": "To conditionally enable a configuration if a certain class is on the classpath."
+    },
+    {
+      "question_number": 32,
+      "question_text": "What is the behavior of the REQUIRED transaction propagation level in Spring?",
+      "options": [
+        "It always creates a new transaction.",
+        "It supports a current transaction if one exists; otherwise, it creates a new one.",
+        "It suspends the current transaction and creates a new one.",
+        "It throws an exception if a transaction already exists."
+      ],
+      "correct_answer": "It supports a current transaction if one exists; otherwise, it creates a new one."
+    },
+    {
+      "question_number": 33,
+      "question_text": "In Java, what is the difference between `==` and `equals()` when comparing String objects?",
+      "options": [
+        "`==` compares the values of the strings, while `equals()` compares the references.",
+        "`==` compares the references of the strings, while `equals()` compares the values.",
+        "There is no difference; they are interchangeable.",
+        "`==` is used for comparing string literals, while `equals()` is used for comparing String objects."
+      ],
+      "correct_answer": "`==` compares the references of the strings, while `equals()` compares the values."
+    },
+    {
+      "question_number": 34,
+      "question_text": "What is the purpose of the `Arrays.sort()` method in Java?",
+      "options": [
+        "To sort the elements of an array in descending order.",
+        "To sort the elements of an array in ascending order.",
+        "To reverse the order of the elements in an array.",
+        "To find the largest element in an array."
+      ],
+      "correct_answer": "To sort the elements of an array in ascending order."
+    },
+    {
+      "question_number": 35,
+      "question_text": "What is the difference between checked and unchecked exceptions in Java?",
+      "options": [
+        "Checked exceptions are checked at runtime, while unchecked exceptions are checked at compile time.",
+        "Checked exceptions are checked at compile time, while unchecked exceptions are checked at runtime.",
+        "There is no difference; they are interchangeable.",
+        "Checked exceptions are thrown by the JVM, while unchecked exceptions are thrown by the application code."
+      ],
+      "correct_answer": "Checked exceptions are checked at compile time, while unchecked exceptions are checked at runtime."
+    },
+    {
+      "question_number": 36,
+      "question_text": "What is the purpose of the `GROUP BY` clause in SQL?",
+      "options": [
+        "To filter the results of a query.",
+        "To sort the results of a query.",
+        "To group rows that have the same values into summary rows.",
+        "To join two or more tables."
+      ],
+      "correct_answer": "To group rows that have the same values into summary rows."
+    },
+    {
+      "question_number": 37,
+      "question_text": "Which HTTP method is not idempotent?",
+      "options": [
+        "GET",
+        "PUT",
+        "DELETE",
+        "POST"
+      ],
+      "correct_answer": "POST"
+    },
+    {
+      "question_number": 38,
+      "question_text": "How does Spring Boot's auto-configuration work?",
+      "options": [
+        "It automatically configures the application based on the dependencies present on the classpath.",
+        "It requires manual configuration of all the beans.",
+        "It uses a set of predefined configurations that cannot be changed.",
+        "It is a feature that is only available in the paid version of Spring Boot."
+      ],
+      "correct_answer": "It automatically configures the application based on the dependencies present on the classpath."
+    },
+    {
+      "question_number": 39,
+      "question_text": "What is the purpose of the `extends` and `implements` keywords in Java?",
+      "options": [
+        "`extends` is used to inherit from a class, while `implements` is used to implement an interface.",
+        "`implements` is used to inherit from a class, while `extends` is used to implement an interface.",
+        "Both keywords are used to inherit from a class.",
+        "Both keywords are used to implement an interface."
+      ],
+      "correct_answer": "`extends` is used to inherit from a class, while `implements` is used to implement an interface."
+    },
+    {
+      "question_number": 40,
+      "question_text": "What is polymorphism in Java?",
+      "options": [
+        "The ability of an object to take on many forms.",
+        "The ability of a class to inherit from multiple classes.",
+        "The ability of a method to have multiple implementations.",
+        "The ability of a variable to have multiple values."
+      ],
+      "correct_answer": "The ability of an object to take on many forms."
+    },
+    {
+      "question_number": 41,
+      "question_text": "What is the purpose of the `if-else` statement in Java?",
+      "options": [
+        "To execute a block of code repeatedly.",
+        "To execute a block of code if a certain condition is true, and another block of code if the condition is false.",
+        "To declare a variable.",
+        "To define a method."
+      ],
+      "correct_answer": "To execute a block of code if a certain condition is true, and another block of code if the condition is false."
+    },
+    {
+      "question_number": 42,
+      "question_text": "What is the correct way to declare a variable in Java?",
+      "options": [
+        "variableName dataType;",
+        "dataType variableName;",
+        "variableName = value;",
+        "dataType variableName = value;"
+      ],
+      "correct_answer": "dataType variableName;"
+    },
+    {
+      "question_number": 43,
+      "question_text": "What is the purpose of the `filter()` operation in Java Streams?",
+      "options": [
+        "To transform each element of the stream into another element.",
+        "To perform an action on each element of the stream.",
+        "To return a stream consisting of the elements of this stream that match the given predicate.",
+        "To reduce the elements of the stream to a single value."
+      ],
+      "correct_answer": "To return a stream consisting of the elements of this stream that match the given predicate."
+    },
+    {
+      "question_number": 44,
+      "question_text": "What is the purpose of the `map()` operation in Java Streams?",
+      "options": [
+        "To filter the elements of the stream.",
+        "To perform an action on each element of the stream.",
+        "To return a stream consisting of the results of applying the given function to the elements of this stream.",
+        "To reduce the elements of the stream to a single value."
+      ],
+      "correct_answer": "To return a stream consisting of the results of applying the given function to the elements of this stream."
+    },
+    {
+      "question_number": 45,
+      "question_text": "What is the purpose of the `forEach()` operation in Java Streams?",
+      "options": [
+        "To filter the elements of the stream.",
+        "To transform each element of the stream into another element.",
+        "To perform an action for each element of this stream.",
+        "To reduce the elements of the stream to a single value."
+      ],
+      "correct_answer": "To perform an action for each element of this stream."
+    },
+    {
+      "question_number": 46,
+      "question_text": "What is the purpose of the `Arrays.toString()` method in Java?",
+      "options": [
+        "To convert an array to a string.",
+        "To sort the elements of an array.",
+        "To find the length of an array.",
+        "To search for an element in an array."
+      ],
+      "correct_answer": "To convert an array to a string."
+    },
+    {
+      "question_number": 47,
+      "question_text": "What is the purpose of the `try-catch` block in Java?",
+      "options": [
+        "To declare a variable.",
+        "To define a method.",
+        "To handle exceptions.",
+        "To create a loop."
+      ],
+      "correct_answer": "To handle exceptions."
+    },
+    {
+      "question_number": 48,
+      "question_text": "What is the purpose of the `finally` block in Java?",
+      "options": [
+        "To execute code regardless of whether an exception is thrown or not.",
+        "To execute code only if an exception is thrown.",
+        "To execute code only if an exception is not thrown.",
+        "To declare a variable."
+      ],
+      "correct_answer": "To execute code regardless of whether an exception is thrown or not."
+    },
+    {
+      "question_number": 49,
+      "question_text": "What is the purpose of the `throw` keyword in Java?",
+      "options": [
+        "To catch an exception.",
+        "To handle an exception.",
+        "To throw an exception.",
+        "To declare an exception."
+      ],
+      "correct_answer": "To throw an exception."
+    },
+    {
+      "question_number": 50,
+      "question_text": "What is the purpose of the `throws` keyword in Java?",
+      "options": [
+        "To catch an exception.",
+        "To handle an exception.",
+        "To throw an exception.",
+        "To declare an exception."
+      ],
+      "correct_answer": "To declare an exception."
+    },
+    {
+      "question_number": 51,
+      "question_text": "What is the purpose of the `interface` keyword in Java?",
+      "options": [
+        "To define a class.",
+        "To define a method.",
+        "To define an abstract class.",
+        "To define a contract for a class."
+      ],
+      "correct_answer": "To define a contract for a class."
+    },
+    {
+      "question_number": 52,
+      "question_text": "What is the purpose of the `abstract` keyword in Java?",
+      "options": [
+        "To create an instance of a class.",
+        "To define a class that cannot be instantiated.",
+        "To define a method that has no implementation.",
+        "Both b and c."
+      ],
+      "correct_answer": "Both b and c."
+    },
+    {
+      "question_number": 53,
+      "question_text": "What is the purpose of the `final` keyword in Java?",
+      "options": [
+        "To declare a variable whose value cannot be changed.",
+        "To define a method that cannot be overridden.",
+        "To define a class that cannot be extended.",
+        "All of the above."
+      ],
+      "correct_answer": "All of the above."
+    },
+    {
+      "question_number": 54,
+      "question_text": "What is the purpose of the `static` keyword in Java?",
+      "options": [
+        "To create a variable or method that belongs to the class, rather than to any particular instance of the class.",
+        "To create a variable or method that can only be accessed by other members of the same class.",
+        "To create a variable or method that can be accessed by any class.",
+        "To create a variable or method that is automatically initialized to its default value."
+      ],
+      "correct_answer": "To create a variable or method that belongs to the class, rather than to any particular instance of the class."
+    },
+    {
+      "question_number": 55,
+      "question_text": "What is the purpose of the `this` keyword in Java?",
+      "options": [
+        "To refer to the current object.",
+        "To refer to the superclass of the current object.",
+        "To refer to a static variable or method.",
+        "To create a new object."
+      ],
+      "correct_answer": "To refer to the current object."
+    },
+    {
+      "question_number": 56,
+      "question_text": "What is the purpose of the `super` keyword in Java?",
+      "options": [
+        "To refer to the current object.",
+        "To refer to the superclass of the current object.",
+        "To refer to a static variable or method.",
+        "To create a new object."
+      ],
+      "correct_answer": "To refer to the superclass of the current object."
+    },
+    {
+      "question_number": 57,
+      "question_text": "What is the purpose of the `new` keyword in Java?",
+      "options": [
+        "To declare a variable.",
+        "To define a method.",
+        "To create a new object.",
+        "To call a method."
+      ],
+      "correct_answer": "To create a new object."
+    },
+    {
+      "question_number": 58,
+      "question_text": "What is the purpose of the `instanceof` operator in Java?",
+      "options": [
+        "To compare two objects.",
+        "To check if an object is an instance of a particular class or interface.",
+        "To create a new object.",
+        "To call a method."
+      ],
+      "correct_answer": "To check if an object is an instance of a particular class or interface."
+    },
+    {
+      "question_number": 59,
+      "question_text": "What is the purpose of the `break` statement in Java?",
+      "options": [
+        "To exit a loop or a switch statement.",
+        "To skip the current iteration of a loop.",
+        "To return a value from a method.",
+        "To throw an exception."
+      ],
+      "correct_answer": "To exit a loop or a switch statement."
+    },
+    {
+      "question_number": 60,
+      "question_text": "What is the purpose of the `continue` statement in Java?",
+      "options": [
+        "To exit a loop or a switch statement.",
+        "To skip the current iteration of a loop.",
+        "To return a value from a method.",
+        "To throw an exception."
+      ],
+      "correct_answer": "To skip the current iteration of a loop."
+    }
+  ]
+}
