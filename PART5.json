@@ -1,0 +1,555 @@
+{
+    "exam_title": "Tech Fundamentals Quiz (Networking, Linux, and Git)",
+    "questions": [
+        {
+            "question_number": 1,
+            "question_text": "What is a key responsibility of the Transport Layer in the OSI model?",
+            "options": [
+                "Routing packets between networks",
+                "Providing reliability and flow control",
+                "Managing physical hardware connections",
+                "Formatting and translating data"
+            ],
+            "correct_answer": "Providing reliability and flow control"
+        },
+        {
+            "question_number": 2,
+            "question_text": "Which protocol is connection-oriented, ensuring reliable data delivery?",
+            "options": [
+                "UDP",
+                "TCP",
+                "IP",
+                "ICMP"
+            ],
+            "correct_answer": "TCP"
+        },
+        {
+            "question_number": 3,
+            "question_text": "An IP address is 192.168.1.15 with a CIDR notation of /24. How many usable host addresses are in this subnet?",
+            "options": [
+                "256",
+                "254",
+                "128",
+                "126"
+            ],
+            "correct_answer": "254"
+        },
+        {
+            "question_number": 4,
+            "question_text": "What is the main function of a VPN Gateway?",
+            "options": [
+                "To distribute content closer to users.",
+                "To monitor network traffic for viruses.",
+                "To establish a secure communication tunnel over a public network.",
+                "To assign dynamic IP addresses to devices."
+            ],
+            "correct_answer": "To establish a secure communication tunnel over a public network."
+        },
+        {
+            "question_number": 5,
+            "question_text": "What is a primary benefit of using a Content Delivery Network (CDN)?",
+            "options": [
+                "It encrypts all local network traffic.",
+                "It reduces latency by caching content closer to users.",
+                "It provides private IP addresses for internal networks.",
+                "It is a replacement for a firewall."
+            ],
+            "correct_answer": "It reduces latency by caching content closer to users."
+        },
+        {
+            "question_number": 6,
+            "question_text": "Which command lists all files and directories, including hidden ones?",
+            "options": [
+                "ls -l",
+                "ls -a",
+                "ls -h",
+                "list all"
+            ],
+            "correct_answer": "ls -a"
+        },
+        {
+            "question_number": 7,
+            "question_text": "Which command prints the full path of the current working directory?",
+            "options": [
+                "cwd",
+                "path",
+                "pwd",
+                "whereami"
+            ],
+            "correct_answer": "pwd"
+        },
+        {
+            "question_number": 8,
+            "question_text": "Which command is used to search for a specific pattern of text within a file?",
+            "options": [
+                "find",
+                "search",
+                "locate",
+                "grep"
+            ],
+            "correct_answer": "grep"
+        },
+        {
+            "question_number": 9,
+            "question_text": "How would you make a shell script named 'myscript.sh' executable?",
+            "options": [
+                "chmod +x myscript.sh",
+                "chown +x myscript.sh",
+                "exec myscript.sh",
+                "run myscript.sh"
+            ],
+            "correct_answer": "chmod +x myscript.sh"
+        },
+        {
+            "question_number": 10,
+            "question_text": "What is the potential consequence of running the command 'rm -rf /'?",
+            "options": [
+                "It reboots the system.",
+                "It removes the current directory.",
+                "It recursively deletes all files and directories from the root, wiping the system.",
+                "It resets the network configuration."
+            ],
+            "correct_answer": "It recursively deletes all files and directories from the root, wiping the system."
+        },
+        {
+            "question_number": 11,
+            "question_text": "Which command is used to initialize a new Git repository in the current directory?",
+            "options": [
+                "git new",
+                "git start",
+                "git create",
+                "git init"
+            ],
+            "correct_answer": "git init"
+        },
+        {
+            "question_number": 12,
+            "question_text": "What does the 'git add' command do?",
+            "options": [
+                "It adds a new user to the repository.",
+                "It stages changes to be included in the next commit.",
+                "It adds a new remote repository.",
+                "It automatically commits all changes."
+            ],
+            "correct_answer": "It stages changes to be included in the next commit."
+        },
+        {
+            "question_number": 13,
+            "question_text": "Which command displays the commit history of the current branch?",
+            "options": [
+                "git history",
+                "git log",
+                "git show",
+                "git status"
+            ],
+            "correct_answer": "git log"
+        },
+        {
+            "question_number": 14,
+            "question_text": "How do you create a new branch named 'feature-x'?",
+            "options": [
+                "git new branch feature-x",
+                "git checkout feature-x",
+                "git branch feature-x",
+                "git create feature-x"
+            ],
+            "correct_answer": "git branch feature-x"
+        },
+        {
+            "question_number": 15,
+            "question_text": "What is the purpose of the 'git clone' command?",
+            "options": [
+                "To create a copy of a local repository.",
+                "To create a copy of a remote repository on your local machine.",
+                "To rename a repository.",
+                "To delete a repository."
+            ],
+            "correct_answer": "To create a copy of a remote repository on your local machine."
+        },
+        {
+            "question_number": 16,
+            "question_text": "Which command uploads your local commits to a remote repository?",
+            "options": [
+                "git upload",
+                "git send",
+                "git push",
+                "git remote add"
+            ],
+            "correct_answer": "git push"
+        },
+        {
+            "question_number": 17,
+            "question_text": "What information does 'git status' provide?",
+            "options": [
+                "The commit history.",
+                "The network status of the remote.",
+                "The current branch, untracked files, and staged/unstaged changes.",
+                "A list of all branches in the repository."
+            ],
+            "correct_answer": "The current branch, untracked files, and staged/unstaged changes."
+        },
+        {
+            "question_number": 18,
+            "question_text": "Which command is used to integrate changes from one branch into another?",
+            "options": [
+                "git combine",
+                "git join",
+                "git merge",
+                "git integrate"
+            ],
+            "correct_answer": "git merge"
+        },
+        {
+            "question_number": 19,
+            "question_text": "TCP and UDP operate at which layer of the OSI model?",
+            "options": [
+                "Layer 2 (Data Link)",
+                "Layer 3 (Network)",
+                "Layer 4 (Transport)",
+                "Layer 7 (Application)"
+            ],
+            "correct_answer": "Layer 4 (Transport)"
+        },
+        {
+            "question_number": 20,
+            "question_text": "A Class C network has a default subnet mask of:",
+            "options": [
+                "255.0.0.0",
+                "255.255.0.0",
+                "255.255.255.0",
+                "255.255.255.255"
+            ],
+            "correct_answer": "255.255.255.0"
+        },
+        {
+            "question_number": 21,
+            "question_text": "What does the 'cd ~' command do?",
+            "options": [
+                "Changes to the root directory",
+                "Changes to the previous directory",
+                "Changes to the user's home directory",
+                "Stays in the current directory"
+            ],
+            "correct_answer": "Changes to the user's home directory"
+        },
+        {
+            "question_number": 22,
+            "question_text": "How do you search for the word 'error' in a file named 'app.log', ignoring case?",
+            "options": [
+                "grep -i 'error' app.log",
+                "grep -c 'error' app.log",
+                "grep -v 'error' app.log",
+                "search -i 'error' app.log"
+            ],
+            "correct_answer": "grep -i 'error' app.log"
+        },
+        {
+            "question_number": 23,
+            "question_text": "How can you view a condensed, one-line summary of the commit history?",
+            "options": [
+                "git log --short",
+                "git log --condensed",
+                "git log --oneline",
+                "git log --simple"
+            ],
+            "correct_answer": "git log --oneline"
+        },
+        {
+            "question_number": 24,
+            "question_text": "What command switches you to an existing branch named 'develop'?",
+            "options": [
+                "git branch develop",
+                "git switch develop",
+                "git go develop",
+                "git move develop"
+            ],
+            "correct_answer": "git switch develop"
+        },
+        {
+            "question_number": 25,
+            "question_text": "What happens if you have a 'merge conflict'?",
+            "options": [
+                "Git automatically chooses the best change.",
+                "Git deletes the file.",
+                "Git pauses the merge and asks you to manually resolve the conflicting changes.",
+                "The merge is automatically cancelled."
+            ],
+            "correct_answer": "Git pauses the merge and asks you to manually resolve the conflicting changes."
+        },
+        {
+            "question_number": 26,
+            "question_text": "Which OSI layer is responsible for data encryption and formatting?",
+            "options": [
+                "Application Layer",
+                "Session Layer",
+                "Presentation Layer",
+                "Transport Layer"
+            ],
+            "correct_answer": "Presentation Layer"
+        },
+        {
+            "question_number": 27,
+            "question_text": "What is the primary purpose of the TCP three-way handshake?",
+            "options": [
+                "To negotiate the data transfer speed",
+                "To synchronize sequence numbers and establish a connection",
+                "To encrypt the data before transmission",
+                "To choose between TCP and UDP"
+            ],
+            "correct_answer": "To synchronize sequence numbers and establish a connection"
+        },
+        {
+            "question_number": 28,
+            "question_text": "What is the broadcast address for the network 192.168.10.0/24?",
+            "options": [
+                "192.168.10.0",
+                "192.168.10.1",
+                "192.168.10.255",
+                "192.168.255.255"
+            ],
+            "correct_answer": "192.168.10.255"
+        },
+        {
+            "question_number": 29,
+            "question_text": "Which protocol is commonly used to provide security for a VPN tunnel?",
+            "options": [
+                "HTTP",
+                "FTP",
+                "IPsec",
+                "SNMP"
+            ],
+            "correct_answer": "IPsec"
+        },
+        {
+            "question_number": 30,
+            "question_text": "Besides reducing latency, what is another major advantage of a CDN?",
+            "options": [
+                "Increased security against DDoS attacks",
+                "It acts as a primary database",
+                "It provides email services",
+                "It automatically writes code"
+            ],
+            "correct_answer": "Increased security against DDoS attacks"
+        },
+        {
+            "question_number": 31,
+            "question_text": "Which command is used to create a new, empty file?",
+            "options": [
+                "create file.txt",
+                "new file.txt",
+                "touch file.txt",
+                "mkfile file.txt"
+            ],
+            "correct_answer": "touch file.txt"
+        },
+        {
+            "question_number": 32,
+            "question_text": "How do you create a new directory named 'projects'?",
+            "options": [
+                "mkdir projects",
+                "newdir projects",
+                "crdir projects",
+                "dir projects new"
+            ],
+            "correct_answer": "mkdir projects"
+        },
+        {
+            "question_number": 33,
+            "question_text": "Which command is used to copy 'file1.txt' to 'file2.txt'?",
+            "options": [
+                "mv file1.txt file2.txt",
+                "cp file1.txt file2.txt",
+                "copy file1.txt file2.txt",
+                "duplicate file1.txt file2.txt"
+            ],
+            "correct_answer": "cp file1.txt file2.txt"
+        },
+        {
+            "question_number": 34,
+            "question_text": "How can you count the number of lines containing the word 'warning' in 'system.log'?",
+            "options": [
+                "grep -n 'warning' system.log",
+                "grep -c 'warning' system.log",
+                "grep -v 'warning' system.log",
+                "grep -l 'warning' system.log"
+            ],
+            "correct_answer": "grep -c 'warning' system.log"
+        },
+        {
+            "question_number": 35,
+            "question_text": "What do the permissions `777` signify for a file?",
+            "options": [
+                "The owner can read/write, everyone else can only read",
+                "Everyone can only execute",
+                "The owner, group, and others can all read, write, and execute",
+                "Only the owner can read, write, and execute"
+            ],
+            "correct_answer": "The owner, group, and others can all read, write, and execute"
+        },
+        {
+            "question_number": 36,
+            "question_text": "Which command is used to list the currently running processes?",
+            "options": [
+                "top",
+                "listproc",
+                "ps",
+                "proc"
+            ],
+            "correct_answer": "ps"
+        },
+        {
+            "question_number": 37,
+            "question_text": "How would you terminate a process with a Process ID (PID) of 1234?",
+            "options": [
+                "stop 1234",
+                "terminate 1234",
+                "kill 1234",
+                "end 1234"
+            ],
+            "correct_answer": "kill 1234"
+        },
+        {
+            "question_number": 38,
+            "question_text": "How do you remove a file from the staging area (unstage it)?",
+            "options": [
+                "git unstage file.txt",
+                "git rm --cached file.txt",
+                "git reset HEAD file.txt",
+                "git checkout -- file.txt"
+            ],
+            "correct_answer": "git reset HEAD file.txt"
+        },
+        {
+            "question_number": 39,
+            "question_text": "What is the command to commit staged changes with a message?",
+            "options": [
+                "git commit -m 'Your message'",
+                "git save 'Your message'",
+                "git stage -m 'Your message'",
+                "git add -m 'Your message'"
+            ],
+            "correct_answer": "git commit -m 'Your message'"
+        },
+        {
+            "question_number": 40,
+            "question_text": "How do you view the specific changes made in a particular commit hash?",
+            "options": [
+                "git log <hash>",
+                "git diff <hash>",
+                "git show <hash>",
+                "git history <hash>"
+            ],
+            "correct_answer": "git show <hash>"
+        },
+        {
+            "question_number": 41,
+            "question_text": "What is the single command to create a new branch and switch to it immediately?",
+            "options": [
+                "git branch -n <branch>",
+                "git new -s <branch>",
+                "git checkout -b <branch>",
+                "git switch -c <branch>"
+            ],
+            "correct_answer": "git checkout -b <branch>"
+        },
+        {
+            "question_number": 42,
+            "question_text": "How do you delete a local branch named 'old-feature'?",
+            "options": [
+                "git branch -d old-feature",
+                "git delete old-feature",
+                "git rm branch old-feature",
+                "git checkout -d old-feature"
+            ],
+            "correct_answer": "git branch -d old-feature"
+        },
+        {
+            "question_number": 43,
+            "question_text": "What is the command 'git pull' a convenient shortcut for?",
+            "options": [
+                "git push and git commit",
+                "git fetch and git merge",
+                "git clone and git checkout",
+                "git status and git add"
+            ],
+            "correct_answer": "git fetch and git merge"
+        },
+        {
+            "question_number": 44,
+            "question_text": "How do you add a new remote repository named 'backup' with a given URL?",
+            "options": [
+                "git remote new backup <url>",
+                "git remote add backup <url>",
+                "git add remote backup <url>",
+                "git push --new backup <url>"
+            ],
+            "correct_answer": "git remote add backup <url>"
+        },
+        {
+            "question_number": 45,
+            "question_text": "In 'git status', what does it mean if a file is shown in red?",
+            "options": [
+                "It is staged for the next commit",
+                "It has been modified but not yet staged",
+                "It is a new, untracked file",
+                "It has a merge conflict"
+            ],
+            "correct_answer": "It has been modified but not yet staged"
+        },
+        {
+            "question_number": 46,
+            "question_text": "What is the primary purpose of 'git rebase'?",
+            "options": [
+                "To create a merge commit",
+                "To temporarily store changes",
+                "To integrate changes by re-writing commit history for a cleaner, linear history",
+                "To undo the last commit"
+            ],
+            "correct_answer": "To integrate changes by re-writing commit history for a cleaner, linear history"
+        },
+        {
+            "question_number": 47,
+            "question_text": "Which layer of the OSI model deals with physical hardware addresses (MAC addresses)?",
+            "options": [
+                "Physical Layer",
+                "Data Link Layer",
+                "Network Layer",
+                "Transport Layer"
+            ],
+            "correct_answer": "Data Link Layer"
+        },
+        {
+            "question_number": 48,
+            "question_text": "Which of the following is a private, non-routable IP address according to RFC 1918?",
+            "options": [
+                "172.15.20.1",
+                "8.8.8.8",
+                "192.168.1.1",
+                "100.100.100.1"
+            ],
+            "correct_answer": "192.168.1.1"
+        },
+        {
+            "question_number": 49,
+            "question_text": "The command 'chmod 644 report.txt' sets which permissions?",
+            "options": [
+                "Owner: read/write, Group: read, Others: read",
+                "Owner: read/execute, Group: read, Others: read",
+                "Everyone can read/write",
+                "Owner: read/write/execute, Group: none, Others: none"
+            ],
+            "correct_answer": "Owner: read/write, Group: read, Others: read"
+        },
+        {
+            "question_number": 50,
+            "question_text": "Which protocol is best suited for applications that require low latency and can tolerate some data loss, such as video streaming or online gaming?",
+            "options": [
+                "TCP",
+                "UDP",
+                "HTTP",
+                "FTP"
+            ],
+            "correct_answer": "UDP"
+        }
+    ]
+}
