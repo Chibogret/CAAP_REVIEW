@@ -160,6 +160,7 @@
         display: flex;
         justify-content: center;
         gap: 20px;
+        flex-wrap: wrap;
     }
     .mode-button {
         padding: 15px 30px;
@@ -183,6 +184,19 @@
     }
     #study-mode-btn:hover {
         background-color: var(--tertiary-bg);
+    }
+    #scenario-mode-btn {
+        background-color: #1abc9c;
+        color: white;
+    }
+    #scenario-mode-btn:hover {
+        background-color: #16a085;
+    }
+
+    .mode-description {
+        margin-top: 15px;
+        font-size: 0.95em;
+        color: #34495e;
     }
 
     .mode-button:disabled {
@@ -328,6 +342,38 @@
         background-color: #fdfdfd;
     }
 
+    .scenario-panel {
+        margin-bottom: 18px;
+        padding: 16px;
+        border-radius: var(--border-radius);
+        background-color: #ecf9f6;
+        border-left: 4px solid #1abc9c;
+    }
+    #scenario-standards-note {
+        background-color: #f0f9ff;
+        border-left-color: var(--primary-accent);
+        color: #2c3e50;
+        font-size: 0.95em;
+    }
+    #scenario-checkpoint-title {
+        margin: 0 0 8px 0;
+        color: #0e6655;
+        font-size: 1.1em;
+    }
+    #scenario-checkpoint-description {
+        margin: 0;
+        font-size: 0.95em;
+    }
+    .reference-list {
+        text-align: left;
+        margin-top: 12px;
+        padding-left: 18px;
+    }
+    .reference-list li {
+        margin-bottom: 6px;
+        font-size: 0.9em;
+    }
+
     #question-text {
         font-size: 1.2em;
         font-weight: 600;
@@ -432,6 +478,25 @@
          color: var(--primary-accent);
     }
     #results-summary { font-size: 1.1em; margin-bottom: 25px; }
+    #scenario-summary {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .scenario-summary-item {
+        padding: 15px;
+        margin-bottom: 12px;
+        border-radius: var(--border-radius);
+        border: 1px solid var(--border-color);
+        background-color: #f8fbff;
+    }
+    .scenario-summary-item h4 {
+        margin: 0 0 8px 0;
+        color: var(--primary-accent);
+    }
+    .scenario-summary-item p {
+        margin: 4px 0;
+        font-size: 0.95em;
+    }
     #restart-button {
         padding: 12px 30px;
         font-size: 1.1em;
@@ -658,9 +723,15 @@
 
             <h2>Choose Your Mode</h2>
             <div class="mode-button-container">
-                <button id="caap-mode-btn" class="mode-button">CAAP Mode (Exam)</button>
-                <button id="study-mode-btn" class="mode-button">Study Mode (Learn)</button>
+                <button id="caap-mode-btn" class="mode-button" disabled>CAAP Mode (Exam)</button>
+                <button id="study-mode-btn" class="mode-button" disabled>Study Mode (Learn)</button>
+                <button id="scenario-mode-btn" class="mode-button" disabled>Scenario Trainer</button>
             </div>
+            <p class="mode-description">
+                The Scenario Trainer walks you through multi-stage operational dilemmas and benchmarks each decision
+                against <strong>CAAP PCAR</strong> guidance and <strong>ICAO threat and error management</strong>
+                practices so you can see how regulatory expectations shape the recommended course of action.
+            </p>
         </div>
 
         <div id="setup-container" class="hidden">
@@ -713,6 +784,15 @@
         <div id="quiz-layout">
             <div id="main-content">
                 <div id="question-area">
+                    <div id="scenario-briefing" class="scenario-panel hidden">
+                        <h3>Scenario Briefing</h3>
+                        <div id="scenario-briefing-text"></div>
+                    </div>
+                    <div id="scenario-standards-note" class="scenario-panel hidden"></div>
+                    <div id="scenario-checkpoint-info" class="scenario-panel hidden">
+                        <h3 id="scenario-checkpoint-title"></h3>
+                        <p id="scenario-checkpoint-description"></p>
+                    </div>
                     <div id="question-text">Question text will load here...</div>
                     <ul id="options-list" class="options"></ul>
                 </div>
@@ -743,6 +823,7 @@
         <h2>Quiz Completed!</h2>
         <div id="final-score-display">Score: 90%</div>
         <div id="results-summary">You answered X out of Y questions correctly.</div>
+        <div id="scenario-summary" class="hidden"></div>
         <button id="restart-button" class="quiz-button">Choose Another Subject</button>
     </div>
 
@@ -789,6 +870,7 @@
         const modeSelectorContainer = document.getElementById('mode-selector-container');
         const caapModeBtn = document.getElementById('caap-mode-btn');
         const studyModeBtn = document.getElementById('study-mode-btn');
+        const scenarioModeBtn = document.getElementById('scenario-mode-btn');
         const setupContainer = document.getElementById('setup-container');
         const subjectSelector = document.getElementById('subject-selector');
         const errorContainer = document.getElementById('error-container');
@@ -799,13 +881,21 @@
         const quizContent = document.getElementById('quiz-content');
         const questionTextElement = document.getElementById('question-text');
         const optionsList = document.getElementById('options-list');
+        const scenarioBriefing = document.getElementById('scenario-briefing');
+        const scenarioBriefingText = document.getElementById('scenario-briefing-text');
+        const scenarioCheckpointInfo = document.getElementById('scenario-checkpoint-info');
+        const scenarioCheckpointTitle = document.getElementById('scenario-checkpoint-title');
+        const scenarioCheckpointDescription = document.getElementById('scenario-checkpoint-description');
+        const scenarioStandardsNote = document.getElementById('scenario-standards-note');
         const feedbackArea = document.getElementById('feedback-area');
         const submitBtn = document.getElementById('submit-answer-btn');
         const skipBtn = document.getElementById('skip-question-btn');
         const nextBtn = document.getElementById('next-question-btn');
         const resultsContainer = document.getElementById('results-container');
+        const resultsTitleElement = resultsContainer.querySelector('h2');
         const finalScoreDisplay = document.getElementById('final-score-display');
         const resultsSummary = document.getElementById('results-summary');
+        const scenarioSummary = document.getElementById('scenario-summary');
         const restartBtn = document.getElementById('restart-button');
         const quizTitleElement = document.querySelector('.quiz-title');
         const geminiApiKeyInput = document.getElementById('gemini-api-key');
@@ -831,12 +921,12 @@
 
 
         // --- State Variables ---
-        let currentMode = null; // 'caap' or 'study'
+        let currentMode = null; // 'caap', 'study', or 'scenario'
         let currentQuizData = null;
         let allQuestions = [];
         let questionsToAsk = [];
         let skippedQuestions = [];
-        let questionStatus = {}; 
+        let questionStatus = {};
         let userAnswers = {}; 
         let currentQuestionIndex = 0;
         let totalQuestionsInQuiz = 0;
@@ -848,10 +938,19 @@
         let questionsAnsweredInSession = 0;
         const analyticsData = JSON.parse(localStorage.getItem('quizAnalytics') || '{}');
         let genAI = window.geminiSdkInstance; // This variable correctly holds the SDK instance
-        const MODEL_NAME = "gemini-2.5-flash"; 
+        const MODEL_NAME = "gemini-2.5-flash";
         let lastAnsweredQuestion = null;
         let lastUserAnswer = null;
         let lastCorrectAnswer = null;
+        let scenarioList = [];
+        let currentScenario = null;
+        let currentScenarioIndex = 0;
+        let currentCheckpointIndex = 0;
+        let scenarioResponses = [];
+        let scenarioScore = 0;
+        let scenarioMaxPossibleScore = 0;
+        let totalScenarioCheckpoints = 0;
+        let scenarioAnalytics = {};
 
         const subjectNames = [
             { name: "Air Law", filename: "Air Law.json" },
@@ -865,9 +964,10 @@
             { name: "Flight Performance and Planning", filename: "FPP.json" },
             { name: "Radiotelephony", filename: "Radiotelephony.json" },
             { name: "GIT FOR MY BABY", filename: "PART5.json" },
-{ name: "EQC - C172", filename: "EQC.json" },
-{ name: "PART1-4 FOR MY BABY", filename: "PART1-4.json" },
-            { name: "Private Pilot Ground Course Exam", filename: "questions.json" }
+            { name: "EQC - C172", filename: "EQC.json" },
+            { name: "PART1-4 FOR MY BABY", filename: "PART1-4.json" },
+            { name: "Private Pilot Ground Course Exam", filename: "questions.json" },
+            { name: "Scenario Trainer: CAAP/ICAO Decision Lab", filename: "ScenarioTrainer.json", modes: ['scenario'] }
         ];
 
         // --- Initialization ---
@@ -929,10 +1029,15 @@
             subjectSelector.value = "";
             quizTitleElement.textContent = 'CAAP Mock by Chippo';
             currentMode = null;
+            populateSubjectSelector();
 
             disclaimerCheckbox.checked = false;
             disableButton(caapModeBtn);
             disableButton(studyModeBtn);
+            disableButton(scenarioModeBtn);
+            hideElement(scenarioBriefing);
+            hideElement(scenarioCheckpointInfo);
+            hideElement(scenarioStandardsNote);
         }
 
         function selectMode(mode) {
@@ -940,7 +1045,9 @@
             hideElement(modeSelectorContainer);
             hideElement(externalReviewersSection);
             showElement(setupContainer);
-            
+            populateSubjectSelector(mode);
+            subjectSelector.value = '';
+
             if (mode === 'caap') {
                 showElement(questionCountContainer);
             } else {
@@ -948,6 +1055,8 @@
             }
 
             if (mode === 'study' && !localStorage.getItem('geminiApiKey')) {
+                hideElement(apiKeyStatus);
+            } else if (mode === 'scenario') {
                 hideElement(apiKeyStatus);
             }
         }
@@ -959,14 +1068,21 @@
             }
         }
 
-        function populateSubjectSelector() {
+        function populateSubjectSelector(mode = null) {
             subjectSelector.innerHTML = '<option value="">-- Select a Subject --</option>';
-            subjectNames.forEach(subject => {
-                const option = document.createElement('option');
-                option.value = subject.filename;
-                option.textContent = subject.name;
-                subjectSelector.appendChild(option);
-            });
+            subjectNames
+                .filter(subject => {
+                    if (mode) {
+                        return !subject.modes || subject.modes.includes(mode);
+                    }
+                    return !subject.modes;
+                })
+                .forEach(subject => {
+                    const option = document.createElement('option');
+                    option.value = subject.filename;
+                    option.textContent = subject.name;
+                    subjectSelector.appendChild(option);
+                });
         }
 
         function loadQuiz(filename) {
@@ -982,12 +1098,29 @@
                     return response.json();
                 })
                 .then(data => {
-                    if (!data || !Array.isArray(data.questions) || data.questions.length === 0) {
-                        throw new Error(`Invalid or empty quiz data in ${filename}`);
+                    if (!data) {
+                        throw new Error(`Invalid quiz data in ${filename}`);
                     }
                     currentQuizData = data;
+
+                    if (currentMode === 'scenario') {
+                        if (!Array.isArray(data.scenarios) || data.scenarios.length === 0) {
+                            throw new Error(`Invalid or empty scenario data in ${filename}`);
+                        }
+                        scenarioList = data.scenarios.map(scenario => ({
+                            ...scenario,
+                            checkpoints: Array.isArray(scenario.checkpoints) ? scenario.checkpoints : []
+                        }));
+                        hideElement(feedbackArea);
+                        startQuiz();
+                        return;
+                    }
+
+                    if (!Array.isArray(data.questions) || data.questions.length === 0) {
+                        throw new Error(`Invalid or empty quiz data in ${filename}`);
+                    }
                     allQuestions = data.questions.map((q, index) => ({ ...q, originalIndex: index }));
-                    
+
                     if (currentMode === 'caap') {
                         const totalAvailable = allQuestions.length;
                         questionCountInput.max = totalAvailable;
@@ -996,7 +1129,7 @@
                             questionCountInput.value = totalAvailable;
                         }
                     }
-                    
+
                     startQuiz();
                 })
                 .catch(error => {
@@ -1018,6 +1151,9 @@
             showElement(skipBtn);
             enableButton(submitBtn);
             enableButton(skipBtn);
+            submitBtn.textContent = 'Submit Answer';
+            nextBtn.textContent = 'Next Question';
+            skipBtn.textContent = 'Skip Question';
             hideElement(explanationContainer);
             hideElement(explainBtn);
             hideElement(googleSearchBtn);
@@ -1026,11 +1162,24 @@
             hideElement(analyticsContainer);
             analyticsSummary.innerHTML = '';
             incorrectAnswersList.innerHTML = '';
+            scenarioBriefingText.innerHTML = '';
+            scenarioCheckpointTitle.textContent = '';
+            scenarioCheckpointDescription.textContent = '';
+            hideElement(scenarioBriefing);
+            hideElement(scenarioCheckpointInfo);
+            hideElement(scenarioStandardsNote);
+            scenarioSummary.innerHTML = '';
+            hideElement(scenarioSummary);
+            resultsTitleElement.textContent = 'Quiz Completed!';
         }
 
         function startQuiz() {
+            if (currentMode === 'scenario') {
+                startScenarioTraining();
+                return;
+            }
             let questionsForThisRound;
-            shuffleArray(allQuestions); 
+            shuffleArray(allQuestions);
 
             if (currentMode === 'caap') {
                 const requestedCount = parseInt(questionCountInput.value, 10) || 40;
@@ -1072,7 +1221,362 @@
             }
         }
 
+        function renderMarkdown(text) {
+            if (!text) return '';
+            if (typeof marked !== 'undefined') {
+                return marked.parse(text);
+            }
+            return text;
+        }
+
+        function startScenarioTraining() {
+            scenarioResponses = [];
+            scenarioAnalytics = {};
+            scenarioScore = 0;
+            currentScenarioIndex = 0;
+            currentCheckpointIndex = 0;
+            totalScenarioCheckpoints = scenarioList.reduce((sum, scenario) => {
+                if (!Array.isArray(scenario.checkpoints)) return sum;
+                return sum + scenario.checkpoints.length;
+            }, 0);
+            scenarioMaxPossibleScore = scenarioList.reduce((sum, scenario) => {
+                if (!Array.isArray(scenario.checkpoints)) return sum;
+                return sum + scenario.checkpoints.reduce((inner, checkpoint) => {
+                    if (!Array.isArray(checkpoint.options) || checkpoint.options.length === 0) return inner;
+                    const max = Math.max(...checkpoint.options.map(opt => Number(opt.score) || 0));
+                    return inner + max;
+                }, 0);
+            }, 0);
+
+            if (totalScenarioCheckpoints === 0) {
+                displayError('Scenario file does not contain decision checkpoints.');
+                enableButton(subjectSelector);
+                return;
+            }
+
+            currentScenario = scenarioList[0];
+            quizTitleElement.textContent = currentQuizData.exam_title || 'Scenario Trainer';
+            hideElement(feedbackArea);
+            hideElement(nextBtn);
+            hideElement(questionBrowserContainer);
+            hideElement(explainBtn);
+            hideElement(googleSearchBtn);
+            hideElement(explanationContainer);
+            hideElement(skipBtn);
+            submitBtn.textContent = 'Submit Decision';
+            nextBtn.textContent = 'Continue';
+            showElement(quizContent);
+            enableButton(submitBtn);
+            disableButton(subjectSelector);
+
+            const standardsMessage = currentQuizData?.standards_statement
+                || 'Scenario scoring aligns with CAAP PCAR Part 8 operational control requirements and ICAO Doc 9868 threat and error management guidance.';
+            scenarioStandardsNote.innerHTML = renderMarkdown(standardsMessage);
+            showElement(scenarioStandardsNote);
+
+            displayScenarioCheckpoint();
+            updateQuizInfo();
+        }
+
+        function displayScenarioCheckpoint() {
+            if (!currentScenario) {
+                endScenarioTraining();
+                return;
+            }
+
+            if (!Array.isArray(currentScenario.checkpoints) || currentScenario.checkpoints.length === 0) {
+                advanceScenario();
+                return;
+            }
+
+            if (currentCheckpointIndex >= currentScenario.checkpoints.length) {
+                advanceScenario();
+                return;
+            }
+
+            const checkpoint = currentScenario.checkpoints[currentCheckpointIndex];
+
+            hideElement(feedbackArea);
+            hideElement(nextBtn);
+            showElement(submitBtn);
+            enableButton(submitBtn);
+            hideElement(skipBtn);
+            hideElement(explainBtn);
+            hideElement(googleSearchBtn);
+            hideElement(explanationContainer);
+
+            if (currentScenario.briefing) {
+                scenarioBriefingText.innerHTML = renderMarkdown(currentScenario.briefing);
+                showElement(scenarioBriefing);
+            } else {
+                hideElement(scenarioBriefing);
+            }
+
+            const standardsMessage = currentScenario.standards_reference || currentQuizData?.standards_statement;
+            if (standardsMessage) {
+                scenarioStandardsNote.innerHTML = renderMarkdown(standardsMessage);
+                showElement(scenarioStandardsNote);
+            }
+
+            scenarioCheckpointTitle.textContent = `${currentScenario.title} – ${checkpoint.title || 'Decision Point'}`;
+            if (checkpoint.situation) {
+                scenarioCheckpointDescription.innerHTML = renderMarkdown(checkpoint.situation);
+            } else {
+                scenarioCheckpointDescription.textContent = '';
+            }
+            showElement(scenarioCheckpointInfo);
+
+            const prompt = checkpoint.prompt || checkpoint.question || 'Select the action that best aligns with CAAP/ICAO guidance.';
+            questionTextElement.textContent = prompt;
+
+            optionsList.innerHTML = '';
+            if (Array.isArray(checkpoint.options)) {
+                checkpoint.options.forEach((option, index) => {
+                    const optionItem = document.createElement('li');
+                    optionItem.classList.add('option-item');
+                    const radioInput = document.createElement('input');
+                    radioInput.type = 'radio';
+                    radioInput.name = 'scenario-option';
+                    const computedId = option.id != null ? String(option.id) : String(index);
+                    option._computedId = computedId;
+                    radioInput.value = computedId;
+                    const optionId = `scenario-option-${currentScenarioIndex}-${currentCheckpointIndex}-${index}`;
+                    radioInput.id = optionId;
+                    const label = document.createElement('label');
+                    label.textContent = option.text;
+                    label.setAttribute('for', optionId);
+                    optionItem.appendChild(radioInput);
+                    optionItem.appendChild(label);
+                    optionsList.appendChild(optionItem);
+                });
+            }
+
+            updateQuizInfo();
+        }
+
+        function handleScenarioSubmit() {
+            const selectedOptionInput = optionsList.querySelector('input[name="scenario-option"]:checked');
+            if (!selectedOptionInput) {
+                feedbackArea.textContent = 'Please select your decision.';
+                feedbackArea.className = 'feedback-incorrect';
+                showElement(feedbackArea);
+                return;
+            }
+
+            disableButton(submitBtn);
+
+            const checkpoint = currentScenario.checkpoints[currentCheckpointIndex];
+            const options = Array.isArray(checkpoint.options) ? checkpoint.options : [];
+            const selectedValue = selectedOptionInput.value;
+            const selectedOption = options.find(opt => opt._computedId === selectedValue) || null;
+
+            if (!selectedOption) {
+                feedbackArea.textContent = 'Unable to evaluate the selected option.';
+                feedbackArea.className = 'feedback-incorrect';
+                showElement(feedbackArea);
+                showElement(nextBtn);
+                enableButton(nextBtn);
+                nextBtn.textContent = getScenarioNextLabel();
+                return;
+            }
+
+            const maxScore = options.reduce((max, opt) => Math.max(max, Number(opt.score) || 0), 0);
+            const optionScore = Number(selectedOption.score) || 0;
+            scenarioScore += optionScore;
+            const isBest = maxScore > 0 ? optionScore >= maxScore : optionScore === maxScore;
+
+            const rationaleText = selectedOption.rationale
+                || 'Review the CAAP/ICAO references for the preferred course of action.';
+            const recommendedActionText = checkpoint.recommended_action
+                || 'Follow the documented CAAP/ICAO best practice for this situation.';
+            const referencesHTML = formatReferences(selectedOption.references);
+
+            feedbackArea.className = isBest ? 'feedback-correct' : 'feedback-incorrect';
+            feedbackArea.innerHTML = `
+                <strong>${isBest ? 'Aligned with CAAP/ICAO best practice!' : 'Opportunity to align with CAAP/ICAO guidance.'}</strong>
+                <p>${rationaleText}</p>
+                <p><strong>Recommended action:</strong> ${recommendedActionText}</p>
+                ${referencesHTML ? `<div><strong>CAAP/ICAO references</strong>${referencesHTML}</div>` : ''}
+            `;
+
+            scenarioResponses.push({
+                scenarioId: currentScenario.scenario_id || currentScenario.title,
+                scenarioTitle: currentScenario.title,
+                checkpointId: checkpoint.checkpoint_id || checkpoint.title,
+                checkpointTitle: checkpoint.title || 'Decision Point',
+                userOption: selectedOption.text,
+                userScore: optionScore,
+                maxScore,
+                isBest,
+                recommendedAction: recommendedActionText,
+                rationale: rationaleText,
+                references: selectedOption.references || []
+            });
+
+            if (!isBest && selectedOption.pitfall) {
+                if (!scenarioAnalytics[selectedOption.pitfall]) {
+                    scenarioAnalytics[selectedOption.pitfall] = { count: 0, checkpoints: [], references: [] };
+                }
+                const entry = scenarioAnalytics[selectedOption.pitfall];
+                entry.count += 1;
+                if (checkpoint.title && !entry.checkpoints.includes(checkpoint.title)) {
+                    entry.checkpoints.push(checkpoint.title);
+                }
+                (selectedOption.references || []).forEach(ref => {
+                    const refText = `${ref.type ? ref.type + ': ' : ''}${ref.source}`;
+                    if (!entry.references.includes(refText)) {
+                        entry.references.push(refText);
+                    }
+                });
+            }
+
+            showElement(feedbackArea);
+            showElement(nextBtn);
+            enableButton(nextBtn);
+            nextBtn.textContent = getScenarioNextLabel();
+            updateQuizInfo();
+        }
+
+        function getScenarioNextLabel() {
+            if (!currentScenario) {
+                return 'View Summary';
+            }
+            const moreInScenario = currentCheckpointIndex < currentScenario.checkpoints.length - 1;
+            if (moreInScenario) {
+                return 'Next Decision';
+            }
+            const moreScenarios = currentScenarioIndex < scenarioList.length - 1;
+            return moreScenarios ? 'Load Next Scenario' : 'View Summary';
+        }
+
+        function advanceScenario() {
+            currentCheckpointIndex++;
+            if (currentScenario && currentCheckpointIndex < currentScenario.checkpoints.length) {
+                displayScenarioCheckpoint();
+                return;
+            }
+
+            currentScenarioIndex++;
+            currentScenario = scenarioList[currentScenarioIndex] || null;
+            currentCheckpointIndex = 0;
+
+            if (currentScenario) {
+                displayScenarioCheckpoint();
+            } else {
+                endScenarioTraining();
+            }
+        }
+
+        function endScenarioTraining() {
+            hideElement(quizContent);
+            hideElement(quizInfoArea);
+            hideElement(feedbackArea);
+            hideElement(explanationContainer);
+            hideElement(questionBrowserContainer);
+            hideElement(skipBtn);
+            enableButton(subjectSelector);
+
+            const scorePercent = scenarioMaxPossibleScore > 0
+                ? Math.round((scenarioScore / scenarioMaxPossibleScore) * 100)
+                : 0;
+
+            resultsTitleElement.textContent = 'Scenario Review Complete';
+            finalScoreDisplay.textContent = `CAAP/ICAO Alignment Score: ${scorePercent}%`;
+            const standardsStatement = currentQuizData?.standards_statement
+                || 'CAAP PCAR Part 8 operational control requirements and ICAO Doc 9868 threat and error management guidance.';
+            resultsSummary.innerHTML = `You completed ${scenarioResponses.length} decision checkpoint(s). Scenario scoring maps your selections to <strong>${standardsStatement}</strong> so you can trace the regulatory basis for each recommendation.`;
+
+            displayScenarioSummary();
+            displayScenarioAnalytics();
+            showElement(resultsContainer);
+        }
+
+        function displayScenarioSummary() {
+            scenarioSummary.innerHTML = '';
+            if (scenarioResponses.length === 0) {
+                hideElement(scenarioSummary);
+                return;
+            }
+
+            scenarioResponses.forEach(response => {
+                const item = document.createElement('div');
+                item.className = 'scenario-summary-item';
+
+                const title = document.createElement('h4');
+                title.textContent = `${response.scenarioTitle} – ${response.checkpointTitle}`;
+                item.appendChild(title);
+
+                const alignment = document.createElement('p');
+                alignment.innerHTML = `<strong>${response.isBest ? 'Aligned with CAAP/ICAO best practice' : 'Needs review against CAAP/ICAO guidance'}</strong> (${response.userScore}/${response.maxScore})`;
+                item.appendChild(alignment);
+
+                const userAction = document.createElement('p');
+                userAction.innerHTML = `<strong>Your action:</strong> ${response.userOption}`;
+                item.appendChild(userAction);
+
+                if (response.recommendedAction) {
+                    const recommended = document.createElement('p');
+                    recommended.innerHTML = `<strong>Recommended action:</strong> ${response.recommendedAction}`;
+                    item.appendChild(recommended);
+                }
+
+                if (response.rationale) {
+                    const rationale = document.createElement('p');
+                    rationale.innerHTML = `<strong>Rationale:</strong> ${response.rationale}`;
+                    item.appendChild(rationale);
+                }
+
+                if (response.references && response.references.length > 0) {
+                    const wrapper = document.createElement('div');
+                    const heading = document.createElement('strong');
+                    heading.textContent = 'CAAP/ICAO References';
+                    wrapper.appendChild(heading);
+                    const list = document.createElement('ul');
+                    list.className = 'reference-list';
+                    response.references.forEach(ref => {
+                        const li = document.createElement('li');
+                        li.textContent = `${ref.type ? ref.type + ': ' : ''}${ref.source}${ref.detail ? ' – ' + ref.detail : ''}`;
+                        list.appendChild(li);
+                    });
+                    wrapper.appendChild(list);
+                    item.appendChild(wrapper);
+                }
+
+                scenarioSummary.appendChild(item);
+            });
+            showElement(scenarioSummary);
+        }
+
+        function displayScenarioAnalytics() {
+            analyticsSummary.innerHTML = '';
+            if (Object.keys(scenarioAnalytics).length === 0) {
+                analyticsSummary.textContent = 'No recurring decision pitfalls were detected. Your choices tracked with CAAP/ICAO expectations.';
+                showElement(analyticsContainer);
+                return;
+            }
+
+            Object.entries(scenarioAnalytics).forEach(([pitfall, data]) => {
+                const p = document.createElement('p');
+                p.className = 'analytics-item';
+                const checkpointsText = data.checkpoints.length ? ` (${data.checkpoints.join(', ')})` : '';
+                const referencesText = data.references.length ? ` | Guidance: ${data.references.join('; ')}` : '';
+                p.innerHTML = `<strong>${pitfall}</strong> — observed ${data.count} time(s)${checkpointsText}${referencesText}`;
+                analyticsSummary.appendChild(p);
+            });
+            showElement(analyticsContainer);
+        }
+
+        function formatReferences(refs = []) {
+            if (!refs || refs.length === 0) return '';
+            const items = refs.map(ref => `<li>${ref.type ? `<strong>${ref.type}:</strong> ` : ''}${ref.source}${ref.detail ? ' – ' + ref.detail : ''}</li>`).join('');
+            return `<ul class="reference-list">${items}</ul>`;
+        }
+
         function displayQuestion() {
+            if (currentMode === 'scenario') {
+                displayScenarioCheckpoint();
+                return;
+            }
             if (currentQuestionIndex >= questionsToAsk.length) {
                 if (questionsToAsk.length === 0 && skippedQuestions.length > 0) {
                     questionsToAsk = [...skippedQuestions];
@@ -1133,6 +1637,10 @@
         }
 
         function handleSubmit() {
+            if (currentMode === 'scenario') {
+                handleScenarioSubmit();
+                return;
+            }
             const selectedOptionInput = optionsList.querySelector(`input[name^="question-"]:checked`);
             if (!selectedOptionInput) {
                 feedbackArea.textContent = "Please select an answer.";
@@ -1201,6 +1709,12 @@
         }
 
         function handleSkip() {
+            if (currentMode === 'scenario') {
+                feedbackArea.textContent = 'Scenario decisions cannot be skipped because each checkpoint represents a mandatory CAAP/ICAO evaluation step.';
+                feedbackArea.className = 'feedback-incorrect';
+                showElement(feedbackArea);
+                return;
+            }
             if (currentMode === 'caap') {
                 if (consecutiveSkips >= 3) {
                     feedbackArea.textContent = "Consecutive skip limit reached. You must answer this question to reset the counter.";
@@ -1248,9 +1762,19 @@
             }
         }
 
-        function handleNext() { displayQuestion(); }
+        function handleNext() {
+            if (currentMode === 'scenario') {
+                advanceScenario();
+            } else {
+                displayQuestion();
+            }
+        }
 
         function endQuiz() {
+            if (currentMode === 'scenario') {
+                endScenarioTraining();
+                return;
+            }
             hideElement(quizContent);
             hideElement(quizInfoArea);
             hideElement(feedbackArea);
@@ -1525,11 +2049,28 @@ Provide a clear explanation of why the correct answer is right and briefly why o
         }
 
         function updateQuizInfo() {
-            const progressText = currentMode === 'study' 
+            if (currentMode === 'scenario') {
+                const completed = scenarioResponses.length;
+                const currentNumber = Math.min(completed + 1, totalScenarioCheckpoints || 0);
+                const progressText = totalScenarioCheckpoints
+                    ? `Decision: ${currentNumber} / ${totalScenarioCheckpoints}`
+                    : 'Decision Progress';
+                const scorePercent = scenarioMaxPossibleScore > 0
+                    ? Math.round((scenarioScore / scenarioMaxPossibleScore) * 100)
+                    : 0;
+                progressDisplay.textContent = progressText;
+                scoreDisplay.textContent = `Scenario Score: ${scorePercent}%`;
+                const standardsNote = currentQuizData?.standards_statement || 'Benchmarked to CAAP PCAR Part 8 and ICAO Doc 9868.';
+                skipsDisplay.textContent = standardsNote;
+                showElement(quizInfoArea);
+                return;
+            }
+
+            const progressText = currentMode === 'study'
                 ? `Q: ${currentQuestionIndex + 1} / ${totalQuestionsInQuiz}`
                 : `Remaining: ${questionsToAsk.length + skippedQuestions.length} / ${totalQuestionsInQuiz}`;
             progressDisplay.textContent = progressText;
-            
+
             scoreDisplay.textContent = `Score: ${Math.round(currentScoreValue)}`;
 
             if (currentMode === 'caap') {
@@ -1545,14 +2086,17 @@ Provide a clear explanation of why the correct answer is right and briefly why o
             if (disclaimerCheckbox.checked) {
                 enableButton(caapModeBtn);
                 enableButton(studyModeBtn);
+                enableButton(scenarioModeBtn);
             } else {
                 disableButton(caapModeBtn);
                 disableButton(studyModeBtn);
+                disableButton(scenarioModeBtn);
             }
         });
 
         caapModeBtn.addEventListener('click', () => selectMode('caap'));
         studyModeBtn.addEventListener('click', () => selectMode('study'));
+        scenarioModeBtn.addEventListener('click', () => selectMode('scenario'));
         subjectSelector.addEventListener('change', () => {
             const selectedFile = subjectSelector.value;
             if (selectedFile) loadQuiz(selectedFile);
