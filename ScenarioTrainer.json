@@ -1,0 +1,352 @@
+{
+    "exam_title": "Scenario Trainer \u2013 CAAP/ICAO Decision Lab",
+    "standards_statement": "Scores are mapped to CAAP PCAR Part 8 operational control requirements and ICAO Doc 9868 threat and error management guidance.",
+    "scenarios": [
+        {
+            "scenario_id": "ifr_weather_diversion",
+            "title": "IFR Weather Deterioration Enroute",
+            "briefing": "### Mission Overview\n- Aircraft: Cessna 172 IFR flight from Mactan to Davao at night\n- Weather: TEMPO embedded CB along route with marginal alternates\n- Crew Goal: Demonstrate disciplined decision making as conditions deteriorate\n\nDecisions in this scenario are scored against CAAP PCAR Part 8 Subpart 8.9 (Flight Operations) and ICAO Doc 9868 threat and error management principles.",
+            "standards_reference": "CAAP PCAR Part 8 Subpart 8.9.2, ICAO Doc 4444 Ch. 15, and ICAO Doc 9868 Ch. 4.",
+            "checkpoints": [
+                {
+                    "checkpoint_id": "preflight_go_no_go",
+                    "title": "Preflight Weather Risk Evaluation",
+                    "situation": "ATC briefing shows destination TAF dropping below published alternate minima in the planned arrival window. The filed alternate remains at minima with isolated TS in the vicinity.",
+                    "prompt": "What is the most CAAP/ICAO-aligned decision before engine start?",
+                    "recommended_action": "Delay departure until an alternate meeting PCAR Part 8.9.2(b) requirements is available and the crew can brief updated risk controls per ICAO Doc 9868.",
+                    "options": [
+                        {
+                            "id": "delay_departure",
+                            "text": "Delay the departure, obtain updated weather, and re-file once the alternate forecast is solidly above minima.",
+                            "score": 3,
+                            "rationale": "PCAR Part 8.9.2(b) requires commanders to ensure the destination or alternate will be above minima. Waiting maintains regulatory compliance and aligns with ICAO threat and error management guidance to restore margins before launch.",
+                            "references": [
+                                {
+                                    "type": "CAAP",
+                                    "source": "PCAR Part 8 Subpart 8.9.2(b)",
+                                    "detail": "Commanders shall ensure destination and alternate forecasts are above landing minima at ETA."
+                                },
+                                {
+                                    "type": "ICAO",
+                                    "source": "ICAO Doc 9868, Chap. 4",
+                                    "detail": "Threat management requires restoring degraded barriers before committing to flight."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "launch_hold",
+                            "text": "Depart as planned and plan to hold overhead the destination while monitoring updates.",
+                            "score": 1,
+                            "rationale": "Holding may buy time but departs without assurance of a legal alternate, exposing the crew to fuel and regulatory risk.",
+                            "pitfall": "Launching without a legal alternate",
+                            "references": [
+                                {
+                                    "type": "CAAP",
+                                    "source": "PCAR Part 8 Subpart 8.9.3(a)",
+                                    "detail": "Fuel planning assumptions require a usable alternate before takeoff."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "plan_new_alt",
+                            "text": "Depart and plan to nominate a new alternate while enroute once better information is available.",
+                            "score": 0,
+                            "rationale": "Departing without a compliant alternate violates PCAR Part 8.9.2(b) and contradicts ICAO threat and error management guidance.",
+                            "pitfall": "Regulatory non-compliance on dispatch",
+                            "references": [
+                                {
+                                    "type": "ICAO",
+                                    "source": "ICAO Doc 9859, Chap. 2",
+                                    "detail": "Risk controls must be established before exposure to the hazard."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "checkpoint_id": "enroute_weather_update",
+                    "title": "Enroute Deterioration",
+                    "situation": "Midway through the route, ATC relays that the destination ceiling has dropped 300 ft below the published LNAV minima with embedded CB over the field. Fuel remaining satisfies alternate plus 45 minutes.",
+                    "prompt": "How should the crew respond?",
+                    "recommended_action": "Advise ATC of the immediate diversion to the filed alternate, update approach briefings, and confirm fuel to alternate plus contingency as required by PCAR Part 8.9.6.",
+                    "options": [
+                        {
+                            "id": "coordinate_divert",
+                            "text": "Inform ATC of the diversion to the filed alternate, review the alternate approach, and update fuel calculations.",
+                            "score": 3,
+                            "rationale": "PCAR Part 8.9.6(b) requires prompt diversion if approach minima cannot be met. Coordinating early also satisfies ICAO Doc 4444 guidance on proactive ATC liaison.",
+                            "references": [
+                                {
+                                    "type": "CAAP",
+                                    "source": "PCAR Part 8 Subpart 8.9.6(b)",
+                                    "detail": "The PIC shall divert when weather drops below landing minima."
+                                },
+                                {
+                                    "type": "ICAO",
+                                    "source": "ICAO Doc 4444, 15.5",
+                                    "detail": "Pilots must promptly advise ATC of intentions when unable to continue an approach."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "hold_for_gap",
+                            "text": "Request a hold near the destination to see if conditions improve before deciding.",
+                            "score": 1,
+                            "rationale": "Holding preserves flexibility but risks fuel margins and delays compliance with PCAR diversion triggers.",
+                            "pitfall": "Press-on behavior into deteriorating IMC",
+                            "references": [
+                                {
+                                    "type": "ICAO",
+                                    "source": "ICAO Doc 9868, Chap. 5",
+                                    "detail": "Delay in implementing risk controls is a common threat management breakdown."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "descend_visual",
+                            "text": "Request a descent below the published MEA to search for a visual gap in the clouds near the destination.",
+                            "score": 0,
+                            "rationale": "Descending below published altitudes contravenes PCAR Part 8 obstacle clearance rules and introduces unnecessary risk.",
+                            "pitfall": "Scud running below obstacle clearance surfaces",
+                            "references": [
+                                {
+                                    "type": "CAAP",
+                                    "source": "PCAR Part 8 Subpart 8.5.4",
+                                    "detail": "Minimum enroute altitudes must be respected unless cleared under VMC and terrain separation assured."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "checkpoint_id": "diversion_setup",
+                    "title": "Diversion Execution",
+                    "situation": "During the diversion the aircraft enters moderate turbulence, and the autopilot disconnects. The alternate has high terrain and a non-precision approach requiring a stabilized descent.",
+                    "prompt": "What is the most appropriate action set before commencing the approach?",
+                    "recommended_action": "Request vectors to a holding fix in smoother air, run the abnormal checklist, and brief a stabilized approach per ICAO Doc 8168 before continuing.",
+                    "options": [
+                        {
+                            "id": "vector_hold_brief",
+                            "text": "Request vectors to a holding fix, run the autopilot failure checklist, and brief the stabilized approach profile before rejoining final.",
+                            "score": 3,
+                            "rationale": "Creating time and space preserves situational awareness and matches PCAR Part 8 stabilized approach policy and ICAO Doc 8168 guidance.",
+                            "references": [
+                                {
+                                    "type": "CAAP",
+                                    "source": "PCAR Part 8 Subpart 8.10.3",
+                                    "detail": "Operators shall use stabilized approach criteria before descent below 1000 ft AGL."
+                                },
+                                {
+                                    "type": "ICAO",
+                                    "source": "ICAO Doc 8168, Vol I, Part III",
+                                    "detail": "Pilots should ensure aircraft configuration and checklists are complete prior to final approach."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "handfly_immediate",
+                            "text": "Continue hand-flying straight-in to minimize time in the weather and rely on crew coordination to manage tasks.",
+                            "score": 1,
+                            "rationale": "Maintains progress but compresses workload and risks destabilizing the approach, conflicting with stabilized approach policy.",
+                            "pitfall": "Rushing into an unstabilized approach",
+                            "references": [
+                                {
+                                    "type": "ICAO",
+                                    "source": "ICAO Doc 9868, Chap. 6",
+                                    "detail": "High workload without restoring barriers increases the likelihood of error."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "descend_early",
+                            "text": "Descend early below the published profile to get out of turbulence sooner, then reconfigure close to the runway.",
+                            "score": 0,
+                            "rationale": "Leaving the protected profile violates PCAR stabilized approach expectations and undermines obstacle clearance.",
+                            "pitfall": "Improper profile management in IMC",
+                            "references": [
+                                {
+                                    "type": "CAAP",
+                                    "source": "PCAR Part 8 Subpart 8.10.5",
+                                    "detail": "Descent below profile is prohibited unless the aircraft is stabilized with required visual cues."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "scenario_id": "wet_runway_takeoff",
+            "title": "Runway Contamination Takeoff Decision",
+            "briefing": "### Mission Overview\n- Aircraft: Piper Seneca departing Manila domestic\n- Conditions: Night IMC, runway reported wet with braking action MEDIUM to POOR\n- Objective: Apply CAAP/ICAO performance-based decision making before and during takeoff roll\n\nEvaluation references CAAP PCAR Part 8 Subpart 8.10 (Performance) and ICAO Doc 9981 (PANS-Aerodromes) contaminated runway guidance.",
+            "standards_reference": "CAAP PCAR Part 8 Subpart 8.10.7, ICAO Doc 9981 Vol I, and ICAO Doc 9868 threat and error management.",
+            "checkpoints": [
+                {
+                    "checkpoint_id": "performance_assessment",
+                    "title": "Pre-Takeoff Performance Review",
+                    "situation": "Dispatch data shows accelerate-stop distance within 5% of available runway when dry. With the wet braking report, the accelerate-stop distance exceeds runway length by 10%.",
+                    "prompt": "What action aligns with CAAP/ICAO guidance?",
+                    "recommended_action": "Delay departure to obtain contaminant depth, recalculate performance with current conditions, and consider weight reduction per PCAR 8.10.7.",
+                    "options": [
+                        {
+                            "id": "delay_recalculate",
+                            "text": "Hold short, request updated contaminant depth, and recalculate performance or offload weight as needed.",
+                            "score": 3,
+                            "rationale": "PCAR Part 8.10.7 requires performance margins to include runway condition corrections. Waiting maintains compliance and follows ICAO Doc 9981 contaminated runway practices.",
+                            "references": [
+                                {
+                                    "type": "CAAP",
+                                    "source": "PCAR Part 8 Subpart 8.10.7(c)",
+                                    "detail": "Takeoff calculations shall account for runway surface condition corrections."
+                                },
+                                {
+                                    "type": "ICAO",
+                                    "source": "ICAO Doc 9981, Vol I, 6.2.1",
+                                    "detail": "Pilots must verify performance using the reported runway condition code prior to takeoff."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "proceed_with_margin",
+                            "text": "Proceed with takeoff using maximum braking and assume a small safety margin is acceptable.",
+                            "score": 1,
+                            "rationale": "Max braking reduces risk but still ignores the regulatory requirement to account for wet runway adjustments.",
+                            "pitfall": "Ignoring contaminated runway corrections",
+                            "references": [
+                                {
+                                    "type": "ICAO",
+                                    "source": "ICAO Doc 9868, Chap. 3",
+                                    "detail": "Normalisation of deviance erodes safety margins in performance-limited operations."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "depart_immediately",
+                            "text": "Depart immediately to avoid further weather deterioration, relying on acceleration technique to compensate.",
+                            "score": 0,
+                            "rationale": "Departing without recalculation violates PCAR Part 8 performance assurance and disregards ICAO contaminated runway policy.",
+                            "pitfall": "Performance planning short-cut",
+                            "references": [
+                                {
+                                    "type": "CAAP",
+                                    "source": "PCAR Part 8 Subpart 8.2.1",
+                                    "detail": "Operators must ensure aircraft performance meets runway requirements before dispatch."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "checkpoint_id": "microburst_alert",
+                    "title": "Taxi Microburst Advisory",
+                    "situation": "While taxiing for departure, tower reports a microburst alert with a 25-knot loss on final for arriving traffic in the last 10 minutes.",
+                    "prompt": "How should the crew respond?",
+                    "recommended_action": "Request a hold on a taxiway until the microburst alert expires and reassess crosswind limits in accordance with PCAR 8.8 and ICAO Doc 9868.",
+                    "options": [
+                        {
+                            "id": "hold_for_update",
+                            "text": "Request to hold at the taxiway, monitor wind shear advisories, and reassess limits before departure.",
+                            "score": 3,
+                            "rationale": "Holding aligns with PCAR 8.8.3 requiring crews to avoid known wind shear and matches ICAO Doc 9868 emphasis on restoring barriers before continuing.",
+                            "references": [
+                                {
+                                    "type": "CAAP",
+                                    "source": "PCAR Part 8 Subpart 8.8.3",
+                                    "detail": "Pilots shall delay takeoff when wind shear is reported on the runway of intended departure."
+                                },
+                                {
+                                    "type": "ICAO",
+                                    "source": "ICAO Doc 9868, Chap. 5",
+                                    "detail": "Wind shear alerts demand a deliberate risk control before resuming operations."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "expedite_gap",
+                            "text": "Request priority for departure, aiming to depart before another alert is issued.",
+                            "score": 1,
+                            "rationale": "Departing quickly may reduce exposure but still conflicts with the directive to avoid known wind shear conditions.",
+                            "pitfall": "Rushing into wind shear conditions",
+                            "references": [
+                                {
+                                    "type": "ICAO",
+                                    "source": "ICAO Doc 4444, 7.5.4",
+                                    "detail": "Operations should avoid areas of reported wind shear until conditions improve."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "continue_normally",
+                            "text": "Continue taxi and plan for a normal takeoff, relying on reactive escape guidance if shear occurs.",
+                            "score": 0,
+                            "rationale": "Proceeding disregards PCAR wind shear avoidance policy and leaves no proactive barrier in place.",
+                            "pitfall": "Reactive-only wind shear strategy",
+                            "references": [
+                                {
+                                    "type": "CAAP",
+                                    "source": "CAAP Advisory Circular AC-OPS-002",
+                                    "detail": "Prevention\u2014not just escape procedures\u2014is required when wind shear is reported."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "checkpoint_id": "takeoff_roll_monitoring",
+                    "title": "Takeoff Roll Anomaly",
+                    "situation": "On the takeoff roll, acceleration is slower than expected and crosswind gusts push the aircraft off the centerline at 40 KIAS, still below rotation speed.",
+                    "prompt": "What action reflects best practice?",
+                    "recommended_action": "Reject the takeoff below decision speed, maintain directional control, and request runway condition reassessment per PCAR 8.10.7(d).",
+                    "options": [
+                        {
+                            "id": "reject_takeoff",
+                            "text": "Abort the takeoff, maintain centerline with maximum braking, and taxi clear to reassess runway conditions.",
+                            "score": 3,
+                            "rationale": "Rejecting below decision speed is consistent with PCAR accelerate-stop criteria and ICAO Doc 9981 contaminated runway guidance.",
+                            "references": [
+                                {
+                                    "type": "CAAP",
+                                    "source": "PCAR Part 8 Subpart 8.10.7(d)",
+                                    "detail": "Pilots must discontinue takeoff if performance degrades below calculated expectations before V1."
+                                },
+                                {
+                                    "type": "ICAO",
+                                    "source": "ICAO Doc 9981, Vol I, 6.3",
+                                    "detail": "Stopping is the preferred response to degraded acceleration while below decision speed on a contaminated runway."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "continue_with_adjustment",
+                            "text": "Continue the takeoff but plan for a reduced climb gradient and immediate turn to avoid weather.",
+                            "score": 1,
+                            "rationale": "Continuing below planned acceleration risks runway excursion and conflicts with accelerate-stop assumptions.",
+                            "pitfall": "Pressing on after degraded acceleration",
+                            "references": [
+                                {
+                                    "type": "ICAO",
+                                    "source": "ICAO Doc 9868, Chap. 6",
+                                    "detail": "Continuing with degraded performance despite cues is a classic decision trap."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "rotate_early",
+                            "text": "Rotate early to lift off before the crosswind worsens and rely on ground effect to build speed.",
+                            "score": 0,
+                            "rationale": "Rotating early risks stall or runway excursion and disregards PCAR takeoff performance rules.",
+                            "pitfall": "Improper V1/Vr discipline",
+                            "references": [
+                                {
+                                    "type": "CAAP",
+                                    "source": "PCAR Part 8 Subpart 8.10.2",
+                                    "detail": "Rotation shall not occur before achieving the computed lift-off speed."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
